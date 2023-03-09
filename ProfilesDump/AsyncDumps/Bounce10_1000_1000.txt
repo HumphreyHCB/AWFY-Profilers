@@ -1,0 +1,1214 @@
+--- Execution profile ---
+Total samples       : 3390122
+unknown_Java        : 1129 (0.03%)
+not_walkable_Java   : 1664 (0.05%)
+deoptimization      : 193 (0.01%)
+
+--- 10078028129 ns (29.45%), 1000667 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 6841602747 ns (19.99%), 679396 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 3599668519 ns (10.52%), 357416 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 2506450343 ns (7.32%), 248810 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1753671932 ns (5.12%), 174098 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1732165726 ns (5.06%), 171845 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 1242796811 ns (3.63%), 123375 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 786048069 ns (2.30%), 77988 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 660017531 ns (1.93%), 65515 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 376448469 ns (1.10%), 37367 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 255097702 ns (0.75%), 25293 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 253709096 ns (0.74%), 25000 samples
+  [ 0] java.util.Arrays.setAll
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 237179128 ns (0.69%), 23425 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 223605513 ns (0.65%), 22204 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 217172729 ns (0.63%), 21563 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 205634763 ns (0.60%), 20313 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 193252106 ns (0.56%), 19180 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 185996860 ns (0.54%), 18466 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 173968897 ns (0.51%), 17104 samples
+  [ 0] som.Random.next
+  [ 1] Bounce$Ball.<init>
+  [ 2] Bounce.lambda$benchmark$0
+  [ 3] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] Bounce.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 173740455 ns (0.51%), 17251 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 169422099 ns (0.50%), 16785 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 161362221 ns (0.47%), 16021 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 152927942 ns (0.45%), 15045 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 127595280 ns (0.37%), 12644 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 102927081 ns (0.30%), 10210 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 83597693 ns (0.24%), 8259 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 78729596 ns (0.23%), 7739 samples
+  [ 0] som.Random.next
+  [ 1] Bounce$Ball.<init>
+  [ 2] Bounce.lambda$benchmark$0
+  [ 3] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] Bounce.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 68551235 ns (0.20%), 6803 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 59879001 ns (0.17%), 5906 samples
+  [ 0] Bounce.lambda$benchmark$0
+  [ 1] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 2] java.util.Arrays.setAll
+  [ 3] Bounce.benchmark
+  [ 4] Benchmark.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 59666856 ns (0.17%), 5912 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 59006140 ns (0.17%), 5792 samples
+  [ 0] som.Random.next
+  [ 1] Bounce$Ball.<init>
+  [ 2] Bounce.lambda$benchmark$0
+  [ 3] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] Bounce.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 58934255 ns (0.17%), 5831 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 43602216 ns (0.13%), 4271 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 43079067 ns (0.13%), 4237 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 32420946 ns (0.09%), 3180 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 30948962 ns (0.09%), 3070 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 28620217 ns (0.08%), 2845 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 23254823 ns (0.07%), 2307 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 23117923 ns (0.07%), 2294 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 20849507 ns (0.06%), 2062 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 20449583 ns (0.06%), 2031 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 16923546 ns (0.05%), 1640 samples
+  [ 0] Interpreter
+  [ 1] [not_walkable_Java]
+
+--- 16706223 ns (0.05%), 1656 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 13808513 ns (0.04%), 1369 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 12026476 ns (0.04%), 1186 samples
+  [ 0] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 1] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 2] Bounce.benchmark
+  [ 3] Benchmark.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 10812185 ns (0.03%), 1066 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 10805421 ns (0.03%), 1063 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 10736813 ns (0.03%), 1056 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 10078163 ns (0.03%), 953 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 10022162 ns (0.03%), 998 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 9688124 ns (0.03%), 960 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 8817143 ns (0.03%), 872 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 7500085 ns (0.02%), 739 samples
+  [ 0] java.util.Arrays.setAll
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 7488110 ns (0.02%), 739 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 7309013 ns (0.02%), 724 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 7075222 ns (0.02%), 442 samples
+  [ 0] queue_work_on_[k]
+  [ 1] pty_write_[k]
+  [ 2] process_output_block_[k]
+  [ 3] n_tty_write_[k]
+  [ 4] do_tty_write_[k]
+  [ 5] file_tty_write.constprop.0_[k]
+  [ 6] new_sync_write_[k]
+  [ 7] vfs_write_[k]
+  [ 8] ksys_write_[k]
+  [ 9] do_syscall_64_[k]
+  [10] entry_SYSCALL_64_after_hwframe_[k]
+  [11] __GI_write
+  [12] writeBytes
+  [13] Java_java_io_FileOutputStream_writeBytes
+  [14] java.io.FileOutputStream.writeBytes
+  [15] java.io.FileOutputStream.write
+  [16] java.io.BufferedOutputStream.flushBuffer
+  [17] java.io.BufferedOutputStream.flush
+  [18] java.io.PrintStream.write
+  [19] sun.nio.cs.StreamEncoder.writeBytes
+  [20] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [21] sun.nio.cs.StreamEncoder.flushBuffer
+  [22] java.io.OutputStreamWriter.flushBuffer
+  [23] java.io.PrintStream.writeln
+  [24] java.io.PrintStream.println
+  [25] Run.printResult
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 6913241 ns (0.02%), 682 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 6656190 ns (0.02%), 651 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] .annobin__ZN24G1ScanHRForRegionClosure15scan_heap_rootsEP10HeapRegion.start
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] .annobin__ZN21G1EvacuateRegionsTask10scan_rootsEP20G1ParScanThreadStatej.start
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] Thread::call_run()
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 5950952 ns (0.02%), 585 samples
+  [ 0] Bounce$Ball.<init>
+  [ 1] Bounce.lambda$benchmark$0
+  [ 2] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 3] java.util.Arrays.setAll
+  [ 4] Bounce.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 5579600 ns (0.02%), 529 samples
+  [ 0] Run.measure
+  [ 1] Run.doRuns
+  [ 2] Run.runBenchmark
+  [ 3] Harness.main
+
+--- 4545991 ns (0.01%), 431 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 4391231 ns (0.01%), 436 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 3459701 ns (0.01%), 341 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 3442172 ns (0.01%), 340 samples
+  [ 0] [no_Java_frame]
+
+--- 3416712 ns (0.01%), 338 samples
+  [ 0] LinearScan::build_intervals()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 3351063 ns (0.01%), 334 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 3312532 ns (0.01%), 324 samples
+  [ 0] Bounce.lambda$benchmark$0
+  [ 1] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 2] java.util.Arrays.setAll
+  [ 3] Bounce.benchmark
+  [ 4] Benchmark.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 3089590 ns (0.01%), 304 samples
+  [ 0] som.Random.next
+  [ 1] Bounce$Ball.<init>
+  [ 2] Bounce.lambda$benchmark$0
+  [ 3] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] Bounce.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 3021101 ns (0.01%), 297 samples
+  [ 0] java.lang.invoke.DirectMethodHandle.allocateInstance
+  [ 1] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 2] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 3] Bounce.benchmark
+  [ 4] Benchmark.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 3009682 ns (0.01%), 297 samples
+  [ 0] SpinPause
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] .annobin__ZN21G1EvacuateRegionsTask21evacuate_live_objectsEP20G1ParScanThreadStatej.start
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] Thread::call_run()
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 2966941 ns (0.01%), 293 samples
+  [ 0] som.Random.next
+  [ 1] Bounce$Ball.<init>
+  [ 2] Bounce.lambda$benchmark$0
+  [ 3] Bounce$$Lambda$2.0x0000000800c034f8.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] Bounce.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 2771542 ns (0.01%), 275 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2699640 ns (0.01%), 159 samples
+  [ 0] generic_exec_single_[k]
+  [ 1] smp_call_function_single_[k]
+  [ 2] event_function_call_[k]
+  [ 3] _perf_ioctl_[k]
+  [ 4] perf_ioctl_[k]
+  [ 5] __x64_sys_ioctl_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___ioctl_time64
+  [ 9] __restore_rt
+  [10] Bounce$Ball.bounce
+  [11] Bounce.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 2659350 ns (0.01%), 264 samples
+  [ 0] LinearScan::allocate_registers()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 2636180 ns (0.01%), 260 samples
+  [ 0] sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
+  [ 1] sun.nio.cs.UTF_8$Encoder.encodeLoop
+  [ 2] java.nio.charset.CharsetEncoder.encode
+  [ 3] sun.nio.cs.StreamEncoder.implWrite
+  [ 4] sun.nio.cs.StreamEncoder.implWrite
+  [ 5] sun.nio.cs.StreamEncoder.write
+  [ 6] java.io.OutputStreamWriter.write
+  [ 7] java.io.BufferedWriter.flushBuffer
+  [ 8] java.io.PrintStream.writeln
+  [ 9] java.io.PrintStream.println
+  [10] Run.printResult
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 2619671 ns (0.01%), 261 samples
+  [ 0] LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 2504750 ns (0.01%), 181 samples
+  [ 0] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 1] G1PrepareEvacuationTask::work(unsigned int)
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] Thread::call_run()
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 2428141 ns (0.01%), 121 samples
+  [ 0] WatcherThread::sleep() const
+  [ 1] WatcherThread::run()
+  [ 2] Thread::call_run()
+  [ 3] thread_native_entry(Thread*)
+  [ 4] start_thread
+
+--- 2387781 ns (0.01%), 119 samples
+  [ 0] clock_gettime@GLIBC_2.2.5
+  [ 1] WatcherThread::sleep() const
+  [ 2] WatcherThread::run()
+  [ 3] Thread::call_run()
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 2354520 ns (0.01%), 231 samples
+  [ 0] .annobin__ZN16LinearScanWalker14alloc_free_regEP8Interval.start
+  [ 1] LinearScanWalker::activate_current()
+  [ 2] LinearScan::allocate_registers()
+  [ 3] LinearScan::do_linear_scan()
+  [ 4] Compilation::emit_lir()
+  [ 5] Compilation::compile_java_method()
+  [ 6] Compilation::compile_method()
+  [ 7] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 8] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] Thread::call_run()
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 2329090 ns (0.01%), 157 samples
+  [ 0] queue_work_on_[k]
+  [ 1] pty_write_[k]
+  [ 2] process_output_block_[k]
+  [ 3] n_tty_write_[k]
+  [ 4] do_tty_write_[k]
+  [ 5] file_tty_write.constprop.0_[k]
+  [ 6] new_sync_write_[k]
+  [ 7] vfs_write_[k]
+  [ 8] ksys_write_[k]
+  [ 9] do_syscall_64_[k]
+  [10] entry_SYSCALL_64_after_hwframe_[k]
+  [11] __GI_write
+  [12] writeBytes
+  [13] Java_java_io_FileOutputStream_writeBytes
+  [14] java.io.FileOutputStream.writeBytes
+  [15] java.io.FileOutputStream.write
+  [16] java.io.BufferedOutputStream.flushBuffer
+  [17] java.io.BufferedOutputStream.flush
+  [18] java.io.PrintStream.write
+  [19] sun.nio.cs.StreamEncoder.writeBytes
+  [20] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [21] sun.nio.cs.StreamEncoder.flushBuffer
+  [22] java.io.OutputStreamWriter.flushBuffer
+  [23] java.io.PrintStream.writeln
+  [24] java.io.PrintStream.println
+  [25] Run.printResult
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 2326731 ns (0.01%), 229 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2227050 ns (0.01%), 220 samples
+  [ 0] SharedRuntime::on_slowpath_allocation_exit(JavaThread*)
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2092810 ns (0.01%), 208 samples
+  [ 0] _invokeBasic
+  [ 1] [unknown_Java]
+
+--- 2065260 ns (0.01%), 113 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] futex_wait_queue_[k]
+  [ 2] futex_wait_[k]
+  [ 3] do_futex_[k]
+  [ 4] __x64_sys_futex_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __futex_abstimed_wait_common
+
+--- 2048210 ns (0.01%), 195 samples
+  [ 0] Run.measure
+  [ 1] Run.doRuns
+  [ 2] Run.runBenchmark
+  [ 3] Harness.main
+
+--- 2031810 ns (0.01%), 201 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 2029702 ns (0.01%), 199 samples
+  [ 0] java.lang.invoke.MethodHandle.invokeBasic
+  [ 1] [unknown_Java]
+
+--- 1999280 ns (0.01%), 78 samples
+  [ 0] __futex_abstimed_wait_common
+
+--- 1992770 ns (0.01%), 198 samples
+  [ 0] Bounce$Ball.bounce
+  [ 1] Bounce.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1907010 ns (0.01%), 187 samples
+  [ 0] LinearScan::compute_local_live_sets()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 1895971 ns (0.01%), 181 samples
+  [ 0] G1Allocator::unsafe_max_tlab_alloc()
+  [ 1] MemAllocator::allocate_inside_tlab_slow(MemAllocator::Allocation&) const
+  [ 2] MemAllocator::allocate() const
+  [ 3] InstanceKlass::allocate_instance(JavaThread*)
+  [ 4] OptoRuntime::new_instance_C(Klass*, JavaThread*)
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 1887890 ns (0.01%), 181 samples
+  [ 0] Run.doRuns
+  [ 1] Run.runBenchmark
+  [ 2] Harness.main
+
+--- 1843970 ns (0.01%), 183 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 1814130 ns (0.01%), 174 samples
+  [ 0] Bounce.verifyResult
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 1778082 ns (0.01%), 84 samples
+  [ 0] Monitor::wait_without_safepoint_check(long)
+  [ 1] WatcherThread::sleep() const
+  [ 2] WatcherThread::run()
+  [ 3] Thread::call_run()
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 1747511 ns (0.01%), 92 samples
+  [ 0] os::elapsed_counter()
+  [ 1] StatSamplerTask::task()
+  [ 2] PeriodicTask::real_time_tick(int)
+  [ 3] WatcherThread::run()
+  [ 4] Thread::call_run()
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 1703800 ns (0.00%), 96 samples
+  [ 0] generic_exec_single_[k]
+  [ 1] smp_call_function_single_[k]
+  [ 2] event_function_call_[k]
+  [ 3] _perf_ioctl_[k]
+  [ 4] perf_ioctl_[k]
+  [ 5] __x64_sys_ioctl_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___ioctl_time64
+  [ 9] __restore_rt
+  [10] Bounce$Ball.bounce
+  [11] Bounce.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 1686720 ns (0.00%), 164 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 1660712 ns (0.00%), 165 samples
+  [ 0] Bounce.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 27942631685   81.64%  2774130  Bounce$Ball.bounce
+  4069874316   11.89%   403837  Bounce.benchmark
+   660533777    1.93%    65154  Bounce$Ball.<init>
+   320019754    0.94%    31455  som.Random.next
+   263539501    0.77%    25969  java.util.Arrays.setAll
+    63403823    0.19%     6251  Bounce.lambda$benchmark$0
+    21262845    0.06%     2038  Benchmark.innerBenchmarkLoop
+    16943556    0.05%     1642  Interpreter
+    12999516    0.04%     1281  java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+    10578896    0.03%      679  _raw_spin_unlock_irqrestore_[k]
+     9823902    0.03%      935  Run.measure
+     9467192    0.03%      602  queue_work_on_[k]
+     8591834    0.03%      500  generic_exec_single_[k]
+     8072381    0.02%      787  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+     7711592    0.02%      687  __tls_get_addr
+     7458713    0.02%      740  sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
+     5938555    0.02%      555  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+     4810201    0.01%      331  clock_gettime@GLIBC_2.2.5
+     4757901    0.01%      447  __memset_avx2_unaligned_erms
+     4713104    0.01%      464  java.lang.invoke.DirectMethodHandle.allocateInstance
+     4558872    0.01%      352  [vdso]
+     4235161    0.01%      410  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+     4032110    0.01%      399  java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+     3492921    0.01%      347  java.lang.StringConcatHelper.prepend
+     3466764    0.01%      335  I2C/C2I adapters(0xb)
+     3446702    0.01%      341  LinearScan::build_intervals()
+     3442172    0.01%      340  [no_Java_frame]
+     3226580    0.01%      318  sun.nio.cs.StreamEncoder.implWrite
+     3131591    0.01%      307  LIR_OpVisitState::visit(LIR_Op*)
+     3095641    0.01%      178  copy_user_generic_string_[k]
+     3009682    0.01%      297  SpinPause
+     2855370    0.01%      278  vmSymbols::find_sid(Symbol const*)
+     2803102    0.01%      276  DebugInformationRecorder::find_sharable_decode_offset(int)
+     2723803    0.01%      264  MemAllocator::allocate() const
+     2720360    0.01%      270  LinearScan::allocate_registers()
+     2670471    0.01%      266  LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
+     2631532    0.01%      168  syscall_enter_from_user_mode_[k]
+     2515671    0.01%      241  Bounce.verifyResult
+     2504750    0.01%      181  HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+     2502781    0.01%      240  G1Allocator::unsafe_max_tlab_alloc()
+     2502350    0.01%      246  java.lang.Long.stringSize
+     2498501    0.01%      244  ciObjectFactory::get_metadata(Metadata*)
+     2487870    0.01%      248  java.lang.invoke.LambdaForm$MH.0x0000000800c08800.invoke
+     2480741    0.01%      246  SharedRuntime::on_slowpath_allocation_exit(JavaThread*)
+     2460200    0.01%      234  sun.nio.cs.StreamEncoder.writeBytes
+     2434100    0.01%      242  java.nio.charset.CharsetEncoder.encode
+     2428141    0.01%      121  WatcherThread::sleep() const
+     2406360    0.01%      152  StatSamplerTask::task()
+     2384790    0.01%      234  .annobin__ZN16LinearScanWalker14alloc_free_regEP8Interval.start
+     2327491    0.01%      231  java.lang.Long.getChars
+     2269041    0.01%      222  java.io.FileOutputStream.write
+     2219942    0.01%      218  G1CollectedHeap::allocate_new_tlab(unsigned long, unsigned long, unsigned long*)
+     2219741    0.01%      217  java.lang.StringConcatHelper.mix
+     2177940    0.01%       90  __futex_abstimed_wait_common
+     2174150    0.01%      207  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+     2135840    0.01%      207  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+     2121272    0.01%      101  Monitor::wait_without_safepoint_check(long)
+     2120072    0.01%      208  java.lang.invoke.MethodHandle.invokeBasic
+     2092810    0.01%      208  _invokeBasic
+     2071000    0.01%      203  java.io.PrintStream.writeln
+     2066301    0.01%      193  SymbolTable::lookup_shared(char const*, int, unsigned int)
+     2014710    0.01%      206  ___pthread_mutex_trylock
+     1993851    0.01%      135  file_tty_write.constprop.0_[k]
+     1982190    0.01%      193  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+     1965271    0.01%      110  os::elapsed_counter()
+     1951631    0.01%      191  java.io.PrintStream.write
+     1930461    0.01%      190  Run.printResult
+     1917050    0.01%      188  LinearScan::compute_local_live_sets()
+     1900781    0.01%      188  PhaseChaitin::gather_lrg_masks(bool)
+     1896641    0.01%      184  OptoRuntime::new_instance_C(Klass*, JavaThread*)
+     1887890    0.01%      181  Run.doRuns
+     1829361    0.01%      105  os::PlatformMonitor::wait(long)
+     1819320    0.01%      112  restore_fpregs_from_user_[k]
+     1811721    0.01%      178  HeapRegionManager::allocate_free_region(HeapRegionType, unsigned int)
+     1766651    0.01%      172  MemAllocator::allocate_inside_tlab_slow(MemAllocator::Allocation&) const
+     1748860    0.01%      174  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+     1712320    0.01%      170  java.io.PrintStream.println
+     1709080    0.00%      114  inode_security_[k]
+     1675610    0.00%      164  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+     1673441    0.00%      165  sun.nio.cs.StreamEncoder.write
+     1670900    0.00%      166  GraphBuilder::iterate_bytecodes_for_block(int)
+     1646792    0.00%      114  new_sync_write_[k]
+     1640971    0.00%      161  LinearScanWalker::free_collect_inactive_fixed(Interval*)
+     1630120    0.00%      154  Dictionary::find(unsigned int, Symbol*, Handle)
+     1604300    0.00%       96  __GI___pthread_cond_timedwait
+     1556190    0.00%      101  os::javaTimeNanos()
+     1555970    0.00%      136  ___pthread_mutex_lock
+     1554781    0.00%      105  VMError::is_error_reported()
+     1539371    0.00%      152  java.nio.CharBuffer.<init>
+     1537390    0.00%      152  ObjAllocator::initialize(HeapWordImpl**) const
+     1530400    0.00%      147  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<598116ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 598116ul>::oop_access_barrier(void*)
+     1505320    0.00%      143  I2C/C2I adapters(0xbb)
+     1503231    0.00%      149  java.lang.System$2.encodeASCII
+     1502390    0.00%      146  InstanceKlass::find_local_field(Symbol*, Symbol*, fieldDescriptor*) const
+     1498801    0.00%      146  ValueStack::values_do(ValueVisitor*)
+     1497630    0.00%      149  PhaseLive::compute(unsigned int)
+     1497190    0.00%      142  Dict::Insert(void*, void*, bool)
+     1493601    0.00%      136  __vfprintf_internal
+     1471580    0.00%      142  __memset_avx2_unaligned
+     1427410    0.00%       64  __pthread_mutex_cond_lock
+     1422061    0.00%      140  java.nio.CharBuffer.limit
+     1419090    0.00%      140  java.lang.String.getChars
+     1418090    0.00%       82  .annobin__ZN15PerfLongVariant6sampleEv.start
+     1400200    0.00%      136  G1Policy::preventive_collection_required(unsigned int)
+     1399420    0.00%      112  PeriodicTask::real_time_tick(int)
+     1387271    0.00%      130  ConstantPool::klass_at_impl(constantPoolHandle const&, int, JavaThread*)
+     1382561    0.00%       88  futex_wake_[k]
+     1370290    0.00%      131  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+     1358910    0.00%      132  PhaseChaitin::post_allocate_copy_removal()
+     1358050    0.00%       90  process_echoes_[k]
+     1348870    0.00%      130  java.nio.Buffer.<init>
+     1343121    0.00%      135  CardTableBarrierSet::on_slowpath_allocation_exit(JavaThread*, oopDesc*)
+     1335100    0.00%      113  _int_malloc
+     1314310    0.00%      130  java.io.BufferedOutputStream.write
+     1301340    0.00%      128  java.lang.String.getBytes
+     1298000    0.00%      128  __memmove_avx_unaligned_erms
+     1288590    0.00%      123  jdk.internal.org.objectweb.asm.Frame.execute
+     1285420    0.00%      126  java.nio.HeapCharBuffer.<init>
+     1281241    0.00%      115  ClassLoaderData::holder_phantom() const
+     1269262    0.00%      124  G1FromCardCache::clear(unsigned int)
+     1265900    0.00%      101  os::free(void*)
+     1256060    0.00%      124  ObjectSampler::is_created()
+     1254561    0.00%      122  sun.nio.cs.StreamEncoder.flushBuffer
+     1251370    0.00%      125  sun.nio.cs.UTF_8.updatePositions
+     1243261    0.00%      117  void G1ScanCardClosure::do_oop_work<narrowOop>(narrowOop*)
+     1231400    0.00%      121  ValueStack::ValueStack(ValueStack*, ValueStack::Kind, int)
+     1230721    0.00%      121  java.nio.Buffer.position
+     1228502    0.00%      118  I2C/C2I adapters(0xba)
+     1215450    0.00%      120  IndexSetIterator::advance_and_next()
+     1215240    0.00%      116  __memmove_avx_unaligned
+     1208190    0.00%      111  java.io.FileOutputStream.writeBytes
+     1202400    0.00%      118  java.lang.String.length
+     1194722    0.00%      118  .annobin__ZN8Interval9add_rangeEii.start
+     1193940    0.00%      116  PhaseIdealLoop::Dominators()
+     1193140    0.00%      118  jdk.internal.misc.Unsafe.allocateUninitializedArray0
+     1188940    0.00%      119  NullCheckEliminator::iterate_one(BlockBegin*)
+     1181730    0.00%      115  java.lang.String.coder
+     1177731    0.00%      113  java_lang_ref_Reference::is_referent_field(oopDesc*, long)
+     1176961    0.00%      113  jni_GetByteArrayRegion
+     1172330    0.00%      114  __GI___libc_malloc
+     1168961    0.00%      115  G1CardTable::g1_mark_as_young(MemRegion const&)
+     1162380    0.00%       98  clear_page_rep_[k]
+     1147970    0.00%       74  rmqueue_[k]
+     1144840    0.00%      111  G1NUMA::index_of_current_thread() const
+     1133500    0.00%       65  _raw_spin_unlock_irq_[k]
+     1133440    0.00%      109  ObjArrayAllocator::initialize(HeapWordImpl**) const
+     1124280    0.00%      112  java.nio.ByteBuffer.position
+     1101340    0.00%      108  java.nio.CharBuffer.wrap
+     1098081    0.00%      107  Bounce$$Lambda$2.0x0000000800c034f8.<init>
+     1096120    0.00%      106  java.io.BufferedWriter.flushBuffer
+     1094510    0.00%      108  sun.nio.cs.UTF_8$Encoder.encodeLoop
+     1090700    0.00%      104  .annobin__ZN12methodHandleD2Ev.start
+     1086940    0.00%      104  jni_GetObjectField
+     1085940    0.00%       69  __get_user_nocheck_8_[k]
+     1052590    0.00%      104  PhaseChaitin::Split(unsigned int, ResourceArea*)
+     1048220    0.00%       41  __GI___pthread_disable_asynccancel
+     1032732    0.00%       71  n_tty_write_[k]
+     1025150    0.00%      100  AbsSeq::davg() const
+     1021680    0.00%       98  NodeHash::hash_find_insert(Node*)
+     1017881    0.00%       99  jdk.internal.misc.Unsafe.allocateUninitializedArray
+     1014510    0.00%      100  Java_java_io_FileOutputStream_writeBytes
+     1008040    0.00%      100  DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+     1002490    0.00%       97  G1CollectedHeap::unsafe_max_tlab_alloc(Thread*) const
+     1000640    0.00%      100  .annobin__ZNK11G1CardTable11is_in_youngEP7oopDesc.start
+      996710    0.00%       98  Relocation::pd_call_destination(unsigned char*)
+      993730    0.00%       56  exit_to_user_mode_loop_[k]
+      993660    0.00%       82  do_user_addr_fault_[k]
+      992320    0.00%       98  Interval::split_child_at_op_id(int, LIR_OpVisitState::OprMode)
+      983570    0.00%       95  Type::cmp(Type const*, Type const*)
+      980840    0.00%       97  GraphBuilder::invoke(Bytecodes::Code)
+      979360    0.00%       95  CollectedHeap::fill_with_dummy_object(HeapWordImpl**, HeapWordImpl**, bool)
+      972260    0.00%       94  java.lang.String.isLatin1
+      970730    0.00%       51  Mutex::lock_without_safepoint_check()
+      970221    0.00%       93  __tls_get_addr@plt
+      969960    0.00%       97  java.lang.StringCoding.implEncodeAsciiArray
+      969610    0.00%       94  PhaseIdealLoop::build_loop_tree()
+      963990    0.00%       94  jdk.internal.org.objectweb.asm.ByteVector.putUTF8
+      963722    0.00%       95  PhaseIterGVN::transform_old(Node*)
+      956170    0.00%       95  java.lang.String.<init>
+      955810    0.00%       93  G1CollectionSet::add_eden_region(HeapRegion*)
+      952301    0.00%       94  java.lang.StringConcatHelper.newArray
+      948990    0.00%       93  G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+      944941    0.00%       90  java.lang.invoke.InvokerBytecodeGenerator.emitStaticInvoke
+      943391    0.00%       87  __GI___pthread_mutex_unlock_usercnt
+      943200    0.00%       94  .annobin__ZN11AllocTracer27send_allocation_in_new_tlabEP5KlassPP12HeapWordImplmmP10JavaThread.start
+      943090    0.00%       94  java.io.BufferedWriter.write
+      935950    0.00%       85  HandleMark::initialize(Thread*)
+      935010    0.00%       93  java.lang.StringLatin1.inflate
+      929430    0.00%       50  __schedule_[k]
+      914130    0.00%       90  java.lang.StringConcatHelper.newString
+      897440    0.00%       80  CodeHeap::find_blob_unsafe(void*) const
+      896360    0.00%       85  java.lang.invoke.MethodType.insertParameterTypes
+      889070    0.00%       83  jdk.internal.org.objectweb.asm.MethodWriter.visitVarInsn
+      884210    0.00%       89  .annobin__ZN19JfrAllocationTracerC2EPK5KlassPP12HeapWordImplmbP10JavaThread.start
+      880461    0.00%       59  tty_paranoia_check_[k]
+      880230    0.00%       87  LinearScan::add_use(LIR_OprDesc*, int, int, IntervalUseKind)
+      875220    0.00%       83  jdk.internal.org.objectweb.asm.Frame.push
+      872360    0.00%       81  AdapterHandlerLibrary::get_adapter(methodHandle const&)
+      872140    0.00%       83  TypeArrayKlass::allocate_common(int, bool, JavaThread*)
+      866750    0.00%       73  _IO_default_xsputn

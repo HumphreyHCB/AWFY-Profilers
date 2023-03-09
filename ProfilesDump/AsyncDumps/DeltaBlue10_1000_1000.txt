@@ -1,0 +1,1531 @@
+--- Execution profile ---
+Total samples       : 579754
+unknown_Java        : 3902 (0.67%)
+not_walkable_Java   : 1839 (0.32%)
+deoptimization      : 226 (0.04%)
+
+--- 623991520 ns (10.55%), 61930 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.chainTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 128803737 ns (2.18%), 12762 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] deltablue.Planner.extractPlanFromConstraints
+  [ 3] deltablue.Planner.chainTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 96696223 ns (1.64%), 9579 samples
+  [ 0] deltablue.EqualityConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 86440872 ns (1.46%), 8592 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.chainTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 69576151 ns (1.18%), 6902 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 51946595 ns (0.88%), 5154 samples
+  [ 0] deltablue.UnaryConstraint.<init>
+  [ 1] deltablue.EditConstraint.<init>
+  [ 2] deltablue.Planner.chainTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 50921722 ns (0.86%), 5050 samples
+  [ 0] itable stub
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.chainTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 50724507 ns (0.86%), 5031 samples
+  [ 0] deltablue.Plan.lambda$execute$0
+  [ 1] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 2] som.Vector.forEach
+  [ 3] deltablue.Plan.execute
+  [ 4] deltablue.Planner.chainTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 47562457 ns (0.80%), 4716 samples
+  [ 0] deltablue.EqualityConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 36791774 ns (0.62%), 3647 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 35595389 ns (0.60%), 3530 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.change
+  [ 3] deltablue.Planner.projectionTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 34844118 ns (0.59%), 3458 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.change
+  [ 3] deltablue.Planner.projectionTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 33416195 ns (0.57%), 3311 samples
+  [ 0] vtable stub
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 32080536 ns (0.54%), 3184 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 31900114 ns (0.54%), 3163 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List&, Node_List&, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 30226945 ns (0.51%), 2999 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 30152465 ns (0.51%), 2994 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 29456326 ns (0.50%), 2923 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 27456348 ns (0.46%), 2730 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.chainTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 26634889 ns (0.45%), 2647 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 25113717 ns (0.42%), 2488 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 25097738 ns (0.42%), 2492 samples
+  [ 0] itable stub
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 24769368 ns (0.42%), 2460 samples
+  [ 0] itable stub
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 24222238 ns (0.41%), 2394 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 23550694 ns (0.40%), 2333 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] deltablue.Planner.projectionTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 22184235 ns (0.38%), 2204 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.addPropagate
+  [ 4] deltablue.AbstractConstraint.satisfy
+  [ 5] deltablue.Planner.incrementalAdd
+  [ 6] deltablue.AbstractConstraint.addConstraint
+  [ 7] deltablue.UnaryConstraint.<init>
+  [ 8] deltablue.EditConstraint.<init>
+  [ 9] deltablue.Planner.change
+  [10] deltablue.Planner.projectionTest
+  [11] DeltaBlue.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 22179007 ns (0.38%), 2204 samples
+  [ 0] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 19976646 ns (0.34%), 1977 samples
+  [ 0] PhaseAggressiveCoalesce::insert_copies(Matcher&)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 18616879 ns (0.31%), 1810 samples
+  [ 0] Interpreter
+  [ 1] [not_walkable_Java]
+
+--- 18616766 ns (0.31%), 1862 samples
+  [ 0] Matcher::xform(Node*, int)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 17424199 ns (0.29%), 1726 samples
+  [ 0] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 1] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 16034933 ns (0.27%), 1598 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.chainTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 14453713 ns (0.24%), 1427 samples
+  [ 0] PhaseIdealLoop::Dominators()
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 13353065 ns (0.23%), 1326 samples
+  [ 0] deltablue.ScaleConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 13306072 ns (0.23%), 1321 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Planner.constraintsConsuming
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 13243323 ns (0.22%), 1318 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.addPropagate
+  [ 4] deltablue.AbstractConstraint.satisfy
+  [ 5] deltablue.Planner.incrementalAdd
+  [ 6] deltablue.AbstractConstraint.addConstraint
+  [ 7] deltablue.UnaryConstraint.<init>
+  [ 8] deltablue.EditConstraint.<init>
+  [ 9] deltablue.Planner.change
+  [10] deltablue.Planner.projectionTest
+  [11] DeltaBlue.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 13183651 ns (0.22%), 1310 samples
+  [ 0] deltablue.ScaleConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 13170888 ns (0.22%), 1309 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Planner.constraintsConsuming
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 12941911 ns (0.22%), 1285 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.makePlan
+  [ 4] deltablue.Planner.extractPlanFromConstraints
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 12814702 ns (0.22%), 1268 samples
+  [ 0] PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+  [ 1] PhaseLive::compute(unsigned int)
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 12326986 ns (0.21%), 1219 samples
+  [ 0] PhaseChaitin::merge_multidefs()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 12216003 ns (0.21%), 1210 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 12084602 ns (0.20%), 1194 samples
+  [ 0] deltablue.Planner$$Lambda$10.0x0000000800c0dd80.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 11869833 ns (0.20%), 1177 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.chainTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 11831044 ns (0.20%), 1197 samples
+  [ 0] som.Vector.<init>
+  [ 1] deltablue.Variable.<init>
+  [ 2] deltablue.Planner.lambda$chainTest$7
+  [ 3] deltablue.Planner$$Lambda$2.0x0000000800c03cb0.apply
+  [ 4] java.util.Arrays.setAll
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 11758453 ns (0.20%), 1163 samples
+  [ 0] PhaseCCP::analyze()
+  [ 1] Compile::Optimize()
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] Thread::call_run()
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 11715211 ns (0.20%), 1163 samples
+  [ 0] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Plan.execute
+  [ 3] deltablue.Planner.change
+  [ 4] deltablue.Planner.projectionTest
+  [ 5] DeltaBlue.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 11710233 ns (0.20%), 1162 samples
+  [ 0] PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 11709732 ns (0.20%), 1161 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 2] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 11691683 ns (0.20%), 1160 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.makePlan
+  [ 4] deltablue.Planner.extractPlanFromConstraints
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 11663251 ns (0.20%), 1154 samples
+  [ 0] som.Vector$$Lambda$9.0x0000000800c0db58.apply
+  [ 1] som.Vector.forEach
+  [ 2] som.Vector.remove
+  [ 3] deltablue.Variable.removeConstraint
+  [ 4] deltablue.UnaryConstraint.removeFromGraph
+  [ 5] deltablue.AbstractConstraint.destroyConstraint
+  [ 6] deltablue.Planner.change
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 11301563 ns (0.19%), 1118 samples
+  [ 0] PhaseOutput::BuildOopMaps()
+  [ 1] PhaseOutput::Output()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 11068054 ns (0.19%), 1098 samples
+  [ 0] deltablue.EqualityConstraint.execute
+  [ 1] [unknown_Java]
+
+--- 11054806 ns (0.19%), 1097 samples
+  [ 0] deltablue.Planner$$Lambda$10.0x0000000800c0dd80.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.change
+  [ 6] deltablue.Planner.projectionTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 10871322 ns (0.18%), 1077 samples
+  [ 0] PhaseIdealLoop::build_loop_tree()
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 10866805 ns (0.18%), 1079 samples
+  [ 0] som.Vector$$Lambda$9.0x0000000800c0db58.apply
+  [ 1] som.Vector.forEach
+  [ 2] som.Vector.remove
+  [ 3] deltablue.Variable.removeConstraint
+  [ 4] deltablue.UnaryConstraint.removeFromGraph
+  [ 5] deltablue.AbstractConstraint.destroyConstraint
+  [ 6] deltablue.Planner.change
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 10569321 ns (0.18%), 1051 samples
+  [ 0] Matcher::find_shared(Node*)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 9910603 ns (0.17%), 989 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Planner.constraintsConsuming
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 9896525 ns (0.17%), 980 samples
+  [ 0] deltablue.EqualityConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 9766403 ns (0.17%), 972 samples
+  [ 0] deltablue.Planner$$Lambda$10.0x0000000800c0dd80.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.removePropagateFrom
+  [ 3] deltablue.Planner.incrementalRemove
+  [ 4] deltablue.AbstractConstraint.destroyConstraint
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 9646121 ns (0.16%), 961 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.addPropagate
+  [ 4] deltablue.AbstractConstraint.satisfy
+  [ 5] deltablue.Planner.incrementalAdd
+  [ 6] deltablue.AbstractConstraint.addConstraint
+  [ 7] deltablue.UnaryConstraint.<init>
+  [ 8] deltablue.EditConstraint.<init>
+  [ 9] deltablue.Planner.chainTest
+  [10] DeltaBlue.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 9572271 ns (0.16%), 948 samples
+  [ 0] deltablue.AbstractConstraint.<init>
+  [ 1] deltablue.BinaryConstraint.<init>
+  [ 2] deltablue.ScaleConstraint.<init>
+  [ 3] deltablue.Planner.projectionTest
+  [ 4] DeltaBlue.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 9475552 ns (0.16%), 942 samples
+  [ 0] PhaseChaitin::Select()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 9404610 ns (0.16%), 930 samples
+  [ 0] java.util.Arrays.setAll
+  [ 1] deltablue.Planner.chainTest
+  [ 2] DeltaBlue.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 9292900 ns (0.16%), 919 samples
+  [ 0] deltablue.EqualityConstraint.execute
+  [ 1] deltablue.Plan.lambda$execute$0
+  [ 2] deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+  [ 3] som.Vector.forEach
+  [ 4] deltablue.Plan.execute
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 9109002 ns (0.15%), 903 samples
+  [ 0] som.Vector.append
+  [ 1] som.Vector.with
+  [ 2] deltablue.Planner.addPropagate
+  [ 3] deltablue.AbstractConstraint.satisfy
+  [ 4] deltablue.Planner.incrementalAdd
+  [ 5] deltablue.AbstractConstraint.addConstraint
+  [ 6] deltablue.UnaryConstraint.<init>
+  [ 7] deltablue.StayConstraint.<init>
+  [ 8] deltablue.Planner.chainTest
+  [ 9] DeltaBlue.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 9092722 ns (0.15%), 908 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.makePlan
+  [ 4] deltablue.Planner.extractPlanFromConstraints
+  [ 5] deltablue.Planner.chainTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 8894343 ns (0.15%), 884 samples
+  [ 0] PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 8795364 ns (0.15%), 872 samples
+  [ 0] .annobin__ZN22Node_Backward_Iterator4nextEv.start
+  [ 1] PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 8678080 ns (0.15%), 861 samples
+  [ 0] deltablue.UnaryConstraint.<init>
+  [ 1] deltablue.StayConstraint.<init>
+  [ 2] deltablue.Planner.projectionTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 8570401 ns (0.14%), 849 samples
+  [ 0] deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.addConstraintsConsumingTo
+  [ 3] deltablue.Planner.addPropagate
+  [ 4] deltablue.AbstractConstraint.satisfy
+  [ 5] deltablue.Planner.incrementalAdd
+  [ 6] deltablue.Planner.lambda$incrementalRemove$0
+  [ 7] deltablue.Planner$$Lambda$14.0x0000000800c0e690.apply
+  [ 8] som.Vector.forEach
+  [ 9] deltablue.Planner.incrementalRemove
+  [10] deltablue.AbstractConstraint.destroyConstraint
+  [11] deltablue.Planner.chainTest
+  [12] DeltaBlue.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 8519042 ns (0.14%), 559 samples
+  [ 0] queue_work_on_[k]
+  [ 1] pty_write_[k]
+  [ 2] process_output_block_[k]
+  [ 3] n_tty_write_[k]
+  [ 4] do_tty_write_[k]
+  [ 5] file_tty_write.constprop.0_[k]
+  [ 6] new_sync_write_[k]
+  [ 7] vfs_write_[k]
+  [ 8] ksys_write_[k]
+  [ 9] do_syscall_64_[k]
+  [10] entry_SYSCALL_64_after_hwframe_[k]
+  [11] __GI_write
+  [12] writeBytes
+  [13] Java_java_io_FileOutputStream_writeBytes
+  [14] java.io.FileOutputStream.writeBytes
+  [15] java.io.FileOutputStream.write
+  [16] java.io.BufferedOutputStream.flushBuffer
+  [17] java.io.BufferedOutputStream.flush
+  [18] java.io.PrintStream.write
+  [19] sun.nio.cs.StreamEncoder.writeBytes
+  [20] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [21] sun.nio.cs.StreamEncoder.flushBuffer
+  [22] java.io.OutputStreamWriter.flushBuffer
+  [23] java.io.PrintStream.writeln
+  [24] java.io.PrintStream.println
+  [25] Run.printResult
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 8412503 ns (0.14%), 836 samples
+  [ 0] PhaseIterGVN::transform_old(Node*)
+  [ 1] PhaseIterGVN::optimize()
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 8396693 ns (0.14%), 834 samples
+  [ 0] PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 8318901 ns (0.14%), 826 samples
+  [ 0] deltablue.Planner$$Lambda$12.0x0000000800c0e1d0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.constraintsConsuming
+  [ 3] deltablue.Planner.removePropagateFrom
+  [ 4] deltablue.Planner.incrementalRemove
+  [ 5] deltablue.AbstractConstraint.destroyConstraint
+  [ 6] deltablue.Planner.change
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 8282390 ns (0.14%), 820 samples
+  [ 0] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 8180802 ns (0.14%), 813 samples
+  [ 0] java.util.Arrays.copyOf
+  [ 1] som.Vector.append
+  [ 2] deltablue.Variable.addConstraint
+  [ 3] deltablue.UnaryConstraint.addToGraph
+  [ 4] deltablue.AbstractConstraint.addConstraint
+  [ 5] deltablue.UnaryConstraint.<init>
+  [ 6] deltablue.StayConstraint.<init>
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 8174863 ns (0.14%), 807 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 8029273 ns (0.14%), 805 samples
+  [ 0] Arena::contains(void const*) const
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 8008482 ns (0.14%), 796 samples
+  [ 0] deltablue.Planner$$Lambda$12.0x0000000800c0e1d0.apply
+  [ 1] som.Vector.forEach
+  [ 2] deltablue.Planner.constraintsConsuming
+  [ 3] deltablue.Planner.removePropagateFrom
+  [ 4] deltablue.Planner.incrementalRemove
+  [ 5] deltablue.AbstractConstraint.destroyConstraint
+  [ 6] deltablue.Planner.change
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 7881762 ns (0.13%), 769 samples
+  [ 0] deltablue.Planner.chainTest
+  [ 1] DeltaBlue.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 7872652 ns (0.13%), 780 samples
+  [ 0] PhaseCFG::sched_call(Block*, unsigned int, Node_List&, GrowableArray<int>&, MachCallNode*, VectorSet&)
+  [ 1] PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 7842132 ns (0.13%), 778 samples
+  [ 0] deltablue.Planner.addPropagate
+  [ 1] deltablue.AbstractConstraint.satisfy
+  [ 2] deltablue.Planner.incrementalAdd
+  [ 3] deltablue.AbstractConstraint.addConstraint
+  [ 4] deltablue.UnaryConstraint.<init>
+  [ 5] deltablue.EditConstraint.<init>
+  [ 6] deltablue.Planner.change
+  [ 7] deltablue.Planner.projectionTest
+  [ 8] DeltaBlue.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 7698651 ns (0.13%), 761 samples
+  [ 0] PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+  [ 1] PhaseIdealLoop::compute_lca_of_uses(Node*, Node*, bool)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] Thread::call_run()
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 7643471 ns (0.13%), 757 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Plan.execute
+  [ 2] deltablue.Planner.chainTest
+  [ 3] DeltaBlue.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 7588435 ns (0.13%), 754 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 7405302 ns (0.13%), 738 samples
+  [ 0] Matcher::match_tree(Node const*)
+  [ 1] Matcher::xform(Node*, int)
+  [ 2] Matcher::match()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 7377114 ns (0.12%), 729 samples
+  [ 0] som.Vector.append
+  [ 1] som.Vector.with
+  [ 2] deltablue.Planner.addPropagate
+  [ 3] deltablue.AbstractConstraint.satisfy
+  [ 4] deltablue.Planner.incrementalAdd
+  [ 5] deltablue.AbstractConstraint.addConstraint
+  [ 6] deltablue.UnaryConstraint.<init>
+  [ 7] deltablue.StayConstraint.<init>
+  [ 8] deltablue.Planner.chainTest
+  [ 9] DeltaBlue.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 7369233 ns (0.12%), 729 samples
+  [ 0] Compile::identify_useful_nodes(Unique_Node_List&)
+  [ 1] PhaseRemoveUseless::PhaseRemoveUseless(PhaseGVN*, Unique_Node_List*, Phase::PhaseNumber)
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] Thread::call_run()
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 7314312 ns (0.12%), 725 samples
+  [ 0] .annobin__ZN12PhaseChaitin16gather_lrg_masksEb.constprop.0.start
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 7231602 ns (0.12%), 718 samples
+  [ 0] NodeHash::hash_find_insert(Node*)
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 7209771 ns (0.12%), 714 samples
+  [ 0] Compile::final_graph_reshaping_walk(Node_Stack&, Node*, Final_Reshape_Counts&)
+  [ 1] Compile::final_graph_reshaping() [clone .part.0]
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 7196550 ns (0.12%), 716 samples
+  [ 0] PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+  [ 1] Compile::Code_Gen()
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] Thread::call_run()
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 7060132 ns (0.12%), 701 samples
+  [ 0] PhaseIFG::effective_degree(unsigned int) const
+  [ 1] PhaseIFG::Compute_Effective_Degree()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 7049650 ns (0.12%), 699 samples
+  [ 0] som.Vector.forEach
+  [ 1] deltablue.Planner.addConstraintsConsumingTo
+  [ 2] deltablue.Planner.addPropagate
+  [ 3] deltablue.AbstractConstraint.satisfy
+  [ 4] deltablue.Planner.incrementalAdd
+  [ 5] deltablue.AbstractConstraint.addConstraint
+  [ 6] deltablue.UnaryConstraint.<init>
+  [ 7] deltablue.EditConstraint.<init>
+  [ 8] deltablue.Planner.change
+  [ 9] deltablue.Planner.projectionTest
+  [10] DeltaBlue.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 7013302 ns (0.12%), 693 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] Thread::call_run()
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 6984282 ns (0.12%), 697 samples
+  [ 0] deltablue.Planner.addPropagate
+  [ 1] deltablue.AbstractConstraint.satisfy
+  [ 2] deltablue.Planner.incrementalAdd
+  [ 3] deltablue.AbstractConstraint.addConstraint
+  [ 4] deltablue.ScaleConstraint.<init>
+  [ 5] deltablue.Planner.projectionTest
+  [ 6] DeltaBlue.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 6909961 ns (0.12%), 684 samples
+  [ 0] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 1] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 2] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 3] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 4] PhaseIdealLoop::optimize(PhaseIterGVN&, LoopOptsMode)
+  [ 5] Compile::Optimize()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] Thread::call_run()
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 6862133 ns (0.12%), 684 samples
+  [ 0] deltablue.Planner.addPropagate
+  [ 1] deltablue.AbstractConstraint.satisfy
+  [ 2] deltablue.Planner.incrementalAdd
+  [ 3] deltablue.AbstractConstraint.addConstraint
+  [ 4] deltablue.UnaryConstraint.<init>
+  [ 5] deltablue.EditConstraint.<init>
+  [ 6] deltablue.Planner.chainTest
+  [ 7] DeltaBlue.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 6861503 ns (0.12%), 669 samples
+  [ 0] [no_Java_frame]
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+   910192950   15.39%    90370  som.Vector.forEach
+   205737223    3.48%    20406  som.Vector.<init>
+   200500786    3.39%    19914  deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply
+   178501941    3.02%    17686  deltablue.EqualityConstraint.execute
+   144579166    2.45%    14349  som.Vector.append
+   121339206    2.05%    12073  itable stub
+   115815504    1.96%    11496  vtable stub
+   101043061    1.71%    10055  deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply
+    83347189    1.41%     8291  deltablue.Planner.addPropagate
+    71894198    1.22%     7149  deltablue.AbstractConstraint.satisfy
+    70762266    1.20%     7028  deltablue.ScaleConstraint.execute
+    69586321    1.18%     6903  PhaseChaitin::Split(unsigned int, ResourceArea*)
+    62548377    1.06%     6204  deltablue.UnaryConstraint.<init>
+    60660217    1.03%     6022  deltablue.BinaryConstraint.getOutput
+    57274017    0.97%     5691  deltablue.BinaryConstraint.isSatisfied
+    55795578    0.94%     5532  deltablue.Plan.lambda$execute$0
+    54585934    0.92%     5396  IndexSetIterator::advance_and_next()
+    51289556    0.87%     5069  deltablue.Planner.makePlan
+    44976477    0.76%     4455  PhaseChaitin::gather_lrg_masks(bool)
+    39730011    0.67%     3944  PhaseLive::compute(unsigned int)
+    36261638    0.61%     3601  deltablue.BinaryConstraint.chooseMethod
+    35448666    0.60%     3482  deltablue.Planner.removePropagateFrom
+    35066547    0.59%     3478  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+    34151361    0.58%     3393  deltablue.Planner$$Lambda$10.0x0000000800c0dd80.apply
+    31959724    0.54%     3169  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List&, Node_List&, bool)
+    30805707    0.52%     3062  java.util.Arrays.copyOf
+    30690850    0.52%     3048  deltablue.ScaleConstraint.recalculate
+    30602729    0.52%     3034  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+    30450706    0.52%     3024  deltablue.Planner$$Lambda$12.0x0000000800c0e1d0.apply
+    29624548    0.50%     2929  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+    29012187    0.49%     2883  som.Vector$$Lambda$9.0x0000000800c0db58.apply
+    26645169    0.45%     2648  PhaseChaitin::post_allocate_copy_removal()
+    23988188    0.41%     2293  __tls_get_addr
+    23600809    0.40%     2314  deltablue.Planner.projectionTest
+    22209547    0.38%     2207  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+    21760140    0.37%     2153  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+    19976646    0.34%     1977  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+    19680766    0.33%     1927  deltablue.Planner.chainTest
+    19126619    0.32%     1868  __memset_avx2_unaligned_erms
+    18979439    0.32%     1847  Interpreter
+    18925789    0.32%     1880  deltablue.AbstractConstraint.inputsKnown
+    18798046    0.32%     1871  deltablue.BinaryConstraint.recalculate
+    18616766    0.31%     1862  Matcher::xform(Node*, int)
+    18361904    0.31%     1828  java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+    18074193    0.31%     1781  PhaseIdealLoop::Dominators()
+    17670025    0.30%     1692  Dict::Insert(void*, void*, bool)
+    17642473    0.30%     1747  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+    17133273    0.29%     1694  deltablue.AbstractConstraint.<init>
+    16324914    0.28%     1577  NodeHash::hash_find_insert(Node*)
+    15964944    0.27%     1582  deltablue.BinaryConstraint.markUnsatisfied
+    15382211    0.26%     1526  deltablue.Strength.weaker
+    15168458    0.26%     1513  deltablue.Variable.<init>
+    14957841    0.25%     1488  som.Vector.removeFirst
+    14053315    0.24%     1390  PhaseIdealLoop::is_dominator(Node*, Node*)
+    14019833    0.24%     1389  PhaseIdealLoop::build_loop_tree()
+    13969424    0.24%     1386  java.lang.invoke.DirectMethodHandle.allocateInstance
+    13849304    0.23%     1373  deltablue.BinaryConstraint.inputsDo
+    13326793    0.23%     1330  deltablue.Variable.setWalkStrength
+    13233443    0.22%     1294  jint_disjoint_arraycopy
+    13062240    0.22%     1297  java.util.Arrays.setAll
+    12866574    0.22%     1279  PhaseIterGVN::transform_old(Node*)
+    12347346    0.21%     1221  PhaseChaitin::merge_multidefs()
+    12279852    0.21%     1214  PhaseIterGVN::add_users_to_worklist(Node*)
+    12081064    0.20%     1110  Node::dominates(Node*, Node_List&)
+    12000138    0.20%     1185  Unique_Node_List::remove(Node*)
+    11882772    0.20%     1175  PhaseIterGVN::subsume_node(Node*, Node*)
+    11831143    0.20%     1174  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+    11758453    0.20%     1163  PhaseCCP::analyze()
+    11597485    0.20%      794  _raw_spin_unlock_irqrestore_[k]
+    11365753    0.19%     1125  IndexSet::alloc_block_containing(unsigned int)
+    11334163    0.19%     1121  PhaseOutput::BuildOopMaps()
+    11302733    0.19%     1121  deltablue.BinaryConstraint.inputsHasOne
+    11181962    0.19%     1115  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+    11051834    0.19%     1089  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+    10977502    0.19%     1082  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+    10899992    0.18%      729  queue_work_on_[k]
+    10875281    0.18%     1033  Compile::find_alias_type(TypePtr const*, bool, ciField*) [clone .part.0]
+    10599775    0.18%     1055  IndexSet::initialize(unsigned int)
+    10569321    0.18%     1051  Matcher::find_shared(Node*)
+    10322561    0.17%     1018  .annobin_Unsafe_AllocateInstance.start
+    10075873    0.17%      922  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+     9577013    0.16%      953  som.Dictionary.at
+     9570041    0.16%      942  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+     9515952    0.16%      946  PhaseChaitin::Select()
+     9498132    0.16%      924  Node::clone() const
+     9475134    0.16%      938  Compile::identify_useful_nodes(Unique_Node_List&)
+     9466951    0.16%      935  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+     9262535    0.16%      908  DebugInformationRecorder::find_sharable_decode_offset(int)
+     9179832    0.16%      908  Node::is_CFG() const
+     9088622    0.15%      871  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+     8955253    0.15%      890  PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+     8942043    0.15%      852  Type::cmp(Type const*, Type const*)
+     8835294    0.15%      876  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+     8552542    0.14%      851  Matcher::match_tree(Node const*)
+     8534612    0.14%      849  deltablue.Planner.lambda$addConstraintsConsumingTo$2
+     8529602    0.14%      839  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
+     8487743    0.14%      843  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+     8262663    0.14%      828  Arena::contains(void const*) const
+     8112125    0.14%      788  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+     8068837    0.14%      745  ciObjectFactory::get_metadata(Metadata*)
+     7892530    0.13%      784  deltablue.UnaryConstraint.chooseMethod
+     7872652    0.13%      780  PhaseCFG::sched_call(Block*, unsigned int, Node_List&, GrowableArray<int>&, MachCallNode*, VectorSet&)
+     7816002    0.13%      776  PhaseIFG::effective_degree(unsigned int) const
+     7571180    0.13%      749  Compile::remove_useless_nodes(Unique_Node_List&)
+     7365702    0.12%      730  .annobin__ZN12PhaseChaitin16gather_lrg_masksEb.constprop.0.start
+     7322941    0.12%      709  __memmove_avx_unaligned_erms
+     7251301    0.12%      715  PhiNode::Ideal(PhaseGVN*, bool)
+     7249631    0.12%      718  Compile::final_graph_reshaping_walk(Node_Stack&, Node*, Final_Reshape_Counts&)
+     7216790    0.12%      718  PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+     6861503    0.12%      669  [no_Java_frame]
+     6853914    0.12%      679  jdk.internal.misc.Unsafe.allocateInstance
+     6847513    0.12%      671  I2C/C2I adapters(0xb)
+     6797610    0.11%      672  PhaseIFG::remove_node(unsigned int)
+     6709712    0.11%      664  NTarjan::DFS(NTarjan*, VectorSet&, PhaseIdealLoop*, unsigned int*)
+     6628543    0.11%      650  som.Vector.remove
+     6540251    0.11%      648  PhaseIFG::SquareUp()
+     6419701    0.11%      566  clear_page_rep_[k]
+     6366940    0.11%      609  Node::out_grow(unsigned int)
+     6336361    0.11%      613  MemAllocator::allocate() const
+     6335405    0.11%      627  PhaseIFG::re_insert(unsigned int)
+     6218461    0.11%      600  Node::add_req(Node*)
+     6209521    0.11%      617  deltablue.BinaryConstraint.addToGraph
+     6062532    0.10%      599  .annobin__ZNK8MachNode9ideal_regEv.start
+     5949630    0.10%      565  TypeOopPtr::TypeOopPtr(Type::TYPES, TypePtr::PTR, ciKlass*, bool, ciObject*, int, int, TypePtr const*, int)
+     5916104    0.10%      592  PhaseIterGVN::optimize()
+     5907710    0.10%      581  PhaseIdealLoop::get_early_ctrl(Node*)
+     5891582    0.10%      583  Node::pinned() const
+     5781981    0.10%      572  .annobin__ZNK7PhiNode5ValueEP8PhaseGVN.start
+     5751021    0.10%      559  PhiNode::unique_input(PhaseTransform*, bool)
+     5613944    0.09%      556  deltablue.Variable.getValue
+     5499191    0.09%      547  som.Vector.isEmpty
+     5458771    0.09%      539  sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
+     5453911    0.09%      544  deltablue.Variable.getDeterminedBy
+     5444110    0.09%      506  vmSymbols::find_sid(Symbol const*)
+     5399353    0.09%      534  RegionNode::is_unreachable_from_root(PhaseGVN const*) const
+     5377122    0.09%      504  ConnectionGraph::create_split_phi(PhiNode*, int, GrowableArray<PhiNode*>&, bool&)
+     5361411    0.09%      533  PhaseCFG::schedule_early(VectorSet&, Node_Stack&)
+     5360480    0.09%      532  deltablue.UnaryConstraint.getOutput
+     5344781    0.09%      506  Node::Node(unsigned int)
+     5317021    0.09%      528  Node::jvms() const
+     5289610    0.09%      520  Node::remove_dead_region(PhaseGVN*, bool)
+     5215720    0.09%      517  PhaseChaitin::Simplify()
+     5172872    0.09%      514  PhaseChaitin::compute_initial_block_pressure(Block*, IndexSet*, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&, double) [clone .part.0] [clone .isra.0]
+     5147222    0.09%      508  deltablue.Variable.addConstraint
+     5140222    0.09%      507  PhaseIdealLoop::build_loop_tree_impl(Node*, int)
+     5107772    0.09%      506  MachNode::rematerialize() const
+     5106251    0.09%      507  deltablue.Planner.incrementalAdd
+     5080512    0.09%      504  PhaseIterGVN::remove_globally_dead_node(Node*)
+     5049141    0.09%      498  Node::unique_ctrl_out() const
+     4995474    0.08%      488  TypeNode::bottom_type() const
+     4937162    0.08%      477  Run.measure
+     4903552    0.08%      487  deltablue.AbstractConstraint.lambda$inputsKnown$0
+     4867250    0.08%      479  MultiNode::is_CFG() const
+     4866081    0.08%      483  deltablue.Variable.setDeterminedBy
+     4801130    0.08%      481  deltablue.ScaleConstraint.inputsDo
+     4755863    0.08%      453  Type::hashcons()
+     4688302    0.08%      464  som.Vector.with
+     4683113    0.08%      453  LinearScan::build_intervals()
+     4672022    0.08%      466  deltablue.Planner.lambda$constraintsConsuming$3
+     4621220    0.08%      457  CProjNode::is_block_proj() const
+     4592753    0.08%      453  IndexSet::IndexSet(IndexSet*)
+     4544022    0.08%      422  do_user_addr_fault_[k]
+     4526842    0.08%      444  Compile::copy_node_notes_to(Node*, Node*)
+     4524130    0.08%      451  deltablue.UnaryConstraint.recalculate
+     4495292    0.08%      442  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+     4490265    0.08%      443  Compile::remove_speculative_types(PhaseIterGVN&) [clone .part.0]
+     4462980    0.08%      443  PhaseCFG::insert_anti_dependences(Block*, Node*, bool)
+     4448552    0.08%      441  PhaseChaitin::build_ifg_virtual()
+     4405950    0.07%      437  PhaseCFG::schedule_pinned_nodes(VectorSet&)
+     4366302    0.07%      427  deltablue.Strength.of
+     4358960    0.07%      431  som.Vector.at
+     4193951    0.07%      399  PhaseGVN::transform_no_reclaim(Node*)
+     4154251    0.07%      410  TypeNode::hash() const
+     4133150    0.07%      413  som.Vector.lambda$remove$0
+     4123501    0.07%      408  PhaseChaitin::stretch_base_pointer_live_ranges(ResourceArea*)
+     4120363    0.07%      407  ProjNode::pinned() const
+     4061491    0.07%      398  InstanceKlass::check_valid_for_instantiation(bool, JavaThread*)
+     4047072    0.07%      402  Node::rematerialize() const
+     4030862    0.07%      395  DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+     4019040    0.07%      394  AddPNode::bottom_type() const
+     3978680    0.07%      364  MergeMemNode::MergeMemNode(Node*)
+     3958331    0.07%      394  InlineCacheBuffer
+     3947532    0.07%      391  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+     3912313    0.07%      386  PhaseIdealLoop::compute_lca_of_uses(Node*, Node*, bool)
+     3898553    0.07%      389  PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+     3885411    0.07%      379  NodeHash::grow()
+     3880301    0.07%      366  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+     3860171    0.07%      384  PhaseCCP::transform(Node*)
+     3798371    0.06%      366  LinearScan::allocate_registers()
+     3781742    0.06%      374  PhaseCFG::is_uncommon(Block const*)
+     3778810    0.06%      374  deltablue.BinaryConstraint.<init>
+     3773262    0.06%      356  TypeInstPtr::hash() const
+     3741991    0.06%      371  ConnectionGraph::compute_escape()
+     3726391    0.06%      369  OopFlow::build_oop_map(Node*, int, PhaseRegAlloc*, int*)
+     3718900    0.06%      360  Arena::Arealloc(void*, unsigned long, unsigned long, AllocFailStrategy::AllocFailEnum)
+     3673812    0.06%      363  RegMask::is_UP() const
+     3671520    0.06%      355  LIR_OpVisitState::visit(LIR_Op*)
+     3610610    0.06%      354  State::MachOperGenerator(int)
+     3609860    0.06%      348  RegionNode::Ideal(PhaseGVN*, bool)
+     3550710    0.06%      352  PhiNode::Opcode() const
