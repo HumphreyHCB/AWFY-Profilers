@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="13.0.5">
+  <sessions>
+    <session id="120" name="New session" jvmConfigurationId="100" recordArrayAlloc="false">
+      <filters>
+        <group type="exclusive" name="Default excludes" template="defaultExcludes" />
+      </filters>
+      <triggers logTarget="stdout" logFile="">
+        <timer offsetTime="1" offsetTimeUnit="s" intervalTime="11" intervalTimeUnit="s">
+          <actions>
+            <startRecording>
+              <cpu enabled="true" />
+            </startRecording>
+            <saveSnapshot file="Dumps/Joutput" />
+          </actions>
+        </timer>
+      </triggers>
+    </session>
+  </sessions>
+</config>
