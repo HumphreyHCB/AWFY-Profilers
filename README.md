@@ -18,6 +18,8 @@ Current profiler we test are:
 
  - Uber JVM Profiler 
 
+ - Honest Profiler 
+
  - … 
  
  
