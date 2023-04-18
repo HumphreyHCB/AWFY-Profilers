@@ -16,8 +16,6 @@ Current profiler we test are:
 
  - Java Flight recorder  
 
- - Uber JVM Profiler 
-
  - Honest Profiler
 
  - JProfiler
