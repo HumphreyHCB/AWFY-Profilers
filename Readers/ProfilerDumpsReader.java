@@ -4,7 +4,14 @@ import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+
+import java.util.Arrays;
+import java.util.Comparator;
 
 
 
@@ -13,9 +20,10 @@ public class ProfilerDumpsReader {
         String[][] DumpFiles = getDumpFiles("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump");
         
         for (String[] ProfilerDump : DumpFiles) {
-            switch (ProfilerDump[0]) {
+            switch (ProfilerDump[14]) {
                 case "AsyncDumps":
-                    for (int i = 1; i < ProfilerDump.length -1; i++) {
+                    System.out.println("---------------AsyncDumps---------------");
+                    for (int i = 0; i < ProfilerDump.length -1; i++) {
                         String[][] top5 = AsyncHottestMethods(ProfilerDump[i]);
                         for (String[] strings : top5) {
                             System.out.println(strings[0] + " " + strings[1] );            
@@ -24,6 +32,7 @@ public class ProfilerDumpsReader {
                     }
                     break;
                 case "HonestProfiler":
+                    System.out.println("---------------HonestProfiler---------------");
                     for (int i = 1; i < ProfilerDump.length-1; i++) {
                         String[][] top5 = HonestProfilerHottestMethods(ProfilerDump[i]);
                         for (String[] strings : top5) {
@@ -33,6 +42,7 @@ public class ProfilerDumpsReader {
                     }
                     break;
                 case "JavaFlightRecorder":
+                    System.out.println("---------------JavaFlightRecorder---------------");                    
                     for (int i = 1; i < ProfilerDump.length-1; i++) {
                         String[][] top5 = JFRHottestMethods(ProfilerDump[i]);
                         for (String[] strings : top5) {
@@ -42,6 +52,8 @@ public class ProfilerDumpsReader {
                     }
                     break;
                 case "Perf":
+                    System.out.println("---------------Perf---------------");
+                    
                     for (int i = 1; i < ProfilerDump.length-1; i++) {
                         String[][] top5 = PerfHottestMethods(ProfilerDump[i]);
                         for (String[] strings : top5) {
@@ -60,6 +72,7 @@ public class ProfilerDumpsReader {
 
     private static String[][] getDumpFiles(String DumpsDirPath) {
         File[] dir = new File(DumpsDirPath).listFiles();
+        Arrays.sort(dir);
         String[][] DumpFiles = new String[dir.length][15];
         for (int i = 0; i < dir.length; i++) {
             if (dir[i].isFile()) {
@@ -76,9 +89,18 @@ public class ProfilerDumpsReader {
                     DumpFiles[i][j] = currentDir[j].getAbsolutePath();
                     }
                 }
+                Arrays.sort(DumpFiles[i]);
               
             }
           }
+          Arrays.sort(DumpFiles, new Comparator<String[]>() {
+            @Override
+            public int compare(final String[] entry1, final String[] entry2) {
+                final String time1 = entry1[0];
+                final String time2 = entry2[0];
+                return time1.compareTo(time2);
+            }
+        });
         return DumpFiles;
     }
 
@@ -162,7 +184,7 @@ public class ProfilerDumpsReader {
                     reader.readLine();
                     for (int i = 0; i < 5; i++) {
                         String[] split = reader.readLine().split("\\s+",7);
-                        top5[i][0] = split[6];
+                        top5[i][0] = split[split.length-1];
                         top5[i][1] = split[1];
                     }
                     break;
@@ -177,4 +199,5 @@ public class ProfilerDumpsReader {
     }
 
 }
+
 
