@@ -1,0 +1,243 @@
+---------------AsyncDumps---------------
+Bounce$Ball.bounce 83.62%
+Bounce.benchmark 11.07%
+Bounce$Ball.<init> 1.82%
+som.Random.next 0.92%
+java.util.Arrays.setAll 0.71%
+
+cd.RedBlackTree.treeInsert 21.54%
+cd.CollisionDetector.isInVoxel 14.23%
+cd.CollisionDetector.recurse 12.04%
+cd.RedBlackTree.findNode 7.23%
+cd.RedBlackTree.put 7.01%
+
+som.Vector.forEach 6.50%
+deltablue.AbstractConstraint.destroyConstraint 5.91%
+deltablue.UnaryConstraint.<init> 4.87%
+itable 3.72%
+deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply 2.44%
+
+som.IdentitySet.lambda$contains$0 32.06%
+havlak.HavlakLoopFinder.lambda$initAllNodes$0 12.40%
+G1ParScanThreadState::trim_queue_to_threshold(unsigned 8.95%
+havlak.HavlakLoopFinder.lambda$processEdges$1 5.97%
+havlak.HavlakLoopFinder.doDFS 5.70%
+
+java.lang.String.equals 21.32%
+json.JsonPureStringParser.read 14.05%
+java.util.Arrays.copyOfRange 9.08%
+jbyte_disjoint_arraycopy 7.72%
+json.JsonPureStringParser.readStringInternal 6.76%
+
+List.isShorterThan 82.83%
+List$Element.getNext 9.34%
+List.tail 4.43%
+List.makeList 1.20%
+List$Element.<init> 0.27%
+
+Mandelbrot.mandelbrot 99.43%
+Interpreter 0.01%
+__tls_get_addr 0.01%
+[vdso] 0.01%
+resource_allocate_bytes(unsigned 0.00%
+
+nbody.NBodySystem.advance 42.59%
+nbody.Body.setVX 28.03%
+nbody.Body.setVZ 9.01%
+nbody.Body.getZ 7.84%
+nbody.Body.setVY 5.80%
+
+Permute.permute 58.14%
+Permute.swap 40.97%
+Permute.benchmark 0.06%
+Benchmark.innerBenchmarkLoop 0.02%
+Interpreter 0.01%
+
+Queens.getRowColumn 59.18%
+Queens.setRowColumn 23.95%
+Queens.placeQueen 14.02%
+java.util.Arrays.fill 1.05%
+Queens.queens 0.61%
+
+itable 38.80%
+Richards.benchmark 27.55%
+richards.Scheduler$$Lambda$5.0x0000000800c06c50.apply 4.00%
+richards.Scheduler$$Lambda$4.0x0000000800c06a28.apply 3.48%
+richards.RBObject.append 3.31%
+
+Sieve.sieve 85.99%
+java.util.Arrays.fill 6.15%
+Sieve.benchmark 4.96%
+G1ParScanThreadState::trim_queue_to_threshold(unsigned 0.06%
+__memset_avx2_unaligned_erms 0.05%
+
+Storage.buildTreeDepth 43.23%
+java.util.Arrays.setAll 35.18%
+som.Random.next 12.52%
+Storage.lambda$buildTreeDepth$0 3.54%
+java.lang.invoke.LambdaForm$DMH.0x0000000800c06800.newInvokeSpecial 1.21%
+
+Towers.pushDisk 42.96%
+Towers.popDiskFrom 20.28%
+Towers$TowersDisk.setNext 18.77%
+Towers.moveDisks 8.45%
+Towers.moveTopDisk 4.93%
+
+---------------HonestProfiler---------------
+cd.RedBlackTree::treeInsert 21.8
+cd.CollisionDetector::isInVoxel 14.8
+cd.CollisionDetector::recurse 11.4
+cd.RedBlackTree::findNode 7.7
+cd.RedBlackTree::put 7.0
+
+AGCT::Unknown not Java[ERR=-3] 27.2
+AGCT::Unknown Java[ERR=-5] 12.9
+som.Vector::forEach 8.0
+deltablue.UnaryConstraint::removeFromGraph 6.7
+deltablue.UnaryConstraint::<init> 6.4
+
+som.IdentitySet::lambda$contains$0 35.5
+havlak.HavlakLoopFinder::lambda$initAllNodes$0 12.8
+AGCT::Unknown not Java[ERR=-3] 7.0
+havlak.HavlakLoopFinder::lambda$processEdges$1 6.6
+havlak.HavlakLoopFinder::findLoops 5.7
+
+java.lang.String::equals 21.9
+json.JsonPureStringParser::read 16.7
+AGCT::Unknown Java[ERR=-5] 10.3
+json.JsonPureStringParser::readStringInternal 9.2
+java.util.Arrays::copyOfRange 6.9
+
+List::isShorterThan 79.8
+List$Element::getNext 9.3
+AGCT::Unknown not Java[ERR=-3] 4.9
+AGCT::Unknown Java[ERR=-5] 2.7
+List::tail 1.9
+
+Mandelbrot::mandelbrot 98.6
+AGCT::Unknown not Java[ERR=-3] 1.3
+java.io.FileOutputStream::writeBytes 0.0
+AGCT::Unknown Java[ERR=-5] 0.0
+java.lang.invoke.BoundMethodHandle$SpeciesData::deriveFieldTypes 0.0
+
+nbody.NBodySystem::advance 40.1
+nbody.Body::setVX 28.9
+nbody.Body::setVZ 8.7
+nbody.Body::getZ 8.1
+nbody.Body::setVY 6.5
+
+Permute::permute 51.2
+Permute::swap 40.7
+AGCT::Unknown Java[ERR=-5] 6.0
+AGCT::Unknown not Java[ERR=-3] 1.8
+Benchmark::innerBenchmarkLoop 0.0
+
+Queens::getRowColumn 55.9
+Queens::setRowColumn 25.5
+Queens::placeQueen 13.7
+AGCT::Unknown not Java[ERR=-3] 2.4
+AGCT::Unknown Java[ERR=-5] 1.0
+
+AGCT::Unknown Java[ERR=-5] 47.2
+Richards::benchmark 28.1
+richards.RBObject::append 2.7
+richards.HandlerTaskDataRecord::workInAdd 2.2
+richards.Scheduler::createTask 2.2
+
+Sieve::sieve 86.3
+java.util.Arrays::fill 5.4
+Sieve::benchmark 5.2
+AGCT::Unknown not Java[ERR=-3] 2.6
+java.io.FileOutputStream::writeBytes 0.1
+
+Storage::buildTreeDepth 41.2
+java.util.Arrays::setAll 33.6
+som.Random::next 14.2
+AGCT::Unknown not Java[ERR=-3] 4.5
+Storage::lambda$buildTreeDepth$0 2.7
+
+Towers::pushDisk 39.1
+Towers::popDiskFrom 23.5
+Towers$TowersDisk::setNext 16.7
+Towers::moveTopDisk 5.6
+Towers::moveDisks 3.9
+
+---------------JavaFlightRecorder---------------
+cd.RedBlackTree.treeInsert(Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; 27.564838191416115
+cd.RedBlackTree.findNode(Ljava/lang/Comparable;)Lcd/RedBlackTree$Node; 24.431948588478313
+cd.CollisionDetector.isInVoxel(Lcd/Vector2D;Lcd/Motion;)Z 15.389029148496673
+cd.RedBlackTree.put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; 12.669267844847372
+cd.CollisionDetector.recurse(Lcd/RedBlackTree;Lcd/RedBlackTree;Lcd/Vector2D;Lcd/Motion;)V 6.65595593298141
+
+som.Vector.forEach(Lsom/ForEachInterface;)V 49.35064935064935
+deltablue.AbstractConstraint.satisfy(ILdeltablue/Planner;)Ldeltablue/AbstractConstraint; 12.987012987012987
+deltablue.Planner.addPropagate(Ldeltablue/AbstractConstraint;I)Z 6.4935064935064934
+deltablue.Plan.lambda$execute$0(Ldeltablue/AbstractConstraint;)V 6.4935064935064934
+deltablue.Planner.lambda$addConstraintsConsumingTo$2(Ldeltablue/AbstractConstraint;Lsom/Vector;Ldeltablue/AbstractConstraint;)V 3.896103896103896
+
+som.Vector.hasSome(Lsom/TestInterface;)Z 52.02320316921335
+som.Vector.forEach(Lsom/ForEachInterface;)V 22.453310696095077
+havlak.HavlakLoopFinder.findLoops()V 10.971986417657046
+havlak.HavlakLoopFinder.doDFS(Lhavlak/BasicBlock;I)I 3.812959818902094
+som.IdentityDictionary.newEntry(Lsom/Dictionary$CustomHash;Ljava/lang/Object;I)Lsom/Dictionary$Entry; 3.473401245048104
+
+json.JsonPureStringParser.readStringInternal()Ljava/lang/String; 28.217149591371403
+java.lang.StringLatin1.newString([BII)Ljava/lang/String; 14.796454282273972
+json.JsonPureStringParser.readArray()Ljson/JsonArray; 13.735813286193732
+json.JsonPureStringParser.readValue()Ljson/JsonValue; 12.846821919913918
+json.JsonPureStringParser.readExponent()Z 12.582942638280429
+
+List.isShorterThan(LList$Element;LList$Element;)Z 89.29812369701182
+List.tail(LList$Element;LList$Element;LList$Element;)LList$Element; 9.45100764419736
+List.makeList(I)LList$Element; 1.111883252258513
+List.benchmark()Ljava/lang/Object; 0.06949270326615706
+java.nio.CharBuffer.hasArray()Z 0.06949270326615706
+
+Mandelbrot.mandelbrot(I)I 99.94596055120238
+sun.nio.cs.StreamEncoder.writeBytes()V 0.027019724398811132
+sun.invoke.util.BytecodeDescriptor.unparse(Ljava/lang/Class;)Ljava/lang/String; 0.027019724398811132
+null null
+null null
+
+nbody.NBodySystem.advance(D)V 99.66714217784117
+NBody.innerBenchmarkLoop(I)Z 0.2853067047075606
+java.lang.invoke.InvokerBytecodeGenerator.isStaticallyNameable(Ljava/lang/Class;)Z 0.0475511174512601
+null null
+null null
+
+Permute.permute(I)V 73.08678139875504
+Permute.swap(II)V 26.766752105455875
+Permute.benchmark()Ljava/lang/Object; 0.10984987184181619
+java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V 0.03661662394727206
+null null
+
+Queens.placeQueen(I)Z 85.63190773666506
+Queens.getRowColumn(II)Z 12.974531475252281
+java.util.Arrays.fill([ZZ)V 0.5766458433445458
+Queens.queens()Z 0.5285920230658337
+java.util.Arrays.fill([II)V 0.24026910139356078
+
+richards.Scheduler.schedule()V 59.40293773663449
+richards.RBObject.append(Lrichards/Packet;Lrichards/Packet;)Lrichards/Packet; 25.414791761650843
+Richards.benchmark()Ljava/lang/Object; 6.380954268836601
+richards.TaskControlBlock.runTask()Lrichards/TaskControlBlock; 4.515630265427082
+richards.Scheduler.findTask(I)Lrichards/TaskControlBlock; 3.482863202965489
+
+Sieve.sieve([ZI)I 98.9065606361829
+Sieve.benchmark()Ljava/lang/Object; 0.7952286282306164
+java.lang.StringConcatHelper.mix(JLjava/lang/String;)J 0.09940357852882704
+java.io.FileOutputStream.write([BII)V 0.09940357852882704
+java.util.ArrayList.get(I)Ljava/lang/Object; 0.09940357852882704
+
+Storage.buildTreeDepth(ILsom/Random;)Ljava/lang/Object; 99.87369180801156
+Benchmark.innerBenchmarkLoop(I)Z 0.05413208228076507
+java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;JLjava/lang/Object;)J 0.01804402742692169
+java.util.zip.ZipFile$Source.getEntryPos(Ljava/lang/String;Z)I 0.01804402742692169
+Storage.benchmark()Ljava/lang/Object; 0.01804402742692169
+
+Towers.moveDisks(III)V 58.46228239845261
+Towers.pushDisk(LTowers$TowersDisk;I)V 41.3201160541586
+Towers.benchmark()Ljava/lang/Object; 0.16924564796905223
+java.nio.CharBuffer.wrap([CII)Ljava/nio/CharBuffer; 0.024177949709864602
+Benchmark.innerBenchmarkLoop(I)Z 0.024177949709864602
+
