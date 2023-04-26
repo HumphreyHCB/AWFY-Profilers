@@ -1,0 +1,263 @@
+{
+    "JavaFlightRecorder": {
+        "JavaFlightRecorder_NBody.jfr": {
+            " ": "0",
+            "nbody.NBodySystem.advance(D)V": "99.84301412872841",
+            "NBody.innerBenchmarkLoop(I)Z": "0.15698587127158556"
+        },
+        "JavaFlightRecorder_Mandelbrot.jfr": {
+            " ": "0",
+            "java.lang.invoke.MethodHandles$Lookup.resolveOrFail(BLjava/lang/invoke/MemberName;)Ljava/lang/invoke/MemberName;": "0.08904719501335707",
+            "java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V": "0.08904719501335707",
+            "Mandelbrot.mandelbrot(I)I": "99.82190560997329"
+        },
+        "JavaFlightRecorder_Queens.jfr": {
+            "java.util.Arrays.fill([II)V": "0.16286644951140064",
+            "Queens.placeQueen(I)Z": "83.87622149837134",
+            "Queens.getRowColumn(II)Z": "13.355048859934852",
+            "java.util.Arrays.fill([ZZ)V": "2.1172638436482085",
+            "Queens.queens()Z": "0.48859934853420195"
+        },
+        "JavaFlightRecorder_Richards.jfr": {
+            "richards.Scheduler.findTask(I)Lrichards/TaskControlBlock;": "3.395174891838381",
+            "richards.Scheduler.schedule()V": "57.79863606365036",
+            "Richards.benchmark()Ljava/lang/Object;": "5.316418567133534",
+            "richards.RBObject.append(Lrichards/Packet;Lrichards/Packet;)Lrichards/Packet;": "26.736085649336363",
+            "richards.TaskControlBlock.runTask()Lrichards/TaskControlBlock;": "4.920437046271174"
+        },
+        "JavaFlightRecorder_Havlak.jfr": {
+            "havlak.HavlakLoopFinder.doDFS(Lhavlak/BasicBlock;I)I": "3.438395415472779",
+            "som.Vector.forEach(Lsom/ForEachInterface;)V": "26.50429799426934",
+            "havlak.HavlakLoopFinder.findLoops()V": "8.476599808978033",
+            "som.IdentityDictionary.newEntry(Lsom/Dictionary$CustomHash;Ljava/lang/Object;I)Lsom/Dictionary$Entry;": "2.9847182425978986",
+            "som.Vector.hasSome(Lsom/TestInterface;)Z": "53.00859598853868"
+        },
+        "JavaFlightRecorder_CD.jfr": {
+            "cd.CollisionDetector.recurse(Lcd/RedBlackTree;Lcd/RedBlackTree;Lcd/Vector2D;Lcd/Motion;)V": "7.185854025583145",
+            "cd.RedBlackTree.findNode(Ljava/lang/Comparable;)Lcd/RedBlackTree$Node;": "21.8209179834462",
+            "cd.CollisionDetector.isInVoxel(Lcd/Vector2D;Lcd/Motion;)Z": "15.575620767494357",
+            "cd.RedBlackTree.put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;": "12.565838976674192",
+            "cd.RedBlackTree.treeInsert(Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult;": "29.872084273890145"
+        },
+        "JavaFlightRecorder_List.jfr": {
+            "List.isShorterThan(LList$Element;LList$Element;)Z": "89.47368421052632",
+            "sun.nio.cs.StreamEncoder.implFlushBuffer()V": "0.23923444976076555",
+            "List.tail(LList$Element;LList$Element;LList$Element;)LList$Element;": "9.090909090909092",
+            "Benchmark.innerBenchmarkLoop(I)Z": "0.23923444976076555",
+            "List.makeList(I)LList$Element;": "0.9569377990430622"
+        },
+        "JavaFlightRecorder_Json.jfr": {
+            "java.lang.StringLatin1.newString([BII)Ljava/lang/String;": "17.2809407715474",
+            "json.JsonPureStringParser.readStringInternal()Ljava/lang/String;": "31.430756728333094",
+            "json.JsonPureStringParser.readArray()Ljson/JsonArray;": "15.942444667527129",
+            "json.JsonPureStringParser.readValue()Ljson/JsonValue;": "8.987045269850375",
+            "som.Vector.append(Ljava/lang/Object;)V": "6.9984224867345475"
+        },
+        "JavaFlightRecorder_DeltaBlue.jfr": {
+            "deltablue.Planner.lambda$addConstraintsConsumingTo$2(Ldeltablue/AbstractConstraint;Lsom/Vector;Ldeltablue/AbstractConstraint;)V": "4.0",
+            "deltablue.Planner.addPropagate(Ldeltablue/AbstractConstraint;I)Z": "8.0",
+            "java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;": "8.0",
+            "som.Vector.forEach(Lsom/ForEachInterface;)V": "40.0",
+            "deltablue.Plan$$Lambda$82+0x0000000800c12420.2124643775.apply(Ljava/lang/Object;)V": "12.0"
+        },
+        "JavaFlightRecorder_Permute.jfr": {
+            " ": "0",
+            "java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V": "0.12345679012345678",
+            "Permute.swap(II)V": "27.407407407407405",
+            "Permute.permute(I)V": "72.46913580246913"
+        },
+        "JavaFlightRecorder_Storage.jfr": {
+            " ": "0",
+            "Storage.lambda$buildTreeDepth$0(ILsom/Random;I)Ljava/lang/Object;": "12.82051282051282",
+            "Storage.buildTreeDepth(ILsom/Random;)Ljava/lang/Object;": "87.05440900562851",
+            "Benchmark.innerBenchmarkLoop(I)Z": "0.06253908692933083",
+            "java.nio.HeapCharBuffer.<init>([CIILjdk/internal/access/foreign/MemorySegmentProxy;)V": "0.06253908692933083"
+        },
+        "JavaFlightRecorder_Sieve.jfr": {
+            "java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V": "0.3115264797507788",
+            "Sieve.benchmark()Ljava/lang/Object;": "0.3115264797507788",
+            "java.util.Arrays.fill([ZZ)V": "0.3115264797507788",
+            "Sieve.sieve([ZI)I": "98.75389408099687",
+            "java.nio.CharBuffer.hasArray()Z": "0.3115264797507788"
+        }
+    },
+    "HonestProfiler": {
+        "Permute.hpl": {
+            "Permute::swap": "40.7",
+            "Permute::permute": "50.6",
+            "Benchmark::innerBenchmarkLoop": "0.0",
+            "AGCT::Unknown not Java[ERR=-3]": "1.9",
+            "AGCT::Unknown Java[ERR=-5]": "6.2"
+        },
+        "Queens.hpl": {
+            "Queens::getRowColumn": "55.4",
+            "AGCT::Unknown not Java[ERR=-3]": "2.4",
+            "AGCT::Unknown Java[ERR=-5]": "1.1",
+            "Queens::placeQueen": "13.4",
+            "Queens::setRowColumn": "25.8"
+        },
+        "Richards.hpl": {
+            "richards.Packet::setLink": "2.0",
+            "Richards::benchmark": "24.1",
+            "richards.RBObject::append": "2.7",
+            "AGCT::Unknown Java[ERR=-5]": "47.3",
+            "richards.HandlerTaskDataRecord::workInAdd": "2.2"
+        },
+        "Storage.hpl": {
+            "Storage::buildTreeDepth": "40.0",
+            "java.util.Arrays::setAll": "33.9",
+            "som.Random::next": "12.8",
+            "AGCT::Unknown not Java[ERR=-3]": "4.6",
+            "Storage::lambda$buildTreeDepth$0": "3.6"
+        },
+        "Sieve.hpl": {
+            "Sieve::benchmark": "12.9",
+            "java.lang.ClassLoader::defineClass0": "0.1",
+            "Sieve::sieve": "75.0",
+            "AGCT::Unknown not Java[ERR=-3]": "5.5",
+            "java.util.Arrays::fill": "5.4"
+        },
+        "Mandelbrot.hpl": {
+            "Run::runBenchmark": "0.0",
+            "AGCT::Not walkable Java[ERR=-6]": "0.0",
+            "AGCT::Unknown not Java[ERR=-3]": "1.7",
+            "AGCT::Unknown Java[ERR=-5]": "0.0",
+            "Mandelbrot::mandelbrot": "98.1"
+        },
+        "DeltaBlue.hpl": {
+            "jdk.internal.misc.Unsafe::allocateInstance": "2.6",
+            "deltablue.Plan$$Lambda$8.0x0000000800c0d938::apply": "2.6",
+            "AGCT::Unknown not Java[ERR=-3]": "47.0",
+            "AGCT::Unknown Java[ERR=-5]": "11.8",
+            "som.Vector::forEach": "5.8"
+        },
+        "NBody.hpl": {
+            "nbody.Body::setVZ": "8.7",
+            "nbody.Body::getZ": "7.2",
+            "nbody.Body::setVX": "28.6",
+            "nbody.Body::setVY": "5.9",
+            "nbody.NBodySystem::advance": "39.9"
+        },
+        "List.hpl": {
+            "List$Element::getNext": "9.4",
+            "List::tail": "2.3",
+            "List::isShorterThan": "79.4",
+            "AGCT::Unknown not Java[ERR=-3]": "4.7",
+            "AGCT::Unknown Java[ERR=-5]": "2.6"
+        },
+        "Json.hpl": {
+            "json.JsonPureStringParser::read": "12.8",
+            "java.util.Arrays::copyOfRange": "9.3",
+            "java.lang.String::equals": "20.1",
+            "AGCT::Unknown Java[ERR=-5]": "10.7",
+            "json.JsonPureStringParser::readStringInternal": "9.3"
+        },
+        "CD.hpl": {
+            "cd.CollisionDetector::recurse": "10.8",
+            "cd.RedBlackTree::put": "7.0",
+            "cd.RedBlackTree::findNode": "7.1",
+            "cd.RedBlackTree::treeInsert": "20.2",
+            "cd.CollisionDetector::isInVoxel": "14.4"
+        },
+        "Havlak.hpl": {
+            "som.IdentitySet::lambda$contains$0": "35.1",
+            "havlak.HavlakLoopFinder::lambda$initAllNodes$0": "12.6",
+            "havlak.HavlakLoopFinder::findLoops": "5.7",
+            "AGCT::Unknown not Java[ERR=-3]": "8.1",
+            "havlak.HavlakLoopFinder::lambda$processEdges$1": "6.8"
+        }
+    },
+    "Async": {
+        "rebench_test_Async_DeltaBlue.txt": {
+            "som.Vector.append": "1.71%",
+            "itable": "4.86%",
+            "som.Vector.forEach": "4.78%",
+            "java.lang.invoke.Invokers$Holder.linkToTargetMethod": "1.43%",
+            "deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply": "3.26%"
+        },
+        "rebench_test_Async_Bounce.txt": {
+            "Bounce$Ball.bounce": "67.49%",
+            "som.Random.next": "0.76%",
+            "java.util.Arrays.setAll": "0.56%",
+            "Bounce.benchmark": "24.93%",
+            "Bounce$Ball.<init>": "1.61%"
+        },
+        "rebench_test_Async_Mandelbrot.txt": {
+            "Interpreter": "0.03%",
+            "Mandelbrot.mandelbrot": "98.59%",
+            "InstanceKlass::find_method_index(Array<Method*>": "0.01%",
+            "__tls_get_addr": "0.02%",
+            "[vdso]": "0.01%"
+        },
+        "rebench_test_Async_Storage.txt": {
+            "som.Random.next": "11.18%",
+            "java.lang.invoke.LambdaForm$DMH.0x0000000800c06800.newInvokeSpecial": "1.08%",
+            "java.util.Arrays.setAll": "34.74%",
+            "Storage.lambda$buildTreeDepth$0": "3.85%",
+            "Storage.buildTreeDepth": "44.42%"
+        },
+        "rebench_test_Async_CD.txt": {
+            "cd.CollisionDetector.recurse": "10.81%",
+            "cd.CollisionDetector.isInVoxel": "13.73%",
+            "cd.RedBlackTree.treeInsert": "19.71%",
+            "cd.RedBlackTree.findNode": "7.30%",
+            "cd.RedBlackTree.treeMinimum": "6.83%"
+        },
+        "rebench_test_Async_Havlak.txt": {
+            "havlak.HavlakLoopFinder.findLoops": "5.61%",
+            "havlak.HavlakLoopFinder.lambda$initAllNodes$0": "12.06%",
+            "som.IdentitySet.lambda$contains$0": "32.38%",
+            "G1ParScanThreadState::trim_queue_to_threshold(unsigned": "7.94%",
+            "havlak.HavlakLoopFinder.lambda$processEdges$1": "6.10%"
+        },
+        "rebench_test_Async_Sieve.txt": {
+            "java.util.Arrays.fill": "4.26%",
+            "Sieve.benchmark": "13.11%",
+            "Interpreter": "0.10%",
+            "Sieve.sieve": "75.42%",
+            "Benchmark.innerBenchmarkLoop": "0.09%"
+        },
+        "rebench_test_Async_Permute.txt": {
+            "Permute.permute": "57.46%",
+            "Permute.swap": "40.43%",
+            "Permute.benchmark": "0.07%",
+            "Interpreter": "0.03%",
+            "Benchmark.innerBenchmarkLoop": "0.08%"
+        },
+        "rebench_test_Async_NBody.txt": {
+            "nbody.Body.setVZ": "8.84%",
+            "nbody.Body.getZ": "7.69%",
+            "nbody.Body.setVX": "27.55%",
+            "nbody.Body.setVY": "5.65%",
+            "nbody.NBodySystem.advance": "41.92%"
+        },
+        "rebench_test_Async_List.txt": {
+            "List$Element.getNext": "8.98%",
+            "List.makeList": "1.21%",
+            "List.tail": "4.32%",
+            "List.isShorterThan": "80.55%",
+            "List$Element.<init>": "0.27%"
+        },
+        "rebench_test_Async_Json.txt": {
+            "jbyte_disjoint_arraycopy": "7.20%",
+            "json.JsonPureStringParser.readStringInternal": "8.57%",
+            "java.util.Arrays.copyOfRange": "7.28%",
+            "java.lang.String.equals": "22.78%",
+            "json.JsonPureStringParser.read": "16.86%"
+        },
+        "rebench_test_Async_Queens.txt": {
+            "java.util.Arrays.fill": "1.13%",
+            "Queens.getRowColumn": "56.19%",
+            "Queens.setRowColumn": "23.98%",
+            "Queens.queens": "0.68%",
+            "Queens.placeQueen": "14.72%"
+        },
+        "rebench_test_Async_Richards.txt": {
+            "Richards.benchmark": "23.65%",
+            "richards.Scheduler$$Lambda$4.0x0000000800c06a28.apply": "3.55%",
+            "itable": "38.75%",
+            "richards.RBObject.append": "2.73%",
+            "richards.Scheduler$$Lambda$5.0x0000000800c06c50.apply": "4.02%"
+        }
+    }
+}
