@@ -2,9 +2,16 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.security.KeyStore.Entry;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 import org.json.JSONArray;
@@ -16,8 +23,17 @@ public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
 
     public static void main(String[] args) {
-        processFile("output.json");
-        processFile("output2.json");
+        processFile("JSONDumps/output.json");
+        processFile("JSONDumps/output2.json");
+        processFile("JSONDumps/output3.json");
+        processFile("JSONDumps/output4.json");
+        processFile("JSONDumps/output5.json");
+        processFile("JSONDumps/output6.json");
+        processFile("JSONDumps/output7.json");
+        processFile("JSONDumps/output8.json");
+        processFile("JSONDumps/output9.json");
+        processFile("JSONDumps/output10.json");
+
         HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
         HashMap<String,BenchReport> statmap = statisticize(Map);
         TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
@@ -96,9 +112,12 @@ public class ProcessOutput {
         return new TreeMap<String,BenchReport>(statisticMap);       
     }
 
+    
+
     public static void printOrderStatisticMap(TreeMap<String,BenchReport> OSM) {
         String currentFile = "";
         BenchReport currentReport;
+        ArrayList<BenchReport> highlights = new ArrayList<BenchReport>();
         for (String key : OSM.keySet()) {
             currentReport = OSM.get(key);
             if (!currentReport.filename.equals(currentFile)) {
@@ -112,8 +131,28 @@ public class ProcessOutput {
             System.out.print("  Average : " + new DecimalFormat("0.00").format(currentReport.getAverage()));
             System.out.print("  Min : " + currentReport.min);
             System.out.print("  Max : " + currentReport.max);
+            String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
+            if (Double.parseDouble(diff) >= 5 ) {
+                highlights.add(currentReport);
+            }
             System.out.print("  Diff : " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
             
+        }
+
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println("----------- Highlights -----------");
+        System.out.println(" all reprots that have difference over 5%");
+
+        for (BenchReport benchReport : highlights) {
+            System.out.println("");
+            System.out.print(" File : " + benchReport.filename);
+            System.out.print("      Method : " + benchReport.method);
+            System.out.println("        Average : " + new DecimalFormat("0.00").format(benchReport.getAverage()));
+            System.out.println("        Min : " + benchReport.min);
+            System.out.println("        Max : " + benchReport.max);
+            System.out.println("        Diff : " + new DecimalFormat("0.00").format(benchReport.max - benchReport.min));
         }
     }
 
