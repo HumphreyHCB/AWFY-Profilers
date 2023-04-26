@@ -118,37 +118,51 @@ public class ProcessOutput {
         String currentFile = "";
         BenchReport currentReport;
         ArrayList<BenchReport> highlights = new ArrayList<BenchReport>();
+        Double uncertainty = 0D;
         for (String key : OSM.keySet()) {
             currentReport = OSM.get(key);
             if (!currentReport.filename.equals(currentFile)) {
                 currentFile = currentReport.filename;
+                System.out.println("");
+                System.out.println("Uncertainty : " + uncertainty);
+                uncertainty = 0D;
                 System.out.println("");
                 System.out.println("");
                 System.out.println("----------" + currentFile + "----------");
             }
             System.out.println("");
             System.out.print("Method : " + currentReport.method);
+            if (30 - currentReport.method.length()> 0) {
+                for (int i = 0; i < 40 - currentReport.method.length(); i++) {
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.print("  Entries : " + currentReport.Percentages.size());
             System.out.print("  Average : " + new DecimalFormat("0.00").format(currentReport.getAverage()));
             System.out.print("  Min : " + currentReport.min);
             System.out.print("  Max : " + currentReport.max);
             String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
+            uncertainty += Double.parseDouble(diff);
             if (Double.parseDouble(diff) >= 5 ) {
                 highlights.add(currentReport);
             }
             System.out.print("  Diff : " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
             
         }
-
+        System.out.println("");
+        System.out.println("Uncertainty : " + uncertainty);
 
         System.out.println("");
         System.out.println("");
         System.out.println("----------- Highlights -----------");
-        System.out.println(" all reprots that have difference over 5%");
+        System.out.println(" all reports that have difference over 5%");
 
         for (BenchReport benchReport : highlights) {
             System.out.println("");
             System.out.print(" File : " + benchReport.filename);
-            System.out.print("      Method : " + benchReport.method);
+            System.out.println("      Method : " + benchReport.method);
+            System.out.println("        Entries : " + benchReport.Percentages.size());
             System.out.println("        Average : " + new DecimalFormat("0.00").format(benchReport.getAverage()));
             System.out.println("        Min : " + benchReport.min);
             System.out.println("        Max : " + benchReport.max);
