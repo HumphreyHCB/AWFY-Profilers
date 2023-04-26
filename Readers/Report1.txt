@@ -1,0 +1,775 @@
+
+
+----------CD.hpl----------
+
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 2  Average : 7.00  Min : 6.9  Max : 7.1  Diff : 0.20
+Method : cd.CollisionDetector::isInVoxel  Entries : 10  Average : 14.45  Min : 14.0  Max : 14.8  Diff : 0.80
+Method : cd.CollisionDetector::recurse             Entries : 10  Average : 11.05  Min : 10.6  Max : 11.9  Diff : 1.30
+Method : cd.RedBlackTree::findNode                 Entries : 10  Average : 7.23  Min : 6.8  Max : 7.8  Diff : 1.00
+Method : cd.RedBlackTree::put                      Entries : 8  Average : 6.96  Min : 6.5  Max : 7.1  Diff : 0.60
+Method : cd.RedBlackTree::treeInsert               Entries : 10  Average : 20.87  Min : 19.4  Max : 21.8  Diff : 2.40
+Uncertainty : 6.3
+
+
+----------DeltaBlue.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 10  Average : 13.51  Min : 11.7  Max : 15.9  Diff : 4.20
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 40.30  Min : 25.6  Max : 54.1  Diff : 28.50
+Method : deltablue.AbstractConstraint::satisfy  Entries : 1  Average : 2.00  Min : 2.0  Max : 2.0  Diff : 0.00
+Method : deltablue.Plan$$Lambda$8.0x0000000800c0d938::apply  Entries : 6  Average : 2.90  Min : 1.7  Max : 3.8  Diff : 2.10
+Method : deltablue.Plan::lambda$execute$0  Entries : 1  Average : 2.30  Min : 2.3  Max : 2.3  Diff : 0.00
+Method : deltablue.Planner$$Lambda$5.0x0000000800c0cbb0::apply  Entries : 1  Average : 2.00  Min : 2.0  Max : 2.0  Diff : 0.00
+Method : deltablue.Planner::addPropagate  Entries : 1  Average : 2.80  Min : 2.8  Max : 2.8  Diff : 0.00
+Method : deltablue.UnaryConstraint::<init>  Entries : 1  Average : 6.40  Min : 6.4  Max : 6.4  Diff : 0.00
+Method : deltablue.UnaryConstraint::removeFromGraph  Entries : 2  Average : 4.90  Min : 3.1  Max : 6.7  Diff : 3.60
+Method : deltablue.Variable::removeConstraint  Entries : 1  Average : 2.10  Min : 2.1  Max : 2.1  Diff : 0.00
+Method : jdk.internal.misc.Unsafe::allocateInstance  Entries : 2  Average : 2.20  Min : 1.8  Max : 2.6  Diff : 0.80
+Method : som.Vector::append                        Entries : 3  Average : 5.20  Min : 4.5  Max : 6.5  Diff : 2.00
+Method : som.Vector::forEach                       Entries : 10  Average : 7.68  Min : 4.4  Max : 23.2  Diff : 18.80
+Method : som.Vector::remove                        Entries : 1  Average : 6.20  Min : 6.2  Max : 6.2  Diff : 0.00
+Uncertainty : 60.0
+
+
+----------Havlak.hpl----------
+
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 7.65  Min : 6.9  Max : 8.1  Diff : 1.20
+Method : havlak.HavlakLoopFinder::doDFS  Entries : 1  Average : 6.10  Min : 6.1  Max : 6.1  Diff : 0.00
+Method : havlak.HavlakLoopFinder::findLoops  Entries : 9  Average : 5.94  Min : 5.4  Max : 6.3  Diff : 0.90
+Method : havlak.HavlakLoopFinder::lambda$initAllNodes$0  Entries : 10  Average : 12.66  Min : 12.3  Max : 12.9  Diff : 0.60
+Method : havlak.HavlakLoopFinder::lambda$processEdges$1  Entries : 10  Average : 6.38  Min : 5.9  Max : 6.8  Diff : 0.90
+Method : som.IdentitySet::lambda$contains$0  Entries : 10  Average : 35.27  Min : 34.8  Max : 35.9  Diff : 1.10
+Uncertainty : 4.7
+
+
+----------JavaFlightRecorder_CD.jfr----------
+
+Method : cd.CollisionDetector.isInVoxel(Lcd/Vector2D;Lcd/Motion;)Z  Entries : 10  Average : 15.29  Min : 14.01694355814721  Max : 16.172506738544474  Diff : 2.16
+Method : cd.CollisionDetector.recurse(Lcd/RedBlackTree;Lcd/RedBlackTree;Lcd/Vector2D;Lcd/Motion;)V  Entries : 8  Average : 6.88  Min : 6.348020911127707  Max : 7.189795129493621  Diff : 0.84
+Method : cd.RedBlackTree.findNode(Ljava/lang/Comparable;)Lcd/RedBlackTree$Node;  Entries : 10  Average : 23.59  Min : 21.8209179834462  Max : 25.628140703517587  Diff : 3.81
+Method : cd.RedBlackTree.forEach(Lsom/ForEachInterface;)V  Entries : 2  Average : 7.51  Min : 6.815556411243742  Max : 8.205521472392638  Diff : 1.39
+Method : cd.RedBlackTree.put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;  Entries : 10  Average : 12.36  Min : 11.538461538461538  Max : 13.169765650786665  Diff : 1.63
+Method : cd.RedBlackTree.treeInsert(Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult;  Entries : 10  Average : 28.10  Min : 26.723142087023486  Max : 29.872084273890145  Diff : 3.15
+Uncertainty : 12.980000000000002
+
+
+----------JavaFlightRecorder_DeltaBlue.jfr----------
+
+Method : deltablue.AbstractConstraint.satisfy(ILdeltablue/Planner;)Ldeltablue/AbstractConstraint;  Entries : 6  Average : 9.58  Min : 6.666666666666666  Max : 12.987012987012987  Diff : 6.32
+Method : deltablue.Plan$$Lambda$82+0x0000000800c12420.2124643775.apply(Ljava/lang/Object;)V  Entries : 3  Average : 10.78  Min : 10.0  Max : 12.0  Diff : 2.00
+Method : deltablue.Plan.lambda$execute$0(Ldeltablue/AbstractConstraint;)V  Entries : 7  Average : 12.19  Min : 6.4935064935064934  Max : 20.689655172413794  Diff : 14.20
+Method : deltablue.Planner.addPropagate(Ldeltablue/AbstractConstraint;I)Z  Entries : 8  Average : 10.70  Min : 6.4935064935064934  Max : 20.689655172413794  Diff : 14.20
+Method : deltablue.Planner.incrementalAdd(Ldeltablue/AbstractConstraint;)V  Entries : 1  Average : 10.00  Min : 10.0  Max : 10.0  Diff : 0.00
+Method : deltablue.Planner.lambda$addConstraintsConsumingTo$2(Ldeltablue/AbstractConstraint;Lsom/Vector;Ldeltablue/AbstractConstraint;)V  Entries : 9  Average : 7.19  Min : 3.896103896103896  Max : 10.204081632653061  Diff : 6.31
+Method : deltablue.Planner.lambda$removePropagateFrom$4(Lsom/Vector;Ldeltablue/AbstractConstraint;)V  Entries : 2  Average : 4.17  Min : 4.0  Max : 4.3478260869565215  Diff : 0.35
+Method : deltablue.Planner.removePropagateFrom(Ldeltablue/Variable;)Lsom/Vector;  Entries : 1  Average : 4.35  Min : 4.3478260869565215  Max : 4.3478260869565215  Diff : 0.00
+Method : deltablue.ScaleConstraint.recalculate()V  Entries : 1  Average : 13.04  Min : 13.043478260869565  Max : 13.043478260869565  Diff : 0.00
+Method : java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;  Entries : 2  Average : 8.00  Min : 8.0  Max : 8.0  Diff : 0.00
+Method : som.Vector.forEach(Lsom/ForEachInterface;)V  Entries : 10  Average : 35.64  Min : 10.344827586206897  Max : 49.35064935064935  Diff : 39.01
+Uncertainty : 82.39
+
+
+----------JavaFlightRecorder_Havlak.jfr----------
+
+Method : havlak.HavlakLoopFinder.doDFS(Lhavlak/BasicBlock;I)I  Entries : 10  Average : 3.93  Min : 3.438395415472779  Max : 4.881999074502546  Diff : 1.44
+Method : havlak.HavlakLoopFinder.findLoops()V  Entries : 7  Average : 7.43  Min : 3.1896915927334177  Max : 10.971986417657046  Diff : 7.78
+Method : som.IdentityDictionary.newEntry(Lsom/Dictionary$CustomHash;Ljava/lang/Object;I)Lsom/Dictionary$Entry;  Entries : 8  Average : 3.04  Min : 2.4333719582850524  Max : 3.6094400740397967  Diff : 1.18
+Method : som.Vector.append(Ljava/lang/Object;)V  Entries : 5  Average : 4.16  Min : 3.9333641832484965  Max : 4.295169694409238  Diff : 0.36
+Method : som.Vector.forEach(Lsom/ForEachInterface;)V  Entries : 10  Average : 27.90  Min : 22.453310696095077  Max : 31.631441462835433  Diff : 9.18
+Method : som.Vector.hasSome(Lsom/TestInterface;)Z  Entries : 10  Average : 51.66  Min : 49.9537251272559  Max : 53.00859598853868  Diff : 3.05
+Uncertainty : 22.99
+
+
+----------JavaFlightRecorder_Json.jfr----------
+
+Method : java.lang.StringLatin1.newString([BII)Ljava/lang/String;  Entries : 10  Average : 16.29  Min : 8.604805774527495  Max : 25.756856790357787  Diff : 17.15
+Method : json.JsonPureStringParser.readArray()Ljson/JsonArray;  Entries : 10  Average : 17.62  Min : 13.735813286193732  Max : 22.94312796208531  Diff : 9.21
+Method : json.JsonPureStringParser.readExponent()Z  Entries : 6  Average : 8.07  Min : 6.855638793277992  Max : 12.582942638280429  Diff : 5.73
+Method : json.JsonPureStringParser.readNumber()Ljson/JsonValue;  Entries : 1  Average : 8.88  Min : 8.884389552541  Max : 8.884389552541  Diff : 0.00
+Method : json.JsonPureStringParser.readObject()Ljson/JsonObject;  Entries : 4  Average : 8.20  Min : 7.230998223459932  Max : 10.749666603162508  Diff : 3.52
+Method : json.JsonPureStringParser.readStringInternal()Ljava/lang/String;  Entries : 10  Average : 30.75  Min : 21.680744044794533  Max : 39.48618102383892  Diff : 17.81
+Method : json.JsonPureStringParser.readValue()Ljson/JsonValue;  Entries : 5  Average : 9.90  Min : 8.987045269850375  Max : 12.846821919913918  Diff : 3.86
+Method : som.Vector.append(Ljava/lang/Object;)V  Entries : 4  Average : 7.42  Min : 6.9984224867345475  Max : 7.848533738255671  Diff : 0.85
+Uncertainty : 58.13
+
+
+----------JavaFlightRecorder_List.jfr----------
+
+Method :                                           Entries : 4  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Benchmark.innerBenchmarkLoop(I)Z  Entries : 3  Average : 0.18  Min : 0.0702247191011236  Max : 0.23923444976076555  Diff : 0.17
+Method : List$Element.getNext()LList$Element;  Entries : 1  Average : 0.23  Min : 0.22573363431151242  Max : 0.22573363431151242  Diff : 0.00
+Method : List$Element.length()I                    Entries : 1  Average : 0.69  Min : 0.6880733944954129  Max : 0.6880733944954129  Diff : 0.00
+Method : List.benchmark()Ljava/lang/Object;  Entries : 2  Average : 0.07  Min : 0.06872852233676977  Max : 0.06949270326615706  Diff : 0.00
+Method : List.isShorterThan(LList$Element;LList$Element;)Z  Entries : 10  Average : 89.55  Min : 88.26185101580135  Max : 91.5137614678899  Diff : 3.25
+Method : List.makeList(I)LList$Element;  Entries : 10  Average : 0.81  Min : 0.4484304932735426  Max : 1.404494382022472  Diff : 0.96
+Method : List.tail(LList$Element;LList$Element;LList$Element;)LList$Element;  Entries : 10  Average : 9.31  Min : 6.651376146788992  Max : 10.383747178329571  Diff : 3.73
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V  Entries : 1  Average : 0.07  Min : 0.0702247191011236  Max : 0.0702247191011236  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitStaticInvoke(Ljava/lang/invoke/MemberName;Ljava/lang/invoke/LambdaForm$Name;)V  Entries : 1  Average : 0.22  Min : 0.2242152466367713  Max : 0.2242152466367713  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V  Entries : 1  Average : 0.23  Min : 0.22779043280182232  Max : 0.22779043280182232  Diff : 0.00
+Method : java.nio.ByteBuffer.flip()Ljava/nio/ByteBuffer;  Entries : 1  Average : 0.07  Min : 0.06872852233676977  Max : 0.06872852233676977  Diff : 0.00
+Method : java.nio.CharBuffer.hasArray()Z  Entries : 1  Average : 0.07  Min : 0.06949270326615706  Max : 0.06949270326615706  Diff : 0.00
+Method : java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;  Entries : 1  Average : 0.23  Min : 0.22935779816513763  Max : 0.22935779816513763  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.ClassWriter.toByteArray()[B  Entries : 1  Average : 0.23  Min : 0.22573363431151242  Max : 0.22573363431151242  Diff : 0.00
+Method : sun.nio.cs.StreamEncoder.implFlushBuffer()V  Entries : 1  Average : 0.24  Min : 0.23923444976076555  Max : 0.23923444976076555  Diff : 0.00
+Uncertainty : 8.11
+
+
+----------JavaFlightRecorder_Mandelbrot.jfr----------
+
+Method :                                           Entries : 9  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Mandelbrot.innerBenchmarkLoop(I)Z  Entries : 1  Average : 0.09  Min : 0.08849557522123894  Max : 0.08849557522123894  Diff : 0.00
+Method : Mandelbrot.mandelbrot(I)I                 Entries : 10  Average : 99.89  Min : 99.5575221238938  Max : 100.0  Diff : 0.44
+Method : java.lang.Thread.run()V                   Entries : 1  Average : 0.09  Min : 0.08873114463176575  Max : 0.08873114463176575  Diff : 0.00
+Method : java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;JJ)J  Entries : 1  Average : 0.09  Min : 0.08880994671403197  Max : 0.08880994671403197  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V  Entries : 1  Average : 0.09  Min : 0.08904719501335707  Max : 0.08904719501335707  Diff : 0.00
+Method : java.lang.invoke.Invokers.invokeHandleForm(Ljava/lang/invoke/MethodType;ZI)Ljava/lang/invoke/LambdaForm;  Entries : 1  Average : 0.03  Min : 0.026831231553528307  Max : 0.026831231553528307  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V  Entries : 1  Average : 0.09  Min : 0.08849557522123894  Max : 0.08849557522123894  Diff : 0.00
+Method : java.lang.invoke.MethodHandle.intrinsicName()Ljava/lang/invoke/MethodHandleImpl$Intrinsic;  Entries : 1  Average : 0.09  Min : 0.09009009009009009  Max : 0.09009009009009009  Diff : 0.00
+Method : java.lang.invoke.MethodHandles$Lookup.resolveOrFail(BLjava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/invoke/MemberName;  Entries : 1  Average : 0.09  Min : 0.08849557522123894  Max : 0.08849557522123894  Diff : 0.00
+Method : java.lang.invoke.MethodHandles$Lookup.resolveOrFail(BLjava/lang/invoke/MemberName;)Ljava/lang/invoke/MemberName;  Entries : 1  Average : 0.09  Min : 0.08904719501335707  Max : 0.08904719501335707  Diff : 0.00
+Method : java.net.URLStreamHandler.setURL(Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V  Entries : 1  Average : 0.09  Min : 0.08849557522123894  Max : 0.08849557522123894  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.ByteVector.putUTF8(Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/ByteVector;  Entries : 1  Average : 0.09  Min : 0.09009009009009009  Max : 0.09009009009009009  Diff : 0.00
+Method : sun.invoke.util.BytecodeDescriptor.unparse(Ljava/lang/Class;)Ljava/lang/String;  Entries : 1  Average : 0.03  Min : 0.027019724398811132  Max : 0.027019724398811132  Diff : 0.00
+Method : sun.nio.cs.StreamEncoder.writeBytes()V  Entries : 1  Average : 0.03  Min : 0.027019724398811132  Max : 0.027019724398811132  Diff : 0.00
+Method : sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;  Entries : 1  Average : 0.09  Min : 0.08880994671403197  Max : 0.08880994671403197  Diff : 0.00
+Uncertainty : 0.44
+
+
+----------JavaFlightRecorder_NBody.jfr----------
+
+Method :                                           Entries : 10  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : NBody.innerBenchmarkLoop(I)Z              Entries : 9  Average : 0.38  Min : 0.15698587127158556  Max : 0.794912559618442  Diff : 0.64
+Method : Run.printResult(J)V                       Entries : 1  Average : 0.16  Min : 0.16  Max : 0.16  Diff : 0.00
+Method : java.lang.Long.equals(Ljava/lang/Object;)Z  Entries : 1  Average : 0.16  Min : 0.1564945226917058  Max : 0.1564945226917058  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.isStaticallyInvocable(Ljava/lang/invoke/MemberName;)Z  Entries : 1  Average : 0.05  Min : 0.0482392667631452  Max : 0.0482392667631452  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.isStaticallyNameable(Ljava/lang/Class;)Z  Entries : 1  Average : 0.05  Min : 0.0475511174512601  Max : 0.0475511174512601  Diff : 0.00
+Method : jdk.jfr.internal.RequestEngine.run_requests(Ljava/util/Collection;)J  Entries : 1  Average : 0.16  Min : 0.1557632398753894  Max : 0.1557632398753894  Diff : 0.00
+Method : nbody.NBodySystem.advance(D)V             Entries : 10  Average : 99.57  Min : 99.04  Max : 99.84301412872841  Diff : 0.80
+Method : nbody.NBodySystem.energy()D               Entries : 2  Average : 0.16  Min : 0.1564945226917058  Max : 0.16  Diff : 0.00
+Uncertainty : 1.44
+
+
+----------JavaFlightRecorder_Permute.jfr----------
+
+Method :                                           Entries : 7  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Benchmark.innerBenchmarkLoop(I)Z  Entries : 4  Average : 0.18  Min : 0.12091898428053205  Max : 0.36363636363636365  Diff : 0.24
+Method : Harness.processArguments([Ljava/lang/String;)LRun;  Entries : 1  Average : 0.12  Min : 0.12121212121212122  Max : 0.12121212121212122  Diff : 0.00
+Method : Permute.benchmark()Ljava/lang/Object;  Entries : 6  Average : 0.20  Min : 0.07215007215007214  Max : 0.4728132387706856  Diff : 0.40
+Method : Permute.permute(I)V                       Entries : 10  Average : 72.94  Min : 70.2439024390244  Max : 76.05804111245466  Diff : 5.81
+Method : Permute.swap(II)V                         Entries : 10  Average : 26.77  Min : 23.700120918984283  Max : 29.634146341463413  Diff : 5.93
+Method : java.io.BufferedWriter.write(Ljava/lang/String;II)V  Entries : 1  Average : 0.12  Min : 0.12121212121212122  Max : 0.12121212121212122  Diff : 0.00
+Method : java.io.FileOutputStream.write([BII)V  Entries : 1  Average : 0.04  Min : 0.03607503607503607  Max : 0.03607503607503607  Diff : 0.00
+Method : java.io.PrintStream.writeln(Ljava/lang/String;)V  Entries : 1  Average : 0.12  Min : 0.12091898428053205  Max : 0.12091898428053205  Diff : 0.00
+Method : java.lang.invoke.DirectMethodHandle.shouldBeInitialized(Ljava/lang/invoke/MemberName;)Z  Entries : 1  Average : 0.12  Min : 0.12195121951219512  Max : 0.12195121951219512  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V  Entries : 1  Average : 0.12  Min : 0.12345679012345678  Max : 0.12345679012345678  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V  Entries : 1  Average : 0.04  Min : 0.03661662394727206  Max : 0.03661662394727206  Diff : 0.00
+Method : java.lang.invoke.MethodTypeForm.<init>(Ljava/lang/invoke/MethodType;)V  Entries : 1  Average : 0.12  Min : 0.1182033096926714  Max : 0.1182033096926714  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.SymbolTable.addTypeInternal(Ljdk/internal/org/objectweb/asm/SymbolTable$Entry;)I  Entries : 1  Average : 0.04  Min : 0.03607503607503607  Max : 0.03607503607503607  Diff : 0.00
+Uncertainty : 12.379999999999999
+
+
+----------JavaFlightRecorder_Queens.jfr----------
+
+Method : Queens.benchmark()Ljava/lang/Object;  Entries : 1  Average : 0.16  Min : 0.1620745542949757  Max : 0.1620745542949757  Diff : 0.00
+Method : Queens.getRowColumn(II)Z                  Entries : 10  Average : 12.33  Min : 8.588957055214724  Max : 14.845024469820554  Diff : 6.26
+Method : Queens.placeQueen(I)Z                     Entries : 10  Average : 85.76  Min : 83.16831683168317  Max : 88.95705521472392  Diff : 5.79
+Method : Queens.queens()Z                          Entries : 9  Average : 0.41  Min : 0.18726591760299627  Max : 0.6600660066006601  Diff : 0.47
+Method : java.lang.invoke.InvokerBytecodeGenerator.isStaticallyInvocable(Ljava/lang/invoke/MemberName;)Z  Entries : 1  Average : 0.16  Min : 0.1631321370309951  Max : 0.1631321370309951  Diff : 0.00
+Method : java.util.Arrays.fill([II)V               Entries : 9  Average : 0.37  Min : 0.1620745542949757  Max : 0.8250825082508251  Diff : 0.66
+Method : java.util.Arrays.fill([ZZ)V               Entries : 10  Average : 1.06  Min : 0.1631321370309951  Max : 2.1172638436482085  Diff : 1.95
+Uncertainty : 15.13
+
+
+----------JavaFlightRecorder_Richards.jfr----------
+
+Method : Richards.benchmark()Ljava/lang/Object;  Entries : 10  Average : 5.52  Min : 4.746167908873576  Max : 6.380954268836601  Diff : 1.63
+Method : richards.HandlerTaskDataRecord.workInAdd(Lrichards/Packet;)V  Entries : 1  Average : 15.36  Min : 15.36352130502039  Max : 15.36352130502039  Diff : 0.00
+Method : richards.RBObject.append(Lrichards/Packet;Lrichards/Packet;)Lrichards/Packet;  Entries : 10  Average : 24.46  Min : 9.752496132752073  Max : 26.77056904675607  Diff : 17.02
+Method : richards.Scheduler.findTask(I)Lrichards/TaskControlBlock;  Entries : 9  Average : 3.63  Min : 3.395174891838381  Max : 3.863718738673432  Diff : 0.47
+Method : richards.Scheduler.schedule()V  Entries : 10  Average : 58.81  Min : 57.20913374411018  Max : 60.28687948249191  Diff : 3.08
+Method : richards.TaskControlBlock.runTask()Lrichards/TaskControlBlock;  Entries : 10  Average : 4.67  Min : 4.229137199434229  Max : 5.342515404131932  Diff : 1.11
+Uncertainty : 23.309999999999995
+
+
+----------JavaFlightRecorder_Sieve.jfr----------
+
+Method :                                           Entries : 3  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Benchmark.innerBenchmarkLoop(I)Z  Entries : 2  Average : 0.21  Min : 0.09541984732824428  Max : 0.31545741324921134  Diff : 0.22
+Method : Run.getSuiteFromName(Ljava/lang/String;)Ljava/util/function/Supplier;  Entries : 1  Average : 0.10  Min : 0.09587727708533078  Max : 0.09587727708533078  Diff : 0.00
+Method : Run.printResult(J)V                       Entries : 1  Average : 0.28  Min : 0.28328611898017  Max : 0.28328611898017  Diff : 0.00
+Method : Sieve.benchmark()Ljava/lang/Object;  Entries : 10  Average : 0.86  Min : 0.3115264797507788  Max : 2.20125786163522  Diff : 1.89
+Method : Sieve.sieve([ZI)I                         Entries : 10  Average : 98.45  Min : 97.48427672955974  Max : 99.42748091603055  Diff : 1.94
+Method : java.io.FileOutputStream.write([BII)V  Entries : 1  Average : 0.10  Min : 0.09940357852882704  Max : 0.09940357852882704  Diff : 0.00
+Method : java.lang.Integer.valueOf(I)Ljava/lang/Integer;  Entries : 2  Average : 0.30  Min : 0.28328611898017  Max : 0.31545741324921134  Diff : 0.03
+Method : java.lang.Long.getChars(JI[B)I  Entries : 1  Average : 0.32  Min : 0.31545741324921134  Max : 0.31545741324921134  Diff : 0.00
+Method : java.lang.StringConcatHelper.mix(JLjava/lang/String;)J  Entries : 1  Average : 0.10  Min : 0.09940357852882704  Max : 0.09940357852882704  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V  Entries : 1  Average : 0.31  Min : 0.3115264797507788  Max : 0.3115264797507788  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.isStaticallyInvocable(Ljava/lang/invoke/MemberName;)Z  Entries : 1  Average : 0.32  Min : 0.31545741324921134  Max : 0.31545741324921134  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.lookupPregenerated(Ljava/lang/invoke/LambdaForm;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MemberName;  Entries : 1  Average : 0.28  Min : 0.28328611898017  Max : 0.28328611898017  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V  Entries : 2  Average : 0.32  Min : 0.31545741324921134  Max : 0.3225806451612903  Diff : 0.01
+Method : java.lang.invoke.MethodTypeForm.<init>(Ljava/lang/invoke/MethodType;)V  Entries : 1  Average : 0.31  Min : 0.30864197530864196  Max : 0.30864197530864196  Diff : 0.00
+Method : java.nio.ByteBuffer.flip()Ljava/nio/ByteBuffer;  Entries : 1  Average : 0.31  Min : 0.31446540880503143  Max : 0.31446540880503143  Diff : 0.00
+Method : java.nio.CharBuffer.hasArray()Z  Entries : 1  Average : 0.31  Min : 0.3115264797507788  Max : 0.3115264797507788  Diff : 0.00
+Method : java.util.ArrayList.get(I)Ljava/lang/Object;  Entries : 1  Average : 0.10  Min : 0.09940357852882704  Max : 0.09940357852882704  Diff : 0.00
+Method : java.util.Arrays.fill([ZZ)V               Entries : 5  Average : 0.27  Min : 0.09587727708533078  Max : 0.3225806451612903  Diff : 0.23
+Method : jdk.internal.org.objectweb.asm.MethodWriter.putMethodInfo(Ljdk/internal/org/objectweb/asm/ByteVector;)V  Entries : 1  Average : 0.32  Min : 0.3225806451612903  Max : 0.3225806451612903  Diff : 0.00
+Method : sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;  Entries : 1  Average : 0.10  Min : 0.09587727708533078  Max : 0.09587727708533078  Diff : 0.00
+Uncertainty : 4.32
+
+
+----------JavaFlightRecorder_Storage.jfr----------
+
+Method :                                           Entries : 5  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Benchmark.innerBenchmarkLoop(I)Z  Entries : 6  Average : 0.06  Min : 0.05413208228076507  Max : 0.06253908692933083  Diff : 0.01
+Method : Run.measure(LBenchmark;)V                 Entries : 1  Average : 0.02  Min : 0.01805706031058144  Max : 0.01805706031058144  Diff : 0.00
+Method : Storage.benchmark()Ljava/lang/Object;  Entries : 5  Average : 0.04  Min : 0.01804402742692169  Max : 0.061957868649318466  Diff : 0.04
+Method : Storage.buildTreeDepth(ILsom/Random;)Ljava/lang/Object;  Entries : 10  Average : 93.25  Min : 86.91131498470948  Max : 99.94008388256441  Diff : 13.03
+Method : Storage.lambda$buildTreeDepth$0(ILsom/Random;I)Ljava/lang/Object;  Entries : 6  Average : 11.04  Min : 3.7170048482671936  Max : 12.905198776758409  Diff : 9.19
+Method : java.lang.String.substring(II)Ljava/lang/String;  Entries : 1  Average : 0.06  Min : 0.06116207951070336  Max : 0.06116207951070336  Diff : 0.00
+Method : java.lang.Thread.run()V                   Entries : 1  Average : 0.02  Min : 0.01795654516071108  Max : 0.01795654516071108  Diff : 0.00
+Method : java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;JLjava/lang/Object;)J  Entries : 1  Average : 0.02  Min : 0.01804402742692169  Max : 0.01804402742692169  Diff : 0.00
+Method : java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V  Entries : 1  Average : 0.06  Min : 0.060753341433778855  Max : 0.060753341433778855  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$DMH+0x0000000800c0d400.444920847.newInvokeSpecial(Ljava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;)Ljava/lang/Object;  Entries : 1  Average : 0.06  Min : 0.060790273556231005  Max : 0.060790273556231005  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$MH+0x0000000800c10000.2024918163.invoke(Ljava/lang/Object;Ljava/lang/Object;J)Ljava/lang/Object;  Entries : 1  Average : 0.12  Min : 0.12150668286755771  Max : 0.12150668286755771  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$Name.<init>(Ljava/lang/invoke/LambdaForm$NamedFunction;[Ljava/lang/Object;)V  Entries : 1  Average : 0.06  Min : 0.061957868649318466  Max : 0.061957868649318466  Diff : 0.00
+Method : java.lang.invoke.LambdaForm$NamedFunction.methodType()Ljava/lang/invoke/MethodType;  Entries : 1  Average : 0.06  Min : 0.06116207951070336  Max : 0.06116207951070336  Diff : 0.00
+Method : java.nio.HeapCharBuffer.<init>([CIILjdk/internal/access/foreign/MemorySegmentProxy;)V  Entries : 1  Average : 0.06  Min : 0.06253908692933083  Max : 0.06253908692933083  Diff : 0.00
+Method : java.util.zip.ZipFile$Source.getEntryPos(Ljava/lang/String;Z)I  Entries : 1  Average : 0.02  Min : 0.01804402742692169  Max : 0.01804402742692169  Diff : 0.00
+Method : jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(Ljava/lang/reflect/Constructor;)Ljdk/internal/reflect/ConstructorAccessor;  Entries : 1  Average : 0.06  Min : 0.060753341433778855  Max : 0.060753341433778855  Diff : 0.00
+Method : sun.nio.ch.FileDispatcherImpl.read(Ljava/io/FileDescriptor;JI)I  Entries : 1  Average : 0.02  Min : 0.01795654516071108  Max : 0.01795654516071108  Diff : 0.00
+Method : sun.nio.cs.StreamEncoder.flushBuffer()V  Entries : 1  Average : 0.06  Min : 0.05991611743559017  Max : 0.05991611743559017  Diff : 0.00
+Uncertainty : 22.27
+
+
+----------Json.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 10  Average : 10.34  Min : 10.1  Max : 10.7  Diff : 0.60
+Method : java.lang.String::equals                  Entries : 10  Average : 21.46  Min : 20.1  Max : 22.5  Diff : 2.40
+Method : java.util.Arrays::copyOfRange             Entries : 10  Average : 8.05  Min : 6.9  Max : 9.3  Diff : 2.40
+Method : json.JsonPureStringParser::read  Entries : 10  Average : 14.87  Min : 12.8  Max : 16.7  Diff : 3.90
+Method : json.JsonPureStringParser::readStringInternal  Entries : 10  Average : 9.38  Min : 9.0  Max : 9.7  Diff : 0.70
+Uncertainty : 10.0
+
+
+----------List.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 10  Average : 2.75  Min : 2.5  Max : 3.4  Diff : 0.90
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 4.38  Min : 3.3  Max : 6.9  Diff : 3.60
+Method : List$Element::getNext                     Entries : 10  Average : 9.04  Min : 8.2  Max : 9.6  Diff : 1.40
+Method : List::isShorterThan                       Entries : 10  Average : 80.14  Min : 77.5  Max : 81.1  Diff : 3.60
+Method : List::tail                                Entries : 10  Average : 2.03  Min : 1.7  Max : 2.6  Diff : 0.90
+Uncertainty : 10.4
+
+
+----------Mandelbrot.hpl----------
+
+Method : AGCT::Not walkable Java[ERR=-6]  Entries : 6  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 6  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 1.49  Min : 1.2  Max : 1.7  Diff : 0.50
+Method : Mandelbrot::mandelbrot                    Entries : 10  Average : 98.26  Min : 97.9  Max : 98.6  Diff : 0.70
+Method : Run::runBenchmark                         Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.io.BufferedOutputStream::flushBuffer  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.io.FileOutputStream::writeBytes  Entries : 5  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.ClassLoader::defineClass0  Entries : 3  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.String::substring               Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.System::getSecurityManager  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.invoke.BoundMethodHandle$SpeciesData::deriveFieldTypes  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.invoke.DirectMethodHandle::shouldBeInitialized  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : java.lang.invoke.MemberName::getMethodType  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.ByteVector::putUTF8  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.Frame::execute  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : jdk.internal.org.objectweb.asm.MethodWriter::computeMethodInfoSize  Entries : 1  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Uncertainty : 1.2
+
+
+----------NBody.hpl----------
+
+Method : nbody.Body::getZ                          Entries : 10  Average : 8.04  Min : 7.2  Max : 8.7  Diff : 1.50
+Method : nbody.Body::setVX                         Entries : 10  Average : 28.67  Min : 27.6  Max : 29.8  Diff : 2.20
+Method : nbody.Body::setVY                         Entries : 10  Average : 5.78  Min : 5.4  Max : 6.5  Diff : 1.10
+Method : nbody.Body::setVZ                         Entries : 10  Average : 8.48  Min : 7.2  Max : 9.0  Diff : 1.80
+Method : nbody.NBodySystem::advance                Entries : 10  Average : 40.36  Min : 39.6  Max : 41.7  Diff : 2.10
+Uncertainty : 8.700000000000001
+
+
+----------Permute.hpl----------
+
+Method : AGCT::Not walkable Java[ERR=-6]  Entries : 2  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 10  Average : 5.98  Min : 5.4  Max : 6.4  Diff : 1.00
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 2.49  Min : 1.8  Max : 3.4  Diff : 1.60
+Method : Benchmark::innerBenchmarkLoop             Entries : 3  Average : 0.00  Min : 0.0  Max : 0.0  Diff : 0.00
+Method : Permute::benchmark                        Entries : 5  Average : 0.04  Min : 0.0  Max : 0.1  Diff : 0.10
+Method : Permute::permute                          Entries : 10  Average : 51.02  Min : 50.5  Max : 52.2  Diff : 1.70
+Method : Permute::swap                             Entries : 10  Average : 40.05  Min : 39.4  Max : 40.7  Diff : 1.30
+Uncertainty : 5.7
+
+
+----------Queens.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 9  Average : 0.97  Min : 0.7  Max : 1.2  Diff : 0.50
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 3.24  Min : 1.7  Max : 4.6  Diff : 2.90
+Method : Queens::getRowColumn                      Entries : 10  Average : 58.97  Min : 54.9  Max : 67.4  Diff : 12.50
+Method : Queens::placeQueen                        Entries : 10  Average : 11.82  Min : 8.4  Max : 13.7  Diff : 5.30
+Method : Queens::queens                            Entries : 1  Average : 0.70  Min : 0.7  Max : 0.7  Diff : 0.00
+Method : Queens::setRowColumn                      Entries : 10  Average : 23.13  Min : 18.1  Max : 26.0  Diff : 7.90
+Uncertainty : 29.1
+
+
+----------Richards.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 10  Average : 45.54  Min : 42.4  Max : 47.3  Diff : 4.90
+Method : Richards::benchmark                       Entries : 10  Average : 26.52  Min : 23.7  Max : 32.5  Diff : 8.80
+Method : richards.HandlerTaskDataRecord::workInAdd  Entries : 6  Average : 2.28  Min : 2.1  Max : 2.8  Diff : 0.70
+Method : richards.Packet::<init>                   Entries : 3  Average : 2.00  Min : 1.9  Max : 2.1  Diff : 0.20
+Method : richards.Packet::setLink                  Entries : 5  Average : 2.28  Min : 2.0  Max : 2.6  Diff : 0.60
+Method : richards.RBObject::append                 Entries : 10  Average : 2.90  Min : 2.6  Max : 3.5  Diff : 0.90
+Method : richards.Scheduler::createTask  Entries : 3  Average : 2.20  Min : 2.0  Max : 2.4  Diff : 0.40
+Method : richards.TaskControlBlock::addInputAndCheckPriority  Entries : 3  Average : 2.23  Min : 2.2  Max : 2.3  Diff : 0.10
+Uncertainty : 16.599999999999998
+
+
+----------Sieve.hpl----------
+
+Method : AGCT::Not walkable Java[ERR=-6]  Entries : 2  Average : 0.10  Min : 0.1  Max : 0.1  Diff : 0.00
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 2  Average : 0.10  Min : 0.1  Max : 0.1  Diff : 0.00
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 4.04  Min : 2.2  Max : 5.5  Diff : 3.30
+Method : Benchmark::innerBenchmarkLoop             Entries : 2  Average : 0.10  Min : 0.1  Max : 0.1  Diff : 0.00
+Method : Sieve::benchmark                          Entries : 10  Average : 10.67  Min : 5.2  Max : 13.3  Diff : 8.10
+Method : Sieve::sieve                              Entries : 10  Average : 79.40  Min : 75.0  Max : 87.3  Diff : 12.30
+Method : java.io.FileOutputStream::writeBytes  Entries : 2  Average : 0.10  Min : 0.1  Max : 0.1  Diff : 0.00
+Method : java.lang.ClassLoader::defineClass0  Entries : 2  Average : 0.10  Min : 0.1  Max : 0.1  Diff : 0.00
+Method : java.util.Arrays::fill                    Entries : 10  Average : 4.94  Min : 2.9  Max : 7.6  Diff : 4.70
+Uncertainty : 28.4
+
+
+----------Storage.hpl----------
+
+Method : AGCT::Unknown Java[ERR=-5]                Entries : 1  Average : 11.60  Min : 11.6  Max : 11.6  Diff : 0.00
+Method : AGCT::Unknown not Java[ERR=-3]  Entries : 10  Average : 4.60  Min : 3.1  Max : 6.4  Diff : 3.30
+Method : Storage::buildTreeDepth                   Entries : 10  Average : 39.40  Min : 31.6  Max : 41.2  Diff : 9.60
+Method : Storage::lambda$buildTreeDepth$0  Entries : 10  Average : 3.86  Min : 2.7  Max : 8.6  Diff : 5.90
+Method : java.util.Arrays::setAll                  Entries : 10  Average : 34.71  Min : 33.5  Max : 40.4  Diff : 6.90
+Method : som.Random::next                          Entries : 9  Average : 12.70  Min : 11.6  Max : 14.2  Diff : 2.60
+Uncertainty : 28.299999999999997
+
+
+----------rebench_test_Async_Bounce.txt----------
+
+Method : Bounce$Ball.<init>                        Entries : 10  Average : 1.72  Min : 1.37  Max : 2.27  Diff : 0.90
+Method : Bounce$Ball.bounce                        Entries : 10  Average : 72.08  Min : 67.0  Max : 83.62  Diff : 16.62
+Method : Bounce.benchmark                          Entries : 10  Average : 20.75  Min : 11.07  Max : 25.0  Diff : 13.93
+Method : java.util.Arrays.setAll                   Entries : 10  Average : 0.64  Min : 0.5  Max : 0.95  Diff : 0.45
+Method : som.Random.next                           Entries : 10  Average : 0.84  Min : 0.64  Max : 1.16  Diff : 0.52
+Uncertainty : 32.42
+
+
+----------rebench_test_Async_CD.txt----------
+
+Method : cd.CollisionDetector.isInVoxel  Entries : 10  Average : 13.96  Min : 13.36  Max : 14.6  Diff : 1.24
+Method : cd.CollisionDetector.recurse              Entries : 10  Average : 10.68  Min : 9.83  Max : 12.04  Diff : 2.21
+Method : cd.RedBlackTree.findNode                  Entries : 10  Average : 7.78  Min : 7.09  Max : 8.52  Diff : 1.43
+Method : cd.RedBlackTree.put                       Entries : 8  Average : 7.04  Min : 6.78  Max : 7.5  Diff : 0.72
+Method : cd.RedBlackTree.treeInsert                Entries : 10  Average : 20.47  Min : 19.45  Max : 21.82  Diff : 2.37
+Method : cd.RedBlackTree.treeMinimum               Entries : 2  Average : 6.92  Min : 6.83  Max : 7.0  Diff : 0.17
+Uncertainty : 8.14
+
+
+----------rebench_test_Async_DeltaBlue.txt----------
+
+Method : IndexSetIterator::advance_and_next()  Entries : 4  Average : 1.39  Min : 1.35  Max : 1.42  Diff : 0.07
+Method : deltablue.AbstractConstraint.destroyConstraint  Entries : 2  Average : 3.64  Min : 1.37  Max : 5.91  Diff : 4.54
+Method : deltablue.AbstractConstraint.satisfy  Entries : 1  Average : 2.11  Min : 2.11  Max : 2.11  Diff : 0.00
+Method : deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply  Entries : 7  Average : 3.27  Min : 3.11  Max : 3.64  Diff : 0.53
+Method : deltablue.Planner$$Lambda$5.0x0000000800c0cbb0.apply  Entries : 1  Average : 2.44  Min : 2.44  Max : 2.44  Diff : 0.00
+Method : deltablue.UnaryConstraint.<init>  Entries : 2  Average : 4.89  Min : 4.87  Max : 4.92  Diff : 0.05
+Method : deltablue.Variable.getValue               Entries : 3  Average : 1.38  Min : 1.3  Max : 1.48  Diff : 0.18
+Method : itable                                    Entries : 10  Average : 4.82  Min : 2.96  Max : 6.3  Diff : 3.34
+Method : java.lang.invoke.Invokers$Holder.linkToTargetMethod  Entries : 2  Average : 3.31  Min : 1.43  Max : 5.2  Diff : 3.77
+Method : som.Dictionary.at                         Entries : 1  Average : 3.61  Min : 3.61  Max : 3.61  Diff : 0.00
+Method : som.Vector.append                         Entries : 7  Average : 3.40  Min : 1.48  Max : 10.49  Diff : 9.01
+Method : som.Vector.forEach                        Entries : 10  Average : 4.58  Min : 3.27  Max : 6.5  Diff : 3.23
+Uncertainty : 24.720000000000002
+
+
+----------rebench_test_Async_Havlak.txt----------
+
+Method : G1ParScanThreadState::trim_queue_to_threshold(unsigned  Entries : 10  Average : 8.79  Min : 7.94  Max : 9.52  Diff : 1.58
+Method : havlak.HavlakLoopFinder.doDFS             Entries : 7  Average : 5.80  Min : 5.19  Max : 6.38  Diff : 1.19
+Method : havlak.HavlakLoopFinder.findLoops  Entries : 3  Average : 5.70  Min : 5.61  Max : 5.8  Diff : 0.19
+Method : havlak.HavlakLoopFinder.lambda$initAllNodes$0  Entries : 10  Average : 11.92  Min : 11.14  Max : 12.4  Diff : 1.26
+Method : havlak.HavlakLoopFinder.lambda$processEdges$1  Entries : 10  Average : 5.97  Min : 5.64  Max : 6.13  Diff : 0.49
+Method : som.IdentitySet.lambda$contains$0  Entries : 10  Average : 32.01  Min : 31.3  Max : 32.45  Diff : 1.15
+Uncertainty : 5.859999999999999
+
+
+----------rebench_test_Async_Json.txt----------
+
+Method : java.lang.String.<init>                   Entries : 2  Average : 6.90  Min : 6.89  Max : 6.92  Diff : 0.03
+Method : java.lang.String.equals                   Entries : 10  Average : 22.33  Min : 20.77  Max : 23.03  Diff : 2.26
+Method : java.util.Arrays.copyOfRange              Entries : 10  Average : 8.12  Min : 7.28  Max : 9.08  Diff : 1.80
+Method : jbyte_disjoint_arraycopy                  Entries : 10  Average : 7.66  Min : 7.2  Max : 7.93  Diff : 0.73
+Method : json.JsonPureStringParser.read  Entries : 10  Average : 15.40  Min : 13.88  Max : 16.86  Diff : 2.98
+Method : json.JsonPureStringParser.readStringInternal  Entries : 8  Average : 7.64  Min : 6.76  Max : 9.12  Diff : 2.36
+Uncertainty : 10.16
+
+
+----------rebench_test_Async_List.txt----------
+
+Method : List$Element.<init>                       Entries : 10  Average : 0.27  Min : 0.23  Max : 0.31  Diff : 0.08
+Method : List$Element.getNext                      Entries : 10  Average : 9.11  Min : 8.98  Max : 9.34  Diff : 0.36
+Method : List.isShorterThan                        Entries : 10  Average : 81.28  Min : 79.91  Max : 83.23  Diff : 3.32
+Method : List.makeList                             Entries : 10  Average : 1.16  Min : 1.02  Max : 1.24  Diff : 0.22
+Method : List.tail                                 Entries : 10  Average : 4.45  Min : 4.3  Max : 4.6  Diff : 0.30
+Uncertainty : 4.28
+
+
+----------rebench_test_Async_Mandelbrot.txt----------
+
+Method : G1ServiceThread::sleep_before_next_cycle()  Entries : 1  Average : 0.01  Min : 0.01  Max : 0.01  Diff : 0.00
+Method : InstanceKlass::find_method_index(Array<Method*>  Entries : 7  Average : 0.01  Min : 0.01  Max : 0.01  Diff : 0.00
+Method : Interpreter                               Entries : 10  Average : 0.02  Min : 0.01  Max : 0.03  Diff : 0.02
+Method : Mandelbrot.mandelbrot                     Entries : 10  Average : 98.87  Min : 98.54  Max : 99.49  Diff : 0.95
+Method : [vdso]                                    Entries : 4  Average : 0.01  Min : 0.0  Max : 0.01  Diff : 0.01
+Method : __tls_get_addr                            Entries : 10  Average : 0.02  Min : 0.01  Max : 0.02  Diff : 0.01
+Method : resource_allocate_bytes(unsigned  Entries : 8  Average : 0.01  Min : 0.0  Max : 0.01  Diff : 0.01
+Uncertainty : 1.0
+
+
+----------rebench_test_Async_NBody.txt----------
+
+Method : nbody.Body.getZ                           Entries : 10  Average : 7.82  Min : 7.69  Max : 8.06  Diff : 0.37
+Method : nbody.Body.setVX                          Entries : 10  Average : 27.95  Min : 27.53  Max : 28.75  Diff : 1.22
+Method : nbody.Body.setVY                          Entries : 10  Average : 5.66  Min : 5.27  Max : 6.15  Diff : 0.88
+Method : nbody.Body.setVZ                          Entries : 10  Average : 8.79  Min : 8.46  Max : 9.05  Diff : 0.59
+Method : nbody.NBodySystem.advance                 Entries : 10  Average : 41.88  Min : 40.14  Max : 43.08  Diff : 2.94
+Uncertainty : 6.0
+
+
+----------rebench_test_Async_Permute.txt----------
+
+Method : Benchmark.innerBenchmarkLoop              Entries : 10  Average : 0.06  Min : 0.02  Max : 0.08  Diff : 0.06
+Method : Interpreter                               Entries : 10  Average : 0.03  Min : 0.01  Max : 0.04  Diff : 0.03
+Method : Permute.benchmark                         Entries : 10  Average : 0.07  Min : 0.04  Max : 0.09  Diff : 0.05
+Method : Permute.permute                           Entries : 10  Average : 57.57  Min : 57.12  Max : 58.23  Diff : 1.11
+Method : Permute.swap                              Entries : 10  Average : 40.66  Min : 40.4  Max : 41.03  Diff : 0.63
+Uncertainty : 1.88
+
+
+----------rebench_test_Async_Queens.txt----------
+
+Method : Queens.getRowColumn                       Entries : 10  Average : 62.11  Min : 56.19  Max : 69.06  Diff : 12.87
+Method : Queens.placeQueen                         Entries : 10  Average : 12.17  Min : 8.9  Max : 15.41  Diff : 6.51
+Method : Queens.queens                             Entries : 10  Average : 0.61  Min : 0.56  Max : 0.7  Diff : 0.14
+Method : Queens.setRowColumn                       Entries : 10  Average : 21.40  Min : 17.18  Max : 24.11  Diff : 6.93
+Method : java.util.Arrays.fill                     Entries : 10  Average : 1.04  Min : 0.93  Max : 1.21  Diff : 0.28
+Uncertainty : 26.73
+
+
+----------rebench_test_Async_Richards.txt----------
+
+Method : Richards.benchmark                        Entries : 10  Average : 25.72  Min : 23.65  Max : 28.8  Diff : 5.15
+Method : itable                                    Entries : 10  Average : 38.34  Min : 37.68  Max : 38.8  Diff : 1.12
+Method : richards.HandlerTaskDataRecord.workInAdd  Entries : 2  Average : 4.11  Min : 3.98  Max : 4.23  Diff : 0.25
+Method : richards.RBObject.append                  Entries : 8  Average : 2.89  Min : 2.73  Max : 3.31  Diff : 0.58
+Method : richards.Scheduler$$Lambda$4.0x0000000800c06a28.apply  Entries : 10  Average : 3.45  Min : 3.36  Max : 3.55  Diff : 0.19
+Method : richards.Scheduler$$Lambda$5.0x0000000800c06c50.apply  Entries : 10  Average : 3.96  Min : 3.77  Max : 4.33  Diff : 0.56
+Uncertainty : 7.850000000000001
+
+
+----------rebench_test_Async_Sieve.txt----------
+
+Method : Benchmark.innerBenchmarkLoop              Entries : 8  Average : 0.10  Min : 0.05  Max : 0.13  Diff : 0.08
+Method : G1ParScanThreadState::trim_queue_to_threshold(unsigned  Entries : 2  Average : 0.06  Min : 0.06  Max : 0.06  Diff : 0.00
+Method : Interpreter                               Entries : 7  Average : 0.10  Min : 0.09  Max : 0.1  Diff : 0.01
+Method : Sieve.benchmark                           Entries : 10  Average : 11.11  Min : 4.96  Max : 14.17  Diff : 9.21
+Method : Sieve.sieve                               Entries : 10  Average : 77.41  Min : 68.68  Max : 85.99  Diff : 17.31
+Method : __memset_avx2_unaligned_erms              Entries : 3  Average : 0.05  Min : 0.04  Max : 0.05  Diff : 0.01
+Method : java.util.Arrays.fill                     Entries : 10  Average : 6.22  Min : 3.71  Max : 11.6  Diff : 7.89
+Uncertainty : 34.51
+
+
+----------rebench_test_Async_Storage.txt----------
+
+Method : Storage.buildTreeDepth                    Entries : 10  Average : 43.62  Min : 43.09  Max : 44.42  Diff : 1.33
+Method : Storage.lambda$buildTreeDepth$0  Entries : 10  Average : 3.90  Min : 3.47  Max : 4.17  Diff : 0.70
+Method : java.lang.invoke.LambdaForm$DMH.0x0000000800c06800.newInvokeSpecial  Entries : 10  Average : 1.16  Min : 1.05  Max : 1.31  Diff : 0.26
+Method : java.util.Arrays.setAll                   Entries : 10  Average : 35.34  Min : 34.74  Max : 35.74  Diff : 1.00
+Method : som.Random.next                           Entries : 10  Average : 11.19  Min : 10.36  Max : 12.52  Diff : 2.16
+Uncertainty : 5.45
+
+
+----------- Highlights -----------
+ all reports that have difference over 5%
+
+ File : DeltaBlue.hpl      Method : AGCT::Unknown not Java[ERR=-3]
+        Entries : 10
+        Average : 40.30
+        Min : 25.6
+        Max : 54.1
+        Diff : 28.50
+
+ File : DeltaBlue.hpl      Method : som.Vector::forEach
+        Entries : 10
+        Average : 7.68
+        Min : 4.4
+        Max : 23.2
+        Diff : 18.80
+
+ File : JavaFlightRecorder_DeltaBlue.jfr      Method : deltablue.AbstractConstraint.satisfy(ILdeltablue/Planner;)Ldeltablue/AbstractConstraint;
+        Entries : 6
+        Average : 9.58
+        Min : 6.666666666666666
+        Max : 12.987012987012987
+        Diff : 6.32
+
+ File : JavaFlightRecorder_DeltaBlue.jfr      Method : deltablue.Plan.lambda$execute$0(Ldeltablue/AbstractConstraint;)V
+        Entries : 7
+        Average : 12.19
+        Min : 6.4935064935064934
+        Max : 20.689655172413794
+        Diff : 14.20
+
+ File : JavaFlightRecorder_DeltaBlue.jfr      Method : deltablue.Planner.addPropagate(Ldeltablue/AbstractConstraint;I)Z
+        Entries : 8
+        Average : 10.70
+        Min : 6.4935064935064934
+        Max : 20.689655172413794
+        Diff : 14.20
+
+ File : JavaFlightRecorder_DeltaBlue.jfr      Method : deltablue.Planner.lambda$addConstraintsConsumingTo$2(Ldeltablue/AbstractConstraint;Lsom/Vector;Ldeltablue/AbstractConstraint;)V
+        Entries : 9
+        Average : 7.19
+        Min : 3.896103896103896
+        Max : 10.204081632653061
+        Diff : 6.31
+
+ File : JavaFlightRecorder_DeltaBlue.jfr      Method : som.Vector.forEach(Lsom/ForEachInterface;)V
+        Entries : 10
+        Average : 35.64
+        Min : 10.344827586206897
+        Max : 49.35064935064935
+        Diff : 39.01
+
+ File : JavaFlightRecorder_Havlak.jfr      Method : havlak.HavlakLoopFinder.findLoops()V
+        Entries : 7
+        Average : 7.43
+        Min : 3.1896915927334177
+        Max : 10.971986417657046
+        Diff : 7.78
+
+ File : JavaFlightRecorder_Havlak.jfr      Method : som.Vector.forEach(Lsom/ForEachInterface;)V
+        Entries : 10
+        Average : 27.90
+        Min : 22.453310696095077
+        Max : 31.631441462835433
+        Diff : 9.18
+
+ File : JavaFlightRecorder_Json.jfr      Method : java.lang.StringLatin1.newString([BII)Ljava/lang/String;
+        Entries : 10
+        Average : 16.29
+        Min : 8.604805774527495
+        Max : 25.756856790357787
+        Diff : 17.15
+
+ File : JavaFlightRecorder_Json.jfr      Method : json.JsonPureStringParser.readArray()Ljson/JsonArray;
+        Entries : 10
+        Average : 17.62
+        Min : 13.735813286193732
+        Max : 22.94312796208531
+        Diff : 9.21
+
+ File : JavaFlightRecorder_Json.jfr      Method : json.JsonPureStringParser.readExponent()Z
+        Entries : 6
+        Average : 8.07
+        Min : 6.855638793277992
+        Max : 12.582942638280429
+        Diff : 5.73
+
+ File : JavaFlightRecorder_Json.jfr      Method : json.JsonPureStringParser.readStringInternal()Ljava/lang/String;
+        Entries : 10
+        Average : 30.75
+        Min : 21.680744044794533
+        Max : 39.48618102383892
+        Diff : 17.81
+
+ File : JavaFlightRecorder_Permute.jfr      Method : Permute.permute(I)V
+        Entries : 10
+        Average : 72.94
+        Min : 70.2439024390244
+        Max : 76.05804111245466
+        Diff : 5.81
+
+ File : JavaFlightRecorder_Permute.jfr      Method : Permute.swap(II)V
+        Entries : 10
+        Average : 26.77
+        Min : 23.700120918984283
+        Max : 29.634146341463413
+        Diff : 5.93
+
+ File : JavaFlightRecorder_Queens.jfr      Method : Queens.getRowColumn(II)Z
+        Entries : 10
+        Average : 12.33
+        Min : 8.588957055214724
+        Max : 14.845024469820554
+        Diff : 6.26
+
+ File : JavaFlightRecorder_Queens.jfr      Method : Queens.placeQueen(I)Z
+        Entries : 10
+        Average : 85.76
+        Min : 83.16831683168317
+        Max : 88.95705521472392
+        Diff : 5.79
+
+ File : JavaFlightRecorder_Richards.jfr      Method : richards.RBObject.append(Lrichards/Packet;Lrichards/Packet;)Lrichards/Packet;
+        Entries : 10
+        Average : 24.46
+        Min : 9.752496132752073
+        Max : 26.77056904675607
+        Diff : 17.02
+
+ File : JavaFlightRecorder_Storage.jfr      Method : Storage.buildTreeDepth(ILsom/Random;)Ljava/lang/Object;
+        Entries : 10
+        Average : 93.25
+        Min : 86.91131498470948
+        Max : 99.94008388256441
+        Diff : 13.03
+
+ File : JavaFlightRecorder_Storage.jfr      Method : Storage.lambda$buildTreeDepth$0(ILsom/Random;I)Ljava/lang/Object;
+        Entries : 6
+        Average : 11.04
+        Min : 3.7170048482671936
+        Max : 12.905198776758409
+        Diff : 9.19
+
+ File : Queens.hpl      Method : Queens::getRowColumn
+        Entries : 10
+        Average : 58.97
+        Min : 54.9
+        Max : 67.4
+        Diff : 12.50
+
+ File : Queens.hpl      Method : Queens::placeQueen
+        Entries : 10
+        Average : 11.82
+        Min : 8.4
+        Max : 13.7
+        Diff : 5.30
+
+ File : Queens.hpl      Method : Queens::setRowColumn
+        Entries : 10
+        Average : 23.13
+        Min : 18.1
+        Max : 26.0
+        Diff : 7.90
+
+ File : Richards.hpl      Method : Richards::benchmark
+        Entries : 10
+        Average : 26.52
+        Min : 23.7
+        Max : 32.5
+        Diff : 8.80
+
+ File : Sieve.hpl      Method : Sieve::benchmark
+        Entries : 10
+        Average : 10.67
+        Min : 5.2
+        Max : 13.3
+        Diff : 8.10
+
+ File : Sieve.hpl      Method : Sieve::sieve
+        Entries : 10
+        Average : 79.40
+        Min : 75.0
+        Max : 87.3
+        Diff : 12.30
+
+ File : Storage.hpl      Method : Storage::buildTreeDepth
+        Entries : 10
+        Average : 39.40
+        Min : 31.6
+        Max : 41.2
+        Diff : 9.60
+
+ File : Storage.hpl      Method : Storage::lambda$buildTreeDepth$0
+        Entries : 10
+        Average : 3.86
+        Min : 2.7
+        Max : 8.6
+        Diff : 5.90
+
+ File : Storage.hpl      Method : java.util.Arrays::setAll
+        Entries : 10
+        Average : 34.71
+        Min : 33.5
+        Max : 40.4
+        Diff : 6.90
+
+ File : rebench_test_Async_Bounce.txt      Method : Bounce$Ball.bounce
+        Entries : 10
+        Average : 72.08
+        Min : 67.0
+        Max : 83.62
+        Diff : 16.62
+
+ File : rebench_test_Async_Bounce.txt      Method : Bounce.benchmark
+        Entries : 10
+        Average : 20.75
+        Min : 11.07
+        Max : 25.0
+        Diff : 13.93
+
+ File : rebench_test_Async_DeltaBlue.txt      Method : som.Vector.append
+        Entries : 7
+        Average : 3.40
+        Min : 1.48
+        Max : 10.49
+        Diff : 9.01
+
+ File : rebench_test_Async_Queens.txt      Method : Queens.getRowColumn
+        Entries : 10
+        Average : 62.11
+        Min : 56.19
+        Max : 69.06
+        Diff : 12.87
+
+ File : rebench_test_Async_Queens.txt      Method : Queens.placeQueen
+        Entries : 10
+        Average : 12.17
+        Min : 8.9
+        Max : 15.41
+        Diff : 6.51
+
+ File : rebench_test_Async_Queens.txt      Method : Queens.setRowColumn
+        Entries : 10
+        Average : 21.40
+        Min : 17.18
+        Max : 24.11
+        Diff : 6.93
+
+ File : rebench_test_Async_Richards.txt      Method : Richards.benchmark
+        Entries : 10
+        Average : 25.72
+        Min : 23.65
+        Max : 28.8
+        Diff : 5.15
+
+ File : rebench_test_Async_Sieve.txt      Method : Sieve.benchmark
+        Entries : 10
+        Average : 11.11
+        Min : 4.96
+        Max : 14.17
+        Diff : 9.21
+
+ File : rebench_test_Async_Sieve.txt      Method : Sieve.sieve
+        Entries : 10
+        Average : 77.41
+        Min : 68.68
+        Max : 85.99
+        Diff : 17.31
+
+ File : rebench_test_Async_Sieve.txt      Method : java.util.Arrays.fill
+        Entries : 10
+        Average : 6.22
+        Min : 3.71
+        Max : 11.6
+        Diff : 7.89
+
