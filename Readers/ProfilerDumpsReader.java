@@ -20,8 +20,9 @@ import java.util.Comparator;
 
 public class ProfilerDumpsReader {
     public static void main(String[] args) {
-        String[][] DumpFiles = getDumpFiles("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump");
-        String filename = "output.json";
+        String prefix = "10";
+        String[][] DumpFiles = getDumpFiles("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump"+ prefix);
+        String filename = "Readers/JSONDumps/output"+ prefix +".json";
         JSONObject AllProfilerDumps = new JSONObject();
         for (String[] ProfilerDump : DumpFiles) {
             if (ProfilerDump[0].contains("AsyncDumps")) {
@@ -149,13 +150,13 @@ public class ProfilerDumpsReader {
     }
 
     private static String[][] AsyncHottestMethods(String Filename) {
-        String[][] top5 = new String[5][2];
+        String[][] top5 = new String[10][2];
         try {
             File myObj = new File(Filename);
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 if (myReader.nextLine().equals("  ----------  -------  -------  ---")) {
-                    for (int i = 0; i < 5; i++) {
+                    for (int i = 0; i < 10; i++) {
                         String[] split = myReader.nextLine().split("\\s+");
                         if (split[0] == "") {
                             top5[i][0] = split[4];
@@ -178,7 +179,7 @@ public class ProfilerDumpsReader {
     }
 
     private static String[][] HonestProfilerHottestMethods(String Filename) {
-        String[][] top5 = new String[5][2];
+        String[][] top5 = new String[10][2];
         ProcessBuilder processBuilder = new ProcessBuilder();
         try {
             processBuilder.command("/home/hburchell/Repos/AWFY-Profilers/Profilers/honest-profiler/console", "-log",
@@ -189,7 +190,7 @@ public class ProfilerDumpsReader {
 
             while (line != null) {
                 if (line.equals("Flat Profile (by method):")) {
-                    for (int i = 0; i < 5; i++) {
+                    for (int i = 0; i < 10; i++) {
                         String[] split = reader.readLine().split("\\s+", 5);
                         top5[i][0] = split[4];
                         top5[i][1] = split[3].substring(0, split[3].length() - 1);

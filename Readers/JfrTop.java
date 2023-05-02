@@ -14,7 +14,7 @@ public class JfrTop {
     public String[][] getHottestMethods(String FileName) {
         var fileName = FileName;
         var packageName = "";
-        var top = 5;
+        var top = 10;
 
         var hotMethods = new HashMap<String, Long>();
         long total = 0;
@@ -39,7 +39,7 @@ public class JfrTop {
         catch (Exception e) {
             e.printStackTrace();
         }
-        String[][] top5 = new String[5][2];
+        String[][] top5 = new String[10][2];
         double percent = 100.0 / total;
         ArrayList<String> method = new ArrayList<String>();
 
