@@ -18,27 +18,28 @@ import org.json.JSONObject;
 public class rebenchOutputProcessor {
 
     public static void main(String[] args) {
-        HashMap<String,ArrayList<Double>> map = processFile("example5.data");
-        HashMap<String,Double> averageMap = getAverageExeTime(map);
-        appendRuntimesToJSON("JSONDumps/output5.json", averageMap);
+        String prefix = "10";
+        HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
+        HashMap<String,Double> Map = getTotalExeTime(map);
+        appendRuntimesToJSON("Readers/JSONDumps/report2/output"+prefix+ ".json", Map);
         System.out.println();
 
     }
 
-    private static void appendRuntimesToJSON(String Filename, HashMap<String,Double> averageMap) {
+    private static void appendRuntimesToJSON(String Filename, HashMap<String,Double> Map) {
         JSONObject file;
-        HashMap<String,Double> normalisedAverageMap = new HashMap<String,Double>();
+        HashMap<String,Double> normalisedMap = new HashMap<String,Double>();
 
-        for (String key : averageMap.keySet()) {
+        for (String key : Map.keySet()) {
             String[] split = key.split("\\s+");
             String benchmark = split[1];
             String profiler = split[0];
             if (profiler.contains("JavaFlightRecorderTests")) {
-                normalisedAverageMap.put("JavaFlightRecorder_"+benchmark+".jfr", averageMap.get(key));
+                normalisedMap.put("JavaFlightRecorder_"+benchmark+".jfr", Map.get(key));
             }else if (profiler.contains("asyncTests")) {
-                normalisedAverageMap.put("rebench_test_Async_"+benchmark + ".txt", averageMap.get(key));
+                normalisedMap.put("rebench_test_Async_"+benchmark + ".txt", Map.get(key));
             }else if (profiler.contains("honest-profilerTests")) {
-                normalisedAverageMap.put(benchmark + ".hpl", averageMap.get(key));
+                normalisedMap.put(benchmark + ".hpl", Map.get(key));
             } else {
                 System.out.println(profiler + " " + benchmark + " was removed");
             } 
@@ -47,7 +48,7 @@ public class rebenchOutputProcessor {
 
         try {
             file = new JSONObject(new String(Files.readAllBytes(Paths.get(Filename)), StandardCharsets.UTF_8));
-            file.put("Runtimes", new JSONObject(normalisedAverageMap));
+            file.put("Runtimes", new JSONObject(normalisedMap));
             WriteJSONObject(file, Filename);
         } catch (JSONException e) {
             // TODO Auto-generated catch block
@@ -74,17 +75,17 @@ public class rebenchOutputProcessor {
         }
     }
 
-    private static HashMap<String,Double> getAverageExeTime(HashMap<String,ArrayList<Double>> map) {
-        HashMap<String,Double> averageMap = new HashMap<String,Double>();
+    private static HashMap<String,Double> getTotalExeTime(HashMap<String,ArrayList<Double>> map) {
+        HashMap<String,Double> Map = new HashMap<String,Double>();
         for (String key : map.keySet()) {
             ArrayList<Double> AL = map.get(key);
             Double total = 0.0;
             for (Double double1 : AL) {
                 total+= double1;
             }
-            averageMap.put(key, total/AL.size());
+            Map.put(key, total);
         }
-        return averageMap;
+        return Map;
     }
 
     private static  HashMap<String,ArrayList<Double>> processFile(String Filename) {
