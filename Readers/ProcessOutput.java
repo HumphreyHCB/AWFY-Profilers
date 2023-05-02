@@ -166,10 +166,10 @@ public class ProcessOutput {
             System.out.print(" File : " + benchReport.filename);
             System.out.println("      Method : " + benchReport.method);
             System.out.println("        Entries : " + benchReport.Percentages.size());
-            System.out.println("        Average (%) : " + new DecimalFormat("0.00").format(benchReport.getAverage()) + " Average Runtime: " + new DecimalFormat("0.00").format(benchReport.getAverageRuntime()));
-            System.out.println("        Min (%) : " + benchReport.min + " Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min)));
-            System.out.println("        Max (%) : " + benchReport.max + " Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)));
-            System.out.println("        Diff (%) : " + new DecimalFormat("0.00").format(benchReport.max - benchReport.min)  + "  Runtime Diff: " +  (benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)) - benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min))) );
+            System.out.println("        Average (%) : " + new DecimalFormat("0.00").format(benchReport.getAverage()) + "    Average Runtime: " + new DecimalFormat("0.00").format(benchReport.getAverageRuntime()));
+            System.out.println("        Min (%) : " + benchReport.min + "       Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min)));
+            System.out.println("        Max (%) : " + benchReport.max + "       Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)));
+            System.out.println("        Diff (%) : " + new DecimalFormat("0.00").format(benchReport.max - benchReport.min)  + "     Runtime Diff: " +  (benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)) - benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min))) );
             System.out.println("");
             
             System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
