@@ -1,0 +1,411 @@
+{
+    "JavaFlightRecorder": {
+        "JavaFlightRecorder_NBody.jfr": {
+            " ": "0",
+            "nbody.NBodySystem.advance(D)V": "99.84227129337539",
+            "NBody.innerBenchmarkLoop(I)Z": "0.15772870662460567"
+        },
+        "JavaFlightRecorder_Mandelbrot.jfr": {
+            " ": "0",
+            "Mandelbrot.mandelbrot(I)I": "100.0"
+        },
+        "JavaFlightRecorder_Queens.jfr": {
+            "java.util.Arrays.fill([II)V": "0.4942339373970346",
+            " ": "0",
+            "Queens.placeQueen(I)Z": "84.84349258649094",
+            "Queens.getRowColumn(II)Z": "14.00329489291598",
+            "java.util.Arrays.fill([ZZ)V": "0.4942339373970346",
+            "Queens.queens()Z": "0.16474464579901152"
+        },
+        "JavaFlightRecorder_Richards.jfr": {
+            "richards.Scheduler.createIdler(IILrichards/Packet;Lrichards/TaskState;)V": "0.9510771669428634",
+            "richards.Scheduler.holdSelf()Lrichards/TaskControlBlock;": "0.4178975430506521",
+            "richards.Scheduler.findTask(I)Lrichards/TaskControlBlock;": "3.8835650983500254",
+            "richards.Scheduler.schedule()V": "59.12529721161467",
+            "richards.HandlerTaskDataRecord.workInAdd(Lrichards/Packet;)V": "9.791771741479934",
+            "Richards.benchmark()Ljava/lang/Object;": "4.9066935658188635",
+            "richards.RBObject.append(Lrichards/Packet;Lrichards/Packet;)Lrichards/Packet;": "16.002593846818936",
+            "richards.TaskControlBlock.runTask()Lrichards/TaskControlBlock;": "4.9066935658188635",
+            "Run.runBenchmark()V": "0.0072051300525974495",
+            "java.lang.ClassLoader.checkCerts(Ljava/lang/String;Ljava/security/CodeSource;)V": "0.0072051300525974495"
+        },
+        "JavaFlightRecorder_Havlak.jfr": {
+            "som.Dictionary.transferEntries([Lsom/Dictionary$Entry;)V": "1.1538461538461537",
+            "havlak.SimpleLoop.setParent(Lhavlak/SimpleLoop;)V": "1.0633484162895928",
+            "havlak.HavlakLoopFinder.doDFS(Lhavlak/BasicBlock;I)I": "6.199095022624435",
+            "java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;": "1.0180995475113122",
+            "som.Vector.forEach(Lsom/ForEachInterface;)V": "24.79638009049774",
+            "havlak.HavlakLoopFinder.findLoops()V": "7.850678733031674",
+            "som.IdentityDictionary.newEntry(Lsom/Dictionary$CustomHash;Ljava/lang/Object;I)Lsom/Dictionary$Entry;": "3.3710407239819005",
+            "som.Vector.hasSome(Lsom/TestInterface;)Z": "51.08597285067873",
+            "havlak.UnionFindNode.findSet()Lhavlak/UnionFindNode;": "1.3574660633484164",
+            "havlak.LoopStructureGraph.createNewLoop(Lhavlak/BasicBlock;Z)Lhavlak/SimpleLoop;": "0.927601809954751"
+        },
+        "JavaFlightRecorder_CD.jfr": {
+            "cd.CollisionDetector.recurse(Lcd/RedBlackTree;Lcd/RedBlackTree;Lcd/Vector2D;Lcd/Motion;)V": "6.651463321930824",
+            "cd.Motion.findIntersection(Lcd/Motion;)Lcd/Vector3D;": "1.1022424933485366",
+            "cd.RedBlackTree.findNode(Ljava/lang/Comparable;)Lcd/RedBlackTree$Node;": "22.42493348536678",
+            "java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;": "1.2542759407069555",
+            "cd.CollisionDetector.lambda$handleNewFrame$0(Lcd/RedBlackTree;Lsom/Vector;Lcd/Aircraft;)V": "0.9882174078297224",
+            "cd.RedBlackTree.forEach(Lsom/ForEachInterface;)V": "4.903078677309008",
+            "cd.CollisionDetector.isInVoxel(Lcd/Vector2D;Lcd/Motion;)Z": "15.469403268719116",
+            "cd.RedBlackTree.put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;": "12.960851387305206",
+            "cd.RedBlackTree.treeInsert(Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult;": "27.746104142911438",
+            "cd.RedBlackTree$Node.successor()Lcd/RedBlackTree$Node;": "3.382744203724819"
+        },
+        "JavaFlightRecorder_List.jfr": {
+            "List.isShorterThan(LList$Element;LList$Element;)Z": "88.12785388127854",
+            " ": "0",
+            "java.nio.CharBuffer.array()[C": "0.228310502283105",
+            "List.tail(LList$Element;LList$Element;LList$Element;)LList$Element;": "11.187214611872145",
+            "List.makeList(I)LList$Element;": "0.45662100456621"
+        },
+        "JavaFlightRecorder_Json.jfr": {
+            "json.JsonPureStringParser.isWhiteSpace()Z": "4.191933776109347",
+            "json.JsonPureStringParser.readExponent()Z": "7.098854557705265",
+            "java.lang.StringLatin1.newString([BII)Ljava/lang/String;": "17.196072769275197",
+            "java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;": "0.7315429781499664",
+            "json.JsonPureStringParser.readStringInternal()Ljava/lang/String;": "30.570796034267016",
+            "json.JsonPureStringParser.readNumber()Ljson/JsonValue;": "4.302627779382039",
+            "json.JsonPureStringParser.readArray()Ljson/JsonArray;": "22.29280970257003",
+            "json.JsonPureStringParser.readObject()Ljson/JsonObject;": "1.3764558667821736",
+            "java.lang.StringLatin1.hashCode([B)I": "0.8951775916835115",
+            "json.JsonPureStringParser.readValue()Ljson/JsonValue;": "10.087592646067957"
+        },
+        "JavaFlightRecorder_DeltaBlue.jfr": {
+            "deltablue.Planner.lambda$addConstraintsConsumingTo$2(Ldeltablue/AbstractConstraint;Lsom/Vector;Ldeltablue/AbstractConstraint;)V": "10.256410256410257",
+            "deltablue.Planner.removePropagateFrom(Ldeltablue/Variable;)Lsom/Vector;": "2.5641025641025643",
+            "deltablue.Planner.addPropagate(Ldeltablue/AbstractConstraint;I)Z": "5.128205128205129",
+            "deltablue.Plan.lambda$execute$0(Ldeltablue/AbstractConstraint;)V": "10.256410256410257",
+            "java.lang.invoke.InvokerBytecodeGenerator.lookupPregenerated(Ljava/lang/invoke/LambdaForm;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MemberName;": "2.5641025641025643",
+            "som.Vector.forEach(Lsom/ForEachInterface;)V": "33.333333333333336",
+            "deltablue.Planner.makePlan(Lsom/Vector;)Ldeltablue/Plan;": "7.692307692307693",
+            "deltablue.Planner.chainTest(I)V": "5.128205128205129",
+            "deltablue.Planner.lambda$removePropagateFrom$4(Lsom/Vector;Ldeltablue/AbstractConstraint;)V": "2.5641025641025643",
+            "deltablue.Planner.incrementalAdd(Ldeltablue/AbstractConstraint;)V": "5.128205128205129"
+        },
+        "JavaFlightRecorder_Permute.jfr": {
+            " ": "0",
+            "java.lang.invoke.InvokerBytecodeGenerator.isStaticallyInvocable(Ljava/lang/invoke/MemberName;)Z": "0.12135922330097088",
+            "Permute.swap(II)V": "25.97087378640777",
+            "Permute.permute(I)V": "73.7864077669903",
+            "Benchmark.innerBenchmarkLoop(I)Z": "0.12135922330097088"
+        },
+        "JavaFlightRecorder_Storage.jfr": {
+            " ": "0",
+            "Storage.buildTreeDepth(ILsom/Random;)Ljava/lang/Object;": "99.93906154783669",
+            "Benchmark.innerBenchmarkLoop(I)Z": "0.06093845216331505"
+        },
+        "JavaFlightRecorder_Sieve.jfr": {
+            " ": "0",
+            "Run.getSuiteFromName(Ljava/lang/String;)Ljava/util/function/Supplier;": "0.3184713375796178",
+            "java.lang.invoke.InvokerBytecodeGenerator.emitImplicitConversion(Ljava/lang/invoke/LambdaForm$BasicType;Ljava/lang/Class;Ljava/lang/Object;)V": "0.3184713375796178",
+            "Sieve.benchmark()Ljava/lang/Object;": "1.2738853503184713",
+            "java.io.PrintStream.write([BII)V": "0.3184713375796178",
+            "Sieve.sieve([ZI)I": "97.77070063694266"
+        }
+    },
+    "HonestProfiler": {
+        "Permute.hpl": {
+            "Permute::swap": "40.1",
+            "Permute::permute": "49.8",
+            "Permute::benchmark": "0.1",
+            "java.util.zip.CRC32::update": "0.0",
+            "java.util.zip.ZipFile::getInputStream": "0.0",
+            "Benchmark::innerBenchmarkLoop": "0.1",
+            "AGCT::Not walkable Java[ERR=-6]": "0.0",
+            "AGCT::Unknown not Java[ERR=-3]": "3.5",
+            "java.lang.invoke.LambdaForm$Name::replaceNames": "0.0",
+            "AGCT::Unknown Java[ERR=-5]": "6.0"
+        },
+        "Queens.hpl": {
+            "Queens::getRowColumn": "56.4",
+            "Benchmark::innerBenchmarkLoop": "0.0",
+            "Queens::benchmark": "0.1",
+            "AGCT::Unknown not Java[ERR=-3]": "2.9",
+            "AGCT::Unknown Java[ERR=-5]": "0.8",
+            "Queens::placeQueen": "13.5",
+            "Queens::setRowColumn": "24.6",
+            "Queens::queens": "0.5",
+            "java.util.Arrays::fill": "0.2"
+        },
+        "Richards.hpl": {
+            "richards.Packet::setLink": "2.0",
+            "richards.Packet::<init>": "1.9",
+            "richards.TaskControlBlock::addInputAndCheckPriority": "1.3",
+            "Richards::benchmark": "24.8",
+            "richards.TaskState::createRunning": "1.9",
+            "richards.RBObject::append": "2.7",
+            "richards.Scheduler::createTask": "1.8",
+            "AGCT::Unknown Java[ERR=-5]": "46.9",
+            "richards.HandlerTaskDataRecord::workInAdd": "2.1",
+            "richards.RBObject::<init>": "1.5"
+        },
+        "Storage.hpl": {
+            "java.lang.invoke.DirectMethodHandle::allocateInstance": "0.3",
+            "Storage::buildTreeDepth": "39.2",
+            "java.util.Arrays::setAll": "34.1",
+            "som.Random::next": "12.4",
+            "AGCT::Unknown not Java[ERR=-3]": "5.4",
+            "AGCT::Unknown Java[ERR=-5]": "2.7",
+            "Storage$$Lambda$2.0x0000000800c030f0::apply": "0.5",
+            "Storage$$Lambda$2.0x0000000800c030f0::<init>": "0.4",
+            "Storage::lambda$buildTreeDepth$0": "3.7",
+            "java.lang.invoke.LambdaForm$DMH.0x0000000800c06800::newInvokeSpecial": "1.1"
+        },
+        "Sieve.hpl": {
+            "java.io.FileOutputStream::writeBytes": "0.1",
+            "Sieve::benchmark": "13.2",
+            "Benchmark::innerBenchmarkLoop": "0.1",
+            "AGCT::Not walkable Java[ERR=-6]": "0.1",
+            "java.lang.ClassLoader::defineClass0": "0.1",
+            "Sieve::sieve": "77.9",
+            "AGCT::Unknown not Java[ERR=-3]": "3.5",
+            "AGCT::Unknown Java[ERR=-5]": "0.1",
+            "AGCT::Not walkable not Java[ERR=-4]": "0.0",
+            "java.util.Arrays::fill": "3.9"
+        },
+        "Mandelbrot.hpl": {
+            "java.lang.String::charAt": "0.0",
+            "java.lang.invoke.MethodType::insertParameterTypes": "0.0",
+            "jdk.internal.org.objectweb.asm.SymbolTable::addConstantUtf8Reference": "0.0",
+            "AGCT::Not walkable Java[ERR=-6]": "0.0",
+            "java.lang.ClassLoader::defineClass1": "0.0",
+            "AGCT::Unknown not Java[ERR=-3]": "1.2",
+            "jdk.internal.org.objectweb.asm.SymbolTable::addConstantNameAndType": "0.0",
+            "jdk.internal.org.objectweb.asm.ClassWriter::visitMethod": "0.0",
+            "Mandelbrot::mandelbrot": "98.7",
+            "java.util.concurrent.TimeUnit::<init>": "0.0"
+        },
+        "DeltaBlue.hpl": {
+            "deltablue.Planner::addPropagate": "1.3",
+            "jdk.internal.misc.Unsafe::allocateInstance": "1.5",
+            "deltablue.Plan$$Lambda$8.0x0000000800c0d938::apply": "3.2",
+            "som.Vector::append": "2.3",
+            "AGCT::Unknown not Java[ERR=-3]": "43.9",
+            "AGCT::Unknown Java[ERR=-5]": "15.2",
+            "deltablue.UnaryConstraint::<init>": "1.5",
+            "deltablue.AbstractConstraint::satisfy": "1.2",
+            "deltablue.AbstractConstraint::destroyConstraint": "1.5",
+            "som.Vector::forEach": "4.0"
+        },
+        "NBody.hpl": {
+            "nbody.Body::setY": "1.5",
+            "nbody.Body::setX": "1.4",
+            "nbody.Body::getY": "0.8",
+            "nbody.Body::setVZ": "9.4",
+            "nbody.Body::getZ": "7.9",
+            "nbody.Body::setVX": "27.6",
+            "nbody.Body::setVY": "5.9",
+            "nbody.Body::getMass": "0.4",
+            "AGCT::Unknown not Java[ERR=-3]": "1.7",
+            "nbody.NBodySystem::advance": "40.9"
+        },
+        "List.hpl": {
+            "List$Element::getNext": "9.2",
+            "List::makeList": "0.7",
+            "Benchmark::innerBenchmarkLoop": "0.1",
+            "java.lang.ClassLoader::defineClass1": "0.0",
+            "List::tail": "1.7",
+            "List::isShorterThan": "79.7",
+            "AGCT::Unknown not Java[ERR=-3]": "5.3",
+            "List$Element::<init>": "0.2",
+            "AGCT::Unknown Java[ERR=-5]": "2.2",
+            "List$Element::length": "0.0"
+        },
+        "Json.hpl": {
+            "json.JsonPureStringParser::isWhiteSpace": "2.4",
+            "json.JsonPureStringParser::read": "16.8",
+            "java.lang.String::<init>": "5.5",
+            "java.lang.String::length": "3.1",
+            "java.util.Arrays::copyOfRange": "7.3",
+            "java.lang.String::equals": "22.0",
+            "AGCT::Unknown not Java[ERR=-3]": "2.7",
+            "AGCT::Unknown Java[ERR=-5]": "10.1",
+            "java.lang.String::isLatin1": "2.7",
+            "json.JsonPureStringParser::readStringInternal": "9.2"
+        },
+        "CD.hpl": {
+            "cd.CollisionDetector::recurse": "10.9",
+            "cd.RedBlackTree::forEach": "5.4",
+            "cd.RedBlackTree::put": "6.5",
+            "cd.RedBlackTree::findNode": "7.3",
+            "cd.RedBlackTree::treeMinimum": "6.7",
+            "AGCT::Unknown not Java[ERR=-3]": "7.0",
+            "AGCT::Unknown Java[ERR=-5]": "3.2",
+            "cd.Vector2D::compareNumbers": "2.7",
+            "cd.RedBlackTree::treeInsert": "20.4",
+            "cd.CollisionDetector::isInVoxel": "14.3"
+        },
+        "Havlak.hpl": {
+            "som.IdentitySet::lambda$contains$0": "34.8",
+            "havlak.HavlakLoopFinder::lambda$initAllNodes$0": "12.6",
+            "havlak.HavlakLoopFinder::findLoops": "6.0",
+            "havlak.HavlakLoopFinder::lambda$stepEProcessNonBackPreds$4": "3.8",
+            "som.Vector::append": "3.3",
+            "AGCT::Unknown not Java[ERR=-3]": "8.1",
+            "havlak.HavlakLoopFinder::lambda$processEdges$1": "6.3",
+            "havlak.HavlakLoopFinder::doDFS": "6.3",
+            "som.Vector::hasSome": "2.0",
+            "som.Vector::forEach": "2.0"
+        }
+    },
+    "Async": {
+        "rebench_test_Async_DeltaBlue.txt": {
+            "deltablue.AbstractConstraint.satisfy": "1.01%",
+            "deltablue.Planner.makePlan": "1.24%",
+            "PhaseChaitin::Split(unsigned": "1.16%",
+            "som.Vector.append": "1.62%",
+            "itable": "5.80%",
+            "som.Vector.forEach": "3.37%",
+            "IndexSetIterator::advance_and_next()": "1.34%",
+            "java.lang.invoke.Invokers$Holder.linkToTargetMethod": "1.31%",
+            "deltablue.Variable.getValue": "1.23%",
+            "deltablue.Plan$$Lambda$8.0x0000000800c0d938.apply": "3.13%"
+        },
+        "rebench_test_Async_Bounce.txt": {
+            "Bounce$Ball.bounce": "67.54%",
+            "som.Random.next": "0.75%",
+            "Interpreter": "0.07%",
+            "void": "0.06%",
+            "java.util.Arrays.setAll": "0.57%",
+            "Bounce.benchmark": "24.57%",
+            "__tls_get_addr": "0.05%",
+            "Bounce$Ball.<init>": "1.58%",
+            "Bounce.lambda$benchmark$0": "0.13%",
+            "Benchmark.innerBenchmarkLoop": "0.14%"
+        },
+        "rebench_test_Async_Mandelbrot.txt": {
+            "Interpreter": "0.01%",
+            "VMError::is_error_reported()": "0.00%",
+            "resource_allocate_bytes(unsigned": "0.01%",
+            "Mandelbrot.mandelbrot": "99.20%",
+            "InstanceKlass::find_method_index(Array<Method*>": "0.01%",
+            "LinearScan::build_intervals()": "0.00%",
+            "LinearScan::allocate_registers()": "0.00%",
+            "[no_Java_frame]": "0.01%",
+            "__tls_get_addr": "0.01%",
+            "[vdso]": "0.01%"
+        },
+        "rebench_test_Async_Storage.txt": {
+            "Storage$$Lambda$2.0x0000000800c030f0.<init>": "0.56%",
+            "java.lang.invoke.DirectMethodHandle.allocateInstance": "0.42%",
+            "som.Random.next": "11.10%",
+            "java.lang.invoke.LambdaForm$DMH.0x0000000800c06800.newInvokeSpecial": "1.27%",
+            "Storage$$Lambda$2.0x0000000800c030f0.apply": "0.37%",
+            "java.util.Arrays.setAll": "35.37%",
+            "Storage.lambda$buildTreeDepth$0": "4.18%",
+            "HeapRegionManager::par_iterate(HeapRegionClosure*,": "0.18%",
+            "G1ParScanThreadState::trim_queue_to_threshold(unsigned": "0.36%",
+            "Storage.buildTreeDepth": "43.25%"
+        },
+        "rebench_test_Async_CD.txt": {
+            "cd.CollisionDetector.recurse": "10.73%",
+            "cd.CollisionDetector.isInVoxel": "13.71%",
+            "cd.RedBlackTree.forEach": "6.41%",
+            "cd.RedBlackTree.put": "6.95%",
+            "cd.RedBlackTree.treeInsert": "18.90%",
+            "cd.RedBlackTree.findNode": "7.23%",
+            "cd.RedBlackTree.treeMinimum": "6.80%",
+            "cd.CollisionDetector.lambda$handleNewFrame$0": "1.97%",
+            "cd.Vector2D.compareNumbers": "3.15%",
+            "cd.RedBlackTree.leftRotate": "2.41%"
+        },
+        "rebench_test_Async_Havlak.txt": {
+            "havlak.HavlakLoopFinder.findLoops": "5.30%",
+            "havlak.HavlakLoopFinder.lambda$initAllNodes$0": "12.09%",
+            "som.Vector.append": "3.57%",
+            "som.Vector.<init>": "2.18%",
+            "som.Vector.forEach": "1.96%",
+            "som.IdentitySet.lambda$contains$0": "32.38%",
+            "G1ParScanThreadState::trim_queue_to_threshold(unsigned": "8.16%",
+            "havlak.HavlakLoopFinder.lambda$processEdges$1": "6.09%",
+            "havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4": "4.11%",
+            "havlak.HavlakLoopFinder.doDFS": "5.70%"
+        },
+        "rebench_test_Async_Sieve.txt": {
+            "java.util.Arrays.fill": "4.09%",
+            "Sieve.benchmark": "13.62%",
+            "Interpreter": "0.10%",
+            "resource_allocate_bytes(unsigned": "0.07%",
+            "Sieve.sieve": "74.91%",
+            "InstanceKlass::find_method_index(Array<Method*>": "0.05%",
+            "G1ParScanThreadState::trim_queue_to_threshold(unsigned": "0.08%",
+            "__memset_avx2_unaligned_erms": "0.06%",
+            "__tls_get_addr": "0.08%",
+            "Benchmark.innerBenchmarkLoop": "0.19%"
+        },
+        "rebench_test_Async_Permute.txt": {
+            "Permute.permute": "57.22%",
+            "Permute.swap": "40.60%",
+            "Permute.benchmark": "0.07%",
+            "Interpreter": "0.04%",
+            "resource_allocate_bytes(unsigned": "0.02%",
+            "InstanceKlass::find_method_index(Array<Method*>": "0.02%",
+            "LinearScan::build_intervals()": "0.01%",
+            "[no_Java_frame]": "0.02%",
+            "__tls_get_addr": "0.03%",
+            "Benchmark.innerBenchmarkLoop": "0.06%"
+        },
+        "rebench_test_Async_NBody.txt": {
+            "nbody.Body.setVZ": "8.85%",
+            "nbody.Body.getZ": "7.74%",
+            "nbody.Body.getY": "0.74%",
+            "nbody.Body.setX": "1.20%",
+            "nbody.Body.setY": "1.78%",
+            "nbody.Body.setVX": "27.61%",
+            "nbody.Body.setVY": "5.63%",
+            "nbody.Body.getMass": "0.49%",
+            "nbody.Body.getVZ": "0.47%",
+            "nbody.NBodySystem.advance": "41.78%"
+        },
+        "rebench_test_Async_List.txt": {
+            "List$Element.getNext": "9.01%",
+            "Interpreter": "0.07%",
+            "List.makeList": "1.27%",
+            "List$Element.setNext": "0.06%",
+            "List.tail": "4.60%",
+            "List$Element.length": "0.18%",
+            "List.verifyResult": "0.09%",
+            "List.isShorterThan": "80.27%",
+            "List$Element.<init>": "0.30%",
+            "Benchmark.innerBenchmarkLoop": "0.15%"
+        },
+        "rebench_test_Async_Json.txt": {
+            "jbyte_disjoint_arraycopy": "7.64%",
+            "java.lang.String.length": "3.24%",
+            "java.lang.String.<init>": "5.77%",
+            "json.JsonPureStringParser.readArray": "2.79%",
+            "json.JsonPureStringParser.isWhiteSpace": "2.33%",
+            "java.lang.String.isLatin1": "2.72%",
+            "json.JsonPureStringParser.readStringInternal": "8.43%",
+            "java.util.Arrays.copyOfRange": "7.99%",
+            "java.lang.String.equals": "22.75%",
+            "json.JsonPureStringParser.read": "15.93%"
+        },
+        "rebench_test_Async_Queens.txt": {
+            "java.util.Arrays.fill": "1.01%",
+            "Queens.getRowColumn": "67.37%",
+            "Queens.setRowColumn": "18.51%",
+            "Interpreter": "0.05%",
+            "resource_allocate_bytes(unsigned": "0.03%",
+            "Queens.queens": "0.60%",
+            "Queens.placeQueen": "9.12%",
+            "__tls_get_addr": "0.04%",
+            "Benchmark.innerBenchmarkLoop": "0.11%",
+            "Queens.benchmark": "0.04%"
+        },
+        "rebench_test_Async_Richards.txt": {
+            "Richards.benchmark": "24.64%",
+            "richards.Packet.<init>": "1.78%",
+            "richards.Scheduler$$Lambda$4.0x0000000800c06a28.apply": "3.51%",
+            "richards.TaskControlBlock.addInputAndCheckPriority": "2.07%",
+            "richards.HandlerTaskDataRecord.workInAdd": "2.07%",
+            "itable": "38.44%",
+            "richards.RBObject.append": "2.75%",
+            "richards.Scheduler.createTask": "1.95%",
+            "richards.Scheduler$$Lambda$5.0x0000000800c06c50.apply": "4.48%",
+            "richards.Packet.setLink": "2.28%"
+        }
+    }
+}
