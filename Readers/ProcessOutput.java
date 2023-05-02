@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -23,16 +24,16 @@ public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
 
     public static void main(String[] args) {
-        processFile("JSONDumps/output.json");
-        processFile("JSONDumps/output2.json");
-        processFile("JSONDumps/output3.json");
-        processFile("JSONDumps/output4.json");
-        processFile("JSONDumps/output5.json");
-        processFile("JSONDumps/output6.json");
-        processFile("JSONDumps/output7.json");
-        processFile("JSONDumps/output8.json");
-        processFile("JSONDumps/output9.json");
-        processFile("JSONDumps/output10.json");
+        processFile("Readers/JSONDumps/report2/output.json");
+        processFile("Readers/JSONDumps/report2/output2.json");
+        processFile("Readers/JSONDumps/report2/output3.json");
+        processFile("Readers/JSONDumps/report2/output4.json");
+        processFile("Readers/JSONDumps/report2/output5.json");
+        processFile("Readers/JSONDumps/report2/output6.json");
+        processFile("Readers/JSONDumps/report2/output7.json");
+        processFile("Readers/JSONDumps/report2/output8.json");
+        processFile("Readers/JSONDumps/report2/output9.json");
+        processFile("Readers/JSONDumps/report2/output10.json");
 
         HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
         HashMap<String,BenchReport> statmap = statisticize(Map);
@@ -48,9 +49,10 @@ public class ProcessOutput {
             JSONObject JavaFlightRecorder = file.getJSONObject("JavaFlightRecorder");
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
-            addProfilerToDataset(Async);
-            addProfilerToDataset(HonestProfiler);
-            addProfilerToDataset(JavaFlightRecorder);
+            JSONObject Runtimes = file.getJSONObject("Runtimes");
+            addProfilerToDataset(Async, Runtimes);
+            addProfilerToDataset(HonestProfiler , Runtimes);
+            addProfilerToDataset(JavaFlightRecorder , Runtimes);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -59,7 +61,7 @@ public class ProcessOutput {
         return new String[5][2];
     }
 
-    private static void addProfilerToDataset(JSONObject profiler) {
+    private static void addProfilerToDataset(JSONObject profiler,JSONObject Runtimes) {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
@@ -68,7 +70,8 @@ public class ProcessOutput {
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
-                dataSet.add(new BenchMethod(file, methodName, percentage));
+                BigDecimal Runtime =  (BigDecimal) Runtimes.get(file);
+                dataSet.add(new BenchMethod(file, methodName, percentage, Runtime.doubleValue()));
                                 
             }
             
@@ -101,7 +104,7 @@ public class ProcessOutput {
         for (String key : map.keySet()) {
             BenchReport report = new BenchReport(key);
             for (BenchMethod benchMethod : map.get(key)) {
-                report.addPercentage(benchMethod.percentage);
+                report.addPercentage(benchMethod.percentage, benchMethod.Runtime);
             }
             statisticMap.put(key, report);
         }
@@ -124,7 +127,7 @@ public class ProcessOutput {
             if (!currentReport.filename.equals(currentFile)) {
                 currentFile = currentReport.filename;
                 System.out.println("");
-                System.out.println("Uncertainty : " + uncertainty);
+                System.out.println("Total Diff : " + uncertainty);
                 uncertainty = 0D;
                 System.out.println("");
                 System.out.println("");
@@ -163,10 +166,17 @@ public class ProcessOutput {
             System.out.print(" File : " + benchReport.filename);
             System.out.println("      Method : " + benchReport.method);
             System.out.println("        Entries : " + benchReport.Percentages.size());
-            System.out.println("        Average : " + new DecimalFormat("0.00").format(benchReport.getAverage()));
-            System.out.println("        Min : " + benchReport.min);
-            System.out.println("        Max : " + benchReport.max);
-            System.out.println("        Diff : " + new DecimalFormat("0.00").format(benchReport.max - benchReport.min));
+            System.out.println("        Average (%) : " + new DecimalFormat("0.00").format(benchReport.getAverage()) + " Average Runtime: " + new DecimalFormat("0.00").format(benchReport.getAverageRuntime()));
+            System.out.println("        Min (%) : " + benchReport.min + " Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min)));
+            System.out.println("        Max (%) : " + benchReport.max + " Runtime: " + benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)));
+            System.out.println("        Diff (%) : " + new DecimalFormat("0.00").format(benchReport.max - benchReport.min)  + "  Runtime Diff: " +  (benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.max)) - benchReport.Runtimes.get(benchReport.Percentages.indexOf(benchReport.min))) );
+            System.out.println("");
+            
+            System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
+            System.out.println("");
+            for (int i = 0; i < benchReport.Percentages.size(); i++) {
+                System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i));
+            }
         }
     }
 
@@ -177,11 +187,13 @@ class BenchMethod {
     public String method;
     public String percentage;
     public String key;
+    public Double Runtime;
 
-    public BenchMethod(String filename, String method, String percentage) {
+    public BenchMethod(String filename, String method, String percentage, Double Runtime) {
         this.filename = filename;
         this.method = method;
         this.percentage = percentage;
+        this.Runtime = Runtime;
         key = filename + " " + method;
     }
 
@@ -194,6 +206,7 @@ class BenchReport {
     public String method;
     public String key;
     public ArrayList<Double> Percentages;
+    public ArrayList<Double> Runtimes;
     public Double min;
     public Double max;
     //public String percentage;
@@ -204,11 +217,12 @@ class BenchReport {
         filename = split[0];
         method = split[1];
         Percentages = new ArrayList<Double>();
+        Runtimes = new ArrayList<Double>();
         min = 100d;
         max = 0d;
     }
 
-    public void addPercentage(String Percentage)
+    public void addPercentage(String Percentage, Double Runtime)
     {
                 // need to do some parseing
         Percentage = Percentage.replace("%", "");
@@ -228,7 +242,7 @@ class BenchReport {
             min = percent;
         }
         Percentages.add(percent);
-
+        Runtimes.add(Runtime);
     }
 
     public Double getAverage() {
@@ -239,5 +253,26 @@ class BenchReport {
         return total/Percentages.size();
     }
 
+    public Double getAverageRuntime() {
+        double total = 0;
+        for (int i = 0; i < Runtimes.size(); i++) {
+            total+= Runtimes.get(i);
+        }
+        return total/Runtimes.size();
+    }
+
+    public Double getBigestDiffinRuntime() {
+        Double Runtimemax = 0d;
+        Double Runtimemin = 1000000000000d;
+        for (int i = 0; i < Runtimes.size(); i++) {
+            if (Runtimes.get(i) > Runtimemax) {
+                Runtimemax = Runtimes.get(i);
+            }
+            if (Runtimes.get(i) < Runtimemin) {
+                Runtimemin = Runtimes.get(i);
+            }
+        }
+        return (Runtimemax - Runtimemin);
+    }
     
 }
