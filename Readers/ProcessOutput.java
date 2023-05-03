@@ -46,17 +46,17 @@ public class ProcessOutput {
         //DebugmapOccurrences(dataSet);
     }
     
-    private static String[][] processFile(String Filename) {
+    private static String[][] processFile(String path) {
 
         try {
-            JSONObject file = new JSONObject(new String(Files.readAllBytes(Paths.get(Filename)), StandardCharsets.UTF_8));
+            JSONObject file = new JSONObject(new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8));
             JSONObject JavaFlightRecorder = file.getJSONObject("JavaFlightRecorder");
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
             JSONObject Runtimes = file.getJSONObject("Runtimes");
-            addProfilerToDataset(Async, Runtimes, "Async");
-            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler");
-            addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder");
+            addProfilerToDataset(Async, Runtimes, "Async", path);
+            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
+            addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -65,7 +65,7 @@ public class ProcessOutput {
         return new String[5][2];
     }
 
-    private static void addProfilerToDataset(JSONObject profiler,JSONObject Runtimes, String profilerName) {
+    private static void addProfilerToDataset(JSONObject profiler,JSONObject Runtimes, String profilerName, String path) {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
@@ -75,7 +75,7 @@ public class ProcessOutput {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
                 BigDecimal Runtime =  (BigDecimal) Runtimes.get(file);
-                dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, Runtime.doubleValue()));
+                dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, Runtime.doubleValue(), path));
                                 
             }
             
@@ -220,7 +220,7 @@ public class ProcessOutput {
         for (String key : map.keySet()) {
             BenchReport report = new BenchReport(key);
             for (BenchMethod benchMethod : map.get(key)) {
-                report.addPercentage(benchMethod.percentage, benchMethod.Runtime);
+                report.addPercentage(benchMethod.percentage, benchMethod.Runtime, benchMethod.Path);
             }
             statisticMap.put(key, report);
         }
@@ -290,9 +290,11 @@ public class ProcessOutput {
             
             System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
             System.out.println("");
-            // for (int i = 0; i < benchReport.Percentages.size(); i++) {
-            //     System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i));
-            // }
+             for (int i = 0; i < benchReport.Percentages.size(); i++) {
+                //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
+             System.out.println(benchReport.Percentages.get(i));
+            
+            }
         }
     }
 
@@ -304,13 +306,15 @@ class BenchMethod {
     public String percentage;
     public String key;
     public Double Runtime;
+    public String Path;
 
-    public BenchMethod(String filename, String method, String percentage, Double Runtime) {
+    public BenchMethod(String filename, String method, String percentage, Double Runtime, String path) {
         this.filename = filename;
         this.method = method;
         this.percentage = percentage;
         this.Runtime = Runtime;
         key = filename + " " + method;
+        this.Path = path;
     }
 
     
@@ -323,6 +327,7 @@ class BenchReport {
     public String key;
     public ArrayList<Double> Percentages;
     public ArrayList<Double> Runtimes;
+    public ArrayList<String> paths;
     public Double min;
     public Double max;
     //public String percentage;
@@ -334,11 +339,12 @@ class BenchReport {
         method = split[1];
         Percentages = new ArrayList<Double>();
         Runtimes = new ArrayList<Double>();
+        paths = new ArrayList<String>();
         min = 100d;
         max = 0d;
     }
 
-    public void addPercentage(String Percentage, Double Runtime)
+    public void addPercentage(String Percentage, Double Runtime, String path)
     {
                 // need to do some parseing
         Percentage = Percentage.replace("%", "");
@@ -359,6 +365,7 @@ class BenchReport {
         }
         Percentages.add(percent);
         Runtimes.add(Runtime);
+        paths.add(path);
     }
 
     public Double getAverage() {
