@@ -25,24 +25,24 @@ public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
 
     public static void main(String[] args) {
-        processFile("JSONDumps/report3/output.json");
-        processFile("JSONDumps/report3/output2.json");
-        processFile("JSONDumps/report3/output3.json");
-        processFile("JSONDumps/report3/output4.json");
-        processFile("JSONDumps/report3/output5.json");
-        processFile("JSONDumps/report3/output6.json");
-        processFile("JSONDumps/report3/output7.json");
-        processFile("JSONDumps/report3/output8.json");
-        processFile("JSONDumps/report3/output9.json");
-        processFile("JSONDumps/report3/output10.json");
+        processFile("Readers/JSONDumps/report3/output.json");
+        processFile("Readers/JSONDumps/report3/output2.json");
+        processFile("Readers/JSONDumps/report3/output3.json");
+        processFile("Readers/JSONDumps/report3/output4.json");
+        processFile("Readers/JSONDumps/report3/output5.json");
+        processFile("Readers/JSONDumps/report3/output6.json");
+        processFile("Readers/JSONDumps/report3/output7.json");
+        processFile("Readers/JSONDumps/report3/output8.json");
+        processFile("Readers/JSONDumps/report3/output9.json");
+        processFile("Readers/JSONDumps/report3/output10.json");
 
-        //HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
-        // HashMap<String,BenchReport> statmap = statisticize(Map);
-        // TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-        // printOrderStatisticMap(orderedStatmap);
+        HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
+         HashMap<String,BenchReport> statmap = statisticize(Map);
+         TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
+         printOrderStatisticMap(orderedStatmap);
         System.out.println();
 
-        mapOccurrencesOnMethodAndPrint(dataSet);
+        //mapOccurrencesOnMethodAndPrint(dataSet);
         //DebugmapOccurrences(dataSet);
     }
     
