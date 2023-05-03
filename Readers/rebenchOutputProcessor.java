@@ -20,10 +20,21 @@ public class rebenchOutputProcessor {
     public static void main(String[] args) {
         String prefix = "10";
         HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
-        HashMap<String,Double> Map = getTotalExeTime(map);
-        appendRuntimesToJSON("Readers/JSONDumps/report2/output"+prefix+ ".json", Map);
-        System.out.println();
+        //"asyncTests CD"
+        //"honest-profilerTests CD"
+        //"JavaFlightRecorderTests Bounce"
+        printBenchmark(map, "asyncTests", "Queens");
+        //HashMap<String,Double> Map = getTotalExeTime(map);
+        //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
+        //System.out.println();
 
+    }
+
+    private static void printBenchmark(HashMap<String,ArrayList<Double>> map, String profiler, String benchmark) {
+        System.out.println(profiler + " " + benchmark);
+        for (Double runtime : map.get(profiler + " " + benchmark)) {
+            System.out.println(runtime);
+        }
     }
 
     private static void appendRuntimesToJSON(String Filename, HashMap<String,Double> Map) {
