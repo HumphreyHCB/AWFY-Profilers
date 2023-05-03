@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
@@ -24,22 +25,25 @@ public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
 
     public static void main(String[] args) {
-        processFile("Readers/JSONDumps/report2/output.json");
-        processFile("Readers/JSONDumps/report2/output2.json");
-        processFile("Readers/JSONDumps/report2/output3.json");
-        processFile("Readers/JSONDumps/report2/output4.json");
-        processFile("Readers/JSONDumps/report2/output5.json");
-        processFile("Readers/JSONDumps/report2/output6.json");
-        processFile("Readers/JSONDumps/report2/output7.json");
-        processFile("Readers/JSONDumps/report2/output8.json");
-        processFile("Readers/JSONDumps/report2/output9.json");
-        processFile("Readers/JSONDumps/report2/output10.json");
+        processFile("JSONDumps/report3/output.json");
+        processFile("JSONDumps/report3/output2.json");
+        processFile("JSONDumps/report3/output3.json");
+        processFile("JSONDumps/report3/output4.json");
+        processFile("JSONDumps/report3/output5.json");
+        processFile("JSONDumps/report3/output6.json");
+        processFile("JSONDumps/report3/output7.json");
+        processFile("JSONDumps/report3/output8.json");
+        processFile("JSONDumps/report3/output9.json");
+        processFile("JSONDumps/report3/output10.json");
 
-        HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
-        HashMap<String,BenchReport> statmap = statisticize(Map);
-        TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-        printOrderStatisticMap(orderedStatmap);
+        //HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
+        // HashMap<String,BenchReport> statmap = statisticize(Map);
+        // TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
+        // printOrderStatisticMap(orderedStatmap);
         System.out.println();
+
+        mapOccurrencesOnMethodAndPrint(dataSet);
+        //DebugmapOccurrences(dataSet);
     }
     
     private static String[][] processFile(String Filename) {
@@ -50,9 +54,9 @@ public class ProcessOutput {
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
             JSONObject Runtimes = file.getJSONObject("Runtimes");
-            addProfilerToDataset(Async, Runtimes);
-            addProfilerToDataset(HonestProfiler , Runtimes);
-            addProfilerToDataset(JavaFlightRecorder , Runtimes);
+            addProfilerToDataset(Async, Runtimes, "Async");
+            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler");
+            addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder");
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -61,7 +65,7 @@ public class ProcessOutput {
         return new String[5][2];
     }
 
-    private static void addProfilerToDataset(JSONObject profiler,JSONObject Runtimes) {
+    private static void addProfilerToDataset(JSONObject profiler,JSONObject Runtimes, String profilerName) {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
@@ -71,7 +75,7 @@ public class ProcessOutput {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
                 BigDecimal Runtime =  (BigDecimal) Runtimes.get(file);
-                dataSet.add(new BenchMethod(file, methodName, percentage, Runtime.doubleValue()));
+                dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, Runtime.doubleValue()));
                                 
             }
             
@@ -80,6 +84,33 @@ public class ProcessOutput {
         System.out.println();
     }
 
+    public static String normaliseMethodName(String MethodName, String Profiler) {
+        String normalisedMethodName = "";
+        switch (Profiler) {
+            case "Async":
+                normalisedMethodName = MethodName;
+                break;
+            case "HonestProfiler":
+            normalisedMethodName = MethodName.replace("::", ".");
+                break;
+            case "JavaFlightRecorder":
+            normalisedMethodName = MethodName.split("\\(")[0];
+                break;
+        
+            default:
+            normalisedMethodName = MethodName;
+                break;
+        }
+
+        if (normalisedMethodName.contains("$$Lambda")) {
+            normalisedMethodName = normalisedMethodName.split("\\$\\$Lambda")[0];
+        }
+
+        if (normalisedMethodName.isEmpty()) {
+            return MethodName;
+        }
+        return normalisedMethodName;
+    }
 
     public static HashMap<String,ArrayList<BenchMethod>> mapOccurrences(ArrayList<BenchMethod> collection) {
         HashMap<String,ArrayList<BenchMethod>> heatMap = new HashMap<>();
@@ -95,7 +126,92 @@ public class ProcessOutput {
                 heatMap.put(key, array );
             }
         }
-        collection.clear(); // test of the collecetions speed of clearing
+        
+        return heatMap;
+    }
+
+    public static void mapOccurrencesOnMethodAndPrint(ArrayList<BenchMethod> collection) {
+        HashMap<String,ArrayList<BenchMethod>> heatMap = new HashMap<>();
+        for (BenchMethod i : collection) {
+            String key = i.method;
+            if (heatMap.containsKey(key)) {
+                heatMap.get(key).add(i);
+                //heatMap.put(key, heatMap.get(key).add(i));
+            }
+            else{
+                ArrayList<BenchMethod> array = new ArrayList<BenchMethod>();
+                array.add(i);
+                heatMap.put(key, array );
+            }
+        }
+
+        HashMap<String,BenchReportOnMethod> statisticMap = new HashMap<String,BenchReportOnMethod>();
+        for (String key : heatMap.keySet()) {
+            BenchReportOnMethod report = new BenchReportOnMethod(key);
+            for (BenchMethod benchMethod : heatMap.get(key)) {
+                report.addBenchMethod(benchMethod);
+            }
+            statisticMap.put(key, report);
+        }
+        
+        for (String Method : statisticMap.keySet()) {
+            if (statisticMap.get(Method).BenchMethods.size() < 10) {
+                continue;
+            }
+            System.out.println("");
+            System.out.println("----------" + Method + "----------");
+            System.out.println("");
+            for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
+                
+                System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
+                System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
+                System.out.print(" File: " + benchMethod.filename);
+                System.out.println("");
+            }
+            System.out.println("");
+            System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
+            System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
+            System.out.println("JavaFlightRecorder Average: "+ statisticMap.get(Method).getAverage("JavaFlightRecorder"));
+            System.out.println("");
+            System.out.println("Min: "+ statisticMap.get(Method).min);
+            System.out.println("Max: "+ statisticMap.get(Method).max);
+            System.out.println("Diff: "+ (statisticMap.get(Method).max - statisticMap.get(Method).min));
+        }
+    }
+
+
+    public static HashMap<String,Integer> DebugmapOccurrences(ArrayList<BenchMethod> collection) {
+        HashMap<String,Integer> heatMap = new HashMap<>();
+        for (BenchMethod i : collection) {
+            if (heatMap.containsKey(i.method)) {
+                heatMap.put(i.method, heatMap.get(i.method) + 1);
+
+            }
+            else{
+                heatMap.put(i.method, 1 );
+            }
+        }
+        int total = 0;
+        int occurrences = 0;
+        HashMap<String, Integer> highlights = new HashMap<String, Integer>();
+        for (String method : heatMap.keySet()) {
+            total+= 1;
+            System.out.println(method + " " + heatMap.get(method));
+            if (heatMap.get(method) <= 1) {
+                highlights.put(method, heatMap.get(method));
+                occurrences++;
+            }
+        }
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        for (String methoda : highlights.keySet()) {
+
+            System.out.println(methoda + " " + heatMap.get(methoda));
+
+        }
+        System.out.println("occurrences: "+ occurrences);
+        System.out.println("Total: "+ total);
         return heatMap;
     }
 
@@ -174,9 +290,9 @@ public class ProcessOutput {
             
             System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
             System.out.println("");
-            for (int i = 0; i < benchReport.Percentages.size(); i++) {
-                System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i));
-            }
+            // for (int i = 0; i < benchReport.Percentages.size(); i++) {
+            //     System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i));
+            // }
         }
     }
 
@@ -274,5 +390,96 @@ class BenchReport {
         }
         return (Runtimemax - Runtimemin);
     }
+    
+}
+
+class BenchReportOnMethod {
+
+    public String method;
+    public ArrayList<BenchMethod> BenchMethods;
+    public Double min;
+    public Double max;
+    //public String percentage;
+
+    public BenchReportOnMethod(String method) {
+        this.method = method;
+        BenchMethods = new ArrayList<BenchMethod>();
+        min = 100d;
+        max = 0d;
+    }
+
+    public void addBenchMethod(BenchMethod BenchMethod)
+    {
+                // need to do some parseing
+        BenchMethod.percentage = BenchMethod.percentage.replace("%", "");
+        Double percent = 0d;
+        try {
+            percent = Double.parseDouble(BenchMethod.percentage);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("one of the percentages is not vaild!");
+            // TODO: handle exception
+        }
+        
+        if (percent > max) {
+            max = percent;
+        }
+        if (percent < min) {
+            min = percent;
+        }
+        BenchMethods.add(BenchMethod);
+    }
+
+    public Double getAverage(String profilerName) {
+        String FileType = "";
+        switch (profilerName) {
+            case "Async":
+            FileType = ".txt";
+                break;
+            case "HonestProfiler":
+            FileType = ".hpl";
+                break;
+            case "JavaFlightRecorder":
+            FileType = ".jfr";
+                break;
+        
+            default:
+
+                break;
+        }
+
+        double total = 0;
+        for (int i = 0; i < BenchMethods.size(); i++) {
+            if (BenchMethods.get(i).filename.endsWith(FileType)) {
+                total+= Double.parseDouble(BenchMethods.get(i).percentage);
+            }
+        }
+        if (total == 0) {
+            return -1D;
+        }
+        return total/BenchMethods.size();
+    }
+
+    public Double getAverageRuntime() {
+        double total = 0;
+        for (int i = 0; i < BenchMethods.size(); i++) {
+            total+= BenchMethods.get(i).Runtime;
+        }
+        return total/BenchMethods.size();
+    }
+
+/*     public Double getBigestDiffinRuntime() {
+        Double Runtimemax = 0d;
+        Double Runtimemin = 1000000000000d;
+        for (int i = 0; i < Runtimes.size(); i++) {
+            if (Runtimes.get(i) > Runtimemax) {
+                Runtimemax = Runtimes.get(i);
+            }
+            if (Runtimes.get(i) < Runtimemin) {
+                Runtimemin = Runtimes.get(i);
+            }
+        }
+        return (Runtimemax - Runtimemin);
+    } */
     
 }
