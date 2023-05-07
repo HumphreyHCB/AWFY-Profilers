@@ -23,11 +23,32 @@ public class rebenchOutputProcessor {
         //"asyncTests CD"
         //"honest-profilerTests CD"
         //"JavaFlightRecorderTests Bounce"
-        printBenchmark(map, "asyncTests", "Queens");
-        //HashMap<String,Double> Map = getTotalExeTime(map);
-        //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
+        //printBenchmark(map, "honest-profilerTests", "Queens");
+        HashMap<String,Double> Map = getTotalExeTime(map);
+        appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
         //System.out.println();
 
+
+        //proccesDataDump("RebenchDump/example11.data","Readers/JSONDumps/report3/output11.json");
+        proccesDataDump("RebenchDump/example12.data","Readers/JSONDumps/report3/output12.json");
+        proccesDataDump("RebenchDump/example13.data","Readers/JSONDumps/report3/output13.json");
+        proccesDataDump("RebenchDump/example14.data","Readers/JSONDumps/report3/output14.json");
+        proccesDataDump("RebenchDump/example15.data","Readers/JSONDumps/report3/output15.json");
+        proccesDataDump("RebenchDump/example16.data","Readers/JSONDumps/report3/output16.json");
+        proccesDataDump("RebenchDump/example17.data","Readers/JSONDumps/report3/output17.json");
+        proccesDataDump("RebenchDump/example18.data","Readers/JSONDumps/report3/output18.json");
+        proccesDataDump("RebenchDump/example19.data","Readers/JSONDumps/report3/output19.json");
+        proccesDataDump("RebenchDump/example20.data","Readers/JSONDumps/report3/output20.json");
+
+
+
+    }
+
+    public static void proccesDataDump(String rebenchData, String Outputfile) {
+
+        HashMap<String,ArrayList<Double>> map = processFile(rebenchData);
+        HashMap<String,Double> Map = getTotalExeTime(map);
+        appendRuntimesToJSON(Outputfile, Map);
     }
 
     private static void printBenchmark(HashMap<String,ArrayList<Double>> map, String profiler, String benchmark) {
