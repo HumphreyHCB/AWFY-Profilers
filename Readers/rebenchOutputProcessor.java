@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -18,18 +19,28 @@ import org.json.JSONObject;
 public class rebenchOutputProcessor {
 
     public static void main(String[] args) {
-        String prefix = "10";
-        HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
+        //String prefix = "10";
+        //HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
         //"asyncTests CD"
         //"honest-profilerTests CD"
         //"JavaFlightRecorderTests Bounce"
         //printBenchmark(map, "honest-profilerTests", "Queens");
-        HashMap<String,Double> Map = getTotalExeTime(map);
-        appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
+        //HashMap<String,Double> Map = getMedianExeTime(map);
+        //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
         //System.out.println();
 
+        proccesDataDump("RebenchDump/example.data","Readers/JSONDumps/report3/output.json");
+        proccesDataDump("RebenchDump/example2.data","Readers/JSONDumps/report3/output2.json");
+        proccesDataDump("RebenchDump/example3.data","Readers/JSONDumps/report3/output3.json");
+        proccesDataDump("RebenchDump/example4.data","Readers/JSONDumps/report3/output4.json");
+        proccesDataDump("RebenchDump/example5.data","Readers/JSONDumps/report3/output5.json");
+        proccesDataDump("RebenchDump/example6.data","Readers/JSONDumps/report3/output6.json");
+        proccesDataDump("RebenchDump/example7.data","Readers/JSONDumps/report3/output7.json");
+        proccesDataDump("RebenchDump/example8.data","Readers/JSONDumps/report3/output8.json");
+        proccesDataDump("RebenchDump/example9.data","Readers/JSONDumps/report3/output9.json");
+        proccesDataDump("RebenchDump/example10.data","Readers/JSONDumps/report3/output10.json");
 
-        //proccesDataDump("RebenchDump/example11.data","Readers/JSONDumps/report3/output11.json");
+        proccesDataDump("RebenchDump/example11.data","Readers/JSONDumps/report3/output11.json");
         proccesDataDump("RebenchDump/example12.data","Readers/JSONDumps/report3/output12.json");
         proccesDataDump("RebenchDump/example13.data","Readers/JSONDumps/report3/output13.json");
         proccesDataDump("RebenchDump/example14.data","Readers/JSONDumps/report3/output14.json");
@@ -47,7 +58,7 @@ public class rebenchOutputProcessor {
     public static void proccesDataDump(String rebenchData, String Outputfile) {
 
         HashMap<String,ArrayList<Double>> map = processFile(rebenchData);
-        HashMap<String,Double> Map = getTotalExeTime(map);
+        HashMap<String,Double> Map = getMedianExeTime(map);
         appendRuntimesToJSON(Outputfile, Map);
     }
 
@@ -107,15 +118,13 @@ public class rebenchOutputProcessor {
         }
     }
 
-    private static HashMap<String,Double> getTotalExeTime(HashMap<String,ArrayList<Double>> map) {
+    private static HashMap<String,Double> getMedianExeTime(HashMap<String,ArrayList<Double>> map) {
         HashMap<String,Double> Map = new HashMap<String,Double>();
         for (String key : map.keySet()) {
             ArrayList<Double> AL = map.get(key);
-            Double total = 0.0;
-            for (Double double1 : AL) {
-                total+= double1;
-            }
-            Map.put(key, total);
+            Collections.sort(AL);
+            Double Median = (AL.get(AL.size()/2) +AL.get((AL.size()/2)-1) )/2;
+            Map.put(key, Median);
         }
         return Map;
     }
