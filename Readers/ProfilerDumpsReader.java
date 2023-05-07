@@ -20,9 +20,23 @@ import java.util.Comparator;
 
 public class ProfilerDumpsReader {
     public static void main(String[] args) {
-        String prefix = "10";
-        String[][] DumpFiles = getDumpFiles("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump"+ prefix);
-        String filename = "Readers/JSONDumps/output"+ prefix +".json";
+        //proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump", "Readers/JSONDumps/report3/output11.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump2", "Readers/JSONDumps/report3/output12.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump3", "Readers/JSONDumps/report3/output13.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump4", "Readers/JSONDumps/report3/output14.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump5", "Readers/JSONDumps/report3/output15.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump6", "Readers/JSONDumps/report3/output16.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump7", "Readers/JSONDumps/report3/output17.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump8", "Readers/JSONDumps/report3/output18.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump9", "Readers/JSONDumps/report3/output19.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump10", "Readers/JSONDumps/report3/output20.json");
+
+    }
+
+    private static void proccesDumpDir(String DumpFilesDir, String outputDir) {
+        //String prefix = "10";
+        String[][] DumpFiles = getDumpFiles(DumpFilesDir);
+        String filename = outputDir;
         JSONObject AllProfilerDumps = new JSONObject();
         for (String[] ProfilerDump : DumpFiles) {
             if (ProfilerDump[0].contains("AsyncDumps")) {
