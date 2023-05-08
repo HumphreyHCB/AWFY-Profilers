@@ -35,6 +35,27 @@ public class ProcessOutput {
         processFile("Readers/JSONDumps/report3/output8.json");
         processFile("Readers/JSONDumps/report3/output9.json");
         processFile("Readers/JSONDumps/report3/output10.json");
+        processFile("Readers/JSONDumps/report3/output11.json");
+        processFile("Readers/JSONDumps/report3/output12.json");
+        processFile("Readers/JSONDumps/report3/output13.json");
+        processFile("Readers/JSONDumps/report3/output14.json");
+        processFile("Readers/JSONDumps/report3/output15.json");
+        processFile("Readers/JSONDumps/report3/output16.json");
+        processFile("Readers/JSONDumps/report3/output17.json");
+        processFile("Readers/JSONDumps/report3/output18.json");
+        processFile("Readers/JSONDumps/report3/output19.json");
+        processFile("Readers/JSONDumps/report3/output20.json");
+        processFile("Readers/JSONDumps/report3/output21.json");
+        processFile("Readers/JSONDumps/report3/output22.json");
+        processFile("Readers/JSONDumps/report3/output23.json");
+        processFile("Readers/JSONDumps/report3/output24.json");
+        processFile("Readers/JSONDumps/report3/output25.json");
+        processFile("Readers/JSONDumps/report3/output26.json");
+        processFile("Readers/JSONDumps/report3/output27.json");
+        processFile("Readers/JSONDumps/report3/output28.json");
+        processFile("Readers/JSONDumps/report3/output29.json");
+        processFile("Readers/JSONDumps/report3/output30.json");
+
 
         HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
          HashMap<String,BenchReport> statmap = statisticize(Map);
@@ -292,7 +313,7 @@ public class ProcessOutput {
             System.out.println("");
              for (int i = 0; i < benchReport.Percentages.size(); i++) {
                 //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
-             System.out.println(benchReport.Percentages.get(i));
+             System.out.print(benchReport.Percentages.get(i) + " ");
             
             }
         }

@@ -29,29 +29,67 @@ public class rebenchOutputProcessor {
         //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
         //System.out.println();
 
-        proccesDataDump("RebenchDump/example.data","Readers/JSONDumps/report3/output.json");
-        proccesDataDump("RebenchDump/example2.data","Readers/JSONDumps/report3/output2.json");
-        proccesDataDump("RebenchDump/example3.data","Readers/JSONDumps/report3/output3.json");
-        proccesDataDump("RebenchDump/example4.data","Readers/JSONDumps/report3/output4.json");
-        proccesDataDump("RebenchDump/example5.data","Readers/JSONDumps/report3/output5.json");
-        proccesDataDump("RebenchDump/example6.data","Readers/JSONDumps/report3/output6.json");
-        proccesDataDump("RebenchDump/example7.data","Readers/JSONDumps/report3/output7.json");
-        proccesDataDump("RebenchDump/example8.data","Readers/JSONDumps/report3/output8.json");
-        proccesDataDump("RebenchDump/example9.data","Readers/JSONDumps/report3/output9.json");
-        proccesDataDump("RebenchDump/example10.data","Readers/JSONDumps/report3/output10.json");
+        // proccesDataDump("RebenchDump/example.data","Readers/JSONDumps/report3/output.json");
+        // proccesDataDump("RebenchDump/example2.data","Readers/JSONDumps/report3/output2.json");
+        // proccesDataDump("RebenchDump/example3.data","Readers/JSONDumps/report3/output3.json");
+        // proccesDataDump("RebenchDump/example4.data","Readers/JSONDumps/report3/output4.json");
+        // proccesDataDump("RebenchDump/example5.data","Readers/JSONDumps/report3/output5.json");
+        // proccesDataDump("RebenchDump/example6.data","Readers/JSONDumps/report3/output6.json");
+        // proccesDataDump("RebenchDump/example7.data","Readers/JSONDumps/report3/output7.json");
+        // proccesDataDump("RebenchDump/example8.data","Readers/JSONDumps/report3/output8.json");
+        // proccesDataDump("RebenchDump/example9.data","Readers/JSONDumps/report3/output9.json");
+        // proccesDataDump("RebenchDump/example10.data","Readers/JSONDumps/report3/output10.json");
 
-        proccesDataDump("RebenchDump/example11.data","Readers/JSONDumps/report3/output11.json");
-        proccesDataDump("RebenchDump/example12.data","Readers/JSONDumps/report3/output12.json");
-        proccesDataDump("RebenchDump/example13.data","Readers/JSONDumps/report3/output13.json");
-        proccesDataDump("RebenchDump/example14.data","Readers/JSONDumps/report3/output14.json");
-        proccesDataDump("RebenchDump/example15.data","Readers/JSONDumps/report3/output15.json");
-        proccesDataDump("RebenchDump/example16.data","Readers/JSONDumps/report3/output16.json");
-        proccesDataDump("RebenchDump/example17.data","Readers/JSONDumps/report3/output17.json");
-        proccesDataDump("RebenchDump/example18.data","Readers/JSONDumps/report3/output18.json");
-        proccesDataDump("RebenchDump/example19.data","Readers/JSONDumps/report3/output19.json");
-        proccesDataDump("RebenchDump/example20.data","Readers/JSONDumps/report3/output20.json");
+        // proccesDataDump("RebenchDump/example11.data","Readers/JSONDumps/report3/output11.json");
+        // proccesDataDump("RebenchDump/example12.data","Readers/JSONDumps/report3/output12.json");
+        // proccesDataDump("RebenchDump/example13.data","Readers/JSONDumps/report3/output13.json");
+        // proccesDataDump("RebenchDump/example14.data","Readers/JSONDumps/report3/output14.json");
+        // proccesDataDump("RebenchDump/example15.data","Readers/JSONDumps/report3/output15.json");
+        // proccesDataDump("RebenchDump/example16.data","Readers/JSONDumps/report3/output16.json");
+        // proccesDataDump("RebenchDump/example17.data","Readers/JSONDumps/report3/output17.json");
+        // proccesDataDump("RebenchDump/example18.data","Readers/JSONDumps/report3/output18.json");
+        // proccesDataDump("RebenchDump/example19.data","Readers/JSONDumps/report3/output19.json");
+        // proccesDataDump("RebenchDump/example20.data","Readers/JSONDumps/report3/output20.json");
+
+        // proccesDataDump("RebenchDump/example21.data","Readers/JSONDumps/report3/output21.json");
+        // proccesDataDump("RebenchDump/example22.data","Readers/JSONDumps/report3/output22.json");
+        // proccesDataDump("RebenchDump/example23.data","Readers/JSONDumps/report3/output23.json");
+        // proccesDataDump("RebenchDump/example24.data","Readers/JSONDumps/report3/output24.json");
+        // proccesDataDump("RebenchDump/example25.data","Readers/JSONDumps/report3/output25.json");
+        // proccesDataDump("RebenchDump/example26.data","Readers/JSONDumps/report3/output26.json");
+        // proccesDataDump("RebenchDump/example27.data","Readers/JSONDumps/report3/output27.json");
+        // proccesDataDump("RebenchDump/example28.data","Readers/JSONDumps/report3/output28.json");
+        // proccesDataDump("RebenchDump/example29.data","Readers/JSONDumps/report3/output29.json");
+        // proccesDataDump("RebenchDump/example30.data","Readers/JSONDumps/report3/output30.json");
 
 
+        //"asyncTests CD"
+        //"honest-profilerTests CD"
+        //"JavaFlightRecorderTests Bounce"
+        //printBenchmark(map, "honest-profilerTests", "Queens");
+        String profiler = "honest-profilerTests";
+        String benchmark = "Queens";
+        printBenchmark(processFile("RebenchDump/example11.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example12.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example13.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example14.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example15.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example16.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example17.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example18.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example19.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example20.data"), profiler, benchmark);
+
+        printBenchmark(processFile("RebenchDump/example21.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example22.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example23.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example24.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example25.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example26.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example27.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example28.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
+        printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
 
     }
 
@@ -60,12 +98,19 @@ public class rebenchOutputProcessor {
         HashMap<String,ArrayList<Double>> map = processFile(rebenchData);
         HashMap<String,Double> Map = getMedianExeTime(map);
         appendRuntimesToJSON(Outputfile, Map);
+
     }
 
     private static void printBenchmark(HashMap<String,ArrayList<Double>> map, String profiler, String benchmark) {
         System.out.println(profiler + " " + benchmark);
         for (Double runtime : map.get(profiler + " " + benchmark)) {
-            System.out.println(runtime);
+            System.out.print(runtime + " ");
+        }
+    }
+
+    private static void bulkPrint(ArrayList<HashMap<String,ArrayList<Double>>> mapofMaps, String profiler, String benchmark) {
+        for (int i = 0; i < mapofMaps.size(); i++) {
+
         }
     }
 
