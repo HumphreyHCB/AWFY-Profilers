@@ -98,14 +98,32 @@ public class rebenchOutputProcessor {
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example2.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example3.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example10.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example11.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example12.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example20.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example21.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example22.data"), dataset);
 
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example2.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example3.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example10.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example11.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example12.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example20.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example21.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example22.data"), dataset);
 
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example2.data"), dataset);
         dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example3.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example10.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example11.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example12.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example20.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example21.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example22.data"), dataset);
         TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
         for (String key  : overhead.keySet()) {
             System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
