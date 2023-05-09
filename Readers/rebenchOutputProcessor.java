@@ -5,10 +5,13 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,28 +72,64 @@ public class rebenchOutputProcessor {
         //printBenchmark(map, "honest-profilerTests", "Queens");
         String profiler = "honest-profilerTests";
         String benchmark = "Queens";
-        printBenchmark(processFile("RebenchDump/example11.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example12.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example13.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example14.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example15.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example16.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example17.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example18.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example19.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example20.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example11.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example12.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example13.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example14.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example15.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example16.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example17.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example18.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example19.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example20.data"), profiler, benchmark);
 
-        printBenchmark(processFile("RebenchDump/example21.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example22.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example23.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example24.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example25.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example26.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example27.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example28.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
-        printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example21.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example22.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example23.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example24.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example25.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example26.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example27.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example28.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
+        // printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
 
+        HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example2.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example3.data"), dataset);
+
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example2.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example3.data"), dataset);
+
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example2.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example3.data"), dataset);
+        TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
+        for (String key  : overhead.keySet()) {
+            System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
+        }
+    }
+
+    public static HashMap<String,ArrayList<Double>> compaireForOverhead(HashMap<String,ArrayList<Double>> nonProfiled , HashMap<String,ArrayList<Double>> profiled, HashMap<String,ArrayList<Double>> dataset) {
+        HashMap<String,Double> nonProfileddata = getMedianExeTime(nonProfiled);
+        HashMap<String,Double> profileddata = getMedianExeTime(profiled);
+        HashMap<String,Double> result = new HashMap<String,Double>();
+        for (String key : profileddata.keySet()) {
+            result.put(key, (profileddata.get(key) - nonProfileddata.get("Tests " + key.split("\\s+")[1]))  / nonProfileddata.get("Tests " + key.split("\\s+")[1]) * 100);
+        }
+        for (String key  : result.keySet()) {
+            if (dataset.containsKey(key)) {
+                dataset.get(key).add(result.get(key));
+            }
+            else{
+                ArrayList<Double> array = new ArrayList<Double>();
+                array.add(result.get(key));
+                dataset.put(key, array );
+            }
+        }
+        return dataset;
     }
 
     public static void proccesDataDump(String rebenchData, String Outputfile) {
@@ -170,6 +209,19 @@ public class rebenchOutputProcessor {
             Collections.sort(AL);
             Double Median = (AL.get(AL.size()/2) +AL.get((AL.size()/2)-1) )/2;
             Map.put(key, Median);
+        }
+        return Map;
+    }
+
+    private static HashMap<String,Double> getaverage(HashMap<String,ArrayList<Double>> map) {
+        HashMap<String,Double> Map = new HashMap<String,Double>();
+        for (String key : map.keySet()) {
+            ArrayList<Double> AL = map.get(key);
+            Double total = 0.0;
+            for (Double double1 : AL) {
+                total+= double1;
+            }
+            Map.put(key, total/AL.size());
         }
         return Map;
     }
