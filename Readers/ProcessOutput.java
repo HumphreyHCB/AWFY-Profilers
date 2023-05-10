@@ -57,13 +57,13 @@ public class ProcessOutput {
         processFile("Readers/JSONDumps/report3/output30.json");
 
 
-        HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
-         HashMap<String,BenchReport> statmap = statisticize(Map);
-         TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-         printOrderStatisticMap(orderedStatmap);
-        System.out.println();
+        // HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
+        //  HashMap<String,BenchReport> statmap = statisticize(Map);
+        //  TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
+        //  printOrderStatisticMap(orderedStatmap);
+        // System.out.println();
 
-        //mapOccurrencesOnMethodAndPrint(dataSet);
+        mapOccurrencesOnMethodAndPrint(dataSet);
         //DebugmapOccurrences(dataSet);
     }
     
@@ -176,19 +176,19 @@ public class ProcessOutput {
         }
         
         for (String Method : statisticMap.keySet()) {
-            if (statisticMap.get(Method).BenchMethods.size() < 10) {
+            if (statisticMap.get(Method).BenchMethods.size() <= 30) {
                 continue;
             }
             System.out.println("");
             System.out.println("----------" + Method + "----------");
             System.out.println("");
-            for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
+/*             for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
                 
                 System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
                 System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
                 System.out.print(" File: " + benchMethod.filename);
                 System.out.println("");
-            }
+            } */
             System.out.println("");
             System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
             System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
@@ -264,8 +264,6 @@ public class ProcessOutput {
             if (!currentReport.filename.equals(currentFile)) {
                 currentFile = currentReport.filename;
                 System.out.println("");
-                System.out.println("Total Diff : " + uncertainty);
-                uncertainty = 0D;
                 System.out.println("");
                 System.out.println("");
                 System.out.println("----------" + currentFile + "----------");
@@ -290,8 +288,6 @@ public class ProcessOutput {
             System.out.print("  Diff : " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
             
         }
-        System.out.println("");
-        System.out.println("Uncertainty : " + uncertainty);
 
         System.out.println("");
         System.out.println("");
@@ -313,7 +309,7 @@ public class ProcessOutput {
             System.out.println("");
              for (int i = 0; i < benchReport.Percentages.size(); i++) {
                 //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
-             System.out.print(benchReport.Percentages.get(i) + " ");
+             //System.out.print(benchReport.Percentages.get(i) + " ");
             
             }
         }
