@@ -32,7 +32,7 @@ public class Grapher {
         new SwingWrapper(chart).displayChart();
 
         try {
-            BitmapEncoder.saveBitmap(chart, GraphName, BitmapFormat.PNG);
+            BitmapEncoder.saveBitmap(chart, "Graphs/"+GraphName, BitmapFormat.PNG);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
