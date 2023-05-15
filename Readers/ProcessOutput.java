@@ -57,13 +57,13 @@ public class ProcessOutput {
         processFile("Readers/JSONDumps/report3/output30.json");
 
 
-        // HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
-        //  HashMap<String,BenchReport> statmap = statisticize(Map);
-        //  TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-        //  printOrderStatisticMap(orderedStatmap);
+         HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
+          HashMap<String,BenchReport> statmap = statisticize(Map);
+          TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
+          printOrderStatisticMap(orderedStatmap);
         // System.out.println();
 
-        mapOccurrencesOnMethodAndPrint(dataSet);
+        //mapOccurrencesOnMethodAndPrint(dataSet);
         //DebugmapOccurrences(dataSet);
     }
     
@@ -307,11 +307,16 @@ public class ProcessOutput {
             
             System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
             System.out.println("");
+            ArrayList<Double> per = new ArrayList<>();
+            ArrayList<Double> run = new ArrayList<>();
              for (int i = 0; i < benchReport.Percentages.size(); i++) {
                 //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
              //System.out.print(benchReport.Percentages.get(i) + " ");
+                per.add(benchReport.Percentages.get(i));
+                run.add(benchReport.Runtimes.get(i));
             
             }
+            new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
         }
     }
 
