@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="13.0.5">
+  <sessions>
+    <session id="120" name="New session" jvmConfigurationId="100" recordArrayAlloc="false">
+      <filters>
+        <group type="exclusive" name="Default excludes" template="defaultExcludes" />
+      </filters>
+      <triggers logTarget="file" logFile="/home/hburchell/Repos/AWFY-Profilers/outputofjprofiler.txt">
+        <jvmStart>
+          <actions>
+            <startRecording>
+              <cpu enabled="true" />
+              <allocation enabled="true" />
+            </startRecording>
+          </actions>
+        </jvmStart>
+        <jvmStop>
+          <actions>
+            <saveSnapshot file="/home/hburchell/Repos/AWFY-Profilers/ProfilesDump/JProfiler/Bounce" number="true" />
+          </actions>
+        </jvmStop>
+      </triggers>
+    </session>
+  </sessions>
+</config>

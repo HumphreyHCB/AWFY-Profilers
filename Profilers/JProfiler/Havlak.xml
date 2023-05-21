@@ -5,15 +5,20 @@
       <filters>
         <group type="exclusive" name="Default excludes" template="defaultExcludes" />
       </filters>
-      <triggers logTarget="stdout" logFile="">
-        <timer offsetTime="1" offsetTimeUnit="s" intervalTime="11" intervalTimeUnit="s">
+      <triggers logTarget="file" logFile="/home/hburchell/Repos/AWFY-Profilers/outputofjprofiler.txt">
+        <jvmStart>
           <actions>
             <startRecording>
               <cpu enabled="true" />
+              <allocation enabled="true" />
             </startRecording>
-            <saveSnapshot file="/home/hburchell/Repos/AWFY-Profilers/ProfilesDump/JProfiler/Joutput" number="true"/>
           </actions>
-        </timer>
+        </jvmStart>
+        <jvmStop>
+          <actions>
+            <saveSnapshot file="/home/hburchell/Repos/AWFY-Profilers/ProfilesDump/JProfiler/Havlak" number="true" />
+          </actions>
+        </jvmStop>
       </triggers>
     </session>
   </sessions>
