@@ -25,6 +25,7 @@ public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
 
     public static void main(String[] args) {
+        
         processFile("Readers/JSONDumps/report3/output.json");
         processFile("Readers/JSONDumps/report3/output2.json");
         processFile("Readers/JSONDumps/report3/output3.json");
@@ -60,7 +61,9 @@ public class ProcessOutput {
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
           HashMap<String,BenchReport> statmap = statisticize(Map);
           TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-          printOrderStatisticMap(orderedStatmap);
+          //printOrderStatisticMapForMasterTable(orderedStatmap);
+        printOrderStatisticMap(orderedStatmap);
+
         // System.out.println();
 
         //mapOccurrencesOnMethodAndPrint(dataSet);
@@ -75,8 +78,8 @@ public class ProcessOutput {
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
             JSONObject Runtimes = file.getJSONObject("Runtimes");
-            addProfilerToDataset(Async, Runtimes, "Async", path);
-            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
+            //addProfilerToDataset(Async, Runtimes, "Async", path);
+            //addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
             addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -252,7 +255,57 @@ public class ProcessOutput {
         return new TreeMap<String,BenchReport>(statisticMap);       
     }
 
-    
+    public static void printOrderStatisticMapForMasterTable(TreeMap<String,BenchReport> OSM) {
+        String currentFile = "";
+        BenchReport currentReport;
+        ArrayList<BenchReport> highlights = new ArrayList<BenchReport>();
+        int count = 0;
+        for (String key : OSM.keySet()) {
+            currentReport = OSM.get(key);
+            if (count == 15) {
+                if (!currentReport.filename.equals(currentFile)) {
+                    count = 0;
+                }
+                else{
+                    continue;
+                }
+            }
+
+            if (!currentReport.filename.equals(currentFile)) {
+                count = 0;
+                currentFile = currentReport.filename;
+                System.out.println("");
+                //System.out.println("");
+                //System.out.println("");
+                System.out.println(currentFile );
+                //System.out.println("");
+                //System.out.println("Method      Entries        Average      Min     MinRuntime      Max     MaxRuntime      Diff");
+            }
+            
+            System.out.print(currentReport.method);
+            //System.out.print(" " + currentReport.Percentages.size());
+            System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
+            // System.out.print(" " + currentReport.min);
+            // System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
+            // System.out.print(" " + currentReport.max);
+            // System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
+             String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
+            // System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
+             System.out.println("");
+
+            if (Double.parseDouble(diff) >= 5 ) {
+                highlights.add(currentReport);
+            }
+            count++;
+        }
+
+        // for (BenchReport benchReport : highlights) {
+        //     System.out.println("");
+        //     System.out.print(" File : " + benchReport.filename);
+            //new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
+        //}
+
+    }
 
     public static void printOrderStatisticMap(TreeMap<String,BenchReport> OSM) {
         String currentFile = "";
@@ -282,7 +335,8 @@ public class ProcessOutput {
             System.out.print("  Max : " + currentReport.max);
             String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
             uncertainty += Double.parseDouble(diff);
-            if (Double.parseDouble(diff) >= 5 ) {
+            //if (Double.parseDouble(diff) >= 0.001 ) {
+                if (true) {
                 highlights.add(currentReport);
             }
             System.out.print("  Diff : " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
@@ -311,12 +365,12 @@ public class ProcessOutput {
             ArrayList<Double> run = new ArrayList<>();
              for (int i = 0; i < benchReport.Percentages.size(); i++) {
                 //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
-             //System.out.print(benchReport.Percentages.get(i) + " ");
+             System.out.print(benchReport.Percentages.get(i) + " ");
                 per.add(benchReport.Percentages.get(i));
                 run.add(benchReport.Runtimes.get(i));
             
             }
-            new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
+            //new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
         }
     }
 
