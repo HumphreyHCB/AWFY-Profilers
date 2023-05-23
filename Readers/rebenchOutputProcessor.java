@@ -193,27 +193,24 @@ public class rebenchOutputProcessor {
     private static void appendRuntimesToJSON(String Filename, HashMap<String,Double> Map) {
         JSONObject file;
         HashMap<String,Double> normalisedMap = new HashMap<String,Double>();
-        int countera = 0;
-        int counterb = 0;
-        int counterc = 0;
         for (String key : Map.keySet()) {
             String[] split = key.split("\\s+");
             String benchmark = split[1];
             String profiler = split[0];
             if (profiler.contains("JavaFlightRecorderTests")) {
-                normalisedMap.put("JavaFlightRecorder_"+benchmark+"_JFR_.jfr", Map.get(key));
+                normalisedMap.put("JavaFlightRecorder_"+benchmark+".jfr", Map.get(key));
             }else if (profiler.contains("asyncTests")) {
-                normalisedMap.put("rebench_test_Async_"+benchmark + "_Async_.txt", Map.get(key));
+                normalisedMap.put("rebench_test_Async_"+benchmark + ".txt", Map.get(key));
             }else if (profiler.contains("honest-profilerTests")) {
-                normalisedMap.put(benchmark + "_honest_.hpl", Map.get(key));
+                normalisedMap.put(benchmark + ".hpl", Map.get(key));
             }else if (profiler.contains("NonProfiledTests")) {
                 normalisedMap.put(benchmark + "_not_profiled_", Map.get(key));
             }else if (profiler.contains("PerfTests")) {
-                normalisedMap.put(benchmark + "_Perf_.data", Map.get(key));
+                normalisedMap.put(benchmark + ".data", Map.get(key));
             }else if (profiler.contains("YourKitTests")) {
-                normalisedMap.put(benchmark + "_YourKit_.txt", Map.get(key));
+                normalisedMap.put("YourKit_"+benchmark + ".txt", Map.get(key));
             }else if (profiler.contains("JProfilerTests")) {
-                normalisedMap.put(benchmark + "_JProfiler_.txt", Map.get(key));
+                normalisedMap.put("JProfiler_" + benchmark + ".txt", Map.get(key));
             } else {
                 System.out.println(profiler + " " + benchmark + " was not added to the json");
             } 

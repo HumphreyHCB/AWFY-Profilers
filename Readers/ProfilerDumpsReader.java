@@ -157,6 +157,7 @@ public class ProfilerDumpsReader {
                 System.out.println("---------------JProfiler---------------");
                 JSONObject JProfiler = new JSONObject();
                 for (int i = 0; i < ProfilerDump.length; i++) {
+
                     JSONObject benchmark = new JSONObject();
                     String[][] top10 = JProfilerHottestMethods(ProfilerDump[i]);
                     for (String[] strings : top10) {
@@ -176,7 +177,7 @@ public class ProfilerDumpsReader {
                         }
                         extra++;
                     }
-                    JProfiler.put(new File(ProfilerDump[i]).getName(), benchmark);
+                    JProfiler.put("JProfiler_" + new File(ProfilerDump[i]).getName(), benchmark);
                     System.out.println("");
                 }
                 AllProfilerDumps.put("JProfiler", JProfiler);
@@ -452,5 +453,6 @@ public class ProfilerDumpsReader {
         return list.stream().collect(Collectors.toMap(Entry::getKey, Entry::getValue, (a, b) -> b, LinkedHashMap::new));
 
     }
+
 
 }
