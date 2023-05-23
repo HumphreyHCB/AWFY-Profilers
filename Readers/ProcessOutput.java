@@ -26,47 +26,47 @@ public class ProcessOutput {
 
     public static void main(String[] args) {
         
-        processFile("Readers/JSONDumps/report3/output.json");
-        processFile("Readers/JSONDumps/report3/output2.json");
-        processFile("Readers/JSONDumps/report3/output3.json");
-        processFile("Readers/JSONDumps/report3/output4.json");
-        processFile("Readers/JSONDumps/report3/output5.json");
-        processFile("Readers/JSONDumps/report3/output6.json");
-        processFile("Readers/JSONDumps/report3/output7.json");
-        processFile("Readers/JSONDumps/report3/output8.json");
-        processFile("Readers/JSONDumps/report3/output9.json");
-        processFile("Readers/JSONDumps/report3/output10.json");
-        processFile("Readers/JSONDumps/report3/output11.json");
-        processFile("Readers/JSONDumps/report3/output12.json");
-        processFile("Readers/JSONDumps/report3/output13.json");
-        processFile("Readers/JSONDumps/report3/output14.json");
-        processFile("Readers/JSONDumps/report3/output15.json");
-        processFile("Readers/JSONDumps/report3/output16.json");
-        processFile("Readers/JSONDumps/report3/output17.json");
-        processFile("Readers/JSONDumps/report3/output18.json");
-        processFile("Readers/JSONDumps/report3/output19.json");
-        processFile("Readers/JSONDumps/report3/output20.json");
-        processFile("Readers/JSONDumps/report3/output21.json");
-        processFile("Readers/JSONDumps/report3/output22.json");
-        processFile("Readers/JSONDumps/report3/output23.json");
-        processFile("Readers/JSONDumps/report3/output24.json");
-        processFile("Readers/JSONDumps/report3/output25.json");
-        processFile("Readers/JSONDumps/report3/output26.json");
-        processFile("Readers/JSONDumps/report3/output27.json");
-        processFile("Readers/JSONDumps/report3/output28.json");
-        processFile("Readers/JSONDumps/report3/output29.json");
-        processFile("Readers/JSONDumps/report3/output30.json");
+        processFile("Readers/JSONDumps/report4/output.json");
+        processFile("Readers/JSONDumps/report4/output2.json");
+        processFile("Readers/JSONDumps/report4/output3.json");
+        processFile("Readers/JSONDumps/report4/output4.json");
+        processFile("Readers/JSONDumps/report4/output5.json");
+        processFile("Readers/JSONDumps/report4/output6.json");
+        processFile("Readers/JSONDumps/report4/output7.json");
+        processFile("Readers/JSONDumps/report4/output8.json");
+        processFile("Readers/JSONDumps/report4/output9.json");
+        processFile("Readers/JSONDumps/report4/output10.json");
+        processFile("Readers/JSONDumps/report4/output11.json");
+        processFile("Readers/JSONDumps/report4/output12.json");
+        processFile("Readers/JSONDumps/report4/output13.json");
+        processFile("Readers/JSONDumps/report4/output14.json");
+        processFile("Readers/JSONDumps/report4/output15.json");
+        processFile("Readers/JSONDumps/report4/output16.json");
+        processFile("Readers/JSONDumps/report4/output17.json");
+        processFile("Readers/JSONDumps/report4/output18.json");
+        processFile("Readers/JSONDumps/report4/output19.json");
+        processFile("Readers/JSONDumps/report4/output20.json");
+        processFile("Readers/JSONDumps/report4/output21.json");
+        processFile("Readers/JSONDumps/report4/output22.json");
+        processFile("Readers/JSONDumps/report4/output23.json");
+        processFile("Readers/JSONDumps/report4/output24.json");
+        processFile("Readers/JSONDumps/report4/output25.json");
+        processFile("Readers/JSONDumps/report4/output26.json");
+        processFile("Readers/JSONDumps/report4/output27.json");
+        processFile("Readers/JSONDumps/report4/output28.json");
+        processFile("Readers/JSONDumps/report4/output29.json");
+        processFile("Readers/JSONDumps/report4/output30.json");
 
 
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
           HashMap<String,BenchReport> statmap = statisticize(Map);
           TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
           //printOrderStatisticMapForMasterTable(orderedStatmap);
-        printOrderStatisticMap(orderedStatmap);
+        //printOrderStatisticMap(orderedStatmap);
 
         // System.out.println();
 
-        //mapOccurrencesOnMethodAndPrint(dataSet);
+        mapOccurrencesOnMethodAndPrint(dataSet);
         //DebugmapOccurrences(dataSet);
     }
     
@@ -77,10 +77,19 @@ public class ProcessOutput {
             JSONObject JavaFlightRecorder = file.getJSONObject("JavaFlightRecorder");
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
+
+            JSONObject Perf = file.getJSONObject("Perf");
+            JSONObject YourKit = file.getJSONObject("YourKit");
+            JSONObject JProfiler = file.getJSONObject("JProfiler");
+
             JSONObject Runtimes = file.getJSONObject("Runtimes");
-            //addProfilerToDataset(Async, Runtimes, "Async", path);
-            //addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
+            addProfilerToDataset(Async, Runtimes, "Async", path);
+            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
             addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
+
+            addProfilerToDataset(Perf, Runtimes, "Perf", path);
+            addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
+            addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -119,8 +128,22 @@ public class ProcessOutput {
                 break;
             case "JavaFlightRecorder":
             normalisedMethodName = MethodName.split("\\(")[0];
+                break;     
+            case "Perf":
+                normalisedMethodName = MethodName.replace("[.] ", "");
+                String[] thingsToRemove = {"json.JsonValue","json.JsonArray","java.lang.String","boolean","java.lang.Object","int","boolean","List$Element","void","cd.RedBlackTree$InsertResult","richards.TaskControlBlock","vtable","deltablue.AbstractConstraint","deltablue.Plan"};
+                for (String str : thingsToRemove) {
+                    normalisedMethodName = normalisedMethodName.replace(str, "");
+                }
+                normalisedMethodName = normalisedMethodName.split("\\(")[0];
                 break;
-        
+            case "YourKit":
+                normalisedMethodName = MethodName.split("\\(")[0];
+                break;
+            case "JProfiler":
+                normalisedMethodName = MethodName;
+                break;
+            
             default:
             normalisedMethodName = MethodName;
                 break;
@@ -133,7 +156,7 @@ public class ProcessOutput {
         if (normalisedMethodName.isEmpty()) {
             return MethodName;
         }
-        return normalisedMethodName;
+        return normalisedMethodName.trim();
     }
 
     public static HashMap<String,ArrayList<BenchMethod>> mapOccurrences(ArrayList<BenchMethod> collection) {
@@ -196,6 +219,11 @@ public class ProcessOutput {
             System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
             System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
             System.out.println("JavaFlightRecorder Average: "+ statisticMap.get(Method).getAverage("JavaFlightRecorder"));
+
+            System.out.println("Perf Average: "+ statisticMap.get(Method).getAverage("PerfTests"));
+            System.out.println("YourKit Average: "+ statisticMap.get(Method).getAverage("YourKitTests"));
+            System.out.println("JProfiler Average: "+ statisticMap.get(Method).getAverage("JProfilerTests"));
+
             System.out.println("");
             System.out.println("Min: "+ statisticMap.get(Method).min);
             System.out.println("Max: "+ statisticMap.get(Method).max);
@@ -335,8 +363,7 @@ public class ProcessOutput {
             System.out.print("  Max : " + currentReport.max);
             String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
             uncertainty += Double.parseDouble(diff);
-            //if (Double.parseDouble(diff) >= 0.001 ) {
-                if (true) {
+            if (Double.parseDouble(diff) >= 5) {
                 highlights.add(currentReport);
             }
             System.out.print("  Diff : " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
@@ -365,7 +392,7 @@ public class ProcessOutput {
             ArrayList<Double> run = new ArrayList<>();
              for (int i = 0; i < benchReport.Percentages.size(); i++) {
                 //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
-             System.out.print(benchReport.Percentages.get(i) + " ");
+                //System.out.print(benchReport.Percentages.get(i) + " ");
                 per.add(benchReport.Percentages.get(i));
                 run.add(benchReport.Runtimes.get(i));
             
@@ -373,7 +400,30 @@ public class ProcessOutput {
             //new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
         }
     }
+    private static String convertRealNametoRuntimeName(String filename , String profilerName) {
+        String correctedName = "";
+        if (profilerName.contains("JavaFlightRecorder")) {
+            correctedName = filename.replace(".jfr", "_JFR_.jfr");
+        }else if (profilerName.contains("Async")) {
+            correctedName = filename.replace(".txt", "_Async_.txt");
+        }else if (profilerName.contains("HonestProfiler")) {
+            correctedName = filename.replace(".hpl", "_honest_.hpl");
+        }else if (profilerName.contains("NonProfiledTests")) {
 
+
+        }else if (profilerName.contains("Perf")) {
+            correctedName = filename.replace(".data", "_Perf_.data");
+        }else if (profilerName.contains("YourKit")) {
+            correctedName = filename.replace("YourKit_", "");
+            correctedName = correctedName.replace(".txt", "_YourKit_.txt");
+        }else if (profilerName.contains("JProfiler")) {
+            correctedName = filename.replace(".txt", "_JProfiler_.txt");
+        } else {
+            correctedName = filename;
+        } 
+
+        return correctedName;
+    }
 }
 class BenchMethod {
 
@@ -514,18 +564,26 @@ class BenchReportOnMethod {
     }
 
     public Double getAverage(String profilerName) {
-        String FileType = "";
+        String LookUp = "";
         switch (profilerName) {
             case "Async":
-            FileType = ".txt";
+            LookUp = "Async";
                 break;
             case "HonestProfiler":
-            FileType = ".hpl";
+            LookUp = ".hpl";
                 break;
             case "JavaFlightRecorder":
-            FileType = ".jfr";
+            LookUp = ".jfr";
                 break;
-        
+            case "PerfTests":
+                LookUp = ".data";
+                    break;
+            case "YourKitTests":
+                    LookUp = "YourKit";
+                        break;
+            case "JProfilerTests":
+                        LookUp = "JProfiler";
+                            break;        
             default:
 
                 break;
@@ -533,7 +591,7 @@ class BenchReportOnMethod {
 
         double total = 0;
         for (int i = 0; i < BenchMethods.size(); i++) {
-            if (BenchMethods.get(i).filename.endsWith(FileType)) {
+            if (BenchMethods.get(i).filename.contains(LookUp)) {
                 total+= Double.parseDouble(BenchMethods.get(i).percentage);
             }
         }
@@ -543,6 +601,30 @@ class BenchReportOnMethod {
         return total/BenchMethods.size();
     }
 
+    private static String convertRealNametoRuntimeName(String filename , String profilerName) {
+        String correctedName = "";
+        if (profilerName.contains("JavaFlightRecorder")) {
+            correctedName = filename.replace(".jfr", "_JFR_.jfr");
+        }else if (profilerName.contains("Async")) {
+            correctedName = filename.replace(".txt", "_Async_.txt");
+        }else if (profilerName.contains("HonestProfiler")) {
+            correctedName = filename.replace(".hpl", "_honest_.hpl");
+        }else if (profilerName.contains("NonProfiledTests")) {
+
+
+        }else if (profilerName.contains("Perf")) {
+            correctedName = filename.replace(".data", "_Perf_.data");
+        }else if (profilerName.contains("YourKit")) {
+            correctedName = filename.replace("YourKit_", "");
+            correctedName = correctedName.replace(".txt", "_YourKit_.txt");
+        }else if (profilerName.contains("JProfiler")) {
+            correctedName = filename.replace(".txt", "_JProfiler_.txt");
+        } else {
+            correctedName = filename;
+        } 
+
+        return correctedName;
+    }
     public Double getAverageRuntime() {
         double total = 0;
         for (int i = 0; i < BenchMethods.size(); i++) {
@@ -564,5 +646,5 @@ class BenchReportOnMethod {
         }
         return (Runtimemax - Runtimemin);
     } */
-    
+
 }
