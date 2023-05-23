@@ -51,28 +51,28 @@ public class ProfilerDumpsReader {
         proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump9", "Readers/JSONDumps/report4/output9.json");
         proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump10", "Readers/JSONDumps/report4/output10.json");
 
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump", "Readers/JSONDumps/report4/output11.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump2", "Readers/JSONDumps/report4/output12.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump3", "Readers/JSONDumps/report4/output13.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump4", "Readers/JSONDumps/report4/output14.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump5", "Readers/JSONDumps/report4/output15.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump6", "Readers/JSONDumps/report4/output16.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump7", "Readers/JSONDumps/report4/output17.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump8", "Readers/JSONDumps/report4/output18.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump9", "Readers/JSONDumps/report4/output19.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump10", "Readers/JSONDumps/report4/output20.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump11", "Readers/JSONDumps/report4/output11.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump12", "Readers/JSONDumps/report4/output12.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump13", "Readers/JSONDumps/report4/output13.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump14", "Readers/JSONDumps/report4/output14.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump15", "Readers/JSONDumps/report4/output15.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump16", "Readers/JSONDumps/report4/output16.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump17", "Readers/JSONDumps/report4/output17.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump18", "Readers/JSONDumps/report4/output18.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump19", "Readers/JSONDumps/report4/output19.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump20", "Readers/JSONDumps/report4/output20.json");
         
 
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump", "Readers/JSONDumps/report4/output21.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump2", "Readers/JSONDumps/report4/output22.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump3", "Readers/JSONDumps/report4/output23.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump4", "Readers/JSONDumps/report4/output24.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump5", "Readers/JSONDumps/report4/output25.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump6", "Readers/JSONDumps/report4/output26.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump7", "Readers/JSONDumps/report4/output27.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump8", "Readers/JSONDumps/report4/output28.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump9", "Readers/JSONDumps/report4/output29.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump10", "Readers/JSONDumps/report4/output30.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump21", "Readers/JSONDumps/report4/output21.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump22", "Readers/JSONDumps/report4/output22.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump23", "Readers/JSONDumps/report4/output23.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump24", "Readers/JSONDumps/report4/output24.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump25", "Readers/JSONDumps/report4/output25.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump26", "Readers/JSONDumps/report4/output26.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump27", "Readers/JSONDumps/report4/output27.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump28", "Readers/JSONDumps/report4/output28.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump29", "Readers/JSONDumps/report4/output29.json");
+        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump30", "Readers/JSONDumps/report4/output30.json");
 
     }
 
