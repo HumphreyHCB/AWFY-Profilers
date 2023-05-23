@@ -66,7 +66,7 @@ public class ProcessOutput {
 
         // System.out.println();
 
-        mapOccurrencesOnMethodAndPrint(dataSet, "Sieve.sieve");
+        mapOccurrencesOnMethodAndPrint(dataSet, "Mandelbrot.mandelbrot");
         //DebugmapOccurrences(dataSet);
     }
     
@@ -102,6 +102,7 @@ public class ProcessOutput {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
+            JSONObject benchmarks = (JSONObject) profiler.get(file);
             JSONArray methods = benchmarks.names();
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
@@ -208,13 +209,13 @@ public class ProcessOutput {
             System.out.println("----------" + Method + "----------");
             System.out.println("");
 
-              for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
+            //   for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
                 
-                System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
-                System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
-                System.out.print(" File: " + benchMethod.filename);
-                System.out.println("");
-            } 
+            //     System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
+            //     System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
+            //     System.out.print(" File: " + benchMethod.filename);
+            //     System.out.println("");
+            // } 
             System.out.println("");
             System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
             System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
@@ -230,11 +231,8 @@ public class ProcessOutput {
             System.out.println("Diff: "+ (statisticMap.get(Method).max - statisticMap.get(Method).min));
         }
         }else{
-            for (String key : statisticMap.keySet()) {
-                
-
-            //BenchReportOnMethod BROM = statisticMap.get(specificMethod);
-            BenchReportOnMethod BROM = statisticMap.get(key);
+            BenchReportOnMethod BROM = statisticMap.get(specificMethod);
+            //BenchReportOnMethod BROM = statisticMap.get(key);
 
             HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
             HashMap<String,ArrayList<Double>> ydatas = new HashMap<String,ArrayList<Double>>();
@@ -256,7 +254,7 @@ public class ProcessOutput {
             }
             new Grapher().multiGraph(specificMethod, xdatas, ydatas);
         }
-        }
+        
     }
 
 
