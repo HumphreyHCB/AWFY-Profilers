@@ -66,7 +66,7 @@ public class ProcessOutput {
 
         // System.out.println();
 
-        mapOccurrencesOnMethodAndPrint(dataSet);
+        mapOccurrencesOnMethodAndPrint(dataSet, "Sieve.sieve");
         //DebugmapOccurrences(dataSet);
     }
     
@@ -102,7 +102,6 @@ public class ProcessOutput {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
-            JSONObject benchmarks = (JSONObject) profiler.get(file);
             JSONArray methods = benchmarks.names();
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
@@ -177,7 +176,7 @@ public class ProcessOutput {
         return heatMap;
     }
 
-    public static void mapOccurrencesOnMethodAndPrint(ArrayList<BenchMethod> collection) {
+    public static void mapOccurrencesOnMethodAndPrint(ArrayList<BenchMethod> collection, String specificMethod) {
         HashMap<String,ArrayList<BenchMethod>> heatMap = new HashMap<>();
         for (BenchMethod i : collection) {
             String key = i.method;
@@ -200,7 +199,7 @@ public class ProcessOutput {
             }
             statisticMap.put(key, report);
         }
-        
+        if (specificMethod == "" || specificMethod == null){
         for (String Method : statisticMap.keySet()) {
             if (statisticMap.get(Method).BenchMethods.size() <= 30) {
                 continue;
@@ -208,13 +207,14 @@ public class ProcessOutput {
             System.out.println("");
             System.out.println("----------" + Method + "----------");
             System.out.println("");
-/*             for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
+
+              for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
                 
                 System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
                 System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
                 System.out.print(" File: " + benchMethod.filename);
                 System.out.println("");
-            } */
+            } 
             System.out.println("");
             System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
             System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
@@ -228,6 +228,34 @@ public class ProcessOutput {
             System.out.println("Min: "+ statisticMap.get(Method).min);
             System.out.println("Max: "+ statisticMap.get(Method).max);
             System.out.println("Diff: "+ (statisticMap.get(Method).max - statisticMap.get(Method).min));
+        }
+        }else{
+            for (String key : statisticMap.keySet()) {
+                
+
+            //BenchReportOnMethod BROM = statisticMap.get(specificMethod);
+            BenchReportOnMethod BROM = statisticMap.get(key);
+
+            HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
+            HashMap<String,ArrayList<Double>> ydatas = new HashMap<String,ArrayList<Double>>();
+
+            for (BenchMethod BM :  BROM.BenchMethods) {
+                if (xdatas.containsKey(BM.Profiler)) {
+                    xdatas.get(BM.Profiler).add(Double.parseDouble(BM.percentage));
+                    ydatas.get(BM.Profiler).add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    xdatas.put(BM.Profiler, array );
+                    ydatas.put(BM.Profiler, arrayb);
+                }
+            }
+            new Grapher().multiGraph(specificMethod, xdatas, ydatas);
+        }
         }
     }
 
@@ -433,6 +461,7 @@ class BenchMethod {
     public String key;
     public Double Runtime;
     public String Path;
+    public String Profiler;
 
     public BenchMethod(String filename, String method, String percentage, Double Runtime, String path) {
         this.filename = filename;
@@ -441,6 +470,27 @@ class BenchMethod {
         this.Runtime = Runtime;
         key = filename + " " + method;
         this.Path = path;
+        decidedProfiler(filename);
+    }
+
+    public void decidedProfiler(String filename) {
+        if (filename.contains("JavaFlightRecorder_")) {
+            Profiler = "JavaFlightRecorder";
+        }else if (filename.contains("rebench_test_Async_")) {
+            Profiler = "Async";
+        }else if (filename.contains(".hpl")) {
+            Profiler = "honest-profiler";
+        }else if (filename.contains("_not_profiled_")) {
+            Profiler = "_not_profiled_";
+        }else if (filename.contains(".data")) {
+            Profiler = "Perf";
+        }else if (filename.contains("YourKit_")) {
+            Profiler = "YourKit";
+        }else if (filename.contains("JProfiler_")) {
+            Profiler = "JProfiler";
+        } else {
+
+        } 
     }
 
     
