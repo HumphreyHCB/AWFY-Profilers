@@ -1,14 +1,14 @@
 --- Execution profile ---
-Total samples       : 8549613
-unknown_Java        : 52951 (0.62%)
-not_walkable_Java   : 791 (0.01%)
+Total samples       : 1536504
+unknown_Java        : 10005 (0.65%)
+not_walkable_Java   : 711 (0.05%)
 deoptimization      : 5 (0.00%)
 
---- 525643780 ns (0.61%), 52537 samples
+--- 94142830 ns (0.61%), 9407 samples
   [ 0] Towers.moveDisks
   [ 1] [unknown_Java]
 
---- 27946876 ns (0.03%), 2750 samples
+--- 14465871 ns (0.09%), 1418 samples
   [ 0] Towers.benchmark
   [ 1] Benchmark.innerBenchmarkLoop
   [ 2] Run.measure
@@ -16,30 +16,18 @@ deoptimization      : 5 (0.00%)
   [ 4] Run.runBenchmark
   [ 5] Harness.main
 
---- 26186886 ns (0.03%), 2570 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.buildTowerAt
-  [ 2] Towers.benchmark
-  [ 3] Benchmark.innerBenchmarkLoop
-  [ 4] Run.measure
-  [ 5] Run.doRuns
-  [ 6] Run.runBenchmark
-  [ 7] Harness.main
+--- 7404353 ns (0.05%), 703 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
 
---- 16736138 ns (0.02%), 1660 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.benchmark
-  [ 6] Benchmark.innerBenchmarkLoop
-  [ 7] Run.measure
-  [ 8] Run.doRuns
-  [ 9] Run.runBenchmark
-  [10] Harness.main
+--- 7220642 ns (0.05%), 700 samples
+  [ 0] Interpreter
+  [ 1] [not_walkable_Java]
 
---- 16238825 ns (0.02%), 1599 samples
+--- 4440881 ns (0.03%), 429 samples
   [ 0] Towers.benchmark
   [ 1] Benchmark.innerBenchmarkLoop
   [ 2] Run.measure
@@ -47,7 +35,22 @@ deoptimization      : 5 (0.00%)
   [ 4] Run.runBenchmark
   [ 5] Harness.main
 
---- 15126344 ns (0.02%), 1499 samples
+--- 3758532 ns (0.02%), 358 samples
+  [ 0] Benchmark.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 2638140 ns (0.02%), 259 samples
+  [ 0] Towers.benchmark
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2598980 ns (0.02%), 259 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -62,16 +65,44 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 15010934 ns (0.02%), 1472 samples
-  [ 0] Towers.buildTowerAt
-  [ 1] Towers.benchmark
-  [ 2] Benchmark.innerBenchmarkLoop
-  [ 3] Run.measure
-  [ 4] Run.doRuns
-  [ 5] Run.runBenchmark
-  [ 6] Harness.main
+--- 2542881 ns (0.02%), 220 samples
+  [ 0] [no_Java_frame]
 
---- 13999664 ns (0.02%), 1423 samples
+--- 2537041 ns (0.02%), 251 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 2326931 ns (0.01%), 231 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 2301260 ns (0.01%), 221 samples
+  [ 0] Towers.verifyResult
+  [ 1] Benchmark.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2298141 ns (0.01%), 234 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -82,30 +113,7 @@ deoptimization      : 5 (0.00%)
   [ 7] Run.runBenchmark
   [ 8] Harness.main
 
---- 13998132 ns (0.02%), 1386 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 13276393 ns (0.02%), 1300 samples
-  [ 0] Towers.benchmark
-  [ 1] Benchmark.innerBenchmarkLoop
-  [ 2] Run.measure
-  [ 3] Run.doRuns
-  [ 4] Run.runBenchmark
-  [ 5] Harness.main
-
---- 13060217 ns (0.02%), 1295 samples
+--- 2288080 ns (0.01%), 225 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -122,128 +130,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 12906284 ns (0.01%), 1278 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 12847952 ns (0.01%), 1270 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 12720464 ns (0.01%), 1258 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 12628035 ns (0.01%), 1253 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.moveTopDisk
-  [ 3] Towers.moveDisks
-  [ 4] Towers.benchmark
-  [ 5] Benchmark.innerBenchmarkLoop
-  [ 6] Run.measure
-  [ 7] Run.doRuns
-  [ 8] Run.runBenchmark
-  [ 9] Harness.main
-
---- 12521096 ns (0.01%), 1242 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 12266091 ns (0.01%), 1214 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 12251953 ns (0.01%), 1213 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.benchmark
-  [ 6] Benchmark.innerBenchmarkLoop
-  [ 7] Run.measure
-  [ 8] Run.doRuns
-  [ 9] Run.runBenchmark
-  [10] Harness.main
-
---- 12123091 ns (0.01%), 1199 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 12109531 ns (0.01%), 1203 samples
+--- 2268260 ns (0.01%), 225 samples
   [ 0] Towers.moveTopDisk
   [ 1] Towers.moveDisks
   [ 2] Towers.benchmark
@@ -253,16 +140,7 @@ deoptimization      : 5 (0.00%)
   [ 6] Run.runBenchmark
   [ 7] Harness.main
 
---- 11976454 ns (0.01%), 1173 samples
-  [ 0] Towers.moveDisks
-  [ 1] Towers.benchmark
-  [ 2] Benchmark.innerBenchmarkLoop
-  [ 3] Run.measure
-  [ 4] Run.doRuns
-  [ 5] Run.runBenchmark
-  [ 6] Harness.main
-
---- 11911162 ns (0.01%), 1182 samples
+--- 2257460 ns (0.01%), 222 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -277,18 +155,174 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 11884135 ns (0.01%), 1179 samples
+--- 2206921 ns (0.01%), 216 samples
+  [ 0] Towers.moveDisks
+  [ 1] Towers.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 2193692 ns (0.01%), 218 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
-  [ 3] Towers.benchmark
-  [ 4] Benchmark.innerBenchmarkLoop
-  [ 5] Run.measure
-  [ 6] Run.doRuns
-  [ 7] Run.runBenchmark
-  [ 8] Harness.main
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
 
---- 11489833 ns (0.01%), 1141 samples
+--- 2190130 ns (0.01%), 217 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.benchmark
+  [ 5] Benchmark.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 2155081 ns (0.01%), 214 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 2152980 ns (0.01%), 214 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 2150300 ns (0.01%), 212 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 2148470 ns (0.01%), 211 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 2092170 ns (0.01%), 208 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 2080610 ns (0.01%), 207 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 2037151 ns (0.01%), 198 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 2000140 ns (0.01%), 197 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1993442 ns (0.01%), 195 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 1984530 ns (0.01%), 197 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -303,33 +337,7 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 11367193 ns (0.01%), 1127 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.benchmark
-  [ 6] Benchmark.innerBenchmarkLoop
-  [ 7] Run.measure
-  [ 8] Run.doRuns
-  [ 9] Run.runBenchmark
-  [10] Harness.main
-
---- 11288893 ns (0.01%), 1120 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.benchmark
-  [ 6] Benchmark.innerBenchmarkLoop
-  [ 7] Run.measure
-  [ 8] Run.doRuns
-  [ 9] Run.runBenchmark
-  [10] Harness.main
-
---- 11157430 ns (0.01%), 1108 samples
+--- 1978321 ns (0.01%), 196 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -344,137 +352,7 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 10854342 ns (0.01%), 1073 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 10803743 ns (0.01%), 1073 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 10505492 ns (0.01%), 1042 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 10399041 ns (0.01%), 1031 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 10382762 ns (0.01%), 1030 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 10371382 ns (0.01%), 1029 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 10140001 ns (0.01%), 1003 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 10068121 ns (0.01%), 995 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.benchmark
-  [12] Benchmark.innerBenchmarkLoop
-  [13] Run.measure
-  [14] Run.doRuns
-  [15] Run.runBenchmark
-  [16] Harness.main
-
---- 10038753 ns (0.01%), 957 samples
+--- 1965481 ns (0.01%), 194 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.buildTowerAt
   [ 2] Towers.benchmark
@@ -484,7 +362,7 @@ deoptimization      : 5 (0.00%)
   [ 6] Run.runBenchmark
   [ 7] Harness.main
 
---- 9985671 ns (0.01%), 990 samples
+--- 1952990 ns (0.01%), 193 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -501,7 +379,297 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 9978522 ns (0.01%), 990 samples
+--- 1935070 ns (0.01%), 192 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1900120 ns (0.01%), 189 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1894380 ns (0.01%), 188 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.benchmark
+  [ 4] Benchmark.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 1868042 ns (0.01%), 184 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 1844421 ns (0.01%), 183 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List&, Node_List&, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] Thread::call_run()
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 1842560 ns (0.01%), 183 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1841771 ns (0.01%), 182 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1835981 ns (0.01%), 181 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.benchmark
+  [14] Benchmark.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 1834501 ns (0.01%), 179 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] Thread::call_run()
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 1828390 ns (0.01%), 181 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1823980 ns (0.01%), 181 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.benchmark
+  [ 6] Benchmark.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 1818410 ns (0.01%), 180 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1803202 ns (0.01%), 173 samples
+  [ 0] I2C/C2I adapters(0xb)
+  [ 1] [unknown_Java]
+
+--- 1800861 ns (0.01%), 179 samples
+  [ 0] LinearScan::build_intervals()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 1780461 ns (0.01%), 177 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1768710 ns (0.01%), 175 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.benchmark
+  [14] Benchmark.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 1759780 ns (0.01%), 175 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1749961 ns (0.01%), 174 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1739721 ns (0.01%), 171 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.benchmark
+  [14] Benchmark.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 1736780 ns (0.01%), 172 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -520,7 +688,63 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 9925160 ns (0.01%), 979 samples
+--- 1717350 ns (0.01%), 170 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1712321 ns (0.01%), 170 samples
+  [ 0] LinearScan::allocate_registers()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] Thread::call_run()
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 1709201 ns (0.01%), 148 samples
+  [ 0] Towers.buildTowerAt
+  [ 1] Towers.benchmark
+  [ 2] Benchmark.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1708930 ns (0.01%), 170 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1692402 ns (0.01%), 168 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -532,7 +756,24 @@ deoptimization      : 5 (0.00%)
   [ 8] Run.runBenchmark
   [ 9] Harness.main
 
---- 9885612 ns (0.01%), 979 samples
+--- 1688910 ns (0.01%), 168 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1685391 ns (0.01%), 167 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -547,52 +788,7 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 9845800 ns (0.01%), 976 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 9769810 ns (0.01%), 970 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 9737193 ns (0.01%), 963 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.benchmark
-  [ 8] Benchmark.innerBenchmarkLoop
-  [ 9] Run.measure
-  [10] Run.doRuns
-  [11] Run.runBenchmark
-  [12] Harness.main
-
---- 9699821 ns (0.01%), 960 samples
+--- 1684711 ns (0.01%), 167 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -611,7 +807,7 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 9698511 ns (0.01%), 960 samples
+--- 1683210 ns (0.01%), 167 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -619,86 +815,14 @@ deoptimization      : 5 (0.00%)
   [ 4] Towers.moveDisks
   [ 5] Towers.moveDisks
   [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
+  [ 7] Towers.benchmark
+  [ 8] Benchmark.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
 
---- 9617111 ns (0.01%), 954 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 9487845 ns (0.01%), 941 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 9476174 ns (0.01%), 938 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 9398672 ns (0.01%), 933 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.benchmark
-  [12] Benchmark.innerBenchmarkLoop
-  [13] Run.measure
-  [14] Run.doRuns
-  [15] Run.runBenchmark
-  [16] Harness.main
-
---- 9376773 ns (0.01%), 925 samples
+--- 1671680 ns (0.01%), 167 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -719,7 +843,26 @@ deoptimization      : 5 (0.00%)
   [17] Run.runBenchmark
   [18] Harness.main
 
---- 9364484 ns (0.01%), 929 samples
+--- 1670051 ns (0.01%), 166 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 1667631 ns (0.01%), 165 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -738,10 +881,10 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 9320944 ns (0.01%), 923 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
+--- 1666160 ns (0.01%), 148 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
   [ 3] Towers.moveDisks
   [ 4] Towers.moveDisks
   [ 5] Towers.moveDisks
@@ -759,7 +902,24 @@ deoptimization      : 5 (0.00%)
   [17] Run.runBenchmark
   [18] Harness.main
 
---- 9290723 ns (0.01%), 918 samples
+--- 1665690 ns (0.01%), 148 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1637210 ns (0.01%), 162 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -778,7 +938,147 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 9239635 ns (0.01%), 915 samples
+--- 1628310 ns (0.01%), 162 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1619541 ns (0.01%), 154 samples
+  [ 0] I2C/C2I adapters(0xbb)
+  [ 1] [unknown_Java]
+
+--- 1591581 ns (0.01%), 158 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 1590010 ns (0.01%), 158 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1585361 ns (0.01%), 157 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1578700 ns (0.01%), 157 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.benchmark
+  [12] Benchmark.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 1576610 ns (0.01%), 156 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 1562820 ns (0.01%), 155 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 1558190 ns (0.01%), 154 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -793,52 +1093,7 @@ deoptimization      : 5 (0.00%)
   [11] Run.runBenchmark
   [12] Harness.main
 
---- 9209332 ns (0.01%), 911 samples
-  [ 0] Towers.buildTowerAt
-  [ 1] Towers.benchmark
-  [ 2] Benchmark.innerBenchmarkLoop
-  [ 3] Run.measure
-  [ 4] Run.doRuns
-  [ 5] Run.runBenchmark
-  [ 6] Harness.main
-
---- 9056173 ns (0.01%), 897 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8993765 ns (0.01%), 891 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.benchmark
-  [12] Benchmark.innerBenchmarkLoop
-  [13] Run.measure
-  [14] Run.doRuns
-  [15] Run.runBenchmark
-  [16] Harness.main
-
---- 8947532 ns (0.01%), 886 samples
+--- 1544040 ns (0.01%), 153 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -860,7 +1115,7 @@ deoptimization      : 5 (0.00%)
   [18] Run.runBenchmark
   [19] Harness.main
 
---- 8944054 ns (0.01%), 887 samples
+--- 1540180 ns (0.01%), 153 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -877,46 +1132,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8914333 ns (0.01%), 882 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.moveTopDisk
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.moveDisks
-  [12] Towers.moveDisks
-  [13] Towers.moveDisks
-  [14] Towers.benchmark
-  [15] Benchmark.innerBenchmarkLoop
-  [16] Run.measure
-  [17] Run.doRuns
-  [18] Run.runBenchmark
-  [19] Harness.main
-
---- 8881193 ns (0.01%), 878 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8717262 ns (0.01%), 865 samples
+--- 1523141 ns (0.01%), 151 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -935,7 +1151,7 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 8717151 ns (0.01%), 863 samples
+--- 1520300 ns (0.01%), 151 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -952,7 +1168,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8713242 ns (0.01%), 863 samples
+--- 1517111 ns (0.01%), 151 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -969,7 +1185,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8666371 ns (0.01%), 859 samples
+--- 1513610 ns (0.01%), 150 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -979,23 +1195,31 @@ deoptimization      : 5 (0.00%)
   [ 6] Towers.moveDisks
   [ 7] Towers.moveDisks
   [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.benchmark
-  [12] Benchmark.innerBenchmarkLoop
-  [13] Run.measure
-  [14] Run.doRuns
-  [15] Run.runBenchmark
-  [16] Harness.main
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
 
---- 8662592 ns (0.01%), 823 samples
-  [ 0] Benchmark.innerBenchmarkLoop
-  [ 1] Run.measure
-  [ 2] Run.doRuns
-  [ 3] Run.runBenchmark
-  [ 4] Harness.main
+--- 1511850 ns (0.01%), 150 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
 
---- 8659142 ns (0.01%), 860 samples
+--- 1509890 ns (0.01%), 150 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1016,7 +1240,7 @@ deoptimization      : 5 (0.00%)
   [17] Run.runBenchmark
   [18] Harness.main
 
---- 8643223 ns (0.01%), 858 samples
+--- 1506770 ns (0.01%), 148 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1033,24 +1257,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8606474 ns (0.01%), 852 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8604091 ns (0.01%), 852 samples
+--- 1505311 ns (0.01%), 149 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -1072,18 +1279,24 @@ deoptimization      : 5 (0.00%)
   [18] Run.runBenchmark
   [19] Harness.main
 
---- 8584021 ns (0.01%), 849 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.buildTowerAt
-  [ 3] Towers.benchmark
-  [ 4] Benchmark.innerBenchmarkLoop
-  [ 5] Run.measure
-  [ 6] Run.doRuns
-  [ 7] Run.runBenchmark
-  [ 8] Harness.main
+--- 1505220 ns (0.01%), 149 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
 
---- 8493913 ns (0.01%), 842 samples
+--- 1503160 ns (0.01%), 147 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -1105,7 +1318,7 @@ deoptimization      : 5 (0.00%)
   [18] Run.runBenchmark
   [19] Harness.main
 
---- 8478042 ns (0.01%), 840 samples
+--- 1497680 ns (0.01%), 148 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1122,7 +1335,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8471462 ns (0.01%), 837 samples
+--- 1486272 ns (0.01%), 147 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1139,7 +1352,24 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8469042 ns (0.01%), 840 samples
+--- 1478610 ns (0.01%), 146 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1467350 ns (0.01%), 146 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -1161,61 +1391,10 @@ deoptimization      : 5 (0.00%)
   [18] Run.runBenchmark
   [19] Harness.main
 
---- 8413895 ns (0.01%), 832 samples
+--- 1467313 ns (0.01%), 145 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8402892 ns (0.01%), 831 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8342571 ns (0.01%), 823 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.moveTopDisk
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8313974 ns (0.01%), 825 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.moveTopDisk
   [ 3] Towers.moveDisks
   [ 4] Towers.moveDisks
   [ 5] Towers.moveDisks
@@ -1231,7 +1410,7 @@ deoptimization      : 5 (0.00%)
   [15] Run.runBenchmark
   [16] Harness.main
 
---- 8272571 ns (0.01%), 819 samples
+--- 1467140 ns (0.01%), 145 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1248,275 +1427,7 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 8253843 ns (0.01%), 815 samples
-  [ 0] Towers$TowersDisk.setNext
-  [ 1] Towers.pushDisk
-  [ 2] Towers.moveTopDisk
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.moveDisks
-  [10] Towers.moveDisks
-  [11] Towers.benchmark
-  [12] Benchmark.innerBenchmarkLoop
-  [13] Run.measure
-  [14] Run.doRuns
-  [15] Run.runBenchmark
-  [16] Harness.main
-
---- 8176450 ns (0.01%), 811 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8173143 ns (0.01%), 811 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8142240 ns (0.01%), 776 samples
-  [ 0] Interpreter
-  [ 1] [not_walkable_Java]
-
---- 8138111 ns (0.01%), 806 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8136883 ns (0.01%), 805 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8113851 ns (0.01%), 803 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8112542 ns (0.01%), 804 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8096323 ns (0.01%), 803 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8082462 ns (0.01%), 108 samples
-  [ 0] WatcherThread::sleep() const
-  [ 1] WatcherThread::run()
-  [ 2] Thread::call_run()
-  [ 3] thread_native_entry(Thread*)
-  [ 4] start_thread
-
---- 8077751 ns (0.01%), 800 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8066773 ns (0.01%), 798 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8066002 ns (0.01%), 799 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8011752 ns (0.01%), 793 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8009551 ns (0.01%), 794 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 8003462 ns (0.01%), 793 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 7982932 ns (0.01%), 791 samples
-  [ 0] Towers.pushDisk
-  [ 1] Towers.moveTopDisk
-  [ 2] Towers.moveDisks
-  [ 3] Towers.moveDisks
-  [ 4] Towers.moveDisks
-  [ 5] Towers.moveDisks
-  [ 6] Towers.moveDisks
-  [ 7] Towers.moveDisks
-  [ 8] Towers.moveDisks
-  [ 9] Towers.benchmark
-  [10] Benchmark.innerBenchmarkLoop
-  [11] Run.measure
-  [12] Run.doRuns
-  [13] Run.runBenchmark
-  [14] Harness.main
-
---- 7981424 ns (0.01%), 789 samples
+--- 1463571 ns (0.01%), 144 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -1538,7 +1449,7 @@ deoptimization      : 5 (0.00%)
   [18] Run.runBenchmark
   [19] Harness.main
 
---- 7972580 ns (0.01%), 790 samples
+--- 1459111 ns (0.01%), 145 samples
   [ 0] Towers.pushDisk
   [ 1] Towers.moveTopDisk
   [ 2] Towers.moveDisks
@@ -1555,7 +1466,24 @@ deoptimization      : 5 (0.00%)
   [13] Run.runBenchmark
   [14] Harness.main
 
---- 7934933 ns (0.01%), 783 samples
+--- 1454850 ns (0.01%), 144 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 1454350 ns (0.01%), 144 samples
   [ 0] Towers$TowersDisk.setNext
   [ 1] Towers.pushDisk
   [ 2] Towers.moveTopDisk
@@ -1569,212 +1497,252 @@ deoptimization      : 5 (0.00%)
   [10] Towers.moveDisks
   [11] Towers.moveDisks
   [12] Towers.moveDisks
-  [13] Towers.benchmark
-  [14] Benchmark.innerBenchmarkLoop
-  [15] Run.measure
-  [16] Run.doRuns
-  [17] Run.runBenchmark
-  [18] Harness.main
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 1453461 ns (0.01%), 144 samples
+  [ 0] Towers$TowersDisk.setNext
+  [ 1] Towers.pushDisk
+  [ 2] Towers.moveTopDisk
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.moveDisks
+  [10] Towers.moveDisks
+  [11] Towers.moveDisks
+  [12] Towers.moveDisks
+  [13] Towers.moveDisks
+  [14] Towers.benchmark
+  [15] Benchmark.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 1444890 ns (0.01%), 144 samples
+  [ 0] Towers.pushDisk
+  [ 1] Towers.moveTopDisk
+  [ 2] Towers.moveDisks
+  [ 3] Towers.moveDisks
+  [ 4] Towers.moveDisks
+  [ 5] Towers.moveDisks
+  [ 6] Towers.moveDisks
+  [ 7] Towers.moveDisks
+  [ 8] Towers.moveDisks
+  [ 9] Towers.benchmark
+  [10] Benchmark.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
 
           ns  percent  samples  top
   ----------  -------  -------  ---
- 37502041757   43.51%  3724611  Towers.pushDisk
- 16500535303   19.14%  1634346  Towers.popDiskFrom
- 15824428054   18.36%  1571389  Towers$TowersDisk.setNext
-  7826639190    9.08%   782466  Towers.moveDisks
-  4254577644    4.94%   421229  Towers.moveTopDisk
-  3276365529    3.80%   324494  Towers$TowersDisk.getNext
-   355981316    0.41%    35081  Towers$TowersDisk.getSize
-    65276984    0.08%     6403  Towers.benchmark
-    29102519    0.03%     2866  Towers.buildTowerAt
-    15977954    0.02%     1527  Benchmark.innerBenchmarkLoop
-     8168860    0.01%      779  Interpreter
-     8082462    0.01%      108  WatcherThread::sleep() const
-     7147461    0.01%      691  Towers.verifyResult
-     6137081    0.01%      422  __tls_get_addr
-     5816431    0.01%      106  clock_gettime@GLIBC_2.2.5
-     5212620    0.01%      161  [vdso]
-     4515301    0.01%       46  Monitor::wait_without_safepoint_check(long)
-     4068190    0.00%       56  os::javaTimeNanos()
-     3488150    0.00%      314  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
-     3220531    0.00%      272  [no_Java_frame]
-     3055680    0.00%      303  IndexSetIterator::advance_and_next()
-     3042260    0.00%      270  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
-     2865570    0.00%      265  LinearScan::build_intervals()
-     2862121    0.00%      284  PhaseChaitin::gather_lrg_masks(bool)
-     2783030    0.00%      261  DebugInformationRecorder::find_sharable_decode_offset(int)
-     2576621    0.00%      256  PhaseChaitin::Split(unsigned int, ResourceArea*)
-     2494750    0.00%       72  __GI___pthread_mutex_unlock_usercnt
-     2432150    0.00%      241  PhaseLive::compute(unsigned int)
-     2414330    0.00%      233  sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop
-     2395091    0.00%      236  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
-     2357710    0.00%      215  LIR_OpVisitState::visit(LIR_Op*)
-     2257790    0.00%      212  LinearScan::allocate_registers()
-     2221590    0.00%      221  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List&, Node_List&, bool)
-     2097880    0.00%       36  __futex_abstimed_wait_common
-     2025103    0.00%      174  Run.measure
-     2023310    0.00%       32  StatSamplerTask::task()
-     1997280    0.00%       86  __memmove_avx_unaligned_erms
-     1915051    0.00%      163  vmSymbols::find_sid(Symbol const*)
-     1913841    0.00%      190  PhaseChaitin::post_allocate_copy_removal()
-     1905150    0.00%      173  LinearScanWalker::alloc_free_reg(Interval*)
-     1902090    0.00%      179  LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
-     1839001    0.00%      174  java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
-     1741160    0.00%      143  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
-     1682030    0.00%      168  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
-     1674690    0.00%      167  .annobin__ZN14PhaseIdealLoop16build_loop_earlyER9VectorSetR9Node_ListR10Node_Stack.start
-     1657690    0.00%      151  LinearScan::compute_local_live_sets()
-     1585930    0.00%       49  Mutex::lock_without_safepoint_check()
-     1582530    0.00%       38  .annobin__ZN12PeriodicTask14real_time_tickEi.start
-     1552470    0.00%      134  methodHandle::~methodHandle()
-     1548380    0.00%      127  __memset_avx2_unaligned_erms
-     1539432    0.00%      141  ValueStack::values_do(ValueVisitor*)
-     1529451    0.00%      148  I2C/C2I adapters(0xb)
-     1519120    0.00%      151  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
-     1497301    0.00%       99  ___pthread_mutex_lock
-     1495921    0.00%        8  ChunkPoolCleaner::task()
-     1458210    0.00%       17  _int_free
-     1453711    0.00%      135  ciObjectFactory::get_metadata(Metadata*)
-     1452370    0.00%      133  GraphBuilder::iterate_bytecodes_for_block(int)
-     1441080    0.00%      142  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
-     1422290    0.00%      136  java.lang.StringConcatHelper.prepend
-     1403910    0.00%      128  LinearScanWalker::free_collect_inactive_fixed(Interval*)
-     1302651    0.00%      128  Dict::Insert(void*, void*, bool)
-     1246672    0.00%       20  __GI___pthread_cond_timedwait
-     1244410    0.00%      109  SymbolTable::lookup_shared(char const*, int, unsigned int)
-     1232981    0.00%       81  __vfprintf_internal
-     1211631    0.00%      113  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
-     1211233    0.00%      101  GrowableArrayWithAllocator<int, GrowableArray<int> >::grow(int)
-     1204990    0.00%       11  ObjectSynchronizer::is_async_deflation_needed()
-     1188790    0.00%      118  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
-     1148741    0.00%      112  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
-     1143500    0.00%      111  sun.nio.cs.StreamEncoder.implWrite
-     1137790    0.00%      109  I2C/C2I adapters(0xbb)
-     1130600    0.00%      110  jdk.internal.org.objectweb.asm.Frame.execute
-     1127320    0.00%      109  sun.nio.cs.StreamEncoder.writeBytes
-     1104441    0.00%      102  Matcher::xform(Node*, int)
-     1084370    0.00%       51  os::free(void*)
-     1084020    0.00%      107  PhaseOutput::BuildOopMaps()
-     1078730    0.00%       42  G1CollectionSet::iterate(HeapRegionClosure*) const
-     1078351    0.00%        5  WatcherThread::run()
-     1060020    0.00%      101  NodeHash::hash_find_insert(Node*)
-     1053890    0.00%      100  InstanceKlass::find_local_field(Symbol*, Symbol*, fieldDescriptor*) const
-     1032640    0.00%       14  .annobin__ZN11AllocTracer27send_allocation_in_new_tlabEP5KlassPP12HeapWordImplmmP10JavaThread.start
-     1031830    0.00%       96  ValueStack::ValueStack(ValueStack*, ValueStack::Kind, int)
-     1013230    0.00%      101  jdk.internal.org.objectweb.asm.ByteVector.putUTF8
-     1003241    0.00%       55  CodeCache::find_blob(void*)
-      994250    0.00%       97  java.lang.Long.getChars
-      990380    0.00%       99  PhaseIterGVN::transform_old(Node*)
-      961640    0.00%       95  PhaseIdealLoop::Dominators()
-      961560    0.00%       87  NullCheckEliminator::iterate_one(BlockBegin*)
-      955130    0.00%       95  PhaseCCP::analyze()
-      950920    0.00%       91  CodeHeap::find_blob_unsafe(void*) const
-      942890    0.00%       86  __memmove_avx_unaligned
-      938901    0.00%       91  DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
-      925461    0.00%       91  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
-      917970    0.00%       51  .annobin__ZN28G1YoungRemSetSamplingClosure14do_heap_regionEP10HeapRegion.start
-      915690    0.00%       85  Interval::split_child_at_op_id(int, LIR_OpVisitState::OprMode)
-      913090    0.00%       87  java.lang.invoke.InvokerBytecodeGenerator.emitStaticInvoke
-      908902    0.00%       88  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
-      903100    0.00%       89  Type::cmp(Type const*, Type const*)
-      894820    0.00%       89  PhaseAggressiveCoalesce::insert_copies(Matcher&)
-      891240    0.00%       88  Matcher::find_shared(Node*)
-      856970    0.00%       85  PhaseChaitin::merge_multidefs()
-      845040    0.00%       36  void OopOopIterateBackwardsDispatch<G1ScanEvacuatedObjClosure>::Table::oop_oop_iterate_backwards<InstanceKlass, narrowOop>(G1ScanEvacuatedObjClosure*, oopDesc*, Klass*)
-      842540    0.00%       69  __GI___libc_malloc
-      838681    0.00%       82  PhaseIterGVN::add_users_to_worklist(Node*)
-      836211    0.00%       80  java.nio.charset.CharsetEncoder.encode
-      825400    0.00%       74  .annobin__ZN8Interval9add_rangeEii.start
-      822610    0.00%       82  .annobin__ZNK4Node6is_CFGEv.start
-      818510    0.00%       40  HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
-      804871    0.00%       77  ___pthread_mutex_trylock
-      796010    0.00%       76  ConstantPool::klass_at_impl(constantPoolHandle const&, int, JavaThread*)
-      793291    0.00%       30  PerfLongVariant::sample()
-      789940    0.00%       78  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
-      782041    0.00%       77  jdk.internal.org.objectweb.asm.MethodWriter.visitVarInsn
-      778280    0.00%       60  MemAllocator::allocate() const
-      757530    0.00%       74  Matcher::match_tree(Node const*)
-      743480    0.00%       74  PhaseChaitin::Select()
-      740530    0.00%       67  Dictionary::find(unsigned int, Symbol*, Handle)
-      734441    0.00%       59  Relocation::pd_call_destination(unsigned char*)
-      732520    0.00%       65  PhiResolver::create_node(LIR_OprDesc*, bool)
-      725140    0.00%       64  _int_malloc
-      719370    0.00%       69  java.lang.invoke.MethodType.equals
-      715011    0.00%       68  jdk.internal.org.objectweb.asm.Frame.push
-      713320    0.00%       71  IndexSet::alloc_block_containing(unsigned int)
-      712372    0.00%       71  PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
-      691520    0.00%       13  CardTableBarrierSet::on_slowpath_allocation_exit(JavaThread*, oopDesc*)
-      675790    0.00%       67  java.io.PrintStream.write
-      665481    0.00%       63  java.lang.StringConcatHelper.mix
-      662920    0.00%       66  .annobin__ZN22Node_Backward_Iterator4nextEv.start
-      662660    0.00%        1  G1BarrierSet::on_thread_detach(Thread*)
-      657460    0.00%       65  java.io.BufferedOutputStream.write
-      653821    0.00%       65  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
-      650231    0.00%       61  IntervalWalker::walk_to(int)
-      644850    0.00%       61  I2C/C2I adapters(0xba)
-      643310    0.00%       35  OtherRegionsTable::occupied() const
-      637960    0.00%       60  __tls_get_addr@plt
-      636230    0.00%       62  Compile::identify_useful_nodes(Unique_Node_List&)
-      634961    0.00%       62  __GI___ioctl_time64
-      629840    0.00%       59  GlobalValueNumbering::GlobalValueNumbering(IR*)
-      628490    0.00%       12  __pthread_mutex_cond_lock
-      628100    0.00%       62  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
-      627950    0.00%       57  GraphBuilder::append_with_bci(Instruction*, int)
-      627120    0.00%       62  _dl_update_slotinfo
-      626840    0.00%       63  java.lang.invoke.LambdaForm$Name.<init>
-      624930    0.00%       57  java.lang.String.getBytes
-      623361    0.00%       52  MethodData::compute_allocation_size_in_bytes(methodHandle const&)
-      622450    0.00%       28  os::elapsed_counter()
-      621130    0.00%       54  LinearScan::add_use(LIR_OprDesc*, int, int, IntervalUseKind)
-      617930    0.00%       55  ValueMap::find_insert(Instruction*)
-      617450    0.00%       59  jdk.internal.org.objectweb.asm.Frame.pop
-      609590    0.00%       57  GraphBuilder::invoke(Bytecodes::Code)
-      605880    0.00%       47  _IO_default_xsputn
-      604350    0.00%       58  java.util.Arrays.copyOf
-      604100    0.00%       59  java.lang.AbstractStringBuilder.append
-      602120    0.00%       58  Run.printResult
-      601830    0.00%       58  jdk.internal.org.objectweb.asm.SymbolTable.hash
-      598800    0.00%       58  java.lang.StringCoding.implEncodeAsciiArray
-      596950    0.00%       57  java.lang.invoke.LambdaForm$MH.0x0000000800c08400.invoke
-      594040    0.00%       57  constantPoolHandle::~constantPoolHandle()
-      589160    0.00%       58  InterpreterRuntime::ldc(JavaThread*, bool)
-      588880    0.00%       46  AdapterHandlerLibrary::get_adapter(methodHandle const&)
-      588560    0.00%       52  LIR_OpVisitState::append(LIR_OprDesc*&, LIR_OpVisitState::OprMode) [clone .constprop.0]
-      585480    0.00%       53  __memset_avx2_unaligned
-      582110    0.00%        5  ClassLoaderData::ChunkedHandleList::oops_do(OopClosure*)
-      581960    0.00%       56  _invokeBasic
-      580960    0.00%       54  LIR_OpVisitState::append(LIR_OprDesc*&, LIR_OpVisitState::OprMode)
-      575190    0.00%       48  BlockListBuilder::set_leaders()
-      573690    0.00%       53  BlockBegin::try_merge(ValueStack*)
-      573590    0.00%       41  IndexSet::initialize(unsigned int)
-      570091    0.00%       56  Node::clone() const
-      567010    0.00%       55  java.util.concurrent.ConcurrentHashMap.putVal
-      566000    0.00%       55  java.io.PrintStream.println
-      564280    0.00%        2  frame::sender_for_interpreter_frame(RegisterMap*) const
-      561790    0.00%       56  java.io.FileOutputStream.write
-      560620    0.00%        2  G1ParCopyClosure<(G1Barrier)0, false>::do_oop(oopDesc**)
-      556940    0.00%       52  LinearScan::eliminate_spill_moves()
-      555720    0.00%       55  jdk.internal.org.objectweb.asm.Type.getArgumentsAndReturnSizes
-      549440    0.00%       54  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
-      548740    0.00%       52  java.lang.invoke.MethodType.checkPtypes
-      546520    0.00%       54  java.lang.invoke.InvokerBytecodeGenerator.addMethod
-      545910    0.00%       17  InlineCacheBuffer::is_empty()
-      544420    0.00%       54  RegionNode::is_unreachable_from_root(PhaseGVN const*) const
-      544140    0.00%       54  java.lang.invoke.LambdaForm.useCount
-      543100    0.00%       48  java.lang.invoke.MethodTypeForm.canonicalizeAll
-      540051    0.00%       23  os::PlatformMonitor::wait(long)
-      537210    0.00%       16  VMError::is_error_reported()
-      530830    0.00%       50  LIRGenerator::is_vreg_flag_set(int, LIRGenerator::VregFlag)
-      527660    0.00%       39  __strlen_avx2
-      527220    0.00%       50  java.lang.String.getChars
-      526240    0.00%       44  stringStream::write(char const*, unsigned long)
-      525420    0.00%       49  BlockBegin::iterate_preorder(GrowableArray<bool>&, BlockClosure*)
-      525360    0.00%       52  PhaseChaitin::gather_lrg_masks(bool) [clone .constprop.0]
-      522250    0.00%       51  Compile::remove_useless_nodes(Unique_Node_List&)
-      520680    0.00%       47  LinearScan::compute_debug_info_for_scope(int, IRScope*, ValueStack*, ValueStack*)
-      520230    0.00%       51  sun.nio.cs.US_ASCII$Encoder.encodeLoop
-      520060    0.00%       45  MethodLiveness::init_basic_blocks()
-      519470    0.00%       51  java.lang.invoke.LambdaForm.normalize
-      519000    0.00%       50  java.lang.invoke.MethodType.insertParameterTypes
-      518561    0.00%       23  __getrusage
-      517270    0.00%       45  ciMethodData::bci_to_data(int, ciMethod*)
+  6603116549   42.54%   655906  Towers.pushDisk
+  2923786210   18.84%   289646  Towers.popDiskFrom
+  2754043109   17.74%   273506  Towers$TowersDisk.setNext
+  1375573782    8.86%   137491  Towers.moveDisks
+   752949735    4.85%    74544  Towers.moveTopDisk
+   582951386    3.76%    57758  Towers$TowersDisk.getNext
+    62573920    0.40%     6164  Towers$TowersDisk.getSize
+    24220922    0.16%     2366  Towers.benchmark
+    11887325    0.08%     1130  Benchmark.innerBenchmarkLoop
+     7301342    0.05%      706  Interpreter
+     5743711    0.04%      393  __tls_get_addr
+     4551232    0.03%      427  Towers.buildTowerAt
+     3655230    0.02%      351  Towers.verifyResult
+     2931440    0.02%      264  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+     2830850    0.02%      280  IndexSetIterator::advance_and_next()
+     2781332    0.02%      265  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+     2542881    0.02%      220  [no_Java_frame]
+     2537041    0.02%      251  PhaseChaitin::Split(unsigned int, ResourceArea*)
+     2456282    0.02%      239  PhaseChaitin::gather_lrg_masks(bool)
+     2357131    0.02%      225  PhaseLive::compute(unsigned int)
+     2333252    0.02%      225  I2C/C2I adapters(0xb)
+     2312710    0.01%      222  DebugInformationRecorder::find_sharable_decode_offset(int)
+     2268411    0.01%      216  I2C/C2I adapters(0xbb)
+     2111061    0.01%      110  [vdso]
+     2109412    0.01%      208  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+     2047601    0.01%      199  PhaseChaitin::post_allocate_copy_removal()
+     1844421    0.01%      183  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List&, Node_List&, bool)
+     1821091    0.01%      181  LinearScan::build_intervals()
+     1810250    0.01%      157  .annobin__ZN14PhaseIdealLoop16build_loop_earlyER9VectorSetR9Node_ListR10Node_Stack.start
+     1749960    0.01%      172  LIR_OpVisitState::visit(LIR_Op*)
+     1732651    0.01%      172  LinearScan::allocate_registers()
+     1634240    0.01%      142  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+     1581861    0.01%      136  vmSymbols::find_sid(Symbol const*)
+     1515470    0.01%      128  ciObjectFactory::get_metadata(Metadata*)
+     1513213    0.01%      109  __memset_avx2_unaligned_erms
+     1381110    0.01%       82  CodeHeap::find_blob_unsafe(void*) const
+     1357730    0.01%      109  Dict::Insert(void*, void*, bool)
+     1238440    0.01%      123  LinearScanWalker::alloc_free_reg(Interval*)
+     1224631    0.01%      112  Matcher::xform(Node*, int)
+     1195370    0.01%       70  _int_malloc
+     1190430    0.01%      104  SymbolTable::lookup_shared(char const*, int, unsigned int)
+     1181950    0.01%      117  LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
+     1154070    0.01%      114  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+     1139910    0.01%      109  sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop
+     1129870    0.01%      101  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+     1110930    0.01%      103  InstanceKlass::find_local_field(Symbol*, Symbol*, fieldDescriptor*) const
+     1102960    0.01%      110  LinearScanWalker::free_collect_inactive_fixed(Interval*)
+     1076282    0.01%       93  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+     1075450    0.01%      104  ValueStack::values_do(ValueVisitor*)
+     1068930    0.01%      106  jdk.internal.org.objectweb.asm.Frame.execute
+     1056290    0.01%       91  PhaseIdealLoop::Dominators()
+     1042710    0.01%       24  void OopOopIterateBackwardsDispatch<G1ScanEvacuatedObjClosure>::Table::oop_oop_iterate_backwards<InstanceKlass, narrowOop>(G1ScanEvacuatedObjClosure*, oopDesc*, Klass*)
+     1029541    0.01%       95  methodHandle::~methodHandle()
+     1029440    0.01%       88  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+     1013550    0.01%       96  LinearScan::compute_local_live_sets()
+     1007350    0.01%       98  jdk.internal.org.objectweb.asm.ByteVector.putUTF8
+      997490    0.01%       91  PhaseCCP::analyze()
+      993520    0.01%       87  PhaseIterGVN::transform_old(Node*)
+      960830    0.01%       61  __GI___pthread_mutex_unlock_usercnt
+      960730    0.01%       17  Monitor::wait_without_safepoint_check(long)
+      955410    0.01%       65  __vfprintf_internal
+      947950    0.01%       94  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+      919920    0.01%       91  PhaseOutput::BuildOopMaps()
+      913080    0.01%       78  NodeHash::hash_find_insert(Node*)
+      877390    0.01%       69  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+      873060    0.01%       85  java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+      869160    0.01%       69  Compile::identify_useful_nodes(Unique_Node_List&)
+      851260    0.01%       85  GraphBuilder::iterate_bytecodes_for_block(int)
+      851210    0.01%        4  G1ParCopyClosure<(G1Barrier)0, false>::do_oop(oopDesc**)
+      850891    0.01%       84  DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+      839891    0.01%       25  __futex_abstimed_wait_common
+      839170    0.01%       69  ___pthread_mutex_lock
+      838670    0.01%       72  __GI___libc_malloc
+      825521    0.01%       63  Type::cmp(Type const*, Type const*)
+      820360    0.01%       80  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+      815801    0.01%       81  Matcher::find_shared(Node*)
+      811350    0.01%       67  PhaseIterGVN::add_users_to_worklist(Node*)
+      805550    0.01%       79  ValueStack::ValueStack(ValueStack*, ValueStack::Kind, int)
+      798022    0.01%       73  Dictionary::find(unsigned int, Symbol*, Handle)
+      797212    0.01%       72  __memmove_avx_unaligned_erms
+      793240    0.01%       79  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+      790270    0.01%        1  G1GCParPhaseTimesTracker::~G1GCParPhaseTimesTracker()
+      785330    0.01%       71  Matcher::match_tree(Node const*)
+      783541    0.01%       68  GrowableArrayWithAllocator<int, GrowableArray<int> >::grow(int)
+      775221    0.00%       66  Compile::remove_useless_nodes(Unique_Node_List&)
+      770120    0.00%       74  java.lang.Long.getChars
+      760320    0.00%       69  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+      748930    0.00%       74  PhaseChaitin::merge_multidefs()
+      744630    0.00%       74  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+      743001    0.00%       13  _int_free
+      742610    0.00%       68  java.lang.invoke.LambdaForm$MH.0x0000000800c08400.invoke
+      740470    0.00%       61  __memset_avx2_unaligned
+      729761    0.00%       62  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
+      727810    0.00%       69  java.lang.invoke.InvokerBytecodeGenerator.emitStaticInvoke
+      718200    0.00%       70  IndexSet::alloc_block_containing(unsigned int)
+      715080    0.00%       13  WatcherThread::sleep() const
+      707300    0.00%       68  java.lang.AbstractStringBuilder.append
+      702220    0.00%       65  Run.measure
+      693950    0.00%       62  .annobin__ZNK4Node6is_CFGEv.start
+      687990    0.00%       61  Node::clone() const
+      686861    0.00%       67  java.lang.invoke.InvokerBytecodeGenerator.addMethod
+      677550    0.00%        2  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI19InstanceMirrorKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+      673991    0.00%       66  Interval::split_child_at_op_id(int, LIR_OpVisitState::OprMode)
+      664710    0.00%       63  java.lang.invoke.MethodType.insertParameterTypes
+      661030    0.00%       62  .annobin__ZN8Interval9add_rangeEii.start
+      657120    0.00%       64  ___pthread_mutex_trylock
+      652900    0.00%       63  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+      650380    0.00%       62  RegionNode::is_unreachable_from_root(PhaseGVN const*) const
+      649261    0.00%       62  NullCheckEliminator::iterate_one(BlockBegin*)
+      641740    0.00%       63  jdk.internal.org.objectweb.asm.Frame.push
+      640880    0.00%       63  sun.nio.cs.StreamEncoder.implWrite
+      635580    0.00%       62  java.lang.invoke.LambdaForm$Name.<init>
+      633391    0.00%       53  Node::out_grow(unsigned int)
+      631850    0.00%       59  ConstantPool::klass_at_impl(constantPoolHandle const&, int, JavaThread*)
+      629440    0.00%       62  PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+      628800    0.00%       37  clock_gettime@GLIBC_2.2.5
+      624560    0.00%       51  AdapterHandlerLibrary::get_adapter(methodHandle const&)
+      623720    0.00%       59  InterpreterRuntime::ldc(JavaThread*, bool)
+      623530    0.00%       61  java.lang.Integer.valueOf
+      622991    0.00%       60  PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+      617540    0.00%       61  PhaseChaitin::Select()
+      612420    0.00%       56  PhaseCFG::sched_call(Block*, unsigned int, Node_List&, GrowableArray<int>&, MachCallNode*, VectorSet&)
+      605040    0.00%       60  PhiResolver::create_node(LIR_OprDesc*, bool)
+      600860    0.00%       52  ciMethodBlocks::do_analysis()
+      593420    0.00%       54  java.lang.invoke.MethodType.equals
+      584370    0.00%       58  java.lang.invoke.MethodType.hashCode
+      581780    0.00%       58  java.lang.invoke.MethodType.checkPtypes
+      579700    0.00%       50  PhaseIterGVN::remove_globally_dead_node(Node*)
+      579581    0.00%       44  Node::Node(unsigned int)
+      578170    0.00%       56  java.lang.invoke.LambdaForm.useCount
+      575750    0.00%       51  __memmove_avx_unaligned
+      573790    0.00%       57  _dl_update_slotinfo
+      563410    0.00%       54  java.lang.invoke.LambdaForm.normalize
+      549001    0.00%       38  os::free(void*)
+      544471    0.00%       51  jdk.internal.org.objectweb.asm.SymbolTable.addConstantMemberReference
+      535650    0.00%       48  .annobin__ZN17CompilationPolicy6commonI13LoopPredicateEE9CompLevelRK12methodHandleS2_b.start
+      535090    0.00%       53  jdk.internal.org.objectweb.asm.Type.getArgumentsAndReturnSizes
+      534140    0.00%       53  jdk.internal.org.objectweb.asm.SymbolTable.hash
+      530400    0.00%       45  MultiNode::is_CFG() const
+      529730    0.00%       44  Node::add_req(Node*)
+      529620    0.00%       51  jdk.internal.org.objectweb.asm.SymbolTable.addConstantNameAndType
+      527430    0.00%       51  I2C/C2I adapters(0xba)
+      527260    0.00%       36  PhaseGVN::transform_no_reclaim(Node*)
+      525020    0.00%       47  CodeCache::find_blob(void*)
+      524540    0.00%       52  ValueMap::find_insert(Instruction*)
+      524050    0.00%       28  IndexSet::initialize(unsigned int)
+      522412    0.00%       24  os::javaTimeNanos()
+      518490    0.00%       51  LIR_OpVisitState::append(LIR_OprDesc*&, LIR_OpVisitState::OprMode) [clone .constprop.0]
+      515850    0.00%       32  _IO_default_xsputn
+      514830    0.00%       51  java.util.Arrays.copyOf
+      509210    0.00%       43  __tls_get_addr@plt
+      504960    0.00%       21  __strlen_avx2
+      502950    0.00%       50  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+      500511    0.00%       50  java.lang.invoke.LambdaForm$Name.replaceNames
+      499851    0.00%       46  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+      499180    0.00%       50  GraphBuilder::append_with_bci(Instruction*, int)
+      495880    0.00%       48  PhaseChaitin::gather_lrg_masks(bool) [clone .constprop.0]
+      495820    0.00%       30  MemAllocator::allocate() const
+      493070    0.00%       46  Compile::final_graph_reshaping_walk(Node_Stack&, Node*, Final_Reshape_Counts&)
+      492831    0.00%       42  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+      491770    0.00%       42  Relocation::pd_call_destination(unsigned char*)
+      490571    0.00%       39  Type::hashcons()
+      489950    0.00%       49  jdk.internal.org.objectweb.asm.Frame.pop
+      489380    0.00%       45  LinearScan::add_use(LIR_OprDesc*, int, int, IntervalUseKind)
+      486940    0.00%       48  java.lang.StringConcatHelper.prepend
+      482580    0.00%       48  jdk.internal.org.objectweb.asm.MethodWriter.visitVarInsn
+      482020    0.00%       46  InterpreterRuntime::resolve_get_put(JavaThread*, Bytecodes::Code)
+      480071    0.00%       44  CompLevel CompilationPolicy::common<CallPredicate>(methodHandle const&, CompLevel, bool)
+      479281    0.00%       44  java.lang.invoke.InvokerBytecodeGenerator.emitPushArgument
+      474870    0.00%       39  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+      473840    0.00%       43  java.lang.Long.stringSize
+      469640    0.00%       43  constantPoolHandle::~constantPoolHandle()
+      467040    0.00%       40  PhaseIdealLoop::build_loop_tree_impl(Node*, int)
+      463970    0.00%       45  IntervalWalker::walk_to(int)
+      461180    0.00%       36  Arena::Arealloc(void*, unsigned long, unsigned long, AllocFailStrategy::AllocFailEnum)
+      458960    0.00%       43  LIR_OpVisitState::append(LIR_OprDesc*&, LIR_OpVisitState::OprMode)
+      457960    0.00%       44  BlockBegin::try_merge(ValueStack*)
+      454340    0.00%       43  java.lang.invoke.MethodType.makeImpl
+      453950    0.00%       15  CompilationPolicy::select_task(CompileQueue*)
+      451190    0.00%       45  MachNode::ideal_reg() const
+      450160    0.00%       22  __strchrnul_avx2
+      450150    0.00%       43  Run.printResult
+      445420    0.00%       40  Unique_Node_List::remove(Node*)
+      442660    0.00%       43  java.lang.invoke.MethodTypeForm.canonicalize
+      441611    0.00%       43  jdk.internal.org.objectweb.asm.SymbolTable.put
+      439310    0.00%       44  java.lang.String.getBytes
+      437151    0.00%       44  java.lang.invoke.InvokerBytecodeGenerator.clinit
+      427160    0.00%       36  .annobin__ZNK7PhiNode5ValueEP8PhaseGVN.start
+      425510    0.00%       38  Dependencies::assert_evol_method(ciMethod*)
+      424710    0.00%       43  sun.nio.cs.StreamEncoder.writeBytes
+      421680    0.00%       42  GlobalValueNumbering::GlobalValueNumbering(IR*)
+      418080    0.00%       33  PhiNode::Ideal(PhaseGVN*, bool)
+      417320    0.00%        2  ChunkPoolCleaner::task()
+      417141    0.00%       35  LinkResolver::check_method_loader_constraints(LinkInfo const&, methodHandle const&, char const*, JavaThread*)
+      416821    0.00%       40  LinearScan::eliminate_spill_moves()
+      414791    0.00%       37  msort_with_tmp.part.0
+      411710    0.00%       40  _invokeBasic
+      410310    0.00%       17  ___pthread_mutex_unlock
+      410270    0.00%       40  java.nio.charset.CharsetEncoder.encode
+      407150    0.00%       32  TypeOopPtr::TypeOopPtr(Type::TYPES, TypePtr::PTR, ciKlass*, bool, ciObject*, int, int, TypePtr const*, int)
