@@ -23,39 +23,16 @@ import org.json.JSONObject;
 
 public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
-
+    public static HashMap<String,String> FirstHottests = new HashMap<String,String>();
     public static void main(String[] args) {
         
         processFile("Readers/JSONDumps/report4/output.json");
-        processFile("Readers/JSONDumps/report4/output2.json");
-        processFile("Readers/JSONDumps/report4/output3.json");
-        processFile("Readers/JSONDumps/report4/output4.json");
-        processFile("Readers/JSONDumps/report4/output5.json");
-        processFile("Readers/JSONDumps/report4/output6.json");
-        processFile("Readers/JSONDumps/report4/output7.json");
-        processFile("Readers/JSONDumps/report4/output8.json");
-        processFile("Readers/JSONDumps/report4/output9.json");
-        processFile("Readers/JSONDumps/report4/output10.json");
-        processFile("Readers/JSONDumps/report4/output11.json");
-        processFile("Readers/JSONDumps/report4/output12.json");
-        processFile("Readers/JSONDumps/report4/output13.json");
-        processFile("Readers/JSONDumps/report4/output14.json");
-        processFile("Readers/JSONDumps/report4/output15.json");
-        processFile("Readers/JSONDumps/report4/output16.json");
-        processFile("Readers/JSONDumps/report4/output17.json");
-        processFile("Readers/JSONDumps/report4/output18.json");
-        processFile("Readers/JSONDumps/report4/output19.json");
-        processFile("Readers/JSONDumps/report4/output20.json");
-        processFile("Readers/JSONDumps/report4/output21.json");
-        processFile("Readers/JSONDumps/report4/output22.json");
-        processFile("Readers/JSONDumps/report4/output23.json");
-        processFile("Readers/JSONDumps/report4/output24.json");
-        processFile("Readers/JSONDumps/report4/output25.json");
-        processFile("Readers/JSONDumps/report4/output26.json");
-        processFile("Readers/JSONDumps/report4/output27.json");
-        processFile("Readers/JSONDumps/report4/output28.json");
-        processFile("Readers/JSONDumps/report4/output29.json");
-        processFile("Readers/JSONDumps/report4/output30.json");
+        for (int prefix = 2; prefix <= 30; prefix++) {
+            processFile("Readers/JSONDumps/report4/output"+prefix+".json");
+        }
+
+        TreeMap<String,String> hottest = new TreeMap<String,String>(FirstHottests);
+        printFristHottestsFromEachFile(hottest);
 
 
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
@@ -64,9 +41,7 @@ public class ProcessOutput {
           //printOrderStatisticMapForMasterTable(orderedStatmap);
         //printOrderStatisticMap(orderedStatmap);
 
-        // System.out.println();
-
-        mapOccurrencesOnMethodAndPrint(dataSet, "Mandelbrot.mandelbrot");
+        mapOccurrencesOnMethodAndPrint(dataSet, "Queens.placeQueen");
         //DebugmapOccurrences(dataSet);
     }
     
@@ -104,13 +79,22 @@ public class ProcessOutput {
             String file = filenames.get(i).toString();
             JSONObject benchmarks = (JSONObject) profiler.get(file);
             JSONArray methods = benchmarks.names();
+            Double max = 0d;
+            String tempmethod ="";
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
-                BigDecimal Runtime =  (BigDecimal) Runtimes.get(file);
-                dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, Runtime.doubleValue(), path));
+                BigDecimal BigRuntime =  (BigDecimal) Runtimes.get(file);
+                DecimalFormat df = new DecimalFormat("#.###");
+                double runtime = Double.parseDouble(df.format(BigRuntime));
+                if (Double.parseDouble(percentage.replace("%", "")) > max) {
+                    tempmethod = methodName;
+                    max = Double.parseDouble(percentage.replace("%", ""));
+                }
+                dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, runtime, path));
                                 
             }
+            FirstHottests.put(file +" " +path, normaliseMethodName(tempmethod, profilerName));
             
         }
 
@@ -239,8 +223,8 @@ public class ProcessOutput {
 
             for (BenchMethod BM :  BROM.BenchMethods) {
                 if (xdatas.containsKey(BM.Profiler)) {
-                    xdatas.get(BM.Profiler).add(Double.parseDouble(BM.percentage));
-                    ydatas.get(BM.Profiler).add(BM.Runtime);
+                    ydatas.get(BM.Profiler).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(BM.Profiler).add(BM.Runtime);
                     //heatMap.put(key, heatMap.get(key).add(i));
                 }
                 else{
@@ -248,8 +232,8 @@ public class ProcessOutput {
                     ArrayList<Double> arrayb = new ArrayList<Double>();
                     array.add(Double.parseDouble(BM.percentage));
                     arrayb.add(BM.Runtime);
-                    xdatas.put(BM.Profiler, array );
-                    ydatas.put(BM.Profiler, arrayb);
+                    ydatas.put(BM.Profiler, array );
+                    xdatas.put(BM.Profiler, arrayb);
                 }
             }
             new Grapher().multiGraph(specificMethod, xdatas, ydatas);
@@ -337,14 +321,14 @@ public class ProcessOutput {
             }
             
             System.out.print(currentReport.method);
-            //System.out.print(" " + currentReport.Percentages.size());
+            System.out.print(" " + currentReport.Percentages.size());
             System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
-            // System.out.print(" " + currentReport.min);
-            // System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
-            // System.out.print(" " + currentReport.max);
-            // System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
+             System.out.print(" " + currentReport.min);
+             System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
+             System.out.print(" " + currentReport.max);
+             System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
              String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
-            // System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
+             System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
              System.out.println("");
 
             if (Double.parseDouble(diff) >= 5 ) {
@@ -449,6 +433,49 @@ public class ProcessOutput {
         } 
 
         return correctedName;
+    }
+
+
+    private static void printFristHottestsFromEachFile(TreeMap<String,String> fristhottestsfromeachfile) {
+        
+
+        HashMap<String,Integer> changeInHottets = new HashMap<String,Integer>();
+        int counter = 0;
+        String currentMethod = "";
+        ArrayList<String> seenmethods = new ArrayList<String>();
+        int methodcounter = 0;
+        String lastKey = "";
+        for (String key : fristhottestsfromeachfile.keySet()) {
+            if (counter >= 30) {
+                counter = 0;
+                changeInHottets.put(lastKey.split("\\s+")[0], methodcounter);
+                methodcounter = 0;
+                currentMethod = "";
+                System.out.println(lastKey);
+                for (String iterable_element : seenmethods) {
+                    System.out.println(iterable_element);
+                }
+                seenmethods.clear();
+                System.out.println();
+            }
+            currentMethod = fristhottestsfromeachfile.get(key);
+            if(!seenmethods.contains(currentMethod)){
+                seenmethods.add(currentMethod);
+                methodcounter++;
+            }
+            counter++;
+            lastKey = key;
+        }
+        changeInHottets.put(lastKey.split("\\s+")[0], methodcounter);
+        System.out.println(lastKey);
+        for (String iterable_element : seenmethods) {
+            System.out.println(iterable_element);
+        }
+        for (String key : changeInHottets.keySet()) {
+            System.out.println(key + "  " + changeInHottets.get(key));
+        }
+        System.out.println();
+
     }
 }
 class BenchMethod {
