@@ -149,13 +149,43 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --------------------
 
 
 Async Average: -1.0
 HonestProfiler Average: -1.0
 JavaFlightRecorder Average: -1.0
-Perf Average: 0.27013568521031206
+Perf Average: 0.22805269186712482
 YourKit Average: -1.0
 JProfiler Average: -1.0
 
@@ -166,16 +196,16 @@ Diff: 7.2
 ----------Towers.benchmark----------
 
 
-Async Average: 0.04340206185567011
-HonestProfiler Average: 0.019587628865979388
-JavaFlightRecorder Average: 0.032115263522344055
-Perf Average: 0.016288659793814435
-YourKit Average: 0.024302509841011594
-JProfiler Average: -1.0
+Async Average: 0.033149606299212604
+HonestProfiler Average: 0.014960629921259848
+JavaFlightRecorder Average: 0.0245289808005305
+Perf Average: 0.012440944881889767
+YourKit Average: 0.018561759484867123
+JProfiler Average: 0.11732283464566931
 
 Min: 0.06
-Max: 0.40540540540540543
-Diff: 0.34540540540540543
+Max: 1.0
+Diff: 0.94
 
 ----------cd.RedBlackTree.leftRotate----------
 
@@ -219,15 +249,29 @@ Min: 2.8
 Max: 4.21
 Diff: 1.4100000000000001
 
+----------Run.printResult----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 0.0013709386898295174
+Perf Average: -1.0
+YourKit Average: 7.414426184076413E-4
+JProfiler Average: 0.09330855018587371
+
+Min: 0.0
+Max: 0.4
+Diff: 0.4
+
 ----------java.util.Arrays.fill----------
 
 
-Async Average: 0.8677500000000002
-HonestProfiler Average: 0.6175000000000003
-JavaFlightRecorder Average: 0.15086844061988278
+Async Average: 0.7340483383685802
+HonestProfiler Average: 0.5223564954682781
+JavaFlightRecorder Average: 0.12762285007119994
 Perf Average: -1.0
-YourKit Average: 0.3850404771143323
-JProfiler Average: -1.0
+YourKit Average: 0.32571399876741103
+JProfiler Average: 0.03957703927492446
 
 Min: 0.06501950585175553
 Max: 14.5
@@ -278,12 +322,12 @@ Diff: 4.058642033419629
 ----------richards.Scheduler.schedule----------
 
 
-Async Average: 1.176979865771812
-HonestProfiler Average: 1.1778523489932882
-JavaFlightRecorder Average: 12.001807324862975
-Perf Average: 1.5965771812080538
-YourKit Average: 0.5068303682515967
-JProfiler Average: -1.0
+Async Average: 0.9797206703910615
+HonestProfiler Average: 0.9804469273743014
+JavaFlightRecorder Average: 9.990331236897113
+Perf Average: 1.3289944134078213
+YourKit Average: 0.42188673111445757
+JProfiler Average: 2.410055865921788
 
 Min: 1.748194916509245
 Max: 61.614035087719294
@@ -292,26 +336,26 @@ Diff: 59.86584017121005
 ----------som.Vector.<init>----------
 
 
-Async Average: 0.427570093457944
-HonestProfiler Average: 1.0532710280373832
-JavaFlightRecorder Average: 0.006600137282855483
+Async Average: 0.20154185022026436
+HonestProfiler Average: 0.49647577092511014
+JavaFlightRecorder Average: 0.0031110779262798973
 Perf Average: -1.0
-YourKit Average: 2.0447077909450173
-JProfiler Average: -1.0
+YourKit Average: 0.9638049939696778
+JProfiler Average: 10.541409691629955
 
 Min: 0.7062146892655367
-Max: 8.832711490139344
-Diff: 8.126496800873808
+Max: 43.0
+Diff: 42.293785310734464
 
 ----------nbody.NBodySystem.advance----------
 
 
-Async Average: 8.204133333333333
-HonestProfiler Average: 8.076
-JavaFlightRecorder Average: 19.87982123884864
-Perf Average: 8.373799999999996
-YourKit Average: 8.90186775798568
-JProfiler Average: -1.0
+Async Average: 6.836777777777777
+HonestProfiler Average: 6.73
+JavaFlightRecorder Average: 16.56651769904053
+Perf Average: 6.978166666666664
+YourKit Average: 7.418223131654734
+JProfiler Average: 16.53555555555556
 
 Min: 0.05
 Max: 99.84326018808778
@@ -376,12 +420,12 @@ Diff: 0.04
 ----------List$Element.length----------
 
 
-Async Average: 0.05000000000000001
-HonestProfiler Average: 0.03205128205128206
-JavaFlightRecorder Average: 0.029369032843807548
+Async Average: 0.037500000000000006
+HonestProfiler Average: 0.024038461538461547
+JavaFlightRecorder Average: 0.022026774632855663
 Perf Average: -1.0
-YourKit Average: 0.014227302540194229
-JProfiler Average: -1.0
+YourKit Average: 0.010670476905145672
+JProfiler Average: 0.03846153846153848
 
 Min: 0.0
 Max: 0.3081664098613251
@@ -392,14 +436,14 @@ Diff: 0.3081664098613251
 
 Async Average: -1.0
 HonestProfiler Average: -1.0
-JavaFlightRecorder Average: 0.18666926297836045
-Perf Average: 0.15163934426229508
-YourKit Average: 0.028899925185579992
-JProfiler Average: -1.0
+JavaFlightRecorder Average: 0.14057808693432083
+Perf Average: 0.11419753086419752
+YourKit Average: 0.02176414118914049
+JProfiler Average: 0.06913580246913581
 
-Min: 0.15673981191222572
+Min: 0.1
 Max: 0.7923930269413628
-Diff: 0.6356532150291371
+Diff: 0.6923930269413628
 
 ----------java.lang.invoke.DirectMethodHandle.allocateInstance----------
 
@@ -418,12 +462,12 @@ Diff: 0.8083040153519614
 ----------List.isShorterThan----------
 
 
-Async Average: 20.416499999999996
-HonestProfiler Average: 20.105833333333337
-JavaFlightRecorder Average: 22.138465187738877
+Async Average: 16.333199999999998
+HonestProfiler Average: 16.084666666666667
+JavaFlightRecorder Average: 17.7107721501911
 Perf Average: -1.0
-YourKit Average: 17.770061373362175
-JProfiler Average: -1.0
+YourKit Average: 14.216049098689739
+JProfiler Average: 14.93666666666667
 
 Min: 66.9924274124968
 Max: 91.46706586826346
@@ -474,12 +518,12 @@ Diff: 14.162541806020068
 ----------som.Vector.forEach----------
 
 
-Async Average: 2.013820754716981
-HonestProfiler Average: 2.21933962264151
-JavaFlightRecorder Average: 10.031986566471346
+Async Average: 1.7569135802469134
+HonestProfiler Average: 1.9362139917695478
+JavaFlightRecorder Average: 8.752185811077883
 Perf Average: -1.0
-YourKit Average: 5.535410038817157
-JProfiler Average: -1.0
+YourKit Average: 4.829246618227314
+JProfiler Average: 0.9304526748971195
 
 Min: 1.8
 Max: 51.89003436426117
@@ -498,6 +542,20 @@ JProfiler Average: -1.0
 Min: 0.06464124111182935
 Max: 14.9
 Diff: 14.835358758888171
+
+----------deltablue.Planner.removePropagateFrom----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 0.09679760635146345
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 8.80625
+
+Min: 1.3793103448275863
+Max: 10.2
+Diff: 8.820689655172412
 
 ----------richards.Scheduler.findTask----------
 
@@ -527,19 +585,33 @@ Min: 0.01
 Max: 0.03
 Diff: 0.019999999999999997
 
+----------json.JsonPureStringParser.readNumber----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 2.3812996127814237
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.03333333333333334
+
+Min: 0.0
+Max: 9.221501390176089
+Diff: 9.221501390176089
+
 ----------Towers.moveTopDisk----------
 
 
-Async Average: 1.5782795698924734
-HonestProfiler Average: 1.754838709677419
-JavaFlightRecorder Average: 0.004332011512032324
+Async Average: 1.1933333333333336
+HonestProfiler Average: 1.3268292682926826
+JavaFlightRecorder Average: 0.0032754233383659034
 Perf Average: -1.0
-YourKit Average: 2.5780538985612593
-JProfiler Average: -1.0
+YourKit Average: 1.9492602647658304
+JProfiler Average: 0.04959349593495934
 
-Min: 0.13333333333333333
+Min: 0.1
 Max: 10.763922635824667
-Diff: 10.630589302491334
+Diff: 10.663922635824667
 
 ----------deltablue.EqualityConstraint.execute----------
 
@@ -555,15 +627,29 @@ Min: 1.8
 Max: 10.33108774235951
 Diff: 8.53108774235951
 
+----------json.JsonPureStringParser.readObject----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 1.901739733061862
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.4481481481481482
+
+Min: 0.5909090909090909
+Max: 8.898109727985247
+Diff: 8.307200637076155
+
 ----------Sieve.sieve----------
 
 
-Async Average: 16.75073333333333
-HonestProfiler Average: 17.127999999999997
-JavaFlightRecorder Average: 19.901431312619216
-Perf Average: 1.2384
-YourKit Average: 1.5496132911998282
-JProfiler Average: -1.0
+Async Average: 13.95894444444444
+HonestProfiler Average: 14.27333333333333
+JavaFlightRecorder Average: 16.584526093849345
+Perf Average: 1.032
+YourKit Average: 1.29134440933319
+JProfiler Average: 15.557777777777778
 
 Min: 4.164298906094615
 Max: 99.80295566502464
@@ -586,16 +672,16 @@ Diff: 8.581263877028181
 ----------Permute.benchmark----------
 
 
-Async Average: 0.01945945945945947
-HonestProfiler Average: 0.0072072072072072065
-JavaFlightRecorder Average: 0.042334608771378665
-Perf Average: 0.0020720720720720717
-YourKit Average: 0.08262253899395919
-JProfiler Average: -1.0
+Async Average: 0.01531914893617022
+HonestProfiler Average: 0.0056737588652482265
+JavaFlightRecorder Average: 0.033327245203000226
+Perf Average: 0.001631205673758865
+YourKit Average: 0.06504327537822319
+JProfiler Average: 0.17234042553191484
 
 Min: 0.0
-Max: 0.7290400972053462
-Diff: 0.7290400972053462
+Max: 1.6
+Diff: 1.6
 
 ----------java.lang.StringLatin1.newString----------
 
@@ -611,6 +697,20 @@ Min: 5.860522913133282
 Max: 28.103044496487122
 Diff: 22.24252158335384
 
+----------som.Set.<init>----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: 0.2896868081237454
+JProfiler Average: 4.5285714285714285
+
+Min: 1.5612919852246374
+Max: 5.9
+Diff: 4.338708014775363
+
 ----------som.IdentitySet.lambda$contains$0----------
 
 
@@ -625,15 +725,29 @@ Min: 6.473888649115235
 Max: 38.06895265416871
 Diff: 31.595064005053477
 
+----------Run.runBenchmark----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: 4.5274804782366923E-4
+JProfiler Average: 0.06760563380281691
+
+Min: 0.0
+Max: 0.2
+Diff: 0.2
+
 ----------Storage.buildTreeDepth----------
 
 
-Async Average: 8.701866666666666
-HonestProfiler Average: 7.957333333333333
-JavaFlightRecorder Average: 17.80513354071471
-Perf Average: 4.022333333333333
-YourKit Average: 7.456465735887105
-JProfiler Average: -1.0
+Async Average: 7.251555555555555
+HonestProfiler Average: 6.63111111111111
+JavaFlightRecorder Average: 14.837611283928924
+Perf Average: 3.351944444444444
+YourKit Average: 6.213721446572587
+JProfiler Average: 16.579444444444444
 
 Min: 16.78
 Max: 100.0
@@ -656,58 +770,58 @@ Diff: 47.2
 ----------List$Element.<init>----------
 
 
-Async Average: 0.10435897435897439
-HonestProfiler Average: 0.07564102564102566
+Async Average: 0.0753703703703704
+HonestProfiler Average: 0.05462962962962964
 JavaFlightRecorder Average: -1.0
 Perf Average: -1.0
-YourKit Average: 0.05519291079640741
-JProfiler Average: -1.0
+YourKit Average: 0.03986154668629424
+JProfiler Average: 5.966666666666665
 
 Min: 0.1
-Max: 0.6579553379916572
-Diff: 0.5579553379916572
+Max: 25.6
+Diff: 25.5
 
 ----------richards.TaskControlBlock.addInputAndCheckPriority----------
 
 
-Async Average: 0.06189189189189189
-HonestProfiler Average: 0.4378378378378378
-JavaFlightRecorder Average: 0.003787034354719944
+Async Average: 0.060263157894736845
+HonestProfiler Average: 0.4263157894736842
+JavaFlightRecorder Average: 0.0036873755559115244
 Perf Average: -1.0
-YourKit Average: 1.4114977804324293
+YourKit Average: 1.374353101999997
 JProfiler Average: -1.0
 
-Min: 0.06734006734006734
+Min: 0.0
 Max: 3.673747121505164
-Diff: 3.6064070541650963
+Diff: 3.673747121505164
 
 ----------Queens.queens----------
 
 
-Async Average: 0.12405405405405402
-HonestProfiler Average: 0.125
-JavaFlightRecorder Average: 0.07635871920086008
-Perf Average: 0.5051351351351353
-YourKit Average: 0.1520109140644438
-JProfiler Average: -1.0
+Async Average: 0.10314606741573032
+HonestProfiler Average: 0.10393258426966293
+JavaFlightRecorder Average: 0.06348927214453536
+Perf Average: 0.4200000000000001
+YourKit Average: 0.12639109708729035
+JProfiler Average: 3.996067415730337
 
 Min: 0.16181229773462782
-Max: 2.83
-Diff: 2.668187702265372
+Max: 30.3
+Diff: 30.138187702265373
 
 ----------nbody.Body.getMass----------
 
 
-Async Average: 0.23707692307692307
-HonestProfiler Average: 0.21230769230769228
-JavaFlightRecorder Average: 0.002449779519843214
+Async Average: 0.2334848484848485
+HonestProfiler Average: 0.20909090909090908
+JavaFlightRecorder Average: 0.002412661648330438
 Perf Average: -1.0
-YourKit Average: 0.11352408245658445
-JProfiler Average: -1.0
+YourKit Average: 0.11180402060118166
+JProfiler Average: 0.0015151515151515152
 
-Min: 0.1592356687898089
+Min: 0.1
 Max: 1.107011070110701
-Diff: 0.9477754013208921
+Diff: 1.007011070110701
 
 ----------java.lang.invoke.LambdaForm$DMH.0x0000000800c06800.newInvokeSpecial----------
 
@@ -726,12 +840,12 @@ Diff: 0.44000000000000006
 ----------Towers.pushDisk----------
 
 
-Async Average: 10.396885245901638
-HonestProfiler Average: 9.593442622950823
-JavaFlightRecorder Average: 9.167992844278123
-Perf Average: 9.016393442622951E-4
-YourKit Average: 8.125501646061373
-JProfiler Average: -1.0
+Async Average: 10.147359999999999
+HonestProfiler Average: 9.363200000000003
+JavaFlightRecorder Average: 8.947961016015448
+Perf Average: 8.8E-4
+YourKit Average: 7.9304896065559
+JProfiler Average: 0.0024000000000000002
 
 Min: 0.05
 Max: 45.30831099195711
@@ -796,44 +910,44 @@ Diff: 9.58
 ----------Bounce.lambda$benchmark$0----------
 
 
-Async Average: 0.0376271186440678
-HonestProfiler Average: 0.06016949152542374
-JavaFlightRecorder Average: 22.362184771025476
+Async Average: 0.030204081632653063
+HonestProfiler Average: 0.048299319727891164
+JavaFlightRecorder Average: 17.950597299190516
 Perf Average: -1.0
-YourKit Average: 0.13767618320187858
-JProfiler Average: -1.0
+YourKit Average: 0.11051557563143995
+JProfiler Average: 0.02653061224489797
 
-Min: 0.1
+Min: 0.0
 Max: 96.4549483013294
-Diff: 96.3549483013294
+Diff: 96.4549483013294
 
 ----------Towers.popDiskFrom----------
 
 
-Async Average: 5.945312499999999
-HonestProfiler Average: 6.909375000000001
-JavaFlightRecorder Average: 0.0084640972401387
+Async Average: 5.707499999999999
+HonestProfiler Average: 6.633000000000001
+JavaFlightRecorder Average: 0.008125533350533152
 Perf Average: -1.0
-YourKit Average: 9.538708470832251
-JProfiler Average: -1.0
+YourKit Average: 9.15716013199896
+JProfiler Average: 0.004
 
-Min: 0.13351134846461948
+Min: 0.1
 Max: 34.913567631351654
-Diff: 34.78005628288703
+Diff: 34.81356763135165
 
 ----------Storage.lambda$buildTreeDepth$0----------
 
 
-Async Average: 1.077217391304348
-HonestProfiler Average: 0.9469565217391304
-JavaFlightRecorder Average: 2.8311535592796586
+Async Average: 0.8602777777777778
+HonestProfiler Average: 0.75625
+JavaFlightRecorder Average: 2.260990689702505
 Perf Average: -1.0
-YourKit Average: 0.7588398306943565
-JProfiler Average: -1.0
+YourKit Average: 0.6060179203461875
+JProfiler Average: 0.09583333333333334
 
-Min: 1.7943025216764237
+Min: 0.3
 Max: 14.879107253564786
-Diff: 13.084804731888363
+Diff: 14.579107253564786
 
 ----------0xffffffffb51c12b7----------
 
@@ -852,16 +966,16 @@ Diff: 0.21
 ----------Permute.swap----------
 
 
-Async Average: 10.122833333333334
-HonestProfiler Average: 9.984166666666669
-JavaFlightRecorder Average: 6.7876960787482155
+Async Average: 9.875934959349594
+HonestProfiler Average: 9.740650406504066
+JavaFlightRecorder Average: 6.622142515851918
 Perf Average: -1.0
-YourKit Average: 10.803913481655702
-JProfiler Average: -1.0
+YourKit Average: 10.540403396737268
+JProfiler Average: 0.002439024390243903
 
-Min: 24.04306220095694
+Min: 0.1
 Max: 48.42846536324161
-Diff: 24.385403162284668
+Diff: 48.328465363241605
 
 ----------[no_Java_frame]----------
 
@@ -891,6 +1005,20 @@ Min: 2.3632993512511584
 Max: 22.605341818532448
 Diff: 20.24204246728129
 
+----------java.lang.ClassLoader.loadClass----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.11688311688311731
+
+Min: 0.0
+Max: 9.0
+Diff: 9.0
+
 ----------java.lang.invoke.MethodHandleNatives.resolve----------
 
 
@@ -919,6 +1047,20 @@ Min: 2.4395764694046935
 Max: 11.326860841423947
 Diff: 8.887284372019254
 
+----------richards.Scheduler.createIdler----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 3.2141185246903325
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.004878048780487805
+
+Min: 0.0
+Max: 6.071428571428571
+Diff: 6.071428571428571
+
 ----------java.lang.String.isLatin1----------
 
 
@@ -936,12 +1078,12 @@ Diff: 3.41
 ----------Queens.benchmark----------
 
 
-Async Average: 0.029555555555555568
-HonestProfiler Average: 0.006666666666666668
-JavaFlightRecorder Average: 0.02852738867178367
+Async Average: 0.02375000000000001
+HonestProfiler Average: 0.005357142857142858
+JavaFlightRecorder Average: 0.022923794468397592
 Perf Average: -1.0
 YourKit Average: -1.0
-JProfiler Average: -1.0
+JProfiler Average: 0.01964285714285714
 
 Min: 0.0
 Max: 0.16420361247947454
@@ -992,40 +1134,54 @@ Diff: 0.9485320646248387
 ----------Benchmark.innerBenchmarkLoop----------
 
 
-Async Average: 0.029775510204081607
-HonestProfiler Average: 0.010204081632653057
-JavaFlightRecorder Average: 0.018776346182427062
-Perf Average: 7.1272653061224505
-YourKit Average: 0.0101143781449496
-JProfiler Average: -1.0
+Async Average: 0.025506993006992985
+HonestProfiler Average: 0.008741258741258738
+JavaFlightRecorder Average: 0.016084632219211994
+Perf Average: 6.105524475524477
+YourKit Average: 0.008664414844449832
+JProfiler Average: 0.011363636363636355
 
 Min: 0.0
 Max: 85.51
 Diff: 85.51
 
+----------java.io.PrintStream.println----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: 7.342066437446191E-4
+JProfiler Average: 0.097716894977169
+
+Min: 0.0
+Max: 0.3
+Diff: 0.3
+
 ----------deltablue.Plan.lambda$execute$0----------
 
 
-Async Average: 0.47914893617021276
-HonestProfiler Average: 0.4340425531914893
-JavaFlightRecorder Average: 3.145716005839533
+Async Average: 0.40945454545454546
+HonestProfiler Average: 0.3709090909090909
+JavaFlightRecorder Average: 2.6881573140810557
 Perf Average: -1.0
-YourKit Average: 0.8293037453793932
-JProfiler Average: -1.0
+YourKit Average: 0.7086777460514815
+JProfiler Average: 0.3072727272727273
 
-Min: 1.3029315960912051
+Min: 1.1
 Max: 33.56401384083045
-Diff: 32.26108224473924
+Diff: 32.46401384083045
 
 ----------Queens.getRowColumn----------
 
 
-Async Average: 15.28107438016529
-HonestProfiler Average: 15.068595041322316
-JavaFlightRecorder Average: 3.020045122401853
-Perf Average: 4.132231404958678E-4
-YourKit Average: 15.452727729453143
-JProfiler Average: -1.0
+Async Average: 14.79208
+HonestProfiler Average: 14.586400000000001
+JavaFlightRecorder Average: 2.923403678484994
+Perf Average: 4.0E-4
+YourKit Average: 14.958240442110641
+JProfiler Average: 0.0032
 
 Min: 0.05
 Max: 69.1
@@ -1045,29 +1201,43 @@ Min: 0.0
 Max: 0.1
 Diff: 0.1
 
+----------som.Random.<init>----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.38833333333333336
+
+Min: 0.0
+Max: 1.6
+Diff: 1.6
+
 ----------java.util.Arrays.setAll----------
 
 
-Async Average: 5.189759615384613
-HonestProfiler Average: 5.101923076923077
-JavaFlightRecorder Average: 0.06302758245924732
-Perf Average: 11.023461538461541
-YourKit Average: 6.100580968594921
-JProfiler Average: -1.0
+Async Average: 5.067934272300468
+HonestProfiler Average: 4.982159624413145
+JavaFlightRecorder Average: 0.06154806174424151
+Perf Average: 10.764694835680753
+YourKit Average: 5.957374842571565
+JProfiler Average: 0.0014084507042253524
 
-Min: 0.14261847520475934
+Min: 0.0
 Max: 79.63
-Diff: 79.48738152479524
+Diff: 79.63
 
 ----------Sieve.benchmark----------
 
 
-Async Average: 1.2728000000000002
-HonestProfiler Average: 1.1573333333333333
-JavaFlightRecorder Average: 0.05700116311046289
-Perf Average: 1.2342666666666666
-YourKit Average: 17.684454504141875
-JProfiler Average: -1.0
+Async Average: 1.0606666666666666
+HonestProfiler Average: 0.9644444444444444
+JavaFlightRecorder Average: 0.04750096925871908
+Perf Average: 1.0285555555555554
+YourKit Average: 14.73704542011823
+JProfiler Average: 0.9416666666666667
 
 Min: 0.09852216748768473
 Max: 91.68945453050145
@@ -1090,12 +1260,12 @@ Diff: 0.03
 ----------List.tail----------
 
 
-Async Average: 0.9070666666666665
-HonestProfiler Average: 0.40066666666666667
-JavaFlightRecorder Average: 2.0375261228361166
-Perf Average: 18.477466666666672
-YourKit Average: 0.767284068292649
-JProfiler Average: -1.0
+Async Average: 0.7558888888888887
+HonestProfiler Average: 0.3338888888888889
+JavaFlightRecorder Average: 1.6979384356967637
+Perf Average: 15.397888888888893
+YourKit Average: 0.6394033902438742
+JProfiler Average: 0.4611111111111112
 
 Min: 0.16
 Max: 96.33
@@ -1118,12 +1288,12 @@ Diff: 0.17663872563188487
 ----------Mandelbrot.mandelbrot----------
 
 
-Async Average: 19.72833333333333
-HonestProfiler Average: 19.601999999999997
-JavaFlightRecorder Average: 19.98345511248262
-Perf Average: 0.06246666666666667
-YourKit Average: 19.899047321916058
-JProfiler Average: -1.0
+Async Average: 16.440277777777776
+HonestProfiler Average: 16.334999999999997
+JavaFlightRecorder Average: 16.652879260402184
+Perf Average: 0.05205555555555556
+YourKit Average: 16.582539434930048
+JProfiler Average: 16.612777777777776
 
 Min: 0.02
 Max: 100.0
@@ -1132,12 +1302,12 @@ Diff: 99.98
 ----------havlak.HavlakLoopFinder.findLoops----------
 
 
-Async Average: 1.061866666666667
-HonestProfiler Average: 1.19
-JavaFlightRecorder Average: 1.344905065299291
-Perf Average: 4.400066666666666
-YourKit Average: 2.2390049514911676
-JProfiler Average: -1.0
+Async Average: 0.8848888888888892
+HonestProfiler Average: 0.9916666666666667
+JavaFlightRecorder Average: 1.1207542210827426
+Perf Average: 3.6667222222222215
+YourKit Average: 1.865837459575973
+JProfiler Average: 0.6688888888888888
 
 Min: 2.5137658606655497
 Max: 24.33
@@ -1146,12 +1316,12 @@ Diff: 21.816234139334448
 ----------Bounce.benchmark----------
 
 
-Async Average: 3.6826
-HonestProfiler Average: 3.505333333333333
-JavaFlightRecorder Average: 2.2594799479688277
-Perf Average: 4.7782
-YourKit Average: 12.742583536822073
-JProfiler Average: -1.0
+Async Average: 3.068833333333333
+HonestProfiler Average: 2.9211111111111108
+JavaFlightRecorder Average: 1.8828999566406897
+Perf Average: 3.9818333333333333
+YourKit Average: 10.618819614018394
+JProfiler Average: 8.91
 
 Min: 0.1
 Max: 69.8423047145593
@@ -1174,72 +1344,72 @@ Diff: 30.36835232094152
 ----------java.lang.String.substring----------
 
 
-Async Average: 0.33724999999999994
-HonestProfiler Average: 0.1975
+Async Average: 0.1927142857142857
+HonestProfiler Average: 0.11285714285714286
 JavaFlightRecorder Average: -1.0
 Perf Average: -1.0
-YourKit Average: 7.295943795900749
-JProfiler Average: -1.0
+YourKit Average: 4.169110740514713
+JProfiler Average: 39.12000000000001
 
 Min: 0.03512592644631002
-Max: 11.020286870665446
-Diff: 10.985160944219135
+Max: 91.6
+Diff: 91.56487407355368
 
 ----------Queens.setRowColumn----------
 
 
-Async Average: 7.106593406593407
-HonestProfiler Average: 7.235164835164833
-JavaFlightRecorder Average: 0.0017582417582417582
+Async Average: 7.029347826086957
+HonestProfiler Average: 7.156521739130433
+JavaFlightRecorder Average: 0.0017391304347826088
 Perf Average: -1.0
-YourKit Average: 7.365508736057416
-JProfiler Average: -1.0
+YourKit Average: 7.285448858491574
+JProfiler Average: 0.0010869565217391304
 
-Min: 0.16
+Min: 0.1
 Max: 26.4
-Diff: 26.24
+Diff: 26.299999999999997
 
 ----------deltablue.Planner.addPropagate----------
 
 
-Async Average: 0.7015596330275229
-HonestProfiler Average: 0.5807339449541284
-JavaFlightRecorder Average: 1.8457384818536373
+Async Average: 0.5837404580152672
+HonestProfiler Average: 0.48320610687022897
+JavaFlightRecorder Average: 1.5357671337560799
 Perf Average: -1.0
-YourKit Average: 1.2867864631870403
-JProfiler Average: -1.0
+YourKit Average: 1.0706849197510488
+JProfiler Average: 0.3114503816793893
 
-Min: 1.97
+Min: 1.2
 Max: 10.631229235880399
-Diff: 8.661229235880398
+Diff: 9.4312292358804
 
 ----------List$Element.getNext----------
 
 
-Async Average: 3.029450549450549
-HonestProfiler Average: 3.0692307692307694
-JavaFlightRecorder Average: 0.0016802769096347077
+Async Average: 2.8420618556701025
+HonestProfiler Average: 2.879381443298969
+JavaFlightRecorder Average: 0.001576342255430499
 Perf Average: -1.0
-YourKit Average: 7.6122665701235945
-JProfiler Average: -1.0
+YourKit Average: 7.141404720425228
+JProfiler Average: 0.006185567010309278
 
-Min: 0.1529051987767584
+Min: 0.1
 Max: 27.062975742091815
-Diff: 26.910070543315058
+Diff: 26.962975742091814
 
 ----------richards.HandlerTaskDataRecord.workInAdd----------
 
 
-Async Average: 0.36703703703703705
-HonestProfiler Average: 0.924074074074074
-JavaFlightRecorder Average: 0.2927287317556083
+Async Average: 0.34771929824561404
+HonestProfiler Average: 0.875438596491228
+JavaFlightRecorder Average: 0.27732195640005
 Perf Average: -1.0
-YourKit Average: 1.0202773772405758
-JProfiler Average: -1.0
+YourKit Average: 0.9665785679121243
+JProfiler Average: 0.10350877192982456
 
-Min: 0.07473841554559044
+Min: 0.0
 Max: 15.732613099257259
-Diff: 15.657874683711668
+Diff: 15.732613099257259
 
 ----------itable----------
 
@@ -1283,6 +1453,20 @@ Min: 0.0
 Max: 0.6136622163683171
 Diff: 0.6136622163683171
 
+----------json.JsonPureStringParser.readString----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 0.2820084616308475
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.005263157894736842
+
+Min: 0.0
+Max: 1.5755329008341057
+Diff: 1.5755329008341057
+
 ----------cd.RedBlackTree.put----------
 
 
@@ -1314,44 +1498,58 @@ Diff: 7.100654632078754
 ----------cd.RedBlackTree.findNode----------
 
 
-Async Average: 0.752436974789916
-HonestProfiler Average: 0.7731092436974789
-JavaFlightRecorder Average: 3.8273488183959303
+Async Average: 0.6132876712328768
+HonestProfiler Average: 0.6301369863013697
+JavaFlightRecorder Average: 3.1195514341720254
 Perf Average: -1.0
-YourKit Average: 1.9943103431916298
-JProfiler Average: -1.0
+YourKit Average: 1.625499526300027
+JProfiler Average: 0.323972602739726
 
-Min: 2.299547484546449
+Min: 1.5
 Max: 17.993366500829186
-Diff: 15.693819016282736
+Diff: 16.493366500829186
 
 ----------richards.Packet.<init>----------
 
 
-Async Average: 3.193281249999999
-HonestProfiler Average: 3.2249999999999996
+Async Average: 2.174148936170212
+HonestProfiler Average: 2.1957446808510634
 JavaFlightRecorder Average: -1.0
 Perf Average: -1.0
-YourKit Average: 0.11913076457292608
-JProfiler Average: -1.0
+YourKit Average: 0.08111030779433265
+JProfiler Average: 0.04255319148936172
 
-Min: 1.3691049431516005
+Min: 0.1
 Max: 9.51
-Diff: 8.1408950568484
+Diff: 9.41
+
+----------deltablue.Variable.<init>----------
+
+
+Async Average: 0.1242
+HonestProfiler Average: 1.192
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: 0.1839247589049889
+JProfiler Average: 2.9620000000000006
+
+Min: 1.4125484904705685
+Max: 6.3
+Diff: 4.8874515095294315
 
 ----------Bounce$Ball.bounce----------
 
 
-Async Average: 23.125670103092784
-HonestProfiler Average: 23.46391752577319
-JavaFlightRecorder Average: 0.013399039234901716
+Async Average: 22.65848484848485
+HonestProfiler Average: 22.989898989898986
+JavaFlightRecorder Average: 0.013128351573590569
 Perf Average: -1.0
-YourKit Average: 10.167974524693351
+YourKit Average: 9.96256089793187
 JProfiler Average: -1.0
 
-Min: 0.14534883720930233
+Min: 0.0
 Max: 79.9
-Diff: 79.75465116279071
+Diff: 79.9
 
 ----------resource_allocate_bytes(unsigned----------
 
@@ -1370,16 +1568,16 @@ Diff: 0.019999999999999997
 ----------cd.CollisionDetector.recurse----------
 
 
-Async Average: 3.227
-HonestProfiler Average: 3.4700000000000006
-JavaFlightRecorder Average: 2.1632728366496887
+Async Average: 2.5816
+HonestProfiler Average: 2.7760000000000007
+JavaFlightRecorder Average: 1.730618269319751
 Perf Average: -1.0
-YourKit Average: 2.2703652042050435
-JProfiler Average: -1.0
+YourKit Average: 1.816292163364035
+JProfiler Average: 0.5533333333333335
 
-Min: 5.92654167051507
+Min: 2.4
 Max: 19.298453166129363
-Diff: 13.371911495614292
+Diff: 16.898453166129364
 
 ----------java.util.Arrays.copyOf----------
 
@@ -1423,6 +1621,20 @@ Min: 0.0
 Max: 25.758876710945007
 Diff: 25.758876710945007
 
+----------havlak.UnionFindNode.findSet----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 0.4728755054399784
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 2.69074074074074
+
+Min: 0.3733084461035931
+Max: 5.9
+Diff: 5.526691553896407
+
 ----------havlak.HavlakLoopFinder----------
 
 
@@ -1454,30 +1666,44 @@ Diff: 32.04
 ----------deltablue.AbstractConstraint.satisfy----------
 
 
-Async Average: 0.6866956521739129
-HonestProfiler Average: 0.8173913043478261
-JavaFlightRecorder Average: 1.8024413161772632
+Async Average: 0.5446206896551723
+HonestProfiler Average: 0.6482758620689655
+JavaFlightRecorder Average: 1.4295224231750707
 Perf Average: -1.0
-YourKit Average: 1.054518766580259
-JProfiler Average: -1.0
+YourKit Average: 0.8363424700464122
+JProfiler Average: 2.2744827586206893
 
 Min: 1.6
-Max: 9.688581314878892
-Diff: 8.088581314878892
+Max: 15.2
+Diff: 13.6
+
+----------deltablue.AbstractConstraint.<init>----------
+
+
+Async Average: 0.9143749999999998
+HonestProfiler Average: 0.8937499999999999
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: 0.531151740265532
+JProfiler Average: 3.0645833333333337
+
+Min: 2.603780774360169
+Max: 14.8
+Diff: 12.196219225639831
 
 ----------richards.RBObject.<init>----------
 
 
-Async Average: 2.9144067796610167
-HonestProfiler Average: 2.9457627118644063
+Async Average: 1.9320224719101122
+HonestProfiler Average: 1.9528089887640447
 JavaFlightRecorder Average: -1.0
 Perf Average: -1.0
 YourKit Average: -1.0
-JProfiler Average: -1.0
+JProfiler Average: 0.14382022471910116
 
-Min: 5.1
+Min: 0.3
 Max: 8.7
-Diff: 3.5999999999999996
+Diff: 8.399999999999999
 
 ----------AGCT.Unknown not Java[ERR=-3]----------
 
@@ -1524,12 +1750,12 @@ Diff: 0.13
 ----------Queens.placeQueen----------
 
 
-Async Average: 2.396866666666666
-HonestProfiler Average: 2.1906666666666665
-JavaFlightRecorder Average: 17.16976934949369
-Perf Average: 14.398133333333336
-YourKit Average: 2.548268511963617
-JProfiler Average: -1.0
+Async Average: 1.9973888888888884
+HonestProfiler Average: 1.8255555555555554
+JavaFlightRecorder Average: 14.308141124578075
+Perf Average: 11.998444444444447
+YourKit Average: 2.123557093303014
+JProfiler Average: 12.543888888888889
 
 Min: 0.05
 Max: 94.64
@@ -1563,6 +1789,20 @@ Min: 0.01
 Max: 0.74
 Diff: 0.73
 
+----------Run.printTotal----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.06290322580645165
+
+Min: 0.0
+Max: 0.1
+Diff: 0.1
+
 ----------java.lang.String.<init>----------
 
 
@@ -1580,30 +1820,30 @@ Diff: 7.600936623690739
 ----------richards.RBObject.append----------
 
 
-Async Average: 0.6226724137931035
-HonestProfiler Average: 0.721551724137931
-JavaFlightRecorder Average: 6.5798441696441206
+Async Average: 0.4947260273972603
+HonestProfiler Average: 0.5732876712328767
+JavaFlightRecorder Average: 5.227821395059712
 Perf Average: -1.0
-YourKit Average: 0.7837608787296417
-JProfiler Average: -1.0
+YourKit Average: 0.6227141228262907
+JProfiler Average: 0.08904109589041097
 
-Min: 1.4014460048008508
+Min: 0.3
 Max: 27.335164835164836
-Diff: 25.933718830363986
+Diff: 27.035164835164835
 
 ----------Bounce$Ball.<init>----------
 
 
-Async Average: 0.608314606741573
-HonestProfiler Average: 0.564044943820225
+Async Average: 0.4549579831932773
+HonestProfiler Average: 0.4218487394957985
 JavaFlightRecorder Average: -1.0
 Perf Average: -1.0
-YourKit Average: 0.3144066448994784
-JProfiler Average: -1.0
+YourKit Average: 0.23514446551305526
+JProfiler Average: 11.36638655462185
 
 Min: 0.17334026694401108
-Max: 3.03
-Diff: 2.856659733055989
+Max: 47.1
+Diff: 46.92665973305599
 
 ----------richards.TaskState.isTaskHoldingOrWaiting----------
 
@@ -1664,44 +1904,58 @@ Diff: 5.6313176706878885
 ----------json.JsonPureStringParser.readStringInternal----------
 
 
-Async Average: 1.4391333333333334
-HonestProfiler Average: 1.7440000000000002
-JavaFlightRecorder Average: 6.192864213945244
-Perf Average: 6.5742
-YourKit Average: 0.6966336266710599
-JProfiler Average: -1.0
+Async Average: 1.1992777777777779
+HonestProfiler Average: 1.4533333333333334
+JavaFlightRecorder Average: 5.160720178287703
+Perf Average: 5.4785
+YourKit Average: 0.5805280222258832
+JProfiler Average: 0.0188888888888889
 
-Min: 2.8401070307397345
+Min: 0.1
 Max: 37.68531802965088
-Diff: 34.84521099891114
+Diff: 37.58531802965088
 
 ----------som.Vector.hasSome----------
 
 
-Async Average: 0.49265822784810137
-HonestProfiler Average: 0.32025316455696207
-JavaFlightRecorder Average: 19.552249675134416
+Async Average: 0.40541666666666676
+HonestProfiler Average: 0.26354166666666673
+JavaFlightRecorder Average: 16.08987212849603
 Perf Average: -1.0
-YourKit Average: 0.5321986780206244
-JProfiler Average: -1.0
+YourKit Average: 0.43795516212113883
+JProfiler Average: 0.5895833333333331
 
 Min: 1.73
 Max: 54.37235543018336
 Diff: 52.642355430183365
 
+----------Run.reportBenchmark----------
+
+
+Async Average: -1.0
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: -1.0
+Perf Average: -1.0
+YourKit Average: -1.0
+JProfiler Average: 0.08555133079847922
+
+Min: 0.0
+Max: 0.3
+Diff: 0.3
+
 ----------cd.RedBlackTree.treeInsert----------
 
 
-Async Average: 2.5280000000000005
-HonestProfiler Average: 2.7
-JavaFlightRecorder Average: 4.280359376142467
-Perf Average: 3.671133333333333
-YourKit Average: 2.9585534991201543
-JProfiler Average: -1.0
+Async Average: 2.106666666666667
+HonestProfiler Average: 2.25
+JavaFlightRecorder Average: 3.566966146785389
+Perf Average: 3.0592777777777775
+YourKit Average: 2.4654612492667956
+JProfiler Average: 0.36277777777777775
 
-Min: 11.48
+Min: 1.9
 Max: 25.041736227045075
-Diff: 13.561736227045074
+Diff: 23.141736227045076
 
 ----------java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial----------
 
@@ -1787,6 +2041,20 @@ Min: 0.02
 Max: 0.3
 Diff: 0.27999999999999997
 
+----------java.lang.Integer.valueOf----------
+
+
+Async Average: 1.0204081632653062E-4
+HonestProfiler Average: -1.0
+JavaFlightRecorder Average: 0.03998935981497269
+Perf Average: -1.0
+YourKit Average: 0.005019947774024318
+JProfiler Average: 1.5112244897959184
+
+Min: 0.0
+Max: 9.1
+Diff: 9.1
+
 ----------java.io.FileOutputStream.writeBytes----------
 
 
@@ -1818,16 +2086,16 @@ Diff: 5.234366948700358
 ----------som.Random.next----------
 
 
-Async Average: 1.9851412429378532
-HonestProfiler Average: 2.1689265536723163
-JavaFlightRecorder Average: 8.247762794342034E-4
+Async Average: 1.9739887640449438
+HonestProfiler Average: 2.156741573033708
+JavaFlightRecorder Average: 8.201427048306405E-4
 Perf Average: -1.0
-YourKit Average: 2.539023247830859
+YourKit Average: 2.5247590722812476
 JProfiler Average: -1.0
 
-Min: 0.145985401459854
+Min: 0.0
 Max: 16.539468307175753
-Diff: 16.3934829057159
+Diff: 16.539468307175753
 
 ----------java.lang.String.length----------
 
@@ -1846,16 +2114,16 @@ Diff: 4.02538155412682
 ----------json.JsonPureStringParser.readArray----------
 
 
-Async Average: 0.4726136363636364
-HonestProfiler Average: 0.3477272727272728
-JavaFlightRecorder Average: 6.182059611240809
-Perf Average: 6.579318181818182
+Async Average: 0.3524576271186441
+HonestProfiler Average: 0.2593220338983051
+JavaFlightRecorder Average: 4.610349540586366
+Perf Average: 4.906610169491525
 YourKit Average: -1.0
-JProfiler Average: -1.0
+JProfiler Average: 0.0898305084745763
 
-Min: 2.11
+Min: 0.3
 Max: 24.641037517369153
-Diff: 22.531037517369153
+Diff: 24.341037517369152
 
 ----------deltablue.Planner----------
 
@@ -1875,43 +2143,43 @@ Diff: 2.48
 
 
 Async Average: -1.0
-HonestProfiler Average: 0.09523809523809523
-JavaFlightRecorder Average: 2.1711266293084783
+HonestProfiler Average: 0.06451612903225806
+JavaFlightRecorder Average: 1.4707632004992919
 Perf Average: -1.0
-YourKit Average: 18.205142641341762
-JProfiler Average: -1.0
+YourKit Average: 12.33251598284442
+JProfiler Average: 27.129032258064512
 
 Min: 1.9
-Max: 40.74566171437775
-Diff: 38.845661714377755
+Max: 85.7
+Diff: 83.8
 
 ----------json.JsonPureStringParser.readValue----------
 
 
-Async Average: 0.4369444444444444
-HonestProfiler Average: 0.1425925925925926
-JavaFlightRecorder Average: 1.758844988888968
-Perf Average: 5.61212962962963
-YourKit Average: 0.6372558170905137
-JProfiler Average: -1.0
+Async Average: 0.34195652173913044
+HonestProfiler Average: 0.11159420289855072
+JavaFlightRecorder Average: 1.3764873826087574
+Perf Average: 4.392101449275362
+YourKit Average: 0.49872194380996726
+JProfiler Average: 0.0355072463768116
 
-Min: 1.7212137495592017
+Min: 0.1
 Max: 28.35
-Diff: 26.6287862504408
+Diff: 28.25
 
 ----------Permute.permute----------
 
 
-Async Average: 11.477933333333334
-HonestProfiler Average: 10.135333333333332
-JavaFlightRecorder Average: 14.506348255515489
-Perf Average: 12.347733333333329
-YourKit Average: 11.133890024888089
-JProfiler Average: -1.0
+Async Average: 9.564944444444444
+HonestProfiler Average: 8.44611111111111
+JavaFlightRecorder Average: 12.088623546262907
+Perf Average: 10.289777777777774
+YourKit Average: 9.27824168740674
+JProfiler Average: 16.404444444444444
 
 Min: 0.04
-Max: 98.11
-Diff: 98.07
+Max: 99.0
+Diff: 98.96
 
 ----------deltablue.Plan----------
 
@@ -1930,12 +2198,12 @@ Diff: 25.91955770508749
 ----------List.makeList----------
 
 
-Async Average: 0.23166666666666663
-HonestProfiler Average: 0.14533333333333331
-JavaFlightRecorder Average: 0.2049277880383878
-Perf Average: 0.12293333333333334
-YourKit Average: 0.16143897420939088
-JProfiler Average: -1.0
+Async Average: 0.1930555555555555
+HonestProfiler Average: 0.1211111111111111
+JavaFlightRecorder Average: 0.1707731566986565
+Perf Average: 0.10244444444444445
+YourKit Average: 0.13453247850782574
+JProfiler Average: 0.06722222222222224
 
 Min: 0.1334739258685816
 Max: 1.8554340531364728
@@ -1986,12 +2254,12 @@ Diff: 11.688994485961947
 ----------Towers.moveDisks----------
 
 
-Async Average: 1.7564666666666664
-HonestProfiler Average: 0.7533333333333333
-JavaFlightRecorder Average: 12.481284988148365
-Perf Average: 4.510066666666668
-YourKit Average: 1.7342346866820375
-JProfiler Average: -1.0
+Async Average: 1.4637222222222221
+HonestProfiler Average: 0.6277777777777778
+JavaFlightRecorder Average: 10.40107082345697
+Perf Average: 3.7583888888888897
+YourKit Average: 1.4451955722350311
+JProfiler Average: 15.702777777777778
 
 Min: 0.1
 Max: 99.04502046384721
