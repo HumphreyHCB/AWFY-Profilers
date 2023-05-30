@@ -41,7 +41,7 @@ public class ProcessOutput {
           //printOrderStatisticMapForMasterTable(orderedStatmap);
         //printOrderStatisticMap(orderedStatmap);
 
-        mapOccurrencesOnMethodAndPrint(dataSet, "Queens.placeQueen");
+        mapOccurrencesOnMethodAndPrint(dataSet, "");
         //DebugmapOccurrences(dataSet);
     }
     
@@ -665,15 +665,17 @@ class BenchReportOnMethod {
         }
 
         double total = 0;
+        int count = 0;
         for (int i = 0; i < BenchMethods.size(); i++) {
             if (BenchMethods.get(i).filename.contains(LookUp)) {
-                total+= Double.parseDouble(BenchMethods.get(i).percentage);
+                total= total + Double.parseDouble(BenchMethods.get(i).percentage);
+                count++;
             }
         }
-        if (total == 0) {
+        if (count == 0) {
             return -1D;
         }
-        return total/BenchMethods.size();
+        return total/count;
     }
 
     private static String convertRealNametoRuntimeName(String filename , String profilerName) {
