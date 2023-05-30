@@ -32,38 +32,38 @@ public class rebenchOutputProcessor {
         //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
         //System.out.println();
 
-        proccesDataDump("RebenchDump/data.data","Readers/JSONDumps/report4/output.json");
-        proccesDataDump("RebenchDump/data2.data","Readers/JSONDumps/report4/output2.json");
-        proccesDataDump("RebenchDump/data3.data","Readers/JSONDumps/report4/output3.json");
-        proccesDataDump("RebenchDump/data4.data","Readers/JSONDumps/report4/output4.json");
-        proccesDataDump("RebenchDump/data5.data","Readers/JSONDumps/report4/output5.json");
-        proccesDataDump("RebenchDump/data6.data","Readers/JSONDumps/report4/output6.json");
-        proccesDataDump("RebenchDump/data7.data","Readers/JSONDumps/report4/output7.json");
-        proccesDataDump("RebenchDump/data8.data","Readers/JSONDumps/report4/output8.json");
-        proccesDataDump("RebenchDump/data9.data","Readers/JSONDumps/report4/output9.json");
-        proccesDataDump("RebenchDump/data10.data","Readers/JSONDumps/report4/output10.json");
+        // proccesDataDump("RebenchDump/data.data","Readers/JSONDumps/report4/output.json");
+        // proccesDataDump("RebenchDump/data2.data","Readers/JSONDumps/report4/output2.json");
+        // proccesDataDump("RebenchDump/data3.data","Readers/JSONDumps/report4/output3.json");
+        // proccesDataDump("RebenchDump/data4.data","Readers/JSONDumps/report4/output4.json");
+        // proccesDataDump("RebenchDump/data5.data","Readers/JSONDumps/report4/output5.json");
+        // proccesDataDump("RebenchDump/data6.data","Readers/JSONDumps/report4/output6.json");
+        // proccesDataDump("RebenchDump/data7.data","Readers/JSONDumps/report4/output7.json");
+        // proccesDataDump("RebenchDump/data8.data","Readers/JSONDumps/report4/output8.json");
+        // proccesDataDump("RebenchDump/data9.data","Readers/JSONDumps/report4/output9.json");
+        // proccesDataDump("RebenchDump/data10.data","Readers/JSONDumps/report4/output10.json");
 
-        proccesDataDump("RebenchDump/data11.data","Readers/JSONDumps/report4/output11.json");
-        proccesDataDump("RebenchDump/data12.data","Readers/JSONDumps/report4/output12.json");
-        proccesDataDump("RebenchDump/data13.data","Readers/JSONDumps/report4/output13.json");
-        proccesDataDump("RebenchDump/data14.data","Readers/JSONDumps/report4/output14.json");
-        proccesDataDump("RebenchDump/data15.data","Readers/JSONDumps/report4/output15.json");
-        proccesDataDump("RebenchDump/data16.data","Readers/JSONDumps/report4/output16.json");
-        proccesDataDump("RebenchDump/data17.data","Readers/JSONDumps/report4/output17.json");
-        proccesDataDump("RebenchDump/data18.data","Readers/JSONDumps/report4/output18.json");
-        proccesDataDump("RebenchDump/data19.data","Readers/JSONDumps/report4/output19.json");
-        proccesDataDump("RebenchDump/data20.data","Readers/JSONDumps/report4/output20.json");
+        // proccesDataDump("RebenchDump/data11.data","Readers/JSONDumps/report4/output11.json");
+        // proccesDataDump("RebenchDump/data12.data","Readers/JSONDumps/report4/output12.json");
+        // proccesDataDump("RebenchDump/data13.data","Readers/JSONDumps/report4/output13.json");
+        // proccesDataDump("RebenchDump/data14.data","Readers/JSONDumps/report4/output14.json");
+        // proccesDataDump("RebenchDump/data15.data","Readers/JSONDumps/report4/output15.json");
+        // proccesDataDump("RebenchDump/data16.data","Readers/JSONDumps/report4/output16.json");
+        // proccesDataDump("RebenchDump/data17.data","Readers/JSONDumps/report4/output17.json");
+        // proccesDataDump("RebenchDump/data18.data","Readers/JSONDumps/report4/output18.json");
+        // proccesDataDump("RebenchDump/data19.data","Readers/JSONDumps/report4/output19.json");
+        // proccesDataDump("RebenchDump/data20.data","Readers/JSONDumps/report4/output20.json");
 
-        proccesDataDump("RebenchDump/data21.data","Readers/JSONDumps/report4/output21.json");
-        proccesDataDump("RebenchDump/data22.data","Readers/JSONDumps/report4/output22.json");
-        proccesDataDump("RebenchDump/data23.data","Readers/JSONDumps/report4/output23.json");
-        proccesDataDump("RebenchDump/data24.data","Readers/JSONDumps/report4/output24.json");
-        proccesDataDump("RebenchDump/data25.data","Readers/JSONDumps/report4/output25.json");
-        proccesDataDump("RebenchDump/data26.data","Readers/JSONDumps/report4/output26.json");
-        proccesDataDump("RebenchDump/data27.data","Readers/JSONDumps/report4/output27.json");
-        proccesDataDump("RebenchDump/data28.data","Readers/JSONDumps/report4/output28.json");
-        proccesDataDump("RebenchDump/data29.data","Readers/JSONDumps/report4/output29.json");
-        proccesDataDump("RebenchDump/data30.data","Readers/JSONDumps/report4/output30.json");
+        // proccesDataDump("RebenchDump/data21.data","Readers/JSONDumps/report4/output21.json");
+        // proccesDataDump("RebenchDump/data22.data","Readers/JSONDumps/report4/output22.json");
+        // proccesDataDump("RebenchDump/data23.data","Readers/JSONDumps/report4/output23.json");
+        // proccesDataDump("RebenchDump/data24.data","Readers/JSONDumps/report4/output24.json");
+        // proccesDataDump("RebenchDump/data25.data","Readers/JSONDumps/report4/output25.json");
+        // proccesDataDump("RebenchDump/data26.data","Readers/JSONDumps/report4/output26.json");
+        // proccesDataDump("RebenchDump/data27.data","Readers/JSONDumps/report4/output27.json");
+        // proccesDataDump("RebenchDump/data28.data","Readers/JSONDumps/report4/output28.json");
+        // proccesDataDump("RebenchDump/data29.data","Readers/JSONDumps/report4/output29.json");
+        // proccesDataDump("RebenchDump/data30.data","Readers/JSONDumps/report4/output30.json");
 
 
         //"asyncTests CD"
@@ -108,53 +108,52 @@ public class rebenchOutputProcessor {
         // printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
         // printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
 
-        // HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example2.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example3.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled4.data"), processFile("RebenchDump/example4.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled5.data"), processFile("RebenchDump/example5.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled6.data"), processFile("RebenchDump/example6.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled7.data"), processFile("RebenchDump/example7.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled8.data"), processFile("RebenchDump/example8.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled9.data"), processFile("RebenchDump/example9.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled10.data"), processFile("RebenchDump/example10.data"), dataset);
+         HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
+         dataset = compaireForOverhead(processFile("RebenchDump/data.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data2.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data3.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data4.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data5.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data6.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data7.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data8.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data9.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data10.data"), dataset);
 
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example11.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example12.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example13.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled4.data"), processFile("RebenchDump/example14.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled5.data"), processFile("RebenchDump/example15.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled6.data"), processFile("RebenchDump/example16.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled7.data"), processFile("RebenchDump/example17.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled8.data"), processFile("RebenchDump/example18.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled9.data"), processFile("RebenchDump/example19.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled10.data"), processFile("RebenchDump/example20.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data11.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data12.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data13.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data14.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data15.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data16.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data17.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data18.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data19.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data20.data"), dataset);
 
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled1.data"), processFile("RebenchDump/example21.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled2.data"), processFile("RebenchDump/example22.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled3.data"), processFile("RebenchDump/example23.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled4.data"), processFile("RebenchDump/example24.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled5.data"), processFile("RebenchDump/example25.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled6.data"), processFile("RebenchDump/example26.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled7.data"), processFile("RebenchDump/example27.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled8.data"), processFile("RebenchDump/example28.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled9.data"), processFile("RebenchDump/example29.data"), dataset);
-        // dataset = compaireForOverhead(processFile("RebenchDump/nonprofiled10.data"), processFile("RebenchDump/example30.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data21.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data22.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data23.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data24.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data25.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data26.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data27.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data28.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data29.data"), dataset);
+        dataset = compaireForOverhead(processFile("RebenchDump/data30.data"), dataset);
 
 
-        // TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
-        // for (String key  : overhead.keySet()) {
-        //     System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
-        // }
+        TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
+        for (String key  : overhead.keySet()) {
+            System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
+        }
     }
 
-    public static HashMap<String,ArrayList<Double>> compaireForOverhead(HashMap<String,ArrayList<Double>> nonProfiled , HashMap<String,ArrayList<Double>> profiled, HashMap<String,ArrayList<Double>> dataset) {
-        HashMap<String,Double> nonProfileddata = getMedianExeTime(nonProfiled);
+    public static HashMap<String,ArrayList<Double>> compaireForOverhead( HashMap<String,ArrayList<Double>> profiled, HashMap<String,ArrayList<Double>> dataset) {
         HashMap<String,Double> profileddata = getMedianExeTime(profiled);
         HashMap<String,Double> result = new HashMap<String,Double>();
         for (String key : profileddata.keySet()) {
-            result.put(key, (profileddata.get(key) - nonProfileddata.get("Tests " + key.split("\\s+")[1]))  / nonProfileddata.get("Tests " + key.split("\\s+")[1]) * 100);
+            result.put(key, (profileddata.get(key) - profileddata.get("NonProfiledTests " + key.split("\\s+")[1]))  / profileddata.get("NonProfiledTests " + key.split("\\s+")[1]) * 100);
         }
         for (String key  : result.keySet()) {
             if (dataset.containsKey(key)) {
