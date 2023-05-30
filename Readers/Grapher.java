@@ -32,19 +32,35 @@ public class Grapher {
         
         new SwingWrapper(chart).displayChart();
 
-        try {
-            BitmapEncoder.saveBitmap(chart, "Graphs/"+GraphName, BitmapFormat.PNG);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
         
     }
     public void multiGraph(String GraphName, HashMap<String,ArrayList<Double>> xDatas, HashMap<String,ArrayList<Double>> yDatas) {
         // HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
         // HashMap<String,ArrayList<Double>> ydatas = new HashMap<String,ArrayList<Double>>();
         // Create Chart
+
+        for (String key : xDatas.keySet()) {
+            System.out.println(key);
+            ArrayList<Double> tempx = xDatas.get(key);
+            ArrayList<Double> tempy = yDatas.get(key);
+            for (int i = 0; i < tempx.size(); i++) {
+                System.out.print(tempx.get(i)+" ");
+            }
+            System.out.println();
+            System.out.println();
+            for (int i = 0; i < tempy.size(); i++) {
+                System.out.print(tempy.get(i)+" ");
+            }
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+
+        }
+
+
+
+
         XYChart chart = new XYChartBuilder().width(1400).height(1000).title(GraphName).xAxisTitle("Median Runtime of Iteration").yAxisTitle("Percentage of Runtime of Method").build();
 
         // Customize Chart
@@ -65,7 +81,7 @@ public class Grapher {
         new SwingWrapper(chart).displayChart();
 
         try {
-            BitmapEncoder.saveBitmap(chart, "Graphs/"+GraphName, BitmapFormat.PNG);
+            BitmapEncoder.saveBitmap(chart, "Graphs/Across/"+GraphName, BitmapFormat.PNG);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
