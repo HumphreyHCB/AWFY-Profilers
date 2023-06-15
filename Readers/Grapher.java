@@ -9,7 +9,11 @@ import org.knowm.xchart.XYChart;
 import org.knowm.xchart.XYChartBuilder;
 import org.knowm.xchart.BitmapEncoder.BitmapFormat;
 import org.knowm.xchart.XYSeries.XYSeriesRenderStyle;
+import org.knowm.xchart.style.Styler.ChartTheme;
 import org.knowm.xchart.style.Styler.LegendPosition;
+import org.knowm.xchart.style.markers.Marker;
+import org.knowm.xchart.style.markers.SeriesMarkers;
+
 
 public class Grapher {
     
@@ -61,13 +65,16 @@ public class Grapher {
 
 
 
-        XYChart chart = new XYChartBuilder().width(1400).height(1000).title(GraphName).xAxisTitle("Median Runtime of Iteration").yAxisTitle("Percentage of Runtime of Method").build();
+        XYChart chart = new XYChartBuilder().width(1400).height(1000).title(GraphName).xAxisTitle("Median Runtime of Iteration").yAxisTitle("Percentage of Runtime of Method").theme(ChartTheme.Matlab).build();
 
         // Customize Chart
         chart.getStyler().setDefaultSeriesRenderStyle(XYSeriesRenderStyle.Scatter);
         chart.getStyler().setChartTitleVisible(true);
-        chart.getStyler().setLegendPosition(LegendPosition.OutsideE);
+        chart.getStyler().setLegendPosition(LegendPosition.InsideNE);
         chart.getStyler().setMarkerSize(10);
+
+        Marker[] seriesMarkers = new Marker[] {SeriesMarkers.CIRCLE, SeriesMarkers.SQUARE, SeriesMarkers.DIAMOND, SeriesMarkers.TRIANGLE_UP, SeriesMarkers.TRIANGLE_DOWN, SeriesMarkers.CROSS};
+        chart.getStyler().setSeriesMarkers(seriesMarkers);
         // chart.getStyler().setXAxisMax(100d);
         // chart.getStyler().setXAxisMin(0d);
         chart.getStyler().setYAxisMax(100d);
