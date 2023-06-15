@@ -37,35 +37,35 @@
 
 
 
-# rebench ProfilersBench.conf
-#rebench ProfilersBench2.conf
-# rebench ProfilersBench3.conf
-# rebench ProfilersBench4.conf
-# rebench ProfilersBench5.conf
-# rebench ProfilersBench6.conf
-# rebench ProfilersBench7.conf
-# rebench ProfilersBench8.conf
-# rebench ProfilersBench9.conf
-# rebench ProfilersBench10.conf
+rebench ProfilersBench.conf
+rebench ProfilersBench2.conf
+rebench ProfilersBench3.conf
+rebench ProfilersBench4.conf
+rebench ProfilersBench5.conf
+rebench ProfilersBench6.conf
+rebench ProfilersBench7.conf
+rebench ProfilersBench8.conf
+rebench ProfilersBench9.conf
+rebench ProfilersBench10.conf
 
-# rebench ProfilersBench11.conf
-# rebench ProfilersBench12.conf
-# rebench ProfilersBench13.conf
-# rebench ProfilersBench14.conf
-# rebench ProfilersBench15.conf
-# rebench ProfilersBench16.conf
-# rebench ProfilersBench17.conf
-# rebench ProfilersBench18.conf
-# rebench ProfilersBench19.conf
-# rebench ProfilersBench20.conf
+rebench ProfilersBench11.conf
+rebench ProfilersBench12.conf
+rebench ProfilersBench13.conf
+rebench ProfilersBench14.conf
+rebench ProfilersBench15.conf
+rebench ProfilersBench16.conf
+rebench ProfilersBench17.conf
+rebench ProfilersBench18.conf
+rebench ProfilersBench19.conf
+rebench ProfilersBench20.conf
 
-# rebench ProfilersBench21.conf
-# rebench ProfilersBench22.conf
-# rebench ProfilersBench23.conf
-# rebench ProfilersBench24.conf
-# rebench ProfilersBench25.conf
-# rebench ProfilersBench26.conf
-# rebench ProfilersBench27.conf
-# rebench ProfilersBench28.conf
+rebench ProfilersBench21.conf
+rebench ProfilersBench22.conf
+rebench ProfilersBench23.conf
+rebench ProfilersBench24.conf
+rebench ProfilersBench25.conf
+rebench ProfilersBench26.conf
+rebench ProfilersBench27.conf
+rebench ProfilersBench28.conf
 rebench ProfilersBench29.conf
 rebench ProfilersBench30.conf
