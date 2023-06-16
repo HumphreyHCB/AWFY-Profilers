@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ public class Grapher {
         chart.getStyler().setDefaultSeriesRenderStyle(XYSeriesRenderStyle.Scatter);
         chart.getStyler().setChartTitleVisible(true);
         chart.getStyler().setLegendPosition(LegendPosition.InsideSW);
-        chart.getStyler().setMarkerSize(10);
+        chart.getStyler().setMarkerSize(12);
         chart.setTitle(GraphName);
         // Series
         chart.addSeries(GraphName, xData, yData);
@@ -65,26 +66,31 @@ public class Grapher {
 
 
 
-        XYChart chart = new XYChartBuilder().width(1400).height(1000).title(GraphName).xAxisTitle("Median Runtime of Iteration").yAxisTitle("Percentage of Runtime of Method").theme(ChartTheme.Matlab).build();
+        XYChart chart = new XYChartBuilder().width(1200).height(1400).title(GraphName).xAxisTitle("Median Runtime of Invocation").yAxisTitle("% of Runtime").theme(ChartTheme.Matlab).build();
 
         // Customize Chart
         chart.getStyler().setDefaultSeriesRenderStyle(XYSeriesRenderStyle.Scatter);
         chart.getStyler().setChartTitleVisible(true);
         chart.getStyler().setLegendPosition(LegendPosition.InsideNE);
-        chart.getStyler().setMarkerSize(10);
+        chart.getStyler().setMarkerSize(12);
+        chart.getStyler().setAxisTitleFont(new Font("Verdana", Font.BOLD, 20));
+        chart.getStyler().setChartTitleFont(new Font("Verdana", Font.BOLD, 20));
 
         Marker[] seriesMarkers = new Marker[] {SeriesMarkers.CIRCLE, SeriesMarkers.SQUARE, SeriesMarkers.DIAMOND, SeriesMarkers.TRIANGLE_UP, SeriesMarkers.TRIANGLE_DOWN, SeriesMarkers.CROSS};
         chart.getStyler().setSeriesMarkers(seriesMarkers);
         // chart.getStyler().setXAxisMax(100d);
         // chart.getStyler().setXAxisMin(0d);
+
         chart.getStyler().setYAxisMax(100d);
         chart.getStyler().setYAxisMin(0d);
+        chart.getStyler().setXAxisMin(0d);
         chart.setTitle(GraphName);
         // Series
         for (String key : xDatas.keySet()) {
             chart.addSeries(key, xDatas.get(key), yDatas.get(key));
         }
         
+        chart.getStyler().setLegendFont(new Font("Verdana", Font.PLAIN, 15));
         new SwingWrapper(chart).displayChart();
 
         try {
