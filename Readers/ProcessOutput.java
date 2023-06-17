@@ -26,10 +26,19 @@ public class ProcessOutput {
     public static HashMap<String,String> FirstHottests = new HashMap<String,String>();
     public static void main(String[] args) {
         
-        processFile("Readers/JSONDumps/report4/output.json");
-        for (int prefix = 2; prefix <= 30; prefix++) {
-            processFile("Readers/JSONDumps/report4/output"+prefix+".json");
-        }
+        // processFile("Readers/JSONDumps/report4/output.json");
+        // for (int prefix = 2; prefix <= 30; prefix++) {
+        //     processFile("Readers/JSONDumps/report4/output"+prefix+".json");
+        // }
+
+
+         processFile("Readers/FlagReport.json");
+         for (int prefix = 2; prefix <=30; prefix++) {
+             processFile("Readers/FlagReport"+prefix+".json");
+         }
+
+        //processFile("Readers/FlagReport30.json");
+
 
         TreeMap<String,String> hottest = new TreeMap<String,String>(FirstHottests);
         printFristHottestsFromEachFile(hottest);
@@ -41,7 +50,7 @@ public class ProcessOutput {
           //printOrderStatisticMapForMasterTable(orderedStatmap);
         //printOrderStatisticMap(orderedStatmap);
 
-        mapOccurrencesOnMethodAndPrint(dataSet, "");
+        mapOccurrencesOnMethodAndPrint(dataSet, "cd.CollisionDetector.isInVoxel");
         //DebugmapOccurrences(dataSet);
     }
     
@@ -53,18 +62,18 @@ public class ProcessOutput {
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
 
-            JSONObject Perf = file.getJSONObject("Perf");
-            JSONObject YourKit = file.getJSONObject("YourKit");
-            JSONObject JProfiler = file.getJSONObject("JProfiler");
+            // JSONObject Perf = file.getJSONObject("Perf");
+            // JSONObject YourKit = file.getJSONObject("YourKit");
+            // JSONObject JProfiler = file.getJSONObject("JProfiler");
 
             JSONObject Runtimes = file.getJSONObject("Runtimes");
             addProfilerToDataset(Async, Runtimes, "Async", path);
             addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
             addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
 
-            addProfilerToDataset(Perf, Runtimes, "Perf", path);
-            addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
-            addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
+            //addProfilerToDataset(Perf, Runtimes, "Perf", path);
+            //addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
+            //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -442,7 +451,7 @@ public class ProcessOutput {
         HashMap<String,Integer> changeInHottets = new HashMap<String,Integer>();
         int counter = 0;
         String currentMethod = "";
-        ArrayList<String> seenmethods = new ArrayList<String>();
+        HashMap<String,Integer> seenmethods = new  HashMap<String,Integer>();
         int methodcounter = 0;
         String lastKey = "";
         for (String key : fristhottestsfromeachfile.keySet()) {
@@ -452,23 +461,27 @@ public class ProcessOutput {
                 methodcounter = 0;
                 currentMethod = "";
                 System.out.println(lastKey);
-                for (String iterable_element : seenmethods) {
+                for (String iterable_element : seenmethods.keySet()) {
                     System.out.println(iterable_element);
                 }
                 seenmethods.clear();
                 System.out.println();
             }
             currentMethod = fristhottestsfromeachfile.get(key);
-            if(!seenmethods.contains(currentMethod)){
-                seenmethods.add(currentMethod);
+            System.out.println(currentMethod);
+            if(!seenmethods.containsKey(currentMethod)){
+                seenmethods.put(currentMethod, 0);
                 methodcounter++;
+            }
+            else{
+                seenmethods.put(currentMethod, seenmethods.get(currentMethod)+1);
             }
             counter++;
             lastKey = key;
         }
         changeInHottets.put(lastKey.split("\\s+")[0], methodcounter);
         System.out.println(lastKey);
-        for (String iterable_element : seenmethods) {
+        for (String iterable_element : seenmethods.keySet()) {
             System.out.println(iterable_element);
         }
         for (String key : changeInHottets.keySet()) {
