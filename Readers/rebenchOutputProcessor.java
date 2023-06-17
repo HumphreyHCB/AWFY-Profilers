@@ -32,6 +32,41 @@ public class rebenchOutputProcessor {
         //appendRuntimesToJSON("Readers/JSONDumps/report3/output"+prefix+ ".json", Map);
         //System.out.println();
 
+        // proccesDataDump("datapoint1.data","Readers/FlagReport.json");
+        // proccesDataDump("datapoint2.data","Readers/FlagReport2.json");
+        // proccesDataDump("datapoint3.data","Readers/FlagReport3.json");
+
+        //proccesBulkDataDump("Readers/BatchRun.data", "Readers/FlagReport4.json", 4);
+        //proccesBulkDataDump("Readers/BatchRun.data", "Readers/FlagReport5.json", 5);
+
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport6.json",6);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport7.json",7);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport8.json",8);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport9.json",9);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport10.json",10);
+
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport11.json",11);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport12.json",12);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport13.json",13);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport14.json",14);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport15.json",15);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport16.json",16);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport17.json",17);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport18.json",18);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport19.json",19);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport20.json",20);
+
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport21.json",21);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport22.json",22);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport23.json",23);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport24.json",24);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport25.json",25);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport26.json",26);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport27.json",27);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport28.json",28);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport29.json",29);
+        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport30.json",30);
+
         // proccesDataDump("RebenchDump/data.data","Readers/JSONDumps/report4/output.json");
         // proccesDataDump("RebenchDump/data2.data","Readers/JSONDumps/report4/output2.json");
         // proccesDataDump("RebenchDump/data3.data","Readers/JSONDumps/report4/output3.json");
@@ -108,45 +143,45 @@ public class rebenchOutputProcessor {
         // printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
         // printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
 
-         HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
-         dataset = compaireForOverhead(processFile("RebenchDump/data.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data2.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data3.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data4.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data5.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data6.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data7.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data8.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data9.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data10.data"), dataset);
+        //  HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
+        //  dataset = compaireForOverhead(processFile("RebenchDump/data.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data2.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data3.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data4.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data5.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data6.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data7.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data8.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data9.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data10.data"), dataset);
 
-        dataset = compaireForOverhead(processFile("RebenchDump/data11.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data12.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data13.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data14.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data15.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data16.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data17.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data18.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data19.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data20.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data11.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data12.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data13.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data14.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data15.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data16.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data17.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data18.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data19.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data20.data"), dataset);
 
-        dataset = compaireForOverhead(processFile("RebenchDump/data21.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data22.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data23.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data24.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data25.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data26.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data27.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data28.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data29.data"), dataset);
-        dataset = compaireForOverhead(processFile("RebenchDump/data30.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data21.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data22.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data23.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data24.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data25.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data26.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data27.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data28.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data29.data"), dataset);
+        // dataset = compaireForOverhead(processFile("RebenchDump/data30.data"), dataset);
 
 
-        TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
-        for (String key  : overhead.keySet()) {
-            System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
-        }
+        // TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
+        // for (String key  : overhead.keySet()) {
+        //     System.out.println(key + " " + new DecimalFormat("0.00").format(overhead.get(key)) + "%");
+        // }
     }
 
     public static HashMap<String,ArrayList<Double>> compaireForOverhead( HashMap<String,ArrayList<Double>> profiled, HashMap<String,ArrayList<Double>> dataset) {
@@ -176,6 +211,14 @@ public class rebenchOutputProcessor {
 
     }
 
+    public static void proccesBulkDataDump(String rebenchData, String Outputfiledir, int fileIte) {
+
+        HashMap<String,ArrayList<Double>> map = processBulkFile(rebenchData);
+        HashMap<String,Double> Map = getMedianExeTime(map);
+        appendBulkRuntimesToJSON(Outputfiledir, Map, fileIte);
+
+    }
+
     private static void printBenchmark(HashMap<String,ArrayList<Double>> map, String profiler, String benchmark) {
         System.out.println(profiler + " " + benchmark);
         for (Double runtime : map.get(profiler + " " + benchmark)) {
@@ -196,6 +239,53 @@ public class rebenchOutputProcessor {
             String[] split = key.split("\\s+");
             String benchmark = split[1];
             String profiler = split[0];
+            if (profiler.contains("JavaFlightRecorderTests")) {
+                normalisedMap.put("JavaFlightRecorder_"+benchmark+".jfr", Map.get(key));
+            }else if (profiler.contains("asyncTests")) {
+                normalisedMap.put("rebench_test_Async_"+benchmark + ".txt", Map.get(key));
+            }else if (profiler.contains("honest-profilerTests")) {
+                normalisedMap.put(benchmark + ".hpl", Map.get(key));
+            }else if (profiler.contains("NonProfiledTests")) {
+                normalisedMap.put(benchmark + "_not_profiled_", Map.get(key));
+            }else if (profiler.contains("PerfTests")) {
+                normalisedMap.put(benchmark + ".data", Map.get(key));
+            }else if (profiler.contains("YourKitTests")) {
+                normalisedMap.put("YourKit_"+benchmark + ".txt", Map.get(key));
+            }else if (profiler.contains("JProfilerTests")) {
+                normalisedMap.put("JProfiler_" + benchmark + ".txt", Map.get(key));
+            } else {
+                System.out.println(profiler + " " + benchmark + " was not added to the json");
+            } 
+
+        }        
+
+        try {
+            file = new JSONObject(new String(Files.readAllBytes(Paths.get(Filename)), StandardCharsets.UTF_8));
+            file.put("Runtimes", new JSONObject(normalisedMap));
+            WriteJSONObject(file, Filename);
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+       
+    }
+
+    private static void appendBulkRuntimesToJSON(String Filename, HashMap<String,Double> Map, int File_ite) {
+        JSONObject file;
+        HashMap<String,Double> normalisedMap = new HashMap<String,Double>();
+        for (String key : Map.keySet()) {
+            String[] split = key.split("\\s+");
+            String benchmark = split[2];
+            String profiler = split[1];
+            int var_ite = Integer.parseInt(split[0]);
+
+            if (File_ite != var_ite) {
+                continue;
+            }
+
             if (profiler.contains("JavaFlightRecorderTests")) {
                 normalisedMap.put("JavaFlightRecorder_"+benchmark+".jfr", Map.get(key));
             }else if (profiler.contains("asyncTests")) {
@@ -280,6 +370,7 @@ public class rebenchOutputProcessor {
             Double exeTime = 0.0;
             String benchmark = "";
             String profiler = "";
+            int var_iteration = 0;
             while (myReader.hasNextLine()) {
                 if (myReader.nextLine().startsWith("# Source:")) {
                     while (myReader.hasNextLine()) {
@@ -288,8 +379,55 @@ public class rebenchOutputProcessor {
                          exeTime = Double.parseDouble(split[2]);
                          benchmark = split[5];
                          profiler = split[7];
+                         var_iteration =  Integer.parseInt(split[10]);
 
                          String key = profiler + " " + benchmark;
+
+                         if (map.containsKey(key)) {
+                            map.get(key).add(exeTime);
+                            //heatMap.put(key, heatMap.get(key).add(i));
+                        }
+                        else{
+                            ArrayList<Double> array = new ArrayList<Double>();
+                            array.add(exeTime);
+                            map.put(key, array );
+                        }
+                    }
+                    
+                }
+             
+            }
+            myReader.close();
+          } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+          }
+        return map;
+    }
+
+    private static  HashMap<String,ArrayList<Double>> processBulkFile(String Filename) {
+        HashMap<String,ArrayList<Double>> map = new  HashMap<String,ArrayList<Double>>();
+
+        try {
+            File myObj = new File(Filename);
+            Scanner myReader = new Scanner(myObj);
+
+            int iteration = 0;
+            Double exeTime = 0.0;
+            String benchmark = "";
+            String profiler = "";
+            int var_iteration = 0;
+            while (myReader.hasNextLine()) {
+                if (myReader.nextLine().startsWith("# Source:")) {
+                    while (myReader.hasNextLine()) {
+                        String[] split = myReader.nextLine().split("\\s+");
+                         iteration = Integer.parseInt(split[1]);
+                         exeTime = Double.parseDouble(split[2]);
+                         benchmark = split[5];
+                         profiler = split[7];
+                         var_iteration =  Integer.parseInt(split[10]);
+
+                         String key = var_iteration + " " +profiler + " " + benchmark;
 
                          if (map.containsKey(key)) {
                             map.get(key).add(exeTime);
