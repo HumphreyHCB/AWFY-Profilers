@@ -20,7 +20,9 @@ import org.json.JSONObject;
  * rebenchOutputProcessor
  */
 public class rebenchOutputProcessor {
-
+    static Double golbalmin = 1000000000D;
+    static Double golbalmax = 0D;
+    static Double globaltotal = 0D;
     public static void main(String[] args) {
         //String prefix = "10";
         //HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
@@ -39,33 +41,33 @@ public class rebenchOutputProcessor {
         //proccesBulkDataDump("Readers/BatchRun.data", "Readers/FlagReport4.json", 4);
         //proccesBulkDataDump("Readers/BatchRun.data", "Readers/FlagReport5.json", 5);
 
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport6.json",6);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport7.json",7);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport8.json",8);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport9.json",9);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport10.json",10);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport6.json",6);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport7.json",7);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport8.json",8);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport9.json",9);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport10.json",10);
 
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport11.json",11);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport12.json",12);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport13.json",13);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport14.json",14);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport15.json",15);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport16.json",16);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport17.json",17);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport18.json",18);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport19.json",19);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport20.json",20);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport11.json",11);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport12.json",12);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport13.json",13);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport14.json",14);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport15.json",15);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport16.json",16);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport17.json",17);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport18.json",18);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport19.json",19);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport20.json",20);
 
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport21.json",21);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport22.json",22);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport23.json",23);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport24.json",24);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport25.json",25);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport26.json",26);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport27.json",27);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport28.json",28);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport29.json",29);
-        proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport30.json",30);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport21.json",21);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport22.json",22);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport23.json",23);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport24.json",24);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport25.json",25);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport26.json",26);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport27.json",27);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport28.json",28);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport29.json",29);
+        // proccesBulkDataDump("Readers/BatchRun.data","Readers/FlagReport30.json",30);
 
         // proccesDataDump("RebenchDump/data.data","Readers/JSONDumps/report4/output.json");
         // proccesDataDump("RebenchDump/data2.data","Readers/JSONDumps/report4/output2.json");
@@ -105,45 +107,47 @@ public class rebenchOutputProcessor {
         //"honest-profilerTests CD"
         //"JavaFlightRecorderTests Bounce"
         //printBenchmark(map, "honest-profilerTests", "Queens");
-        String profiler = "JavaFlightRecorderTests";
-        String benchmark = "Queens";
+        String profiler = "NonProfiledTests";
+        String benchmark = "Towers";
 
 
-        // printBenchmark(processFile("RebenchDump/example.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example2.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example3.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example4.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example5.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example6.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example7.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example8.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example9.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example10.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data2.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data3.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data4.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data5.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data6.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data7.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data8.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data9.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data10.data"), profiler, benchmark);
 
 
-        // printBenchmark(processFile("RebenchDump/example11.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example12.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example13.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example14.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example15.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example16.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example17.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example18.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example19.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example20.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data11.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data12.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data13.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data14.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data15.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data16.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data17.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data18.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data19.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data20.data"), profiler, benchmark);
 
-        // printBenchmark(processFile("RebenchDump/example21.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example22.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example23.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example24.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example25.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example26.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example27.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example28.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example29.data"), profiler, benchmark);
-        // printBenchmark(processFile("RebenchDump/example30.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data21.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data22.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data23.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data24.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data25.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data26.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data27.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data28.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data29.data"), profiler, benchmark);
+        getMinAvgMax(processFile("RebenchDump/data30.data"), profiler, benchmark);
 
-        //  HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
+        System.out.println("" + golbalmin + " " + globaltotal/30  + " " + golbalmax);
+
+         HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
         //  dataset = compaireForOverhead(processFile("RebenchDump/data.data"), dataset);
         // dataset = compaireForOverhead(processFile("RebenchDump/data2.data"), dataset);
         // dataset = compaireForOverhead(processFile("RebenchDump/data3.data"), dataset);
@@ -177,6 +181,39 @@ public class rebenchOutputProcessor {
         // dataset = compaireForOverhead(processFile("RebenchDump/data29.data"), dataset);
         // dataset = compaireForOverhead(processFile("RebenchDump/data30.data"), dataset);
 
+
+        // dataset = (processFile("RebenchDump/data.data"));
+        // dataset = (processFile("RebenchDump/data2.data"));
+        // dataset = (processFile("RebenchDump/data3.data"));
+        // dataset = (processFile("RebenchDump/data4.data"));
+        // dataset = (processFile("RebenchDump/data5.data"));
+        // dataset = (processFile("RebenchDump/data6.data"));
+        // dataset = (processFile("RebenchDump/data7.data"));
+        // dataset = (processFile("RebenchDump/data8.data"));
+        // dataset = (processFile("RebenchDump/data9.data"));
+        // dataset = (processFile("RebenchDump/data10.data"));
+
+        // dataset = (processFile("RebenchDump/data11.data"));
+        // dataset = (processFile("RebenchDump/data12.data"));
+        // dataset = (processFile("RebenchDump/data13.data"));
+        // dataset = (processFile("RebenchDump/data14.data"));
+        // dataset = (processFile("RebenchDump/data15.data"));
+        // dataset = (processFile("RebenchDump/data16.data"));
+        // dataset = (processFile("RebenchDump/data17.data"));
+        // dataset = (processFile("RebenchDump/data18.data"));
+        // dataset = (processFile("RebenchDump/data19.data"));
+        // dataset = (processFile("RebenchDump/data20.data"));
+
+        // dataset = (processFile("RebenchDump/data21.data"));
+        // dataset = (processFile("RebenchDump/data22.data"));
+        // dataset = (processFile("RebenchDump/data23.data"));
+        // dataset = (processFile("RebenchDump/data24.data"));
+        // dataset = (processFile("RebenchDump/data25.data"));
+        // dataset = (processFile("RebenchDump/data26.data"));
+        // dataset = (processFile("RebenchDump/data27.data"));
+        // dataset = (processFile("RebenchDump/data28.data"));
+        // dataset = (processFile("RebenchDump/data29.data"));
+        // dataset = (processFile("RebenchDump/data30.data"));
 
         // TreeMap<String,Double> overhead = new TreeMap<String,Double>(getaverage(dataset));
         // for (String key  : overhead.keySet()) {
@@ -224,6 +261,31 @@ public class rebenchOutputProcessor {
         for (Double runtime : map.get(profiler + " " + benchmark)) {
             System.out.print(runtime + " ");
         }
+    }
+
+    private static void getMinAvgMax(HashMap<String,ArrayList<Double>> map, String profiler, String benchmark) {
+        Double min = 1000000000D;
+        Double max = 0D;
+        Double total = 0D;
+        for (Double runtime : map.get(profiler + " " + benchmark)) {
+            if (runtime > max) {
+                max = runtime;
+            }
+            if (runtime < min) {
+                min = runtime;
+            }
+            total = runtime + total;
+
+        }
+        if (max > golbalmax) {
+            golbalmax = max;
+        }
+        if (golbalmin > min) {
+            golbalmin = min;
+        }
+
+        globaltotal+=total/300;
+        //System.out.println("Min : " + min + " Avg : " + total/300  + " Max: " + max);
     }
 
     private static void bulkPrint(ArrayList<HashMap<String,ArrayList<Double>>> mapofMaps, String profiler, String benchmark) {
@@ -359,6 +421,36 @@ public class rebenchOutputProcessor {
         return Map;
     }
 
+    private static HashMap<String,Double> getmin(HashMap<String,ArrayList<Double>> map) {
+        HashMap<String,Double> Map = new HashMap<String,Double>();
+        for (String key : map.keySet()) {
+            ArrayList<Double> AL = map.get(key);
+            Double lowest = 1000000000D;
+            for (Double double1 : AL) {
+                if (double1 < lowest) {
+                    lowest = double1;
+                }
+            }
+            Map.put(key, lowest);
+        }
+        return Map;
+    }
+
+    private static HashMap<String,Double> getMax(HashMap<String,ArrayList<Double>> map) {
+        HashMap<String,Double> Map = new HashMap<String,Double>();
+        for (String key : map.keySet()) {
+            ArrayList<Double> AL = map.get(key);
+            Double max = 0d;
+            for (Double double1 : AL) {
+                if (double1 > max) {
+                    max = double1;
+                }
+            }
+            Map.put(key, max);
+        }
+        return Map;
+    }
+
     private static  HashMap<String,ArrayList<Double>> processFile(String Filename) {
         HashMap<String,ArrayList<Double>> map = new  HashMap<String,ArrayList<Double>>();
 
@@ -379,7 +471,7 @@ public class rebenchOutputProcessor {
                          exeTime = Double.parseDouble(split[2]);
                          benchmark = split[5];
                          profiler = split[7];
-                         var_iteration =  Integer.parseInt(split[10]);
+                         //var_iteration =  Integer.parseInt(split[10]);
 
                          String key = profiler + " " + benchmark;
 
