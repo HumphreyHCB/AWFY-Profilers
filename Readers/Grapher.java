@@ -9,6 +9,9 @@ import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.XYChart;
 import org.knowm.xchart.XYChartBuilder;
 import org.knowm.xchart.BitmapEncoder.BitmapFormat;
+import org.knowm.xchart.VectorGraphicsEncoder.VectorGraphicsFormat;
+import org.knowm.xchart.PdfboxGraphicsEncoder;
+import org.knowm.xchart.VectorGraphicsEncoder;
 import org.knowm.xchart.XYSeries.XYSeriesRenderStyle;
 import org.knowm.xchart.style.Styler.ChartTheme;
 import org.knowm.xchart.style.Styler.LegendPosition;
@@ -40,9 +43,8 @@ public class Grapher {
         
     }
     public void multiGraph(String GraphName, HashMap<String,ArrayList<Double>> xDatas, HashMap<String,ArrayList<Double>> yDatas) {
-        // HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
-        // HashMap<String,ArrayList<Double>> ydatas = new HashMap<String,ArrayList<Double>>();
-        // Create Chart
+
+        XYChart chart = new XYChartBuilder().width(1200).height(1400).title(GraphName).xAxisTitle("Median Run Time of Invocation").yAxisTitle("% of Run Time").theme(ChartTheme.Matlab).build();
 
         for (String key : xDatas.keySet()) {
             System.out.println(key);
@@ -63,18 +65,18 @@ public class Grapher {
 
         }
 
-
-
-
-        XYChart chart = new XYChartBuilder().width(1200).height(1400).title(GraphName).xAxisTitle("Median Runtime of Invocation").yAxisTitle("% of Runtime").theme(ChartTheme.Matlab).build();
-
         // Customize Chart
         chart.getStyler().setDefaultSeriesRenderStyle(XYSeriesRenderStyle.Scatter);
         chart.getStyler().setChartTitleVisible(true);
         chart.getStyler().setLegendPosition(LegendPosition.InsideNE);
-        chart.getStyler().setMarkerSize(12);
-        chart.getStyler().setAxisTitleFont(new Font("Verdana", Font.BOLD, 20));
-        chart.getStyler().setChartTitleFont(new Font("Verdana", Font.BOLD, 20));
+        chart.getStyler().setMarkerSize(8);
+        
+        chart.getStyler().setAxisTitlePadding(9);
+        chart.getStyler().setAxisTitleFont(new Font("Verdana", Font.PLAIN, 20));
+        chart.getStyler().setChartTitleFont(new Font("Verdana", Font.PLAIN, 20));
+        chart.getStyler().setAxisTickLabelsFont(new Font("Verdana", Font.PLAIN, 12));
+
+         //chart.getStyler().setAxisTickMarksStroke(BasicStroke.)
 
         Marker[] seriesMarkers = new Marker[] {SeriesMarkers.CIRCLE, SeriesMarkers.SQUARE, SeriesMarkers.DIAMOND, SeriesMarkers.TRIANGLE_UP, SeriesMarkers.TRIANGLE_DOWN, SeriesMarkers.CROSS};
         chart.getStyler().setSeriesMarkers(seriesMarkers);
@@ -90,11 +92,11 @@ public class Grapher {
             chart.addSeries(key, xDatas.get(key), yDatas.get(key));
         }
         
-        chart.getStyler().setLegendFont(new Font("Verdana", Font.PLAIN, 15));
+        chart.getStyler().setLegendFont(new Font("Verdana", Font.PLAIN, 12));
         new SwingWrapper(chart).displayChart();
 
         try {
-            BitmapEncoder.saveBitmap(chart, "Graphs/Across/"+GraphName, BitmapFormat.PNG);
+            BitmapEncoder.saveBitmap(chart, ""+GraphName, BitmapFormat.PNG);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
