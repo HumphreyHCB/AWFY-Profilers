@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.KeyStore.Entry;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,6 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,33 +25,45 @@ import org.json.JSONObject;
 public class ProcessOutput {
     public static ArrayList<BenchMethod> dataSet = new ArrayList<BenchMethod>();
     public static HashMap<String,String> FirstHottests = new HashMap<String,String>();
+    public static HashMap<String,ArrayList<String>> RankHottests = new HashMap<String,ArrayList<String>>();
     public static void main(String[] args) {
         
-        // processFile("Readers/JSONDumps/report4/output.json");
-        // for (int prefix = 2; prefix <= 30; prefix++) {
-        //     processFile("Readers/JSONDumps/report4/output"+prefix+".json");
-        // }
+        processFile("JSONDumps/report5/output.json");
+        //2
+        for (int prefix = 2; prefix <= 30; prefix++) {
+            processFile("JSONDumps/report5/output"+prefix+".json");
+        }
 
 
-         processFile("Readers/FlagReport.json");
-         for (int prefix = 2; prefix <=30; prefix++) {
-             processFile("Readers/FlagReport"+prefix+".json");
-         }
+        //  processFile("Readers/FlagReport.json");
+        //  for (int prefix = 2; prefix <=30; prefix++) {
+        //      processFile("Readers/FlagReport"+prefix+".json");
+        //  }
 
         //processFile("Readers/FlagReport30.json");
 
 
         TreeMap<String,String> hottest = new TreeMap<String,String>(FirstHottests);
-        printFristHottestsFromEachFile(hottest);
+      // printFristHottestsFromEachFile(hottest);
+      printrank();
 
 
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
           HashMap<String,BenchReport> statmap = statisticize(Map);
           TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-          //printOrderStatisticMapForMasterTable(orderedStatmap);
+        //printOrderStatisticMapForMasterTable(orderedStatmap);
         //printOrderStatisticMap(orderedStatmap);
 
-        mapOccurrencesOnMethodAndPrint(dataSet, "cd.CollisionDetector.isInVoxel");
+
+
+        //Storage.buildTreeDepth
+
+        //richards.Packet.<init>
+
+        //mapOccurrencesOnMethodAndPrint(dataSet, "Queens.setRowColumn");
+
+        //manualmapOccurrencesOnMethodAndPrint(dataSet, "Queens.getRowColumn");
+
         //DebugmapOccurrences(dataSet);
     }
     
@@ -62,18 +75,18 @@ public class ProcessOutput {
             JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
 
-            // JSONObject Perf = file.getJSONObject("Perf");
-            // JSONObject YourKit = file.getJSONObject("YourKit");
-            // JSONObject JProfiler = file.getJSONObject("JProfiler");
+             JSONObject Perf = file.getJSONObject("Perf");
+             JSONObject YourKit = file.getJSONObject("YourKit");
+             JSONObject JProfiler = file.getJSONObject("JProfiler");
 
             JSONObject Runtimes = file.getJSONObject("Runtimes");
-            addProfilerToDataset(Async, Runtimes, "Async", path);
-            addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
-            addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
+            //addProfilerToDataset(Async, Runtimes, "Async", path);
+            //addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
+            //addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
 
             //addProfilerToDataset(Perf, Runtimes, "Perf", path);
             //addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
-            //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
+            addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -90,6 +103,7 @@ public class ProcessOutput {
             JSONArray methods = benchmarks.names();
             Double max = 0d;
             String tempmethod ="";
+            Map<String,Double> tempranks = new HashMap<>();
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
@@ -100,9 +114,42 @@ public class ProcessOutput {
                     tempmethod = methodName;
                     max = Double.parseDouble(percentage.replace("%", ""));
                 }
+                tempranks.put(normaliseMethodName(methodName, profilerName) , Double.parseDouble(percentage.replace("%", "")));
                 dataSet.add(new BenchMethod(file, normaliseMethodName(methodName, profilerName), percentage, runtime, path));
                                 
             }
+            //
+            // all of this is rannking
+            //
+            tempranks = sortByComparatorDouble(tempranks);
+            int count = 0;
+            if (RankHottests.containsKey(file)) {
+                
+            }
+            else
+            {
+                RankHottests.put(file, new ArrayList<>());
+            }
+            ArrayList<String> tempArray = new ArrayList<String>();
+            for (String object : tempranks.keySet()) {
+                if (count == 5) {
+                    break;
+                }
+                tempArray.add(object);
+                count++;
+
+            }
+
+            while (count < 5) {
+                    tempArray.add("NO-METHOD-FOUND");
+                    count++;
+            }
+            //System.out.println(count);
+             RankHottests.get(file).addAll(tempArray);
+           // RankHottests
+           //
+           //
+            System.out.println();
             FirstHottests.put(file +" " +path, normaliseMethodName(tempmethod, profilerName));
             
         }
@@ -168,6 +215,47 @@ public class ProcessOutput {
         }
         
         return heatMap;
+    }
+
+    public static void printrank() {
+        for (String key : RankHottests.keySet()) {
+            int count = 0;
+            System.out.println(key);
+            String first = "";
+            String second = "";
+            String third = "";
+            String four = "";
+            String fith = "";
+            for (String method :  RankHottests.get(key)) {
+                if (count == 5) {
+                    //System.out.println();
+                    count = 0;
+                }
+                if (count == 0) {
+                    first = first + "¬" + method;
+                }
+                if (count == 1) {
+                    second = second + "¬" + method;
+                }
+                if (count == 2) {
+                    third = third + "¬" + method;
+                }
+                if (count == 3) {
+                    four = four + "¬" + method;
+                }
+                if (count == 4) {
+                    fith = fith + "¬" + method;
+                }
+                 count++;
+            }
+            System.out.println(first);
+            System.out.println(second);
+            System.out.println(third);
+            System.out.println(four);
+            System.out.println(fith);
+
+        }
+        
     }
 
     public static void mapOccurrencesOnMethodAndPrint(ArrayList<BenchMethod> collection, String specificMethod) {
@@ -245,7 +333,139 @@ public class ProcessOutput {
                     xdatas.put(BM.Profiler, arrayb);
                 }
             }
+            
+
             new Grapher().multiGraph(specificMethod, xdatas, ydatas);
+        }
+        
+    }
+
+    public static void manualmapOccurrencesOnMethodAndPrint(ArrayList<BenchMethod> collection, String specificMethod) {
+        HashMap<String,ArrayList<BenchMethod>> heatMap = new HashMap<>();
+        for (BenchMethod i : collection) {
+            String key = i.method;
+            if (heatMap.containsKey(key)) {
+                heatMap.get(key).add(i);
+                //heatMap.put(key, heatMap.get(key).add(i));
+            }
+            else{
+                ArrayList<BenchMethod> array = new ArrayList<BenchMethod>();
+                array.add(i);
+                heatMap.put(key, array );
+            }
+        }
+
+        HashMap<String,BenchReportOnMethod> statisticMap = new HashMap<String,BenchReportOnMethod>();
+        for (String key : heatMap.keySet()) {
+            BenchReportOnMethod report = new BenchReportOnMethod(key);
+            for (BenchMethod benchMethod : heatMap.get(key)) {
+                report.addBenchMethod(benchMethod);
+            }
+            statisticMap.put(key, report);
+        }
+        if (specificMethod == "" || specificMethod == null){
+        for (String Method : statisticMap.keySet()) {
+            if (statisticMap.get(Method).BenchMethods.size() <= 30) {
+                continue;
+            }
+            System.out.println("");
+            System.out.println("----------" + Method + "----------");
+            System.out.println("");
+
+            //   for (BenchMethod benchMethod : statisticMap.get(Method).BenchMethods) {
+                
+            //     System.out.print(" Percentage: " +  new DecimalFormat("0.00").format(Double.parseDouble(benchMethod.percentage)));
+            //     System.out.print("      Runtime: " + new DecimalFormat("0.00").format(benchMethod.Runtime));
+            //     System.out.print(" File: " + benchMethod.filename);
+            //     System.out.println("");
+            // } 
+            System.out.println("");
+            System.out.println("Async Average: "+ statisticMap.get(Method).getAverage("Async"));
+            System.out.println("HonestProfiler Average: "+ statisticMap.get(Method).getAverage("HonestProfiler"));
+            System.out.println("JavaFlightRecorder Average: "+ statisticMap.get(Method).getAverage("JavaFlightRecorder"));
+
+            System.out.println("Perf Average: "+ statisticMap.get(Method).getAverage("PerfTests"));
+            System.out.println("YourKit Average: "+ statisticMap.get(Method).getAverage("YourKitTests"));
+            System.out.println("JProfiler Average: "+ statisticMap.get(Method).getAverage("JProfilerTests"));
+
+            System.out.println("");
+            System.out.println("Min: "+ statisticMap.get(Method).min);
+            System.out.println("Max: "+ statisticMap.get(Method).max);
+            System.out.println("Diff: "+ (statisticMap.get(Method).max - statisticMap.get(Method).min));
+        }
+        }else{
+            BenchReportOnMethod BROM = statisticMap.get(specificMethod);
+            BenchReportOnMethod BROM2 = statisticMap.get("Queens.setRowColumn");
+            BenchReportOnMethod BROM3 = statisticMap.get("Queens.placeQueen");
+            //BenchReportOnMethod BROM = statisticMap.get(key);
+
+            HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
+            HashMap<String,ArrayList<Double>> ydatas = new HashMap<String,ArrayList<Double>>();
+
+            // for (BenchMethod BM :  BROM.BenchMethods) {
+            //     if (xdatas.containsKey(BM.Profiler)) {
+            //         ydatas.get(BM.Profiler).add(Double.parseDouble(BM.percentage));
+            //         xdatas.get(BM.Profiler).add(BM.Runtime);
+            //         //heatMap.put(key, heatMap.get(key).add(i));
+            //     }
+            //     else{
+            //         ArrayList<Double> array = new ArrayList<Double>();
+            //         ArrayList<Double> arrayb = new ArrayList<Double>();
+            //         array.add(Double.parseDouble(BM.percentage));
+            //         arrayb.add(BM.Runtime);
+            //         ydatas.put(BM.Profiler, array );
+            //         xdatas.put(BM.Profiler, arrayb);
+            //     }
+            // }
+            
+            for (BenchMethod BM :  BROM.BenchMethods) {
+                if (xdatas.containsKey(specificMethod)) {
+                    ydatas.get(specificMethod).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod).add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put(specificMethod, array );
+                    xdatas.put(specificMethod, arrayb);
+                }
+            }
+
+            for (BenchMethod BM :  BROM2.BenchMethods) {
+                if (xdatas.containsKey("Queens.setRowColumn")) {
+                    ydatas.get("Queens.setRowColumn").add(Double.parseDouble(BM.percentage));
+                    xdatas.get("Queens.setRowColumn").add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put("Queens.setRowColumn", array );
+                    xdatas.put("Queens.setRowColumn", arrayb);
+                }
+            }
+
+            for (BenchMethod BM :  BROM3.BenchMethods) {
+                if (xdatas.containsKey("Queens.placeQueen")) {
+                    ydatas.get("Queens.placeQueen").add(Double.parseDouble(BM.percentage));
+                    xdatas.get("Queens.placeQueen").add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put("Queens.placeQueen", array );
+                    xdatas.put("Queens.placeQueen", arrayb);
+                }
+            }
+            new Grapher().multiGraph("", xdatas, ydatas);
         }
         
     }
@@ -307,37 +527,71 @@ public class ProcessOutput {
         BenchReport currentReport;
         ArrayList<BenchReport> highlights = new ArrayList<BenchReport>();
         int count = 0;
+        Double maxDiff = 0d;
+        Double tempmaxDiff = 0d;
+         ArrayList<Double> maxranges = new ArrayList<Double>();
+         int extraOcuurence = 0;
         for (String key : OSM.keySet()) {
             currentReport = OSM.get(key);
-            if (count == 15) {
-                if (!currentReport.filename.equals(currentFile)) {
-                    count = 0;
-                }
-                else{
-                    continue;
-                }
-            }
+            // if (count == 15) {
+            //     if (!currentReport.filename.equals(currentFile)) {
+            //         count = 0;
+            //     }
+            //     else{
+            //         continue;
+            //     }
+            // }
+                //if (count == 15) {
+                   // if (currentReport.getAverage() < 0.3D) {
+                   //     continue;
+                   // }
+                //}
+                 if (currentReport.getAverage() < 5D) {
+                //     if ((currentReport.max - currentReport.min) > 5D) {
+                        
+                //     }
+                //     else{
+                //        continue;
+                //     }
+                    }
 
             if (!currentReport.filename.equals(currentFile)) {
                 count = 0;
                 currentFile = currentReport.filename;
                 System.out.println("");
+                maxranges.add(tempmaxDiff);
+                tempmaxDiff = 0d;
                 //System.out.println("");
                 //System.out.println("");
-                System.out.println(currentFile );
+                //System.out.println(currentFile );
                 //System.out.println("");
                 //System.out.println("Method      Entries        Average      Min     MinRuntime      Max     MaxRuntime      Diff");
             }
-            
-            System.out.print(currentReport.method);
+
+            System.out.print(currentReport.Profiler + " ");
+            System.out.print(currentReport.filename + " ");
+            System.out.print(currentReport.method + " ");
+
             System.out.print(" " + currentReport.Percentages.size());
-            System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
-             System.out.print(" " + currentReport.min);
-             System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
-             System.out.print(" " + currentReport.max);
-             System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
+            for (Double double1 : currentReport.Percentages) {
+                System.out.print(" " + double1);
+            }
+            //System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
+             //System.out.print(" " + currentReport.min);
+             //System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
+             //System.out.print(" " + currentReport.max);
+             //System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
              String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
-             System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
+             if (Double.parseDouble(diff) > maxDiff) {
+                maxDiff = Double.parseDouble(diff);
+             }
+            if (Double.parseDouble(diff) > tempmaxDiff) {
+                tempmaxDiff = Double.parseDouble(diff);
+             }
+             if (currentReport.Percentages.size() < 30 && currentReport.getAverage() > 1D ) {
+                extraOcuurence++;
+             }
+             //System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
              System.out.println("");
 
             if (Double.parseDouble(diff) >= 5 ) {
@@ -345,13 +599,28 @@ public class ProcessOutput {
             }
             count++;
         }
+        maxranges.add(tempmaxDiff);
 
         // for (BenchReport benchReport : highlights) {
         //     System.out.println("");
         //     System.out.print(" File : " + benchReport.filename);
             //new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
         //}
-
+        double total = 0d;
+        double min = 100000000d;
+        maxranges.remove(0); // there a dud added at the start
+        for (Double double1 : maxranges) {
+            total = total + double1;
+            if ( double1 < min) {
+                min = double1;
+            }
+            
+        }   
+            System.out.println("Extra Occurrence (over 1%)" + extraOcuurence);
+           System.out.println("avg: " + total/14);    
+           System.out.println("min: " + min);
+           System.out.println("maxDiff: " + maxDiff);
+            System.out.println( extraOcuurence + " " + total/14 + " " + min + " " + maxDiff);
     }
 
     public static void printOrderStatisticMap(TreeMap<String,BenchReport> OSM) {
@@ -382,6 +651,7 @@ public class ProcessOutput {
             System.out.print("  Max : " + currentReport.max);
             String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
             uncertainty += Double.parseDouble(diff);
+            
             if (Double.parseDouble(diff) >= 5) {
                 highlights.add(currentReport);
             }
@@ -407,17 +677,30 @@ public class ProcessOutput {
             
             System.out.println("        Runtime Greatest Diff : " + benchReport.getBigestDiffinRuntime());
             System.out.println("");
-            ArrayList<Double> per = new ArrayList<>();
-            ArrayList<Double> run = new ArrayList<>();
-             for (int i = 0; i < benchReport.Percentages.size(); i++) {
-                //System.out.println("Percentage: " + benchReport.Percentages.get(i) + " Runtime: " + benchReport.Runtimes.get(i) + " Path: " + benchReport.paths.get(i));
-                //System.out.print(benchReport.Percentages.get(i) + " ");
-                per.add(benchReport.Percentages.get(i));
-                run.add(benchReport.Runtimes.get(i));
+
             
-            }
-            //new Grapher().Graph(benchReport.method + " " + benchReport.filename, run, per);
         }
+
+
+    }
+
+    public static Map<String, Double> sortByComparatorDouble(
+            final Map<String, Double> map) {
+        List<Entry<String, Double>> map_arr = new LinkedList<Entry<String, Double>>(
+                map.entrySet());
+
+        Collections.sort(map_arr, new Comparator<Entry<String, Double>>() {
+            public int compare(Entry<String, Double> v1,
+                    Entry<String, Double> v2) {
+                return v2.getValue().compareTo(v1.getValue());//descending
+            }
+        });
+
+        LinkedHashMap<String, Double> sortedByComparator = new LinkedHashMap<String, Double>();
+        for (Entry<String, Double> e : map_arr) {
+            sortedByComparator.put(e.getKey(), e.getValue());
+        }
+        return sortedByComparator;
     }
     private static String convertRealNametoRuntimeName(String filename , String profilerName) {
         String correctedName = "";
@@ -513,15 +796,15 @@ class BenchMethod {
 
     public void decidedProfiler(String filename) {
         if (filename.contains("JavaFlightRecorder_")) {
-            Profiler = "JavaFlightRecorder";
+            Profiler = "Java Flight Recorder";
         }else if (filename.contains("rebench_test_Async_")) {
-            Profiler = "Async";
+            Profiler = "async-profiler";
         }else if (filename.contains(".hpl")) {
-            Profiler = "honest-profiler";
+            Profiler = "Honest Profiler";
         }else if (filename.contains("_not_profiled_")) {
             Profiler = "_not_profiled_";
         }else if (filename.contains(".data")) {
-            Profiler = "Perf";
+            Profiler = "perf ";
         }else if (filename.contains("YourKit_")) {
             Profiler = "YourKit";
         }else if (filename.contains("JProfiler_")) {
@@ -544,6 +827,7 @@ class BenchReport {
     public ArrayList<String> paths;
     public Double min;
     public Double max;
+    public String Profiler;
     //public String percentage;
 
     public BenchReport(String key) {
@@ -556,6 +840,27 @@ class BenchReport {
         paths = new ArrayList<String>();
         min = 100d;
         max = 0d;
+        decidedProfiler(filename);
+    }
+
+        public void decidedProfiler(String filename) {
+        if (filename.contains("JavaFlightRecorder_")) {
+            Profiler = "JavaFlightRecorder";
+        }else if (filename.contains("rebench_test_Async_")) {
+            Profiler = "Async";
+        }else if (filename.contains(".hpl")) {
+            Profiler = "honest-profiler";
+        }else if (filename.contains("_not_profiled_")) {
+            Profiler = "_not_profiled_";
+        }else if (filename.contains(".data")) {
+            Profiler = "Perf";
+        }else if (filename.contains("YourKit_")) {
+            Profiler = "YourKit";
+        }else if (filename.contains("JProfiler_")) {
+            Profiler = "JProfiler";
+        } else {
+
+        } 
     }
 
     public void addPercentage(String Percentage, Double Runtime, String path)
