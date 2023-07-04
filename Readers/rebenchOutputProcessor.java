@@ -113,16 +113,16 @@ public class rebenchOutputProcessor {
         String benchmark = "Towers";
 
 
-        // getMinAvgMax(processFile("RebenchDump/data.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data2.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data3.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data4.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data5.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data6.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data7.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data8.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data9.data"), profiler, benchmark);
-        // getMinAvgMax(processFile("RebenchDump/data10.data"), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 11), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 2), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 3), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 4), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 5), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 6), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 7), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 8), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 9), profiler, benchmark);
+        getMinAvgMax(processSpecificBulkFile("Combind.data", 10), profiler, benchmark);
 
 
         // getMinAvgMax(processFile("RebenchDump/data11.data"), profiler, benchmark);
@@ -151,37 +151,37 @@ public class rebenchOutputProcessor {
 
          HashMap<String,ArrayList<Double>> dataset = new HashMap<String,ArrayList<Double>>();
 
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 2), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 3), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 4), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 5), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 6), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 7), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 8), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 9), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 10), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 2), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 3), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 4), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 5), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 6), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 7), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 8), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 9), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 10), dataset);
 
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 11), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 12), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 13), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 14), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 15), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 16), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 17), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 18), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 19), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 20), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 11), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 12), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 13), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 14), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 15), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 16), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 17), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 18), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 19), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 20), dataset);
 
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 21), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 22), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 23), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 24), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 25), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 26), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 27), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 28), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 29), dataset);
-         dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 30), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 21), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 22), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 23), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 24), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 25), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 26), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 27), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 28), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 29), dataset);
+        //  dataset = compaireForOverhead(processSpecificBulkFile("Combind.data", 30), dataset);
 
 
 
