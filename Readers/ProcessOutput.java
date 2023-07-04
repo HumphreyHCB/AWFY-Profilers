@@ -44,14 +44,14 @@ public class ProcessOutput {
 
 
         TreeMap<String,String> hottest = new TreeMap<String,String>(FirstHottests);
-      // printFristHottestsFromEachFile(hottest);
-      printrank();
+     printFristHottestsFromEachFile(hottest);
+      //printrank();
 
 
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
           HashMap<String,BenchReport> statmap = statisticize(Map);
           TreeMap<String,BenchReport> orderedStatmap = orderStatisticMap(statmap);
-        //printOrderStatisticMapForMasterTable(orderedStatmap);
+        printOrderStatisticMapForMasterTable(orderedStatmap);
         //printOrderStatisticMap(orderedStatmap);
 
 
@@ -60,9 +60,9 @@ public class ProcessOutput {
 
         //richards.Packet.<init>
 
-        //mapOccurrencesOnMethodAndPrint(dataSet, "Queens.setRowColumn");
+        //mapOccurrencesOnMethodAndPrint(dataSet, "Queens.placeQueen");
 
-        //manualmapOccurrencesOnMethodAndPrint(dataSet, "Queens.getRowColumn");
+        //manualmapOccurrencesOnMethodAndPrint(dataSet, "som.Vector.forEach");
 
         //DebugmapOccurrences(dataSet);
     }
@@ -83,10 +83,11 @@ public class ProcessOutput {
             //addProfilerToDataset(Async, Runtimes, "Async", path);
             //addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
             //addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
-
+            
+            //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
             //addProfilerToDataset(Perf, Runtimes, "Perf", path);
-            //addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
-            addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
+            addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
+            //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -99,6 +100,9 @@ public class ProcessOutput {
         JSONArray filenames = profiler.names();
         for (int i = 0; i < filenames.length(); i++) {
             String file = filenames.get(i).toString();
+            //if (file.equals("rebench_test_Async_Havlak.txt")) {
+            //    continue;
+            //}
             JSONObject benchmarks = (JSONObject) profiler.get(file);
             JSONArray methods = benchmarks.names();
             Double max = 0d;
@@ -394,9 +398,18 @@ public class ProcessOutput {
             System.out.println("Diff: "+ (statisticMap.get(Method).max - statisticMap.get(Method).min));
         }
         }else{
+
+            String specificMethod2 = "deltablue.Planner.incrementalAdd";
+            String specificMethod3 = "deltablue.Strength.stronger";
+            String specificMethod4 = "deltablue.Plan";
+            String specificMethod5 = "som.Dictionary.getBucket";
+            String specificMethod6 = "som.Dictionary.at";
             BenchReportOnMethod BROM = statisticMap.get(specificMethod);
-            BenchReportOnMethod BROM2 = statisticMap.get("Queens.setRowColumn");
-            BenchReportOnMethod BROM3 = statisticMap.get("Queens.placeQueen");
+            BenchReportOnMethod BROM2 = statisticMap.get(specificMethod2);
+            BenchReportOnMethod BROM3 = statisticMap.get(specificMethod3);
+            BenchReportOnMethod BROM4 = statisticMap.get(specificMethod4);
+            BenchReportOnMethod BROM5 = statisticMap.get(specificMethod5);
+            BenchReportOnMethod BROM6 = statisticMap.get(specificMethod6);
             //BenchReportOnMethod BROM = statisticMap.get(key);
 
             HashMap<String,ArrayList<Double>> xdatas = new HashMap<String,ArrayList<Double>>();
@@ -435,9 +448,9 @@ public class ProcessOutput {
             }
 
             for (BenchMethod BM :  BROM2.BenchMethods) {
-                if (xdatas.containsKey("Queens.setRowColumn")) {
-                    ydatas.get("Queens.setRowColumn").add(Double.parseDouble(BM.percentage));
-                    xdatas.get("Queens.setRowColumn").add(BM.Runtime);
+                if (xdatas.containsKey(specificMethod2)) {
+                    ydatas.get(specificMethod2).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod2).add(BM.Runtime);
                     //heatMap.put(key, heatMap.get(key).add(i));
                 }
                 else{
@@ -445,15 +458,15 @@ public class ProcessOutput {
                     ArrayList<Double> arrayb = new ArrayList<Double>();
                     array.add(Double.parseDouble(BM.percentage));
                     arrayb.add(BM.Runtime);
-                    ydatas.put("Queens.setRowColumn", array );
-                    xdatas.put("Queens.setRowColumn", arrayb);
+                    ydatas.put(specificMethod2, array );
+                    xdatas.put(specificMethod2, arrayb);
                 }
             }
 
             for (BenchMethod BM :  BROM3.BenchMethods) {
-                if (xdatas.containsKey("Queens.placeQueen")) {
-                    ydatas.get("Queens.placeQueen").add(Double.parseDouble(BM.percentage));
-                    xdatas.get("Queens.placeQueen").add(BM.Runtime);
+                if (xdatas.containsKey(specificMethod3)) {
+                    ydatas.get(specificMethod3).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod3).add(BM.Runtime);
                     //heatMap.put(key, heatMap.get(key).add(i));
                 }
                 else{
@@ -461,8 +474,53 @@ public class ProcessOutput {
                     ArrayList<Double> arrayb = new ArrayList<Double>();
                     array.add(Double.parseDouble(BM.percentage));
                     arrayb.add(BM.Runtime);
-                    ydatas.put("Queens.placeQueen", array );
-                    xdatas.put("Queens.placeQueen", arrayb);
+                    ydatas.put(specificMethod3, array );
+                    xdatas.put(specificMethod3, arrayb);
+                }
+            }
+                        for (BenchMethod BM :  BROM4.BenchMethods) {
+                if (xdatas.containsKey(specificMethod4)) {
+                    ydatas.get(specificMethod4).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod4).add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put(specificMethod4, array );
+                    xdatas.put(specificMethod4, arrayb);
+                }
+            }
+                        for (BenchMethod BM :  BROM5.BenchMethods) {
+                if (xdatas.containsKey(specificMethod5)) {
+                    ydatas.get(specificMethod5).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod5).add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put(specificMethod5, array );
+                    xdatas.put(specificMethod5, arrayb);
+                }
+            }
+                        for (BenchMethod BM :  BROM6.BenchMethods) {
+                if (xdatas.containsKey(specificMethod6)) {
+                    ydatas.get(specificMethod6).add(Double.parseDouble(BM.percentage));
+                    xdatas.get(specificMethod6).add(BM.Runtime);
+                    //heatMap.put(key, heatMap.get(key).add(i));
+                }
+                else{
+                    ArrayList<Double> array = new ArrayList<Double>();
+                    ArrayList<Double> arrayb = new ArrayList<Double>();
+                    array.add(Double.parseDouble(BM.percentage));
+                    arrayb.add(BM.Runtime);
+                    ydatas.put(specificMethod6, array );
+                    xdatas.put(specificMethod6, arrayb);
                 }
             }
             new Grapher().multiGraph("", xdatas, ydatas);
@@ -588,7 +646,7 @@ public class ProcessOutput {
             if (Double.parseDouble(diff) > tempmaxDiff) {
                 tempmaxDiff = Double.parseDouble(diff);
              }
-             if (currentReport.Percentages.size() < 30 && currentReport.getAverage() > 1D ) {
+             if (currentReport.Percentages.size() < 30 ) {
                 extraOcuurence++;
              }
              //System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
