@@ -24,6 +24,19 @@ public class rebenchOutputProcessor {
     static Double golbalmax = 0D;
     static Double globaltotal = 0D;
     public static void main(String[] args) {
+
+        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport1.json", 1, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport2.json", 2, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport3.json", 3, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport4.json", 4, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport5.json", 5, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport6.json",6, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport7.json",7, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport8.json",8, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport9.json",9, BenchmarkSuites.DaCapo);
+        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport10.json",10, BenchmarkSuites.DaCapo);
+
+
         //String prefix = "10";
         //HashMap<String,ArrayList<Double>> map = processFile("RebenchDump/example" + prefix + ".data");
         //"asyncTests CD"
@@ -109,20 +122,20 @@ public class rebenchOutputProcessor {
         //"honest-profilerTests CD"
         //"JavaFlightRecorderTests Bounce"
         //printBenchmark(map, "honest-profilerTests", "Queens");
-        String profiler = "NonProfiledTests";
-        String benchmark = "Towers";
+        // String profiler = "NonProfiledTests";
+        // String benchmark = "Towers";
 
 
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 11), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 2), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 3), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 4), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 5), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 6), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 7), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 8), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 9), profiler, benchmark);
-        getMinAvgMax(processSpecificBulkFile("Combind.data", 10), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 11), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 2), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 3), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 4), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 5), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 6), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 7), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 8), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 9), profiler, benchmark);
+        // getMinAvgMax(processSpecificBulkFile("Combind.data", 10), profiler, benchmark);
 
 
         // getMinAvgMax(processFile("RebenchDump/data11.data"), profiler, benchmark);
@@ -261,7 +274,7 @@ public class rebenchOutputProcessor {
     }
 
     public static HashMap<String,ArrayList<Double>> compaireForOverhead( HashMap<String,ArrayList<Double>> profiled, HashMap<String,ArrayList<Double>> dataset) {
-        HashMap<String,Double> profileddata = getMedianExeTime(profiled);
+        HashMap<String,Double> profileddata = getMedianExeTime(profiled, null);
         HashMap<String,Double> result = new HashMap<String,Double>();
         for (String key : profileddata.keySet()) {
             result.put(key, (profileddata.get(key) - profileddata.get("NonProfiledTests " + key.split("\\s+")[1]))  / profileddata.get("NonProfiledTests " + key.split("\\s+")[1]) * 100);
@@ -282,15 +295,15 @@ public class rebenchOutputProcessor {
     public static void proccesDataDump(String rebenchData, String Outputfile) {
 
         HashMap<String,ArrayList<Double>> map = processFile(rebenchData);
-        HashMap<String,Double> Map = getMedianExeTime(map);
+        HashMap<String,Double> Map = getMedianExeTime(map, null);
         appendRuntimesToJSON(Outputfile, Map);
 
     }
 
-    public static void proccesBulkDataDump(String rebenchData, String Outputfiledir, int fileIte) {
+    public static void proccesBulkDataDump(String rebenchData, String Outputfiledir, int fileIte, BenchmarkSuites benchmarksuite) {
 
-        HashMap<String,ArrayList<Double>> map = processBulkFile(rebenchData);
-        HashMap<String,Double> Map = getMedianExeTime(map);
+        HashMap<String,ArrayList<Double>> map = processBulkFile(rebenchData, benchmarksuite);
+        HashMap<String,Double> Map = getMedianExeTime(map, benchmarksuite);
         appendBulkRuntimesToJSON(Outputfiledir, Map, fileIte);
 
     }
@@ -436,8 +449,16 @@ public class rebenchOutputProcessor {
         }
     }
 
-    private static HashMap<String,Double> getMedianExeTime(HashMap<String,ArrayList<Double>> map) {
+    private static HashMap<String,Double> getMedianExeTime(HashMap<String,ArrayList<Double>> map, BenchmarkSuites benchmarksuite) {
         HashMap<String,Double> Map = new HashMap<String,Double>();
+        if (benchmarksuite.equals(BenchmarkSuites.DaCapo)) {
+            for (String key : map.keySet()) {
+                ArrayList<Double> AL = map.get(key);
+                Map.put(key, AL.get(0));
+            }
+            return Map;
+        }
+        else{
         for (String key : map.keySet()) {
             ArrayList<Double> AL = map.get(key);
             Collections.sort(AL);
@@ -445,6 +466,7 @@ public class rebenchOutputProcessor {
             Map.put(key, Median);
         }
         return Map;
+    }
     }
 
     private static HashMap<String,Double> getaverage(HashMap<String,ArrayList<Double>> map) {
@@ -536,7 +558,7 @@ public class rebenchOutputProcessor {
         return map;
     }
 
-    private static  HashMap<String,ArrayList<Double>> processBulkFile(String Filename) {
+    private static  HashMap<String,ArrayList<Double>> processBulkFile(String Filename , BenchmarkSuites benchmarksuite) {
         HashMap<String,ArrayList<Double>> map = new  HashMap<String,ArrayList<Double>>();
 
         try {
@@ -547,6 +569,7 @@ public class rebenchOutputProcessor {
             Double exeTime = 0.0;
             String benchmark = "";
             String profiler = "";
+            int extra_Args = 0;
             int var_iteration = 0;
             while (myReader.hasNextLine()) {
                 if (myReader.nextLine().startsWith("# Source:")) {
@@ -556,6 +579,7 @@ public class rebenchOutputProcessor {
                          exeTime = Double.parseDouble(split[2]);
                          benchmark = split[5];
                          profiler = split[7];
+                         extra_Args = Integer.parseInt(split[8]);
                          var_iteration =  Integer.parseInt(split[10]);
 
                          String key = var_iteration + " " +profiler + " " + benchmark;

@@ -40,6 +40,19 @@ import java.util.LinkedList;
 public class ProfilerDumpsReader {
     public static void main(String[] args) {
        
+        //BenchamrkSuites.AWFY;
+
+        proccesDumpDir("ProfilerDumps/ProfilesDump1", "Readers/DacapoReport1.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump2", "Readers/DacapoReport2.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump3", "Readers/DacapoReport3.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump4", "Readers/DacapoReport4.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump5", "Readers/DacapoReport5.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump6", "Readers/DacapoReport6.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump7", "Readers/DacapoReport7.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump8", "Readers/DacapoReport8.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump9", "Readers/DacapoReport9.json");
+        proccesDumpDir("ProfilerDumps/ProfilesDump10", "Readers/DacapoReport10.json");
+
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump", "Readers/FlagReport.json");
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump2", "Readers/FlagReport2.json");
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump3", "Readers/FlagReport3.json");
@@ -108,10 +121,10 @@ public class ProfilerDumpsReader {
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump24", "Readers/JSONDumps/report5/output24.json");
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump25", "Readers/JSONDumps/report5/output25.json");
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump26", "Readers/JSONDumps/report5/output26.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump27", "Readers/JSONDumps/report5/output27.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump28", "Readers/JSONDumps/report5/output28.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump29", "Readers/JSONDumps/report5/output29.json");
-        proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump30", "Readers/JSONDumps/report5/output30.json");
+        // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump27", "Readers/JSONDumps/report5/output27.json");
+        // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump28", "Readers/JSONDumps/report5/output28.json");
+        // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump29", "Readers/JSONDumps/report5/output29.json");
+        // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump30", "Readers/JSONDumps/report5/output30.json");
 
     }
 
@@ -121,6 +134,9 @@ public class ProfilerDumpsReader {
         String filename = outputDir;
         JSONObject AllProfilerDumps = new JSONObject();
         for (String[] ProfilerDump : DumpFiles) {
+            if (ProfilerDump[1] == null) {
+                continue; // thid eals with empty dirs
+            }
             if (ProfilerDump[0].contains("AsyncDumps")) {
                 System.out.println("---------------AsyncDumps---------------");
                 JSONObject AsyncDumps = new JSONObject();
@@ -248,6 +264,7 @@ public class ProfilerDumpsReader {
     }
 
     private static String[][] getDumpFiles(String DumpsDirPath) {
+        int firstDirLength =0;
         File[] dir = new File(DumpsDirPath).listFiles();
         if (dir == null) {
             String[][] DumpFiles = new String[1][1];
@@ -255,7 +272,7 @@ public class ProfilerDumpsReader {
             return DumpFiles;
         }
         Arrays.sort(dir);
-        String[][] DumpFiles = new String[dir.length][14]; // 14 for 14 benchmarks
+        String[][] DumpFiles = new String[dir.length][100]; // might need to be changed, just an arbirty number
         for (int i = 0; i < dir.length; i++) {
             if (dir[i].isFile()) {
                 System.out.println(dir[i].getName());
@@ -264,6 +281,9 @@ public class ProfilerDumpsReader {
                 DumpFiles[i][0] = dir[i].getName();
                 int ajustedj = 0; // this is need incase we skip a index but want to keep under 14
                 for (int j = 0; j < currentDir.length; j++) {
+                    if (firstDirLength == 0) {
+                        firstDirLength = currentDir.length;
+                    }
                     if (currentDir[j].getName().equals(".gitignore") || currentDir[j].getName().endsWith(".snapshot") || currentDir[j].getName().endsWith(".old") || currentDir[j].getName().endsWith(".jps")) {
 
                     } else {
@@ -288,7 +308,16 @@ public class ProfilerDumpsReader {
                 return time1.compareTo(time2);
             }
         });
-        return DumpFiles;
+
+        String[][] ReducedDumpFiles = new String[DumpFiles.length][firstDirLength];
+
+        for (int i = 0; i < DumpFiles.length; i++) {
+            for (int j = 0; j < firstDirLength; j++) {
+                ReducedDumpFiles[i][j] = DumpFiles[i][j];
+            }
+        }
+        
+        return ReducedDumpFiles;
     }
 
     private static void WriteJSONObject(JSONObject obj, String filename) {
