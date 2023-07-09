@@ -25,16 +25,10 @@ public class rebenchOutputProcessor {
     static Double globaltotal = 0D;
     public static void main(String[] args) {
 
-        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport1.json", 1, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport2.json", 2, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport3.json", 3, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport4.json", 4, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data", "Readers/DacapoReport5.json", 5, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport6.json",6, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport7.json",7, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport8.json",8, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport9.json",9, BenchmarkSuites.DaCapo);
-        proccesBulkDataDump("BatchRunDaCapo.data","Readers/DacapoReport10.json",10, BenchmarkSuites.DaCapo);
+        for (int prefix = 1; prefix <=30; prefix++) {
+            proccesBulkDataDump("BatchRunDaCapo.data", "Readers/JSONDumps/DaCapo/DacapoReport"+prefix+".json", prefix, BenchmarkSuites.DaCapo);
+        }
+
 
 
         //String prefix = "10";

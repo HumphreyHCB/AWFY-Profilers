@@ -42,16 +42,12 @@ public class ProfilerDumpsReader {
        
         //BenchamrkSuites.AWFY;
 
-        proccesDumpDir("ProfilerDumps/ProfilesDump1", "Readers/DacapoReport1.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump2", "Readers/DacapoReport2.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump3", "Readers/DacapoReport3.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump4", "Readers/DacapoReport4.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump5", "Readers/DacapoReport5.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump6", "Readers/DacapoReport6.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump7", "Readers/DacapoReport7.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump8", "Readers/DacapoReport8.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump9", "Readers/DacapoReport9.json");
-        proccesDumpDir("ProfilerDumps/ProfilesDump10", "Readers/DacapoReport10.json");
+
+        for (int prefix = 1; prefix <=30; prefix++) {
+            proccesDumpDir("ProfilerDumps/ProfilesDump"+prefix, "Readers/JSONDumps/DaCapo/DacapoReport"+prefix+".json");
+        }
+
+        
 
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump", "Readers/FlagReport.json");
         // proccesDumpDir("/home/hburchell/Repos/AWFY-Profilers/ProfilesDump2", "Readers/FlagReport2.json");

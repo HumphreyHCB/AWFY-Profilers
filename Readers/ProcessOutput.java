@@ -28,24 +28,25 @@ public class ProcessOutput {
     public static HashMap<String,ArrayList<String>> RankHottests = new HashMap<String,ArrayList<String>>();
     public static void main(String[] args) {
         
-        processFile("JSONDumps/report5/output.json");
-        //2
-        for (int prefix = 2; prefix <= 30; prefix++) {
-            processFile("JSONDumps/report5/output"+prefix+".json");
-        }
+        // processFile("JSONDumps/report5/output.json");
+        // //2
+        // for (int prefix = 2; prefix <= 30; prefix++) {
+        //     processFile("JSONDumps/report5/output"+prefix+".json");
+        // }
 
 
-        //  processFile("Readers/FlagReport.json");
-        //  for (int prefix = 2; prefix <=30; prefix++) {
-        //      processFile("Readers/FlagReport"+prefix+".json");
-        //  }
+         processFile("Readers/JSONDumps/DaCapo/DacapoReport1.json");
+          for (int prefix = 2; prefix <=30; prefix++) {
+              processFile("Readers/JSONDumps/DaCapo/DacapoReport"+prefix+".json");
+          }
+
 
         //processFile("Readers/FlagReport30.json");
 
 
         TreeMap<String,String> hottest = new TreeMap<String,String>(FirstHottests);
-     printFristHottestsFromEachFile(hottest);
-      //printrank();
+        //printFristHottestsFromEachFile(hottest);
+        //printrank();
 
 
          HashMap<String,ArrayList<BenchMethod>> Map =  mapOccurrences(dataSet);
@@ -60,7 +61,7 @@ public class ProcessOutput {
 
         //richards.Packet.<init>
 
-        //mapOccurrencesOnMethodAndPrint(dataSet, "Queens.placeQueen");
+        mapOccurrencesOnMethodAndPrint(dataSet, "net.sourceforge.pmd.ast.JavaParser.jj_scan_token");
 
         //manualmapOccurrencesOnMethodAndPrint(dataSet, "som.Vector.forEach");
 
@@ -72,22 +73,22 @@ public class ProcessOutput {
         try {
             JSONObject file = new JSONObject(new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8));
             JSONObject JavaFlightRecorder = file.getJSONObject("JavaFlightRecorder");
-            JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
+           // JSONObject HonestProfiler = file.getJSONObject("HonestProfiler");
             JSONObject Async = file.getJSONObject("Async");
 
-             JSONObject Perf = file.getJSONObject("Perf");
-             JSONObject YourKit = file.getJSONObject("YourKit");
-             JSONObject JProfiler = file.getJSONObject("JProfiler");
+             //JSONObject Perf = file.getJSONObject("Perf");
+             //JSONObject YourKit = file.getJSONObject("YourKit");
+             //JSONObject JProfiler = file.getJSONObject("JProfiler");
 
             JSONObject Runtimes = file.getJSONObject("Runtimes");
             //addProfilerToDataset(Async, Runtimes, "Async", path);
             //addProfilerToDataset(HonestProfiler , Runtimes, "HonestProfiler", path);
-            //addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
+            addProfilerToDataset(JavaFlightRecorder , Runtimes, "JavaFlightRecorder", path);
             
             //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
             //addProfilerToDataset(Perf, Runtimes, "Perf", path);
-            addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
-            //addProfilerToDataset(JProfiler , Runtimes, "JProfiler", path);
+            //addProfilerToDataset(YourKit , Runtimes, "YourKit", path);
+
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -111,9 +112,10 @@ public class ProcessOutput {
             for (int j = 0; j < methods.length() ; j++) {
                 String methodName = methods.get(j).toString();
                 String percentage = benchmarks.get(methodName).toString();
-                BigDecimal BigRuntime =  (BigDecimal) Runtimes.get(file);
+                //BigDecimal BigRuntime =  new BigDecimal(Runtimes.get(file));
                 DecimalFormat df = new DecimalFormat("#.###");
-                double runtime = Double.parseDouble(df.format(BigRuntime));
+                //double runtime = Double.parseDouble(df.format(BigRuntime));
+                double runtime = Double.parseDouble(Runtimes.get(file).toString());
                 if (Double.parseDouble(percentage.replace("%", "")) > max) {
                     tempmethod = methodName;
                     max = Double.parseDouble(percentage.replace("%", ""));
@@ -631,13 +633,13 @@ public class ProcessOutput {
             System.out.print(currentReport.method + " ");
 
             System.out.print(" " + currentReport.Percentages.size());
-            for (Double double1 : currentReport.Percentages) {
-                System.out.print(" " + double1);
-            }
-            //System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
-             //System.out.print(" " + currentReport.min);
+            // for (Double double1 : currentReport.Percentages) {
+            //     System.out.print(" " + double1);
+            // }
+            System.out.print(" " + new DecimalFormat("0.00").format(currentReport.getAverage()));
+             System.out.print(" " + currentReport.min);
              //System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.min)));
-             //System.out.print(" " + currentReport.max);
+             System.out.print(" " + currentReport.max);
              //System.out.print(" " + currentReport.Runtimes.get(currentReport.Percentages.indexOf(currentReport.max)));
              String diff = new DecimalFormat("0.00").format(currentReport.max - currentReport.min);
              if (Double.parseDouble(diff) > maxDiff) {
@@ -649,7 +651,7 @@ public class ProcessOutput {
              if (currentReport.Percentages.size() < 30 ) {
                 extraOcuurence++;
              }
-             //System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
+             System.out.print(" " + new DecimalFormat("0.00").format(currentReport.max - currentReport.min));
              System.out.println("");
 
             if (Double.parseDouble(diff) >= 5 ) {
@@ -796,7 +798,7 @@ public class ProcessOutput {
         int methodcounter = 0;
         String lastKey = "";
         for (String key : fristhottestsfromeachfile.keySet()) {
-            if (counter >= 30) {
+            if (counter >= 10) {
                 counter = 0;
                 changeInHottets.put(lastKey.split("\\s+")[0], methodcounter);
                 methodcounter = 0;
