@@ -1,0 +1,1320 @@
+--- Execution profile ---
+Total samples       : 221658
+unknown_Java        : 306 (0.14%)
+not_walkable_Java   : 23 (0.01%)
+
+--- 6501223024 ns (29.31%), 64968 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 5859794108 ns (26.42%), 58554 samples
+  [ 0] nbody.Body.setVX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1775081132 ns (8.00%), 17737 samples
+  [ 0] nbody.Body.getZ
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1291797195 ns (5.82%), 12909 samples
+  [ 0] nbody.Body.setVZ
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 765703047 ns (3.45%), 7651 samples
+  [ 0] nbody.Body.setVY
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 742406486 ns (3.35%), 7419 samples
+  [ 0] nbody.Body.setVZ
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 650287173 ns (2.93%), 6499 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 639256754 ns (2.88%), 6388 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 530677035 ns (2.39%), 5303 samples
+  [ 0] nbody.Body.setVY
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 427349166 ns (1.93%), 4271 samples
+  [ 0] nbody.Body.setVX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 388236465 ns (1.75%), 3880 samples
+  [ 0] nbody.Body.setY
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 369544832 ns (1.67%), 3693 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 271748934 ns (1.23%), 2716 samples
+  [ 0] nbody.Body.setX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 264141263 ns (1.19%), 2640 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 229866531 ns (1.04%), 2297 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 173708004 ns (0.78%), 1736 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 163828940 ns (0.74%), 1637 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 161125615 ns (0.73%), 1610 samples
+  [ 0] nbody.Body.getY
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 126960192 ns (0.57%), 1269 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 105111339 ns (0.47%), 1050 samples
+  [ 0] nbody.Body.getMass
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 95467832 ns (0.43%), 954 samples
+  [ 0] nbody.Body.getVZ
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 71056691 ns (0.32%), 710 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 67445300 ns (0.30%), 674 samples
+  [ 0] nbody.Body.setZ
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 64632794 ns (0.29%), 646 samples
+  [ 0] nbody.Body.getX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 62167933 ns (0.28%), 621 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 39261866 ns (0.18%), 392 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 33026339 ns (0.15%), 330 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 31922958 ns (0.14%), 319 samples
+  [ 0] NBody.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 31213778 ns (0.14%), 312 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 29619244 ns (0.13%), 296 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] [unknown_Java]
+
+--- 29335442 ns (0.13%), 293 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 28611663 ns (0.13%), 286 samples
+  [ 0] NBody.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 5413620 ns (0.02%), 54 samples
+  [ 0] nbody.Body.getVX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 3398192 ns (0.02%), 34 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2807481 ns (0.01%), 28 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2804570 ns (0.01%), 28 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2606151 ns (0.01%), 26 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 2303750 ns (0.01%), 23 samples
+  [ 0] Interpreter
+  [ 1] [not_walkable_Java]
+
+--- 2302220 ns (0.01%), 23 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 1399711 ns (0.01%), 14 samples
+  [ 0] nbody.Body.getVX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 1196180 ns (0.01%), 12 samples
+  [ 0] [no_Java_frame]
+
+--- 986160 ns (0.00%), 10 samples
+  [ 0] LinearScan::allocate_registers()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 966061 ns (0.00%), 9 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] __wake_up_common_lock_[k]
+  [ 2] pipe_write_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] java.io.BufferedOutputStream.flushBuffer
+  [14] java.io.BufferedOutputStream.flush
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.writeln
+  [21] java.io.PrintStream.println
+  [22] Run.printResult
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 902581 ns (0.00%), 9 samples
+  [ 0] NBody.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 900670 ns (0.00%), 9 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 696780 ns (0.00%), 7 samples
+  [ 0] LinearScan::build_intervals()
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 609040 ns (0.00%), 6 samples
+  [ 0] java.lang.Long.getChars
+  [ 1] java.lang.StringConcatHelper.prepend
+  [ 2] java.lang.StringConcatHelper.prepend
+  [ 3] java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+
+--- 603030 ns (0.00%), 6 samples
+  [ 0] LIR_OpVisitState::visit(LIR_Op*)
+  [ 1] LinearScan::compute_local_live_sets()
+  [ 2] LinearScan::do_linear_scan()
+  [ 3] Compilation::emit_lir()
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 599350 ns (0.00%), 6 samples
+  [ 0] I2C/C2I adapters(0xb)
+  [ 1] [unknown_Java]
+
+--- 503890 ns (0.00%), 5 samples
+  [ 0] nbody.Body.setVX
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 499840 ns (0.00%), 5 samples
+  [ 0] Relocation::pd_call_destination(unsigned char*)
+  [ 1] CallRelocation::fix_relocation_after_move(CodeBuffer const*, CodeBuffer*)
+  [ 2] CodeBuffer::relocate_code_to(CodeBuffer*) const
+  [ 3] CodeBuffer::copy_code_to(CodeBlob*)
+  [ 4] nmethod::nmethod(Method*, CompilerType, int, int, int, CodeOffsets*, int, DebugInformationRecorder*, Dependencies*, CodeBuffer*, int, OopMapSet*, ExceptionHandlerTable*, ImplicitExceptionTable*, AbstractCompiler*, int, GrowableArrayView<RuntimeStub*> const&, char*, int, int)
+  [ 5] .annobin__ZN7nmethod11new_nmethodERK12methodHandleiiP11CodeOffsetsiP24DebugInformationRecorderP12DependenciesP10CodeBufferiP9OopMapSetP21ExceptionHandlerTableP22ImplicitExceptionTableP16AbstractCompileriRK17GrowableArrayViewIP11RuntimeStubEPciiPKcPP17FailedSpeculation.start
+  [ 6] ciEnv::register_method(ciMethod*, int, CodeOffsets*, int, CodeBuffer*, int, OopMapSet*, ExceptionHandlerTable*, ImplicitExceptionTable*, AbstractCompiler*, bool, bool, RTMState, GrowableArrayView<RuntimeStub*> const&)
+  [ 7] Compilation::install_code(int)
+  [ 8] Compilation::compile_method()
+  [ 9] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [10] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [11] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [12] CompileBroker::compiler_thread_loop()
+  [13] JavaThread::thread_main_inner()
+  [14] .annobin__ZN6Thread8call_runEv.start
+  [15] thread_native_entry(Thread*)
+  [16] start_thread
+
+--- 499720 ns (0.00%), 5 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 496310 ns (0.00%), 5 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 495540 ns (0.00%), 5 samples
+  [ 0] LinearScanWalker::alloc_free_reg(Interval*)
+  [ 1] LinearScanWalker::activate_current()
+  [ 2] LinearScan::allocate_registers()
+  [ 3] LinearScan::do_linear_scan()
+  [ 4] Compilation::emit_lir()
+  [ 5] Compilation::compile_java_method()
+  [ 6] Compilation::compile_method()
+  [ 7] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 8] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 444480 ns (0.00%), 4 samples
+  [ 0] .annobin__ZN15PerfLongVariant6sampleEv.start
+  [ 1] PeriodicTask::real_time_tick(int)
+  [ 2] WatcherThread::run()
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 406291 ns (0.00%), 4 samples
+  [ 0] PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 401110 ns (0.00%), 4 samples
+  [ 0] DebugInformationRecorder::find_sharable_decode_offset(int)
+  [ 1] DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+  [ 2] LIR_Assembler::record_non_safepoint_debug_info()
+  [ 3] LIR_Assembler::process_debug_info(LIR_Op*)
+  [ 4] LIR_Assembler::emit_lir_list(LIR_List*)
+  [ 5] LIR_Assembler::emit_code(BlockList*)
+  [ 6] .annobin__ZN11Compilation14emit_code_bodyEv.start
+  [ 7] Compilation::compile_java_method()
+  [ 8] Compilation::compile_method()
+  [ 9] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [10] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [11] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [12] CompileBroker::compiler_thread_loop()
+  [13] JavaThread::thread_main_inner()
+  [14] .annobin__ZN6Thread8call_runEv.start
+  [15] thread_native_entry(Thread*)
+  [16] start_thread
+
+--- 400470 ns (0.00%), 4 samples
+  [ 0] NBody.innerBenchmarkLoop
+  [ 1] Run.measure
+  [ 2] Run.doRuns
+  [ 3] Run.runBenchmark
+  [ 4] Harness.main
+
+--- 400350 ns (0.00%), 4 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 400280 ns (0.00%), 4 samples
+  [ 0] LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 398040 ns (0.00%), 4 samples
+  [ 0] IntervalWalker::append_to_unhandled(Interval**, Interval*)
+  [ 1] LinearScanWalker::activate_current()
+  [ 2] LinearScan::allocate_registers()
+  [ 3] LinearScan::do_linear_scan()
+  [ 4] Compilation::emit_lir()
+  [ 5] Compilation::compile_java_method()
+  [ 6] Compilation::compile_method()
+  [ 7] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 8] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 397840 ns (0.00%), 4 samples
+  [ 0] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 1] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 397760 ns (0.00%), 4 samples
+  [ 0] LIR_OpVisitState::visit(LIR_Op*)
+  [ 1] LinearScan::build_intervals()
+  [ 2] LinearScan::do_linear_scan()
+  [ 3] Compilation::emit_lir()
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 358820 ns (0.00%), 3 samples
+  [ 0] .annobin__ZN15StatSamplerTask4taskEv.start
+  [ 1] PeriodicTask::real_time_tick(int)
+  [ 2] WatcherThread::run()
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 350740 ns (0.00%), 3 samples
+  [ 0] os::elapsed_counter()
+  [ 1] .annobin__ZN15StatSamplerTask4taskEv.start
+  [ 2] PeriodicTask::real_time_tick(int)
+  [ 3] WatcherThread::run()
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 306180 ns (0.00%), 3 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 303700 ns (0.00%), 3 samples
+  [ 0] GraphBuilder::iterate_bytecodes_for_block(int)
+  [ 1] GraphBuilder::iterate_all_blocks(bool)
+  [ 2] GraphBuilder::GraphBuilder(Compilation*, IRScope*)
+  [ 3] IRScope::IRScope(Compilation*, IRScope*, int, ciMethod*, int, bool)
+  [ 4] IR::IR(Compilation*, ciMethod*, int)
+  [ 5] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [ 6] Compilation::compile_java_method()
+  [ 7] Compilation::compile_method()
+  [ 8] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 9] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [10] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [11] CompileBroker::compiler_thread_loop()
+  [12] JavaThread::thread_main_inner()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 302470 ns (0.00%), 3 samples
+  [ 0] Run.measure
+  [ 1] Run.doRuns
+  [ 2] Run.runBenchmark
+  [ 3] Harness.main
+
+--- 300940 ns (0.00%), 3 samples
+  [ 0] nbody.Body.getVY
+  [ 1] nbody.NBodySystem.advance
+  [ 2] NBody.innerBenchmarkLoop
+  [ 3] Run.measure
+  [ 4] Run.doRuns
+  [ 5] Run.runBenchmark
+  [ 6] Harness.main
+
+--- 300710 ns (0.00%), 3 samples
+  [ 0] DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+  [ 1] LIR_Assembler::record_non_safepoint_debug_info()
+  [ 2] LIR_Assembler::process_debug_info(LIR_Op*)
+  [ 3] LIR_Assembler::emit_lir_list(LIR_List*)
+  [ 4] LIR_Assembler::emit_code(BlockList*)
+  [ 5] .annobin__ZN11Compilation14emit_code_bodyEv.start
+  [ 6] Compilation::compile_java_method()
+  [ 7] Compilation::compile_method()
+  [ 8] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 9] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [10] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [11] CompileBroker::compiler_thread_loop()
+  [12] JavaThread::thread_main_inner()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 300530 ns (0.00%), 3 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 300310 ns (0.00%), 3 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 300150 ns (0.00%), 3 samples
+  [ 0] nbody.NBodySystem.advance
+  [ 1] NBody.innerBenchmarkLoop
+  [ 2] Run.measure
+  [ 3] Run.doRuns
+  [ 4] Run.runBenchmark
+  [ 5] Harness.main
+
+--- 299950 ns (0.00%), 3 samples
+  [ 0] UseCountComputer::visit(Instruction**)
+  [ 1] non-virtual thunk to UseCountComputer::block_do(BlockBegin*)
+  [ 2] BlockList::iterate_backward(BlockClosure*)
+  [ 3] IR::compute_use_counts()
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 299830 ns (0.00%), 3 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 298881 ns (0.00%), 3 samples
+  [ 0] Matcher::find_shared(Node*)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 297620 ns (0.00%), 3 samples
+  [ 0] Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+  [ 1] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 2] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 3] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 4] CompileBroker::compiler_thread_loop()
+  [ 5] JavaThread::thread_main_inner()
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 297600 ns (0.00%), 3 samples
+  [ 0] ValueMap::find_insert(Instruction*)
+  [ 1] GlobalValueNumbering::GlobalValueNumbering(IR*)
+  [ 2] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 297311 ns (0.00%), 3 samples
+  [ 0] vmSymbols::find_sid(Symbol const*)
+  [ 1] ciMethod::ciMethod(methodHandle const&, ciInstanceKlass*)
+  [ 2] ciObjectFactory::create_new_metadata(Metadata*)
+  [ 3] ciObjectFactory::get_metadata(Metadata*)
+  [ 4] ciEnv::get_method_by_index_impl(constantPoolHandle const&, int, Bytecodes::Code, ciInstanceKlass*)
+  [ 5] ciBytecodeStream::get_method(bool&, ciSignature**)
+  [ 6] GraphBuilder::invoke(Bytecodes::Code)
+  [ 7] GraphBuilder::iterate_bytecodes_for_block(int)
+  [ 8] GraphBuilder::iterate_all_blocks(bool)
+  [ 9] GraphBuilder::GraphBuilder(Compilation*, IRScope*)
+  [10] IRScope::IRScope(Compilation*, IRScope*, int, ciMethod*, int, bool)
+  [11] IR::IR(Compilation*, ciMethod*, int)
+  [12] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [13] Compilation::compile_java_method()
+  [14] Compilation::compile_method()
+  [15] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [16] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [17] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [18] CompileBroker::compiler_thread_loop()
+  [19] JavaThread::thread_main_inner()
+  [20] .annobin__ZN6Thread8call_runEv.start
+  [21] thread_native_entry(Thread*)
+  [22] start_thread
+
+--- 296880 ns (0.00%), 3 samples
+  [ 0] PhaseCFG::schedule_early(VectorSet&, Node_Stack&)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 256991 ns (0.00%), 2 samples
+  [ 0] clock_gettime@GLIBC_2.2.5
+  [ 1] WatcherThread::sleep() const
+  [ 2] WatcherThread::run()
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 239280 ns (0.00%), 1 sample
+  [ 0] outputStream::print(char const*, ...)
+  [ 1] CompileTask::print(outputStream*, char const*, bool, bool)
+  [ 2] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 3] CompileBroker::compiler_thread_loop()
+  [ 4] JavaThread::thread_main_inner()
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 237780 ns (0.00%), 2 samples
+  [ 0] __tls_get_addr
+  [ 1] G1ServiceThread::run_service()
+  [ 2] .annobin__ZN18ConcurrentGCThread3runEv.start
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 231720 ns (0.00%), 2 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] Monitor::wait_without_safepoint_check(long)
+  [ 3] WatcherThread::sleep() const
+  [ 4] WatcherThread::run()
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 227390 ns (0.00%), 2 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] futex_wait_queue_[k]
+  [ 2] futex_wait_[k]
+  [ 3] do_futex_[k]
+  [ 4] __x64_sys_futex_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __futex_abstimed_wait_common
+
+--- 224210 ns (0.00%), 2 samples
+  [ 0] PeriodicTask::real_time_tick(int)
+  [ 1] WatcherThread::run()
+  [ 2] .annobin__ZN6Thread8call_runEv.start
+  [ 3] thread_native_entry(Thread*)
+  [ 4] start_thread
+
+--- 224070 ns (0.00%), 2 samples
+  [ 0] WatcherThread::sleep() const
+  [ 1] WatcherThread::run()
+  [ 2] .annobin__ZN6Thread8call_runEv.start
+  [ 3] thread_native_entry(Thread*)
+  [ 4] start_thread
+
+--- 216070 ns (0.00%), 2 samples
+  [ 0] futex_wake_[k]
+  [ 1] do_futex_[k]
+  [ 2] __x64_sys_futex_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __lll_lock_wake
+  [ 6] .annobin__ZN18ConcurrentGCThread3runEv.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 213070 ns (0.00%), 2 samples
+  [ 0] PhaseIdealLoop::split_if_with_blocks_pre(Node*)
+  [ 1] PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 212090 ns (0.00%), 2 samples
+  [ 0] BitMap::is_same(BitMap const&) const
+  [ 1] LinearScan::do_linear_scan()
+  [ 2] Compilation::emit_lir()
+  [ 3] Compilation::compile_java_method()
+  [ 4] Compilation::compile_method()
+  [ 5] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 6] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 208100 ns (0.00%), 2 samples
+  [ 0] ciObjectFactory::ciObjectFactory(Arena*, int)
+  [ 1] ciEnv::ciEnv(CompileTask*)
+  [ 2] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 3] CompileBroker::compiler_thread_loop()
+  [ 4] JavaThread::thread_main_inner()
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 207230 ns (0.00%), 2 samples
+  [ 0] smp_call_function_single_[k]
+  [ 1] perf_install_in_context_[k]
+  [ 2] __do_sys_perf_event_open_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] syscall
+  [ 6] PerfEvents::start(Arguments&)
+  [ 7] Profiler::start(Arguments&, bool)
+  [ 8] Profiler::runInternal(Arguments&, std::ostream&)
+  [ 9] Profiler::run(Arguments&)
+  [10] VM::VMInit(_jvmtiEnv*, JNIEnv_*, _jobject*)
+  [11] JvmtiExport::post_vm_initialized()
+  [12] Threads::create_vm(JavaVMInitArgs*, bool*)
+  [13] JNI_CreateJavaVM
+  [14] JavaMain
+  [15] .annobin_ThreadJavaMain.start
+  [16] start_thread
+
+--- 205410 ns (0.00%), 2 samples
+  [ 0] inflate_fast
+  [ 1] inflate
+  [ 2] Java_java_util_zip_Inflater_inflateBytesBytes
+  [ 3] java.util.zip.Inflater.inflateBytesBytes
+  [ 4] java.util.zip.Inflater.inflate
+  [ 5] java.util.zip.InflaterInputStream.read
+  [ 6] jdk.internal.loader.Resource.getBytes
+  [ 7] jdk.internal.loader.URLClassPath$JarLoader$2.getBytes
+  [ 8] jdk.internal.loader.BuiltinClassLoader.defineClass
+  [ 9] jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull
+  [10] jdk.internal.loader.BuiltinClassLoader.loadClassOrNull
+  [11] jdk.internal.loader.BuiltinClassLoader.loadClass
+  [12] jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass
+  [13] java.lang.ClassLoader.loadClass
+  [14] Harness.processArguments
+  [15] Harness.main
+
+--- 204690 ns (0.00%), 2 samples
+  [ 0] nr_blockdev_pages_[k]
+  [ 1] si_meminfo_[k]
+  [ 2] do_sysinfo.isra.0_[k]
+  [ 3] __do_sys_sysinfo_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI_sysinfo
+  [ 7] CompileBroker::possibly_add_compiler_threads(JavaThread*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 204570 ns (0.00%), 2 samples
+  [ 0] java.lang.StringCoding.implEncodeAsciiArray
+  [ 1] java.lang.System$2.encodeASCII
+  [ 2] sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop
+  [ 3] sun.nio.cs.US_ASCII$Encoder.encodeLoop
+  [ 4] java.nio.charset.CharsetEncoder.encode
+  [ 5] sun.nio.cs.StreamEncoder.implWrite
+  [ 6] sun.nio.cs.StreamEncoder.implWrite
+  [ 7] sun.nio.cs.StreamEncoder.write
+  [ 8] java.io.OutputStreamWriter.write
+  [ 9] java.io.BufferedWriter.flushBuffer
+  [10] java.io.PrintStream.writeln
+  [11] java.io.PrintStream.println
+  [12] Run.printResult
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 204420 ns (0.00%), 2 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] PhaseChaitin::build_ifg_virtual()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 204370 ns (0.00%), 1 sample
+  [ 0] __strcpy_avx2
+  [ 1] Profiler::DynamicCodeGenerated(_jvmtiEnv*, char const*, void const*, int)
+  [ 2] JvmtiExport::post_dynamic_code_generated_internal(char const*, void const*, void const*)
+  [ 3] JvmtiDeferredEvent::post()
+  [ 4] ServiceThread::service_thread_entry(JavaThread*, JavaThread*)
+  [ 5] JavaThread::thread_main_inner()
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 204150 ns (0.00%), 2 samples
+  [ 0] java.nio.Buffer.limit
+  [ 1] java.nio.CharBuffer.limit
+  [ 2] java.nio.CharBuffer.limit
+  [ 3] java.nio.Buffer.<init>
+  [ 4] java.nio.CharBuffer.<init>
+  [ 5] java.nio.HeapCharBuffer.<init>
+  [ 6] java.nio.CharBuffer.wrap
+  [ 7] sun.nio.cs.StreamEncoder.implWrite
+  [ 8] sun.nio.cs.StreamEncoder.write
+  [ 9] java.io.OutputStreamWriter.write
+  [10] java.io.BufferedWriter.flushBuffer
+  [11] java.io.PrintStream.writeln
+  [12] java.io.PrintStream.println
+  [13] Run.printResult
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 203800 ns (0.00%), 2 samples
+  [ 0] java.nio.ByteBuffer.flip
+  [ 1] sun.nio.cs.StreamEncoder.writeBytes
+  [ 2] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 3] sun.nio.cs.StreamEncoder.flushBuffer
+  [ 4] java.io.OutputStreamWriter.flushBuffer
+  [ 5] java.io.PrintStream.writeln
+  [ 6] java.io.PrintStream.println
+  [ 7] Run.printResult
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 203750 ns (0.00%), 2 samples
+  [ 0] InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+  [ 1] InstanceKlass::uncached_lookup_method(Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::PrivateLookupMode) const
+  [ 2] LinkResolver::lookup_method_in_klasses(LinkInfo const&, bool, bool)
+  [ 3] LinkResolver::resolve_method(LinkInfo const&, Bytecodes::Code, JavaThread*)
+  [ 4] LinkResolver::linktime_resolve_virtual_method(LinkInfo const&, JavaThread*)
+  [ 5] LinkResolver::linktime_resolve_virtual_method_or_null(LinkInfo const&)
+  [ 6] ciEnv::lookup_method(ciInstanceKlass*, ciKlass*, Symbol*, Symbol*, Bytecodes::Code, constantTag)
+  [ 7] ciEnv::get_method_by_index_impl(constantPoolHandle const&, int, Bytecodes::Code, ciInstanceKlass*)
+  [ 8] ciBytecodeStream::get_method(bool&, ciSignature**)
+  [ 9] GraphBuilder::invoke(Bytecodes::Code)
+  [10] GraphBuilder::iterate_bytecodes_for_block(int)
+  [11] GraphBuilder::iterate_all_blocks(bool)
+  [12] GraphBuilder::GraphBuilder(Compilation*, IRScope*)
+  [13] IRScope::IRScope(Compilation*, IRScope*, int, ciMethod*, int, bool)
+  [14] IR::IR(Compilation*, ciMethod*, int)
+  [15] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [16] Compilation::compile_java_method()
+  [17] Compilation::compile_method()
+  [18] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [19] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [20] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [21] CompileBroker::compiler_thread_loop()
+  [22] JavaThread::thread_main_inner()
+  [23] .annobin__ZN6Thread8call_runEv.start
+  [24] thread_native_entry(Thread*)
+  [25] start_thread
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+  9432323800   42.52%    94259  nbody.NBodySystem.advance
+  6287946484   28.35%    62833  nbody.Body.setVX
+  2034203681    9.17%    20328  nbody.Body.setVZ
+  1775677772    8.00%    17743  nbody.Body.getZ
+  1296480212    5.84%    12955  nbody.Body.setVY
+   388236465    1.75%     3880  nbody.Body.setY
+   271748934    1.23%     2716  nbody.Body.setX
+   161525815    0.73%     1614  nbody.Body.getY
+   105712770    0.48%     1056  nbody.Body.getMass
+    95867542    0.43%      958  nbody.Body.getVZ
+    67545470    0.30%      675  nbody.Body.setZ
+    65033114    0.29%      650  nbody.Body.getX
+    62438983    0.28%      624  NBody.innerBenchmarkLoop
+     7314311    0.03%       73  nbody.Body.getVX
+     2303750    0.01%       23  Interpreter
+     2040122    0.01%       19  _raw_spin_unlock_irqrestore_[k]
+     1713760    0.01%       17  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+     1196180    0.01%       12  [no_Java_frame]
+     1159300    0.01%       11  __tls_get_addr
+     1104321    0.00%       11  nbody.Body.getVY
+     1103281    0.00%       11  vmSymbols::find_sid(Symbol const*)
+     1100770    0.00%       11  LIR_OpVisitState::visit(LIR_Op*)
+      986160    0.00%       10  LinearScan::allocate_registers()
+      808920    0.00%        8  java.lang.invoke.LambdaForm$MH.0x0000000801008400.invoke
+      799420    0.00%        8  InstanceKlass::find_local_field(Symbol*, Symbol*, fieldDescriptor*) const
+      715610    0.00%        7  futex_wake_[k]
+      701920    0.00%        7  SymbolTable::lookup_shared(char const*, int, unsigned int)
+      701430    0.00%        7  DebugInformationRecorder::find_sharable_decode_offset(int)
+      696780    0.00%        7  LinearScan::build_intervals()
+      628500    0.00%        6  do_user_addr_fault_[k]
+      609040    0.00%        6  java.lang.Long.getChars
+      601281    0.00%        6  nbody.NBodySystem.energy
+      600090    0.00%        6  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+      599350    0.00%        6  I2C/C2I adapters(0xb)
+      596740    0.00%        6  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+      595060    0.00%        6  LinearScanWalker::alloc_free_reg(Interval*)
+      592571    0.00%        5  clock_gettime@GLIBC_2.2.5
+      565540    0.00%        5  .annobin__ZN15PerfLongVariant6sampleEv.start
+      540980    0.00%        5  [vdso]
+      501250    0.00%        5  jdk.internal.org.objectweb.asm.SymbolTable.hash
+      500030    0.00%        5  jdk.internal.org.objectweb.asm.ByteVector.putUTF8
+      499840    0.00%        5  Relocation::pd_call_destination(unsigned char*)
+      499720    0.00%        5  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+      499050    0.00%        5  ValueStack::ValueStack(ValueStack*, ValueStack::Kind, int)
+      498800    0.00%        5  PhaseChaitin::gather_lrg_masks(bool)
+      496310    0.00%        5  PhaseChaitin::Split(unsigned int, ResourceArea*)
+      463290    0.00%        4  .annobin__ZN15StatSamplerTask4taskEv.start
+      434160    0.00%        4  exit_to_user_mode_loop_[k]
+      412870    0.00%        4  clear_page_rep_[k]
+      407810    0.00%        4  sun.nio.cs.US_ASCII$Encoder.encodeArrayLoop
+      406291    0.00%        4  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+      406180    0.00%        4  copy_page_[k]
+      405760    0.00%        4  java.io.BufferedWriter.write
+      404290    0.00%        4  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+      403830    0.00%        4  Run.measure
+      402440    0.00%        4  jdk.internal.org.objectweb.asm.Type.getArgumentsAndReturnSizes
+      401650    0.00%        4  IndexSet::alloc_block_containing(unsigned int)
+      400280    0.00%        4  LinearScan::assign_reg_num(GrowableArray<LIR_Op*>*, IntervalWalker*)
+      399760    0.00%        4  PhaseLive::compute(unsigned int)
+      399750    0.00%        4  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+      399590    0.00%        4  IndexSetIterator::advance_and_next()
+      399430    0.00%        4  DebugInformationRecorder::describe_scope(int, methodHandle const&, ciMethod*, int, bool, bool, bool, bool, bool, bool, bool, DebugToken*, DebugToken*, DebugToken*)
+      399380    0.00%        4  DataLayout::cell_count()
+      399320    0.00%        4  __memmove_avx_unaligned_erms
+      398880    0.00%        4  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+      398040    0.00%        4  IntervalWalker::append_to_unhandled(Interval**, Interval*)
+      397890    0.00%        4  ValueMap::find_insert(Instruction*)
+      396960    0.00%        4  __memset_avx2_unaligned_erms
+      387570    0.00%        3  _int_malloc
+      350740    0.00%        3  os::elapsed_counter()
+      310520    0.00%        3  Mutex::lock_without_safepoint_check()
+      308530    0.00%        2  __strcpy_avx2
+      307680    0.00%        3  syscall_enter_from_user_mode_[k]
+      303700    0.00%        3  GraphBuilder::iterate_bytecodes_for_block(int)
+      303610    0.00%        3  java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+      303410    0.00%        3  ciTypeFlow::StateVector::apply_one_bytecode(ciBytecodeStream*)
+      303160    0.00%        3  java.lang.invoke.MethodHandleNatives.resolve
+      302800    0.00%        3  methodHandle::operator=(methodHandle const&)
+      302650    0.00%        3  java.lang.String.isLatin1
+      302250    0.00%        3  java.lang.invoke.LambdaForm$Name.replaceNames
+      301800    0.00%        3  PhiSimplifier::block_do(BlockBegin*)
+      301280    0.00%        3  java.lang.invoke.MethodType$ConcurrentWeakInternSet.get
+      300980    0.00%        3  .annobin__ZN16LIR_OpVisitState6appendERP11LIR_OprDescNS_7OprModeE.start
+      300860    0.00%        3  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+      300820    0.00%        3  java.lang.invoke.LambdaForm$Name.<init>
+      300530    0.00%        3  PhaseChaitin::post_allocate_copy_removal()
+      300230    0.00%        3  java.lang.invoke.LambdaForm.methodType
+      300070    0.00%        3  Dictionary::find(unsigned int, Symbol*, Handle)
+      299950    0.00%        3  UseCountComputer::visit(Instruction**)
+      299890    0.00%        3  java.lang.StringLatin1.indexOfChar
+      299510    0.00%        3  jdk.internal.org.objectweb.asm.SymbolTable.addConstantMemberReference
+      299440    0.00%        3  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+      299390    0.00%        3  jdk.internal.org.objectweb.asm.Frame.push
+      299140    0.00%        3  java.lang.AbstractStringBuilder.putStringAt
+      299050    0.00%        3  os::free(void*)
+      298960    0.00%        3  java.util.concurrent.ConcurrentHashMap.tabAt
+      298881    0.00%        3  Matcher::find_shared(Node*)
+      297620    0.00%        3  Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+      296980    0.00%        3  __GI___pthread_mutex_unlock_usercnt
+      296880    0.00%        3  PhaseCFG::schedule_early(VectorSet&, Node_Stack&)
+      296680    0.00%        3  ValueMap::kill_memory()
+      296190    0.00%        3  jdk.internal.org.objectweb.asm.SymbolTable.addConstantNameAndType
+      289400    0.00%        3  msort_with_tmp.part.0
+      239280    0.00%        1  outputStream::print(char const*, ...)
+      224210    0.00%        2  PeriodicTask::real_time_tick(int)
+      224070    0.00%        2  WatcherThread::sleep() const
+      217830    0.00%        2  rmqueue_[k]
+      216670    0.00%        2  futex_hash_[k]
+      213850    0.00%        2  rcu_core_[k]
+      213070    0.00%        2  PhaseIdealLoop::split_if_with_blocks_pre(Node*)
+      212090    0.00%        2  BitMap::is_same(BitMap const&) const
+      208100    0.00%        2  ciObjectFactory::ciObjectFactory(Arena*, int)
+      207230    0.00%        2  smp_call_function_single_[k]
+      206750    0.00%        2  Method::link_method(methodHandle const&, JavaThread*)
+      206590    0.00%        2  MethodData::bci_to_dp(int)
+      205550    0.00%        2  java.io.PrintStream.println
+      205410    0.00%        2  inflate_fast
+      204990    0.00%        2  ciField::ciField(ciInstanceKlass*, int)
+      204690    0.00%        2  nr_blockdev_pages_[k]
+      204570    0.00%        2  java.lang.StringCoding.implEncodeAsciiArray
+      204300    0.00%        2  InterpreterRuntime::frequency_counter_overflow_inner(JavaThread*, unsigned char*)
+      204150    0.00%        2  java.nio.Buffer.limit
+      204130    0.00%        2  smp_call_function_many_cond_[k]
+      204100    0.00%        2  java.io.PrintStream.write
+      203800    0.00%        2  java.nio.ByteBuffer.flip
+      203750    0.00%        2  constantPoolHandle::~constantPoolHandle()
+      203690    0.00%        2  LinkResolver::resolve_method(LinkInfo const&, Bytecodes::Code, JavaThread*)
+      203560    0.00%        2  java.lang.invoke.LambdaForm$MH.0x0000000801005000.invoke
+      203500    0.00%        2  __d_lookup_[k]
+      203360    0.00%        2  java.lang.String.checkBoundsOffCount
+      203320    0.00%        2  Type::hashcons()
+      203320    0.00%        2  LIRGenerator::move_to_phi(PhiResolver*, Instruction*, Instruction*)
+      203300    0.00%        2  java.lang.String.getChars
+      203300    0.00%        2  java.nio.CharBuffer.limit
+      203240    0.00%        2  jdk.internal.misc.Unsafe.allocateUninitializedArray
+      203220    0.00%        2  java_lang_ClassLoader::non_reflection_class_loader(oopDesc*)
+      203200    0.00%        2  java.nio.charset.CoderResult.isOverflow
+      203120    0.00%        2  java.nio.CharBuffer.wrap
+      203110    0.00%        2  BlockBegin::try_merge(ValueStack*)
+      203060    0.00%        2  LinkResolver::resolve_field(fieldDescriptor&, LinkInfo const&, Bytecodes::Code, bool, JavaThread*)
+      202790    0.00%        2  GraphBuilder::append_with_bci(Instruction*, int)
+      202750    0.00%        2  LIR_List::store(LIR_OprDesc*, LIR_Address*, CodeEmitInfo*, LIR_PatchCode)
+      202710    0.00%        2  LIRGenerator::do_Base(Base*)
+      202650    0.00%        2  do_sysinfo.isra.0_[k]
+      202640    0.00%        2  LIRGenerator::do_If(If*)
+      202580    0.00%        2  blk_cgroup_congested_[k]
+      202511    0.00%        2  java.net.URL.<init>
+      202500    0.00%        2  java.io.BufferedWriter.newLine
+      202440    0.00%        2  java.lang.AbstractStringBuilder.append
+      202380    0.00%        2  MethodLiveness::BasicBlock::compute_gen_kill_single(ciBytecodeStream*)
+      202290    0.00%        2  JvmtiEnv::GetClassMethods(oopDesc*, int*, _jmethodID***)
+      202200    0.00%        2  java.util.Arrays.equals
+      202090    0.00%        2  Node::Node(unsigned int)
+      202070    0.00%        2  LinearScan::resolve_collect_mappings(BlockBegin*, BlockBegin*, MoveResolver&)
+      201940    0.00%        2  Assembler::reachable(AddressLiteral)
+      201840    0.00%        2  java.lang.invoke.MethodTypeForm.canonicalizeAll
+      201810    0.00%        2  Node::remove_dead_region(PhaseGVN*, bool)
+      201810    0.00%        2  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+      201690    0.00%        2  GrowableArrayWithAllocator<int, GrowableArray<int> >::grow(int)
+      201560    0.00%        2  jdk.internal.org.objectweb.asm.MethodWriter.visitTypeInsn
+      201460    0.00%        2  LinearScan::sort_intervals_before_allocation()
+      201380    0.00%        2  OopFlow::build_oop_map(Node*, int, PhaseRegAlloc*, int*)
+      201350    0.00%        2  CompilerConfig::is_interpreter_only()
+      201310    0.00%        2  TableRateStatistics::add()
+      201230    0.00%        2  java.lang.StringLatin1.hashCode
+      201210    0.00%        2  AddINode::Opcode() const
+      201180    0.00%        2  java.lang.String.indexOf
+      201110    0.00%        2  jdk.internal.org.objectweb.asm.ByteVector.put12
+      201110    0.00%        2  ciObjectFactory::create_new_object(oopDesc*)
+      201070    0.00%        2  LinearScan::add_register_hints(LIR_Op*)
+      201050    0.00%        2  non-virtual thunk to LIRGenerator::block_do(BlockBegin*)
+      201020    0.00%        2  java.lang.invoke.MemberName.checkForTypeAlias
+      201010    0.00%        2  java.lang.invoke.MethodType.checkPtypes
+      200990    0.00%        2  java.lang.invoke.MethodType$ConcurrentWeakInternSet.expungeStaleElements
+      200950    0.00%        2  Dict::Insert(void*, void*, bool)
+      200930    0.00%        2  Matcher::xform(Node*, int)
+      200810    0.00%        2  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+      200790    0.00%        2  ValueStack::values_do(ValueVisitor*)
+      200710    0.00%        2  java.util.concurrent.ConcurrentHashMap.putVal
+      200660    0.00%        2  ciEnv::get_klass_by_index_impl(constantPoolHandle const&, int, bool&, ciInstanceKlass*)
+      200621    0.00%        2  jdk.internal.org.objectweb.asm.Frame.execute
+      200430    0.00%        2  __GI___pthread_mutex_trylock
+      200420    0.00%        2  LinearScan::compute_oop_map(IntervalWalker*, LIR_Op*, CodeEmitInfo*, bool)
+      200400    0.00%        2  InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code)
+      200390    0.00%        2  .annobin__ZN11Instruction6as_PhiEv.start
+      200340    0.00%        2  MethodLiveness::get_liveness_at(int)
+      200260    0.00%        2  LIR_OpVisitState::append(LIR_OprDesc*&, LIR_OpVisitState::OprMode) [clone .constprop.0]
+      200240    0.00%        2  java.util.Arrays.copyOf
+      200210    0.00%        2  non-virtual thunk to SubstitutionResolver::visit(Instruction**)
+      200190    0.00%        2  LIR_Const::as_constant()
+      200050    0.00%        2  PhaseIdealLoop::compute_early_ctrl(Node*, Node*)
+      200030    0.00%        2  java.lang.invoke.MethodTypeForm.canonicalize
+      200020    0.00%        2  java.util.ArrayList.add
+      200000    0.00%        2  java.lang.invoke.InvokerBytecodeGenerator.emitLoadInsn
+      199970    0.00%        2  LIRGenerator::state_for(Instruction*, ValueStack*, bool)
+      199940    0.00%        2  CProjNode::is_block_proj() const
+      199940    0.00%        2  SystemDictionary::resolve_or_fail(Symbol*, Handle, Handle, bool, JavaThread*)
+      199900    0.00%        2  methodHandle::~methodHandle()
+      199900    0.00%        2  java.lang.invoke.MethodType.insertParameterTypes
+      199890    0.00%        2  ResourceObj::operator new(unsigned long, Arena*)

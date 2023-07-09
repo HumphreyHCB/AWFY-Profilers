@@ -1,0 +1,4716 @@
+--- Execution profile ---
+Total samples       : 358
+unknown_Java        : 2 (0.56%)
+
+--- 11600383983 ns (32.40%), 116 samples
+  [ 0] som.IdentitySet.lambda$contains$0
+  [ 1] som.IdentitySet$$Lambda$10.0x0000000801009b40.test
+  [ 2] som.Vector.hasSome
+  [ 3] som.Set.hasSome
+  [ 4] som.IdentitySet.contains
+  [ 5] som.Set.add
+  [ 6] havlak.SimpleLoop.addChildLoop
+  [ 7] havlak.SimpleLoop.setParent
+  [ 8] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 9] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [10] som.Vector.forEach
+  [11] havlak.LoopStructureGraph.calculateNestingLevel
+  [12] havlak.LoopTesterApp.main
+  [13] Havlak.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 2402043456 ns (6.71%), 24 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 2000204537 ns (5.59%), 20 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 1900107228 ns (5.31%), 19 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1700082463 ns (4.75%), 17 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.addDummyLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1300079792 ns (3.63%), 13 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 900055870 ns (2.51%), 9 samples
+  [ 0] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.stepD
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 900050377 ns (2.51%), 9 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 800046684 ns (2.23%), 8 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 5] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.processEdges
+  [ 8] havlak.HavlakLoopFinder.identifyEdges
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 700036555 ns (1.96%), 7 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 500030299 ns (1.40%), 5 samples
+  [ 0] havlak.HavlakLoopFinder.stepD
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 499997702 ns (1.40%), 5 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 400000691 ns (1.12%), 4 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 300294939 ns (0.84%), 3 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 2] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 3] G1ParEvacuateFollowersClosure::do_void()
+  [ 4] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 5] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 300045834 ns (0.84%), 3 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 200010185 ns (0.56%), 2 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 200008976 ns (0.56%), 2 samples
+  [ 0] havlak.SimpleLoop.<init>
+  [ 1] havlak.LoopStructureGraph.createNewLoop
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 200006375 ns (0.56%), 2 samples
+  [ 0] som.Dictionary.transferEntries
+  [ 1] som.Dictionary.resize
+  [ 2] som.Dictionary.atPut
+  [ 3] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 4] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.initAllNodes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 199995645 ns (0.56%), 2 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 100143150 ns (0.28%), 1 sample
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] os::elapsed_counter()
+  [ 3] CompositeElapsedCounterSource::now()
+  [ 4] .annobin__ZN24G1GCParPhaseTimesTrackerC2EP14G1GCPhaseTimesNS0_11GCParPhasesEjb.start
+  [ 5] G1RootProcessor::process_vm_roots(G1RootClosures*, G1GCPhaseTimes*, unsigned int)
+  [ 6] G1RootProcessor::evacuate_roots(G1ParScanThreadState*, unsigned int)
+  [ 7] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 8] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 9] GangWorker::loop()
+  [10] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 100128473 ns (0.28%), 1 sample
+  [ 0] ComputeLinearScanOrder::compute_order(BlockBegin*)
+  [ 1] ComputeLinearScanOrder::ComputeLinearScanOrder(Compilation*, BlockBegin*)
+  [ 2] IR::compute_code()
+  [ 3] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 100116468 ns (0.28%), 1 sample
+  [ 0] Threads::possibly_parallel_oops_do(bool, OopClosure*, CodeBlobClosure*)
+  [ 1] G1RootProcessor::process_java_roots(G1RootClosures*, G1GCPhaseTimes*, unsigned int)
+  [ 2] G1RootProcessor::evacuate_roots(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 100113042 ns (0.28%), 1 sample
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 100099127 ns (0.28%), 1 sample
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 100071529 ns (0.28%), 1 sample
+  [ 0] MergeMemNode::Ideal(PhaseGVN*, bool)
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 100040275 ns (0.28%), 1 sample
+  [ 0] ciObjectFactory::remove_symbols()
+  [ 1] ciEnv::~ciEnv()
+  [ 2] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 3] CompileBroker::compiler_thread_loop()
+  [ 4] JavaThread::thread_main_inner()
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 100037590 ns (0.28%), 1 sample
+  [ 0] CmpPNode::Opcode() const
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 100033867 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 4] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 100027357 ns (0.28%), 1 sample
+  [ 0] PhaseCCP::transform(Node*)
+  [ 1] PhaseCCP::do_transform()
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 100025196 ns (0.28%), 1 sample
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 2] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 100024178 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.initAllNodes
+  [41] havlak.HavlakLoopFinder.findLoops
+  [42] havlak.LoopTesterApp.findLoops
+  [43] havlak.LoopTesterApp.main
+  [44] Havlak.innerBenchmarkLoop
+  [45] Run.measure
+  [46] Run.doRuns
+  [47] Run.runBenchmark
+  [48] Harness.main
+
+--- 100020787 ns (0.28%), 1 sample
+  [ 0] som.Vector.append
+  [ 1] som.Set.add
+  [ 2] havlak.SimpleLoop.addNode
+  [ 3] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 4] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 100020748 ns (0.28%), 1 sample
+  [ 0] som.Dictionary$Entry.<init>
+  [ 1] som.IdentityDictionary$IdEntry.<init>
+  [ 2] som.IdentityDictionary.newEntry
+  [ 3] som.Dictionary.atPut
+  [ 4] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 5] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.initAllNodes
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 100018358 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.initAllNodes
+  [275] havlak.HavlakLoopFinder.findLoops
+  [276] havlak.LoopTesterApp.findLoops
+  [277] havlak.LoopTesterApp.main
+  [278] Havlak.innerBenchmarkLoop
+  [279] Run.measure
+  [280] Run.doRuns
+  [281] Run.runBenchmark
+  [282] Harness.main
+
+--- 100018128 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.doDFS
+  [275] havlak.HavlakLoopFinder.doDFS
+  [276] havlak.HavlakLoopFinder.doDFS
+  [277] havlak.HavlakLoopFinder.doDFS
+  [278] havlak.HavlakLoopFinder.doDFS
+  [279] havlak.HavlakLoopFinder.doDFS
+  [280] havlak.HavlakLoopFinder.doDFS
+  [281] havlak.HavlakLoopFinder.doDFS
+  [282] havlak.HavlakLoopFinder.doDFS
+  [283] havlak.HavlakLoopFinder.doDFS
+  [284] havlak.HavlakLoopFinder.doDFS
+  [285] havlak.HavlakLoopFinder.doDFS
+  [286] havlak.HavlakLoopFinder.doDFS
+  [287] havlak.HavlakLoopFinder.doDFS
+  [288] havlak.HavlakLoopFinder.doDFS
+  [289] havlak.HavlakLoopFinder.doDFS
+  [290] havlak.HavlakLoopFinder.doDFS
+  [291] havlak.HavlakLoopFinder.doDFS
+  [292] havlak.HavlakLoopFinder.doDFS
+  [293] havlak.HavlakLoopFinder.doDFS
+  [294] havlak.HavlakLoopFinder.doDFS
+  [295] havlak.HavlakLoopFinder.doDFS
+  [296] havlak.HavlakLoopFinder.doDFS
+  [297] havlak.HavlakLoopFinder.doDFS
+  [298] havlak.HavlakLoopFinder.doDFS
+  [299] havlak.HavlakLoopFinder.doDFS
+  [300] havlak.HavlakLoopFinder.doDFS
+  [301] havlak.HavlakLoopFinder.doDFS
+  [302] havlak.HavlakLoopFinder.doDFS
+  [303] havlak.HavlakLoopFinder.doDFS
+  [304] havlak.HavlakLoopFinder.doDFS
+  [305] havlak.HavlakLoopFinder.doDFS
+  [306] havlak.HavlakLoopFinder.doDFS
+  [307] havlak.HavlakLoopFinder.doDFS
+  [308] havlak.HavlakLoopFinder.doDFS
+  [309] havlak.HavlakLoopFinder.doDFS
+  [310] havlak.HavlakLoopFinder.doDFS
+  [311] havlak.HavlakLoopFinder.doDFS
+  [312] havlak.HavlakLoopFinder.doDFS
+  [313] havlak.HavlakLoopFinder.doDFS
+  [314] havlak.HavlakLoopFinder.doDFS
+  [315] havlak.HavlakLoopFinder.doDFS
+  [316] havlak.HavlakLoopFinder.doDFS
+  [317] havlak.HavlakLoopFinder.doDFS
+  [318] havlak.HavlakLoopFinder.doDFS
+  [319] havlak.HavlakLoopFinder.doDFS
+  [320] havlak.HavlakLoopFinder.doDFS
+  [321] havlak.HavlakLoopFinder.doDFS
+  [322] havlak.HavlakLoopFinder.doDFS
+  [323] havlak.HavlakLoopFinder.doDFS
+  [324] havlak.HavlakLoopFinder.doDFS
+  [325] havlak.HavlakLoopFinder.doDFS
+  [326] havlak.HavlakLoopFinder.doDFS
+  [327] havlak.HavlakLoopFinder.doDFS
+  [328] havlak.HavlakLoopFinder.doDFS
+  [329] havlak.HavlakLoopFinder.doDFS
+  [330] havlak.HavlakLoopFinder.doDFS
+  [331] havlak.HavlakLoopFinder.doDFS
+  [332] havlak.HavlakLoopFinder.doDFS
+  [333] havlak.HavlakLoopFinder.doDFS
+  [334] havlak.HavlakLoopFinder.doDFS
+  [335] havlak.HavlakLoopFinder.initAllNodes
+  [336] havlak.HavlakLoopFinder.findLoops
+  [337] havlak.LoopTesterApp.findLoops
+  [338] havlak.LoopTesterApp.main
+  [339] Havlak.innerBenchmarkLoop
+  [340] Run.measure
+  [341] Run.doRuns
+  [342] Run.runBenchmark
+  [343] Harness.main
+
+--- 100017058 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.initAllNodes
+  [270] havlak.HavlakLoopFinder.findLoops
+  [271] havlak.LoopTesterApp.findLoops
+  [272] havlak.LoopTesterApp.main
+  [273] Havlak.innerBenchmarkLoop
+  [274] Run.measure
+  [275] Run.doRuns
+  [276] Run.runBenchmark
+  [277] Harness.main
+
+--- 100015818 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 100015117 ns (0.28%), 1 sample
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 2] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.processEdges
+  [ 5] havlak.HavlakLoopFinder.identifyEdges
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100013947 ns (0.28%), 1 sample
+  [ 0] java.util.Arrays.copyOf
+  [ 1] som.Vector.append
+  [ 2] havlak.LoopStructureGraph.createNewLoop
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100013588 ns (0.28%), 1 sample
+  [ 0] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 100013468 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.initAllNodes
+  [220] havlak.HavlakLoopFinder.findLoops
+  [221] havlak.LoopTesterApp.findLoops
+  [222] havlak.LoopTesterApp.main
+  [223] Havlak.innerBenchmarkLoop
+  [224] Run.measure
+  [225] Run.doRuns
+  [226] Run.runBenchmark
+  [227] Harness.main
+
+--- 100013448 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] havlak.UnionFindNode.findSet
+  [ 2] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 3] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 4] som.Vector.forEach
+  [ 5] som.Set.forEach
+  [ 6] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.addDummyLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 100013368 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.doDFS
+  [275] havlak.HavlakLoopFinder.doDFS
+  [276] havlak.HavlakLoopFinder.doDFS
+  [277] havlak.HavlakLoopFinder.doDFS
+  [278] havlak.HavlakLoopFinder.doDFS
+  [279] havlak.HavlakLoopFinder.doDFS
+  [280] havlak.HavlakLoopFinder.doDFS
+  [281] havlak.HavlakLoopFinder.doDFS
+  [282] havlak.HavlakLoopFinder.doDFS
+  [283] havlak.HavlakLoopFinder.doDFS
+  [284] havlak.HavlakLoopFinder.doDFS
+  [285] havlak.HavlakLoopFinder.doDFS
+  [286] havlak.HavlakLoopFinder.doDFS
+  [287] havlak.HavlakLoopFinder.doDFS
+  [288] havlak.HavlakLoopFinder.doDFS
+  [289] havlak.HavlakLoopFinder.doDFS
+  [290] havlak.HavlakLoopFinder.doDFS
+  [291] havlak.HavlakLoopFinder.doDFS
+  [292] havlak.HavlakLoopFinder.doDFS
+  [293] havlak.HavlakLoopFinder.doDFS
+  [294] havlak.HavlakLoopFinder.doDFS
+  [295] havlak.HavlakLoopFinder.doDFS
+  [296] havlak.HavlakLoopFinder.doDFS
+  [297] havlak.HavlakLoopFinder.doDFS
+  [298] havlak.HavlakLoopFinder.doDFS
+  [299] havlak.HavlakLoopFinder.doDFS
+  [300] havlak.HavlakLoopFinder.doDFS
+  [301] havlak.HavlakLoopFinder.doDFS
+  [302] havlak.HavlakLoopFinder.doDFS
+  [303] havlak.HavlakLoopFinder.initAllNodes
+  [304] havlak.HavlakLoopFinder.findLoops
+  [305] havlak.LoopTesterApp.findLoops
+  [306] havlak.LoopTesterApp.main
+  [307] Havlak.innerBenchmarkLoop
+  [308] Run.measure
+  [309] Run.doRuns
+  [310] Run.runBenchmark
+  [311] Harness.main
+
+--- 100012428 ns (0.28%), 1 sample
+  [ 0] PhaseIdealLoop::has_local_phi_input(Node*)
+  [ 1] PhaseIdealLoop::split_if_with_blocks_pre(Node*)
+  [ 2] PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+  [ 3] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 100012288 ns (0.28%), 1 sample
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 100012178 ns (0.28%), 1 sample
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 5] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.processEdges
+  [ 8] havlak.HavlakLoopFinder.identifyEdges
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 100012117 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.initAllNodes
+  [200] havlak.HavlakLoopFinder.findLoops
+  [201] havlak.LoopTesterApp.findLoops
+  [202] havlak.LoopTesterApp.main
+  [203] Havlak.innerBenchmarkLoop
+  [204] Run.measure
+  [205] Run.doRuns
+  [206] Run.runBenchmark
+  [207] Harness.main
+
+--- 100011988 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.initAllNodes
+  [16] havlak.HavlakLoopFinder.findLoops
+  [17] havlak.LoopTesterApp.findLoops
+  [18] havlak.LoopTesterApp.main
+  [19] Havlak.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 100011129 ns (0.28%), 1 sample
+  [ 0] som.Vector.at
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 100011008 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.initAllNodes
+  [140] havlak.HavlakLoopFinder.findLoops
+  [141] havlak.LoopTesterApp.findLoops
+  [142] havlak.LoopTesterApp.main
+  [143] Havlak.innerBenchmarkLoop
+  [144] Run.measure
+  [145] Run.doRuns
+  [146] Run.runBenchmark
+  [147] Harness.main
+
+--- 100010948 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.doDFS
+  [275] havlak.HavlakLoopFinder.doDFS
+  [276] havlak.HavlakLoopFinder.doDFS
+  [277] havlak.HavlakLoopFinder.doDFS
+  [278] havlak.HavlakLoopFinder.doDFS
+  [279] havlak.HavlakLoopFinder.doDFS
+  [280] havlak.HavlakLoopFinder.doDFS
+  [281] havlak.HavlakLoopFinder.doDFS
+  [282] havlak.HavlakLoopFinder.doDFS
+  [283] havlak.HavlakLoopFinder.doDFS
+  [284] havlak.HavlakLoopFinder.initAllNodes
+  [285] havlak.HavlakLoopFinder.findLoops
+  [286] havlak.LoopTesterApp.findLoops
+  [287] havlak.LoopTesterApp.main
+  [288] Havlak.innerBenchmarkLoop
+  [289] Run.measure
+  [290] Run.doRuns
+  [291] Run.runBenchmark
+  [292] Harness.main
+
+--- 100010887 ns (0.28%), 1 sample
+  [ 0] clear_page_rep_[k]
+  [ 1] clear_huge_page_[k]
+  [ 2] __do_huge_pmd_anonymous_page_[k]
+  [ 3] __handle_mm_fault_[k]
+  [ 4] handle_mm_fault_[k]
+  [ 5] do_user_addr_fault_[k]
+  [ 6] exc_page_fault_[k]
+  [ 7] asm_exc_page_fault_[k]
+  [ 8] som.Vector.<init>
+  [ 9] som.Vector.<init>
+  [10] havlak.UnionFindNode.findSet
+  [11] havlak.HavlakLoopFinder.lambda$stepD$6
+  [12] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [13] som.Vector.forEach
+  [14] havlak.HavlakLoopFinder.stepD
+  [15] havlak.HavlakLoopFinder.findLoops
+  [16] havlak.LoopTesterApp.findLoops
+  [17] havlak.LoopTesterApp.main
+  [18] Havlak.innerBenchmarkLoop
+  [19] Run.measure
+  [20] Run.doRuns
+  [21] Run.runBenchmark
+  [22] Harness.main
+
+--- 100010598 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] [unknown_Java]
+
+--- 100009339 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100009108 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 100008837 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 100008828 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.initAllNodes
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 100007888 ns (0.28%), 1 sample
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 100007638 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.initAllNodes
+  [67] havlak.HavlakLoopFinder.findLoops
+  [68] havlak.LoopTesterApp.findLoops
+  [69] havlak.LoopTesterApp.main
+  [70] Havlak.innerBenchmarkLoop
+  [71] Run.measure
+  [72] Run.doRuns
+  [73] Run.runBenchmark
+  [74] Harness.main
+
+--- 100007598 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.initAllNodes
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100007148 ns (0.28%), 1 sample
+  [ 0] som.Vector.at
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100006978 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.initAllNodes
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100006958 ns (0.28%), 1 sample
+  [ 0] java.io.PrintStream.write
+  [ 1] sun.nio.cs.StreamEncoder.writeBytes
+  [ 2] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 3] sun.nio.cs.StreamEncoder.flushBuffer
+  [ 4] java.io.OutputStreamWriter.flushBuffer
+  [ 5] java.io.PrintStream.writeln
+  [ 6] java.io.PrintStream.println
+  [ 7] Run.printResult
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 100006098 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.doDFS
+  [275] havlak.HavlakLoopFinder.doDFS
+  [276] havlak.HavlakLoopFinder.doDFS
+  [277] havlak.HavlakLoopFinder.doDFS
+  [278] havlak.HavlakLoopFinder.doDFS
+  [279] havlak.HavlakLoopFinder.doDFS
+  [280] havlak.HavlakLoopFinder.doDFS
+  [281] havlak.HavlakLoopFinder.doDFS
+  [282] havlak.HavlakLoopFinder.doDFS
+  [283] havlak.HavlakLoopFinder.doDFS
+  [284] havlak.HavlakLoopFinder.doDFS
+  [285] havlak.HavlakLoopFinder.doDFS
+  [286] havlak.HavlakLoopFinder.doDFS
+  [287] havlak.HavlakLoopFinder.doDFS
+  [288] havlak.HavlakLoopFinder.doDFS
+  [289] havlak.HavlakLoopFinder.doDFS
+  [290] havlak.HavlakLoopFinder.doDFS
+  [291] havlak.HavlakLoopFinder.doDFS
+  [292] havlak.HavlakLoopFinder.doDFS
+  [293] havlak.HavlakLoopFinder.doDFS
+  [294] havlak.HavlakLoopFinder.doDFS
+  [295] havlak.HavlakLoopFinder.doDFS
+  [296] havlak.HavlakLoopFinder.doDFS
+  [297] havlak.HavlakLoopFinder.doDFS
+  [298] havlak.HavlakLoopFinder.doDFS
+  [299] havlak.HavlakLoopFinder.doDFS
+  [300] havlak.HavlakLoopFinder.doDFS
+  [301] havlak.HavlakLoopFinder.doDFS
+  [302] havlak.HavlakLoopFinder.doDFS
+  [303] havlak.HavlakLoopFinder.doDFS
+  [304] havlak.HavlakLoopFinder.doDFS
+  [305] havlak.HavlakLoopFinder.doDFS
+  [306] havlak.HavlakLoopFinder.doDFS
+  [307] havlak.HavlakLoopFinder.doDFS
+  [308] havlak.HavlakLoopFinder.doDFS
+  [309] havlak.HavlakLoopFinder.doDFS
+  [310] havlak.HavlakLoopFinder.doDFS
+  [311] havlak.HavlakLoopFinder.doDFS
+  [312] havlak.HavlakLoopFinder.doDFS
+  [313] havlak.HavlakLoopFinder.doDFS
+  [314] havlak.HavlakLoopFinder.doDFS
+  [315] havlak.HavlakLoopFinder.doDFS
+  [316] havlak.HavlakLoopFinder.doDFS
+  [317] havlak.HavlakLoopFinder.doDFS
+  [318] havlak.HavlakLoopFinder.doDFS
+  [319] havlak.HavlakLoopFinder.doDFS
+  [320] havlak.HavlakLoopFinder.doDFS
+  [321] havlak.HavlakLoopFinder.doDFS
+  [322] havlak.HavlakLoopFinder.doDFS
+  [323] havlak.HavlakLoopFinder.doDFS
+  [324] havlak.HavlakLoopFinder.doDFS
+  [325] havlak.HavlakLoopFinder.doDFS
+  [326] havlak.HavlakLoopFinder.doDFS
+  [327] havlak.HavlakLoopFinder.doDFS
+  [328] havlak.HavlakLoopFinder.doDFS
+  [329] havlak.HavlakLoopFinder.doDFS
+  [330] havlak.HavlakLoopFinder.doDFS
+  [331] havlak.HavlakLoopFinder.doDFS
+  [332] havlak.HavlakLoopFinder.doDFS
+  [333] havlak.HavlakLoopFinder.doDFS
+  [334] havlak.HavlakLoopFinder.doDFS
+  [335] havlak.HavlakLoopFinder.doDFS
+  [336] havlak.HavlakLoopFinder.initAllNodes
+  [337] havlak.HavlakLoopFinder.findLoops
+  [338] havlak.LoopTesterApp.findLoops
+  [339] havlak.LoopTesterApp.main
+  [340] Havlak.innerBenchmarkLoop
+  [341] Run.measure
+  [342] Run.doRuns
+  [343] Run.runBenchmark
+  [344] Harness.main
+
+--- 100005897 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Set.<init>
+  [ 2] som.Set.<init>
+  [ 3] som.IdentitySet.<init>
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100004047 ns (0.28%), 1 sample
+  [ 0] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 1] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100003807 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.initAllNodes
+  [60] havlak.HavlakLoopFinder.findLoops
+  [61] havlak.LoopTesterApp.findLoops
+  [62] havlak.LoopTesterApp.main
+  [63] Havlak.innerBenchmarkLoop
+  [64] Run.measure
+  [65] Run.doRuns
+  [66] Run.runBenchmark
+  [67] Harness.main
+
+--- 100003717 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100003508 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.transferEntries
+  [ 1] som.Dictionary.resize
+  [ 2] som.Dictionary.atPut
+  [ 3] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 4] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.initAllNodes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 100003308 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 100002917 ns (0.28%), 1 sample
+  [ 0] som.Set.hasSome
+  [ 1] som.Set.contains
+  [ 2] som.Set.add
+  [ 3] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 4] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 100002878 ns (0.28%), 1 sample
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 100002749 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 2] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.initAllNodes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 100002627 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.doDFS
+  [234] havlak.HavlakLoopFinder.doDFS
+  [235] havlak.HavlakLoopFinder.doDFS
+  [236] havlak.HavlakLoopFinder.doDFS
+  [237] havlak.HavlakLoopFinder.doDFS
+  [238] havlak.HavlakLoopFinder.doDFS
+  [239] havlak.HavlakLoopFinder.doDFS
+  [240] havlak.HavlakLoopFinder.doDFS
+  [241] havlak.HavlakLoopFinder.doDFS
+  [242] havlak.HavlakLoopFinder.doDFS
+  [243] havlak.HavlakLoopFinder.doDFS
+  [244] havlak.HavlakLoopFinder.doDFS
+  [245] havlak.HavlakLoopFinder.doDFS
+  [246] havlak.HavlakLoopFinder.doDFS
+  [247] havlak.HavlakLoopFinder.doDFS
+  [248] havlak.HavlakLoopFinder.doDFS
+  [249] havlak.HavlakLoopFinder.doDFS
+  [250] havlak.HavlakLoopFinder.doDFS
+  [251] havlak.HavlakLoopFinder.doDFS
+  [252] havlak.HavlakLoopFinder.doDFS
+  [253] havlak.HavlakLoopFinder.doDFS
+  [254] havlak.HavlakLoopFinder.doDFS
+  [255] havlak.HavlakLoopFinder.doDFS
+  [256] havlak.HavlakLoopFinder.doDFS
+  [257] havlak.HavlakLoopFinder.doDFS
+  [258] havlak.HavlakLoopFinder.doDFS
+  [259] havlak.HavlakLoopFinder.doDFS
+  [260] havlak.HavlakLoopFinder.doDFS
+  [261] havlak.HavlakLoopFinder.doDFS
+  [262] havlak.HavlakLoopFinder.doDFS
+  [263] havlak.HavlakLoopFinder.doDFS
+  [264] havlak.HavlakLoopFinder.doDFS
+  [265] havlak.HavlakLoopFinder.doDFS
+  [266] havlak.HavlakLoopFinder.doDFS
+  [267] havlak.HavlakLoopFinder.doDFS
+  [268] havlak.HavlakLoopFinder.doDFS
+  [269] havlak.HavlakLoopFinder.doDFS
+  [270] havlak.HavlakLoopFinder.doDFS
+  [271] havlak.HavlakLoopFinder.doDFS
+  [272] havlak.HavlakLoopFinder.doDFS
+  [273] havlak.HavlakLoopFinder.doDFS
+  [274] havlak.HavlakLoopFinder.doDFS
+  [275] havlak.HavlakLoopFinder.doDFS
+  [276] havlak.HavlakLoopFinder.doDFS
+  [277] havlak.HavlakLoopFinder.doDFS
+  [278] havlak.HavlakLoopFinder.doDFS
+  [279] havlak.HavlakLoopFinder.doDFS
+  [280] havlak.HavlakLoopFinder.doDFS
+  [281] havlak.HavlakLoopFinder.doDFS
+  [282] havlak.HavlakLoopFinder.doDFS
+  [283] havlak.HavlakLoopFinder.doDFS
+  [284] havlak.HavlakLoopFinder.doDFS
+  [285] havlak.HavlakLoopFinder.doDFS
+  [286] havlak.HavlakLoopFinder.doDFS
+  [287] havlak.HavlakLoopFinder.doDFS
+  [288] havlak.HavlakLoopFinder.doDFS
+  [289] havlak.HavlakLoopFinder.doDFS
+  [290] havlak.HavlakLoopFinder.doDFS
+  [291] havlak.HavlakLoopFinder.doDFS
+  [292] havlak.HavlakLoopFinder.doDFS
+  [293] havlak.HavlakLoopFinder.doDFS
+  [294] havlak.HavlakLoopFinder.doDFS
+  [295] havlak.HavlakLoopFinder.doDFS
+  [296] havlak.HavlakLoopFinder.doDFS
+  [297] havlak.HavlakLoopFinder.doDFS
+  [298] havlak.HavlakLoopFinder.doDFS
+  [299] havlak.HavlakLoopFinder.doDFS
+  [300] havlak.HavlakLoopFinder.doDFS
+  [301] havlak.HavlakLoopFinder.doDFS
+  [302] havlak.HavlakLoopFinder.doDFS
+  [303] havlak.HavlakLoopFinder.doDFS
+  [304] havlak.HavlakLoopFinder.doDFS
+  [305] havlak.HavlakLoopFinder.doDFS
+  [306] havlak.HavlakLoopFinder.doDFS
+  [307] havlak.HavlakLoopFinder.doDFS
+  [308] havlak.HavlakLoopFinder.doDFS
+  [309] havlak.HavlakLoopFinder.doDFS
+  [310] havlak.HavlakLoopFinder.doDFS
+  [311] havlak.HavlakLoopFinder.doDFS
+  [312] havlak.HavlakLoopFinder.doDFS
+  [313] havlak.HavlakLoopFinder.doDFS
+  [314] havlak.HavlakLoopFinder.doDFS
+  [315] havlak.HavlakLoopFinder.doDFS
+  [316] havlak.HavlakLoopFinder.doDFS
+  [317] havlak.HavlakLoopFinder.initAllNodes
+  [318] havlak.HavlakLoopFinder.findLoops
+  [319] havlak.LoopTesterApp.findLoops
+  [320] havlak.LoopTesterApp.main
+  [321] Havlak.innerBenchmarkLoop
+  [322] Run.measure
+  [323] Run.doRuns
+  [324] Run.runBenchmark
+  [325] Harness.main
+
+--- 100002288 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.doDFS
+  [178] havlak.HavlakLoopFinder.doDFS
+  [179] havlak.HavlakLoopFinder.doDFS
+  [180] havlak.HavlakLoopFinder.doDFS
+  [181] havlak.HavlakLoopFinder.doDFS
+  [182] havlak.HavlakLoopFinder.doDFS
+  [183] havlak.HavlakLoopFinder.doDFS
+  [184] havlak.HavlakLoopFinder.doDFS
+  [185] havlak.HavlakLoopFinder.doDFS
+  [186] havlak.HavlakLoopFinder.doDFS
+  [187] havlak.HavlakLoopFinder.doDFS
+  [188] havlak.HavlakLoopFinder.doDFS
+  [189] havlak.HavlakLoopFinder.doDFS
+  [190] havlak.HavlakLoopFinder.doDFS
+  [191] havlak.HavlakLoopFinder.doDFS
+  [192] havlak.HavlakLoopFinder.doDFS
+  [193] havlak.HavlakLoopFinder.doDFS
+  [194] havlak.HavlakLoopFinder.doDFS
+  [195] havlak.HavlakLoopFinder.doDFS
+  [196] havlak.HavlakLoopFinder.doDFS
+  [197] havlak.HavlakLoopFinder.doDFS
+  [198] havlak.HavlakLoopFinder.doDFS
+  [199] havlak.HavlakLoopFinder.doDFS
+  [200] havlak.HavlakLoopFinder.doDFS
+  [201] havlak.HavlakLoopFinder.doDFS
+  [202] havlak.HavlakLoopFinder.doDFS
+  [203] havlak.HavlakLoopFinder.doDFS
+  [204] havlak.HavlakLoopFinder.doDFS
+  [205] havlak.HavlakLoopFinder.doDFS
+  [206] havlak.HavlakLoopFinder.doDFS
+  [207] havlak.HavlakLoopFinder.doDFS
+  [208] havlak.HavlakLoopFinder.doDFS
+  [209] havlak.HavlakLoopFinder.doDFS
+  [210] havlak.HavlakLoopFinder.doDFS
+  [211] havlak.HavlakLoopFinder.doDFS
+  [212] havlak.HavlakLoopFinder.doDFS
+  [213] havlak.HavlakLoopFinder.doDFS
+  [214] havlak.HavlakLoopFinder.doDFS
+  [215] havlak.HavlakLoopFinder.doDFS
+  [216] havlak.HavlakLoopFinder.doDFS
+  [217] havlak.HavlakLoopFinder.doDFS
+  [218] havlak.HavlakLoopFinder.doDFS
+  [219] havlak.HavlakLoopFinder.doDFS
+  [220] havlak.HavlakLoopFinder.doDFS
+  [221] havlak.HavlakLoopFinder.doDFS
+  [222] havlak.HavlakLoopFinder.doDFS
+  [223] havlak.HavlakLoopFinder.doDFS
+  [224] havlak.HavlakLoopFinder.doDFS
+  [225] havlak.HavlakLoopFinder.doDFS
+  [226] havlak.HavlakLoopFinder.doDFS
+  [227] havlak.HavlakLoopFinder.doDFS
+  [228] havlak.HavlakLoopFinder.doDFS
+  [229] havlak.HavlakLoopFinder.doDFS
+  [230] havlak.HavlakLoopFinder.doDFS
+  [231] havlak.HavlakLoopFinder.doDFS
+  [232] havlak.HavlakLoopFinder.doDFS
+  [233] havlak.HavlakLoopFinder.initAllNodes
+  [234] havlak.HavlakLoopFinder.findLoops
+  [235] havlak.LoopTesterApp.findLoops
+  [236] havlak.LoopTesterApp.main
+  [237] Havlak.innerBenchmarkLoop
+  [238] Run.measure
+  [239] Run.doRuns
+  [240] Run.runBenchmark
+  [241] Harness.main
+
+--- 100001998 ns (0.28%), 1 sample
+  [ 0] MemAllocator::allocate() const
+  [ 1] InstanceKlass::allocate_objArray(int, int, JavaThread*)
+  [ 2] OptoRuntime::new_array_C(Klass*, int, JavaThread*)
+  [ 3] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 4] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.initAllNodes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 100001967 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100001918 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 1] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 100001758 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepD$6
+  [ 4] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.stepD
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 100001678 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.atPut
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.initAllNodes
+  [11] havlak.HavlakLoopFinder.findLoops
+  [12] havlak.LoopTesterApp.findLoops
+  [13] havlak.LoopTesterApp.main
+  [14] Havlak.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 100001627 ns (0.28%), 1 sample
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addNode
+  [ 5] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 6] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 7] som.Vector.forEach
+  [ 8] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 100001437 ns (0.28%), 1 sample
+  [ 0] havlak.SimpleLoop.addNode
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 100000898 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 100000838 ns (0.28%), 1 sample
+  [ 0] havlak.UnionFindNode.union
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100000768 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 100000668 ns (0.28%), 1 sample
+  [ 0] som.Dictionary$Entry.<init>
+  [ 1] som.IdentityDictionary$IdEntry.<init>
+  [ 2] som.IdentityDictionary.newEntry
+  [ 3] som.Dictionary.atPut
+  [ 4] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 5] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.initAllNodes
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 100000658 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.initAllNodes
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 100000567 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.addDummyLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 100000398 ns (0.28%), 1 sample
+  [ 0] som.Vector.forEach
+  [ 1] som.Set.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 3] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 4] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 8] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 100000368 ns (0.28%), 1 sample
+  [ 0] havlak.UnionFindNode.union
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 100000308 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 100000278 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 4] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 99999979 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 99999607 ns (0.28%), 1 sample
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addChildLoop
+  [ 5] havlak.SimpleLoop.setParent
+  [ 6] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 7] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 8] som.Vector.forEach
+  [ 9] havlak.HavlakLoopFinder.setLoopAttributes
+  [10] havlak.HavlakLoopFinder.findLoops
+  [11] havlak.LoopTesterApp.findLoops
+  [12] havlak.LoopTesterApp.addDummyLoops
+  [13] havlak.LoopTesterApp.main
+  [14] Havlak.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 99999558 ns (0.28%), 1 sample
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.HavlakLoopFinder.<init>
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 99999387 ns (0.28%), 1 sample
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addNode
+  [ 5] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 6] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 7] som.Vector.forEach
+  [ 8] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.addDummyLoops
+  [12] havlak.LoopTesterApp.main
+  [13] Havlak.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 99999268 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.initAllNodes
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 99999238 ns (0.28%), 1 sample
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.doDFS
+  [ 8] havlak.HavlakLoopFinder.doDFS
+  [ 9] havlak.HavlakLoopFinder.doDFS
+  [10] havlak.HavlakLoopFinder.doDFS
+  [11] havlak.HavlakLoopFinder.doDFS
+  [12] havlak.HavlakLoopFinder.doDFS
+  [13] havlak.HavlakLoopFinder.doDFS
+  [14] havlak.HavlakLoopFinder.doDFS
+  [15] havlak.HavlakLoopFinder.doDFS
+  [16] havlak.HavlakLoopFinder.doDFS
+  [17] havlak.HavlakLoopFinder.doDFS
+  [18] havlak.HavlakLoopFinder.doDFS
+  [19] havlak.HavlakLoopFinder.doDFS
+  [20] havlak.HavlakLoopFinder.doDFS
+  [21] havlak.HavlakLoopFinder.doDFS
+  [22] havlak.HavlakLoopFinder.doDFS
+  [23] havlak.HavlakLoopFinder.doDFS
+  [24] havlak.HavlakLoopFinder.doDFS
+  [25] havlak.HavlakLoopFinder.doDFS
+  [26] havlak.HavlakLoopFinder.doDFS
+  [27] havlak.HavlakLoopFinder.doDFS
+  [28] havlak.HavlakLoopFinder.doDFS
+  [29] havlak.HavlakLoopFinder.doDFS
+  [30] havlak.HavlakLoopFinder.doDFS
+  [31] havlak.HavlakLoopFinder.doDFS
+  [32] havlak.HavlakLoopFinder.doDFS
+  [33] havlak.HavlakLoopFinder.doDFS
+  [34] havlak.HavlakLoopFinder.doDFS
+  [35] havlak.HavlakLoopFinder.doDFS
+  [36] havlak.HavlakLoopFinder.doDFS
+  [37] havlak.HavlakLoopFinder.doDFS
+  [38] havlak.HavlakLoopFinder.doDFS
+  [39] havlak.HavlakLoopFinder.doDFS
+  [40] havlak.HavlakLoopFinder.doDFS
+  [41] havlak.HavlakLoopFinder.doDFS
+  [42] havlak.HavlakLoopFinder.doDFS
+  [43] havlak.HavlakLoopFinder.doDFS
+  [44] havlak.HavlakLoopFinder.doDFS
+  [45] havlak.HavlakLoopFinder.doDFS
+  [46] havlak.HavlakLoopFinder.doDFS
+  [47] havlak.HavlakLoopFinder.doDFS
+  [48] havlak.HavlakLoopFinder.doDFS
+  [49] havlak.HavlakLoopFinder.doDFS
+  [50] havlak.HavlakLoopFinder.doDFS
+  [51] havlak.HavlakLoopFinder.doDFS
+  [52] havlak.HavlakLoopFinder.doDFS
+  [53] havlak.HavlakLoopFinder.doDFS
+  [54] havlak.HavlakLoopFinder.doDFS
+  [55] havlak.HavlakLoopFinder.doDFS
+  [56] havlak.HavlakLoopFinder.doDFS
+  [57] havlak.HavlakLoopFinder.doDFS
+  [58] havlak.HavlakLoopFinder.doDFS
+  [59] havlak.HavlakLoopFinder.doDFS
+  [60] havlak.HavlakLoopFinder.doDFS
+  [61] havlak.HavlakLoopFinder.doDFS
+  [62] havlak.HavlakLoopFinder.doDFS
+  [63] havlak.HavlakLoopFinder.doDFS
+  [64] havlak.HavlakLoopFinder.doDFS
+  [65] havlak.HavlakLoopFinder.doDFS
+  [66] havlak.HavlakLoopFinder.doDFS
+  [67] havlak.HavlakLoopFinder.doDFS
+  [68] havlak.HavlakLoopFinder.doDFS
+  [69] havlak.HavlakLoopFinder.doDFS
+  [70] havlak.HavlakLoopFinder.doDFS
+  [71] havlak.HavlakLoopFinder.doDFS
+  [72] havlak.HavlakLoopFinder.doDFS
+  [73] havlak.HavlakLoopFinder.doDFS
+  [74] havlak.HavlakLoopFinder.doDFS
+  [75] havlak.HavlakLoopFinder.doDFS
+  [76] havlak.HavlakLoopFinder.doDFS
+  [77] havlak.HavlakLoopFinder.doDFS
+  [78] havlak.HavlakLoopFinder.doDFS
+  [79] havlak.HavlakLoopFinder.doDFS
+  [80] havlak.HavlakLoopFinder.doDFS
+  [81] havlak.HavlakLoopFinder.doDFS
+  [82] havlak.HavlakLoopFinder.doDFS
+  [83] havlak.HavlakLoopFinder.doDFS
+  [84] havlak.HavlakLoopFinder.doDFS
+  [85] havlak.HavlakLoopFinder.doDFS
+  [86] havlak.HavlakLoopFinder.doDFS
+  [87] havlak.HavlakLoopFinder.doDFS
+  [88] havlak.HavlakLoopFinder.doDFS
+  [89] havlak.HavlakLoopFinder.doDFS
+  [90] havlak.HavlakLoopFinder.doDFS
+  [91] havlak.HavlakLoopFinder.doDFS
+  [92] havlak.HavlakLoopFinder.doDFS
+  [93] havlak.HavlakLoopFinder.doDFS
+  [94] havlak.HavlakLoopFinder.doDFS
+  [95] havlak.HavlakLoopFinder.doDFS
+  [96] havlak.HavlakLoopFinder.doDFS
+  [97] havlak.HavlakLoopFinder.doDFS
+  [98] havlak.HavlakLoopFinder.doDFS
+  [99] havlak.HavlakLoopFinder.doDFS
+  [100] havlak.HavlakLoopFinder.doDFS
+  [101] havlak.HavlakLoopFinder.doDFS
+  [102] havlak.HavlakLoopFinder.doDFS
+  [103] havlak.HavlakLoopFinder.doDFS
+  [104] havlak.HavlakLoopFinder.doDFS
+  [105] havlak.HavlakLoopFinder.doDFS
+  [106] havlak.HavlakLoopFinder.doDFS
+  [107] havlak.HavlakLoopFinder.doDFS
+  [108] havlak.HavlakLoopFinder.doDFS
+  [109] havlak.HavlakLoopFinder.doDFS
+  [110] havlak.HavlakLoopFinder.doDFS
+  [111] havlak.HavlakLoopFinder.doDFS
+  [112] havlak.HavlakLoopFinder.doDFS
+  [113] havlak.HavlakLoopFinder.doDFS
+  [114] havlak.HavlakLoopFinder.doDFS
+  [115] havlak.HavlakLoopFinder.doDFS
+  [116] havlak.HavlakLoopFinder.doDFS
+  [117] havlak.HavlakLoopFinder.doDFS
+  [118] havlak.HavlakLoopFinder.doDFS
+  [119] havlak.HavlakLoopFinder.doDFS
+  [120] havlak.HavlakLoopFinder.doDFS
+  [121] havlak.HavlakLoopFinder.doDFS
+  [122] havlak.HavlakLoopFinder.doDFS
+  [123] havlak.HavlakLoopFinder.doDFS
+  [124] havlak.HavlakLoopFinder.doDFS
+  [125] havlak.HavlakLoopFinder.doDFS
+  [126] havlak.HavlakLoopFinder.doDFS
+  [127] havlak.HavlakLoopFinder.doDFS
+  [128] havlak.HavlakLoopFinder.doDFS
+  [129] havlak.HavlakLoopFinder.doDFS
+  [130] havlak.HavlakLoopFinder.doDFS
+  [131] havlak.HavlakLoopFinder.doDFS
+  [132] havlak.HavlakLoopFinder.doDFS
+  [133] havlak.HavlakLoopFinder.doDFS
+  [134] havlak.HavlakLoopFinder.doDFS
+  [135] havlak.HavlakLoopFinder.doDFS
+  [136] havlak.HavlakLoopFinder.doDFS
+  [137] havlak.HavlakLoopFinder.doDFS
+  [138] havlak.HavlakLoopFinder.doDFS
+  [139] havlak.HavlakLoopFinder.doDFS
+  [140] havlak.HavlakLoopFinder.doDFS
+  [141] havlak.HavlakLoopFinder.doDFS
+  [142] havlak.HavlakLoopFinder.doDFS
+  [143] havlak.HavlakLoopFinder.doDFS
+  [144] havlak.HavlakLoopFinder.doDFS
+  [145] havlak.HavlakLoopFinder.doDFS
+  [146] havlak.HavlakLoopFinder.doDFS
+  [147] havlak.HavlakLoopFinder.doDFS
+  [148] havlak.HavlakLoopFinder.doDFS
+  [149] havlak.HavlakLoopFinder.doDFS
+  [150] havlak.HavlakLoopFinder.doDFS
+  [151] havlak.HavlakLoopFinder.doDFS
+  [152] havlak.HavlakLoopFinder.doDFS
+  [153] havlak.HavlakLoopFinder.doDFS
+  [154] havlak.HavlakLoopFinder.doDFS
+  [155] havlak.HavlakLoopFinder.doDFS
+  [156] havlak.HavlakLoopFinder.doDFS
+  [157] havlak.HavlakLoopFinder.doDFS
+  [158] havlak.HavlakLoopFinder.doDFS
+  [159] havlak.HavlakLoopFinder.doDFS
+  [160] havlak.HavlakLoopFinder.doDFS
+  [161] havlak.HavlakLoopFinder.doDFS
+  [162] havlak.HavlakLoopFinder.doDFS
+  [163] havlak.HavlakLoopFinder.doDFS
+  [164] havlak.HavlakLoopFinder.doDFS
+  [165] havlak.HavlakLoopFinder.doDFS
+  [166] havlak.HavlakLoopFinder.doDFS
+  [167] havlak.HavlakLoopFinder.doDFS
+  [168] havlak.HavlakLoopFinder.doDFS
+  [169] havlak.HavlakLoopFinder.doDFS
+  [170] havlak.HavlakLoopFinder.doDFS
+  [171] havlak.HavlakLoopFinder.doDFS
+  [172] havlak.HavlakLoopFinder.doDFS
+  [173] havlak.HavlakLoopFinder.doDFS
+  [174] havlak.HavlakLoopFinder.doDFS
+  [175] havlak.HavlakLoopFinder.doDFS
+  [176] havlak.HavlakLoopFinder.doDFS
+  [177] havlak.HavlakLoopFinder.initAllNodes
+  [178] havlak.HavlakLoopFinder.findLoops
+  [179] havlak.LoopTesterApp.findLoops
+  [180] havlak.LoopTesterApp.main
+  [181] Havlak.innerBenchmarkLoop
+  [182] Run.measure
+  [183] Run.doRuns
+  [184] Run.runBenchmark
+  [185] Harness.main
+
+--- 99998637 ns (0.28%), 1 sample
+  [ 0] som.Dictionary.removeAll
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 99998238 ns (0.28%), 1 sample
+  [ 0] havlak.UnionFindNode.findSet
+  [ 1] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 2] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 3] som.Vector.forEach
+  [ 4] som.Set.forEach
+  [ 5] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.addDummyLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 11600383983   32.40%      116  som.IdentitySet.lambda$contains$0
+  3900282645   10.89%       39  havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  2502142583    6.99%       25  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  2500102746    6.98%       25  havlak.HavlakLoopFinder.lambda$processEdges$1
+  2100122351    5.87%       21  havlak.HavlakLoopFinder.findLoops
+  1700126394    4.75%       17  havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  1700120302    4.75%       17  havlak.HavlakLoopFinder.doDFS
+  1300056260    3.63%       13  som.Vector.hasSome
+   900055870    2.51%        9  havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+   900053782    2.51%        9  som.Vector.append
+   700071647    1.96%        7  som.Dictionary.atPut
+   700054005    1.96%        7  som.Vector.<init>
+   600033146    1.68%        6  som.Vector.forEach
+   600026137    1.68%        6  havlak.HavlakLoopFinder.stepD
+   400407981    1.12%        4  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   300009883    0.84%        3  som.Dictionary.transferEntries
+   200021416    0.56%        2  som.Dictionary$Entry.<init>
+   200018277    0.56%        2  som.Vector.at
+   200008976    0.56%        2  havlak.SimpleLoop.<init>
+   200001835    0.56%        2  java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+   200001206    0.56%        2  havlak.UnionFindNode.union
+   100143150    0.28%        1  [vdso]
+   100128473    0.28%        1  ComputeLinearScanOrder::compute_order(BlockBegin*)
+   100116468    0.28%        1  Threads::possibly_parallel_oops_do(bool, OopClosure*, CodeBlobClosure*)
+   100071529    0.28%        1  MergeMemNode::Ideal(PhaseGVN*, bool)
+   100040275    0.28%        1  ciObjectFactory::remove_symbols()
+   100037590    0.28%        1  CmpPNode::Opcode() const
+   100027357    0.28%        1  PhaseCCP::transform(Node*)
+   100025196    0.28%        1  IndexSetIterator::advance_and_next()
+   100013947    0.28%        1  java.util.Arrays.copyOf
+   100013588    0.28%        1  havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+   100012428    0.28%        1  PhaseIdealLoop::has_local_phi_input(Node*)
+   100010887    0.28%        1  clear_page_rep_[k]
+   100008828    0.28%        1  havlak.HavlakLoopFinder.initAllNodes
+   100006958    0.28%        1  java.io.PrintStream.write
+   100003717    0.28%        1  havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+   100002917    0.28%        1  som.Set.hasSome
+   100002878    0.28%        1  PhaseLive::compute(unsigned int)
+   100001998    0.28%        1  MemAllocator::allocate() const
+   100001918    0.28%        1  havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+   100001437    0.28%        1  havlak.SimpleLoop.addNode
+    99998637    0.28%        1  som.Dictionary.removeAll
+    99998238    0.28%        1  havlak.UnionFindNode.findSet
+    99998047    0.28%        1  java.lang.StringLatin1.charAt
+    99997268    0.28%        1  havlak.UnionFindNode$$Lambda$7.0x00000008010094c8.<init>

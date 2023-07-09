@@ -1,0 +1,2272 @@
+--- Execution profile ---
+Total samples       : 572721
+GC_active           : 4 (0.00%)
+unknown_Java        : 6811 (1.19%)
+not_walkable_Java   : 2360 (0.41%)
+deoptimization      : 1 (0.00%)
+skipped             : 1 (0.00%)
+
+--- 16836546694 ns (2.94%), 16828 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] org.apache.lucene.queryParser.FastCharStream.refill
+  [10] org.apache.lucene.queryParser.FastCharStream.readChar
+  [11] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [14] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [15] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [16] org.apache.lucene.queryParser.QueryParser.Query
+  [17] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [18] org.apache.lucene.queryParser.QueryParser.parse
+  [19] org.dacapo.lusearch.Search$QueryProcessor.run
+  [20] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 15722537538 ns (2.74%), 15715 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] org.apache.lucene.queryParser.FastCharStream.refill
+  [10] org.apache.lucene.queryParser.FastCharStream.readChar
+  [11] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [13] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [14] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [15] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [16] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [17] org.apache.lucene.queryParser.QueryParser.Clause
+  [18] org.apache.lucene.queryParser.QueryParser.Query
+  [19] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [20] org.apache.lucene.queryParser.QueryParser.parse
+  [21] org.dacapo.lusearch.Search$QueryProcessor.run
+  [22] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 15245902336 ns (2.66%), 15245 samples
+  [ 0] jshort_disjoint_arraycopy
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 2] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 3] org.apache.lucene.index.TermBuffer.set
+  [ 4] org.apache.lucene.index.SegmentTermEnum.next
+  [ 5] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.TermInfosReader.get
+  [ 8] org.apache.lucene.index.SegmentReader.docFreq
+  [ 9] org.apache.lucene.search.IndexSearcher.docFreq
+  [10] org.apache.lucene.search.Similarity.idf
+  [11] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [12] org.apache.lucene.search.TermQuery.createWeight
+  [13] org.apache.lucene.search.Query.weight
+  [14] org.apache.lucene.search.Searcher.createWeight
+  [15] org.apache.lucene.search.Searcher.search
+  [16] org.dacapo.lusearch.Search$QueryProcessor.run
+  [17] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 11639467722 ns (2.03%), 11639 samples
+  [ 0] jbyte_disjoint_arraycopy
+  [ 1] org.apache.lucene.store.IndexInput.readVLong
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 8418237243 ns (1.47%), 8417 samples
+  [ 0] org.apache.lucene.queryParser.FastCharStream.refill
+  [ 1] org.apache.lucene.queryParser.FastCharStream.readChar
+  [ 2] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [ 3] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 4] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [ 5] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [ 6] org.apache.lucene.queryParser.QueryParser.Query
+  [ 7] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [ 8] org.apache.lucene.queryParser.QueryParser.parse
+  [ 9] org.dacapo.lusearch.Search$QueryProcessor.run
+  [10] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 7468596231 ns (1.30%), 7469 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 6917614557 ns (1.21%), 6918 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 2] org.apache.lucene.index.TermBuffer.set
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 5792864301 ns (1.01%), 5793 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVInt
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 5591161215 ns (0.98%), 5591 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 5331430770 ns (0.93%), 5311 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] copy_page_to_iter_[k]
+  [ 2] filemap_read_[k]
+  [ 3] xfs_file_buffered_read?[xfs]_[k]
+  [ 4] xfs_file_read_iter?[xfs]_[k]
+  [ 5] new_sync_read_[k]
+  [ 6] vfs_read_[k]
+  [ 7] ksys_read_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __read
+  [11] readBytes
+  [12] java.io.RandomAccessFile.readBytes
+  [13] java.io.RandomAccessFile.read
+  [14] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [15] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [16] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [17] org.apache.lucene.store.BufferedIndexInput.refill
+  [18] org.apache.lucene.store.BufferedIndexInput.readByte
+  [19] org.apache.lucene.store.IndexInput.readVInt
+  [20] org.apache.lucene.index.TermBuffer.read
+  [21] org.apache.lucene.index.SegmentTermEnum.next
+  [22] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [23] org.apache.lucene.index.TermInfosReader.get
+  [24] org.apache.lucene.index.TermInfosReader.get
+  [25] org.apache.lucene.index.SegmentReader.docFreq
+  [26] org.apache.lucene.search.IndexSearcher.docFreq
+  [27] org.apache.lucene.search.Similarity.idf
+  [28] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [29] org.apache.lucene.search.TermQuery.createWeight
+  [30] org.apache.lucene.search.Query.weight
+  [31] org.apache.lucene.search.Searcher.createWeight
+  [32] org.apache.lucene.search.Searcher.search
+  [33] org.dacapo.lusearch.Search$QueryProcessor.run
+  [34] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 5113140920 ns (0.89%), 5095 samples
+  [ 0] filemap_get_read_batch_[k]
+  [ 1] filemap_get_pages_[k]
+  [ 2] filemap_read_[k]
+  [ 3] xfs_file_buffered_read?[xfs]_[k]
+  [ 4] xfs_file_read_iter?[xfs]_[k]
+  [ 5] new_sync_read_[k]
+  [ 6] vfs_read_[k]
+  [ 7] ksys_read_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __read
+  [11] readBytes
+  [12] java.io.RandomAccessFile.readBytes
+  [13] java.io.RandomAccessFile.read
+  [14] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [15] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [16] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [17] org.apache.lucene.store.BufferedIndexInput.refill
+  [18] org.apache.lucene.store.BufferedIndexInput.readByte
+  [19] org.apache.lucene.store.IndexInput.readVInt
+  [20] org.apache.lucene.index.TermBuffer.read
+  [21] org.apache.lucene.index.SegmentTermEnum.next
+  [22] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [23] org.apache.lucene.index.TermInfosReader.get
+  [24] org.apache.lucene.index.TermInfosReader.get
+  [25] org.apache.lucene.index.SegmentReader.docFreq
+  [26] org.apache.lucene.search.IndexSearcher.docFreq
+  [27] org.apache.lucene.search.Similarity.idf
+  [28] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [29] org.apache.lucene.search.TermQuery.createWeight
+  [30] org.apache.lucene.search.Query.weight
+  [31] org.apache.lucene.search.Searcher.createWeight
+  [32] org.apache.lucene.search.Searcher.search
+  [33] org.dacapo.lusearch.Search$QueryProcessor.run
+  [34] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 4679689322 ns (0.82%), 4680 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 4437168130 ns (0.77%), 4437 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVInt
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 4351123804 ns (0.76%), 4351 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 2] org.apache.lucene.index.TermBuffer.set
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3893152169 ns (0.68%), 3893 samples
+  [ 0] org.apache.lucene.index.TermInfosReader.get
+  [ 1] [unknown_Java]
+
+--- 3884190175 ns (0.68%), 3884 samples
+  [ 0] org.apache.lucene.index.TermBuffer.compareChars
+  [ 1] org.apache.lucene.index.TermBuffer.compareTo
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3608264578 ns (0.63%), 3608 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 1] org.apache.lucene.store.IndexInput.readVInt
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3516143306 ns (0.61%), 3516 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 1] org.apache.lucene.index.TermBuffer.set
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3474769370 ns (0.61%), 3464 samples
+  [ 0] lockref_get_not_zero_[k]
+  [ 1] dget_parent_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_read_[k]
+  [ 4] ksys_read_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __read
+  [ 8] readBytes
+  [ 9] java.io.RandomAccessFile.readBytes
+  [10] java.io.RandomAccessFile.read
+  [11] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [12] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [13] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [14] org.apache.lucene.store.BufferedIndexInput.refill
+  [15] org.apache.lucene.store.BufferedIndexInput.readByte
+  [16] org.apache.lucene.store.IndexInput.readVInt
+  [17] org.apache.lucene.index.TermBuffer.read
+  [18] org.apache.lucene.index.SegmentTermEnum.next
+  [19] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [20] org.apache.lucene.index.TermInfosReader.get
+  [21] org.apache.lucene.index.TermInfosReader.get
+  [22] org.apache.lucene.index.SegmentReader.docFreq
+  [23] org.apache.lucene.search.IndexSearcher.docFreq
+  [24] org.apache.lucene.search.Similarity.idf
+  [25] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [26] org.apache.lucene.search.TermQuery.createWeight
+  [27] org.apache.lucene.search.Query.weight
+  [28] org.apache.lucene.search.Searcher.createWeight
+  [29] org.apache.lucene.search.Searcher.search
+  [30] org.dacapo.lusearch.Search$QueryProcessor.run
+  [31] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3417706228 ns (0.60%), 3416 samples
+  [ 0] CodeHeap::find_blob_unsafe(void*) const
+  [ 1] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 2] frame::sender(RegisterMap*) const
+  [ 3] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 4] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 5] JVM_FillInStackTrace
+  [ 6] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.fillInStackTrace
+  [ 9] java.lang.Throwable.<init>
+  [10] java.lang.Exception.<init>
+  [11] java.io.IOException.<init>
+  [12] org.apache.lucene.queryParser.FastCharStream.refill
+  [13] org.apache.lucene.queryParser.FastCharStream.readChar
+  [14] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [16] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [17] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [18] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [19] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [20] org.apache.lucene.queryParser.QueryParser.Clause
+  [21] org.apache.lucene.queryParser.QueryParser.Query
+  [22] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [23] org.apache.lucene.queryParser.QueryParser.parse
+  [24] org.dacapo.lusearch.Search$QueryProcessor.run
+  [25] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3220884757 ns (0.56%), 3219 samples
+  [ 0] CodeHeap::find_blob_unsafe(void*) const
+  [ 1] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 2] frame::sender(RegisterMap*) const
+  [ 3] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 4] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 5] JVM_FillInStackTrace
+  [ 6] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.fillInStackTrace
+  [ 9] java.lang.Throwable.<init>
+  [10] java.lang.Exception.<init>
+  [11] java.io.IOException.<init>
+  [12] org.apache.lucene.queryParser.FastCharStream.refill
+  [13] org.apache.lucene.queryParser.FastCharStream.readChar
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [16] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [17] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [18] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [19] org.apache.lucene.queryParser.QueryParser.Query
+  [20] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [21] org.apache.lucene.queryParser.QueryParser.parse
+  [22] org.dacapo.lusearch.Search$QueryProcessor.run
+  [23] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3184818388 ns (0.56%), 3185 samples
+  [ 0] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 1] org.apache.lucene.index.TermInfosReader.get
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.SegmentReader.docFreq
+  [ 4] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 5] org.apache.lucene.search.Similarity.idf
+  [ 6] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 7] org.apache.lucene.search.TermQuery.createWeight
+  [ 8] org.apache.lucene.search.Query.weight
+  [ 9] org.apache.lucene.search.Searcher.createWeight
+  [10] org.apache.lucene.search.Searcher.search
+  [11] org.dacapo.lusearch.Search$QueryProcessor.run
+  [12] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3169033114 ns (0.55%), 3169 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVLong
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3100008634 ns (0.54%), 3100 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 3001040066 ns (0.52%), 2995 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __libc_lseek
+  [ 4] java.io.RandomAccessFile.seek0
+  [ 5] java.io.RandomAccessFile.seek
+  [ 6] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 7] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 8] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 9] org.apache.lucene.store.BufferedIndexInput.refill
+  [10] org.apache.lucene.store.BufferedIndexInput.readByte
+  [11] org.apache.lucene.store.IndexInput.readVInt
+  [12] org.apache.lucene.index.TermBuffer.read
+  [13] org.apache.lucene.index.SegmentTermEnum.next
+  [14] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [15] org.apache.lucene.index.TermInfosReader.get
+  [16] org.apache.lucene.index.TermInfosReader.get
+  [17] org.apache.lucene.index.SegmentReader.docFreq
+  [18] org.apache.lucene.search.IndexSearcher.docFreq
+  [19] org.apache.lucene.search.Similarity.idf
+  [20] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [21] org.apache.lucene.search.TermQuery.createWeight
+  [22] org.apache.lucene.search.Query.weight
+  [23] org.apache.lucene.search.Searcher.createWeight
+  [24] org.apache.lucene.search.Searcher.search
+  [25] org.dacapo.lusearch.Search$QueryProcessor.run
+  [26] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2904017662 ns (0.51%), 2904 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF8Result.setLength
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2899900354 ns (0.51%), 2900 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVInt
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2871070988 ns (0.50%), 2871 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2847044525 ns (0.50%), 2847 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 2] org.apache.lucene.index.TermBuffer.set
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2827980438 ns (0.49%), 2828 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2469055931 ns (0.43%), 2469 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2444167585 ns (0.43%), 2444 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2329124233 ns (0.41%), 2329 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 1] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2106851737 ns (0.37%), 2107 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVInt
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2091963548 ns (0.36%), 2092 samples
+  [ 0] org.apache.lucene.index.SegmentTermEnum.next
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2040055886 ns (0.36%), 2040 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2016886946 ns (0.35%), 2017 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVInt
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 2008350548 ns (0.35%), 2008 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 1] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1890947439 ns (0.33%), 1891 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1878918013 ns (0.33%), 1879 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 1] org.apache.lucene.index.TermBuffer.set
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1850875548 ns (0.32%), 1850 samples
+  [ 0] .annobin__ZN13ObjArrayKlass8allocateEiP10JavaThread.start
+  [ 1] BacktraceBuilder::expand(JavaThread*)
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [16] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [17] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [18] org.apache.lucene.queryParser.QueryParser.Query
+  [19] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [20] org.apache.lucene.queryParser.QueryParser.parse
+  [21] org.dacapo.lusearch.Search$QueryProcessor.run
+  [22] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1847107171 ns (0.32%), 1847 samples
+  [ 0] java.lang.String.getChars
+  [ 1] org.apache.lucene.index.TermBuffer.set
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1779064949 ns (0.31%), 1779 samples
+  [ 0] org.apache.lucene.index.TermBuffer.compareChars
+  [ 1] org.apache.lucene.index.TermBuffer.compareTo
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1774309873 ns (0.31%), 1775 samples
+  [ 0] org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAdd
+  [ 1] org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAddStates
+  [ 2] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [ 3] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [ 4] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 5] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [ 6] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [ 7] org.apache.lucene.queryParser.QueryParser.Query
+  [ 8] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [ 9] org.apache.lucene.queryParser.QueryParser.parse
+  [10] org.dacapo.lusearch.Search$QueryProcessor.run
+  [11] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1732094245 ns (0.30%), 1725 samples
+  [ 0] clear_page_rep_[k]
+  [ 1] clear_huge_page_[k]
+  [ 2] __do_huge_pmd_anonymous_page_[k]
+  [ 3] __handle_mm_fault_[k]
+  [ 4] handle_mm_fault_[k]
+  [ 5] do_user_addr_fault_[k]
+  [ 6] exc_page_fault_[k]
+  [ 7] asm_exc_page_fault_[k]
+  [ 8] ObjArrayAllocator::initialize(HeapWordImpl**) const
+  [ 9] MemAllocator::allocate() const
+  [10] TypeArrayKlass::allocate_common(int, bool, JavaThread*)
+  [11] OptoRuntime::new_array_C(Klass*, int, JavaThread*)
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [15] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [16] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [17] org.apache.lucene.queryParser.QueryParser.Query
+  [18] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [19] org.apache.lucene.queryParser.QueryParser.parse
+  [20] org.dacapo.lusearch.Search$QueryProcessor.run
+  [21] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1680318103 ns (0.29%), 1680 samples
+  [ 0] org.apache.lucene.search.TermScorer.<init>
+  [ 1] org.apache.lucene.search.TermQuery$TermWeight.scorer
+  [ 2] org.apache.lucene.search.IndexSearcher.search
+  [ 3] org.apache.lucene.search.Searcher.search
+  [ 4] org.apache.lucene.search.Searcher.search
+  [ 5] org.dacapo.lusearch.Search$QueryProcessor.doPagingSearch
+  [ 6] org.dacapo.lusearch.Search$QueryProcessor.run
+  [ 7] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1666860570 ns (0.29%), 1666 samples
+  [ 0] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 1] frame::sender(RegisterMap*) const
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [15] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [16] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [17] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [18] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [19] org.apache.lucene.queryParser.QueryParser.Clause
+  [20] org.apache.lucene.queryParser.QueryParser.Query
+  [21] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [22] org.apache.lucene.queryParser.QueryParser.parse
+  [23] org.dacapo.lusearch.Search$QueryProcessor.run
+  [24] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1658408357 ns (0.29%), 1655 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __read
+  [ 4] readBytes
+  [ 5] java.io.RandomAccessFile.readBytes
+  [ 6] java.io.RandomAccessFile.read
+  [ 7] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 8] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 9] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [10] org.apache.lucene.store.BufferedIndexInput.refill
+  [11] org.apache.lucene.store.BufferedIndexInput.readByte
+  [12] org.apache.lucene.store.IndexInput.readVInt
+  [13] org.apache.lucene.index.TermBuffer.read
+  [14] org.apache.lucene.index.SegmentTermEnum.next
+  [15] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [16] org.apache.lucene.index.TermInfosReader.get
+  [17] org.apache.lucene.index.TermInfosReader.get
+  [18] org.apache.lucene.index.SegmentReader.docFreq
+  [19] org.apache.lucene.search.IndexSearcher.docFreq
+  [20] org.apache.lucene.search.Similarity.idf
+  [21] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [22] org.apache.lucene.search.TermQuery.createWeight
+  [23] org.apache.lucene.search.Query.weight
+  [24] org.apache.lucene.search.Searcher.createWeight
+  [25] org.apache.lucene.search.Searcher.search
+  [26] org.dacapo.lusearch.Search$QueryProcessor.run
+  [27] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1654829139 ns (0.29%), 1654 samples
+  [ 0] .annobin__ZN13ObjArrayKlass8allocateEiP10JavaThread.start
+  [ 1] BacktraceBuilder::expand(JavaThread*)
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [15] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [16] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [17] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [18] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [19] org.apache.lucene.queryParser.QueryParser.Clause
+  [20] org.apache.lucene.queryParser.QueryParser.Query
+  [21] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [22] org.apache.lucene.queryParser.QueryParser.parse
+  [23] org.dacapo.lusearch.Search$QueryProcessor.run
+  [24] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1635137515 ns (0.29%), 1635 samples
+  [ 0] org.apache.lucene.search.TermScorer.<init>
+  [ 1] org.apache.lucene.search.TermQuery$TermWeight.scorer
+  [ 2] org.apache.lucene.search.IndexSearcher.search
+  [ 3] org.apache.lucene.search.IndexSearcher.search
+  [ 4] org.apache.lucene.search.Searcher.search
+  [ 5] org.dacapo.lusearch.Search$QueryProcessor.run
+  [ 6] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1631962808 ns (0.28%), 1632 samples
+  [ 0] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 1] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 2] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 3] org.apache.lucene.index.TermBuffer.read
+  [ 4] org.apache.lucene.index.SegmentTermEnum.next
+  [ 5] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.TermInfosReader.get
+  [ 8] org.apache.lucene.index.SegmentReader.docFreq
+  [ 9] org.apache.lucene.search.IndexSearcher.docFreq
+  [10] org.apache.lucene.search.Similarity.idf
+  [11] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [12] org.apache.lucene.search.TermQuery.createWeight
+  [13] org.apache.lucene.search.Query.weight
+  [14] org.apache.lucene.search.Searcher.createWeight
+  [15] org.apache.lucene.search.Searcher.search
+  [16] org.dacapo.lusearch.Search$QueryProcessor.run
+  [17] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1556543738 ns (0.27%), 1556 samples
+  [ 0] java.io.FileInputStream.<init>
+  [ 1] java.io.FileReader.<init>
+  [ 2] org.dacapo.harness.FileDigest.getText
+  [ 3] org.dacapo.harness.FileDigest.get
+  [ 4] org.dacapo.harness.Benchmark.validate
+  [ 5] org.dacapo.harness.Benchmark.run
+  [ 6] org.dacapo.harness.TestHarness.runBenchmark
+  [ 7] org.dacapo.harness.TestHarness.main
+  [ 8] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [ 9] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [10] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [11] java.lang.reflect.Method.invoke
+  [12] Harness.main
+
+--- 1554908995 ns (0.27%), 1555 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 2] org.apache.lucene.index.TermBuffer.set
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1544751302 ns (0.27%), 1545 samples
+  [ 0] org.apache.lucene.index.SegmentTermEnum.next
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1519750129 ns (0.27%), 1519 samples
+  [ 0] __libc_lseek
+  [ 1] java.io.RandomAccessFile.seek0
+  [ 2] java.io.RandomAccessFile.seek
+  [ 3] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 4] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 5] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 6] org.apache.lucene.store.BufferedIndexInput.refill
+  [ 7] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 8] org.apache.lucene.store.IndexInput.readVInt
+  [ 9] org.apache.lucene.index.TermBuffer.read
+  [10] org.apache.lucene.index.SegmentTermEnum.next
+  [11] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [12] org.apache.lucene.index.TermInfosReader.get
+  [13] org.apache.lucene.index.TermInfosReader.get
+  [14] org.apache.lucene.index.SegmentReader.docFreq
+  [15] org.apache.lucene.search.IndexSearcher.docFreq
+  [16] org.apache.lucene.search.Similarity.idf
+  [17] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [18] org.apache.lucene.search.TermQuery.createWeight
+  [19] org.apache.lucene.search.Query.weight
+  [20] org.apache.lucene.search.Searcher.createWeight
+  [21] org.apache.lucene.search.Searcher.search
+  [22] org.dacapo.lusearch.Search$QueryProcessor.run
+  [23] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1514725245 ns (0.26%), 1514 samples
+  [ 0] jbyte_disjoint_arraycopy
+  [ 1] sun.security.provider.DigestBase.engineUpdate
+  [ 2] java.security.MessageDigest$Delegate.engineUpdate
+  [ 3] java.security.MessageDigest.update
+  [ 4] org.dacapo.harness.FileDigest.getText
+  [ 5] org.dacapo.harness.FileDigest.get
+  [ 6] org.dacapo.harness.Benchmark.validate
+  [ 7] org.dacapo.harness.Benchmark.run
+  [ 8] org.dacapo.harness.TestHarness.runBenchmark
+  [ 9] org.dacapo.harness.TestHarness.main
+  [10] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [11] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [12] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [13] java.lang.reflect.Method.invoke
+  [14] Harness.main
+
+--- 1506831212 ns (0.26%), 1506 samples
+  [ 0] __read
+  [ 1] readBytes
+  [ 2] java.io.RandomAccessFile.readBytes
+  [ 3] java.io.RandomAccessFile.read
+  [ 4] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 5] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 6] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 7] org.apache.lucene.store.BufferedIndexInput.refill
+  [ 8] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 9] org.apache.lucene.store.IndexInput.readVInt
+  [10] org.apache.lucene.index.TermBuffer.read
+  [11] org.apache.lucene.index.SegmentTermEnum.next
+  [12] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [13] org.apache.lucene.index.TermInfosReader.get
+  [14] org.apache.lucene.index.TermInfosReader.get
+  [15] org.apache.lucene.index.SegmentReader.docFreq
+  [16] org.apache.lucene.search.IndexSearcher.docFreq
+  [17] org.apache.lucene.search.Similarity.idf
+  [18] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [19] org.apache.lucene.search.TermQuery.createWeight
+  [20] org.apache.lucene.search.Query.weight
+  [21] org.apache.lucene.search.Searcher.createWeight
+  [22] org.apache.lucene.search.Searcher.search
+  [23] org.dacapo.lusearch.Search$QueryProcessor.run
+  [24] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1490927294 ns (0.26%), 1490 samples
+  [ 0] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 1] frame::sender(RegisterMap*) const
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [16] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [17] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [18] org.apache.lucene.queryParser.QueryParser.Query
+  [19] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [20] org.apache.lucene.queryParser.QueryParser.parse
+  [21] org.dacapo.lusearch.Search$QueryProcessor.run
+  [22] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1480960087 ns (0.26%), 1481 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 1] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1469427441 ns (0.26%), 1466 samples
+  [ 0] __fget_light_[k]
+  [ 1] __fdget_pos_[k]
+  [ 2] ksys_lseek_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __libc_lseek
+  [ 6] java.io.RandomAccessFile.seek0
+  [ 7] java.io.RandomAccessFile.seek
+  [ 8] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 9] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [10] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [11] org.apache.lucene.store.BufferedIndexInput.refill
+  [12] org.apache.lucene.store.BufferedIndexInput.readByte
+  [13] org.apache.lucene.store.IndexInput.readVInt
+  [14] org.apache.lucene.index.TermBuffer.read
+  [15] org.apache.lucene.index.SegmentTermEnum.next
+  [16] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [17] org.apache.lucene.index.TermInfosReader.get
+  [18] org.apache.lucene.index.TermInfosReader.get
+  [19] org.apache.lucene.index.SegmentReader.docFreq
+  [20] org.apache.lucene.search.IndexSearcher.docFreq
+  [21] org.apache.lucene.search.Similarity.idf
+  [22] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [23] org.apache.lucene.search.TermQuery.createWeight
+  [24] org.apache.lucene.search.Query.weight
+  [25] org.apache.lucene.search.Searcher.createWeight
+  [26] org.apache.lucene.search.Searcher.search
+  [27] org.dacapo.lusearch.Search$QueryProcessor.run
+  [28] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1465000404 ns (0.26%), 1465 samples
+  [ 0] org.apache.lucene.index.SegmentTermEnum.next
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1451347689 ns (0.25%), 1447 samples
+  [ 0] xfs_file_read_iter?[xfs]_[k]
+  [ 1] new_sync_read_[k]
+  [ 2] vfs_read_[k]
+  [ 3] ksys_read_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __read
+  [ 7] readBytes
+  [ 8] java.io.RandomAccessFile.readBytes
+  [ 9] java.io.RandomAccessFile.read
+  [10] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [11] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [12] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [13] org.apache.lucene.store.BufferedIndexInput.refill
+  [14] org.apache.lucene.store.BufferedIndexInput.readByte
+  [15] org.apache.lucene.store.IndexInput.readVInt
+  [16] org.apache.lucene.index.TermBuffer.read
+  [17] org.apache.lucene.index.SegmentTermEnum.next
+  [18] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [19] org.apache.lucene.index.TermInfosReader.get
+  [20] org.apache.lucene.index.TermInfosReader.get
+  [21] org.apache.lucene.index.SegmentReader.docFreq
+  [22] org.apache.lucene.search.IndexSearcher.docFreq
+  [23] org.apache.lucene.search.Similarity.idf
+  [24] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [25] org.apache.lucene.search.TermQuery.createWeight
+  [26] org.apache.lucene.search.Query.weight
+  [27] org.apache.lucene.search.Searcher.createWeight
+  [28] org.apache.lucene.search.Searcher.search
+  [29] org.dacapo.lusearch.Search$QueryProcessor.run
+  [30] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1420912055 ns (0.25%), 1421 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 1] org.apache.lucene.store.IndexInput.readVInt
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1408638406 ns (0.25%), 1408 samples
+  [ 0] AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<1335398ul, G1BarrierSet>, (AccessInternal::BarrierType)1, 1335398ul>::oop_access_barrier(oopDesc*, long, oopDesc*)
+  [ 1] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 2] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 3] JVM_FillInStackTrace
+  [ 4] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.<init>
+  [ 8] java.lang.Exception.<init>
+  [ 9] java.io.IOException.<init>
+  [10] org.apache.lucene.queryParser.FastCharStream.refill
+  [11] org.apache.lucene.queryParser.FastCharStream.readChar
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [15] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [16] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [17] org.apache.lucene.queryParser.QueryParser.Query
+  [18] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [19] org.apache.lucene.queryParser.QueryParser.parse
+  [20] org.dacapo.lusearch.Search$QueryProcessor.run
+  [21] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1393089730 ns (0.24%), 1393 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 1] org.apache.lucene.store.IndexInput.readVInt
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1392072137 ns (0.24%), 1392 samples
+  [ 0] org.apache.lucene.index.TermBuffer.read
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1359994317 ns (0.24%), 1355 samples
+  [ 0] down_read_[k]
+  [ 1] xfs_ilock?[xfs]_[k]
+  [ 2] xfs_file_buffered_read?[xfs]_[k]
+  [ 3] xfs_file_read_iter?[xfs]_[k]
+  [ 4] new_sync_read_[k]
+  [ 5] vfs_read_[k]
+  [ 6] ksys_read_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __read
+  [10] readBytes
+  [11] java.io.RandomAccessFile.readBytes
+  [12] java.io.RandomAccessFile.read
+  [13] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [14] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [15] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [16] org.apache.lucene.store.BufferedIndexInput.refill
+  [17] org.apache.lucene.store.BufferedIndexInput.readByte
+  [18] org.apache.lucene.store.IndexInput.readVInt
+  [19] org.apache.lucene.index.TermBuffer.read
+  [20] org.apache.lucene.index.SegmentTermEnum.next
+  [21] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [22] org.apache.lucene.index.TermInfosReader.get
+  [23] org.apache.lucene.index.TermInfosReader.get
+  [24] org.apache.lucene.index.SegmentReader.docFreq
+  [25] org.apache.lucene.search.IndexSearcher.docFreq
+  [26] org.apache.lucene.search.Similarity.idf
+  [27] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [28] org.apache.lucene.search.TermQuery.createWeight
+  [29] org.apache.lucene.search.Query.weight
+  [30] org.apache.lucene.search.Searcher.createWeight
+  [31] org.apache.lucene.search.Searcher.search
+  [32] org.dacapo.lusearch.Search$QueryProcessor.run
+  [33] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1358520908 ns (0.24%), 1358 samples
+  [ 0] StringTable::intern(Handle, unsigned short const*, int, JavaThread*)
+  [ 1] StringTable::intern(oopDesc*, JavaThread*)
+  [ 2] JVM_InternString
+  [ 3] java.lang.String.intern
+  [ 4] org.apache.lucene.index.Term.<init>
+  [ 5] org.apache.lucene.index.Term.<init>
+  [ 6] org.apache.lucene.queryParser.QueryParser.getFieldQuery
+  [ 7] org.apache.lucene.queryParser.QueryParser.Term
+  [ 8] org.apache.lucene.queryParser.QueryParser.Clause
+  [ 9] org.apache.lucene.queryParser.QueryParser.Query
+  [10] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [11] org.apache.lucene.queryParser.QueryParser.parse
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1349096764 ns (0.24%), 1349 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 1] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 2] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 3] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 4] org.apache.lucene.index.TermBuffer.read
+  [ 5] org.apache.lucene.index.SegmentTermEnum.next
+  [ 6] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 7] org.apache.lucene.index.TermInfosReader.get
+  [ 8] org.apache.lucene.index.TermInfosReader.get
+  [ 9] org.apache.lucene.index.SegmentReader.docFreq
+  [10] org.apache.lucene.search.IndexSearcher.docFreq
+  [11] org.apache.lucene.search.Similarity.idf
+  [12] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [13] org.apache.lucene.search.TermQuery.createWeight
+  [14] org.apache.lucene.search.Query.weight
+  [15] org.apache.lucene.search.Searcher.createWeight
+  [16] org.apache.lucene.search.Searcher.search
+  [17] org.dacapo.lusearch.Search$QueryProcessor.run
+  [18] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1347077451 ns (0.23%), 1347 samples
+  [ 0] org.apache.lucene.index.TermBuffer.set
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1344685150 ns (0.23%), 1345 samples
+  [ 0] org.apache.lucene.index.TermBuffer.read
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1305543134 ns (0.23%), 1306 samples
+  [ 0] OptoRuntime::handle_exception_C_helper(JavaThread*, nmethod*&)
+  [ 1] OptoRuntime::handle_exception_C(JavaThread*)
+  [ 2] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 3] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [ 4] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [ 5] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [ 6] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [ 7] org.apache.lucene.queryParser.QueryParser.Clause
+  [ 8] org.apache.lucene.queryParser.QueryParser.Query
+  [ 9] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [10] org.apache.lucene.queryParser.QueryParser.parse
+  [11] org.dacapo.lusearch.Search$QueryProcessor.run
+  [12] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1289458153 ns (0.22%), 1289 samples
+  [ 0] AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] org.apache.lucene.queryParser.FastCharStream.refill
+  [10] org.apache.lucene.queryParser.FastCharStream.readChar
+  [11] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [14] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [15] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [16] org.apache.lucene.queryParser.QueryParser.Query
+  [17] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [18] org.apache.lucene.queryParser.QueryParser.parse
+  [19] org.dacapo.lusearch.Search$QueryProcessor.run
+  [20] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1270777755 ns (0.22%), 1270 samples
+  [ 0] CodeCache::find_blob(void*)
+  [ 1] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 2] frame::sender(RegisterMap*) const
+  [ 3] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 4] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 5] JVM_FillInStackTrace
+  [ 6] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.fillInStackTrace
+  [ 9] java.lang.Throwable.<init>
+  [10] java.lang.Exception.<init>
+  [11] java.io.IOException.<init>
+  [12] org.apache.lucene.queryParser.FastCharStream.refill
+  [13] org.apache.lucene.queryParser.FastCharStream.readChar
+  [14] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [16] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [17] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [18] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [19] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [20] org.apache.lucene.queryParser.QueryParser.Clause
+  [21] org.apache.lucene.queryParser.QueryParser.Query
+  [22] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [23] org.apache.lucene.queryParser.QueryParser.parse
+  [24] org.dacapo.lusearch.Search$QueryProcessor.run
+  [25] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1234077721 ns (0.22%), 1234 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 1] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [ 2] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 3] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 4] org.apache.lucene.index.TermBuffer.read
+  [ 5] org.apache.lucene.index.SegmentTermEnum.next
+  [ 6] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 7] org.apache.lucene.index.TermInfosReader.get
+  [ 8] org.apache.lucene.index.TermInfosReader.get
+  [ 9] org.apache.lucene.index.SegmentReader.docFreq
+  [10] org.apache.lucene.search.IndexSearcher.docFreq
+  [11] org.apache.lucene.search.Similarity.idf
+  [12] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [13] org.apache.lucene.search.TermQuery.createWeight
+  [14] org.apache.lucene.search.Query.weight
+  [15] org.apache.lucene.search.Searcher.createWeight
+  [16] org.apache.lucene.search.Searcher.search
+  [17] org.dacapo.lusearch.Search$QueryProcessor.run
+  [18] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1229257625 ns (0.21%), 1226 samples
+  [ 0] selinux_file_permission_[k]
+  [ 1] security_file_permission_[k]
+  [ 2] vfs_read_[k]
+  [ 3] ksys_read_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __read
+  [ 7] readBytes
+  [ 8] java.io.RandomAccessFile.readBytes
+  [ 9] java.io.RandomAccessFile.read
+  [10] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [11] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [12] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [13] org.apache.lucene.store.BufferedIndexInput.refill
+  [14] org.apache.lucene.store.BufferedIndexInput.readByte
+  [15] org.apache.lucene.store.IndexInput.readVInt
+  [16] org.apache.lucene.index.TermBuffer.read
+  [17] org.apache.lucene.index.SegmentTermEnum.next
+  [18] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [19] org.apache.lucene.index.TermInfosReader.get
+  [20] org.apache.lucene.index.TermInfosReader.get
+  [21] org.apache.lucene.index.SegmentReader.docFreq
+  [22] org.apache.lucene.search.IndexSearcher.docFreq
+  [23] org.apache.lucene.search.Similarity.idf
+  [24] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [25] org.apache.lucene.search.TermQuery.createWeight
+  [26] org.apache.lucene.search.Query.weight
+  [27] org.apache.lucene.search.Searcher.createWeight
+  [28] org.apache.lucene.search.Searcher.search
+  [29] org.dacapo.lusearch.Search$QueryProcessor.run
+  [30] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1226684211 ns (0.21%), 1226 samples
+  [ 0] TypeArrayKlass::allocate_common(int, bool, JavaThread*)
+  [ 1] BacktraceBuilder::expand(JavaThread*)
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [16] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [17] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [18] org.apache.lucene.queryParser.QueryParser.Query
+  [19] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [20] org.apache.lucene.queryParser.QueryParser.parse
+  [21] org.dacapo.lusearch.Search$QueryProcessor.run
+  [22] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1210984399 ns (0.21%), 1211 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+  [ 1] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 2] org.apache.lucene.index.TermBuffer.set
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1187478084 ns (0.21%), 1188 samples
+  [ 0] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [ 1] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [ 2] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 3] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [ 4] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [ 5] org.apache.lucene.queryParser.QueryParser.Query
+  [ 6] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [ 7] org.apache.lucene.queryParser.QueryParser.parse
+  [ 8] org.dacapo.lusearch.Search$QueryProcessor.run
+  [ 9] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1161872921 ns (0.20%), 1162 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  [ 1] org.apache.lucene.index.TermBuffer.set
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1154484601 ns (0.20%), 1154 samples
+  [ 0] __tls_get_addr
+  [ 1] JVM_FillInStackTrace
+  [ 2] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 3] java.lang.Throwable.fillInStackTrace
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.<init>
+  [ 6] java.lang.Exception.<init>
+  [ 7] java.io.IOException.<init>
+  [ 8] org.apache.lucene.queryParser.FastCharStream.refill
+  [ 9] org.apache.lucene.queryParser.FastCharStream.readChar
+  [10] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [11] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [13] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [14] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [15] org.apache.lucene.queryParser.QueryParser.Query
+  [16] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [17] org.apache.lucene.queryParser.QueryParser.parse
+  [18] org.dacapo.lusearch.Search$QueryProcessor.run
+  [19] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1151978571 ns (0.20%), 1152 samples
+  [ 0] org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+  [ 1] org.apache.lucene.index.TermBuffer.read
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1139473581 ns (0.20%), 1140 samples
+  [ 0] org.apache.lucene.index.Term.<init>
+  [ 1] org.apache.lucene.index.TermBuffer.toTerm
+  [ 2] org.apache.lucene.index.SegmentTermEnum.prev
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1105649848 ns (0.19%), 1106 samples
+  [ 0] org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAdd
+  [ 1] org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAddStates
+  [ 2] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [ 3] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [ 4] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 5] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [ 6] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [ 7] org.apache.lucene.queryParser.QueryParser.Query
+  [ 8] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [ 9] org.apache.lucene.queryParser.QueryParser.parse
+  [10] org.dacapo.lusearch.Search$QueryProcessor.run
+  [11] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1105026209 ns (0.19%), 1105 samples
+  [ 0] jbyte_arraycopy
+  [ 1] org.apache.lucene.store.IndexInput.readVLong
+  [ 2] org.apache.lucene.index.SegmentTermEnum.next
+  [ 3] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.SegmentReader.docFreq
+  [ 7] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 8] org.apache.lucene.search.Similarity.idf
+  [ 9] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [10] org.apache.lucene.search.TermQuery.createWeight
+  [11] org.apache.lucene.search.Query.weight
+  [12] org.apache.lucene.search.Searcher.createWeight
+  [13] org.apache.lucene.search.Searcher.search
+  [14] org.dacapo.lusearch.Search$QueryProcessor.run
+  [15] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1102304833 ns (0.19%), 1102 samples
+  [ 0] AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] org.apache.lucene.queryParser.FastCharStream.refill
+  [10] org.apache.lucene.queryParser.FastCharStream.readChar
+  [11] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [13] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [14] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [15] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [16] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [17] org.apache.lucene.queryParser.QueryParser.Clause
+  [18] org.apache.lucene.queryParser.QueryParser.Query
+  [19] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [20] org.apache.lucene.queryParser.QueryParser.parse
+  [21] org.dacapo.lusearch.Search$QueryProcessor.run
+  [22] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1092188629 ns (0.19%), 1089 samples
+  [ 0] xfs_file_llseek?[xfs]_[k]
+  [ 1] ksys_lseek_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __libc_lseek
+  [ 5] java.io.RandomAccessFile.seek0
+  [ 6] java.io.RandomAccessFile.seek
+  [ 7] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [ 8] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [ 9] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [10] org.apache.lucene.store.BufferedIndexInput.refill
+  [11] org.apache.lucene.store.BufferedIndexInput.readByte
+  [12] org.apache.lucene.store.IndexInput.readVInt
+  [13] org.apache.lucene.index.TermBuffer.read
+  [14] org.apache.lucene.index.SegmentTermEnum.next
+  [15] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [16] org.apache.lucene.index.TermInfosReader.get
+  [17] org.apache.lucene.index.TermInfosReader.get
+  [18] org.apache.lucene.index.SegmentReader.docFreq
+  [19] org.apache.lucene.search.IndexSearcher.docFreq
+  [20] org.apache.lucene.search.Similarity.idf
+  [21] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [22] org.apache.lucene.search.TermQuery.createWeight
+  [23] org.apache.lucene.search.Query.weight
+  [24] org.apache.lucene.search.Searcher.createWeight
+  [25] org.apache.lucene.search.Searcher.search
+  [26] org.dacapo.lusearch.Search$QueryProcessor.run
+  [27] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1070972948 ns (0.19%), 1071 samples
+  [ 0] org.apache.lucene.store.BufferedIndexInput.readByte
+  [ 1] org.apache.lucene.store.IndexInput.readVInt
+  [ 2] org.apache.lucene.index.TermBuffer.read
+  [ 3] org.apache.lucene.index.SegmentTermEnum.next
+  [ 4] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 5] org.apache.lucene.index.TermInfosReader.get
+  [ 6] org.apache.lucene.index.TermInfosReader.get
+  [ 7] org.apache.lucene.index.SegmentReader.docFreq
+  [ 8] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 9] org.apache.lucene.search.Similarity.idf
+  [10] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [11] org.apache.lucene.search.TermQuery.createWeight
+  [12] org.apache.lucene.search.Query.weight
+  [13] org.apache.lucene.search.Searcher.createWeight
+  [14] org.apache.lucene.search.Searcher.search
+  [15] org.dacapo.lusearch.Search$QueryProcessor.run
+  [16] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1060627932 ns (0.19%), 1060 samples
+  [ 0] CodeCache::find_blob(void*)
+  [ 1] frame::sender_for_compiled_frame(RegisterMap*) const
+  [ 2] frame::sender(RegisterMap*) const
+  [ 3] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 4] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 5] JVM_FillInStackTrace
+  [ 6] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.fillInStackTrace
+  [ 9] java.lang.Throwable.<init>
+  [10] java.lang.Exception.<init>
+  [11] java.io.IOException.<init>
+  [12] org.apache.lucene.queryParser.FastCharStream.refill
+  [13] org.apache.lucene.queryParser.FastCharStream.readChar
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [15] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [16] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [17] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [18] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [19] org.apache.lucene.queryParser.QueryParser.Query
+  [20] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [21] org.apache.lucene.queryParser.QueryParser.parse
+  [22] org.dacapo.lusearch.Search$QueryProcessor.run
+  [23] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1059158060 ns (0.18%), 1059 samples
+  [ 0] org.apache.lucene.queryParser.QueryParserTokenManager.ReInit
+  [ 1] org.apache.lucene.queryParser.QueryParser.ReInit
+  [ 2] org.apache.lucene.queryParser.QueryParser.parse
+  [ 3] org.dacapo.lusearch.Search$QueryProcessor.run
+  [ 4] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1025574094 ns (0.18%), 1025 samples
+  [ 0] AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<1335398ul, G1BarrierSet>, (AccessInternal::BarrierType)1, 1335398ul>::oop_access_barrier(oopDesc*, long, oopDesc*)
+  [ 1] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 2] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 3] JVM_FillInStackTrace
+  [ 4] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.<init>
+  [ 8] java.lang.Exception.<init>
+  [ 9] java.io.IOException.<init>
+  [10] org.apache.lucene.queryParser.FastCharStream.refill
+  [11] org.apache.lucene.queryParser.FastCharStream.readChar
+  [12] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [14] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [15] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [16] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [17] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [18] org.apache.lucene.queryParser.QueryParser.Clause
+  [19] org.apache.lucene.queryParser.QueryParser.Query
+  [20] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [21] org.apache.lucene.queryParser.QueryParser.parse
+  [22] org.dacapo.lusearch.Search$QueryProcessor.run
+  [23] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1014541453 ns (0.18%), 1014 samples
+  [ 0] StringTable::do_lookup(unsigned short const*, int, unsigned long)
+  [ 1] StringTable::intern(Handle, unsigned short const*, int, JavaThread*)
+  [ 2] StringTable::intern(oopDesc*, JavaThread*)
+  [ 3] JVM_InternString
+  [ 4] java.lang.String.intern
+  [ 5] org.apache.lucene.index.Term.<init>
+  [ 6] org.apache.lucene.index.Term.<init>
+  [ 7] org.apache.lucene.queryParser.QueryParser.getFieldQuery
+  [ 8] org.apache.lucene.queryParser.QueryParser.Term
+  [ 9] org.apache.lucene.queryParser.QueryParser.Clause
+  [10] org.apache.lucene.queryParser.QueryParser.Query
+  [11] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [12] org.apache.lucene.queryParser.QueryParser.parse
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1010977898 ns (0.18%), 1011 samples
+  [ 0] org.apache.lucene.store.IndexInput.readVLong
+  [ 1] org.apache.lucene.index.SegmentTermEnum.next
+  [ 2] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.TermInfosReader.get
+  [ 5] org.apache.lucene.index.SegmentReader.docFreq
+  [ 6] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 7] org.apache.lucene.search.Similarity.idf
+  [ 8] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 9] org.apache.lucene.search.TermQuery.createWeight
+  [10] org.apache.lucene.search.Query.weight
+  [11] org.apache.lucene.search.Searcher.createWeight
+  [12] org.apache.lucene.search.Searcher.search
+  [13] org.dacapo.lusearch.Search$QueryProcessor.run
+  [14] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1010965456 ns (0.18%), 1011 samples
+  [ 0] org.apache.lucene.index.SegmentTermEnum.next
+  [ 1] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [ 2] org.apache.lucene.index.TermInfosReader.get
+  [ 3] org.apache.lucene.index.TermInfosReader.get
+  [ 4] org.apache.lucene.index.SegmentReader.docFreq
+  [ 5] org.apache.lucene.search.IndexSearcher.docFreq
+  [ 6] org.apache.lucene.search.Similarity.idf
+  [ 7] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [ 8] org.apache.lucene.search.TermQuery.createWeight
+  [ 9] org.apache.lucene.search.Query.weight
+  [10] org.apache.lucene.search.Searcher.createWeight
+  [11] org.apache.lucene.search.Searcher.search
+  [12] org.dacapo.lusearch.Search$QueryProcessor.run
+  [13] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 1003266916 ns (0.18%), 1003 samples
+  [ 0] .annobin__ZN14AccessInternal19PostRuntimeDispatchIN12G1BarrierSet13AccessBarrierILm1335398ES1_EELNS_11BarrierTypeE3ELm1335398EE18oop_access_barrierEP7oopDescl.start
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] org.apache.lucene.queryParser.FastCharStream.refill
+  [10] org.apache.lucene.queryParser.FastCharStream.readChar
+  [11] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [12] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [14] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [15] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [16] org.apache.lucene.queryParser.QueryParser.Query
+  [17] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [18] org.apache.lucene.queryParser.QueryParser.parse
+  [19] org.dacapo.lusearch.Search$QueryProcessor.run
+  [20] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 985448578 ns (0.17%), 982 samples
+  [ 0] copy_page_to_iter_[k]
+  [ 1] filemap_read_[k]
+  [ 2] xfs_file_buffered_read?[xfs]_[k]
+  [ 3] xfs_file_read_iter?[xfs]_[k]
+  [ 4] new_sync_read_[k]
+  [ 5] vfs_read_[k]
+  [ 6] ksys_read_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __read
+  [10] readBytes
+  [11] java.io.RandomAccessFile.readBytes
+  [12] java.io.RandomAccessFile.read
+  [13] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [14] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [15] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [16] org.apache.lucene.store.BufferedIndexInput.refill
+  [17] org.apache.lucene.store.BufferedIndexInput.readByte
+  [18] org.apache.lucene.store.IndexInput.readVInt
+  [19] org.apache.lucene.index.TermBuffer.read
+  [20] org.apache.lucene.index.SegmentTermEnum.next
+  [21] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [22] org.apache.lucene.index.TermInfosReader.get
+  [23] org.apache.lucene.index.TermInfosReader.get
+  [24] org.apache.lucene.index.SegmentReader.docFreq
+  [25] org.apache.lucene.search.IndexSearcher.docFreq
+  [26] org.apache.lucene.search.Similarity.idf
+  [27] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [28] org.apache.lucene.search.TermQuery.createWeight
+  [29] org.apache.lucene.search.Query.weight
+  [30] org.apache.lucene.search.Searcher.createWeight
+  [31] org.apache.lucene.search.Searcher.search
+  [32] org.dacapo.lusearch.Search$QueryProcessor.run
+  [33] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 981061883 ns (0.17%), 978 samples
+  [ 0] filemap_read_[k]
+  [ 1] xfs_file_buffered_read?[xfs]_[k]
+  [ 2] xfs_file_read_iter?[xfs]_[k]
+  [ 3] new_sync_read_[k]
+  [ 4] vfs_read_[k]
+  [ 5] ksys_read_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __read
+  [ 9] readBytes
+  [10] java.io.RandomAccessFile.readBytes
+  [11] java.io.RandomAccessFile.read
+  [12] org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  [13] org.apache.lucene.store.BufferedIndexInput.readBytes
+  [14] org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  [15] org.apache.lucene.store.BufferedIndexInput.refill
+  [16] org.apache.lucene.store.BufferedIndexInput.readByte
+  [17] org.apache.lucene.store.IndexInput.readVInt
+  [18] org.apache.lucene.index.TermBuffer.read
+  [19] org.apache.lucene.index.SegmentTermEnum.next
+  [20] org.apache.lucene.index.SegmentTermEnum.scanTo
+  [21] org.apache.lucene.index.TermInfosReader.get
+  [22] org.apache.lucene.index.TermInfosReader.get
+  [23] org.apache.lucene.index.SegmentReader.docFreq
+  [24] org.apache.lucene.search.IndexSearcher.docFreq
+  [25] org.apache.lucene.search.Similarity.idf
+  [26] org.apache.lucene.search.TermQuery$TermWeight.<init>
+  [27] org.apache.lucene.search.TermQuery.createWeight
+  [28] org.apache.lucene.search.Query.weight
+  [29] org.apache.lucene.search.Searcher.createWeight
+  [30] org.apache.lucene.search.Searcher.search
+  [31] org.dacapo.lusearch.Search$QueryProcessor.run
+  [32] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 979681447 ns (0.17%), 980 samples
+  [ 0] org.apache.lucene.queryParser.FastCharStream.refill
+  [ 1] org.apache.lucene.queryParser.FastCharStream.readChar
+  [ 2] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  [ 3] org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveStringLiteralDfa0_3
+  [ 4] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [ 5] org.apache.lucene.queryParser.QueryParser.jj_ntk
+  [ 6] org.apache.lucene.queryParser.QueryParser.Modifiers
+  [ 7] org.apache.lucene.queryParser.QueryParser.Query
+  [ 8] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [ 9] org.apache.lucene.queryParser.QueryParser.parse
+  [10] org.dacapo.lusearch.Search$QueryProcessor.run
+  [11] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 966437645 ns (0.17%), 966 samples
+  [ 0] frame::sender(RegisterMap*) const
+  [ 1] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 2] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 3] JVM_FillInStackTrace
+  [ 4] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.<init>
+  [ 8] java.lang.Exception.<init>
+  [ 9] java.io.IOException.<init>
+  [10] org.apache.lucene.queryParser.FastCharStream.refill
+  [11] org.apache.lucene.queryParser.FastCharStream.readChar
+  [12] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [13] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [14] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [15] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [16] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [17] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [18] org.apache.lucene.queryParser.QueryParser.Clause
+  [19] org.apache.lucene.queryParser.QueryParser.Query
+  [20] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [21] org.apache.lucene.queryParser.QueryParser.parse
+  [22] org.dacapo.lusearch.Search$QueryProcessor.run
+  [23] org.dacapo.lusearch.Search$QueryThread.run
+
+--- 965446538 ns (0.17%), 965 samples
+  [ 0] TypeArrayKlass::allocate_common(int, bool, JavaThread*)
+  [ 1] BacktraceBuilder::expand(JavaThread*)
+  [ 2] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 3] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 4] JVM_FillInStackTrace
+  [ 5] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 6] java.lang.Throwable.fillInStackTrace
+  [ 7] java.lang.Throwable.fillInStackTrace
+  [ 8] java.lang.Throwable.<init>
+  [ 9] java.lang.Exception.<init>
+  [10] java.io.IOException.<init>
+  [11] org.apache.lucene.queryParser.FastCharStream.refill
+  [12] org.apache.lucene.queryParser.FastCharStream.readChar
+  [13] org.apache.lucene.queryParser.FastCharStream.BeginToken
+  [14] org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  [15] org.apache.lucene.queryParser.QueryParser.jj_scan_token
+  [16] org.apache.lucene.queryParser.QueryParser.jj_3R_2
+  [17] org.apache.lucene.queryParser.QueryParser.jj_3_1
+  [18] org.apache.lucene.queryParser.QueryParser.jj_2_1
+  [19] org.apache.lucene.queryParser.QueryParser.Clause
+  [20] org.apache.lucene.queryParser.QueryParser.Query
+  [21] org.apache.lucene.queryParser.QueryParser.TopLevelQuery
+  [22] org.apache.lucene.queryParser.QueryParser.parse
+  [23] org.dacapo.lusearch.Search$QueryProcessor.run
+  [24] org.dacapo.lusearch.Search$QueryThread.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 32610125226    5.69%    32594  java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+ 26206846041    4.57%    26207  org.apache.lucene.index.TermBuffer.set
+ 23298546663    4.06%    23299  org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+ 21842772108    3.81%    21843  org.apache.lucene.store.IndexInput.readVInt
+ 20945642823    3.65%    20946  org.apache.lucene.util.UnicodeUtil$UTF16Result.setLength
+ 15460979992    2.70%    15460  jshort_disjoint_arraycopy
+ 14318380374    2.50%    14317  jbyte_disjoint_arraycopy
+ 12939963333    2.26%    12940  org.apache.lucene.store.BufferedIndexInput.readByte
+ 12545834500    2.19%    12545  org.apache.lucene.store.BufferedIndexInput.readBytes
+ 10999083243    1.92%    10998  org.apache.lucene.queryParser.FastCharStream.refill
+  9314360433    1.62%     9309  CodeHeap::find_blob_unsafe(void*) const
+  8026190486    1.40%     7995  copy_user_generic_string_[k]
+  7586020549    1.32%     7586  org.apache.lucene.util.UnicodeUtil$UTF16Result.copyText
+  7391819107    1.29%     7394  org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAdd
+  7376389366    1.29%     7350  filemap_get_read_batch_[k]
+  7320052615    1.28%     7304  syscall_enter_from_user_mode_[k]
+  6993578951    1.22%     6994  org.apache.lucene.index.SegmentTermEnum.next
+  6566300027    1.15%     6566  org.apache.lucene.index.TermBuffer.compareChars
+  6369965985    1.11%     6370  org.apache.lucene.index.TermBuffer.read
+  5978442739    1.04%     5978  org.apache.lucene.index.TermInfosReader.get
+  5520441989    0.96%     5504  lockref_get_not_zero_[k]
+  5199036325    0.91%     5156  clear_page_rep_[k]
+  5162174266    0.90%     5160  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<1335398ul, G1BarrierSet>, (AccessInternal::BarrierType)1, 1335398ul>::oop_access_barrier(oopDesc*, long, oopDesc*)
+  5012880229    0.87%     5013  org.apache.lucene.index.SegmentTermEnum.scanTo
+  4813299131    0.84%     4815  org.apache.lucene.queryParser.QueryParserTokenManager.jjMoveNfa_3
+  4792799813    0.84%     4790  CodeCache::find_blob(void*)
+  4723984788    0.82%     4724  org.apache.lucene.util.UnicodeUtil$UTF8Result.setLength
+  4411037294    0.77%     4411  org.apache.lucene.store.IndexInput.readVLong
+  3865258185    0.67%     3864  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+  3714507559    0.65%     3714  org.apache.lucene.search.TermScorer.<init>
+  3645816551    0.64%     3644  .annobin__ZN13ObjArrayKlass8allocateEiP10JavaThread.start
+  3410885454    0.60%     3409  frame::sender_for_compiled_frame(RegisterMap*) const
+  3278038738    0.57%     3278  java.lang.String.<init>
+  3210257002    0.56%     3210  org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  3163640688    0.55%     3164  org.apache.lucene.index.Term.<init>
+  3093646457    0.54%     3092  MemAllocator::allocate() const
+  3000517330    0.52%     2999  ObjArrayAllocator::initialize(HeapWordImpl**) const
+  2900840186    0.51%     2899  __tls_get_addr
+  2891780842    0.50%     2891  java.io.BufferedReader.readLine
+  2881883881    0.50%     2876  __fget_light_[k]
+  2870965267    0.50%     2871  org.apache.lucene.index.CompoundFileReader$CSIndexInput.readInternal
+  2636922580    0.46%     2637  java.util.LinkedHashMap.linkNodeLast
+  2569293165    0.45%     2568  __read
+  2459046829    0.43%     2458  java.io.FileInputStream.<init>
+  2418400972    0.42%     2417  TypeArrayKlass::allocate_common(int, bool, JavaThread*)
+  2318942455    0.40%     2312  xfs_file_read_iter?[xfs]_[k]
+  2300053669    0.40%     2299  __libc_lseek
+  2206881976    0.38%     2206  StringTable::intern(Handle, unsigned short const*, int, JavaThread*)
+  2087932013    0.36%     2087  frame::sender(RegisterMap*) const
+  2050674681    0.36%     2050  jni_GetObjectField
+  2026186181    0.35%     2026  java.lang.String.getChars
+  1988093486    0.35%     1987  nmethod::is_zombie() const
+  1940223535    0.34%     1933  down_read_[k]
+  1921934443    0.34%     1917  selinux_file_permission_[k]
+  1897409472    0.33%     1872  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  1883822313    0.33%     1880  __memmove_avx_unaligned_erms
+  1858225469    0.32%     1858  java.io.StringReader.read
+  1798762542    0.31%     1793  filemap_read_[k]
+  1787987411    0.31%     1787  Handle::Handle(Thread*, oopDesc*)
+  1678102776    0.29%     1678  org.apache.lucene.store.FSDirectory$FSIndexInput.readInternal
+  1673415029    0.29%     1673  org.apache.lucene.index.TermInfosReader.ensureIndexIsRead
+  1668436242    0.29%     1668  readBytes
+  1636352709    0.29%     1636  java.lang.Throwable.fillInStackTrace
+  1621823919    0.28%     1621  StringTable::do_lookup(unsigned short const*, int, unsigned long)
+  1621067666    0.28%     1621  java.util.HashMap.getNode
+  1597959533    0.28%     1597  MemAllocator::Allocation::notify_allocation_jvmti_sampler()
+  1591674703    0.28%     1587  xfs_file_llseek?[xfs]_[k]
+  1560596268    0.27%     1555  copy_page_to_iter_[k]
+  1558554823    0.27%     1558  .annobin__ZN14AccessInternal19PostRuntimeDispatchIN12G1BarrierSet13AccessBarrierILm1335398ES1_EELNS_11BarrierTypeE3ELm1335398EE18oop_access_barrierEP7oopDescl.start
+  1533635940    0.27%     1534  java.lang.StringUTF16.compress
+  1528673050    0.27%     1528  Universe::should_fill_in_stack_trace(Handle)
+  1520553434    0.27%     1517  __fsnotify_parent_[k]
+  1497411836    0.26%     1497  JVM_FillInStackTrace
+  1477191023    0.26%     1477  java.io.RandomAccessFile.readBytes
+  1447269545    0.25%     1447  org.apache.lucene.queryParser.QueryParserTokenManager.getNextToken
+  1430660999    0.25%     1425  __memset_avx2_unaligned_erms
+  1382480901    0.24%     1382  BacktraceBuilder::expand(JavaThread*)
+  1370438628    0.24%     1370  CodeBlob::is_optimized_entry_blob() const
+  1363525046    0.24%     1363  .annobin__ZN10JavaThread13pd_last_frameEv.start
+  1337202504    0.23%     1337  org.apache.lucene.index.TermBuffer.toTerm
+  1333331488    0.23%     1333  StringTable::intern(oopDesc*, JavaThread*)
+  1328558558    0.23%     1329  OptoRuntime::handle_exception_C_helper(JavaThread*, nmethod*&)
+  1328149097    0.23%     1328  org.apache.lucene.queryParser.QueryParser.jj_2_1
+  1325356763    0.23%     1325  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+  1318783092    0.23%     1318  frame::is_interpreted_frame() const
+  1287071899    0.22%     1287  jbyte_arraycopy
+  1277592210    0.22%     1277  CompiledMethod::is_compiled() const
+  1276522404    0.22%     1272  atime_needs_update_[k]
+  1276237142    0.22%     1276  org.apache.lucene.queryParser.QueryParser.Term
+  1270011206    0.22%     1270  org.apache.lucene.util.cache.SimpleMapCache.get
+  1247067750    0.22%     1247  org.apache.lucene.store.BufferedIndexInput.seek
+  1233452009    0.22%     1230  lockref_put_return_[k]
+  1227066830    0.21%     1227  org.apache.lucene.search.HitQueue.lessThan
+  1198719977    0.21%     1196  security_file_permission_[k]
+  1156125349    0.20%     1156  .annobin__ZN15PcDescContainer21find_pc_desc_internalEPhbRK12PcDescSearch.start
+  1142127648    0.20%     1126  _raw_spin_unlock_irqrestore_[k]
+  1130187856    0.20%     1130  jni_SetByteArrayRegion
+  1115294033    0.19%     1115  JVM_InternString
+  1112620903    0.19%     1112  .annobin__ZN14AccessInternal19PostRuntimeDispatchIN12G1BarrierSet13AccessBarrierILm287270ES1_EELNS_11BarrierTypeE1ELm287270EE18oop_access_barrierEP7oopDesclS7_.start
+  1106092698    0.19%     1106  org.apache.lucene.store.IndexInput.clone
+  1102088684    0.19%     1102  org.apache.lucene.search.Scorer.<init>
+  1098221344    0.19%     1098  java.lang.ThreadLocal$ThreadLocalMap.getEntryAfterMiss
+  1090306451    0.19%     1090  JavaFrameAnchor::make_walkable()
+  1089242818    0.19%     1089  java.lang.StringLatin1.hashCode
+  1078171485    0.19%     1078  libmLog
+  1077369350    0.19%     1077  jni_GetArrayLength
+  1076014458    0.19%     1074  vfs_read_[k]
+  1064153913    0.19%     1064  org.apache.lucene.queryParser.QueryParserTokenManager.ReInit
+  1057295213    0.18%     1057  java.io.RandomAccessFile.seek0
+  1042835551    0.18%     1043  org.apache.lucene.util.UnicodeUtil.UTF16toUTF8
+  1039855900    0.18%     1037  __audit_syscall_entry_[k]
+  1034405128    0.18%     1032  fsnotify_perm.part.0_[k]
+  1028978034    0.18%     1029  org.apache.lucene.index.SegmentTermDocs.<init>
+  1017960974    0.18%     1015  bpf_lsm_file_permission_[k]
+   990636563    0.17%      987  current_time_[k]
+   976374235    0.17%      976  .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+   938485906    0.16%      938  .annobin__ZN14AccessInternal19PostRuntimeDispatchIN12G1BarrierSet13AccessBarrierILm286822ES1_EELNS_11BarrierTypeE3ELm286822EE18oop_access_barrierEP7oopDescl.start
+   920358525    0.16%      920  java_lang_String::as_unicode_string_or_null(oopDesc*, int&)
+   910580449    0.16%      907  xas_load_[k]
+   904125964    0.16%      904  java.lang.String.intern
+   885147106    0.15%      883  fsnotify_[k]
+   882930838    0.15%      883  org.apache.lucene.index.Term.compareTo
+   881749832    0.15%      880  syscall_trace_enter.constprop.0_[k]
+   879540068    0.15%      876  map_id_range_down_[k]
+   868506276    0.15%      868  sun.security.provider.DigestBase.engineUpdate
+   866102113    0.15%      864  __get_task_ioprio_[k]
+   854989348    0.15%      855  org.apache.lucene.queryParser.QueryParser.ReInit
+   849173416    0.15%      849  jlong_disjoint_arraycopy
+   848450954    0.15%      848  .annobin__ZNK8CodeBlob9is_zombieEv.start
+   838005835    0.15%      838  org.apache.lucene.queryParser.QueryParser.jj_consume_token
+   831079841    0.14%      831  org.apache.lucene.index.SegmentReader.docFreq
+   813029034    0.14%      813  org.apache.lucene.store.BufferedIndexInput.refill
+   810706488    0.14%      810  MemAllocator::Allocation::check_out_of_memory()
+   805208487    0.14%      805  JNIHandles::make_local(Thread*, oopDesc*, AllocFailStrategy::AllocFailEnum)
+   797883287    0.14%      798  org.apache.lucene.queryParser.QueryParser.parse
+   796055641    0.14%      796  vtable stub
+   786978475    0.14%      787  org.apache.lucene.queryParser.QueryParser.getFieldQuery
+   784088198    0.14%      784  java.lang.String.equals
+   751002603    0.13%      751  Exceptions::debug_check_abort(Handle, char const*)
+   750959761    0.13%      751  org.apache.lucene.util.PriorityQueue.upHeap
+   741184192    0.13%      740  do_syscall_64_[k]
+   715099971    0.12%      715  org.apache.lucene.search.Searcher.search
+   712915979    0.12%      713  org.apache.lucene.util.cache.SimpleLRUCache.<init>
+   710911747    0.12%      708  xas_start_[k]
+   700132782    0.12%      700  org.apache.lucene.queryParser.QueryParser.discardEscapeChar
+   697388612    0.12%      696  __fdget_pos_[k]
+   697013251    0.12%      697  org.apache.lucene.queryParser.QueryParser.Clause
+   694823926    0.12%      695  org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAddStates
+   692339621    0.12%      692  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<2646116ul, G1BarrierSet>, (AccessInternal::BarrierType)0, 2646116ul>::oop_access_barrier(void*, oopDesc*)
+   691033318    0.12%      691  org.apache.lucene.queryParser.FastCharStream.<init>
+   685484502    0.12%      684  syscall_exit_work_[k]
+   676654422    0.12%      672  exit_to_user_mode_loop_[k]
+   672991434    0.12%      673  java.lang.String.length
+   672167265    0.12%      671  ksys_read_[k]
+   662091732    0.12%      662  org.apache.lucene.util.PriorityQueue.downHeap
+   657574614    0.11%      654  __audit_syscall_exit_[k]
+   655258262    0.11%      655  check_bounds(int, int, int, JavaThread*)
+   648182838    0.11%      648  .annobin_getFD.start
+   632466379    0.11%      630  up_read_[k]
+   632088480    0.11%      632  java.lang.String.coder
+   622159111    0.11%      622  SafepointMechanism::update_poll_values(JavaThread*)
+   620969624    0.11%      621  org.apache.lucene.search.Query.weight
+   617366415    0.11%      617  G1BarrierSet::enqueue(oopDesc*)
+   601963836    0.11%      602  org.apache.lucene.index.SegmentTermDocs.read
+   596329186    0.10%      596  CodeBlob::is_deoptimization_stub() const
+   596042474    0.10%      596  _rethrow_Java
+   595186693    0.10%      595  VMError::is_error_reported()
+   592996606    0.10%      593  org.dacapo.lusearch.Search$QueryProcessor.doPagingSearch
+   590071956    0.10%      590  org.apache.lucene.search.IndexSearcher.maxDoc
+   588007272    0.10%      588  org.apache.lucene.index.TermInfosReader.getThreadResources
+   584998232    0.10%      585  SafepointMechanism::process_if_requested_with_exit_check(JavaThread*, bool) [clone .constprop.0]
+   583913884    0.10%      584  org.apache.lucene.queryParser.QueryParserTokenManager.jjCheckNAddTwoStates
+   582799060    0.10%      581  __rcu_read_lock_[k]
+   580682829    0.10%      580  __memset_avx2_unaligned
+   580182751    0.10%      579  __x64_sys_read_[k]
+   577487801    0.10%      576  mutex_lock_[k]
+   573919927    0.10%      574  org.apache.lucene.search.TopDocCollector.topDocs
+   569115488    0.10%      569  __GI___pthread_enable_asynccancel
+   555993577    0.10%      555  ksys_lseek_[k]
+   551958948    0.10%      552  org.apache.lucene.store.BufferedIndexInput.clone
+   551233310    0.10%      550  new_sync_read_[k]
+   547915871    0.10%      548  java.lang.Throwable.<init>
+   543052817    0.09%      543  java.io.BufferedWriter.write
+   533104459    0.09%      532  fput_many_[k]
+   530655377    0.09%      529  __rcu_read_unlock_[k]
+   528277567    0.09%      527  dget_parent_[k]
+   526922888    0.09%      526  __x64_sys_lseek_[k]
+   526304022    0.09%      525  iov_iter_init_[k]
+   524917706    0.09%      525  org.apache.lucene.index.CompoundFileReader$CSIndexInput.clone
+   517040292    0.09%      517  org.apache.lucene.analysis.TokenFilter.reset
+   504634986    0.09%      504  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+   501740262    0.09%      500  filemap_get_pages_[k]
+   496118483    0.09%      496  OptoRuntime::handle_exception_C(JavaThread*)
+   487214467    0.08%      487  __GI___pthread_disable_asynccancel
+   484000420    0.08%      483  mutex_unlock_[k]
+   476996100    0.08%      477  org.apache.lucene.queryParser.QueryParserTokenManager.jjFillToken
+   476445002    0.08%      476  .annobin__ZN10HandleMark15pop_and_restoreEv.start
+   476080995    0.08%      476  java.io.IOException.<init>
+   467023325    0.08%      467  org.apache.lucene.index.Term.hashCode
+   454254901    0.08%      454  Klass::check_array_allocation_length(int, int, JavaThread*)

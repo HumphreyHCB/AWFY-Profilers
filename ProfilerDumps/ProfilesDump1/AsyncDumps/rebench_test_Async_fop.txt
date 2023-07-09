@@ -1,0 +1,3022 @@
+--- Execution profile ---
+Total samples       : 98670
+unknown_Java        : 495 (0.50%)
+not_walkable_Java   : 93 (0.09%)
+deoptimization      : 2 (0.00%)
+
+--- 4228352464 ns (4.28%), 4227 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 2043145495 ns (2.07%), 2041 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 2037141943 ns (2.06%), 2037 samples
+  [ 0] org.apache.fop.fo.FObj.addChildNode
+  [ 1] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement
+  [ 2] org.apache.fop.fo.FOTreeBuilder.startElement
+  [ 3] org.apache.xalan.transformer.TransformerIdentityImpl.startElement
+  [ 4] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 5] org.apache.xerces.xinclude.XIncludeHandler.startElement
+  [ 6] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 7] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 8] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 9] org.apache.xerces.parsers.XML11Configuration.parse
+  [10] org.apache.xerces.parsers.XML11Configuration.parse
+  [11] org.apache.xerces.parsers.XMLParser.parse
+  [12] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [13] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [14] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [15] org.apache.fop.cli.InputHandler.transformTo
+  [16] org.apache.fop.cli.InputHandler.renderTo
+  [17] org.apache.fop.cli.Main.startFOP
+  [18] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [19] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [20] java.lang.reflect.Method.invoke
+  [21] org.dacapo.harness.Fop.iterate
+  [22] org.dacapo.harness.Benchmark.run
+  [23] org.dacapo.harness.TestHarness.runBenchmark
+  [24] org.dacapo.harness.TestHarness.main
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] Harness.main
+
+--- 1592337049 ns (1.61%), 1592 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 1190732877 ns (1.21%), 1190 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 2] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 3] G1ParEvacuateFollowersClosure::do_void()
+  [ 4] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 5] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 737795359 ns (0.75%), 738 samples
+  [ 0] jdk.internal.math.FloatingDecimal$BinaryToASCIIBuffer.dtoa
+  [ 1] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 2] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 3] java.text.DigitList.set
+  [ 4] java.text.DecimalFormat.doubleSubformat
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.NumberFormat.format
+  [ 8] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.ps.PSRenderer.renderWord
+  [11] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderText
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderBlock
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [22] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [23] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [24] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [25] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [26] org.apache.fop.render.AbstractRenderer.renderPage
+  [27] org.apache.fop.render.ps.PSRenderer.renderPage
+  [28] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [29] org.apache.fop.area.RenderPagesModel.addPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [33] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [34] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [41] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [42] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [43] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [44] org.apache.fop.fo.FOTreeBuilder.endElement
+  [45] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [46] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [47] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [48] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XMLParser.parse
+  [54] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [55] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [56] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [57] org.apache.fop.cli.InputHandler.transformTo
+  [58] org.apache.fop.cli.InputHandler.renderTo
+  [59] org.apache.fop.cli.Main.startFOP
+  [60] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] org.dacapo.harness.Fop.iterate
+  [64] org.dacapo.harness.Benchmark.run
+  [65] org.dacapo.harness.TestHarness.runBenchmark
+  [66] org.dacapo.harness.TestHarness.main
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [69] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [70] java.lang.reflect.Method.invoke
+  [71] Harness.main
+
+--- 734575380 ns (0.74%), 733 samples
+  [ 0] .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+  [ 1] CompiledMethod::unload_nmethod_caches(bool)
+  [ 2] nmethod::do_unloading(bool)
+  [ 3] CodeCacheUnloadingTask::work(unsigned int)
+  [ 4] G1ParallelCleaningTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 732756404 ns (0.74%), 729 samples
+  [ 0] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 683177845 ns (0.69%), 683 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 539537532 ns (0.55%), 539 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 2] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 3] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 4] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 5] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 471567877 ns (0.48%), 471 samples
+  [ 0] G1BlockOffsetTablePart::forward_to_block_containing_addr_slow(HeapWordImpl**, HeapWordImpl**, void const*)
+  [ 1] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 457154211 ns (0.46%), 457 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 399154750 ns (0.40%), 399 samples
+  [ 0] nmethod::fix_oop_relocations(unsigned char*, unsigned char*, bool)
+  [ 1] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 396744699 ns (0.40%), 394 samples
+  [ 0] void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 381183481 ns (0.39%), 381 samples
+  [ 0] nmethod::oops_do(OopClosure*, bool)
+  [ 1] CodeBlobToOopClosure::do_code_blob(CodeBlob*)
+  [ 2] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 3] G1FullGCAdjustTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 377065231 ns (0.38%), 377 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 348084786 ns (0.35%), 347 samples
+  [ 0] nmethod::oops_do(OopClosure*, bool)
+  [ 1] ClosureIsUnloadingBehaviour::is_unloading(CompiledMethod*) const
+  [ 2] nmethod::do_unloading(bool)
+  [ 3] CodeCacheUnloadingTask::work(unsigned int)
+  [ 4] G1ParallelCleaningTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 344022678 ns (0.35%), 344 samples
+  [ 0] nmethod::oops_do(OopClosure*, bool)
+  [ 1] RebuildStrongCodeRootClosure::do_code_blob(CodeBlob*)
+  [ 2] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 3] G1CollectedHeap::prepare_heap_for_mutators()
+  [ 4] G1FullCollector::complete_collection()
+  [ 5] G1CollectedHeap::do_full_collection(bool, bool, bool) [clone .part.0]
+  [ 6] .annobin__ZN16VM_G1CollectFull4doitEv.start
+  [ 7] VM_Operation::evaluate()
+  [ 8] VMThread::evaluate_operation(VM_Operation*)
+  [ 9] VMThread::inner_execute(VM_Operation*)
+  [10] VMThread::run()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 338796610 ns (0.34%), 337 samples
+  [ 0] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 1] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 335929765 ns (0.34%), 336 samples
+  [ 0] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 1] java.lang.AbstractStringBuilder.append
+  [ 2] java.lang.StringBuffer.append
+  [ 3] java.text.DecimalFormat.subformatNumber
+  [ 4] java.text.DecimalFormat.subformat
+  [ 5] java.text.DecimalFormat.doubleSubformat
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.NumberFormat.format
+  [ 9] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [10] org.apache.fop.render.ps.PSRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderWord
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderText
+  [14] org.apache.fop.render.ps.PSRenderer.renderText
+  [15] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderBlock
+  [19] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [20] org.apache.fop.render.AbstractRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [23] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [24] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [25] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [26] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [27] org.apache.fop.render.AbstractRenderer.renderPage
+  [28] org.apache.fop.render.ps.PSRenderer.renderPage
+  [29] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [30] org.apache.fop.area.RenderPagesModel.addPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [34] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [35] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [42] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [43] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [44] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [45] org.apache.fop.fo.FOTreeBuilder.endElement
+  [46] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [47] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [48] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [49] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XMLParser.parse
+  [55] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [56] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [57] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [58] org.apache.fop.cli.InputHandler.transformTo
+  [59] org.apache.fop.cli.InputHandler.renderTo
+  [60] org.apache.fop.cli.Main.startFOP
+  [61] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [62] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [63] java.lang.reflect.Method.invoke
+  [64] org.dacapo.harness.Fop.iterate
+  [65] org.dacapo.harness.Benchmark.run
+  [66] org.dacapo.harness.TestHarness.runBenchmark
+  [67] org.dacapo.harness.TestHarness.main
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [70] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [71] java.lang.reflect.Method.invoke
+  [72] Harness.main
+
+--- 333052156 ns (0.34%), 333 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 331046885 ns (0.34%), 331 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 319024510 ns (0.32%), 319 samples
+  [ 0] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 318949797 ns (0.32%), 319 samples
+  [ 0] java.text.DecimalFormat.subformatNumber
+  [ 1] java.text.DecimalFormat.subformat
+  [ 2] java.text.DecimalFormat.doubleSubformat
+  [ 3] java.text.DecimalFormat.format
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.NumberFormat.format
+  [ 6] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 9] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [15] org.apache.fop.render.AbstractRenderer.renderBlock
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderFlow
+  [18] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [20] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [21] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [22] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [23] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [24] org.apache.fop.render.AbstractRenderer.renderPage
+  [25] org.apache.fop.render.ps.PSRenderer.renderPage
+  [26] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [27] org.apache.fop.area.RenderPagesModel.addPage
+  [28] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [29] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [31] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [32] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [39] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [40] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [41] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [42] org.apache.fop.fo.FOTreeBuilder.endElement
+  [43] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [44] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [45] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [46] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [47] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [49] org.apache.xerces.parsers.XML11Configuration.parse
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XMLParser.parse
+  [52] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [53] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [54] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [55] org.apache.fop.cli.InputHandler.transformTo
+  [56] org.apache.fop.cli.InputHandler.renderTo
+  [57] org.apache.fop.cli.Main.startFOP
+  [58] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [59] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [60] java.lang.reflect.Method.invoke
+  [61] org.dacapo.harness.Fop.iterate
+  [62] org.dacapo.harness.Benchmark.run
+  [63] org.dacapo.harness.TestHarness.runBenchmark
+  [64] org.dacapo.harness.TestHarness.main
+  [65] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [67] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [68] java.lang.reflect.Method.invoke
+  [69] Harness.main
+
+--- 309966354 ns (0.31%), 310 samples
+  [ 0] java.text.DigitList.isZero
+  [ 1] java.text.DecimalFormat.subformatNumber
+  [ 2] java.text.DecimalFormat.subformat
+  [ 3] java.text.DecimalFormat.doubleSubformat
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.NumberFormat.format
+  [ 7] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderWord
+  [10] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [11] org.apache.fop.render.AbstractRenderer.renderText
+  [12] org.apache.fop.render.ps.PSRenderer.renderText
+  [13] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [16] org.apache.fop.render.AbstractRenderer.renderBlock
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [21] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [22] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [23] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [24] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [25] org.apache.fop.render.AbstractRenderer.renderPage
+  [26] org.apache.fop.render.ps.PSRenderer.renderPage
+  [27] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [28] org.apache.fop.area.RenderPagesModel.addPage
+  [29] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [32] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [33] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [40] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [41] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [42] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [43] org.apache.fop.fo.FOTreeBuilder.endElement
+  [44] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [45] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [46] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [47] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XMLParser.parse
+  [53] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [54] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [55] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [56] org.apache.fop.cli.InputHandler.transformTo
+  [57] org.apache.fop.cli.InputHandler.renderTo
+  [58] org.apache.fop.cli.Main.startFOP
+  [59] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [60] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [61] java.lang.reflect.Method.invoke
+  [62] org.dacapo.harness.Fop.iterate
+  [63] org.dacapo.harness.Benchmark.run
+  [64] org.dacapo.harness.TestHarness.runBenchmark
+  [65] org.dacapo.harness.TestHarness.main
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [68] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [69] java.lang.reflect.Method.invoke
+  [70] Harness.main
+
+--- 293057798 ns (0.30%), 293 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 273065929 ns (0.28%), 273 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 268363975 ns (0.27%), 268 samples
+  [ 0] void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+  [ 1] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] G1FullGCAdjustTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 258592068 ns (0.26%), 257 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI19InstanceMirrorKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 257971114 ns (0.26%), 258 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 256404991 ns (0.26%), 256 samples
+  [ 0] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 250999930 ns (0.25%), 251 samples
+  [ 0] PhaseAggressiveCoalesce::insert_copies(Matcher&)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 250912905 ns (0.25%), 250 samples
+  [ 0] CodeHeap::next_used(HeapBlock*) const
+  [ 1] CodeCacheUnloadingTask::work(unsigned int)
+  [ 2] G1ParallelCleaningTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 247886178 ns (0.25%), 248 samples
+  [ 0] jdk.internal.math.FloatingDecimal$BinaryToASCIIBuffer.dtoa
+  [ 1] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 2] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 3] java.text.DigitList.set
+  [ 4] java.text.DecimalFormat.doubleSubformat
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.NumberFormat.format
+  [ 8] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.ps.PSRenderer.renderWord
+  [11] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderText
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderBlock
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [22] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [23] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [24] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [25] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [26] org.apache.fop.render.AbstractRenderer.renderPage
+  [27] org.apache.fop.render.ps.PSRenderer.renderPage
+  [28] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [29] org.apache.fop.area.RenderPagesModel.addPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [33] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [34] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [41] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [42] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [43] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [44] org.apache.fop.fo.FOTreeBuilder.endElement
+  [45] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [46] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [47] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [48] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XMLParser.parse
+  [54] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [55] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [56] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [57] org.apache.fop.cli.InputHandler.transformTo
+  [58] org.apache.fop.cli.InputHandler.renderTo
+  [59] org.apache.fop.cli.Main.startFOP
+  [60] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] org.dacapo.harness.Fop.iterate
+  [64] org.dacapo.harness.Benchmark.run
+  [65] org.dacapo.harness.TestHarness.runBenchmark
+  [66] org.dacapo.harness.TestHarness.main
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [69] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [70] java.lang.reflect.Method.invoke
+  [71] Harness.main
+
+--- 242952483 ns (0.25%), 243 samples
+  [ 0] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 1] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 2] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 3] org.apache.fop.render.AbstractRenderer.renderText
+  [ 4] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 5] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 6] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [ 7] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [ 8] org.apache.fop.render.AbstractRenderer.renderBlock
+  [ 9] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [10] org.apache.fop.render.AbstractRenderer.renderFlow
+  [11] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [12] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [13] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [14] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [15] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [16] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [17] org.apache.fop.render.AbstractRenderer.renderPage
+  [18] org.apache.fop.render.ps.PSRenderer.renderPage
+  [19] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [20] org.apache.fop.area.RenderPagesModel.addPage
+  [21] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [22] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [23] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [24] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [25] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [26] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [27] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [28] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [29] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [30] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [32] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [33] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [34] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [35] org.apache.fop.fo.FOTreeBuilder.endElement
+  [36] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [37] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [38] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [39] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [40] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [41] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [42] org.apache.xerces.parsers.XML11Configuration.parse
+  [43] org.apache.xerces.parsers.XML11Configuration.parse
+  [44] org.apache.xerces.parsers.XMLParser.parse
+  [45] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [46] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [47] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [48] org.apache.fop.cli.InputHandler.transformTo
+  [49] org.apache.fop.cli.InputHandler.renderTo
+  [50] org.apache.fop.cli.Main.startFOP
+  [51] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [52] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [53] java.lang.reflect.Method.invoke
+  [54] org.dacapo.harness.Fop.iterate
+  [55] org.dacapo.harness.Benchmark.run
+  [56] org.dacapo.harness.TestHarness.runBenchmark
+  [57] org.dacapo.harness.TestHarness.main
+  [58] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [59] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [60] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [61] java.lang.reflect.Method.invoke
+  [62] Harness.main
+
+--- 242030333 ns (0.25%), 242 samples
+  [ 0] Arena::contains(void const*) const
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 239201127 ns (0.24%), 239 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParCopyClosure<(G1Barrier)0, false>::do_oop(oopDesc**)
+  [ 2] InterpreterOopMap::iterate_oop(OffsetClosure*) const
+  [ 3] frame::oops_interpreted_do(OopClosure*, RegisterMap const*, bool) const
+  [ 4] JavaThread::oops_do_frames(OopClosure*, CodeBlobClosure*) [clone .part.0]
+  [ 5] Threads::possibly_parallel_oops_do(bool, OopClosure*, CodeBlobClosure*)
+  [ 6] G1RootProcessor::process_java_roots(G1RootClosures*, G1GCPhaseTimes*, unsigned int)
+  [ 7] G1RootProcessor::evacuate_roots(G1ParScanThreadState*, unsigned int)
+  [ 8] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 9] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [10] GangWorker::loop()
+  [11] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 230246199 ns (0.23%), 230 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParCopyClosure<(G1Barrier)0, false>::do_oop(oopDesc**)
+  [ 2] OopMapSet::all_do(frame const*, RegisterMap const*, OopClosure*, void (*)(oopDesc**, derived_pointer*, OopClosure*))
+  [ 3] frame::oops_do(OopClosure*, CodeBlobClosure*, RegisterMap const*) const
+  [ 4] JavaThread::oops_do_frames(OopClosure*, CodeBlobClosure*) [clone .part.0]
+  [ 5] Threads::possibly_parallel_oops_do(bool, OopClosure*, CodeBlobClosure*)
+  [ 6] G1RootProcessor::process_java_roots(G1RootClosures*, G1GCPhaseTimes*, unsigned int)
+  [ 7] G1RootProcessor::evacuate_roots(G1ParScanThreadState*, unsigned int)
+  [ 8] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 9] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [10] GangWorker::loop()
+  [11] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 229063887 ns (0.23%), 229 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 225947719 ns (0.23%), 225 samples
+  [ 0] Method::is_method_handle_intrinsic() const
+  [ 1] CodeCacheUnloadingTask::work(unsigned int)
+  [ 2] G1ParallelCleaningTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 211945715 ns (0.21%), 212 samples
+  [ 0] java.text.DecimalFormat.append
+  [ 1] java.text.DecimalFormat.subformat
+  [ 2] java.text.DecimalFormat.doubleSubformat
+  [ 3] java.text.DecimalFormat.format
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.NumberFormat.format
+  [ 6] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 9] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [15] org.apache.fop.render.AbstractRenderer.renderBlock
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderFlow
+  [18] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [20] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [21] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [22] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [23] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [24] org.apache.fop.render.AbstractRenderer.renderPage
+  [25] org.apache.fop.render.ps.PSRenderer.renderPage
+  [26] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [27] org.apache.fop.area.RenderPagesModel.addPage
+  [28] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [29] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [31] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [32] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [39] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [40] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [41] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [42] org.apache.fop.fo.FOTreeBuilder.endElement
+  [43] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [44] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [45] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [46] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [47] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [49] org.apache.xerces.parsers.XML11Configuration.parse
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XMLParser.parse
+  [52] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [53] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [54] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [55] org.apache.fop.cli.InputHandler.transformTo
+  [56] org.apache.fop.cli.InputHandler.renderTo
+  [57] org.apache.fop.cli.Main.startFOP
+  [58] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [59] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [60] java.lang.reflect.Method.invoke
+  [61] org.dacapo.harness.Fop.iterate
+  [62] org.dacapo.harness.Benchmark.run
+  [63] org.dacapo.harness.TestHarness.runBenchmark
+  [64] org.dacapo.harness.TestHarness.main
+  [65] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [67] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [68] java.lang.reflect.Method.invoke
+  [69] Harness.main
+
+--- 209183422 ns (0.21%), 208 samples
+  [ 0] G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+  [ 1] .annobin__ZN19G1FullGCPrepareTask26G1CalculatePointersClosure14do_heap_regionEP10HeapRegion.start
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] .annobin__ZN19G1FullGCPrepareTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 193083339 ns (0.20%), 191 samples
+  [ 0] clear_page_rep_[k]
+  [ 1] clear_huge_page_[k]
+  [ 2] __do_huge_pmd_anonymous_page_[k]
+  [ 3] __handle_mm_fault_[k]
+  [ 4] handle_mm_fault_[k]
+  [ 5] do_user_addr_fault_[k]
+  [ 6] exc_page_fault_[k]
+  [ 7] asm_exc_page_fault_[k]
+  [ 8] __memset_avx2_unaligned_erms
+  [ 9] MarkBitMap::do_clear(MemRegion, bool)
+  [10] G1ClearBitMapTask::G1ClearBitmapHRClosure::do_heap_region(HeapRegion*)
+  [11] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [12] GangWorker::loop()
+  [13] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [14] .annobin__ZN6Thread8call_runEv.start
+  [15] thread_native_entry(Thread*)
+  [16] start_thread
+
+--- 190958923 ns (0.19%), 191 samples
+  [ 0] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 1] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 189014338 ns (0.19%), 189 samples
+  [ 0] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 189007452 ns (0.19%), 189 samples
+  [ 0] java.text.DecimalFormat.doubleSubformat
+  [ 1] [unknown_Java]
+
+--- 182944250 ns (0.19%), 183 samples
+  [ 0] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 1] java.lang.AbstractStringBuilder.append
+  [ 2] java.lang.StringBuffer.append
+  [ 3] java.text.DecimalFormat.subformatNumber
+  [ 4] java.text.DecimalFormat.subformat
+  [ 5] java.text.DecimalFormat.doubleSubformat
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.NumberFormat.format
+  [ 9] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [10] org.apache.fop.render.ps.PSRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderWord
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderText
+  [14] org.apache.fop.render.ps.PSRenderer.renderText
+  [15] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderBlock
+  [19] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [20] org.apache.fop.render.AbstractRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [23] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [24] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [25] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [26] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [27] org.apache.fop.render.AbstractRenderer.renderPage
+  [28] org.apache.fop.render.ps.PSRenderer.renderPage
+  [29] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [30] org.apache.fop.area.RenderPagesModel.addPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [34] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [35] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [42] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [43] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [44] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [45] org.apache.fop.fo.FOTreeBuilder.endElement
+  [46] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [47] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [48] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [49] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XMLParser.parse
+  [55] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [56] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [57] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [58] org.apache.fop.cli.InputHandler.transformTo
+  [59] org.apache.fop.cli.InputHandler.renderTo
+  [60] org.apache.fop.cli.Main.startFOP
+  [61] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [62] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [63] java.lang.reflect.Method.invoke
+  [64] org.dacapo.harness.Fop.iterate
+  [65] org.dacapo.harness.Benchmark.run
+  [66] org.dacapo.harness.TestHarness.runBenchmark
+  [67] org.dacapo.harness.TestHarness.main
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [70] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [71] java.lang.reflect.Method.invoke
+  [72] Harness.main
+
+--- 177989868 ns (0.18%), 178 samples
+  [ 0] java.text.DigitList.set
+  [ 1] java.text.DigitList.set
+  [ 2] java.text.DecimalFormat.doubleSubformat
+  [ 3] java.text.DecimalFormat.format
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.NumberFormat.format
+  [ 6] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 9] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [15] org.apache.fop.render.AbstractRenderer.renderBlock
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderFlow
+  [18] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [20] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [21] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [22] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [23] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [24] org.apache.fop.render.AbstractRenderer.renderPage
+  [25] org.apache.fop.render.ps.PSRenderer.renderPage
+  [26] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [27] org.apache.fop.area.RenderPagesModel.addPage
+  [28] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [29] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [31] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [32] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [39] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [40] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [41] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [42] org.apache.fop.fo.FOTreeBuilder.endElement
+  [43] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [44] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [45] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [46] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [47] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [49] org.apache.xerces.parsers.XML11Configuration.parse
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XMLParser.parse
+  [52] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [53] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [54] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [55] org.apache.fop.cli.InputHandler.transformTo
+  [56] org.apache.fop.cli.InputHandler.renderTo
+  [57] org.apache.fop.cli.Main.startFOP
+  [58] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [59] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [60] java.lang.reflect.Method.invoke
+  [61] org.dacapo.harness.Fop.iterate
+  [62] org.dacapo.harness.Benchmark.run
+  [63] org.dacapo.harness.TestHarness.runBenchmark
+  [64] org.dacapo.harness.TestHarness.main
+  [65] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [67] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [68] java.lang.reflect.Method.invoke
+  [69] Harness.main
+
+--- 172002341 ns (0.17%), 172 samples
+  [ 0] java.util.LinkedList.linkLast
+  [ 1] java.util.LinkedList.add
+  [ 2] org.apache.fop.layoutmgr.inline.TextLayoutManager.getNextKnuthElements
+  [ 3] org.apache.fop.layoutmgr.inline.LineLayoutManager.collectInlineKnuthElements
+  [ 4] org.apache.fop.layoutmgr.inline.LineLayoutManager.getNextKnuthElements
+  [ 5] org.apache.fop.layoutmgr.BlockStackingLayoutManager.getNextKnuthElements
+  [ 6] org.apache.fop.layoutmgr.BlockLayoutManager.getNextKnuthElements
+  [ 7] org.apache.fop.layoutmgr.FlowLayoutManager.getNextKnuthElements
+  [ 8] org.apache.fop.layoutmgr.PageBreaker.getNextKnuthElements
+  [ 9] org.apache.fop.layoutmgr.AbstractBreaker.getNextBlockList
+  [10] org.apache.fop.layoutmgr.PageBreaker.getNextBlockList
+  [11] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [12] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [13] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [14] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [15] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [16] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [17] org.apache.fop.fo.FOTreeBuilder.endElement
+  [18] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [19] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [20] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [21] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [22] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [23] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [24] org.apache.xerces.parsers.XML11Configuration.parse
+  [25] org.apache.xerces.parsers.XML11Configuration.parse
+  [26] org.apache.xerces.parsers.XMLParser.parse
+  [27] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [28] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [29] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [30] org.apache.fop.cli.InputHandler.transformTo
+  [31] org.apache.fop.cli.InputHandler.renderTo
+  [32] org.apache.fop.cli.Main.startFOP
+  [33] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [35] java.lang.reflect.Method.invoke
+  [36] org.dacapo.harness.Fop.iterate
+  [37] org.dacapo.harness.Benchmark.run
+  [38] org.dacapo.harness.TestHarness.runBenchmark
+  [39] org.dacapo.harness.TestHarness.main
+  [40] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [41] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [42] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [43] java.lang.reflect.Method.invoke
+  [44] Harness.main
+
+--- 168894042 ns (0.17%), 169 samples
+  [ 0] org.apache.fop.layoutmgr.KnuthPossPosIter.getLM
+  [ 1] org.apache.fop.layoutmgr.PositionIterator.checkNext
+  [ 2] org.apache.fop.layoutmgr.KnuthPossPosIter.checkNext
+  [ 3] org.apache.fop.layoutmgr.PositionIterator.hasNext
+  [ 4] org.apache.fop.layoutmgr.inline.TextLayoutManager.addAreas
+  [ 5] org.apache.fop.layoutmgr.inline.LineLayoutManager.addInlineArea
+  [ 6] org.apache.fop.layoutmgr.inline.LineLayoutManager.addAreas
+  [ 7] org.apache.fop.layoutmgr.BlockLayoutManager.addAreas
+  [ 8] org.apache.fop.layoutmgr.AreaAdditionUtil.addAreas
+  [ 9] org.apache.fop.layoutmgr.FlowLayoutManager.addAreas
+  [10] org.apache.fop.layoutmgr.PageBreaker.addAreas
+  [11] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [12] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [13] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [14] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [15] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [16] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [17] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [18] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [19] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [20] org.apache.fop.fo.FOTreeBuilder.endElement
+  [21] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [22] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [23] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [24] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [25] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [26] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [27] org.apache.xerces.parsers.XML11Configuration.parse
+  [28] org.apache.xerces.parsers.XML11Configuration.parse
+  [29] org.apache.xerces.parsers.XMLParser.parse
+  [30] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [31] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [32] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [33] org.apache.fop.cli.InputHandler.transformTo
+  [34] org.apache.fop.cli.InputHandler.renderTo
+  [35] org.apache.fop.cli.Main.startFOP
+  [36] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [37] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [38] java.lang.reflect.Method.invoke
+  [39] org.dacapo.harness.Fop.iterate
+  [40] org.dacapo.harness.Benchmark.run
+  [41] org.dacapo.harness.TestHarness.runBenchmark
+  [42] org.dacapo.harness.TestHarness.main
+  [43] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [44] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [45] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [46] java.lang.reflect.Method.invoke
+  [47] Harness.main
+
+--- 166017511 ns (0.17%), 166 samples
+  [ 0] PhaseIdealLoop::Dominators()
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 164960987 ns (0.17%), 165 samples
+  [ 0] java.util.Arrays.copyOf
+  [ 1] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 2] java.lang.AbstractStringBuilder.append
+  [ 3] java.lang.StringBuffer.append
+  [ 4] java.text.DecimalFormat.subformatNumber
+  [ 5] java.text.DecimalFormat.subformat
+  [ 6] java.text.DecimalFormat.doubleSubformat
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.DecimalFormat.format
+  [ 9] java.text.NumberFormat.format
+  [10] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.ps.PSRenderer.renderWord
+  [13] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderText
+  [15] org.apache.fop.render.ps.PSRenderer.renderText
+  [16] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderBlock
+  [20] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [21] org.apache.fop.render.AbstractRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [23] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [24] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [25] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [26] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [27] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [28] org.apache.fop.render.AbstractRenderer.renderPage
+  [29] org.apache.fop.render.ps.PSRenderer.renderPage
+  [30] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [31] org.apache.fop.area.RenderPagesModel.addPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [34] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [35] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [36] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [39] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [42] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [43] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [44] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [45] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [46] org.apache.fop.fo.FOTreeBuilder.endElement
+  [47] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [48] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [49] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [50] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [52] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XML11Configuration.parse
+  [55] org.apache.xerces.parsers.XMLParser.parse
+  [56] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [57] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [58] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [59] org.apache.fop.cli.InputHandler.transformTo
+  [60] org.apache.fop.cli.InputHandler.renderTo
+  [61] org.apache.fop.cli.Main.startFOP
+  [62] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [63] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [64] java.lang.reflect.Method.invoke
+  [65] org.dacapo.harness.Fop.iterate
+  [66] org.dacapo.harness.Benchmark.run
+  [67] org.dacapo.harness.TestHarness.runBenchmark
+  [68] org.dacapo.harness.TestHarness.main
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [70] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [71] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [72] java.lang.reflect.Method.invoke
+  [73] Harness.main
+
+--- 164045415 ns (0.17%), 164 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 154801689 ns (0.16%), 154 samples
+  [ 0] G1RegionMarkStatsCache::add_live_words(oopDesc*)
+  [ 1] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 2] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 3] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 154009625 ns (0.16%), 154 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 2] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 150290871 ns (0.15%), 150 samples
+  [ 0] NativeCall::destination() const
+  [ 1] .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+  [ 2] CompiledMethod::unload_nmethod_caches(bool)
+  [ 3] nmethod::do_unloading(bool)
+  [ 4] CodeCacheUnloadingTask::work(unsigned int)
+  [ 5] G1ParallelCleaningTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 149952328 ns (0.15%), 150 samples
+  [ 0] java.util.Arrays.copyOf
+  [ 1] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 2] java.lang.AbstractStringBuilder.append
+  [ 3] java.lang.StringBuffer.append
+  [ 4] java.text.DecimalFormat.subformatNumber
+  [ 5] java.text.DecimalFormat.subformat
+  [ 6] java.text.DecimalFormat.doubleSubformat
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.DecimalFormat.format
+  [ 9] java.text.NumberFormat.format
+  [10] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.ps.PSRenderer.renderWord
+  [13] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderText
+  [15] org.apache.fop.render.ps.PSRenderer.renderText
+  [16] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderBlock
+  [20] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [21] org.apache.fop.render.AbstractRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [23] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [24] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [25] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [26] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [27] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [28] org.apache.fop.render.AbstractRenderer.renderPage
+  [29] org.apache.fop.render.ps.PSRenderer.renderPage
+  [30] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [31] org.apache.fop.area.RenderPagesModel.addPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [34] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [35] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [36] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [39] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [42] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [43] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [44] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [45] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [46] org.apache.fop.fo.FOTreeBuilder.endElement
+  [47] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [48] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [49] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [50] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [52] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XML11Configuration.parse
+  [55] org.apache.xerces.parsers.XMLParser.parse
+  [56] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [57] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [58] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [59] org.apache.fop.cli.InputHandler.transformTo
+  [60] org.apache.fop.cli.InputHandler.renderTo
+  [61] org.apache.fop.cli.Main.startFOP
+  [62] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [63] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [64] java.lang.reflect.Method.invoke
+  [65] org.dacapo.harness.Fop.iterate
+  [66] org.dacapo.harness.Benchmark.run
+  [67] org.dacapo.harness.TestHarness.runBenchmark
+  [68] org.dacapo.harness.TestHarness.main
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [70] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [71] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [72] java.lang.reflect.Method.invoke
+  [73] Harness.main
+
+--- 148214236 ns (0.15%), 148 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 145285104 ns (0.15%), 145 samples
+  [ 0] CodeHeap::find_blob_unsafe(void*) const
+  [ 1] .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+  [ 2] CompiledMethod::unload_nmethod_caches(bool)
+  [ 3] nmethod::do_unloading(bool)
+  [ 4] CodeCacheUnloadingTask::work(unsigned int)
+  [ 5] G1ParallelCleaningTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 142288463 ns (0.14%), 141 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI16InstanceRefKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 139541621 ns (0.14%), 139 samples
+  [ 0] G1FullGCCompactTask::compact_region(HeapRegion*)
+  [ 1] G1FullGCCompactTask::work(unsigned int)
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 139042579 ns (0.14%), 139 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 139016740 ns (0.14%), 139 samples
+  [ 0] PhaseChaitin::Select()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 136049222 ns (0.14%), 136 samples
+  [ 0] Matcher::xform(Node*, int)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 135089919 ns (0.14%), 135 samples
+  [ 0] PhaseOutput::BuildOopMaps()
+  [ 1] PhaseOutput::Output()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 133012575 ns (0.13%), 133 samples
+  [ 0] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 1] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 2] java.text.DigitList.set
+  [ 3] java.text.DecimalFormat.doubleSubformat
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.NumberFormat.format
+  [ 7] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderWord
+  [10] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [11] org.apache.fop.render.AbstractRenderer.renderText
+  [12] org.apache.fop.render.ps.PSRenderer.renderText
+  [13] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [16] org.apache.fop.render.AbstractRenderer.renderBlock
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [21] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [22] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [23] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [24] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [25] org.apache.fop.render.AbstractRenderer.renderPage
+  [26] org.apache.fop.render.ps.PSRenderer.renderPage
+  [27] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [28] org.apache.fop.area.RenderPagesModel.addPage
+  [29] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [32] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [33] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [40] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [41] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [42] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [43] org.apache.fop.fo.FOTreeBuilder.endElement
+  [44] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [45] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [46] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [47] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XMLParser.parse
+  [53] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [54] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [55] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [56] org.apache.fop.cli.InputHandler.transformTo
+  [57] org.apache.fop.cli.InputHandler.renderTo
+  [58] org.apache.fop.cli.Main.startFOP
+  [59] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [60] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [61] java.lang.reflect.Method.invoke
+  [62] org.dacapo.harness.Fop.iterate
+  [63] org.dacapo.harness.Benchmark.run
+  [64] org.dacapo.harness.TestHarness.runBenchmark
+  [65] org.dacapo.harness.TestHarness.main
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [68] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [69] java.lang.reflect.Method.invoke
+  [70] Harness.main
+
+--- 132899897 ns (0.13%), 133 samples
+  [ 0] java.lang.StringBuffer.toString
+  [ 1] java.text.NumberFormat.format
+  [ 2] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 3] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 4] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 5] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 6] org.apache.fop.render.AbstractRenderer.renderText
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 9] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [11] org.apache.fop.render.AbstractRenderer.renderBlock
+  [12] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [13] org.apache.fop.render.AbstractRenderer.renderFlow
+  [14] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [15] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [16] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [17] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [18] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [19] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [20] org.apache.fop.render.AbstractRenderer.renderPage
+  [21] org.apache.fop.render.ps.PSRenderer.renderPage
+  [22] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [23] org.apache.fop.area.RenderPagesModel.addPage
+  [24] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [25] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [26] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [27] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [28] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [29] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [30] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [31] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [32] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [34] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [35] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [36] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [37] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [38] org.apache.fop.fo.FOTreeBuilder.endElement
+  [39] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [40] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [41] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [42] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [43] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [44] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [45] org.apache.xerces.parsers.XML11Configuration.parse
+  [46] org.apache.xerces.parsers.XML11Configuration.parse
+  [47] org.apache.xerces.parsers.XMLParser.parse
+  [48] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [49] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [50] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [51] org.apache.fop.cli.InputHandler.transformTo
+  [52] org.apache.fop.cli.InputHandler.renderTo
+  [53] org.apache.fop.cli.Main.startFOP
+  [54] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [55] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [56] java.lang.reflect.Method.invoke
+  [57] org.dacapo.harness.Fop.iterate
+  [58] org.dacapo.harness.Benchmark.run
+  [59] org.dacapo.harness.TestHarness.runBenchmark
+  [60] org.dacapo.harness.TestHarness.main
+  [61] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [62] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [63] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [64] java.lang.reflect.Method.invoke
+  [65] Harness.main
+
+--- 129973705 ns (0.13%), 130 samples
+  [ 0] java.lang.AbstractStringBuilder.append
+  [ 1] java.lang.StringBuffer.append
+  [ 2] java.text.DecimalFormat.subformatNumber
+  [ 3] java.text.DecimalFormat.subformat
+  [ 4] java.text.DecimalFormat.doubleSubformat
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.NumberFormat.format
+  [ 8] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.ps.PSRenderer.renderWord
+  [11] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderText
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderBlock
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [22] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [23] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [24] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [25] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [26] org.apache.fop.render.AbstractRenderer.renderPage
+  [27] org.apache.fop.render.ps.PSRenderer.renderPage
+  [28] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [29] org.apache.fop.area.RenderPagesModel.addPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [33] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [34] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [41] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [42] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [43] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [44] org.apache.fop.fo.FOTreeBuilder.endElement
+  [45] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [46] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [47] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [48] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XMLParser.parse
+  [54] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [55] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [56] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [57] org.apache.fop.cli.InputHandler.transformTo
+  [58] org.apache.fop.cli.InputHandler.renderTo
+  [59] org.apache.fop.cli.Main.startFOP
+  [60] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] org.dacapo.harness.Fop.iterate
+  [64] org.dacapo.harness.Benchmark.run
+  [65] org.dacapo.harness.TestHarness.runBenchmark
+  [66] org.dacapo.harness.TestHarness.main
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [69] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [70] java.lang.reflect.Method.invoke
+  [71] Harness.main
+
+--- 125931670 ns (0.13%), 126 samples
+  [ 0] java.util.Arrays.copyOf
+  [ 1] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 2] java.lang.AbstractStringBuilder.append
+  [ 3] java.lang.StringBuffer.append
+  [ 4] java.text.DecimalFormat.subformatNumber
+  [ 5] java.text.DecimalFormat.subformat
+  [ 6] java.text.DecimalFormat.doubleSubformat
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.DecimalFormat.format
+  [ 9] java.text.NumberFormat.format
+  [10] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.ps.PSRenderer.renderWord
+  [13] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderText
+  [15] org.apache.fop.render.ps.PSRenderer.renderText
+  [16] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderBlock
+  [20] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [21] org.apache.fop.render.AbstractRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [23] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [24] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [25] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [26] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [27] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [28] org.apache.fop.render.AbstractRenderer.renderPage
+  [29] org.apache.fop.render.ps.PSRenderer.renderPage
+  [30] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [31] org.apache.fop.area.RenderPagesModel.addPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [34] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [35] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [36] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [39] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [42] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [43] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [44] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [45] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [46] org.apache.fop.fo.FOTreeBuilder.endElement
+  [47] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [48] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [49] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [50] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [52] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XML11Configuration.parse
+  [55] org.apache.xerces.parsers.XMLParser.parse
+  [56] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [57] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [58] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [59] org.apache.fop.cli.InputHandler.transformTo
+  [60] org.apache.fop.cli.InputHandler.renderTo
+  [61] org.apache.fop.cli.Main.startFOP
+  [62] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [63] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [64] java.lang.reflect.Method.invoke
+  [65] org.dacapo.harness.Fop.iterate
+  [66] org.dacapo.harness.Benchmark.run
+  [67] org.dacapo.harness.TestHarness.runBenchmark
+  [68] org.dacapo.harness.TestHarness.main
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [70] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [71] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [72] java.lang.reflect.Method.invoke
+  [73] Harness.main
+
+--- 125261947 ns (0.13%), 125 samples
+  [ 0] Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+  [ 1] oop_Relocation::oop_value()
+  [ 2] nmethod::oops_do(OopClosure*, bool)
+  [ 3] ClosureIsUnloadingBehaviour::is_unloading(CompiledMethod*) const
+  [ 4] nmethod::do_unloading(bool)
+  [ 5] CodeCacheUnloadingTask::work(unsigned int)
+  [ 6] G1ParallelCleaningTask::work(unsigned int)
+  [ 7] GangWorker::loop()
+  [ 8] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 124042751 ns (0.13%), 124 samples
+  [ 0] Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+  [ 1] oop_Relocation::oop_value()
+  [ 2] nmethod::oops_do(OopClosure*, bool)
+  [ 3] CodeBlobToOopClosure::do_code_blob(CodeBlob*)
+  [ 4] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 5] G1FullGCAdjustTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 123992579 ns (0.13%), 124 samples
+  [ 0] PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+  [ 1] PhaseLive::compute(unsigned int)
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 123004730 ns (0.12%), 123 samples
+  [ 0] metadata_Relocation::unpack_data()
+  [ 1] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 121989675 ns (0.12%), 122 samples
+  [ 0] PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 119040089 ns (0.12%), 119 samples
+  [ 0] PhaseChaitin::merge_multidefs()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 119022190 ns (0.12%), 119 samples
+  [ 0] G1CodeRootSetTable::add(nmethod*)
+  [ 1] G1CodeRootSet::add(nmethod*)
+  [ 2] nmethod::oops_do(OopClosure*, bool)
+  [ 3] RebuildStrongCodeRootClosure::do_code_blob(CodeBlob*)
+  [ 4] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 5] G1CollectedHeap::prepare_heap_for_mutators()
+  [ 6] G1FullCollector::complete_collection()
+  [ 7] G1CollectedHeap::do_full_collection(bool, bool, bool) [clone .part.0]
+  [ 8] .annobin__ZN16VM_G1CollectFull4doitEv.start
+  [ 9] VM_Operation::evaluate()
+  [10] VMThread::evaluate_operation(VM_Operation*)
+  [11] VMThread::inner_execute(VM_Operation*)
+  [12] VMThread::run()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 118194218 ns (0.12%), 117 samples
+  [ 0] .annobin__ZN13WeakProcessor4Task4workI19G1STWIsAliveClosure18G1KeepAliveClosureEEvjPT_PT0_.start
+  [ 1] GangWorker::loop()
+  [ 2] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 116973589 ns (0.12%), 117 samples
+  [ 0] java.util.HashMap.get
+  [ 1] org.apache.fop.area.Area.getTrait
+  [ 2] org.apache.fop.render.PrintRenderer.getFontFromArea
+  [ 3] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 4] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 5] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 6] org.apache.fop.render.AbstractRenderer.renderText
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 9] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [11] org.apache.fop.render.AbstractRenderer.renderBlock
+  [12] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [13] org.apache.fop.render.AbstractRenderer.renderFlow
+  [14] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [15] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [16] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [17] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [18] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [19] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [20] org.apache.fop.render.AbstractRenderer.renderPage
+  [21] org.apache.fop.render.ps.PSRenderer.renderPage
+  [22] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [23] org.apache.fop.area.RenderPagesModel.addPage
+  [24] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [25] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [26] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [27] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [28] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [29] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [30] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [31] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [32] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [34] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [35] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [36] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [37] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [38] org.apache.fop.fo.FOTreeBuilder.endElement
+  [39] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [40] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [41] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [42] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [43] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [44] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [45] org.apache.xerces.parsers.XML11Configuration.parse
+  [46] org.apache.xerces.parsers.XML11Configuration.parse
+  [47] org.apache.xerces.parsers.XMLParser.parse
+  [48] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [49] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [50] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [51] org.apache.fop.cli.InputHandler.transformTo
+  [52] org.apache.fop.cli.InputHandler.renderTo
+  [53] org.apache.fop.cli.Main.startFOP
+  [54] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [55] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [56] java.lang.reflect.Method.invoke
+  [57] org.dacapo.harness.Fop.iterate
+  [58] org.dacapo.harness.Benchmark.run
+  [59] org.dacapo.harness.TestHarness.runBenchmark
+  [60] org.dacapo.harness.TestHarness.main
+  [61] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [62] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [63] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [64] java.lang.reflect.Method.invoke
+  [65] Harness.main
+
+--- 114986098 ns (0.12%), 115 samples
+  [ 0] org.apache.xmlgraphics.ps.PSGenerator.escapeChar
+  [ 1] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 2] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 3] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 4] org.apache.fop.render.AbstractRenderer.renderText
+  [ 5] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 6] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 7] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [ 8] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [ 9] org.apache.fop.render.AbstractRenderer.renderBlock
+  [10] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [11] org.apache.fop.render.AbstractRenderer.renderFlow
+  [12] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [13] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [14] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [15] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [16] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [17] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [18] org.apache.fop.render.AbstractRenderer.renderPage
+  [19] org.apache.fop.render.ps.PSRenderer.renderPage
+  [20] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [21] org.apache.fop.area.RenderPagesModel.addPage
+  [22] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [23] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [24] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [25] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [26] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [27] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [28] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [29] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [30] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [31] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [32] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [33] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [34] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [35] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [36] org.apache.fop.fo.FOTreeBuilder.endElement
+  [37] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [38] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [39] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [40] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [41] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [42] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [43] org.apache.xerces.parsers.XML11Configuration.parse
+  [44] org.apache.xerces.parsers.XML11Configuration.parse
+  [45] org.apache.xerces.parsers.XMLParser.parse
+  [46] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [47] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [48] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [49] org.apache.fop.cli.InputHandler.transformTo
+  [50] org.apache.fop.cli.InputHandler.renderTo
+  [51] org.apache.fop.cli.Main.startFOP
+  [52] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [53] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [54] java.lang.reflect.Method.invoke
+  [55] org.dacapo.harness.Fop.iterate
+  [56] org.dacapo.harness.Benchmark.run
+  [57] org.dacapo.harness.TestHarness.runBenchmark
+  [58] org.dacapo.harness.TestHarness.main
+  [59] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [60] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] Harness.main
+
+--- 114958059 ns (0.12%), 115 samples
+  [ 0] Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+  [ 1] oop_Relocation::oop_value()
+  [ 2] nmethod::oops_do(OopClosure*, bool)
+  [ 3] RebuildStrongCodeRootClosure::do_code_blob(CodeBlob*)
+  [ 4] CodeCache::blobs_do(CodeBlobClosure*)
+  [ 5] G1CollectedHeap::prepare_heap_for_mutators()
+  [ 6] G1FullCollector::complete_collection()
+  [ 7] G1CollectedHeap::do_full_collection(bool, bool, bool) [clone .part.0]
+  [ 8] .annobin__ZN16VM_G1CollectFull4doitEv.start
+  [ 9] VM_Operation::evaluate()
+  [10] VMThread::evaluate_operation(VM_Operation*)
+  [11] VMThread::inner_execute(VM_Operation*)
+  [12] VMThread::run()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 114485899 ns (0.12%), 114 samples
+  [ 0] __memset_avx2_unaligned_erms
+  [ 1] MarkBitMap::do_clear(MemRegion, bool)
+  [ 2] G1ClearBitMapTask::G1ClearBitmapHRClosure::do_heap_region(HeapRegion*)
+  [ 3] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 114007827 ns (0.12%), 114 samples
+  [ 0] PhaseIFG::remove_node(unsigned int)
+  [ 1] PhaseChaitin::Simplify()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 112990336 ns (0.11%), 113 samples
+  [ 0] jdk.internal.util.ArraysSupport.newLength
+  [ 1] java.lang.AbstractStringBuilder.newCapacity
+  [ 2] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 3] java.lang.AbstractStringBuilder.append
+  [ 4] java.lang.StringBuffer.append
+  [ 5] java.text.DecimalFormat.subformatNumber
+  [ 6] java.text.DecimalFormat.subformat
+  [ 7] java.text.DecimalFormat.doubleSubformat
+  [ 8] java.text.DecimalFormat.format
+  [ 9] java.text.DecimalFormat.format
+  [10] java.text.NumberFormat.format
+  [11] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [12] org.apache.fop.render.ps.PSRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderWord
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderText
+  [16] org.apache.fop.render.ps.PSRenderer.renderText
+  [17] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [18] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [19] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [20] org.apache.fop.render.AbstractRenderer.renderBlock
+  [21] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [22] org.apache.fop.render.AbstractRenderer.renderFlow
+  [23] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [24] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [25] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [26] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [27] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [28] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [29] org.apache.fop.render.AbstractRenderer.renderPage
+  [30] org.apache.fop.render.ps.PSRenderer.renderPage
+  [31] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [32] org.apache.fop.area.RenderPagesModel.addPage
+  [33] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [34] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [35] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [36] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [37] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [40] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [41] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [42] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [43] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [44] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [45] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [46] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [47] org.apache.fop.fo.FOTreeBuilder.endElement
+  [48] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [49] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [50] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [51] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [52] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [53] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [54] org.apache.xerces.parsers.XML11Configuration.parse
+  [55] org.apache.xerces.parsers.XML11Configuration.parse
+  [56] org.apache.xerces.parsers.XMLParser.parse
+  [57] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [58] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [59] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [60] org.apache.fop.cli.InputHandler.transformTo
+  [61] org.apache.fop.cli.InputHandler.renderTo
+  [62] org.apache.fop.cli.Main.startFOP
+  [63] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [64] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [65] java.lang.reflect.Method.invoke
+  [66] org.dacapo.harness.Fop.iterate
+  [67] org.dacapo.harness.Benchmark.run
+  [68] org.dacapo.harness.TestHarness.runBenchmark
+  [69] org.dacapo.harness.TestHarness.main
+  [70] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [71] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [72] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [73] java.lang.reflect.Method.invoke
+  [74] Harness.main
+
+--- 110985244 ns (0.11%), 111 samples
+  [ 0] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 1] java.lang.AbstractStringBuilder.append
+  [ 2] java.lang.StringBuffer.append
+  [ 3] java.text.DecimalFormat.subformatNumber
+  [ 4] java.text.DecimalFormat.subformat
+  [ 5] java.text.DecimalFormat.doubleSubformat
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.NumberFormat.format
+  [ 9] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [10] org.apache.fop.render.ps.PSRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderWord
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderText
+  [14] org.apache.fop.render.ps.PSRenderer.renderText
+  [15] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderBlock
+  [19] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [20] org.apache.fop.render.AbstractRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [23] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [24] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [25] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [26] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [27] org.apache.fop.render.AbstractRenderer.renderPage
+  [28] org.apache.fop.render.ps.PSRenderer.renderPage
+  [29] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [30] org.apache.fop.area.RenderPagesModel.addPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [34] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [35] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [42] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [43] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [44] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [45] org.apache.fop.fo.FOTreeBuilder.endElement
+  [46] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [47] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [48] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [49] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XMLParser.parse
+  [55] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [56] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [57] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [58] org.apache.fop.cli.InputHandler.transformTo
+  [59] org.apache.fop.cli.InputHandler.renderTo
+  [60] org.apache.fop.cli.Main.startFOP
+  [61] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [62] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [63] java.lang.reflect.Method.invoke
+  [64] org.dacapo.harness.Fop.iterate
+  [65] org.dacapo.harness.Benchmark.run
+  [66] org.dacapo.harness.TestHarness.runBenchmark
+  [67] org.dacapo.harness.TestHarness.main
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [70] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [71] java.lang.reflect.Method.invoke
+  [72] Harness.main
+
+--- 110029055 ns (0.11%), 110 samples
+  [ 0] PhaseIFG::effective_degree(unsigned int) const
+  [ 1] PhaseIFG::Compute_Effective_Degree()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 110027011 ns (0.11%), 110 samples
+  [ 0] .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 109976954 ns (0.11%), 110 samples
+  [ 0] java.lang.String.<init>
+  [ 1] java.lang.StringLatin1.newString
+  [ 2] java.lang.StringBuffer.toString
+  [ 3] java.text.NumberFormat.format
+  [ 4] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 5] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 6] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 7] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [ 8] org.apache.fop.render.AbstractRenderer.renderText
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [11] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [13] org.apache.fop.render.AbstractRenderer.renderBlock
+  [14] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [15] org.apache.fop.render.AbstractRenderer.renderFlow
+  [16] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [17] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [18] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [19] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [20] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [21] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [22] org.apache.fop.render.AbstractRenderer.renderPage
+  [23] org.apache.fop.render.ps.PSRenderer.renderPage
+  [24] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [25] org.apache.fop.area.RenderPagesModel.addPage
+  [26] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [27] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [28] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [29] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [30] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [31] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [32] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [33] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [36] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [37] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [38] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [39] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [40] org.apache.fop.fo.FOTreeBuilder.endElement
+  [41] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [42] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [43] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [44] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [45] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [46] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [47] org.apache.xerces.parsers.XML11Configuration.parse
+  [48] org.apache.xerces.parsers.XML11Configuration.parse
+  [49] org.apache.xerces.parsers.XMLParser.parse
+  [50] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [51] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [52] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [53] org.apache.fop.cli.InputHandler.transformTo
+  [54] org.apache.fop.cli.InputHandler.renderTo
+  [55] org.apache.fop.cli.Main.startFOP
+  [56] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [57] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [58] java.lang.reflect.Method.invoke
+  [59] org.dacapo.harness.Fop.iterate
+  [60] org.dacapo.harness.Benchmark.run
+  [61] org.dacapo.harness.TestHarness.runBenchmark
+  [62] org.dacapo.harness.TestHarness.main
+  [63] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [64] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [65] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [66] java.lang.reflect.Method.invoke
+  [67] Harness.main
+
+--- 108285185 ns (0.11%), 108 samples
+  [ 0] void OopOopIterateDispatch<G1ScanCardClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1ScanCardClosure*, oopDesc*, Klass*)
+  [ 1] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 107031666 ns (0.11%), 107 samples
+  [ 0] PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+  [ 1] PhaseConservativeCoalesce::copy_copy(Node*, Node*, Block*, unsigned int) [clone .part.0]
+  [ 2] PhaseConservativeCoalesce::coalesce(Block*)
+  [ 3] PhaseCoalesce::coalesce_driver()
+  [ 4] PhaseChaitin::Register_Allocate()
+  [ 5] Compile::Code_Gen()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 106967355 ns (0.11%), 107 samples
+  [ 0] jdk.internal.math.FloatingDecimal.getBinaryToASCIIBuffer
+  [ 1] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 2] jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+  [ 3] java.text.DigitList.set
+  [ 4] java.text.DecimalFormat.doubleSubformat
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.NumberFormat.format
+  [ 8] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.ps.PSRenderer.renderWord
+  [11] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderText
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderBlock
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [22] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [23] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [24] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [25] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [26] org.apache.fop.render.AbstractRenderer.renderPage
+  [27] org.apache.fop.render.ps.PSRenderer.renderPage
+  [28] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [29] org.apache.fop.area.RenderPagesModel.addPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [33] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [34] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [41] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [42] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [43] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [44] org.apache.fop.fo.FOTreeBuilder.endElement
+  [45] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [46] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [47] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [48] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XMLParser.parse
+  [54] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [55] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [56] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [57] org.apache.fop.cli.InputHandler.transformTo
+  [58] org.apache.fop.cli.InputHandler.renderTo
+  [59] org.apache.fop.cli.Main.startFOP
+  [60] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] org.dacapo.harness.Fop.iterate
+  [64] org.dacapo.harness.Benchmark.run
+  [65] org.dacapo.harness.TestHarness.runBenchmark
+  [66] org.dacapo.harness.TestHarness.main
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [69] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [70] java.lang.reflect.Method.invoke
+  [71] Harness.main
+
+--- 106038704 ns (0.11%), 106 samples
+  [ 0] PhaseCCP::analyze()
+  [ 1] Compile::Optimize()
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 104963105 ns (0.11%), 105 samples
+  [ 0] java.text.DigitList.set
+  [ 1] java.text.DigitList.set
+  [ 2] java.text.DecimalFormat.doubleSubformat
+  [ 3] java.text.DecimalFormat.format
+  [ 4] java.text.DecimalFormat.format
+  [ 5] java.text.NumberFormat.format
+  [ 6] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 7] org.apache.fop.render.ps.PSRenderer.renderText
+  [ 8] org.apache.fop.render.ps.PSRenderer.renderWord
+  [ 9] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [10] org.apache.fop.render.AbstractRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderText
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [14] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [15] org.apache.fop.render.AbstractRenderer.renderBlock
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderFlow
+  [18] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [19] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [20] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [21] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [22] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [23] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [24] org.apache.fop.render.AbstractRenderer.renderPage
+  [25] org.apache.fop.render.ps.PSRenderer.renderPage
+  [26] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [27] org.apache.fop.area.RenderPagesModel.addPage
+  [28] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [29] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [31] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [32] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [33] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [34] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [35] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [38] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [39] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [40] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [41] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [42] org.apache.fop.fo.FOTreeBuilder.endElement
+  [43] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [44] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [45] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [46] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [47] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [48] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [49] org.apache.xerces.parsers.XML11Configuration.parse
+  [50] org.apache.xerces.parsers.XML11Configuration.parse
+  [51] org.apache.xerces.parsers.XMLParser.parse
+  [52] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [53] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [54] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [55] org.apache.fop.cli.InputHandler.transformTo
+  [56] org.apache.fop.cli.InputHandler.renderTo
+  [57] org.apache.fop.cli.Main.startFOP
+  [58] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [59] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [60] java.lang.reflect.Method.invoke
+  [61] org.dacapo.harness.Fop.iterate
+  [62] org.dacapo.harness.Benchmark.run
+  [63] org.dacapo.harness.TestHarness.runBenchmark
+  [64] org.dacapo.harness.TestHarness.main
+  [65] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [66] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [67] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [68] java.lang.reflect.Method.invoke
+  [69] Harness.main
+
+--- 104961942 ns (0.11%), 104 samples
+  [ 0] SpinPause
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 104012813 ns (0.11%), 104 samples
+  [ 0] org.apache.fop.fo.StaticPropertyList.<init>
+  [ 1] org.apache.fop.fo.FOTreeBuilder$1.make
+  [ 2] org.apache.fop.fo.FObj.createPropertyList
+  [ 3] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement
+  [ 4] org.apache.fop.fo.FOTreeBuilder.startElement
+  [ 5] org.apache.xalan.transformer.TransformerIdentityImpl.startElement
+  [ 6] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 7] org.apache.xerces.xinclude.XIncludeHandler.startElement
+  [ 8] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 9] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [10] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [11] org.apache.xerces.parsers.XML11Configuration.parse
+  [12] org.apache.xerces.parsers.XML11Configuration.parse
+  [13] org.apache.xerces.parsers.XMLParser.parse
+  [14] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [15] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [16] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [17] org.apache.fop.cli.InputHandler.transformTo
+  [18] org.apache.fop.cli.InputHandler.renderTo
+  [19] org.apache.fop.cli.Main.startFOP
+  [20] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] org.dacapo.harness.Fop.iterate
+  [24] org.dacapo.harness.Benchmark.run
+  [25] org.dacapo.harness.TestHarness.runBenchmark
+  [26] org.dacapo.harness.TestHarness.main
+  [27] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [28] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [29] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [30] java.lang.reflect.Method.invoke
+  [31] Harness.main
+
+--- 103433289 ns (0.10%), 103 samples
+  [ 0] .annobin__ZN19G1FullGCCompactTask22G1CompactRegionClosure5applyEP7oopDesc.start
+  [ 1] G1FullGCCompactTask::compact_region(HeapRegion*)
+  [ 2] G1FullGCCompactTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 102928497 ns (0.10%), 103 samples
+  [ 0] CodeHeap::next_used(HeapBlock*) const
+  [ 1] G1CollectedHeap::prepare_heap_for_mutators()
+  [ 2] G1FullCollector::complete_collection()
+  [ 3] G1CollectedHeap::do_full_collection(bool, bool, bool) [clone .part.0]
+  [ 4] .annobin__ZN16VM_G1CollectFull4doitEv.start
+  [ 5] VM_Operation::evaluate()
+  [ 6] VMThread::evaluate_operation(VM_Operation*)
+  [ 7] VMThread::inner_execute(VM_Operation*)
+  [ 8] VMThread::run()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 101985084 ns (0.10%), 102 samples
+  [ 0] java.lang.AbstractStringBuilder.ensureCapacityInternal
+  [ 1] java.lang.AbstractStringBuilder.append
+  [ 2] java.lang.StringBuffer.append
+  [ 3] java.text.DecimalFormat.subformatNumber
+  [ 4] java.text.DecimalFormat.subformat
+  [ 5] java.text.DecimalFormat.doubleSubformat
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.DecimalFormat.format
+  [ 8] java.text.NumberFormat.format
+  [ 9] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [10] org.apache.fop.render.ps.PSRenderer.renderText
+  [11] org.apache.fop.render.ps.PSRenderer.renderWord
+  [12] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [13] org.apache.fop.render.AbstractRenderer.renderText
+  [14] org.apache.fop.render.ps.PSRenderer.renderText
+  [15] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [17] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [18] org.apache.fop.render.AbstractRenderer.renderBlock
+  [19] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [20] org.apache.fop.render.AbstractRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [22] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [23] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [24] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [25] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [26] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [27] org.apache.fop.render.AbstractRenderer.renderPage
+  [28] org.apache.fop.render.ps.PSRenderer.renderPage
+  [29] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [30] org.apache.fop.area.RenderPagesModel.addPage
+  [31] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [33] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [34] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [35] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [38] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [41] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [42] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [43] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [44] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [45] org.apache.fop.fo.FOTreeBuilder.endElement
+  [46] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [47] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [48] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [49] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [51] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XML11Configuration.parse
+  [54] org.apache.xerces.parsers.XMLParser.parse
+  [55] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [56] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [57] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [58] org.apache.fop.cli.InputHandler.transformTo
+  [59] org.apache.fop.cli.InputHandler.renderTo
+  [60] org.apache.fop.cli.Main.startFOP
+  [61] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [62] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [63] java.lang.reflect.Method.invoke
+  [64] org.dacapo.harness.Fop.iterate
+  [65] org.dacapo.harness.Benchmark.run
+  [66] org.dacapo.harness.TestHarness.runBenchmark
+  [67] org.dacapo.harness.TestHarness.main
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [69] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [70] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [71] java.lang.reflect.Method.invoke
+  [72] Harness.main
+
+--- 101069667 ns (0.10%), 101 samples
+  [ 0] __memmove_avx_unaligned_erms
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 98983156 ns (0.10%), 99 samples
+  [ 0] java.lang.AbstractStringBuilder.append
+  [ 1] java.lang.StringBuffer.append
+  [ 2] java.text.DecimalFormat.subformatNumber
+  [ 3] java.text.DecimalFormat.subformat
+  [ 4] java.text.DecimalFormat.doubleSubformat
+  [ 5] java.text.DecimalFormat.format
+  [ 6] java.text.DecimalFormat.format
+  [ 7] java.text.NumberFormat.format
+  [ 8] org.apache.xmlgraphics.ps.PSGenerator.formatDouble
+  [ 9] org.apache.fop.render.ps.PSRenderer.renderText
+  [10] org.apache.fop.render.ps.PSRenderer.renderWord
+  [11] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [12] org.apache.fop.render.AbstractRenderer.renderText
+  [13] org.apache.fop.render.ps.PSRenderer.renderText
+  [14] org.apache.fop.render.AbstractRenderer.renderInlineArea
+  [15] org.apache.fop.render.AbstractRenderer.renderLineArea
+  [16] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [17] org.apache.fop.render.AbstractRenderer.renderBlock
+  [18] org.apache.fop.render.AbstractRenderer.renderBlocks
+  [19] org.apache.fop.render.AbstractRenderer.renderFlow
+  [20] org.apache.fop.render.AbstractPathOrientedRenderer.renderFlow
+  [21] org.apache.fop.render.AbstractRenderer.renderMainReference
+  [22] org.apache.fop.render.AbstractRenderer.renderBodyRegion
+  [23] org.apache.fop.render.AbstractRenderer.renderRegionViewport
+  [24] org.apache.fop.render.ps.PSRenderer.renderRegionViewport
+  [25] org.apache.fop.render.AbstractRenderer.renderPageAreas
+  [26] org.apache.fop.render.AbstractRenderer.renderPage
+  [27] org.apache.fop.render.ps.PSRenderer.renderPage
+  [28] org.apache.fop.area.RenderPagesModel.checkPreparedPages
+  [29] org.apache.fop.area.RenderPagesModel.addPage
+  [30] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.finishPage
+  [31] org.apache.fop.layoutmgr.PageSequenceLayoutManager.finishPage
+  [32] org.apache.fop.layoutmgr.AbstractPageSequenceLayoutManager.makeNewPage
+  [33] org.apache.fop.layoutmgr.PageBreaker.handleBreakTrait
+  [34] org.apache.fop.layoutmgr.PageBreaker.startPart
+  [35] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [36] org.apache.fop.layoutmgr.AbstractBreaker.addAreas
+  [37] org.apache.fop.layoutmgr.PageBreaker.doPhase3
+  [38] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [39] org.apache.fop.layoutmgr.AbstractBreaker.doLayout
+  [40] org.apache.fop.layoutmgr.PageSequenceLayoutManager.activateLayout
+  [41] org.apache.fop.area.AreaTreeHandler.endPageSequence
+  [42] org.apache.fop.fo.pagination.PageSequence.endOfNode
+  [43] org.apache.fop.fo.FOTreeBuilder$MainFOHandler.endElement
+  [44] org.apache.fop.fo.FOTreeBuilder.endElement
+  [45] org.apache.xalan.transformer.TransformerIdentityImpl.endElement
+  [46] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [47] org.apache.xerces.xinclude.XIncludeHandler.endElement
+  [48] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [49] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [50] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [51] org.apache.xerces.parsers.XML11Configuration.parse
+  [52] org.apache.xerces.parsers.XML11Configuration.parse
+  [53] org.apache.xerces.parsers.XMLParser.parse
+  [54] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [55] org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse
+  [56] org.apache.xalan.transformer.TransformerIdentityImpl.transform
+  [57] org.apache.fop.cli.InputHandler.transformTo
+  [58] org.apache.fop.cli.InputHandler.renderTo
+  [59] org.apache.fop.cli.Main.startFOP
+  [60] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [61] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [62] java.lang.reflect.Method.invoke
+  [63] org.dacapo.harness.Fop.iterate
+  [64] org.dacapo.harness.Benchmark.run
+  [65] org.dacapo.harness.TestHarness.runBenchmark
+  [66] org.dacapo.harness.TestHarness.main
+  [67] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [68] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [69] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [70] java.lang.reflect.Method.invoke
+  [71] Harness.main
+
+--- 97027210 ns (0.10%), 97 samples
+  [ 0] PhaseIFG::re_insert(unsigned int)
+  [ 1] PhaseChaitin::Select()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+  8338285654    8.44%     8334  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  2720425375    2.75%     2721  jdk.internal.math.FloatingDecimal$BinaryToASCIIBuffer.dtoa
+  2526696194    2.56%     2525  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  2235108383    2.26%     2235  org.apache.fop.fo.FObj.addChildNode
+  1875882766    1.90%     1876  java.lang.AbstractStringBuilder.ensureCapacityInternal
+  1431865249    1.45%     1432  java.text.DigitList.set
+  1374548106    1.39%     1367  clear_page_rep_[k]
+  1305125722    1.32%     1305  org.apache.fop.fo.properties.PropertyMaker.findProperty
+  1187723178    1.20%     1186  nmethod::oops_do(OopClosure*, bool)
+  1148903459    1.16%     1149  java.util.Arrays.copyOf
+   891048771    0.90%      891  vtable stub
+   848028655    0.86%      848  java.lang.AbstractStringBuilder.append
+   838936639    0.85%      839  java.lang.StringBuffer.toString
+   807070106    0.82%      807  java.lang.String.<init>
+   803955574    0.81%      804  java.util.HashMap.getNode
+   778038100    0.79%      774  void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+   771969904    0.78%      772  java.text.DecimalFormat.subformatNumber
+   761852876    0.77%      762  org.apache.fop.fo.properties.PropertyCache.get
+   747096197    0.76%      747  IndexSetIterator::advance_and_next()
+   734575380    0.74%      733  .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+   683177845    0.69%      683  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   635994950    0.64%      636  java.text.DigitList.isZero
+   601948540    0.61%      602  java.lang.String.equals
+   567040301    0.57%      567  org.apache.fop.fo.StaticPropertyList.get
+   564034899    0.57%      564  itable stub
+   527968710    0.53%      528  jdk.internal.util.ArraysSupport.newLength
+   518689914    0.53%      518  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+   513946423    0.52%      514  org.apache.fop.render.ps.PSRenderer.renderText
+   494554119    0.50%      488  _raw_spin_unlock_irqrestore_[k]
+   491985836    0.50%      492  java.text.DecimalFormat.append
+   476568448    0.48%      476  G1BlockOffsetTablePart::forward_to_block_containing_addr_slow(HeapWordImpl**, HeapWordImpl**, void const*)
+   458154442    0.46%      458  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   451881827    0.46%      451  CodeHeap::next_used(HeapBlock*) const
+   449077748    0.45%      449  org.apache.fop.fo.properties.PropertyMaker.getShorthand
+   438051292    0.44%      438  java.text.DecimalFormat.doubleSubformat
+   428065845    0.43%      428  java.util.LinkedList.linkLast
+   423149397    0.43%      423  org.apache.fop.layoutmgr.inline.TextLayoutManager.getNextKnuthElements
+   416236363    0.42%      416  nmethod::fix_oop_relocations(unsigned char*, unsigned char*, bool)
+   414058977    0.42%      414  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   408953954    0.41%      409  jbyte_disjoint_arraycopy
+   408059045    0.41%      408  PhaseChaitin::gather_lrg_masks(bool)
+   400321871    0.41%      399  __memset_avx2_unaligned_erms
+   397749449    0.40%      395  void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+   390021256    0.39%      390  java.lang.Integer.equals
+   390016438    0.39%      390  java.lang.StringBuffer.append
+   389999582    0.39%      390  org.apache.xmlgraphics.ps.PSGenerator.escapeChar
+   352014522    0.36%      352  jdk.internal.math.FloatingDecimal.getBinaryToASCIIConverter
+   350064673    0.35%      350  PhaseLive::compute(unsigned int)
+   343004749    0.35%      343  jdk.internal.math.FloatingDecimal$BinaryToASCIIBuffer.getChars
+   338796610    0.34%      337  G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+   338479986    0.34%      338  void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+   330014294    0.33%      330  org.apache.fop.fo.FONode.getFOEventHandler
+   329985099    0.33%      330  org.apache.fop.fo.properties.PropertyMaker.get
+   322044551    0.33%      322  G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+   309893003    0.31%      310  org.apache.fop.layoutmgr.inline.TextLayoutManager.addAreas
+   304842604    0.31%      305  org.apache.fop.layoutmgr.KnuthPossPosIter.getLM
+   299944264    0.30%      300  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+   290224489    0.29%      290  __memmove_avx_unaligned_erms
+   288985333    0.29%      289  java.lang.String.encodeASCII
+   277564582    0.28%      277  RelocIterator::advance_over_prefix()
+   274069530    0.28%      274  PhaseChaitin::post_allocate_copy_removal()
+   272051884    0.28%      272  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+   264627801    0.27%      263  .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI19InstanceMirrorKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   263000504    0.27%      263  org.apache.fop.fonts.AbstractCodePointMapping.mapChar
+   258076792    0.26%      257  Method::is_method_handle_intrinsic() const
+   256439033    0.26%      255  G1RegionMarkStatsCache::add_live_words(oopDesc*)
+   256404991    0.26%      256  G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+   256065302    0.26%      256  org.apache.fop.layoutmgr.BreakingAlgorithm.considerLegalBreak
+   255038920    0.26%      255  org.apache.commons.logging.impl.Jdk14Logger.getLogger
+   254002402    0.26%      254  org.apache.fop.fo.FObj$FObjIterator.next
+   251055795    0.25%      251  java.util.ArrayList.grow
+   250999930    0.25%      251  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+   246969383    0.25%      247  java.util.HashMap.get
+   244025973    0.25%      244  Arena::contains(void const*) const
+   239406396    0.24%      239  __tls_get_addr
+   235029804    0.24%      235  jshort_disjoint_arraycopy
+   233980483    0.24%      234  java.util.logging.Logger.isLoggable
+   225939336    0.23%      226  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+   220977407    0.22%      221  jdk.internal.math.FloatingDecimal.getBinaryToASCIIBuffer
+   217022709    0.22%      217  org.apache.fop.fo.properties.LengthRangeProperty.checkConsistency
+   210411364    0.21%      210  CodeHeap::find_blob_unsafe(void*) const
+   209183422    0.21%      208  G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+   207001231    0.21%      207  java.lang.String.length
+   206025793    0.21%      206  java.util.logging.Level.intValue
+   205066757    0.21%      205  PhaseIdealLoop::is_dominator(Node*, Node*)
+   201047697    0.20%      201  java.lang.ThreadLocal$ThreadLocalMap.getEntry
+   198979820    0.20%      199  org.apache.fop.area.Area.addTrait
+   197975721    0.20%      198  org.apache.fop.fo.properties.PropertyMaker.make
+   195986530    0.20%      196  org.apache.fop.fo.properties.CompoundPropertyMaker.makeCompound
+   194033058    0.20%      194  PhaseIdealLoop::Dominators()
+   190333239    0.19%      190  NativeCall::destination() const
+   189014338    0.19%      189  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+   182070087    0.18%      182  org.apache.commons.logging.impl.Jdk14Logger.log
+   182040062    0.18%      182  Unique_Node_List::remove(Node*)
+   180009120    0.18%      180  org.apache.fop.fo.properties.PropertyMaker.compute
+   179013237    0.18%      179  java.lang.StringLatin1.hashCode
+   174431425    0.18%      174  RelocIterator::initialize(CompiledMethod*, unsigned char*, unsigned char*)
+   173049781    0.18%      173  java.util.ArrayList.add
+   173010204    0.18%      173  java.util.LinkedList$ListItr.next
+   172993446    0.18%      173  org.apache.fop.render.PrintRenderer.getFontFromArea
+   172985389    0.18%      173  org.apache.xerces.util.SymbolTable.addSymbol
+   164015486    0.17%      164  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+   163955089    0.17%      164  org.apache.fop.fo.PropertyList.get
+   160987430    0.16%      161  org.apache.fop.layoutmgr.PageBreakingAlgorithm.getLineWidth
+   160983470    0.16%      161  org.apache.fop.fo.FObj$FObjIterator.hasNext
+   158966465    0.16%      157  rmqueue_[k]
+   158018278    0.16%      158  java.util.Arrays.copyOfRange
+   154064090    0.16%      154  org.apache.fop.area.Area.getTrait
+   154008456    0.16%      154  org.apache.fop.fo.StaticPropertyList.getExplicit
+   153998235    0.16%      154  org.apache.fop.fonts.Font.getWidth
+   152012527    0.15%      152  java.lang.AbstractStringBuilder.isLatin1
+   151002095    0.15%      151  org.apache.fop.fo.XMLWhiteSpaceHandler.handleWhiteSpace
+   149995162    0.15%      150  jlong_disjoint_arraycopy
+   149043554    0.15%      149  org.apache.fop.fo.StaticPropertyList.<init>
+   148297005    0.15%      147  .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI16InstanceRefKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   148214236    0.15%      148  .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   148074091    0.15%      148  IndexSet::initialize(unsigned int)
+   145041864    0.15%      145  metadata_Relocation::unpack_data()
+   143969969    0.15%      144  org.apache.fop.fonts.Font.getCharWidth
+   140052456    0.14%      140  IndexSet::alloc_block_containing(unsigned int)
+   139994413    0.14%      140  java.io.BufferedOutputStream.write
+   139541621    0.14%      139  G1FullGCCompactTask::compact_region(HeapRegion*)
+   139016740    0.14%      139  PhaseChaitin::Select()
+   137328674    0.14%      137  nmethod::is_alive() const
+   137023576    0.14%      137  org.apache.fop.fo.RecursiveCharIterator.clone
+   137017694    0.14%      137  org.apache.fop.layoutmgr.PageProvider.getAvailableBPD
+   137015062    0.14%      137  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+   137001447    0.14%      137  java.util.HashMap.<init>
+   136049222    0.14%      136  Matcher::xform(Node*, int)
+   135089919    0.14%      135  PhaseOutput::BuildOopMaps()
+   134999330    0.14%      135  java.lang.StringLatin1.getChars
+   133033980    0.13%      133  PhaseIFG::effective_degree(unsigned int) const
+   130261417    0.13%      130  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+   129987771    0.13%      130  java.lang.String.hashCode
+   127998779    0.13%      128  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+   127121495    0.13%      127  Dict::Insert(void*, void*, bool)
+   126108004    0.13%      126  DebugInformationRecorder::find_sharable_decode_offset(int)
+   125943973    0.13%      126  jdk.internal.math.FloatingDecimal$BinaryToASCIIBuffer.estimateDecExp
+   125019341    0.13%      125  G1CodeRootSetTable::add(nmethod*)
+   125003606    0.13%      125  java.util.LinkedList.toArray
+   122991345    0.12%      123  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+   122043597    0.12%      122  org.apache.fop.util.CharUtilities.isNonBreakableSpace
+   122001787    0.12%      122  java.text.DigitList.getDataChars
+   121977366    0.12%      121  SpinPause
+   119040089    0.12%      119  PhaseChaitin::merge_multidefs()
+   118309415    0.12%      118  void OopOopIterateDispatch<G1ScanCardClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1ScanCardClosure*, oopDesc*, Klass*)
+   118194218    0.12%      117  .annobin__ZN13WeakProcessor4Task4workI19G1STWIsAliveClosure18G1KeepAliveClosureEEvjPT_PT0_.start
+   117030955    0.12%      117  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+   114033727    0.12%      114  oop_disjoint_arraycopy
+   114014081    0.12%      114  java.lang.Class.privateGetDeclaredMethods
+   114007827    0.12%      114  PhaseIFG::remove_node(unsigned int)
+   113084191    0.11%      113  NodeHash::hash_find_insert(Node*)
+   109914043    0.11%      110  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
+   109130023    0.11%      109  __memcpy_avx_unaligned
+   108990215    0.11%      109  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+   108794166    0.11%      108  HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+   107031666    0.11%      107  PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+   106038704    0.11%      106  PhaseCCP::analyze()
+   105997210    0.11%      106  java.lang.StringLatin1.charAt
+   105017479    0.11%      105  java.util.HashMap.hash
+   105013639    0.11%      105  java.text.DigitList.round
+   103433289    0.10%      103  .annobin__ZN19G1FullGCCompactTask22G1CompactRegionClosure5applyEP7oopDesc.start
+   103020914    0.10%      103  org.apache.fop.layoutmgr.LayoutContext.<init>
+   101273110    0.10%      101  nmethod::do_unloading(bool)
+    99986627    0.10%      100  org.apache.fop.fo.properties.CommonBorderPaddingBackground.getPadding
+    99017163    0.10%       99  org.apache.fop.text.linebreak.LineBreakStatus.nextChar
+    97049338    0.10%       97  org.apache.fop.layoutmgr.BreakingAlgorithm.findBreakingPoints
+    97032190    0.10%       97  org.apache.fop.fo.pagination.Root.getFOEventHandler
+    97027210    0.10%       97  PhaseIFG::re_insert(unsigned int)
+    97012836    0.10%       97  org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm.makeLineBreakPosition
+    96996783    0.10%       97  org.apache.fop.fo.properties.CommonBorderPaddingBackground.getBorderWidth
+    96990136    0.10%       97  org.apache.fop.fo.FObj.getPropertyMakerFor
+    96034997    0.10%       96  org.apache.xmlgraphics.ps.PSFontUtils.defineWinAnsiEncoding
+    95941417    0.10%       96  Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+    95024453    0.10%       95  java.lang.ThreadLocal.get
+    95023614    0.10%       95  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+    94971278    0.10%       95  org.apache.fop.layoutmgr.inline.TextLayoutManager.createTextArea
+    94029891    0.10%       94  Matcher::find_shared(Node*)
+    94028042    0.10%       94  PhaseIterGVN::subsume_node(Node*, Node*)
+    92892514    0.09%       93  org.apache.fop.fonts.FontTriplet.equals
+    92185307    0.09%       92  bool clean_if_nmethod_is_unloaded<CompiledIC>(CompiledIC*, unsigned char*, CompiledMethod*, bool)
+    92029315    0.09%       92  PhaseIterGVN::transform_old(Node*)
+    90017113    0.09%       90  org.apache.fop.layoutmgr.inline.InlineStackingLayoutManager.setChildContext
+    90003087    0.09%       90  org.apache.xerces.impl.XMLEntityScanner.scanContent
+    88003353    0.09%       88  java.io.BufferedOutputStream.flushBuffer
+    87051223    0.09%       87  Interpreter
+    86403455    0.09%       86  .annobin__ZN10G1CMBitMap10check_markEPP12HeapWordImpl.start
+    86024041    0.09%       86  org.apache.fop.fonts.Font.hasChar
+    85020706    0.09%       85  PhaseIterGVN::add_users_to_worklist(Node*)
+    84043672    0.09%       84  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+    83990998    0.09%       84  org.apache.xerces.xni.QName.setValues
+    83009106    0.08%       83  java.text.DigitList.shouldRoundUp
+    82987637    0.08%       83  java.lang.Object.<init>
+    80995797    0.08%       81  org.apache.fop.fo.PropertyList.getParentPropertyList
+    80740354    0.08%       80  .annobin__ZN20G1MarkAndPushClosure6do_oopEPP7oopDesc.start
+    80031925    0.08%       80  Node::is_CFG() const
+    80011388    0.08%       80  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+    79991308    0.08%       80  org.apache.xerces.impl.XMLEntityScanner.skipSpaces
+    78970486    0.08%       79  PhaseIFG::SquareUp()
+    78058606    0.08%       78  Node::clone() const

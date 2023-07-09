@@ -1,0 +1,1594 @@
+--- Execution profile ---
+Total samples       : 124413
+unknown_Java        : 1356 (1.09%)
+not_walkable_Java   : 70 (0.06%)
+deoptimization      : 8 (0.01%)
+
+--- 2842348802 ns (2.28%), 2842 samples
+  [ 0] PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 2116089860 ns (1.70%), 2116 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::loop_predication_follow_branches(Node*, IdealLoopTree*, float, PathFrequency&, Node_Stack&, VectorSet&, Node_List&)
+  [ 2] PhaseIdealLoop::loop_predication_impl(IdealLoopTree*) [clone .part.0]
+  [ 3] IdealLoopTree::loop_predication(PhaseIdealLoop*)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 1463206315 ns (1.18%), 1463 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 800052719 ns (0.64%), 800 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 747945373 ns (0.60%), 747 samples
+  [ 0] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 594020397 ns (0.48%), 594 samples
+  [ 0] Arena::contains(void const*) const
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 545064866 ns (0.44%), 545 samples
+  [ 0] PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+  [ 1] PhaseConservativeCoalesce::copy_copy(Node*, Node*, Block*, unsigned int) [clone .part.0]
+  [ 2] PhaseConservativeCoalesce::coalesce(Block*)
+  [ 3] PhaseCoalesce::coalesce_driver()
+  [ 4] PhaseChaitin::Register_Allocate()
+  [ 5] Compile::Code_Gen()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 489015157 ns (0.39%), 489 samples
+  [ 0] PhaseAggressiveCoalesce::insert_copies(Matcher&)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 479111962 ns (0.38%), 479 samples
+  [ 0] NullCheckEliminator::iterate_one(BlockBegin*)
+  [ 1] Optimizer::eliminate_null_checks()
+  [ 2] IR::eliminate_null_checks()
+  [ 3] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 477048873 ns (0.38%), 477 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 442160220 ns (0.36%), 442 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 433024504 ns (0.35%), 433 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 417090140 ns (0.34%), 417 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 413059485 ns (0.33%), 413 samples
+  [ 0] IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+  [ 1] PhaseConservativeCoalesce::copy_copy(Node*, Node*, Block*, unsigned int) [clone .part.0]
+  [ 2] PhaseConservativeCoalesce::coalesce(Block*)
+  [ 3] PhaseCoalesce::coalesce_driver()
+  [ 4] PhaseChaitin::Register_Allocate()
+  [ 5] Compile::Code_Gen()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 384050024 ns (0.31%), 384 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 377037024 ns (0.30%), 377 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 368026095 ns (0.30%), 368 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 328778934 ns (0.26%), 328 samples
+  [ 0] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 1] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 309038137 ns (0.25%), 309 samples
+  [ 0] BitMap::set_intersection_with_result(BitMap const&)
+  [ 1] Optimizer::eliminate_null_checks()
+  [ 2] IR::eliminate_null_checks()
+  [ 3] .annobin__ZN11Compilation9build_hirEv.part.0.start
+  [ 4] Compilation::compile_java_method()
+  [ 5] Compilation::compile_method()
+  [ 6] Compilation::Compilation(AbstractCompiler*, ciEnv*, ciMethod*, int, BufferBlob*, bool, DirectiveSet*)
+  [ 7] Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 305324049 ns (0.25%), 305 samples
+  [ 0] void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 300993481 ns (0.24%), 301 samples
+  [ 0] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 1] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 270973421 ns (0.22%), 271 samples
+  [ 0] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 233031153 ns (0.19%), 233 samples
+  [ 0] PhaseIdealLoop::Dominators()
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 230069532 ns (0.18%), 230 samples
+  [ 0] PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+  [ 1] PhaseLive::compute(unsigned int)
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 225991848 ns (0.18%), 226 samples
+  [ 0] void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+  [ 1] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] G1FullGCAdjustTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 202064399 ns (0.16%), 202 samples
+  [ 0] Matcher::xform(Node*, int)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 196039621 ns (0.16%), 196 samples
+  [ 0] I2C/C2I adapters(0xba)
+  [ 1] [unknown_Java]
+
+--- 187028827 ns (0.15%), 187 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 2] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 184079596 ns (0.15%), 184 samples
+  [ 0] PhaseOutput::BuildOopMaps()
+  [ 1] PhaseOutput::Output()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 183024492 ns (0.15%), 183 samples
+  [ 0] I2C/C2I adapters(0xbb)
+  [ 1] [unknown_Java]
+
+--- 179240357 ns (0.14%), 179 samples
+  [ 0] G1RegionMarkStatsCache::add_live_words(oopDesc*)
+  [ 1] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 2] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 3] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 173074767 ns (0.14%), 173 samples
+  [ 0] .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 170017132 ns (0.14%), 170 samples
+  [ 0] PhaseCFG::hoist_to_cheaper_block(Block*, Block*, Node*)
+  [ 1] PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 165007758 ns (0.13%), 165 samples
+  [ 0] Node::rematerialize() const
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 159039886 ns (0.13%), 159 samples
+  [ 0] __memset_avx2_unaligned_erms
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 154003421 ns (0.12%), 154 samples
+  [ 0] PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+  [ 1] PhaseIdealLoop::compute_lca_of_uses(Node*, Node*, bool)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 151080437 ns (0.12%), 151 samples
+  [ 0] PhaseCCP::analyze()
+  [ 1] Compile::Optimize()
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 148332846 ns (0.12%), 148 samples
+  [ 0] .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+  [ 1] CompiledMethod::unload_nmethod_caches(bool)
+  [ 2] nmethod::do_unloading(bool)
+  [ 3] CodeCacheUnloadingTask::work(unsigned int)
+  [ 4] G1ParallelCleaningTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 148028381 ns (0.12%), 148 samples
+  [ 0] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 148017096 ns (0.12%), 148 samples
+  [ 0] PhaseChaitin::merge_multidefs()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 148004869 ns (0.12%), 148 samples
+  [ 0] PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 147978639 ns (0.12%), 148 samples
+  [ 0] PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 143002485 ns (0.11%), 143 samples
+  [ 0] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 141985338 ns (0.11%), 142 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::loop_predication_follow_branches(Node*, IdealLoopTree*, float, PathFrequency&, Node_Stack&, VectorSet&, Node_List&)
+  [ 2] PhaseIdealLoop::loop_predication_impl(IdealLoopTree*) [clone .part.0]
+  [ 3] IdealLoopTree::loop_predication(PhaseIdealLoop*)
+  [ 4] IdealLoopTree::loop_predication(PhaseIdealLoop*)
+  [ 5] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 6] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 7] Compile::Optimize()
+  [ 8] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 9] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [10] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [11] CompileBroker::compiler_thread_loop()
+  [12] JavaThread::thread_main_inner()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 139976294 ns (0.11%), 140 samples
+  [ 0] inflate
+  [ 1] Java_java_util_zip_Inflater_inflateBytesBytes
+  [ 2] java.util.zip.Inflater.inflateBytesBytes
+  [ 3] java.util.zip.Inflater.inflate
+  [ 4] java.util.zip.InflaterInputStream.read
+  [ 5] java.util.zip.ZipInputStream.read
+  [ 6] java.util.zip.ZipInputStream.closeEntry
+  [ 7] org.python.core.packagecache.CachedJarsPackageManager.getZipPackages
+  [ 8] org.python.core.packagecache.CachedJarsPackageManager.addJarToPackages
+  [ 9] org.python.core.packagecache.CachedJarsPackageManager.addJarToPackages
+  [10] org.python.core.packagecache.PathPackageManager.addClassPath
+  [11] org.python.core.packagecache.SysPackageManager.findAllPackages
+  [12] org.python.core.packagecache.SysPackageManager.<init>
+  [13] org.python.core.PySystemState.initPackages
+  [14] org.python.core.PySystemState.doInitialize
+  [15] org.python.core.PySystemState.initialize
+  [16] org.python.core.PySystemState.initialize
+  [17] org.python.core.PySystemState.initialize
+  [18] org.python.util.jython.run
+  [19] org.python.util.jython.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] org.dacapo.harness.Jython.<init>
+  [25] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0
+  [26] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance
+  [27] jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance
+  [28] java.lang.reflect.Constructor.newInstanceWithCaller
+  [29] java.lang.reflect.Constructor.newInstance
+  [30] org.dacapo.harness.TestHarness.runBenchmark
+  [31] org.dacapo.harness.TestHarness.main
+  [32] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [35] java.lang.reflect.Method.invoke
+  [36] Harness.main
+
+--- 138980776 ns (0.11%), 139 samples
+  [ 0] PhaseChaitin::Select()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 137019800 ns (0.11%), 137 samples
+  [ 0] org.python.core.PyFrame.setline
+  [ 1] [unknown_Java]
+
+--- 124901342 ns (0.10%), 124 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 122935237 ns (0.10%), 123 samples
+  [ 0] Matcher::find_shared(Node*)
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 119039505 ns (0.10%), 119 samples
+  [ 0] inflate_fast
+  [ 1] inflate
+  [ 2] Java_java_util_zip_Inflater_inflateBytesBytes
+  [ 3] java.util.zip.Inflater.inflateBytesBytes
+  [ 4] java.util.zip.Inflater.inflate
+  [ 5] java.util.zip.InflaterInputStream.read
+  [ 6] java.util.zip.ZipInputStream.read
+  [ 7] java.util.zip.ZipInputStream.closeEntry
+  [ 8] org.python.core.packagecache.CachedJarsPackageManager.getZipPackages
+  [ 9] org.python.core.packagecache.CachedJarsPackageManager.addJarToPackages
+  [10] org.python.core.packagecache.CachedJarsPackageManager.addJarToPackages
+  [11] org.python.core.packagecache.PathPackageManager.addClassPath
+  [12] org.python.core.packagecache.SysPackageManager.findAllPackages
+  [13] org.python.core.packagecache.SysPackageManager.<init>
+  [14] org.python.core.PySystemState.initPackages
+  [15] org.python.core.PySystemState.doInitialize
+  [16] org.python.core.PySystemState.initialize
+  [17] org.python.core.PySystemState.initialize
+  [18] org.python.core.PySystemState.initialize
+  [19] org.python.util.jython.run
+  [20] org.python.util.jython.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] org.dacapo.harness.Jython.<init>
+  [26] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0
+  [27] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance
+  [28] jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance
+  [29] java.lang.reflect.Constructor.newInstanceWithCaller
+  [30] java.lang.reflect.Constructor.newInstance
+  [31] org.dacapo.harness.TestHarness.runBenchmark
+  [32] org.dacapo.harness.TestHarness.main
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [35] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [36] java.lang.reflect.Method.invoke
+  [37] Harness.main
+
+--- 118062219 ns (0.09%), 118 samples
+  [ 0] NTarjan::DFS(NTarjan*, VectorSet&, PhaseIdealLoop*, unsigned int*)
+  [ 1] PhaseIdealLoop::Dominators()
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 118044202 ns (0.09%), 118 samples
+  [ 0] PhaseIFG::SquareUp()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 116042037 ns (0.09%), 116 samples
+  [ 0] PhaseIFG::remove_node(unsigned int)
+  [ 1] PhaseChaitin::Simplify()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 116015880 ns (0.09%), 116 samples
+  [ 0] Unique_Node_List::remove(Node*)
+  [ 1] PhaseIterGVN::remove_globally_dead_node(Node*)
+  [ 2] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 3] IfNode::Ideal_common(PhaseGVN*, bool)
+  [ 4] IfNode::Ideal(PhaseGVN*, bool)
+  [ 5] PhaseIterGVN::transform_old(Node*)
+  [ 6] PhaseIterGVN::optimize()
+  [ 7] Compile::Optimize()
+  [ 8] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 9] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [10] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [11] CompileBroker::compiler_thread_loop()
+  [12] JavaThread::thread_main_inner()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 114960637 ns (0.09%), 115 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 114004470 ns (0.09%), 114 samples
+  [ 0] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 1] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 2] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 3] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 4] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 5] Compile::Optimize()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 113048443 ns (0.09%), 113 samples
+  [ 0] PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 111012181 ns (0.09%), 111 samples
+  [ 0] .annobin__ZN22Node_Backward_Iterator4nextEv.start
+  [ 1] PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 101992478 ns (0.08%), 102 samples
+  [ 0] org.python.core.PyString.__lt__
+  [ 1] [unknown_Java]
+
+--- 100996985 ns (0.08%), 101 samples
+  [ 0] [no_Java_frame]
+
+--- 100020835 ns (0.08%), 100 samples
+  [ 0] Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+  [ 1] Node::replace_edge(Node*, Node*, PhaseGVN*)
+  [ 2] PhaseIterGVN::remove_globally_dead_node(Node*)
+  [ 3] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 4] PhaseIterGVN::transform_old(Node*)
+  [ 5] PhaseIterGVN::optimize()
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 98030465 ns (0.08%), 98 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseIFG::effective_degree(unsigned int) const
+  [ 2] PhaseIFG::Compute_Effective_Degree()
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 97026617 ns (0.08%), 97 samples
+  [ 0] PhaseIFG::effective_degree(unsigned int) const
+  [ 1] PhaseIFG::Compute_Effective_Degree()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 94015377 ns (0.08%), 94 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseIFG::SquareUp()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 93307502 ns (0.07%), 93 samples
+  [ 0] G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+  [ 1] .annobin__ZN19G1FullGCPrepareTask26G1CalculatePointersClosure14do_heap_regionEP10HeapRegion.start
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] .annobin__ZN19G1FullGCPrepareTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 93044694 ns (0.07%), 93 samples
+  [ 0] Compile::final_graph_reshaping_walk(Node_Stack&, Node*, Final_Reshape_Counts&)
+  [ 1] Compile::final_graph_reshaping() [clone .part.0]
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 92050138 ns (0.07%), 92 samples
+  [ 0] IndexSet::initialize(unsigned int)
+  [ 1] PhaseIFG::init(unsigned int)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 92010264 ns (0.07%), 92 samples
+  [ 0] PhaseIFG::effective_degree(unsigned int) const
+  [ 1] PhaseConservativeCoalesce::copy_copy(Node*, Node*, Block*, unsigned int) [clone .part.0]
+  [ 2] PhaseConservativeCoalesce::coalesce(Block*)
+  [ 3] PhaseCoalesce::coalesce_driver()
+  [ 4] PhaseChaitin::Register_Allocate()
+  [ 5] Compile::Code_Gen()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 91996764 ns (0.07%), 92 samples
+  [ 0] PhaseCFG::sched_call(Block*, unsigned int, Node_List&, GrowableArray<int>&, MachCallNode*, VectorSet&)
+  [ 1] PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 91018075 ns (0.07%), 91 samples
+  [ 0] PhaseIdealLoop::is_dominator(Node*, Node*)
+  [ 1] PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+  [ 2] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 3] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 4] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 5] Compile::Optimize()
+  [ 6] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 7] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 8] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 9] CompileBroker::compiler_thread_loop()
+  [10] JavaThread::thread_main_inner()
+  [11] .annobin__ZN6Thread8call_runEv.start
+  [12] thread_native_entry(Thread*)
+  [13] start_thread
+
+--- 89059904 ns (0.07%), 89 samples
+  [ 0] Matcher::match_tree(Node const*)
+  [ 1] Matcher::xform(Node*, int)
+  [ 2] Matcher::match()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 89004232 ns (0.07%), 89 samples
+  [ 0] PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 88020425 ns (0.07%), 88 samples
+  [ 0] PhaseIFG::re_insert(unsigned int)
+  [ 1] PhaseChaitin::Select()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 85991778 ns (0.07%), 86 samples
+  [ 0] PhaseChaitin::compute_initial_block_pressure(Block*, IndexSet*, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&, double) [clone .part.0] [clone .isra.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 85123711 ns (0.07%), 85 samples
+  [ 0] .annobin__ZN10G1CMBitMap10check_markEPP12HeapWordImpl.start
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 84036033 ns (0.07%), 84 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseIFG::remove_node(unsigned int)
+  [ 2] PhaseChaitin::Simplify()
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 84003136 ns (0.07%), 84 samples
+  [ 0] PhaseCCP::transform(Node*)
+  [ 1] PhaseCCP::do_transform()
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 83018095 ns (0.07%), 83 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 83000451 ns (0.07%), 83 samples
+  [ 0] PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+  [ 1] PhaseLive::compute(unsigned int)
+  [ 2] PhaseCFG::global_code_motion()
+  [ 3] PhaseCFG::do_global_code_motion()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 80991172 ns (0.07%), 81 samples
+  [ 0] Compile::identify_useful_nodes(Unique_Node_List&)
+  [ 1] PhaseRemoveUseless::PhaseRemoveUseless(PhaseGVN*, Unique_Node_List*, Phase::PhaseNumber)
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 80038920 ns (0.06%), 80 samples
+  [ 0] IndexSet::initialize(unsigned int)
+  [ 1] PhaseIFG::init(unsigned int)
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 80018376 ns (0.06%), 80 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 78052062 ns (0.06%), 78 samples
+  [ 0] ClassLoaderDataGraphKlassIteratorAtomic::next_klass()
+  [ 1] GangWorker::loop()
+  [ 2] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 77994721 ns (0.06%), 78 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] PhaseChaitin::build_ifg_virtual()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 76992873 ns (0.06%), 77 samples
+  [ 0] PhaseChaitin::Simplify()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 76984090 ns (0.06%), 77 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseIFG::re_insert(unsigned int)
+  [ 2] PhaseChaitin::Select()
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 74925323 ns (0.06%), 75 samples
+  [ 0] inflate_fast
+  [ 1] inflate
+  [ 2] Java_java_util_zip_Inflater_inflateBytesBytes
+  [ 3] java.util.zip.Inflater.inflateBytesBytes
+  [ 4] java.util.zip.Inflater.inflate
+  [ 5] java.util.zip.InflaterInputStream.read
+  [ 6] java.util.zip.ZipInputStream.read
+  [ 7] org.dacapo.harness.Benchmark.fileFromInputStream
+  [ 8] org.dacapo.harness.Benchmark.unpackZipStream
+  [ 9] org.dacapo.harness.Benchmark.unpackZipFileResource
+  [10] org.dacapo.harness.Benchmark.prepare
+  [11] org.dacapo.harness.Benchmark.initialize
+  [12] org.dacapo.harness.Benchmark.<init>
+  [13] org.dacapo.harness.Benchmark.<init>
+  [14] org.dacapo.harness.Jython.<init>
+  [15] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0
+  [16] jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance
+  [17] jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance
+  [18] java.lang.reflect.Constructor.newInstanceWithCaller
+  [19] java.lang.reflect.Constructor.newInstance
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 74019689 ns (0.06%), 74 samples
+  [ 0] PhaseIterGVN::transform_old(Node*)
+  [ 1] PhaseIterGVN::optimize()
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 73987329 ns (0.06%), 74 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 73075812 ns (0.06%), 73 samples
+  [ 0] PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+  [ 1] Compile::Code_Gen()
+  [ 2] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 3] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 4] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 5] CompileBroker::compiler_thread_loop()
+  [ 6] JavaThread::thread_main_inner()
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 73020187 ns (0.06%), 73 samples
+  [ 0] IndexSetIterator::advance_and_next()
+  [ 1] PhaseChaitin::Simplify()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 71991741 ns (0.06%), 72 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool) [clone .constprop.0]
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 70972618 ns (0.06%), 71 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] Compile::Optimize()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 70971232 ns (0.06%), 71 samples
+  [ 0] ProjNode::pinned() const
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 69016069 ns (0.06%), 69 samples
+  [ 0] PhaseCFG::schedule_pinned_nodes(VectorSet&)
+  [ 1] PhaseCFG::global_code_motion()
+  [ 2] PhaseCFG::do_global_code_motion()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 68973839 ns (0.06%), 69 samples
+  [ 0] MethodLiveness::BasicBlock::compute_gen_kill_range(ciBytecodeStream*)
+  [ 1] MethodLiveness::BasicBlock::get_liveness_at(ciMethod*, int)
+  [ 2] MethodLiveness::get_liveness_at(int)
+  [ 3] ciMethod::liveness_at_bci(int)
+  [ 4] GraphKit::kill_dead_locals()
+  [ 5] Parse::do_call()
+  [ 6] Parse::do_one_block()
+  [ 7] .annobin__ZN5Parse13do_all_blocksEv.start
+  [ 8] Parse::Parse(JVMState*, ciMethod*, float)
+  [ 9] .annobin__ZN14ParseGenerator8generateEP8JVMState.start
+  [10] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [11] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [12] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [13] CompileBroker::compiler_thread_loop()
+  [14] JavaThread::thread_main_inner()
+  [15] .annobin__ZN6Thread8call_runEv.start
+  [16] thread_native_entry(Thread*)
+  [17] start_thread
+
+--- 68018706 ns (0.05%), 68 samples
+  [ 0] IndexSet::IndexSet(IndexSet*)
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 67344868 ns (0.05%), 66 samples
+  [ 0] .annobin__ZN13WeakProcessor4Task4workI19G1STWIsAliveClosure18G1KeepAliveClosureEEvjPT_PT0_.start
+  [ 1] GangWorker::loop()
+  [ 2] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 65988002 ns (0.05%), 66 samples
+  [ 0] IndexSet::alloc_block_containing(unsigned int)
+  [ 1] PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+  [ 2] PhaseLive::compute(unsigned int)
+  [ 3] PhaseChaitin::Register_Allocate()
+  [ 4] Compile::Code_Gen()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 65957696 ns (0.05%), 66 samples
+  [ 0] Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+  [ 1] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 2] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 3] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 4] CompileBroker::compiler_thread_loop()
+  [ 5] JavaThread::thread_main_inner()
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+  3584503954    2.88%     3584  Constructs$py.test$2
+  2952123736    2.37%     2952  PhaseIdealLoop::is_dominator(Node*, Node*)
+  2842348802    2.28%     2842  PhaseCFG::schedule_late(VectorSet&, Node_Stack&)
+  2379326184    1.91%     2379  java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  1474179099    1.18%     1474  java.util.concurrent.ConcurrentHashMap.get
+  1463206315    1.18%     1463  PhaseChaitin::Split(unsigned int, ResourceArea*)
+  1449072267    1.16%     1449  java.util.concurrent.ConcurrentHashMap.putVal
+  1425139306    1.14%     1425  org.python.core.PyList.pyget
+  1310236328    1.05%     1310  org.python.core.PyFrame.setlocal
+  1230101261    0.99%     1230  org.python.core.PyList.list___len__
+  1216286202    0.98%     1216  org.python.core.PyObject.<init>
+  1143257318    0.92%     1143  org.python.core.PyFrame.getlocal
+  1085098181    0.87%     1085  java.util.concurrent.ConcurrentHashMap$Node.<init>
+   987915941    0.79%      984  clear_page_rep_[k]
+   961100075    0.77%      961  IndexSetIterator::advance_and_next()
+   914078939    0.73%      914  Arithmetic$py.test$2
+   910125916    0.73%      910  org.python.core.PyObject._gt
+   908147950    0.73%      908  org.python.core.PyFrame.setline
+   901064472    0.72%      901  Arithmetic$py.test$8
+   883140965    0.71%      883  Arithmetic$py.test$5
+   865100947    0.70%      865  Arithmetic$py.test$14
+   864136522    0.69%      864  I2C/C2I adapters(0xba)
+   856199312    0.69%      856  jbyte_disjoint_arraycopy
+   827160311    0.66%      827  java.lang.ThreadLocal$ThreadLocalMap.getEntry
+   821335057    0.66%      821  CodeHeap::find_blob_unsafe(void*) const
+   806141486    0.65%      806  Tuples$py.test$5
+   803981357    0.65%      803  void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+   802052419    0.64%      802  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   778148889    0.63%      778  org.python.core.PyObject._eq
+   763107496    0.61%      763  org.python.core.PyBaseCode.call
+   738102292    0.59%      738  org.python.core.PyObject._lt
+   717081088    0.58%      717  Arithmetic$py.test$11
+   681173729    0.55%      681  vtable stub
+   672049289    0.54%      672  java.util.concurrent.ConcurrentHashMap.initTable
+   660113296    0.53%      660  Lookups$py.test$7
+   646089490    0.52%      646  Tuples$py.test$2
+   626092638    0.50%      626  Lookups$py.test$2
+   623087530    0.50%      623  Lookups$py.test$12
+   619012132    0.50%      619  Arena::contains(void const*) const
+   616093875    0.49%      616  Lookups$py.test$17
+   603069629    0.48%      603  Lookups$py.test$22
+   593100761    0.48%      593  java.lang.CharacterData00.getProperties
+   574076579    0.46%      574  Dict$py.test$14
+   556043465    0.45%      556  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   549057266    0.44%      549  org.python.core.PyStringMap.__finditem__
+   545064866    0.44%      545  PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+   545059010    0.44%      545  Lists$py.test$8
+   532050777    0.43%      532  PhaseLive::compute(unsigned int)
+   525178315    0.42%      525  PhaseChaitin::gather_lrg_masks(bool)
+   519056084    0.42%      519  Strings$py.test$8
+   514090912    0.41%      514  Dict$py.test$2
+   510078180    0.41%      510  org.python.core.PyObject.object___findattr__
+   508102231    0.41%      508  org.python.core.PyTableCode.call
+   493063216    0.40%      493  Numbers$py.test$2
+   489015157    0.39%      489  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+   479111962    0.38%      479  NullCheckEliminator::iterate_one(BlockBegin*)
+   468124708    0.38%      468  CodeCache::find_blob(void*)
+   462591146    0.37%      462  __memset_avx2_unaligned_erms
+   457055400    0.37%      457  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+   455050067    0.37%      455  org.python.core.PyFrame.doGetglobal
+   453075460    0.36%      453  org.python.core.PyType$MethodCache.indexFor
+   445053462    0.36%      445  Lists$py.test$2
+   442078628    0.36%      442  Constructs$py.test$8
+   438998713    0.35%      439  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+   425086181    0.34%      425  Strings$py.test$2
+   413059485    0.33%      413  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+   395049824    0.32%      395  Numbers$py.test$11
+   390073507    0.31%      390  Numbers$py.test$8
+   388057125    0.31%      388  Strings$py.test$20
+   384050024    0.31%      384  PhaseChaitin::post_allocate_copy_removal()
+   376072807    0.30%      376  Numbers$py.test$5
+   375108685    0.30%      375  StringTable::intern(Handle, unsigned short const*, int, JavaThread*)
+   371036863    0.30%      371  org.python.core.PyType$MethodCache.lookup_where
+   365345568    0.29%      365  __tls_get_addr
+   364059858    0.29%      364  org.python.core.Py.getThreadState
+   360033319    0.29%      360  Strings$py.test$5
+   353074927    0.28%      353  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+   351065956    0.28%      351  Calls$py.test$16
+   351019890    0.28%      351  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+   341995793    0.27%      342  _dl_update_slotinfo
+   340048715    0.27%      340  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<1335398ul, G1BarrierSet>, (AccessInternal::BarrierType)1, 1335398ul>::oop_access_barrier(oopDesc*, long, oopDesc*)
+   333063888    0.27%      333  Unique_Node_List::remove(Node*)
+   328778934    0.26%      328  G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+   328065766    0.26%      328  java.lang.ConditionalSpecialCasing.lookUpTable
+   326032372    0.26%      326  Unicode$py.test$5
+   322060208    0.26%      322  g1_post_barrier_slow
+   319036628    0.26%      319  Calls$py.test$13
+   319026562    0.26%      319  org.python.core.ThreadStateMapping.getThreadState
+   316067781    0.25%      316  Calls$py.test$2
+   313069983    0.25%      313  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+   310063361    0.25%      310  Unicode$py.test$20
+   310051221    0.25%      310  org.python.core.CompilerFlags.isFlagSet
+   309141770    0.25%      309  DebugInformationRecorder::find_sharable_decode_offset(int)
+   309038137    0.25%      309  BitMap::set_intersection_with_result(BitMap const&)
+   307325710    0.25%      307  void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+   303057881    0.24%      303  org.python.core.PyFrame.<init>
+   299090567    0.24%      299  Dict$py.test$11
+   292022912    0.23%      292  Dict$py.test$8
+   291020905    0.23%      291  Strings$py.test$11
+   286045212    0.23%      286  java.lang.ref.Reference.refersToImpl
+   281053209    0.23%      281  oop_disjoint_arraycopy
+   276998981    0.22%      277  void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+   272149556    0.22%      272  jint_disjoint_arraycopy
+   270973421    0.22%      271  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+   270032612    0.22%      270  PhaseIdealLoop::Dominators()
+   267074664    0.21%      267  frame::sender(RegisterMap*) const
+   264209240    0.21%      264  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+   263069550    0.21%      263  IndexSet::initialize(unsigned int)
+   258047221    0.21%      258  Dict$py.test$5
+   257882637    0.21%      258  inflate_fast
+   257043920    0.21%      257  org.python.core.PyString.str_title
+   257034925    0.21%      257  Unicode$py.test$8
+   255001186    0.20%      255  Exceptions$py.test$5
+   248391637    0.20%      248  G1RegionMarkStatsCache::add_live_words(oopDesc*)
+   248010909    0.20%      248  java.util.concurrent.ConcurrentHashMap.tabAt
+   243052924    0.20%      243  I2C/C2I adapters(0xbb)
+   242064447    0.19%      242  java.lang.String.hashCode
+   241019315    0.19%      241  Unicode$py.test$17
+   239025440    0.19%      239  Compile::find_alias_type(TypePtr const*, bool, ciField*) [clone .part.0]
+   231198441    0.19%      231  Dict::Insert(void*, void*, bool)
+   224481140    0.18%      223  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+   224021815    0.18%      224  java.lang.Character.toUpperCaseEx
+   218024936    0.18%      218  Unicode$py.test$2
+   217022680    0.17%      217  org.python.core.PyObject.__getattr__
+   215084475    0.17%      215  Strings$py.test$14
+   211027674    0.17%      211  org.python.core.PyType.isSubType
+   210265436    0.17%      210  nmethod::oops_do(OopClosure*, bool)
+   209101133    0.17%      209  MethodLiveness::BasicBlock::compute_gen_kill_range(ciBytecodeStream*)
+   209022888    0.17%      209  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+   206104103    0.17%      206  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+   205042853    0.16%      205  java.util.concurrent.ConcurrentHashMap.spread
+   204040018    0.16%      204  java.lang.Character.isLowerCase
+   202064399    0.16%      202  Matcher::xform(Node*, int)
+   201027745    0.16%      201  PhaseIterGVN::subsume_node(Node*, Node*)
+   198049593    0.16%      198  StringTable::do_lookup(unsigned short const*, int, unsigned long)
+   197094457    0.16%      197  __memmove_avx_unaligned_erms
+   196004304    0.16%      196  org.python.core.PyObject._try__cmp__
+   193966070    0.16%      194  IndexSet::alloc_block_containing(unsigned int)
+   190037742    0.15%      190  PhaseIFG::effective_degree(unsigned int) const
+   189028493    0.15%      189  org.python.core.SequenceIndexDelegate.fixindex
+   189015657    0.15%      189  frame::sender_for_interpreter_frame(RegisterMap*) const
+   188050219    0.15%      188  java_lang_String::as_unicode_string_or_null(oopDesc*, int&)
+   186017088    0.15%      186  org.python.core.PySequence.<init>
+   184079596    0.15%      184  PhaseOutput::BuildOopMaps()
+   181024414    0.15%      181  Strings$py.test$17
+   178076506    0.14%      178  NodeHash::hash_find_insert(Node*)
+   176032081    0.14%      176  Unicode$py.test$11
+   175041791    0.14%      175  .annobin__ZN13ObjArrayKlass8allocateEiP10JavaThread.start
+   175027727    0.14%      175  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+   173063553    0.14%      173  java.lang.String.length
+   172965433    0.14%      173  CodeBlob::is_optimized_entry_blob() const
+   171038182    0.14%      171  JVM_InternString
+   170017132    0.14%      170  PhaseCFG::hoist_to_cheaper_block(Block*, Block*, Node*)
+   168032090    0.13%      168  org.python.core.PyString.getString
+   166007708    0.13%      166  Node::rematerialize() const
+   165019559    0.13%      165  I2C/C2I adapters(0xbab)
+   163058380    0.13%      163  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+   163014208    0.13%      163  org.python.core.PyObject.__call__
+   162973317    0.13%      163  PhaseIterGVN::add_users_to_worklist(Node*)
+   162034142    0.13%      162  java.lang.String.intern
+   160049742    0.13%      160  org.python.core.PySlice.indicesEx
+   160028743    0.13%      160  org.python.core.PyObject._add
+   159976364    0.13%      160  MemAllocator::allocate() const
+   159068682    0.13%      159  Type::cmp(Type const*, Type const*)
+   158028126    0.13%      158  java.util.concurrent.ConcurrentHashMap.transfer
+   158018470    0.13%      158  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+   157942409    0.13%      158  inflate
+   155012301    0.12%      155  java.util.concurrent.ConcurrentHashMap.casTabAt
+   151080437    0.12%      151  PhaseCCP::analyze()
+   151033130    0.12%      151  org.python.core.PyFrame.getglobal
+   151014828    0.12%      151  org.python.core.PyList.pyset
+   149032107    0.12%      149  org.python.core.PySequence$1.len
+   148979690    0.12%      149  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+   148332846    0.12%      148  .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+   148017096    0.12%      148  PhaseChaitin::merge_multidefs()
+   148004869    0.12%      148  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+   147012227    0.12%      147  org.python.core.PyObject.__gt__
+   144045791    0.12%      144  java.lang.ThreadLocal.get
+   144040800    0.12%      144  java.lang.Character.isUpperCase
+   144020512    0.12%      144  java.lang.invoke.VarHandleReferences$Array.getVolatile
+   143002485    0.11%      143  G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+   140009139    0.11%      140  org.python.core.PyString.__lt__
+   138980776    0.11%      139  PhaseChaitin::Select()
+   137086683    0.11%      137  RegionNode::is_unreachable_from_root(PhaseGVN const*) const
+   136057741    0.11%      136  frame::sender_for_compiled_frame(RegisterMap*) const
+   135970714    0.11%      136  Compile::identify_useful_nodes(Unique_Node_List&)
+   134223042    0.11%      132  _raw_spin_unlock_irqrestore_[k]
+   134084780    0.11%      134  Method::bcp_from(unsigned char*) const
+   134021524    0.11%      134  org.python.core.PyObject.getType
+   133173901    0.11%      133  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+   130070251    0.10%      130  NTarjan::DFS(NTarjan*, VectorSet&, PhaseIdealLoop*, unsigned int*)
+   130005717    0.10%      130  org.python.core.PyType$MethodCache$MethodCacheEntry.isValid
+   126044149    0.10%      126  Interval::split_child_at_op_id(int, LIR_OpVisitState::OprMode)
+   125919712    0.10%      126  Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+   124052255    0.10%      124  PhaseIterGVN::transform_old(Node*)
+   124023371    0.10%      124  org.python.core.PyInstance.__findattr_ex__
+   124012062    0.10%      124  CProjNode::is_block_proj() const
+   124000017    0.10%      124  org.python.core.ArgParser.<init>
+   122935237    0.10%      123  Matcher::find_shared(Node*)
+   122059793    0.10%      122  G1BarrierSetRuntime::write_ref_array_post_entry(HeapWordImpl**, unsigned long)

@@ -1,0 +1,3124 @@
+--- Execution profile ---
+Total samples       : 97034
+unknown_Java        : 382 (0.39%)
+not_walkable_Java   : 41 (0.04%)
+deoptimization      : 6 (0.01%)
+
+--- 1926385373 ns (1.98%), 1927 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 1451405302 ns (1.50%), 1452 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 1303463002 ns (1.34%), 1304 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 1085593864 ns (1.12%), 1086 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 1055604526 ns (1.09%), 1056 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 923578375 ns (0.95%), 924 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.postingEquals
+  [ 1] org.apache.lucene.index.TermsHashPerField.add
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 920684924 ns (0.95%), 921 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardAnalyzer.reusableTokenStream
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 916544973 ns (0.94%), 917 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 794660008 ns (0.82%), 795 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.postingEquals
+  [ 1] org.apache.lucene.index.TermsHashPerField.add
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 734607550 ns (0.76%), 732 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] __wake_up_common_lock_[k]
+  [ 2] fsnotify_add_event_[k]
+  [ 3] inotify_handle_inode_event_[k]
+  [ 4] send_to_group_[k]
+  [ 5] fsnotify_[k]
+  [ 6] __fsnotify_parent_[k]
+  [ 7] vfs_write_[k]
+  [ 8] ksys_write_[k]
+  [ 9] do_syscall_64_[k]
+  [10] entry_SYSCALL_64_after_hwframe_[k]
+  [11] __GI___libc_write
+  [12] writeSingle
+  [13] java.io.FileOutputStream.write
+  [14] java.io.FileOutputStream.write
+  [15] org.dacapo.harness.TeeOutputStream.write
+  [16] java.io.FilterOutputStream.write
+  [17] java.io.PrintStream.write
+  [18] sun.nio.cs.StreamEncoder.writeBytes
+  [19] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [20] sun.nio.cs.StreamEncoder.flushBuffer
+  [21] java.io.OutputStreamWriter.flushBuffer
+  [22] java.io.PrintStream.write
+  [23] java.io.PrintStream.print
+  [24] java.io.PrintStream.println
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.indexDocs
+  [27] org.dacapo.luindex.Index.indexDocs
+  [28] org.dacapo.luindex.Index.main
+  [29] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [30] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [31] java.lang.reflect.Method.invoke
+  [32] org.dacapo.harness.Luindex.iterate
+  [33] org.dacapo.harness.Benchmark.run
+  [34] org.dacapo.harness.TestHarness.runBenchmark
+  [35] org.dacapo.harness.TestHarness.main
+  [36] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [37] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [38] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [39] java.lang.reflect.Method.invoke
+  [40] Harness.main
+
+--- 661703090 ns (0.68%), 662 samples
+  [ 0] org.apache.lucene.document.Field.readerValue
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 603745520 ns (0.62%), 604 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 590795660 ns (0.61%), 591 samples
+  [ 0] org.apache.lucene.analysis.Token.clearNoTermBuffer
+  [ 1] org.apache.lucene.analysis.Token.reinit
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 563757084 ns (0.58%), 564 samples
+  [ 0] org.apache.lucene.analysis.StopFilter.next
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 528995873 ns (0.54%), 529 samples
+  [ 0] org.apache.lucene.index.FreqProxFieldMergeState.<init>
+  [ 1] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 2] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 3] org.apache.lucene.index.TermsHash.flush
+  [ 4] org.apache.lucene.index.DocInverter.flush
+  [ 5] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 6] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 7] org.apache.lucene.index.DocumentsWriter.flush
+  [ 8] org.apache.lucene.index.IndexWriter.doFlush
+  [ 9] org.apache.lucene.index.IndexWriter.flush
+  [10] org.apache.lucene.index.IndexWriter.optimize
+  [11] org.apache.lucene.index.IndexWriter.optimize
+  [12] org.apache.lucene.index.IndexWriter.optimize
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 527715357 ns (0.54%), 528 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 478816484 ns (0.49%), 479 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 462835502 ns (0.48%), 463 samples
+  [ 0] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 1] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 2] org.apache.lucene.index.TermsHashPerField.add
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 460832139 ns (0.47%), 461 samples
+  [ 0] java.lang.CharacterDataLatin1.toLowerCase
+  [ 1] java.lang.Character.toLowerCase
+  [ 2] java.lang.Character.toLowerCase
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 453791118 ns (0.47%), 454 samples
+  [ 0] jshort_disjoint_arraycopy
+  [ 1] org.apache.lucene.analysis.Token.setTermBuffer
+  [ 2] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getText
+  [ 3] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 4] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 5] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 6] org.apache.lucene.analysis.StopFilter.next
+  [ 7] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 8] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 9] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [10] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [11] org.apache.lucene.index.DocumentsWriter.addDocument
+  [12] org.apache.lucene.index.IndexWriter.addDocument
+  [13] org.apache.lucene.index.IndexWriter.addDocument
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.indexDocs
+  [17] org.dacapo.luindex.Index.main
+  [18] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [19] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [20] java.lang.reflect.Method.invoke
+  [21] org.dacapo.harness.Luindex.iterate
+  [22] org.dacapo.harness.Benchmark.run
+  [23] org.dacapo.harness.TestHarness.runBenchmark
+  [24] org.dacapo.harness.TestHarness.main
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] Harness.main
+
+--- 438848623 ns (0.45%), 439 samples
+  [ 0] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 1] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 3] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 5] org.apache.lucene.index.IndexWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.dacapo.luindex.Index.indexDocs
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.main
+  [11] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [12] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [13] java.lang.reflect.Method.invoke
+  [14] org.dacapo.harness.Luindex.iterate
+  [15] org.dacapo.harness.Benchmark.run
+  [16] org.dacapo.harness.TestHarness.runBenchmark
+  [17] org.dacapo.harness.TestHarness.main
+  [18] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [20] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [21] java.lang.reflect.Method.invoke
+  [22] Harness.main
+
+--- 433886522 ns (0.45%), 434 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 414872139 ns (0.43%), 415 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 404889809 ns (0.42%), 405 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.finish
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 396830241 ns (0.41%), 397 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.postingEquals
+  [ 1] org.apache.lucene.index.TermsHashPerField.add
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 394368522 ns (0.41%), 394 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeSingle
+  [ 5] java.io.FileOutputStream.write
+  [ 6] java.io.FileOutputStream.write
+  [ 7] org.dacapo.harness.TeeOutputStream.write
+  [ 8] java.io.FilterOutputStream.write
+  [ 9] java.io.PrintStream.write
+  [10] sun.nio.cs.StreamEncoder.writeBytes
+  [11] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [12] sun.nio.cs.StreamEncoder.flushBuffer
+  [13] java.io.OutputStreamWriter.flushBuffer
+  [14] java.io.PrintStream.write
+  [15] java.io.PrintStream.print
+  [16] java.io.PrintStream.println
+  [17] org.dacapo.luindex.Index.indexDocs
+  [18] org.dacapo.luindex.Index.indexDocs
+  [19] org.dacapo.luindex.Index.indexDocs
+  [20] org.dacapo.luindex.Index.main
+  [21] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] org.dacapo.harness.Luindex.iterate
+  [25] org.dacapo.harness.Benchmark.run
+  [26] org.dacapo.harness.TestHarness.runBenchmark
+  [27] org.dacapo.harness.TestHarness.main
+  [28] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [29] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [30] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [31] java.lang.reflect.Method.invoke
+  [32] Harness.main
+
+--- 382837168 ns (0.39%), 383 samples
+  [ 0] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 1] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 2] org.apache.lucene.index.TermsHashPerField.add
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 369844679 ns (0.38%), 370 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 351814806 ns (0.36%), 352 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 344923765 ns (0.36%), 345 samples
+  [ 0] __GI___libc_write
+  [ 1] writeSingle
+  [ 2] java.io.FileOutputStream.write
+  [ 3] java.io.FileOutputStream.write
+  [ 4] org.dacapo.harness.TeeOutputStream.write
+  [ 5] java.io.FilterOutputStream.write
+  [ 6] java.io.PrintStream.write
+  [ 7] sun.nio.cs.StreamEncoder.writeBytes
+  [ 8] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 9] sun.nio.cs.StreamEncoder.flushBuffer
+  [10] java.io.OutputStreamWriter.flushBuffer
+  [11] java.io.PrintStream.write
+  [12] java.io.PrintStream.print
+  [13] java.io.PrintStream.println
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.indexDocs
+  [17] org.dacapo.luindex.Index.main
+  [18] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [19] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [20] java.lang.reflect.Method.invoke
+  [21] org.dacapo.harness.Luindex.iterate
+  [22] org.dacapo.harness.Benchmark.run
+  [23] org.dacapo.harness.TestHarness.runBenchmark
+  [24] org.dacapo.harness.TestHarness.main
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] Harness.main
+
+--- 338863434 ns (0.35%), 339 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 337907532 ns (0.35%), 338 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.writeByte
+  [ 1] org.apache.lucene.index.TermsHashPerField.writeVInt
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 3] org.apache.lucene.index.TermsHashPerField.add
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 336883153 ns (0.35%), 337 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 323974585 ns (0.33%), 324 samples
+  [ 0] org.apache.lucene.index.FreqProxFieldMergeState.<init>
+  [ 1] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 2] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 3] org.apache.lucene.index.TermsHash.flush
+  [ 4] org.apache.lucene.index.DocInverter.flush
+  [ 5] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 6] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 7] org.apache.lucene.index.DocumentsWriter.flush
+  [ 8] org.apache.lucene.index.IndexWriter.doFlush
+  [ 9] org.apache.lucene.index.IndexWriter.flush
+  [10] org.apache.lucene.index.IndexWriter.optimize
+  [11] org.apache.lucene.index.IndexWriter.optimize
+  [12] org.apache.lucene.index.IndexWriter.optimize
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 323970666 ns (0.33%), 324 samples
+  [ 0] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 1] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 2] org.apache.lucene.index.TermsHash.flush
+  [ 3] org.apache.lucene.index.DocInverter.flush
+  [ 4] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 5] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 6] org.apache.lucene.index.DocumentsWriter.flush
+  [ 7] org.apache.lucene.index.IndexWriter.doFlush
+  [ 8] org.apache.lucene.index.IndexWriter.flush
+  [ 9] org.apache.lucene.index.IndexWriter.optimize
+  [10] org.apache.lucene.index.IndexWriter.optimize
+  [11] org.apache.lucene.index.IndexWriter.optimize
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 302967935 ns (0.31%), 303 samples
+  [ 0] org.apache.lucene.index.ByteSliceReader.nextSlice
+  [ 1] org.apache.lucene.index.ByteSliceReader.readByte
+  [ 2] org.apache.lucene.store.IndexInput.readVInt
+  [ 3] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 4] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 5] org.apache.lucene.index.TermsHash.flush
+  [ 6] org.apache.lucene.index.DocInverter.flush
+  [ 7] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 8] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 9] org.apache.lucene.index.DocumentsWriter.flush
+  [10] org.apache.lucene.index.IndexWriter.doFlush
+  [11] org.apache.lucene.index.IndexWriter.flush
+  [12] org.apache.lucene.index.IndexWriter.optimize
+  [13] org.apache.lucene.index.IndexWriter.optimize
+  [14] org.apache.lucene.index.IndexWriter.optimize
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 300884922 ns (0.31%), 301 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 289863101 ns (0.30%), 290 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 286508738 ns (0.30%), 286 samples
+  [ 0] balance_dirty_pages_ratelimited_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.main
+  [26] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] org.dacapo.harness.Luindex.iterate
+  [30] org.dacapo.harness.Benchmark.run
+  [31] org.dacapo.harness.TestHarness.runBenchmark
+  [32] org.dacapo.harness.TestHarness.main
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [35] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [36] java.lang.reflect.Method.invoke
+  [37] Harness.main
+
+--- 280922256 ns (0.29%), 281 samples
+  [ 0] org.apache.lucene.analysis.Token.setTermBuffer
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getText
+  [ 2] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 3] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 4] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 5] org.apache.lucene.analysis.StopFilter.next
+  [ 6] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 8] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [10] org.apache.lucene.index.DocumentsWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.apache.lucene.index.IndexWriter.addDocument
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.main
+  [17] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [18] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [19] java.lang.reflect.Method.invoke
+  [20] org.dacapo.harness.Luindex.iterate
+  [21] org.dacapo.harness.Benchmark.run
+  [22] org.dacapo.harness.TestHarness.runBenchmark
+  [23] org.dacapo.harness.TestHarness.main
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [26] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [27] java.lang.reflect.Method.invoke
+  [28] Harness.main
+
+--- 280919039 ns (0.29%), 281 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 280878094 ns (0.29%), 281 samples
+  [ 0] org.apache.lucene.analysis.Token.setStartOffset
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 280246885 ns (0.29%), 280 samples
+  [ 0] fsnotify_[k]
+  [ 1] __fsnotify_parent_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] org.dacapo.luindex.Index.indexDocs
+  [21] org.dacapo.luindex.Index.indexDocs
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.main
+  [24] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] org.dacapo.harness.Luindex.iterate
+  [28] org.dacapo.harness.Benchmark.run
+  [29] org.dacapo.harness.TestHarness.runBenchmark
+  [30] org.dacapo.harness.TestHarness.main
+  [31] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [32] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [33] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [34] java.lang.reflect.Method.invoke
+  [35] Harness.main
+
+--- 277940197 ns (0.29%), 278 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizer.<init>
+  [ 1] org.apache.lucene.analysis.standard.StandardAnalyzer.reusableTokenStream
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 273596445 ns (0.28%), 273 samples
+  [ 0] xfs_buffered_write_iomap_begin?[xfs]_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.main
+  [27] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] org.dacapo.harness.Luindex.iterate
+  [31] org.dacapo.harness.Benchmark.run
+  [32] org.dacapo.harness.TestHarness.runBenchmark
+  [33] org.dacapo.harness.TestHarness.main
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [36] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [37] java.lang.reflect.Method.invoke
+  [38] Harness.main
+
+--- 269079467 ns (0.28%), 269 samples
+  [ 0] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 1] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 2] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 3] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [ 4] org.apache.lucene.index.SegmentMerger.merge
+  [ 5] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [ 6] org.apache.lucene.index.IndexWriter.merge
+  [ 7] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [ 8] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+--- 261529147 ns (0.27%), 261 samples
+  [ 0] iomap_file_buffered_write_[k]
+  [ 1] xfs_file_buffered_write?[xfs]_[k]
+  [ 2] new_sync_write_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeSingle
+  [ 9] java.io.FileOutputStream.write
+  [10] java.io.FileOutputStream.write
+  [11] org.dacapo.harness.TeeOutputStream.write
+  [12] java.io.FilterOutputStream.write
+  [13] java.io.PrintStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.flushBuffer
+  [17] java.io.OutputStreamWriter.flushBuffer
+  [18] java.io.PrintStream.write
+  [19] java.io.PrintStream.print
+  [20] java.io.PrintStream.println
+  [21] org.dacapo.luindex.Index.indexDocs
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.main
+  [25] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [26] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [27] java.lang.reflect.Method.invoke
+  [28] org.dacapo.harness.Luindex.iterate
+  [29] org.dacapo.harness.Benchmark.run
+  [30] org.dacapo.harness.TestHarness.runBenchmark
+  [31] org.dacapo.harness.TestHarness.main
+  [32] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [35] java.lang.reflect.Method.invoke
+  [36] Harness.main
+
+--- 257916356 ns (0.27%), 258 samples
+  [ 0] org.apache.lucene.analysis.StopFilter.next
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 252933395 ns (0.26%), 253 samples
+  [ 0] org.apache.lucene.analysis.StopFilter.next
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 244287557 ns (0.25%), 244 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeSingle
+  [ 9] java.io.FileOutputStream.write
+  [10] java.io.FileOutputStream.write
+  [11] org.dacapo.harness.TeeOutputStream.write
+  [12] java.io.FilterOutputStream.write
+  [13] java.io.PrintStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.flushBuffer
+  [17] java.io.OutputStreamWriter.flushBuffer
+  [18] java.io.PrintStream.write
+  [19] java.io.PrintStream.print
+  [20] java.io.PrintStream.println
+  [21] org.dacapo.luindex.Index.indexDocs
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.main
+  [25] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [26] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [27] java.lang.reflect.Method.invoke
+  [28] org.dacapo.harness.Luindex.iterate
+  [29] org.dacapo.harness.Benchmark.run
+  [30] org.dacapo.harness.TestHarness.runBenchmark
+  [31] org.dacapo.harness.TestHarness.main
+  [32] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [35] java.lang.reflect.Method.invoke
+  [36] Harness.main
+
+--- 242708515 ns (0.25%), 242 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 241112212 ns (0.25%), 241 samples
+  [ 0] link_path_walk.part.0.constprop.0_[k]
+  [ 1] path_lookupat_[k]
+  [ 2] filename_lookup_[k]
+  [ 3] user_path_at_empty_[k]
+  [ 4] do_readlinkat_[k]
+  [ 5] __x64_sys_readlink_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___readlink
+  [ 9] [unknown]
+  [10] java.io.UnixFileSystem.canonicalize0
+  [11] java.io.UnixFileSystem.canonicalize
+  [12] java.io.File.getCanonicalPath
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.main
+  [17] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [18] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [19] java.lang.reflect.Method.invoke
+  [20] org.dacapo.harness.Luindex.iterate
+  [21] org.dacapo.harness.Benchmark.run
+  [22] org.dacapo.harness.TestHarness.runBenchmark
+  [23] org.dacapo.harness.TestHarness.main
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [26] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [27] java.lang.reflect.Method.invoke
+  [28] Harness.main
+
+--- 231185938 ns (0.24%), 231 samples
+  [ 0] vfs_write_[k]
+  [ 1] ksys_write_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __GI___libc_write
+  [ 5] writeSingle
+  [ 6] java.io.FileOutputStream.write
+  [ 7] java.io.FileOutputStream.write
+  [ 8] org.dacapo.harness.TeeOutputStream.write
+  [ 9] java.io.FilterOutputStream.write
+  [10] java.io.PrintStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.flushBuffer
+  [14] java.io.OutputStreamWriter.flushBuffer
+  [15] java.io.PrintStream.write
+  [16] java.io.PrintStream.print
+  [17] java.io.PrintStream.println
+  [18] org.dacapo.luindex.Index.indexDocs
+  [19] org.dacapo.luindex.Index.indexDocs
+  [20] org.dacapo.luindex.Index.indexDocs
+  [21] org.dacapo.luindex.Index.main
+  [22] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] org.dacapo.harness.Luindex.iterate
+  [26] org.dacapo.harness.Benchmark.run
+  [27] org.dacapo.harness.TestHarness.runBenchmark
+  [28] org.dacapo.harness.TestHarness.main
+  [29] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [30] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [31] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [32] java.lang.reflect.Method.invoke
+  [33] Harness.main
+
+--- 227280040 ns (0.23%), 227 samples
+  [ 0] kfree_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.main
+  [27] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] org.dacapo.harness.Luindex.iterate
+  [31] org.dacapo.harness.Benchmark.run
+  [32] org.dacapo.harness.TestHarness.runBenchmark
+  [33] org.dacapo.harness.TestHarness.main
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [36] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [37] java.lang.reflect.Method.invoke
+  [38] Harness.main
+
+--- 225939140 ns (0.23%), 226 samples
+  [ 0] java.lang.Character.toLowerCase
+  [ 1] java.lang.Character.toLowerCase
+  [ 2] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 3] org.apache.lucene.analysis.StopFilter.next
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 219923166 ns (0.23%), 220 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.postingEquals
+  [ 1] org.apache.lucene.index.TermsHashPerField.add
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 218926296 ns (0.23%), 219 samples
+  [ 0] jshort_disjoint_arraycopy
+  [ 1] org.apache.lucene.analysis.Token.setTermBuffer
+  [ 2] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getText
+  [ 3] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 4] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 5] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 6] org.apache.lucene.analysis.StopFilter.next
+  [ 7] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 8] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 9] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [10] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [11] org.apache.lucene.index.DocumentsWriter.addDocument
+  [12] org.apache.lucene.index.IndexWriter.addDocument
+  [13] org.apache.lucene.index.IndexWriter.addDocument
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.indexDocs
+  [17] org.dacapo.luindex.Index.main
+  [18] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [19] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [20] java.lang.reflect.Method.invoke
+  [21] org.dacapo.harness.Luindex.iterate
+  [22] org.dacapo.harness.Benchmark.run
+  [23] org.dacapo.harness.TestHarness.runBenchmark
+  [24] org.dacapo.harness.TestHarness.main
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] Harness.main
+
+--- 214951291 ns (0.22%), 215 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.writeByte
+  [ 1] org.apache.lucene.index.TermsHashPerField.writeVInt
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 3] org.apache.lucene.index.TermsHashPerField.add
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 212435650 ns (0.22%), 212 samples
+  [ 0] iomap_iter_advance_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.main
+  [27] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] org.dacapo.harness.Luindex.iterate
+  [31] org.dacapo.harness.Benchmark.run
+  [32] org.dacapo.harness.TestHarness.runBenchmark
+  [33] org.dacapo.harness.TestHarness.main
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [36] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [37] java.lang.reflect.Method.invoke
+  [38] Harness.main
+
+--- 210900573 ns (0.22%), 211 samples
+  [ 0] org.apache.lucene.analysis.Token.initTermBuffer
+  [ 1] org.apache.lucene.analysis.Token.termBuffer
+  [ 2] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 3] org.apache.lucene.analysis.StopFilter.next
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 208453904 ns (0.21%), 208 samples
+  [ 0] fault_in_readable_[k]
+  [ 1] fault_in_iov_iter_readable_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.main
+  [27] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] org.dacapo.harness.Luindex.iterate
+  [31] org.dacapo.harness.Benchmark.run
+  [32] org.dacapo.harness.TestHarness.runBenchmark
+  [33] org.dacapo.harness.TestHarness.main
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [36] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [37] java.lang.reflect.Method.invoke
+  [38] Harness.main
+
+--- 205204447 ns (0.21%), 205 samples
+  [ 0] __fget_light_[k]
+  [ 1] __fdget_pos_[k]
+  [ 2] ksys_write_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __GI___libc_write
+  [ 6] writeSingle
+  [ 7] java.io.FileOutputStream.write
+  [ 8] java.io.FileOutputStream.write
+  [ 9] org.dacapo.harness.TeeOutputStream.write
+  [10] java.io.FilterOutputStream.write
+  [11] java.io.PrintStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.flushBuffer
+  [15] java.io.OutputStreamWriter.flushBuffer
+  [16] java.io.PrintStream.write
+  [17] java.io.PrintStream.print
+  [18] java.io.PrintStream.println
+  [19] org.dacapo.luindex.Index.indexDocs
+  [20] org.dacapo.luindex.Index.indexDocs
+  [21] org.dacapo.luindex.Index.indexDocs
+  [22] org.dacapo.luindex.Index.main
+  [23] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] org.dacapo.harness.Luindex.iterate
+  [27] org.dacapo.harness.Benchmark.run
+  [28] org.dacapo.harness.TestHarness.runBenchmark
+  [29] org.dacapo.harness.TestHarness.main
+  [30] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [31] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [32] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [33] java.lang.reflect.Method.invoke
+  [34] Harness.main
+
+--- 204961209 ns (0.21%), 205 samples
+  [ 0] java.lang.CharacterDataLatin1.toLowerCase
+  [ 1] java.lang.Character.toLowerCase
+  [ 2] java.lang.Character.toLowerCase
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 204931131 ns (0.21%), 205 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.writeByte
+  [ 1] org.apache.lucene.index.TermsHashPerField.writeVInt
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 3] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 4] org.apache.lucene.index.TermsHashPerField.add
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 203991555 ns (0.21%), 204 samples
+  [ 0] org.apache.lucene.index.FreqProxFieldMergeState.<init>
+  [ 1] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 2] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 3] org.apache.lucene.index.TermsHash.flush
+  [ 4] org.apache.lucene.index.DocInverter.flush
+  [ 5] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 6] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 7] org.apache.lucene.index.DocumentsWriter.flush
+  [ 8] org.apache.lucene.index.IndexWriter.doFlush
+  [ 9] org.apache.lucene.index.IndexWriter.flush
+  [10] org.apache.lucene.index.IndexWriter.optimize
+  [11] org.apache.lucene.index.IndexWriter.optimize
+  [12] org.apache.lucene.index.IndexWriter.optimize
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 202974209 ns (0.21%), 203 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.yylength
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 198906056 ns (0.20%), 199 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 197920268 ns (0.20%), 198 samples
+  [ 0] java.lang.CharacterData.of
+  [ 1] java.lang.Character.toLowerCase
+  [ 2] java.lang.Character.toLowerCase
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 196940424 ns (0.20%), 197 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.writeByte
+  [ 1] org.apache.lucene.index.TermsHashPerField.writeVInt
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 3] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 4] org.apache.lucene.index.TermsHashPerField.add
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 196206617 ns (0.20%), 196 samples
+  [ 0] selinux_inode_permission_[k]
+  [ 1] security_inode_permission_[k]
+  [ 2] link_path_walk.part.0.constprop.0_[k]
+  [ 3] path_lookupat_[k]
+  [ 4] filename_lookup_[k]
+  [ 5] user_path_at_empty_[k]
+  [ 6] do_readlinkat_[k]
+  [ 7] __x64_sys_readlink_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __GI___readlink
+  [11] [unknown]
+  [12] java.io.UnixFileSystem.canonicalize0
+  [13] java.io.UnixFileSystem.canonicalize
+  [14] java.io.File.getCanonicalPath
+  [15] org.dacapo.luindex.Index.indexDocs
+  [16] org.dacapo.luindex.Index.indexDocs
+  [17] org.dacapo.luindex.Index.indexDocs
+  [18] org.dacapo.luindex.Index.main
+  [19] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [20] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [21] java.lang.reflect.Method.invoke
+  [22] org.dacapo.harness.Luindex.iterate
+  [23] org.dacapo.harness.Benchmark.run
+  [24] org.dacapo.harness.TestHarness.runBenchmark
+  [25] org.dacapo.harness.TestHarness.main
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [27] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] Harness.main
+
+--- 194924799 ns (0.20%), 195 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 193921980 ns (0.20%), 194 samples
+  [ 0] org.apache.lucene.analysis.Token.initTermBuffer
+  [ 1] org.apache.lucene.analysis.Token.termBuffer
+  [ 2] org.apache.lucene.index.TermsHashPerField.add
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 188968205 ns (0.19%), 189 samples
+  [ 0] org.apache.lucene.analysis.CharArraySet.getSlot
+  [ 1] org.apache.lucene.analysis.CharArraySet.contains
+  [ 2] org.apache.lucene.analysis.StopFilter.next
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 188299487 ns (0.19%), 188 samples
+  [ 0] __kmalloc_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.main
+  [27] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [28] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [29] java.lang.reflect.Method.invoke
+  [30] org.dacapo.harness.Luindex.iterate
+  [31] org.dacapo.harness.Benchmark.run
+  [32] org.dacapo.harness.TestHarness.runBenchmark
+  [33] org.dacapo.harness.TestHarness.main
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [36] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [37] java.lang.reflect.Method.invoke
+  [38] Harness.main
+
+--- 188035185 ns (0.19%), 188 samples
+  [ 0] org.apache.lucene.index.SegmentMergeInfo.getDocMap
+  [ 1] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 2] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 3] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 4] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [ 5] org.apache.lucene.index.SegmentMerger.merge
+  [ 6] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [ 7] org.apache.lucene.index.IndexWriter.merge
+  [ 8] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [ 9] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+--- 187965837 ns (0.19%), 188 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.<init>
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.<init>
+  [ 2] org.apache.lucene.analysis.standard.StandardAnalyzer.reusableTokenStream
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 187939345 ns (0.19%), 188 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 1] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 2] org.apache.lucene.analysis.StopFilter.next
+  [ 3] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 186952674 ns (0.19%), 187 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 184944534 ns (0.19%), 185 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 184016473 ns (0.19%), 184 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] org.apache.lucene.store.RAMOutputStream.flush
+  [ 3] org.apache.lucene.store.RAMOutputStream.writeTo
+  [ 4] org.apache.lucene.index.MultiLevelSkipListWriter.writeSkip
+  [ 5] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 6] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 7] org.apache.lucene.index.TermsHash.flush
+  [ 8] org.apache.lucene.index.DocInverter.flush
+  [ 9] org.apache.lucene.index.DocFieldConsumers.flush
+  [10] org.apache.lucene.index.DocFieldProcessor.flush
+  [11] org.apache.lucene.index.DocumentsWriter.flush
+  [12] org.apache.lucene.index.IndexWriter.doFlush
+  [13] org.apache.lucene.index.IndexWriter.flush
+  [14] org.apache.lucene.index.IndexWriter.optimize
+  [15] org.apache.lucene.index.IndexWriter.optimize
+  [16] org.apache.lucene.index.IndexWriter.optimize
+  [17] org.dacapo.luindex.Index.main
+  [18] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [19] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [20] java.lang.reflect.Method.invoke
+  [21] org.dacapo.harness.Luindex.iterate
+  [22] org.dacapo.harness.Benchmark.run
+  [23] org.dacapo.harness.TestHarness.runBenchmark
+  [24] org.dacapo.harness.TestHarness.main
+  [25] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [26] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] Harness.main
+
+--- 181906169 ns (0.19%), 182 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 181026864 ns (0.19%), 181 samples
+  [ 0] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 1] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 2] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 3] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [ 4] org.apache.lucene.index.SegmentMerger.merge
+  [ 5] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [ 6] org.apache.lucene.index.IndexWriter.merge
+  [ 7] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [ 8] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+--- 179952099 ns (0.19%), 180 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 1] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 2] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 3] org.apache.lucene.analysis.StopFilter.next
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 175927599 ns (0.18%), 176 samples
+  [ 0] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 1] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 3] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 5] org.apache.lucene.index.IndexWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.dacapo.luindex.Index.indexDocs
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.main
+  [11] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [12] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [13] java.lang.reflect.Method.invoke
+  [14] org.dacapo.harness.Luindex.iterate
+  [15] org.dacapo.harness.Benchmark.run
+  [16] org.dacapo.harness.TestHarness.runBenchmark
+  [17] org.dacapo.harness.TestHarness.main
+  [18] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [20] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [21] java.lang.reflect.Method.invoke
+  [22] Harness.main
+
+--- 174926269 ns (0.18%), 175 samples
+  [ 0] java.lang.String.hashCode
+  [ 1] java.util.HashMap.hash
+  [ 2] java.util.HashMap.getNode
+  [ 3] java.util.HashMap.get
+  [ 4] org.apache.lucene.index.FieldInfos.fieldInfo
+  [ 5] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 6] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 7] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 8] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [ 9] org.apache.lucene.index.SegmentMerger.merge
+  [10] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [11] org.apache.lucene.index.IndexWriter.merge
+  [12] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [13] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+--- 174164860 ns (0.18%), 174 samples
+  [ 0] selinux_file_permission_[k]
+  [ 1] security_file_permission_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] org.dacapo.luindex.Index.indexDocs
+  [21] org.dacapo.luindex.Index.indexDocs
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.main
+  [24] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] org.dacapo.harness.Luindex.iterate
+  [28] org.dacapo.harness.Benchmark.run
+  [29] org.dacapo.harness.TestHarness.runBenchmark
+  [30] org.dacapo.harness.TestHarness.main
+  [31] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [32] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [33] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [34] java.lang.reflect.Method.invoke
+  [35] Harness.main
+
+--- 173942431 ns (0.18%), 174 samples
+  [ 0] org.apache.lucene.analysis.Token.getPayload
+  [ 1] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 3] org.apache.lucene.index.TermsHashPerField.add
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 172994429 ns (0.18%), 173 samples
+  [ 0] java.lang.String.isLatin1
+  [ 1] java.lang.String.hashCode
+  [ 2] java.util.HashMap.hash
+  [ 3] java.util.HashMap.getNode
+  [ 4] java.util.HashMap.get
+  [ 5] org.apache.lucene.index.FieldInfos.fieldInfo
+  [ 6] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 7] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 8] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 9] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [10] org.apache.lucene.index.SegmentMerger.merge
+  [11] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [12] org.apache.lucene.index.IndexWriter.merge
+  [13] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [14] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+--- 171942679 ns (0.18%), 172 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 171929995 ns (0.18%), 172 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.writeByte
+  [ 1] org.apache.lucene.index.TermsHashPerField.writeVInt
+  [ 2] org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  [ 3] org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+  [ 4] org.apache.lucene.index.TermsHashPerField.add
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 169998768 ns (0.18%), 170 samples
+  [ 0] org.apache.lucene.index.FreqProxFieldMergeState.nextTerm
+  [ 1] org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+  [ 2] org.apache.lucene.index.FreqProxTermsWriter.flush
+  [ 3] org.apache.lucene.index.TermsHash.flush
+  [ 4] org.apache.lucene.index.DocInverter.flush
+  [ 5] org.apache.lucene.index.DocFieldConsumers.flush
+  [ 6] org.apache.lucene.index.DocFieldProcessor.flush
+  [ 7] org.apache.lucene.index.DocumentsWriter.flush
+  [ 8] org.apache.lucene.index.IndexWriter.doFlush
+  [ 9] org.apache.lucene.index.IndexWriter.flush
+  [10] org.apache.lucene.index.IndexWriter.optimize
+  [11] org.apache.lucene.index.IndexWriter.optimize
+  [12] org.apache.lucene.index.IndexWriter.optimize
+  [13] org.dacapo.luindex.Index.main
+  [14] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] org.dacapo.harness.Luindex.iterate
+  [18] org.dacapo.harness.Benchmark.run
+  [19] org.dacapo.harness.TestHarness.runBenchmark
+  [20] org.dacapo.harness.TestHarness.main
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [23] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [24] java.lang.reflect.Method.invoke
+  [25] Harness.main
+
+--- 169411078 ns (0.17%), 169 samples
+  [ 0] __filemap_get_folio_[k]
+  [ 1] pagecache_get_page_[k]
+  [ 2] iomap_write_begin_[k]
+  [ 3] iomap_file_buffered_write_[k]
+  [ 4] xfs_file_buffered_write?[xfs]_[k]
+  [ 5] new_sync_write_[k]
+  [ 6] vfs_write_[k]
+  [ 7] ksys_write_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __GI___libc_write
+  [11] writeSingle
+  [12] java.io.FileOutputStream.write
+  [13] java.io.FileOutputStream.write
+  [14] org.dacapo.harness.TeeOutputStream.write
+  [15] java.io.FilterOutputStream.write
+  [16] java.io.PrintStream.write
+  [17] sun.nio.cs.StreamEncoder.writeBytes
+  [18] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [19] sun.nio.cs.StreamEncoder.flushBuffer
+  [20] java.io.OutputStreamWriter.flushBuffer
+  [21] java.io.PrintStream.write
+  [22] java.io.PrintStream.print
+  [23] java.io.PrintStream.println
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.indexDocs
+  [26] org.dacapo.luindex.Index.indexDocs
+  [27] org.dacapo.luindex.Index.main
+  [28] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [29] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [30] java.lang.reflect.Method.invoke
+  [31] org.dacapo.harness.Luindex.iterate
+  [32] org.dacapo.harness.Benchmark.run
+  [33] org.dacapo.harness.TestHarness.runBenchmark
+  [34] org.dacapo.harness.TestHarness.main
+  [35] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [36] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [37] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [38] java.lang.reflect.Method.invoke
+  [39] Harness.main
+
+--- 168943315 ns (0.17%), 169 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 1] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 2] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 3] org.apache.lucene.analysis.StopFilter.next
+  [ 4] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 5] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 7] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 9] org.apache.lucene.index.IndexWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.main
+  [15] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.Luindex.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+--- 167012328 ns (0.17%), 167 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 165196938 ns (0.17%), 165 samples
+  [ 0] inotify_handle_inode_event_[k]
+  [ 1] send_to_group_[k]
+  [ 2] fsnotify_[k]
+  [ 3] __fsnotify_parent_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] org.dacapo.luindex.Index.indexDocs
+  [23] org.dacapo.luindex.Index.indexDocs
+  [24] org.dacapo.luindex.Index.indexDocs
+  [25] org.dacapo.luindex.Index.main
+  [26] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [27] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [28] java.lang.reflect.Method.invoke
+  [29] org.dacapo.harness.Luindex.iterate
+  [30] org.dacapo.harness.Benchmark.run
+  [31] org.dacapo.harness.TestHarness.runBenchmark
+  [32] org.dacapo.harness.TestHarness.main
+  [33] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [34] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [35] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [36] java.lang.reflect.Method.invoke
+  [37] Harness.main
+
+--- 164954611 ns (0.17%), 165 samples
+  [ 0] org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  [ 1] org.apache.lucene.analysis.standard.StandardTokenizer.next
+  [ 2] org.apache.lucene.analysis.standard.StandardFilter.next
+  [ 3] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 4] org.apache.lucene.analysis.StopFilter.next
+  [ 5] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 6] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 7] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 8] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 9] org.apache.lucene.index.DocumentsWriter.addDocument
+  [10] org.apache.lucene.index.IndexWriter.addDocument
+  [11] org.apache.lucene.index.IndexWriter.addDocument
+  [12] org.dacapo.luindex.Index.indexDocs
+  [13] org.dacapo.luindex.Index.indexDocs
+  [14] org.dacapo.luindex.Index.indexDocs
+  [15] org.dacapo.luindex.Index.main
+  [16] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [17] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [18] java.lang.reflect.Method.invoke
+  [19] org.dacapo.harness.Luindex.iterate
+  [20] org.dacapo.harness.Benchmark.run
+  [21] org.dacapo.harness.TestHarness.runBenchmark
+  [22] org.dacapo.harness.TestHarness.main
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [24] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [25] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [26] java.lang.reflect.Method.invoke
+  [27] Harness.main
+
+--- 164952258 ns (0.17%), 165 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 164936093 ns (0.17%), 165 samples
+  [ 0] org.apache.lucene.index.TermsHashPerField.add
+  [ 1] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 2] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 4] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 6] org.apache.lucene.index.IndexWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.dacapo.luindex.Index.indexDocs
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.main
+  [12] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.Luindex.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 163938041 ns (0.17%), 164 samples
+  [ 0] org.apache.lucene.analysis.LowerCaseFilter.next
+  [ 1] org.apache.lucene.analysis.StopFilter.next
+  [ 2] org.apache.lucene.index.DocInverterPerField.processFields
+  [ 3] org.apache.lucene.index.DocFieldConsumersPerField.processFields
+  [ 4] org.apache.lucene.index.DocFieldProcessorPerThread.processDocument
+  [ 5] org.apache.lucene.index.DocumentsWriter.updateDocument
+  [ 6] org.apache.lucene.index.DocumentsWriter.addDocument
+  [ 7] org.apache.lucene.index.IndexWriter.addDocument
+  [ 8] org.apache.lucene.index.IndexWriter.addDocument
+  [ 9] org.dacapo.luindex.Index.indexDocs
+  [10] org.dacapo.luindex.Index.indexDocs
+  [11] org.dacapo.luindex.Index.indexDocs
+  [12] org.dacapo.luindex.Index.main
+  [13] jdk.internal.reflect.GeneratedMethodAccessor1.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] org.dacapo.harness.Luindex.iterate
+  [17] org.dacapo.harness.Benchmark.run
+  [18] org.dacapo.harness.TestHarness.runBenchmark
+  [19] org.dacapo.harness.TestHarness.main
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [21] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [22] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [23] java.lang.reflect.Method.invoke
+  [24] Harness.main
+
+--- 162068995 ns (0.17%), 162 samples
+  [ 0] org.apache.lucene.store.IndexOutput.writeVInt
+  [ 1] org.apache.lucene.index.SegmentMerger.appendPostings
+  [ 2] org.apache.lucene.index.SegmentMerger.mergeTermInfo
+  [ 3] org.apache.lucene.index.SegmentMerger.mergeTermInfos
+  [ 4] org.apache.lucene.index.SegmentMerger.mergeTerms
+  [ 5] org.apache.lucene.index.SegmentMerger.merge
+  [ 6] org.apache.lucene.index.IndexWriter.mergeMiddle
+  [ 7] org.apache.lucene.index.IndexWriter.merge
+  [ 8] org.apache.lucene.index.ConcurrentMergeScheduler.doMerge
+  [ 9] org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 14643018575   15.08%    14649  org.apache.lucene.analysis.standard.StandardTokenizerImpl.getNextToken
+  4563159558    4.70%     4565  org.apache.lucene.index.TermsHashPerField.add
+  3376625733    3.48%     3378  org.apache.lucene.index.TermsHashPerField.postingEquals
+  2900822933    2.99%     2902  org.apache.lucene.index.TermsHashPerField.writeByte
+  1562564474    1.61%     1563  org.apache.lucene.index.TermsHashPerField.comparePostings
+  1450419729    1.49%     1451  org.apache.lucene.index.DocInverterPerField.processFields
+  1305582239    1.34%     1306  org.apache.lucene.index.TermsHashPerField.quickSort
+  1281914037    1.32%     1282  org.apache.lucene.index.FreqProxFieldMergeState.<init>
+  1253463021    1.29%     1254  org.apache.lucene.analysis.StopFilter.next
+  1210223837    1.25%     1210  org.apache.lucene.index.SegmentMerger.appendPostings
+  1192558857    1.23%     1186  _raw_spin_unlock_irqrestore_[k]
+  1151477301    1.19%     1152  org.apache.lucene.index.FreqProxTermsWriterPerField.writeProx
+  1089566916    1.12%     1090  java.lang.CharacterDataLatin1.toLowerCase
+   992648377    1.02%      993  org.apache.lucene.analysis.standard.StandardAnalyzer.reusableTokenStream
+   982546792    1.01%      983  org.apache.lucene.analysis.LowerCaseFilter.next
+   895664857    0.92%      896  org.apache.lucene.analysis.standard.StandardTokenizer.next
+   866915439    0.89%      866  syscall_enter_from_user_mode_[k]
+   809681128    0.83%      810  jshort_disjoint_arraycopy
+   796142112    0.82%      796  org.apache.lucene.store.IndexOutput.writeVInt
+   780979864    0.80%      781  org.apache.lucene.index.FreqProxTermsWriter.appendPostings
+   734676289    0.76%      732  copy_user_generic_string_[k]
+   729638442    0.75%      730  org.apache.lucene.document.Field.readerValue
+   663707190    0.68%      664  org.apache.lucene.analysis.Token.initTermBuffer
+   642767295    0.66%      643  org.apache.lucene.analysis.Token.clearNoTermBuffer
+   630005256    0.65%      630  org.apache.lucene.store.IndexInput.readVInt
+   611924238    0.63%      612  org.apache.lucene.index.ByteSliceReader.nextSlice
+   603868523    0.62%      603  __d_lookup_rcu_[k]
+   588879982    0.61%      589  org.apache.lucene.analysis.standard.StandardTokenizerImpl.yylength
+   586941076    0.60%      587  java.util.Arrays.fill
+   556414576    0.57%      556  link_path_walk.part.0.constprop.0_[k]
+   534728286    0.55%      535  org.apache.lucene.analysis.standard.StandardFilter.next
+   523905716    0.54%      524  org.apache.lucene.analysis.Token.setTermBuffer
+   498852564    0.51%      499  org.apache.lucene.index.FreqProxTermsWriterPerField.addTerm
+   497024866    0.51%      497  org.apache.lucene.store.BufferedIndexOutput.writeByte
+   491576077    0.51%      491  selinux_inode_permission_[k]
+   477856255    0.49%      478  java.lang.Character.toLowerCase
+   458860903    0.47%      459  org.apache.lucene.index.TermsHashPerField.finish
+   456863766    0.47%      457  org.apache.lucene.index.TermsHashPerField.writeVInt
+   456816668    0.47%      457  org.apache.lucene.analysis.Token.setStartOffset
+   419855648    0.43%      420  org.apache.lucene.analysis.standard.StandardTokenizer.<init>
+   400889075    0.41%      401  __GI___libc_write
+   399104206    0.41%      399  [vdso]
+   384967140    0.40%      385  org.apache.lucene.util.UnicodeUtil.UTF16toUTF8
+   363895862    0.37%      364  org.apache.lucene.index.TermsHashPerField.rehashPostings
+   356064162    0.37%      356  org.apache.lucene.store.FSDirectory$FSIndexOutput.flushBuffer
+   345617740    0.36%      345  avc_lookup_[k]
+   338827128    0.35%      339  java.lang.CharacterData.of
+   329980870    0.34%      330  org.apache.lucene.index.TermInfosWriter.writeTerm
+   323310516    0.33%      323  fsnotify_[k]
+   319753710    0.33%      319  xfs_buffered_write_iomap_begin?[xfs]_[k]
+   319600646    0.33%      319  balance_dirty_pages_ratelimited_[k]
+   313930322    0.32%      314  org.apache.lucene.analysis.standard.StandardTokenizerImpl.<init>
+   313275215    0.32%      314  org.apache.lucene.index.ByteBlockPool.allocSlice
+   300645027    0.31%      300  iomap_file_buffered_write_[k]
+   295934847    0.30%      296  org.apache.lucene.index.SegmentMerger.mergeTermInfos
+   289067984    0.30%      289  java.lang.String.hashCode
+   287829203    0.30%      287  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+   285960677    0.29%      286  org.apache.lucene.index.DefaultSkipListWriter.resetSkip
+   280310385    0.29%      280  __fget_light_[k]
+   279907072    0.29%      280  org.apache.lucene.analysis.Token.getPayload
+   272404051    0.28%      272  kfree_[k]
+   271340754    0.28%      271  send_to_group_[k]
+   269266937    0.28%      269  vfs_write_[k]
+   268988543    0.28%      269  java.lang.String.isLatin1
+   262261568    0.27%      262  security_inode_permission_[k]
+   259457327    0.27%      259  __memmove_avx_unaligned_erms
+   258001393    0.27%      258  org.apache.lucene.index.FreqProxFieldMergeState.nextTerm
+   250395808    0.26%      250  nmethod::oops_do(OopClosure*, bool)
+   247056664    0.25%      247  org.apache.lucene.index.SegmentMergeInfo.getDocMap
+   246591459    0.25%      246  fault_in_readable_[k]
+   240869386    0.25%      241  org.apache.lucene.analysis.Token.clear
+   234463025    0.24%      234  iomap_iter_advance_[k]
+   232880707    0.24%      233  org.apache.lucene.index.MultiLevelSkipListWriter.resetSkip
+   231927244    0.24%      232  org.apache.lucene.analysis.CharArraySet.getSlot
+   227299660    0.23%      227  selinux_file_permission_[k]
+   222996406    0.23%      223  org.apache.lucene.index.ByteSliceReader.readByte
+   222403734    0.23%      222  __kmalloc_[k]
+   217874790    0.22%      218  jni_GetObjectField
+   217416426    0.22%      216  clear_page_rep_[k]
+   215207698    0.22%      215  __fsnotify_parent_[k]
+   212969737    0.22%      213  jbyte_disjoint_arraycopy
+   209044563    0.22%      209  java.util.HashMap.getNode
+   204174387    0.21%      204  strncpy_from_user_[k]
+   204018420    0.21%      204  IndexSetIterator::advance_and_next()
+   195374823    0.20%      195  __rcu_read_unlock_[k]
+   194982530    0.20%      195  org.apache.lucene.index.FreqProxFieldMergeState.nextDoc
+   194523036    0.20%      194  __filemap_get_folio_[k]
+   193318304    0.20%      193  memcg_slab_post_alloc_hook_[k]
+   189408583    0.20%      189  __rcu_read_lock_[k]
+   189263761    0.19%      189  kmem_cache_free_[k]
+   186261254    0.19%      186  inotify_handle_inode_event_[k]
+   182825003    0.19%      182  void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+   181977739    0.19%      182  org.apache.lucene.store.BufferedIndexInput.readByte
+   179004278    0.18%      179  org.apache.lucene.index.DefaultSkipListWriter.setSkipData
+   178363943    0.18%      178  xfs_file_write_iter?[xfs]_[k]
+   176307360    0.18%      176  kmem_cache_alloc_[k]
+   175302029    0.18%      175  xfs_file_buffered_write?[xfs]_[k]
+   175270714    0.18%      175  __inode_security_revalidate_[k]
+   172255687    0.18%      172  inode_permission_[k]
+   172215995    0.18%      172  generic_permission_[k]
+   167012328    0.17%      167  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   164838794    0.17%      165  __GI___readlink
+   164679503    0.17%      164  filemap_get_read_batch_[k]
+   164243414    0.17%      164  _raw_spin_lock_[k]
+   162277183    0.17%      162  get_obj_cgroup_from_current_[k]
+   161893213    0.17%      162  java.io.FileOutputStream.write
+   159996811    0.16%      160  org.apache.lucene.index.TermInfosWriter.add
+   158209159    0.16%      158  .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+   156023065    0.16%      156  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   155515413    0.16%      155  void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+   155259018    0.16%      155  copy_page_from_iter_atomic_[k]
+   155234073    0.16%      155  iomap_write_end_[k]
+   147201362    0.15%      147  iomap_iter_[k]
+   144181265    0.15%      144  security_file_permission_[k]
+   140043962    0.14%      140  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   139971300    0.14%      140  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+   138232326    0.14%      138  map_id_range_down_[k]
+   133958106    0.14%      134  org.apache.lucene.analysis.Token.reinit
+   133382366    0.14%      133  _raw_spin_unlock_irq_[k]
+   133171811    0.14%      133  avc_has_perm_noaudit_[k]
+   131953947    0.14%      132  jshort_arraycopy
+   130219120    0.13%      130  lockref_get_not_dead_[k]
+   130030633    0.13%      130  org.apache.lucene.index.SegmentTermDocs.next
+   129163546    0.13%      129  lockref_put_return_[k]
+   128319395    0.13%      128  up_write_[k]
+   128182013    0.13%      128  bpf_lsm_inode_permission_[k]
+   127277996    0.13%      127  iomap_write_begin_[k]
+   127274616    0.13%      127  __radix_tree_lookup_[k]
+   126262087    0.13%      126  xfs_iomap_valid?[xfs]_[k]
+   126257361    0.13%      126  mod_objcg_state_[k]
+   126200956    0.13%      126  org.apache.lucene.index.TermsHashPerField.compactPostings
+   125408087    0.13%      125  xfs_iext_lookup_extent?[xfs]_[k]
+   125171072    0.13%      125  memcpy_[k]
+   123263475    0.13%      123  obj_cgroup_charge_[k]
+   122969737    0.13%      123  java.nio.CharBuffer.<init>
+   122129389    0.13%      122  __audit_syscall_exit_[k]
+   121078088    0.12%      121  do_syscall_64_[k]
+   120219801    0.12%      120  __get_obj_cgroup_from_memcg_[k]
+   119249060    0.12%      119  xfs_buffered_write_iomap_end?[xfs]_[k]
+   119211554    0.12%      119  inode_to_bdi_[k]
+   119196263    0.12%      119  xfs_file_write_checks?[xfs]_[k]
+   117305630    0.12%      117  xfs_bmbt_to_iomap?[xfs]_[k]
+   116259917    0.12%      116  down_write_[k]
+   116188322    0.12%      116  fsnotify_add_event_[k]
+   115994666    0.12%      116  org.apache.lucene.store.RAMFile.setLastModified
+   115929917    0.12%      116  org.apache.lucene.analysis.standard.StandardTokenizerImpl.getText
+   115141050    0.12%      115  step_into_[k]
+   113954711    0.12%      114  java.lang.String.indexOf
+   111837864    0.12%      111  rmqueue_[k]
+   111201364    0.11%      111  __audit_syscall_entry_[k]
+   110971201    0.11%      111  org.apache.lucene.analysis.Token.getPositionIncrement
+   110114426    0.11%      110  walk_component_[k]
+   108891819    0.11%      109  realpath_stk
+   106214394    0.11%      106  __iomap_write_begin_[k]
+   105160755    0.11%      105  lockref_get_not_zero_[k]
+   104233445    0.11%      104  CodeHeap::next_used(HeapBlock*) const
+   103978719    0.11%      104  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+   103123295    0.11%      103  bpf_lsm_file_permission_[k]
+   102093897    0.11%      102  new_sync_write_[k]
+   100915472    0.10%      101  org.apache.lucene.analysis.StopFilter.<init>
+   100166194    0.10%      100  __memset_avx2_unaligned_erms
+    99898816    0.10%      100  org.apache.lucene.index.TermBuffer.toTerm
+    99007489    0.10%       99  PhaseChaitin::gather_lrg_masks(bool)
+    96993710    0.10%       97  org.apache.lucene.index.ByteSliceReader.eof
+    94029699    0.10%       94  org.apache.lucene.index.MultiLevelSkipListWriter.bufferSkip
+    93218840    0.10%       93  __cond_resched_[k]
+    92967176    0.10%       93  __GI___pthread_disable_asynccancel
+    92085678    0.09%       92  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+    91924798    0.09%       92  org.apache.lucene.analysis.Token.setEndOffset
+    91183492    0.09%       91  __x86_return_thunk_[k]
+    90094095    0.09%       90  __tls_get_addr
+    90029038    0.09%       90  PhaseLive::compute(unsigned int)
+    88990936    0.09%       89  org.apache.lucene.index.FieldInfos.fieldInfo
+    87099498    0.09%       87  mutex_unlock_[k]
+    86998205    0.09%       87  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+    86133533    0.09%       86  strcpy_[k]
+    85968699    0.09%       86  org.apache.lucene.analysis.CharArraySet.equals
+    85015033    0.09%       85  malloc
+    84329841    0.09%       84  G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+    84076956    0.09%       84  __x64_sys_write_[k]
+    84063655    0.09%       84  syscall_exit_work_[k]
+    81952070    0.08%       82  org.apache.lucene.analysis.Token.setType
+    80163434    0.08%       80  G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+    80111420    0.08%       80  lookup_fast_[k]
+    80043059    0.08%       80  org.apache.lucene.index.SegmentMergeInfo.getPositions
+    79353792    0.08%       79  .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI19InstanceMirrorKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+    79155837    0.08%       79  strcmp_[k]
+    78988805    0.08%       79  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+    78004531    0.08%       78  .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+    77992829    0.08%       78  org.apache.lucene.util.UnicodeUtil.UTF8toUTF16
+    77044429    0.08%       77  do_readlinkat_[k]
+    77010983    0.08%       77  org.apache.lucene.index.ByteSliceReader.<init>
+    76983546    0.08%       77  java.lang.String.<init>
+    76046187    0.08%       76  nmethod::fix_oop_relocations(unsigned char*, unsigned char*, bool)
+    75255163    0.08%       75  xas_start_[k]
+    75113387    0.08%       75  inotify_merge_[k]
+    74150479    0.08%       74  kmalloc_slab_[k]
+    74119943    0.08%       74  __virt_addr_valid_[k]
+    73966687    0.08%       74  org.apache.lucene.store.BufferedIndexOutput.writeBytes
+    73036084    0.08%       73  void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)

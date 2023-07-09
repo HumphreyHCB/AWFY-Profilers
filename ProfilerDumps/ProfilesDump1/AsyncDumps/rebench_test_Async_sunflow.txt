@@ -1,0 +1,2434 @@
+--- Execution profile ---
+Total samples       : 807736
+unknown_Java        : 877 (0.11%)
+not_walkable_Java   : 38 (0.00%)
+deoptimization      : 4 (0.00%)
+
+--- 4243139740 ns (0.53%), 4242 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 4177056126 ns (0.52%), 4176 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 3680978532 ns (0.46%), 3680 samples
+  [ 0] org.sunflow.math.Solvers.solveQuadric
+  [ 1] org.sunflow.core.primitive.Sphere.intersectPrimitive
+  [ 2] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 3270830296 ns (0.40%), 3270 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 3190833638 ns (0.39%), 3190 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 2698187571 ns (0.33%), 2683 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 2268669114 ns (0.28%), 2268 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 2243463539 ns (0.28%), 2243 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 2191565423 ns (0.27%), 2191 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 2097690558 ns (0.26%), 2097 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 2032519698 ns (0.25%), 2032 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1977478954 ns (0.24%), 1977 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1890437446 ns (0.23%), 1890 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1847279717 ns (0.23%), 1847 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1791462844 ns (0.22%), 1791 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1770517110 ns (0.22%), 1770 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1727550971 ns (0.21%), 1727 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1704440308 ns (0.21%), 1704 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1702494766 ns (0.21%), 1702 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1645406240 ns (0.20%), 1645 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1605538329 ns (0.20%), 1605 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1545422659 ns (0.19%), 1545 samples
+  [ 0] org.sunflow.math.Solvers.solveQuadric
+  [ 1] org.sunflow.core.primitive.Sphere.intersectPrimitive
+  [ 2] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1535482902 ns (0.19%), 1535 samples
+  [ 0] org.sunflow.math.Solvers.solveQuadric
+  [ 1] org.sunflow.core.primitive.Sphere.intersectPrimitive
+  [ 2] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1531350792 ns (0.19%), 1531 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1499374821 ns (0.19%), 1499 samples
+  [ 0] org.sunflow.math.Solvers.solveQuadric
+  [ 1] org.sunflow.core.primitive.Sphere.intersectPrimitive
+  [ 2] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1479421049 ns (0.18%), 1479 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1477366530 ns (0.18%), 1477 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1462396575 ns (0.18%), 1462 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1451358435 ns (0.18%), 1451 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1413394769 ns (0.17%), 1413 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1383370760 ns (0.17%), 1383 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1359460776 ns (0.17%), 1354 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 1355338422 ns (0.17%), 1355 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1355276335 ns (0.17%), 1355 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1334354586 ns (0.17%), 1334 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1304416092 ns (0.16%), 1304 samples
+  [ 0] org.sunflow.core.Ray.isInside
+  [ 1] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 2] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 3] org.sunflow.core.accel.KDTree.intersect
+  [ 4] org.sunflow.core.Geometry.intersect
+  [ 5] org.sunflow.core.Instance.intersect
+  [ 6] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 7] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 8] org.sunflow.core.Scene.trace
+  [ 9] org.sunflow.core.Scene.traceShadow
+  [10] org.sunflow.core.ShadingState.traceShadow
+  [11] org.sunflow.core.gi.InstantGI.getIrradiance
+  [12] org.sunflow.core.LightServer.getIrradiance
+  [13] org.sunflow.core.ShadingState.getIrradiance
+  [14] org.sunflow.core.ShadingState.diffuse
+  [15] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [16] org.sunflow.core.LightServer.getRadiance
+  [17] org.sunflow.core.Scene.getRadiance
+  [18] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1272359516 ns (0.16%), 1272 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1248543588 ns (0.15%), 1248 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1248291921 ns (0.15%), 1248 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1230335748 ns (0.15%), 1230 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1226308674 ns (0.15%), 1226 samples
+  [ 0] org.sunflow.core.Ray.isInside
+  [ 1] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 2] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 3] org.sunflow.core.accel.KDTree.intersect
+  [ 4] org.sunflow.core.Geometry.intersect
+  [ 5] org.sunflow.core.Instance.intersect
+  [ 6] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 7] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 8] org.sunflow.core.Scene.trace
+  [ 9] org.sunflow.core.Scene.traceShadow
+  [10] org.sunflow.core.ShadingState.traceShadow
+  [11] org.sunflow.core.gi.InstantGI.getIrradiance
+  [12] org.sunflow.core.LightServer.getIrradiance
+  [13] org.sunflow.core.ShadingState.getIrradiance
+  [14] org.sunflow.core.ShadingState.diffuse
+  [15] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [16] org.sunflow.core.LightServer.getRadiance
+  [17] org.sunflow.core.Scene.getRadiance
+  [18] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1204317522 ns (0.15%), 1204 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1180235420 ns (0.15%), 1180 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1146360615 ns (0.14%), 1146 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1067296071 ns (0.13%), 1067 samples
+  [ 0] org.sunflow.core.Ray.transform
+  [ 1] org.sunflow.core.Instance.intersect
+  [ 2] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 3] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 4] org.sunflow.core.Scene.trace
+  [ 5] org.sunflow.core.Scene.traceShadow
+  [ 6] org.sunflow.core.ShadingState.traceShadow
+  [ 7] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 8] org.sunflow.core.LightServer.getIrradiance
+  [ 9] org.sunflow.core.ShadingState.getIrradiance
+  [10] org.sunflow.core.ShadingState.diffuse
+  [11] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [12] org.sunflow.core.LightServer.getRadiance
+  [13] org.sunflow.core.Scene.getRadiance
+  [14] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [15] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [16] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [17] org.sunflow.core.renderer.BucketRenderer.access$300
+  [18] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1044390053 ns (0.13%), 1044 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1040483510 ns (0.13%), 1040 samples
+  [ 0] org.sunflow.core.primitive.Sphere.intersectPrimitive
+  [ 1] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 1005345411 ns (0.12%), 1005 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 953252478 ns (0.12%), 953 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 929221924 ns (0.11%), 929 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 923210493 ns (0.11%), 923 samples
+  [ 0] org.sunflow.core.Ray.isInside
+  [ 1] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 2] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 3] org.sunflow.core.accel.KDTree.intersect
+  [ 4] org.sunflow.core.Geometry.intersect
+  [ 5] org.sunflow.core.Instance.intersect
+  [ 6] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 7] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 8] org.sunflow.core.Scene.trace
+  [ 9] org.sunflow.core.Scene.traceShadow
+  [10] org.sunflow.core.ShadingState.traceShadow
+  [11] org.sunflow.core.gi.InstantGI.getIrradiance
+  [12] org.sunflow.core.LightServer.getIrradiance
+  [13] org.sunflow.core.ShadingState.getIrradiance
+  [14] org.sunflow.core.ShadingState.diffuse
+  [15] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [16] org.sunflow.core.LightServer.getRadiance
+  [17] org.sunflow.core.Scene.getRadiance
+  [18] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 919143613 ns (0.11%), 919 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 911245491 ns (0.11%), 911 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 909335766 ns (0.11%), 909 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 908186204 ns (0.11%), 908 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 892266621 ns (0.11%), 892 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 892191956 ns (0.11%), 892 samples
+  [ 0] org.sunflow.core.IntersectionState.getStack
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 885229126 ns (0.11%), 885 samples
+  [ 0] org.sunflow.math.BoundingBox.getMaximum
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 881284965 ns (0.11%), 881 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 877235826 ns (0.11%), 877 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 852235329 ns (0.11%), 852 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 838204275 ns (0.10%), 838 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 830257521 ns (0.10%), 830 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 825204870 ns (0.10%), 825 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 824122193 ns (0.10%), 824 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 822226365 ns (0.10%), 822 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 821304827 ns (0.10%), 821 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 820232457 ns (0.10%), 820 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 819307635 ns (0.10%), 819 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 817201865 ns (0.10%), 817 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 806052766 ns (0.10%), 806 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 799201268 ns (0.10%), 799 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 795127265 ns (0.10%), 795 samples
+  [ 0] org.sunflow.core.Ray.<init>
+  [ 1] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 2] org.sunflow.core.LightServer.getIrradiance
+  [ 3] org.sunflow.core.ShadingState.getIrradiance
+  [ 4] org.sunflow.core.ShadingState.diffuse
+  [ 5] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 6] org.sunflow.core.LightServer.getRadiance
+  [ 7] org.sunflow.core.Scene.getRadiance
+  [ 8] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [ 9] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [10] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [11] org.sunflow.core.renderer.BucketRenderer.access$300
+  [12] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 783239634 ns (0.10%), 783 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 776248231 ns (0.10%), 776 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 769212440 ns (0.10%), 769 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 745166749 ns (0.09%), 745 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 745091273 ns (0.09%), 745 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 735228951 ns (0.09%), 735 samples
+  [ 0] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 728250395 ns (0.09%), 728 samples
+  [ 0] org.sunflow.math.Matrix4.transformVX
+  [ 1] org.sunflow.core.Ray.transform
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 727192640 ns (0.09%), 727 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.NullAccelerator.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 727130155 ns (0.09%), 727 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 725180559 ns (0.09%), 725 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 723266019 ns (0.09%), 723 samples
+  [ 0] .annobin___j__ieee754_sqrt.start
+  [ 1] __j__ieee754_acos
+  [ 2] java.lang.StrictMath.acos
+  [ 3] java.lang.Math.acos
+  [ 4] org.sunflow.core.light.TriangleMeshLight$TriangleLight.getSamples
+  [ 5] org.sunflow.core.LightServer.initLightSamples
+  [ 6] org.sunflow.core.ShadingState.initLightSamples
+  [ 7] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 8] org.sunflow.core.LightServer.getRadiance
+  [ 9] org.sunflow.core.Scene.getRadiance
+  [10] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [11] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [12] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [13] org.sunflow.core.renderer.BucketRenderer.access$300
+  [14] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 710172183 ns (0.09%), 710 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 5] org.sunflow.core.LightServer.getIrradiance
+  [ 6] org.sunflow.core.ShadingState.getIrradiance
+  [ 7] org.sunflow.core.ShadingState.diffuse
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [14] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [15] org.sunflow.core.renderer.BucketRenderer.access$300
+  [16] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 706255817 ns (0.09%), 706 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 686350812 ns (0.08%), 686 samples
+  [ 0] .annobin___j__ieee754_sqrt.start
+  [ 1] __j__ieee754_acos
+  [ 2] java.lang.StrictMath.acos
+  [ 3] java.lang.Math.acos
+  [ 4] org.sunflow.core.light.TriangleMeshLight$TriangleLight.getSamples
+  [ 5] org.sunflow.core.LightServer.initLightSamples
+  [ 6] org.sunflow.core.ShadingState.initLightSamples
+  [ 7] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 8] org.sunflow.core.LightServer.getRadiance
+  [ 9] org.sunflow.core.Scene.getRadiance
+  [10] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [11] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [12] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [13] org.sunflow.core.renderer.BucketRenderer.access$300
+  [14] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 686186194 ns (0.08%), 686 samples
+  [ 0] org.sunflow.core.IntersectionState.getStackTop
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 671167708 ns (0.08%), 671 samples
+  [ 0] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 1] org.sunflow.core.Scene.trace
+  [ 2] org.sunflow.core.Scene.traceShadow
+  [ 3] org.sunflow.core.ShadingState.traceShadow
+  [ 4] org.sunflow.core.LightSample.traceShadow
+  [ 5] org.sunflow.core.light.TriangleMeshLight$TriangleLight.getSamples
+  [ 6] org.sunflow.core.LightServer.initLightSamples
+  [ 7] org.sunflow.core.ShadingState.initLightSamples
+  [ 8] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [ 9] org.sunflow.core.LightServer.getRadiance
+  [10] org.sunflow.core.Scene.getRadiance
+  [11] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [12] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [13] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [14] org.sunflow.core.renderer.BucketRenderer.access$300
+  [15] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 658170621 ns (0.08%), 658 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 658127423 ns (0.08%), 658 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [18] org.sunflow.core.renderer.BucketRenderer.access$300
+  [19] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 657206229 ns (0.08%), 657 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 655173388 ns (0.08%), 655 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 1] org.sunflow.core.accel.KDTree.intersect
+  [ 2] org.sunflow.core.Geometry.intersect
+  [ 3] org.sunflow.core.Instance.intersect
+  [ 4] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 5] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 6] org.sunflow.core.Scene.trace
+  [ 7] org.sunflow.core.Scene.traceShadow
+  [ 8] org.sunflow.core.ShadingState.traceShadow
+  [ 9] org.sunflow.core.gi.InstantGI.getIrradiance
+  [10] org.sunflow.core.LightServer.getIrradiance
+  [11] org.sunflow.core.ShadingState.getIrradiance
+  [12] org.sunflow.core.ShadingState.diffuse
+  [13] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [14] org.sunflow.core.LightServer.getRadiance
+  [15] org.sunflow.core.Scene.getRadiance
+  [16] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 644238253 ns (0.08%), 644 samples
+  [ 0] org.sunflow.core.Ray.transform
+  [ 1] org.sunflow.core.Instance.intersect
+  [ 2] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 3] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 4] org.sunflow.core.Scene.trace
+  [ 5] org.sunflow.core.Scene.traceShadow
+  [ 6] org.sunflow.core.ShadingState.traceShadow
+  [ 7] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 8] org.sunflow.core.LightServer.getIrradiance
+  [ 9] org.sunflow.core.ShadingState.getIrradiance
+  [10] org.sunflow.core.ShadingState.diffuse
+  [11] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [12] org.sunflow.core.LightServer.getRadiance
+  [13] org.sunflow.core.Scene.getRadiance
+  [14] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [15] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [16] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [17] org.sunflow.core.renderer.BucketRenderer.access$300
+  [18] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 640172715 ns (0.08%), 640 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 636149278 ns (0.08%), 636 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 635083071 ns (0.08%), 635 samples
+  [ 0] org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+  [ 1] org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+  [ 2] org.sunflow.core.accel.KDTree.intersect
+  [ 3] org.sunflow.core.Geometry.intersect
+  [ 4] org.sunflow.core.Instance.intersect
+  [ 5] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 6] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 7] org.sunflow.core.Scene.trace
+  [ 8] org.sunflow.core.Scene.traceShadow
+  [ 9] org.sunflow.core.ShadingState.traceShadow
+  [10] org.sunflow.core.gi.InstantGI.getIrradiance
+  [11] org.sunflow.core.LightServer.getIrradiance
+  [12] org.sunflow.core.ShadingState.getIrradiance
+  [13] org.sunflow.core.ShadingState.diffuse
+  [14] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [15] org.sunflow.core.LightServer.getRadiance
+  [16] org.sunflow.core.Scene.getRadiance
+  [17] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [20] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [21] org.sunflow.core.renderer.BucketRenderer.access$300
+  [22] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 631193148 ns (0.08%), 631 samples
+  [ 0] org.sunflow.core.Instance.intersect
+  [ 1] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 2] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 3] org.sunflow.core.Scene.trace
+  [ 4] org.sunflow.core.Scene.traceShadow
+  [ 5] org.sunflow.core.ShadingState.traceShadow
+  [ 6] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 7] org.sunflow.core.LightServer.getIrradiance
+  [ 8] org.sunflow.core.ShadingState.getIrradiance
+  [ 9] org.sunflow.core.ShadingState.diffuse
+  [10] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [11] org.sunflow.core.LightServer.getRadiance
+  [12] org.sunflow.core.Scene.getRadiance
+  [13] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [14] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [15] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [16] org.sunflow.core.renderer.BucketRenderer.access$300
+  [17] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 628174250 ns (0.08%), 628 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [19] org.sunflow.core.renderer.BucketRenderer.access$300
+  [20] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+--- 619183831 ns (0.08%), 619 samples
+  [ 0] org.sunflow.core.accel.KDTree.intersect
+  [ 1] org.sunflow.core.Geometry.intersect
+  [ 2] org.sunflow.core.Instance.intersect
+  [ 3] org.sunflow.core.InstanceList.intersectPrimitive
+  [ 4] org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+  [ 5] org.sunflow.core.Scene.trace
+  [ 6] org.sunflow.core.Scene.traceShadow
+  [ 7] org.sunflow.core.ShadingState.traceShadow
+  [ 8] org.sunflow.core.gi.InstantGI.getIrradiance
+  [ 9] org.sunflow.core.LightServer.getIrradiance
+  [10] org.sunflow.core.ShadingState.getIrradiance
+  [11] org.sunflow.core.ShadingState.diffuse
+  [12] org.sunflow.core.shader.DiffuseShader.getRadiance
+  [13] org.sunflow.core.LightServer.getRadiance
+  [14] org.sunflow.core.Scene.getRadiance
+  [15] org.sunflow.core.renderer.BucketRenderer.computeSubPixel
+  [16] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [17] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [18] org.sunflow.core.renderer.BucketRenderer.refineSamples
+  [19] org.sunflow.core.renderer.BucketRenderer.renderBucket
+  [20] org.sunflow.core.renderer.BucketRenderer.access$300
+  [21] org.sunflow.core.renderer.BucketRenderer$BucketThread.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+226854486054   28.07%   226799  org.sunflow.core.accel.KDTree.intersect
+176880242200   21.89%   176838  org.sunflow.core.primitive.TriangleMesh$WaldTriangle.intersect
+132976961790   16.46%   132942  org.sunflow.core.accel.BoundingIntervalHierarchy.intersect
+ 33031791242    4.09%    33024  org.sunflow.core.Ray.isInside
+ 25049608627    3.10%    25043  org.sunflow.math.Solvers.solveQuadric
+ 24635682130    3.05%    24630  org.sunflow.core.primitive.TriangleMesh.intersectPrimitive
+ 16140882257    2.00%    16137  org.sunflow.core.Ray.transform
+ 15781974351    1.95%    15778  org.sunflow.core.Ray.<init>
+ 12528495751    1.55%    12525  org.sunflow.core.gi.InstantGI.getIrradiance
+ 10466186990    1.30%    10462  .annobin___j__ieee754_sqrt.start
+ 10235563175    1.27%    10233  org.sunflow.core.Instance.intersect
+  9907658796    1.23%     9905  org.sunflow.core.primitive.Sphere.intersectPrimitive
+  7397258547    0.92%     7395  org.sunflow.core.accel.NullAccelerator.intersect
+  6783770526    0.84%     6782  org.sunflow.math.BoundingBox.getMaximum
+  6664583210    0.82%     6662  org.sunflow.math.Matrix4.transformVX
+  6368863824    0.79%     6367  org.sunflow.core.light.TriangleMeshLight$TriangleLight.getSamples
+  5051779848    0.63%     5051  org.sunflow.core.IntersectionState.getStack
+  4517820244    0.56%     4494  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  4405150347    0.55%     4404  org.sunflow.core.IntersectionState.getStackTop
+  4344316066    0.54%     4343  org.sunflow.image.Color.blend
+  3974074049    0.49%     3973  org.sunflow.math.Matrix4.transformVZ
+  3853020814    0.48%     3852  org.sunflow.core.Scene.trace
+  3032890529    0.38%     3032  org.sunflow.image.Color.madd
+  2906773469    0.36%     2906  org.sunflow.core.Ray.getMax
+  2683068048    0.33%     2653  clear_page_rep_[k]
+  2566159699    0.32%     2560  libmSin
+  2287532050    0.28%     2287  org.sunflow.core.Scene.traceShadow
+  2196415159    0.27%     2196  org.sunflow.math.Matrix4.transformPY
+  2193639422    0.27%     2193  org.sunflow.math.Matrix4.transformPX
+  2102468409    0.26%     2102  org.sunflow.math.QMC.halton
+  2062540492    0.26%     2062  org.sunflow.core.primitive.TriangleMesh.getPoint
+  1856579293    0.23%     1856  org.sunflow.core.IntersectionState.setIntersection
+  1696309537    0.21%     1696  org.sunflow.core.Geometry.intersect
+  1621625790    0.20%     1621  libmCos
+  1598523889    0.20%     1598  org.sunflow.core.light.TriangleMeshLight$TriangleLight.intersectTriangleKensler
+  1355448820    0.17%     1355  org.sunflow.core.light.TriangleMeshLight.access$2800
+  1334406073    0.17%     1334  org.sunflow.math.Vector3.dot
+  1276929781    0.16%     1277  org.sunflow.math.BoundingBox.getMinimum
+  1039283115    0.13%     1039  org.sunflow.core.renderer.BucketRenderer.refineSamples
+   969384199    0.12%      969  __j__ieee754_acos
+   904036724    0.11%      899  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   888188002    0.11%      888  org.sunflow.core.ShadingState.traceShadow
+   727193393    0.09%      727  java.lang.Object.<init>
+   720173410    0.09%      720  org.sunflow.math.Point3.<init>
+   644305858    0.08%      644  org.sunflow.math.Vector3.cross
+   637414707    0.08%      637  org.sunflow.core.renderer.BucketRenderer.renderBucket
+   575282124    0.07%      575  org.sunflow.core.accel.KDTree.buildTree
+   503204184    0.06%      503  org.sunflow.core.InstanceList.intersectPrimitive
+   482193873    0.06%      482  org.sunflow.core.primitive.TriangleMesh.prepareShadingState
+   470184234    0.06%      470  java.lang.StrictMath.acos
+   450086329    0.06%      450  org.sunflow.core.Camera.getRay
+   443330258    0.05%      443  libmPow
+   405123862    0.05%      405  org.sunflow.image.Color.hasContrast
+   400956877    0.05%      393  _raw_spin_unlock_irqrestore_[k]
+   371127922    0.05%      371  org.sunflow.math.Matrix4.transformPZ
+   345117756    0.04%      345  org.sunflow.core.ShadingState.init
+   335966430    0.04%      334  __memset_avx2_unaligned_erms
+   318069801    0.04%      318  org.sunflow.core.InstanceList.getNumPrimitives
+   306082434    0.04%      306  org.sunflow.math.Vector3.normalize
+   261133056    0.03%      261  org.sunflow.core.ShadingState.<init>
+   256616093    0.03%      253  HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+   256100059    0.03%      256  org.sunflow.math.Point3.sub
+   231017852    0.03%      231  org.sunflow.core.LightServer.getScene
+   225060507    0.03%      225  org.sunflow.math.Vector3.<init>
+   213971986    0.03%      213  G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+   206073677    0.03%      206  org.sunflow.core.accel.KDTree$BuildTask.<init>
+   200052597    0.02%      200  org.sunflow.core.Scene.getRadiance
+   190109948    0.02%      190  IndexSetIterator::advance_and_next()
+   180237110    0.02%      179  __memmove_avx_unaligned_erms
+   180041559    0.02%      180  org.sunflow.core.ShadingState.getNormal
+   173045534    0.02%      173  org.sunflow.core.Instance.prepareShadingState
+   160425296    0.02%      158  exit_to_user_mode_loop_[k]
+   157029941    0.02%      157  org.sunflow.core.renderer.BucketRenderer$ImageSample.bilerp
+   153026009    0.02%      153  org.sunflow.image.Color.mul
+   145057962    0.02%      145  org.sunflow.core.renderer.BucketRenderer$ImageSample.isDifferent
+   142003679    0.02%      142  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   140065371    0.02%      140  org.sunflow.core.renderer.BucketRenderer$ImageSample.set
+   137044337    0.02%      137  org.sunflow.core.Ray.dot
+   132013818    0.02%      132  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   131073563    0.02%      131  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   129804114    0.02%      130  inflate_fast
+   124016201    0.02%      124  org.sunflow.core.Ray.setMax
+   114021665    0.01%      114  org.sunflow.core.camera.PinholeLens.getRay
+   113021631    0.01%      113  org.sunflow.core.ShadingState.createState
+   112495168    0.01%      112  __tls_get_addr
+   111024147    0.01%      111  itable stub
+   107036561    0.01%      107  org.sunflow.util.IntArray.add
+   104392354    0.01%      104  SpinPause
+   103051067    0.01%      103  org.sunflow.core.light.TriangleMeshLight.access$3000
+   102849311    0.01%      103  org.sunflow.Benchmark.<init>
+    99833270    0.01%       99  nmethod::oops_do(OopClosure*, bool)
+    93997859    0.01%       94  org.sunflow.core.LightServer.getRadiance
+    90042984    0.01%       90  OptoRuntime::new_instance_C(Klass*, JavaThread*)
+    87106808    0.01%       87  G1Allocator::unsafe_max_tlab_alloc()
+    84972421    0.01%       84  void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+    81046164    0.01%       81  org.sunflow.core.primitive.Sphere.prepareShadingState
+    79026844    0.01%       79  org.sunflow.core.shader.GlassShader.getRadiance
+    78054908    0.01%       78  ObjAllocator::initialize(HeapWordImpl**) const
+    76087408    0.01%       76  MemAllocator::allocate_inside_tlab_slow(MemAllocator::Allocation&) const
+    74034286    0.01%       74  .annobin_jatan.start
+    74004421    0.01%       74  PhaseChaitin::gather_lrg_masks(bool)
+    73578557    0.01%       73  .annobin__ZN13WeakProcessor4Task4workI19G1STWIsAliveClosure18G1KeepAliveClosureEEvjPT_PT0_.start
+    70620539    0.01%       69  .annobin__ZN14CompiledMethod26cleanup_inline_caches_implEbb.start
+    67026440    0.01%       67  org.sunflow.core.ShadingState.diffuse
+    66024347    0.01%       66  org.sunflow.core.ShadingState.faceforward
+    65918597    0.01%       65  rmqueue_[k]
+    65038817    0.01%       65  org.sunflow.core.Ray.getMin
+    64036048    0.01%       64  PhaseLive::compute(unsigned int)
+    63665605    0.01%       63  void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+    63022755    0.01%       63  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+    61749103    0.01%       61  G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+    58740099    0.01%       58  G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+    57037302    0.01%       57  SharedRuntime::on_slowpath_allocation_exit(JavaThread*)
+    56815561    0.01%       56  native_queued_spin_lock_slowpath_[k]
+    56484302    0.01%       56  do_user_addr_fault_[k]
+    55667504    0.01%       56  org.sunflow.core.LightServer.initLightSamples
+    55018925    0.01%       55  PhaseChaitin::post_allocate_copy_removal()
+    54987885    0.01%       55  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+    53032457    0.01%       53  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+    51261919    0.01%       51  G1FullGCCompactTask::compact_region(HeapRegion*)
+    50035900    0.01%       50  org.sunflow.image.RGBSpace.gammaCorrect
+    48022781    0.01%       48  org.sunflow.image.Color.toRGB
+    45019300    0.01%       45  org.sunflow.core.light.TriangleMeshLight.access$1000
+    44035270    0.01%       44  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+    43571978    0.01%       43  _int_malloc
+    43382546    0.01%       43  [vdso]
+    42578142    0.01%       42  syscall_enter_from_user_mode_[k]
+    42021685    0.01%       42  java.lang.Float.intBitsToFloat
+    42004453    0.01%       42  PhaseIFG::effective_degree(unsigned int) const
+    41014241    0.01%       41  MemAllocator::Allocation::notify_allocation_jfr_sampler()
+    40996652    0.01%       41  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+    40935102    0.01%       41  java.awt.image.ComponentColorModel.extractComponent
+    40678060    0.01%       40  CodeHeap::next_used(HeapBlock*) const
+    40223053    0.00%       40  G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+    40102458    0.00%       40  nmethod::fix_oop_relocations(unsigned char*, unsigned char*, bool)
+    40050361    0.00%       40  G1BarrierSet::enqueue(oopDesc*)
+    40046368    0.00%       40  .annobin__ZN14AccessInternal19PostRuntimeDispatchIN12G1BarrierSet13AccessBarrierILm598116ES1_EELNS_11BarrierTypeE2ELm598116EE18oop_access_barrierEPv.start
+    40025024    0.00%       40  MemAllocator::allocate() const
+    40006348    0.00%       40  org.sunflow.core.ShadingState.getPoint
+    39196194    0.00%       39  org.sunflow.Benchmark.kernelEnd
+    39020831    0.00%       39  java.lang.StrictMath.atan2
+    38274263    0.00%       38  G1RegionMarkStatsCache::add_live_words(oopDesc*)
+    37243278    0.00%       37  .annobin__ZN21OopOopIterateDispatchI20G1MarkAndPushClosureE5Table15oop_oop_iterateI19InstanceMirrorKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+    37218217    0.00%       37  OopMapStream::find_next() [clone .part.0]
+    37028709    0.00%       37  PhaseChaitin::Select()
+    37008231    0.00%       37  PhaseIFG::remove_node(unsigned int)
+    36006238    0.00%       36  org.sunflow.core.ShadingState.getGeoNormal
+    35045891    0.00%       35  ObjArrayAllocator::initialize(HeapWordImpl**) const
+    35022996    0.00%       35  org.sunflow.core.ShadingState.getRandom
+    35013970    0.00%       35  org.sunflow.image.Color.add
+    34630149    0.00%       34  futex_wake_[k]
+    34013970    0.00%       34  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+    34008250    0.00%       34  PhaseChaitin::Simplify()
+    32408891    0.00%       32  RelocIterator::advance_over_prefix()
+    32371757    0.00%       32  HeapRegionClaimer::claim_region(unsigned int)
+    32022989    0.00%       32  org.sunflow.math.Matrix4.transformVY
+    32007229    0.00%       32  PhaseIdealLoop::is_dominator(Node*, Node*)
+    31449521    0.00%       31  malloc
+    30995779    0.00%       31  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+    30319508    0.00%       30  G1ParCopyClosure<(G1Barrier)0, false>::do_oop(oopDesc**)
+    30212659    0.00%       30  get_page_from_freelist_[k]
+    30113409    0.00%       30  void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+    30044087    0.00%       30  Interpreter
+    30026517    0.00%       30  G1CollectedHeap::allocate_new_tlab(unsigned long, unsigned long, unsigned long*)
+    30018677    0.00%       30  org.sunflow.core.shader.MirrorShader.getRadiance
+    30003368    0.00%       30  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+    29976197    0.00%       30  sun.awt.image.ByteInterleavedRaster.getDataElements
+    29304240    0.00%       29  org.sunflow.core.accel.KDTree.radix12
+    29159518    0.00%       29  .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+    29120196    0.00%       29  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+    29013647    0.00%       29  IndexSet::alloc_block_containing(unsigned int)
+    28996587    0.00%       29  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+    28295267    0.00%       28  G1ParScanThreadState::copy_to_survivor_space(G1HeapRegionAttr, oopDesc*, markWord)
+    28145867    0.00%       28  free_pcp_prepare_[k]
+    28038807    0.00%       28  G1CollectedHeap::unsafe_max_tlab_alloc(Thread*) const
+    28028226    0.00%       28  ClassLoaderData::holder_phantom() const
+    27079007    0.00%       27  Dict::Insert(void*, void*, bool)
+    27033190    0.00%       27  G1CardTable::g1_mark_as_young(MemRegion const&)
+    27020134    0.00%       27  Matcher::xform(Node*, int)
+    27010928    0.00%       27  org.sunflow.core.filter.TriangleFilter.get
+    27010038    0.00%       27  .annobin___j__ieee754_atan2.start
+    27004018    0.00%       27  IndexSet::initialize(unsigned int)
+    26009497    0.00%       26  Arena::contains(void const*) const
+    25999009    0.00%       26  java.lang.Float.isInfinite
+    25995999    0.00%       26  PhaseIFG::SquareUp()
+    25984700    0.00%       26  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+    25251930    0.00%       25  os::free(void*)
+    25149965    0.00%       25  _raw_spin_unlock_irq_[k]
+    25037286    0.00%       25  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+    25022006    0.00%       25  CollectedHeap::fill_with_dummy_object(HeapWordImpl**, HeapWordImpl**, bool)
+    25014637    0.00%       25  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+    25007851    0.00%       25  PhaseIFG::re_insert(unsigned int)
+    24319166    0.00%       24  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+    24181266    0.00%       24  G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+    24022948    0.00%       24  org.sunflow.math.OrthoNormalBasis.<init>
+    24022506    0.00%       24  G1NUMA::index_of_current_thread() const
+    24007418    0.00%       24  PhaseChaitin::merge_multidefs()
+    24002577    0.00%       24  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+    23259224    0.00%       23  CodeHeap::find_blob_unsafe(void*) const
+    23156187    0.00%       23  OopMapSet::update_register_map(frame const*, RegisterMap*)

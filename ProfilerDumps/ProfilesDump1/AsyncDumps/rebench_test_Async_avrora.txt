@@ -1,0 +1,2111 @@
+--- Execution profile ---
+Total samples       : 100126
+unknown_Java        : 29051 (29.01%)
+not_walkable_Java   : 27 (0.03%)
+
+--- 26101905683 ns (25.11%), 25039 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] try_to_wake_up_[k]
+  [ 2] wake_up_q_[k]
+  [ 3] futex_wake_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] ___pthread_cond_signal
+  [ 9] [unknown_Java]
+
+--- 5007437516 ns (4.82%), 4814 samples
+  [ 0] vtable stub
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 1486338904 ns (1.43%), 1427 samples
+  [ 0] ObjectMonitor::exit(JavaThread*, bool)
+  [ 1] SharedRuntime::complete_monitor_unlocking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 2] java.util.HashMap.getNode
+  [ 3] java.util.HashMap.get
+  [ 4] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 5] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 6] avrora.sim.radio.Medium$Receiver.access$000
+  [ 7] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 8] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 9] avrora.sim.clock.DeltaQueue$Link.fire
+  [10] avrora.sim.clock.DeltaQueue.skipAhead
+  [11] avrora.sim.clock.MainClock.skipAhead
+  [12] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [13] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [14] avrora.sim.AtmelInterpreter.start
+  [15] avrora.sim.Simulator.start
+  [16] avrora.sim.SimulatorThread.run
+
+--- 1470364280 ns (1.41%), 1413 samples
+  [ 0] avrora.sim.AtmelInterpreter.commit
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 1354275842 ns (1.30%), 1301 samples
+  [ 0] avrora.sim.radio.Medium$Receiver.earliestNewTransmission
+  [ 1] avrora.sim.radio.Medium$Receiver.access$100
+  [ 2] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 3] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 4] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 5] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 6] avrora.sim.clock.MainClock.skipAhead
+  [ 7] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 1306370913 ns (1.26%), 1254 samples
+  [ 0] ___pthread_cond_signal
+  [ 1] [unknown_Java]
+
+--- 1282488450 ns (1.23%), 1233 samples
+  [ 0] itable stub
+  [ 1] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 2] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 3] avrora.sim.clock.MainClock.skipAhead
+  [ 4] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 5] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 6] avrora.sim.AtmelInterpreter.start
+  [ 7] avrora.sim.Simulator.start
+  [ 8] avrora.sim.SimulatorThread.run
+
+--- 953154171 ns (0.92%), 918 samples
+  [ 0] avrora.sim.clock.RippleSynchronizer.advance
+  [ 1] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 2] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 3] avrora.sim.radio.Medium$Receiver.access$000
+  [ 4] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 5] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 6] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 7] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 8] avrora.sim.clock.MainClock.skipAhead
+  [ 9] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [10] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [11] avrora.sim.AtmelInterpreter.start
+  [12] avrora.sim.Simulator.start
+  [13] avrora.sim.SimulatorThread.run
+
+--- 939209390 ns (0.90%), 903 samples
+  [ 0] itable stub
+  [ 1] avrora.sim.AtmelInterpreter$IORegBehavior.read
+  [ 2] avrora.sim.AtmelInterpreter.readVolatile
+  [ 3] avrora.sim.AtmelInterpreter.readSRAM
+  [ 4] avrora.sim.AtmelInterpreter.getIORegisterByte
+  [ 5] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 6] avrora.arch.legacy.LegacyInstr$IN.accept
+  [ 7] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 916920168 ns (0.88%), 882 samples
+  [ 0] avrora.sim.clock.DeltaQueue.advance
+  [ 1] avrora.sim.clock.MainClock.advance
+  [ 2] avrora.sim.AtmelInterpreter.commit
+  [ 3] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 775773264 ns (0.75%), 745 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] try_to_wake_up_[k]
+  [ 2] wake_up_q_[k]
+  [ 3] futex_wake_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] ___pthread_cond_signal
+  [ 9] java.lang.Object.wait
+  [10] java.lang.Object.wait
+  [11] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [12] avrora.sim.clock.RippleSynchronizer.waitFor
+  [13] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [14] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [15] avrora.sim.radio.Medium$Receiver.access$000
+  [16] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [17] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [18] avrora.sim.clock.DeltaQueue$Link.fire
+  [19] avrora.sim.clock.DeltaQueue.skipAhead
+  [20] avrora.sim.clock.MainClock.skipAhead
+  [21] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [22] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [23] avrora.sim.AtmelInterpreter.start
+  [24] avrora.sim.Simulator.start
+  [25] avrora.sim.SimulatorThread.run
+
+--- 754095910 ns (0.73%), 725 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$PUSH.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 703263378 ns (0.68%), 675 samples
+  [ 0] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 1] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 2] avrora.sim.AtmelInterpreter.start
+  [ 3] avrora.sim.Simulator.start
+  [ 4] avrora.sim.SimulatorThread.run
+
+--- 684461042 ns (0.66%), 658 samples
+  [ 0] avrora.sim.clock.DeltaQueue.advance
+  [ 1] avrora.sim.clock.MainClock.advance
+  [ 2] avrora.sim.AtmelInterpreter.commit
+  [ 3] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 640688182 ns (0.62%), 615 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __futex_abstimed_wait_common
+  [ 4] java.lang.Object.wait
+  [ 5] java.lang.Object.wait
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 8] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [10] avrora.sim.radio.Medium$Receiver.access$000
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [12] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [13] avrora.sim.clock.DeltaQueue$Link.fire
+  [14] avrora.sim.clock.DeltaQueue.skipAhead
+  [15] avrora.sim.clock.MainClock.skipAhead
+  [16] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [17] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [18] avrora.sim.AtmelInterpreter.start
+  [19] avrora.sim.Simulator.start
+  [20] avrora.sim.SimulatorThread.run
+
+--- 636149665 ns (0.61%), 611 samples
+  [ 0] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 1] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 2] avrora.sim.AtmelInterpreter.start
+  [ 3] avrora.sim.Simulator.start
+  [ 4] avrora.sim.SimulatorThread.run
+
+--- 614636522 ns (0.59%), 592 samples
+  [ 0] ObjectMonitor::INotify(JavaThread*)
+  [ 1] ObjectMonitor::notifyAll(JavaThread*)
+  [ 2] JVM_MonitorNotifyAll
+  [ 3] java.lang.Object.notifyAll
+  [ 4] avrora.sim.clock.RippleSynchronizer.notifyLink
+  [ 5] avrora.sim.clock.RippleSynchronizer.advance
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.access$000
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [11] avrora.sim.clock.DeltaQueue$Link.fire
+  [12] avrora.sim.clock.DeltaQueue.skipAhead
+  [13] avrora.sim.clock.MainClock.skipAhead
+  [14] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [15] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [16] avrora.sim.AtmelInterpreter.start
+  [17] avrora.sim.Simulator.start
+  [18] avrora.sim.SimulatorThread.run
+
+--- 605149632 ns (0.58%), 581 samples
+  [ 0] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 1] avrora.sim.clock.MainClock.skipAhead
+  [ 2] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 3] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 4] avrora.sim.AtmelInterpreter.start
+  [ 5] avrora.sim.Simulator.start
+  [ 6] avrora.sim.SimulatorThread.run
+
+--- 599258265 ns (0.58%), 576 samples
+  [ 0] futex_wake_[k]
+  [ 1] do_futex_[k]
+  [ 2] __x64_sys_futex_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] ___pthread_cond_signal
+  [ 6] [unknown_Java]
+
+--- 527980246 ns (0.51%), 508 samples
+  [ 0] ObjectMonitor::wait(long, bool, JavaThread*)
+  [ 1] ObjectSynchronizer::wait(Handle, long, JavaThread*)
+  [ 2] JVM_MonitorWait
+  [ 3] java.lang.Object.wait
+  [ 4] java.lang.Object.wait
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.access$000
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [12] avrora.sim.clock.DeltaQueue$Link.fire
+  [13] avrora.sim.clock.DeltaQueue.skipAhead
+  [14] avrora.sim.clock.MainClock.skipAhead
+  [15] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [16] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [17] avrora.sim.AtmelInterpreter.start
+  [18] avrora.sim.Simulator.start
+  [19] avrora.sim.SimulatorThread.run
+
+--- 481060137 ns (0.46%), 463 samples
+  [ 0] futex_q_lock_[k]
+  [ 1] futex_wait_setup_[k]
+  [ 2] futex_wait_[k]
+  [ 3] do_futex_[k]
+  [ 4] __x64_sys_futex_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __futex_abstimed_wait_common
+  [ 8] java.lang.Object.wait
+  [ 9] java.lang.Object.wait
+  [10] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [11] avrora.sim.clock.RippleSynchronizer.waitFor
+  [12] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [13] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [14] avrora.sim.radio.Medium$Receiver.access$000
+  [15] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [16] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [17] avrora.sim.clock.DeltaQueue$Link.fire
+  [18] avrora.sim.clock.DeltaQueue.skipAhead
+  [19] avrora.sim.clock.MainClock.skipAhead
+  [20] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [21] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [22] avrora.sim.AtmelInterpreter.start
+  [23] avrora.sim.Simulator.start
+  [24] avrora.sim.SimulatorThread.run
+
+--- 455315282 ns (0.44%), 437 samples
+  [ 0] avrora.sim.radio.CC1000Radio$SPITicker.fire
+  [ 1] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 2] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 3] avrora.sim.clock.MainClock.skipAhead
+  [ 4] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 5] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 6] avrora.sim.AtmelInterpreter.start
+  [ 7] avrora.sim.Simulator.start
+  [ 8] avrora.sim.SimulatorThread.run
+
+--- 446866028 ns (0.43%), 434 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeSingle
+  [ 5] java.io.FileOutputStream.write
+  [ 6] java.io.FileOutputStream.write
+  [ 7] org.dacapo.harness.TeeOutputStream.write
+  [ 8] java.io.FilterOutputStream.write
+  [ 9] java.io.PrintStream.write
+  [10] sun.nio.cs.StreamEncoder.writeBytes
+  [11] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [12] sun.nio.cs.StreamEncoder.flushBuffer
+  [13] java.io.OutputStreamWriter.flushBuffer
+  [14] java.io.PrintStream.write
+  [15] java.io.PrintStream.print
+  [16] java.io.PrintStream.println
+  [17] cck.text.Terminal.println
+  [18] avrora.sim.output.SimPrinter.printBuffer
+  [19] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [20] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [21] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [22] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [23] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [24] avrora.sim.clock.DeltaQueue$Link.fire
+  [25] avrora.sim.clock.DeltaQueue.skipAhead
+  [26] avrora.sim.clock.MainClock.skipAhead
+  [27] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [28] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [29] avrora.sim.AtmelInterpreter.start
+  [30] avrora.sim.Simulator.start
+  [31] avrora.sim.SimulatorThread.run
+
+--- 436797307 ns (0.42%), 420 samples
+  [ 0] JVM_MonitorWait
+  [ 1] java.lang.Object.wait
+  [ 2] java.lang.Object.wait
+  [ 3] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 4] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 6] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.access$000
+  [ 8] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [10] avrora.sim.clock.DeltaQueue$Link.fire
+  [11] avrora.sim.clock.DeltaQueue.skipAhead
+  [12] avrora.sim.clock.MainClock.skipAhead
+  [13] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [14] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [15] avrora.sim.AtmelInterpreter.start
+  [16] avrora.sim.Simulator.start
+  [17] avrora.sim.SimulatorThread.run
+
+--- 432337710 ns (0.42%), 416 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$POP.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 401675941 ns (0.39%), 386 samples
+  [ 0] avrora.sim.AtmelInterpreter.getRegisterByte
+  [ 1] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 2] avrora.arch.legacy.LegacyInstr$PUSH.accept
+  [ 3] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 401181748 ns (0.39%), 390 samples
+  [ 0] __GI___libc_write
+  [ 1] writeSingle
+  [ 2] java.io.FileOutputStream.write
+  [ 3] java.io.FileOutputStream.write
+  [ 4] org.dacapo.harness.TeeOutputStream.write
+  [ 5] java.io.FilterOutputStream.write
+  [ 6] java.io.PrintStream.write
+  [ 7] sun.nio.cs.StreamEncoder.writeBytes
+  [ 8] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 9] sun.nio.cs.StreamEncoder.flushBuffer
+  [10] java.io.OutputStreamWriter.flushBuffer
+  [11] java.io.PrintStream.write
+  [12] java.io.PrintStream.print
+  [13] java.io.PrintStream.println
+  [14] cck.text.Terminal.println
+  [15] avrora.sim.output.SimPrinter.printBuffer
+  [16] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [17] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [18] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [19] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [20] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [21] avrora.sim.clock.DeltaQueue$Link.fire
+  [22] avrora.sim.clock.DeltaQueue.skipAhead
+  [23] avrora.sim.clock.MainClock.skipAhead
+  [24] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [25] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [26] avrora.sim.AtmelInterpreter.start
+  [27] avrora.sim.Simulator.start
+  [28] avrora.sim.SimulatorThread.run
+
+--- 353318939 ns (0.34%), 339 samples
+  [ 0] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 1] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 2] avrora.sim.clock.MainClock.skipAhead
+  [ 3] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 336871017 ns (0.32%), 327 samples
+  [ 0] fsnotify_[k]
+  [ 1] __fsnotify_parent_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] cck.text.Terminal.println
+  [21] avrora.sim.output.SimPrinter.printBuffer
+  [22] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [27] avrora.sim.clock.DeltaQueue$Link.fire
+  [28] avrora.sim.clock.DeltaQueue.skipAhead
+  [29] avrora.sim.clock.MainClock.skipAhead
+  [30] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [31] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [32] avrora.sim.AtmelInterpreter.start
+  [33] avrora.sim.Simulator.start
+  [34] avrora.sim.SimulatorThread.run
+
+--- 336518377 ns (0.32%), 323 samples
+  [ 0] __x64_sys_futex_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] ___pthread_cond_signal
+  [ 4] [unknown_Java]
+
+--- 328635287 ns (0.32%), 315 samples
+  [ 0] wake_up_q_[k]
+  [ 1] futex_wake_[k]
+  [ 2] do_futex_[k]
+  [ 3] __x64_sys_futex_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] ___pthread_cond_signal
+  [ 7] [unknown_Java]
+
+--- 317846113 ns (0.31%), 305 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] try_to_wake_up_[k]
+  [ 2] wake_up_q_[k]
+  [ 3] futex_wake_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] ___pthread_cond_signal
+  [ 9] java.lang.Object.wait
+  [10] java.lang.Object.wait
+  [11] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [12] avrora.sim.clock.RippleSynchronizer.waitFor
+  [13] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [14] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [15] avrora.sim.radio.Medium$Receiver.access$000
+  [16] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [17] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [18] avrora.sim.clock.DeltaQueue$Link.fire
+  [19] avrora.sim.clock.DeltaQueue.skipAhead
+  [20] avrora.sim.clock.MainClock.skipAhead
+  [21] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [22] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [23] avrora.sim.AtmelInterpreter.start
+  [24] avrora.sim.Simulator.start
+  [25] avrora.sim.SimulatorThread.run
+
+--- 317387748 ns (0.31%), 306 samples
+  [ 0] Thread::SpinRelease(int volatile*)
+  [ 1] JVM_MonitorNotifyAll
+  [ 2] java.lang.Object.notifyAll
+  [ 3] avrora.sim.clock.RippleSynchronizer.notifyLink
+  [ 4] avrora.sim.clock.RippleSynchronizer.advance
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 6] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.access$000
+  [ 8] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [10] avrora.sim.clock.DeltaQueue$Link.fire
+  [11] avrora.sim.clock.DeltaQueue.skipAhead
+  [12] avrora.sim.clock.MainClock.skipAhead
+  [13] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [14] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [15] avrora.sim.AtmelInterpreter.start
+  [16] avrora.sim.Simulator.start
+  [17] avrora.sim.SimulatorThread.run
+
+--- 312134336 ns (0.30%), 300 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$IN.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 309192753 ns (0.30%), 300 samples
+  [ 0] xfs_buffered_write_iomap_begin?[xfs]_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 302639674 ns (0.29%), 294 samples
+  [ 0] iomap_file_buffered_write_[k]
+  [ 1] xfs_file_buffered_write?[xfs]_[k]
+  [ 2] new_sync_write_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeSingle
+  [ 9] java.io.FileOutputStream.write
+  [10] java.io.FileOutputStream.write
+  [11] org.dacapo.harness.TeeOutputStream.write
+  [12] java.io.FilterOutputStream.write
+  [13] java.io.PrintStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.flushBuffer
+  [17] java.io.OutputStreamWriter.flushBuffer
+  [18] java.io.PrintStream.write
+  [19] java.io.PrintStream.print
+  [20] java.io.PrintStream.println
+  [21] cck.text.Terminal.println
+  [22] avrora.sim.output.SimPrinter.printBuffer
+  [23] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [28] avrora.sim.clock.DeltaQueue$Link.fire
+  [29] avrora.sim.clock.DeltaQueue.skipAhead
+  [30] avrora.sim.clock.MainClock.skipAhead
+  [31] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [32] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [33] avrora.sim.AtmelInterpreter.start
+  [34] avrora.sim.Simulator.start
+  [35] avrora.sim.SimulatorThread.run
+
+--- 296721561 ns (0.29%), 285 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$OUT.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 289724358 ns (0.28%), 278 samples
+  [ 0] futex_wait_[k]
+  [ 1] do_futex_[k]
+  [ 2] __x64_sys_futex_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __futex_abstimed_wait_common
+  [ 6] java.lang.Object.wait
+  [ 7] java.lang.Object.wait
+  [ 8] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 9] avrora.sim.clock.RippleSynchronizer.waitFor
+  [10] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [11] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [12] avrora.sim.radio.Medium$Receiver.access$000
+  [13] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [14] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [15] avrora.sim.clock.DeltaQueue$Link.fire
+  [16] avrora.sim.clock.DeltaQueue.skipAhead
+  [17] avrora.sim.clock.MainClock.skipAhead
+  [18] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [19] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [20] avrora.sim.AtmelInterpreter.start
+  [21] avrora.sim.Simulator.start
+  [22] avrora.sim.SimulatorThread.run
+
+--- 283094948 ns (0.27%), 272 samples
+  [ 0] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 1] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 2] avrora.sim.AtmelInterpreter.start
+  [ 3] avrora.sim.Simulator.start
+  [ 4] avrora.sim.SimulatorThread.run
+
+--- 282902239 ns (0.27%), 272 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$LDS.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 281963469 ns (0.27%), 271 samples
+  [ 0] avrora.sim.mcu.ATMegaFamily$PortRegister.write
+  [ 1] avrora.sim.AtmelInterpreter$IORegBehavior.write
+  [ 2] avrora.sim.AtmelInterpreter.writeVolatile
+  [ 3] avrora.sim.AtmelInterpreter.writeSRAM
+  [ 4] avrora.sim.AtmelInterpreter.writeDataByte
+  [ 5] avrora.sim.AtmelInterpreter.pushByte
+  [ 6] avrora.arch.legacy.LegacyInterpreter.pushPC
+  [ 7] avrora.arch.legacy.LegacyInterpreter.invokeInterrupt
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 281088313 ns (0.27%), 270 samples
+  [ 0] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 1] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 2] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 3] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 4] avrora.sim.clock.MainClock.skipAhead
+  [ 5] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 6] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 7] avrora.sim.AtmelInterpreter.start
+  [ 8] avrora.sim.Simulator.start
+  [ 9] avrora.sim.SimulatorThread.run
+
+--- 275399308 ns (0.26%), 267 samples
+  [ 0] balance_dirty_pages_ratelimited_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] cck.text.Terminal.println
+  [23] avrora.sim.output.SimPrinter.printBuffer
+  [24] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [29] avrora.sim.clock.DeltaQueue$Link.fire
+  [30] avrora.sim.clock.DeltaQueue.skipAhead
+  [31] avrora.sim.clock.MainClock.skipAhead
+  [32] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [33] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [34] avrora.sim.AtmelInterpreter.start
+  [35] avrora.sim.Simulator.start
+  [36] avrora.sim.SimulatorThread.run
+
+--- 267889686 ns (0.26%), 260 samples
+  [ 0] vfs_write_[k]
+  [ 1] ksys_write_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __GI___libc_write
+  [ 5] writeSingle
+  [ 6] java.io.FileOutputStream.write
+  [ 7] java.io.FileOutputStream.write
+  [ 8] org.dacapo.harness.TeeOutputStream.write
+  [ 9] java.io.FilterOutputStream.write
+  [10] java.io.PrintStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.flushBuffer
+  [14] java.io.OutputStreamWriter.flushBuffer
+  [15] java.io.PrintStream.write
+  [16] java.io.PrintStream.print
+  [17] java.io.PrintStream.println
+  [18] cck.text.Terminal.println
+  [19] avrora.sim.output.SimPrinter.printBuffer
+  [20] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [21] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [22] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [23] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [25] avrora.sim.clock.DeltaQueue$Link.fire
+  [26] avrora.sim.clock.DeltaQueue.skipAhead
+  [27] avrora.sim.clock.MainClock.skipAhead
+  [28] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [29] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [30] avrora.sim.AtmelInterpreter.start
+  [31] avrora.sim.Simulator.start
+  [32] avrora.sim.SimulatorThread.run
+
+--- 265853291 ns (0.26%), 255 samples
+  [ 0] __schedule_[k]
+  [ 1] schedule_[k]
+  [ 2] futex_wait_queue_[k]
+  [ 3] futex_wait_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __futex_abstimed_wait_common
+  [ 9] java.lang.Object.wait
+  [10] java.lang.Object.wait
+  [11] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [12] avrora.sim.clock.RippleSynchronizer.waitFor
+  [13] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [14] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [15] avrora.sim.radio.Medium$Receiver.access$000
+  [16] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [17] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [18] avrora.sim.clock.DeltaQueue$Link.fire
+  [19] avrora.sim.clock.DeltaQueue.skipAhead
+  [20] avrora.sim.clock.MainClock.skipAhead
+  [21] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [22] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [23] avrora.sim.AtmelInterpreter.start
+  [24] avrora.sim.Simulator.start
+  [25] avrora.sim.SimulatorThread.run
+
+--- 261177350 ns (0.25%), 251 samples
+  [ 0] avrora.sim.mcu.Timer8Bit$Mode_CTC.fire
+  [ 1] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 2] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 3] avrora.sim.clock.MainClock.skipAhead
+  [ 4] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 5] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 6] avrora.sim.AtmelInterpreter.start
+  [ 7] avrora.sim.Simulator.start
+  [ 8] avrora.sim.SimulatorThread.run
+
+--- 260271556 ns (0.25%), 250 samples
+  [ 0] avrora.sim.clock.DeltaQueue.advance
+  [ 1] avrora.sim.clock.MainClock.advance
+  [ 2] avrora.sim.AtmelInterpreter.commit
+  [ 3] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 258859581 ns (0.25%), 249 samples
+  [ 0] ObjectMonitor::notifyAll(JavaThread*)
+  [ 1] JVM_MonitorNotifyAll
+  [ 2] java.lang.Object.notifyAll
+  [ 3] avrora.sim.clock.RippleSynchronizer.notifyLink
+  [ 4] avrora.sim.clock.RippleSynchronizer.advance
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 6] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.access$000
+  [ 8] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [10] avrora.sim.clock.DeltaQueue$Link.fire
+  [11] avrora.sim.clock.DeltaQueue.skipAhead
+  [12] avrora.sim.clock.MainClock.skipAhead
+  [13] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [14] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [15] avrora.sim.AtmelInterpreter.start
+  [16] avrora.sim.Simulator.start
+  [17] avrora.sim.SimulatorThread.run
+
+--- 258584670 ns (0.25%), 249 samples
+  [ 0] pthread_cond_wait@@GLIBC_2.3.2
+  [ 1] [unknown]
+  [ 2] java.lang.Object.wait
+  [ 3] java.lang.Object.wait
+  [ 4] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.access$000
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [11] avrora.sim.clock.DeltaQueue$Link.fire
+  [12] avrora.sim.clock.DeltaQueue.skipAhead
+  [13] avrora.sim.clock.MainClock.skipAhead
+  [14] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [15] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [16] avrora.sim.AtmelInterpreter.start
+  [17] avrora.sim.Simulator.start
+  [18] avrora.sim.SimulatorThread.run
+
+--- 255067906 ns (0.25%), 246 samples
+  [ 0] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 1] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 2] avrora.sim.AtmelInterpreter.start
+  [ 3] avrora.sim.Simulator.start
+  [ 4] avrora.sim.SimulatorThread.run
+
+--- 252468479 ns (0.24%), 242 samples
+  [ 0] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 1] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 2] avrora.sim.clock.MainClock.skipAhead
+  [ 3] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 247850738 ns (0.24%), 238 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$JMP.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 243972247 ns (0.23%), 237 samples
+  [ 0] kfree_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 240929698 ns (0.23%), 232 samples
+  [ 0] Thread::SpinRelease(int volatile*)
+  [ 1] ObjectSynchronizer::wait(Handle, long, JavaThread*)
+  [ 2] JVM_MonitorWait
+  [ 3] java.lang.Object.wait
+  [ 4] java.lang.Object.wait
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.access$000
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [12] avrora.sim.clock.DeltaQueue$Link.fire
+  [13] avrora.sim.clock.DeltaQueue.skipAhead
+  [14] avrora.sim.clock.MainClock.skipAhead
+  [15] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [16] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [17] avrora.sim.AtmelInterpreter.start
+  [18] avrora.sim.Simulator.start
+  [19] avrora.sim.SimulatorThread.run
+
+--- 239540475 ns (0.23%), 230 samples
+  [ 0] avrora.sim.AtmelInterpreter.readVolatile
+  [ 1] avrora.sim.AtmelInterpreter.readSRAM
+  [ 2] avrora.sim.AtmelInterpreter.getIORegisterByte
+  [ 3] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 4] avrora.arch.legacy.LegacyInstr$IN.accept
+  [ 5] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 6] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 7] avrora.sim.AtmelInterpreter.start
+  [ 8] avrora.sim.Simulator.start
+  [ 9] avrora.sim.SimulatorThread.run
+
+--- 237402367 ns (0.23%), 230 samples
+  [ 0] __kmalloc_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 236346692 ns (0.23%), 228 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$NOP.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 229909388 ns (0.22%), 223 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeSingle
+  [ 9] java.io.FileOutputStream.write
+  [10] java.io.FileOutputStream.write
+  [11] org.dacapo.harness.TeeOutputStream.write
+  [12] java.io.FilterOutputStream.write
+  [13] java.io.PrintStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.flushBuffer
+  [17] java.io.OutputStreamWriter.flushBuffer
+  [18] java.io.PrintStream.write
+  [19] java.io.PrintStream.print
+  [20] java.io.PrintStream.println
+  [21] cck.text.Terminal.println
+  [22] avrora.sim.output.SimPrinter.printBuffer
+  [23] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [28] avrora.sim.clock.DeltaQueue$Link.fire
+  [29] avrora.sim.clock.DeltaQueue.skipAhead
+  [30] avrora.sim.clock.MainClock.skipAhead
+  [31] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [32] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [33] avrora.sim.AtmelInterpreter.start
+  [34] avrora.sim.Simulator.start
+  [35] avrora.sim.SimulatorThread.run
+
+--- 227506655 ns (0.22%), 218 samples
+  [ 0] do_futex_[k]
+  [ 1] __x64_sys_futex_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] ___pthread_cond_signal
+  [ 5] [unknown_Java]
+
+--- 227113139 ns (0.22%), 218 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$CPI.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 226474526 ns (0.22%), 218 samples
+  [ 0] avrora.sim.clock.RippleSynchronizer$NotifyEvent.access$100
+  [ 1] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 2] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 3] avrora.sim.radio.Medium$Receiver.access$000
+  [ 4] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 5] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 6] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 7] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 8] avrora.sim.clock.MainClock.skipAhead
+  [ 9] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [10] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [11] avrora.sim.AtmelInterpreter.start
+  [12] avrora.sim.Simulator.start
+  [13] avrora.sim.SimulatorThread.run
+
+--- 222673725 ns (0.21%), 216 samples
+  [ 0] fault_in_readable_[k]
+  [ 1] fault_in_iov_iter_readable_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 219391192 ns (0.21%), 211 samples
+  [ 0] ObjectSynchronizer::inflate(Thread*, oopDesc*, ObjectSynchronizer::InflateCause)
+  [ 1] ObjectSynchronizer::wait(Handle, long, JavaThread*)
+  [ 2] JVM_MonitorWait
+  [ 3] java.lang.Object.wait
+  [ 4] java.lang.Object.wait
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.access$000
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [12] avrora.sim.clock.DeltaQueue$Link.fire
+  [13] avrora.sim.clock.DeltaQueue.skipAhead
+  [14] avrora.sim.clock.MainClock.skipAhead
+  [15] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [16] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [17] avrora.sim.AtmelInterpreter.start
+  [18] avrora.sim.Simulator.start
+  [19] avrora.sim.SimulatorThread.run
+
+--- 216605053 ns (0.21%), 210 samples
+  [ 0] iomap_iter_advance_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 212666010 ns (0.20%), 204 samples
+  [ 0] ObjectMonitor::exit(JavaThread*, bool)
+  [ 1] SharedRuntime::complete_monitor_unlocking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 2] java.util.HashMap.getNode
+  [ 3] java.util.HashMap.get
+  [ 4] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 5] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 6] avrora.sim.radio.Medium$Receiver.access$000
+  [ 7] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [ 8] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 9] avrora.sim.clock.DeltaQueue$Link.fire
+  [10] avrora.sim.clock.DeltaQueue.skipAhead
+  [11] avrora.sim.clock.MainClock.skipAhead
+  [12] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [13] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [14] avrora.sim.AtmelInterpreter.start
+  [15] avrora.sim.Simulator.start
+  [16] avrora.sim.SimulatorThread.run
+
+--- 211990456 ns (0.20%), 204 samples
+  [ 0] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 1] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 2] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 3] avrora.sim.clock.MainClock.skipAhead
+  [ 4] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 5] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 6] avrora.sim.AtmelInterpreter.start
+  [ 7] avrora.sim.Simulator.start
+  [ 8] avrora.sim.SimulatorThread.run
+
+--- 209911076 ns (0.20%), 201 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$CP.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 209887031 ns (0.20%), 201 samples
+  [ 0] do_syscall_64_[k]
+  [ 1] entry_SYSCALL_64_after_hwframe_[k]
+  [ 2] ___pthread_cond_signal
+  [ 3] [unknown_Java]
+
+--- 208168239 ns (0.20%), 200 samples
+  [ 0] itable stub
+  [ 1] avrora.sim.AtmelInterpreter$IORegBehavior.write
+  [ 2] avrora.sim.AtmelInterpreter.writeVolatile
+  [ 3] avrora.sim.AtmelInterpreter.writeSRAM
+  [ 4] avrora.sim.AtmelInterpreter.writeIORegisterByte
+  [ 5] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 6] avrora.arch.legacy.LegacyInstr$OUT.accept
+  [ 7] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 206005329 ns (0.20%), 198 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$BRNE.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 200804013 ns (0.19%), 195 samples
+  [ 0] __fget_light_[k]
+  [ 1] __fdget_pos_[k]
+  [ 2] ksys_write_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __GI___libc_write
+  [ 6] writeSingle
+  [ 7] java.io.FileOutputStream.write
+  [ 8] java.io.FileOutputStream.write
+  [ 9] org.dacapo.harness.TeeOutputStream.write
+  [10] java.io.FilterOutputStream.write
+  [11] java.io.PrintStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.flushBuffer
+  [15] java.io.OutputStreamWriter.flushBuffer
+  [16] java.io.PrintStream.write
+  [17] java.io.PrintStream.print
+  [18] java.io.PrintStream.println
+  [19] cck.text.Terminal.println
+  [20] avrora.sim.output.SimPrinter.printBuffer
+  [21] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [22] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [26] avrora.sim.clock.DeltaQueue$Link.fire
+  [27] avrora.sim.clock.DeltaQueue.skipAhead
+  [28] avrora.sim.clock.MainClock.skipAhead
+  [29] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [30] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [31] avrora.sim.AtmelInterpreter.start
+  [32] avrora.sim.Simulator.start
+  [33] avrora.sim.SimulatorThread.run
+
+--- 200491654 ns (0.19%), 193 samples
+  [ 0] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 1] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 2] avrora.sim.AtmelInterpreter.start
+  [ 3] avrora.sim.Simulator.start
+  [ 4] avrora.sim.SimulatorThread.run
+
+--- 199807563 ns (0.19%), 191 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$CPC.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 199036653 ns (0.19%), 191 samples
+  [ 0] avrora.sim.clock.DeltaQueue.insertEvent
+  [ 1] avrora.sim.clock.MainClock.insertEvent
+  [ 2] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 3] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 4] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 5] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 6] avrora.sim.clock.MainClock.skipAhead
+  [ 7] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 198027135 ns (0.19%), 192 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] copy_page_from_iter_atomic_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 195803350 ns (0.19%), 190 samples
+  [ 0] selinux_file_permission_[k]
+  [ 1] security_file_permission_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] cck.text.Terminal.println
+  [21] avrora.sim.output.SimPrinter.printBuffer
+  [22] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [27] avrora.sim.clock.DeltaQueue$Link.fire
+  [28] avrora.sim.clock.DeltaQueue.skipAhead
+  [29] avrora.sim.clock.MainClock.skipAhead
+  [30] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [31] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [32] avrora.sim.AtmelInterpreter.start
+  [33] avrora.sim.Simulator.start
+  [34] avrora.sim.SimulatorThread.run
+
+--- 194782391 ns (0.19%), 189 samples
+  [ 0] __fsnotify_parent_[k]
+  [ 1] vfs_write_[k]
+  [ 2] ksys_write_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __GI___libc_write
+  [ 6] writeSingle
+  [ 7] java.io.FileOutputStream.write
+  [ 8] java.io.FileOutputStream.write
+  [ 9] org.dacapo.harness.TeeOutputStream.write
+  [10] java.io.FilterOutputStream.write
+  [11] java.io.PrintStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.flushBuffer
+  [15] java.io.OutputStreamWriter.flushBuffer
+  [16] java.io.PrintStream.write
+  [17] java.io.PrintStream.print
+  [18] java.io.PrintStream.println
+  [19] cck.text.Terminal.println
+  [20] avrora.sim.output.SimPrinter.printBuffer
+  [21] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [22] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [26] avrora.sim.clock.DeltaQueue$Link.fire
+  [27] avrora.sim.clock.DeltaQueue.skipAhead
+  [28] avrora.sim.clock.MainClock.skipAhead
+  [29] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [30] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [31] avrora.sim.AtmelInterpreter.start
+  [32] avrora.sim.Simulator.start
+  [33] avrora.sim.SimulatorThread.run
+
+--- 192721692 ns (0.19%), 185 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$RJMP.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 192688772 ns (0.19%), 187 samples
+  [ 0] xfs_file_write_iter?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] cck.text.Terminal.println
+  [21] avrora.sim.output.SimPrinter.printBuffer
+  [22] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [27] avrora.sim.clock.DeltaQueue$Link.fire
+  [28] avrora.sim.clock.DeltaQueue.skipAhead
+  [29] avrora.sim.clock.MainClock.skipAhead
+  [30] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [31] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [32] avrora.sim.AtmelInterpreter.start
+  [33] avrora.sim.Simulator.start
+  [34] avrora.sim.SimulatorThread.run
+
+--- 190577633 ns (0.18%), 183 samples
+  [ 0] __get_user_nocheck_4_[k]
+  [ 1] futex_get_value_locked_[k]
+  [ 2] futex_wait_setup_[k]
+  [ 3] futex_wait_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __futex_abstimed_wait_common
+  [ 9] java.lang.Object.wait
+  [10] java.lang.Object.wait
+  [11] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [12] avrora.sim.clock.RippleSynchronizer.waitFor
+  [13] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [14] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [15] avrora.sim.radio.Medium$Receiver.access$000
+  [16] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [17] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [18] avrora.sim.clock.DeltaQueue$Link.fire
+  [19] avrora.sim.clock.DeltaQueue.skipAhead
+  [20] avrora.sim.clock.MainClock.skipAhead
+  [21] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [22] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [23] avrora.sim.AtmelInterpreter.start
+  [24] avrora.sim.Simulator.start
+  [25] avrora.sim.SimulatorThread.run
+
+--- 189656836 ns (0.18%), 182 samples
+  [ 0] syscall_exit_to_user_mode_prepare_[k]
+  [ 1] syscall_exit_to_user_mode_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] ___pthread_cond_signal
+  [ 5] [unknown_Java]
+
+--- 186125613 ns (0.18%), 179 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$LDI.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 184647155 ns (0.18%), 179 samples
+  [ 0] inotify_handle_inode_event_[k]
+  [ 1] send_to_group_[k]
+  [ 2] fsnotify_[k]
+  [ 3] __fsnotify_parent_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] cck.text.Terminal.println
+  [23] avrora.sim.output.SimPrinter.printBuffer
+  [24] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [29] avrora.sim.clock.DeltaQueue$Link.fire
+  [30] avrora.sim.clock.DeltaQueue.skipAhead
+  [31] avrora.sim.clock.MainClock.skipAhead
+  [32] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [33] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [34] avrora.sim.AtmelInterpreter.start
+  [35] avrora.sim.Simulator.start
+  [36] avrora.sim.SimulatorThread.run
+
+--- 183474083 ns (0.18%), 176 samples
+  [ 0] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 1] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 2] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 3] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 4] avrora.sim.clock.MainClock.skipAhead
+  [ 5] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 6] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 7] avrora.sim.AtmelInterpreter.start
+  [ 8] avrora.sim.Simulator.start
+  [ 9] avrora.sim.SimulatorThread.run
+
+--- 181709440 ns (0.17%), 175 samples
+  [ 0] avrora.arch.legacy.LegacyInstr$EOR.accept
+  [ 1] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 2] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 3] avrora.sim.AtmelInterpreter.start
+  [ 4] avrora.sim.Simulator.start
+  [ 5] avrora.sim.SimulatorThread.run
+
+--- 176876467 ns (0.17%), 170 samples
+  [ 0] java.util.LinkedList$ListItr.<init>
+  [ 1] java.util.LinkedList.listIterator
+  [ 2] java.util.AbstractList.listIterator
+  [ 3] java.util.AbstractSequentialList.iterator
+  [ 4] avrora.sim.radio.Medium$Receiver.earliestNewTransmission
+  [ 5] avrora.sim.radio.Medium$Receiver.access$100
+  [ 6] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 7] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 8] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 9] avrora.sim.clock.DeltaQueue.skipAhead
+  [10] avrora.sim.clock.MainClock.skipAhead
+  [11] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [12] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [13] avrora.sim.AtmelInterpreter.start
+  [14] avrora.sim.Simulator.start
+  [15] avrora.sim.SimulatorThread.run
+
+--- 174573830 ns (0.17%), 168 samples
+  [ 0] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 1] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 2] avrora.sim.radio.Medium$Receiver.access$000
+  [ 3] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 4] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 5] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 6] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 7] avrora.sim.clock.MainClock.skipAhead
+  [ 8] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 9] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [10] avrora.sim.AtmelInterpreter.start
+  [11] avrora.sim.Simulator.start
+  [12] avrora.sim.SimulatorThread.run
+
+--- 173822732 ns (0.17%), 167 samples
+  [ 0] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 1] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 2] avrora.sim.radio.Medium$Receiver.access$000
+  [ 3] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [ 4] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 5] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 6] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 7] avrora.sim.clock.MainClock.skipAhead
+  [ 8] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 9] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [10] avrora.sim.AtmelInterpreter.start
+  [11] avrora.sim.Simulator.start
+  [12] avrora.sim.SimulatorThread.run
+
+--- 170849455 ns (0.16%), 166 samples
+  [ 0] iomap_write_end_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] cck.text.Terminal.println
+  [23] avrora.sim.output.SimPrinter.printBuffer
+  [24] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [29] avrora.sim.clock.DeltaQueue$Link.fire
+  [30] avrora.sim.clock.DeltaQueue.skipAhead
+  [31] avrora.sim.clock.MainClock.skipAhead
+  [32] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [33] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [34] avrora.sim.AtmelInterpreter.start
+  [35] avrora.sim.Simulator.start
+  [36] avrora.sim.SimulatorThread.run
+
+--- 170274213 ns (0.16%), 164 samples
+  [ 0] JavaThread::threadObj() const
+  [ 1] ObjectMonitor::notifyAll(JavaThread*)
+  [ 2] JVM_MonitorNotifyAll
+  [ 3] java.lang.Object.notifyAll
+  [ 4] avrora.sim.clock.RippleSynchronizer.notifyLink
+  [ 5] avrora.sim.clock.RippleSynchronizer.advance
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 7] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.access$000
+  [ 9] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [11] avrora.sim.clock.DeltaQueue$Link.fire
+  [12] avrora.sim.clock.DeltaQueue.skipAhead
+  [13] avrora.sim.clock.MainClock.skipAhead
+  [14] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [15] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [16] avrora.sim.AtmelInterpreter.start
+  [17] avrora.sim.Simulator.start
+  [18] avrora.sim.SimulatorThread.run
+
+--- 167772169 ns (0.16%), 163 samples
+  [ 0] __filemap_get_folio_[k]
+  [ 1] pagecache_get_page_[k]
+  [ 2] iomap_write_begin_[k]
+  [ 3] iomap_file_buffered_write_[k]
+  [ 4] xfs_file_buffered_write?[xfs]_[k]
+  [ 5] new_sync_write_[k]
+  [ 6] vfs_write_[k]
+  [ 7] ksys_write_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __GI___libc_write
+  [11] writeSingle
+  [12] java.io.FileOutputStream.write
+  [13] java.io.FileOutputStream.write
+  [14] org.dacapo.harness.TeeOutputStream.write
+  [15] java.io.FilterOutputStream.write
+  [16] java.io.PrintStream.write
+  [17] sun.nio.cs.StreamEncoder.writeBytes
+  [18] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [19] sun.nio.cs.StreamEncoder.flushBuffer
+  [20] java.io.OutputStreamWriter.flushBuffer
+  [21] java.io.PrintStream.write
+  [22] java.io.PrintStream.print
+  [23] java.io.PrintStream.println
+  [24] cck.text.Terminal.println
+  [25] avrora.sim.output.SimPrinter.printBuffer
+  [26] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [30] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [31] avrora.sim.clock.DeltaQueue$Link.fire
+  [32] avrora.sim.clock.DeltaQueue.skipAhead
+  [33] avrora.sim.clock.MainClock.skipAhead
+  [34] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [35] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [36] avrora.sim.AtmelInterpreter.start
+  [37] avrora.sim.Simulator.start
+  [38] avrora.sim.SimulatorThread.run
+
+--- 166592032 ns (0.16%), 160 samples
+  [ 0] __x64_sys_futex_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __futex_abstimed_wait_common
+  [ 4] java.lang.Object.wait
+  [ 5] java.lang.Object.wait
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 8] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [10] avrora.sim.radio.Medium$Receiver.access$000
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [12] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [13] avrora.sim.clock.DeltaQueue$Link.fire
+  [14] avrora.sim.clock.DeltaQueue.skipAhead
+  [15] avrora.sim.clock.MainClock.skipAhead
+  [16] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [17] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [18] avrora.sim.AtmelInterpreter.start
+  [19] avrora.sim.Simulator.start
+  [20] avrora.sim.SimulatorThread.run
+
+--- 164649998 ns (0.16%), 160 samples
+  [ 0] xfs_file_buffered_write?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeSingle
+  [ 8] java.io.FileOutputStream.write
+  [ 9] java.io.FileOutputStream.write
+  [10] org.dacapo.harness.TeeOutputStream.write
+  [11] java.io.FilterOutputStream.write
+  [12] java.io.PrintStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.flushBuffer
+  [16] java.io.OutputStreamWriter.flushBuffer
+  [17] java.io.PrintStream.write
+  [18] java.io.PrintStream.print
+  [19] java.io.PrintStream.println
+  [20] cck.text.Terminal.println
+  [21] avrora.sim.output.SimPrinter.printBuffer
+  [22] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [23] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [24] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [25] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [27] avrora.sim.clock.DeltaQueue$Link.fire
+  [28] avrora.sim.clock.DeltaQueue.skipAhead
+  [29] avrora.sim.clock.MainClock.skipAhead
+  [30] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [31] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [32] avrora.sim.AtmelInterpreter.start
+  [33] avrora.sim.Simulator.start
+  [34] avrora.sim.SimulatorThread.run
+
+--- 164011639 ns (0.16%), 159 samples
+  [ 0] __radix_tree_lookup_[k]
+  [ 1] balance_dirty_pages_ratelimited_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeSingle
+  [11] java.io.FileOutputStream.write
+  [12] java.io.FileOutputStream.write
+  [13] org.dacapo.harness.TeeOutputStream.write
+  [14] java.io.FilterOutputStream.write
+  [15] java.io.PrintStream.write
+  [16] sun.nio.cs.StreamEncoder.writeBytes
+  [17] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [18] sun.nio.cs.StreamEncoder.flushBuffer
+  [19] java.io.OutputStreamWriter.flushBuffer
+  [20] java.io.PrintStream.write
+  [21] java.io.PrintStream.print
+  [22] java.io.PrintStream.println
+  [23] cck.text.Terminal.println
+  [24] avrora.sim.output.SimPrinter.printBuffer
+  [25] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [29] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [30] avrora.sim.clock.DeltaQueue$Link.fire
+  [31] avrora.sim.clock.DeltaQueue.skipAhead
+  [32] avrora.sim.clock.MainClock.skipAhead
+  [33] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [34] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [35] avrora.sim.AtmelInterpreter.start
+  [36] avrora.sim.Simulator.start
+  [37] avrora.sim.SimulatorThread.run
+
+--- 163484475 ns (0.16%), 157 samples
+  [ 0] try_to_wake_up_[k]
+  [ 1] wake_up_q_[k]
+  [ 2] futex_wake_[k]
+  [ 3] do_futex_[k]
+  [ 4] __x64_sys_futex_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] ___pthread_cond_signal
+  [ 8] [unknown_Java]
+
+--- 163135172 ns (0.16%), 157 samples
+  [ 0] avrora.sim.RWRegister.read
+  [ 1] avrora.sim.AtmelInterpreter$IORegBehavior.read
+  [ 2] avrora.sim.AtmelInterpreter.readVolatile
+  [ 3] avrora.sim.AtmelInterpreter.readSRAM
+  [ 4] avrora.sim.AtmelInterpreter.getIORegisterByte
+  [ 5] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 6] avrora.arch.legacy.LegacyInstr$IN.accept
+  [ 7] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 8] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 9] avrora.sim.AtmelInterpreter.start
+  [10] avrora.sim.Simulator.start
+  [11] avrora.sim.SimulatorThread.run
+
+--- 161422756 ns (0.16%), 155 samples
+  [ 0] avrora.sim.AtmelInterpreter.pushByte
+  [ 1] avrora.arch.legacy.LegacyInterpreter.visit
+  [ 2] avrora.arch.legacy.LegacyInstr$PUSH.accept
+  [ 3] avrora.arch.legacy.LegacyInterpreter.fastLoop
+  [ 4] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 5] avrora.sim.AtmelInterpreter.start
+  [ 6] avrora.sim.Simulator.start
+  [ 7] avrora.sim.SimulatorThread.run
+
+--- 160858762 ns (0.15%), 156 samples
+  [ 0] copy_page_from_iter_atomic_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeSingle
+  [10] java.io.FileOutputStream.write
+  [11] java.io.FileOutputStream.write
+  [12] org.dacapo.harness.TeeOutputStream.write
+  [13] java.io.FilterOutputStream.write
+  [14] java.io.PrintStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.flushBuffer
+  [18] java.io.OutputStreamWriter.flushBuffer
+  [19] java.io.PrintStream.write
+  [20] java.io.PrintStream.print
+  [21] java.io.PrintStream.println
+  [22] cck.text.Terminal.println
+  [23] avrora.sim.output.SimPrinter.printBuffer
+  [24] avrora.monitors.PacketMonitor$Mon.fireAfterReceiveEnd
+  [25] avrora.sim.radio.Medium$Probe$List.fireAfterReceiveEnd
+  [26] avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+  [27] avrora.sim.radio.Medium$Receiver$Ticker.fireLocked
+  [28] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [29] avrora.sim.clock.DeltaQueue$Link.fire
+  [30] avrora.sim.clock.DeltaQueue.skipAhead
+  [31] avrora.sim.clock.MainClock.skipAhead
+  [32] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [33] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [34] avrora.sim.AtmelInterpreter.start
+  [35] avrora.sim.Simulator.start
+  [36] avrora.sim.SimulatorThread.run
+
+--- 159117813 ns (0.15%), 153 samples
+  [ 0] Thread::SpinAcquire(int volatile*, char const*)
+  [ 1] ObjectSynchronizer::wait(Handle, long, JavaThread*)
+  [ 2] JVM_MonitorWait
+  [ 3] java.lang.Object.wait
+  [ 4] java.lang.Object.wait
+  [ 5] avrora.sim.clock.RippleSynchronizer.waitForLink
+  [ 6] avrora.sim.clock.RippleSynchronizer.waitFor
+  [ 7] avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+  [ 8] avrora.sim.radio.Medium$Receiver.waitForNeighbors
+  [ 9] avrora.sim.radio.Medium$Receiver.access$000
+  [10] avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+  [11] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [12] avrora.sim.clock.DeltaQueue$Link.fire
+  [13] avrora.sim.clock.DeltaQueue.skipAhead
+  [14] avrora.sim.clock.MainClock.skipAhead
+  [15] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [16] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [17] avrora.sim.AtmelInterpreter.start
+  [18] avrora.sim.Simulator.start
+  [19] avrora.sim.SimulatorThread.run
+
+--- 159051682 ns (0.15%), 153 samples
+  [ 0] avrora.sim.radio.Medium$Receiver$Ticker.fire
+  [ 1] avrora.sim.clock.DeltaQueue$Link.fire
+  [ 2] avrora.sim.clock.DeltaQueue.skipAhead
+  [ 3] avrora.sim.clock.MainClock.skipAhead
+  [ 4] avrora.arch.legacy.LegacyInterpreter.sleepLoop
+  [ 5] avrora.arch.legacy.LegacyInterpreter.runLoop
+  [ 6] avrora.sim.AtmelInterpreter.start
+  [ 7] avrora.sim.Simulator.start
+  [ 8] avrora.sim.SimulatorThread.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 27427713862   26.39%    26310  _raw_spin_unlock_irqrestore_[k]
+  5042687334    4.85%     4848  vtable stub
+  2607219447    2.51%     2507  itable stub
+  2186659909    2.10%     2103  avrora.arch.legacy.LegacyInterpreter.fastLoop
+  1879228026    1.81%     1807  avrora.sim.clock.DeltaQueue.advance
+  1869070675    1.80%     1793  ObjectMonitor::exit(JavaThread*, bool)
+  1754008537    1.69%     1686  avrora.sim.AtmelInterpreter.commit
+  1617241428    1.56%     1561  syscall_enter_from_user_mode_[k]
+  1438364232    1.38%     1382  avrora.sim.radio.Medium$Receiver.earliestNewTransmission
+  1400402137    1.35%     1344  ___pthread_cond_signal
+  1253724668    1.21%     1206  avrora.arch.legacy.LegacyInterpreter.visit
+  1177910874    1.13%     1134  avrora.sim.clock.RippleSynchronizer.advance
+   857142909    0.82%      824  avrora.arch.legacy.LegacyInstr$PUSH.accept
+   799992565    0.77%      769  avrora.sim.clock.RippleSynchronizer.waitForNeighbors
+   772755685    0.74%      744  ObjectMonitor::INotify(JavaThread*)
+   701393632    0.67%      673  avrora.sim.radio.CC1000Radio$SPITicker.fire
+   673757307    0.65%      649  Thread::SpinRelease(int volatile*)
+   671186557    0.65%      644  avrora.sim.clock.DeltaQueue$Link.fire
+   661155798    0.64%      635  avrora.sim.clock.DeltaQueue.skipAhead
+   638305060    0.61%      614  ObjectMonitor::wait(long, bool, JavaThread*)
+   634085325    0.61%      616  __GI___libc_write
+   613814320    0.59%      590  futex_wake_[k]
+   593767383    0.57%      571  avrora.sim.AtmelInterpreter.getRegisterByte
+   580046331    0.56%      558  futex_q_lock_[k]
+   559212270    0.54%      537  avrora.sim.radio.Medium$Receiver$Ticker.fireUnlocked
+   553629359    0.53%      531  __x64_sys_futex_[k]
+   531340035    0.51%      511  avrora.arch.legacy.LegacyInstr$POP.accept
+   523243054    0.50%      508  fsnotify_[k]
+   498269335    0.48%      479  JVM_MonitorWait
+   494565119    0.48%      480  iomap_file_buffered_write_[k]
+   482622394    0.46%      468  xfs_buffered_write_iomap_begin?[xfs]_[k]
+   465370211    0.45%      447  avrora.sim.clock.DeltaQueue.newEventList
+   434613442    0.42%      418  avrora.sim.mcu.ATMegaFamily$PortRegister.write
+   431977422    0.42%      419  balance_dirty_pages_ratelimited_[k]
+   419732178    0.40%      403  avrora.sim.clock.DeltaQueue.insertEvent
+   415321185    0.40%      403  vfs_write_[k]
+   394837246    0.38%      380  avrora.sim.radio.Medium$Receiver$Ticker.fire
+   391102076    0.38%      376  avrora.sim.AtmelInterpreter.readSRAM
+   390839917    0.38%      379  send_to_group_[k]
+   388448836    0.37%      377  kfree_[k]
+   384585930    0.37%      370  do_syscall_64_[k]
+   377127122    0.36%      362  ObjectSynchronizer::inflate(Thread*, oopDesc*, ObjectSynchronizer::InflateCause)
+   353232488    0.34%      342  fault_in_readable_[k]
+   350827607    0.34%      340  __kmalloc_[k]
+   349200397    0.34%      335  futex_wait_[k]
+   347302428    0.33%      334  ObjectMonitor::notifyAll(JavaThread*)
+   343773148    0.33%      331  pthread_cond_wait@@GLIBC_2.3.2
+   339137470    0.33%      325  wake_up_q_[k]
+   337307086    0.32%      326  iomap_iter_advance_[k]
+   324873636    0.31%      315  selinux_file_permission_[k]
+   322495756    0.31%      310  avrora.sim.mcu.Timer8Bit$Mode_CTC.fire
+   322421751    0.31%      309  __schedule_[k]
+   321529649    0.31%      309  avrora.arch.legacy.LegacyInstr$IN.accept
+   315350826    0.30%      306  __fget_light_[k]
+   314919578    0.30%      303  java.util.HashMap.getNode
+   314324846    0.30%      305  xfs_file_write_iter?[xfs]_[k]
+   313406644    0.30%      301  avrora.arch.legacy.LegacyInstr$OUT.accept
+   305103363    0.29%      296  copy_user_generic_string_[k]
+   303892040    0.29%      295  __fsnotify_parent_[k]
+   295462854    0.28%      284  avrora.sim.AtmelInterpreter.readVolatile
+   294170411    0.28%      282  do_futex_[k]
+   289176560    0.28%      278  avrora.arch.legacy.LegacyInstr$LDS.accept
+   285249022    0.27%      277  java.io.FileOutputStream.write
+   274237120    0.26%      264  syscall_exit_to_user_mode_prepare_[k]
+   266508361    0.26%      258  _raw_spin_lock_[k]
+   263154171    0.25%      253  avrora.sim.AtmelInterpreter$IORegBehavior.read
+   262007461    0.25%      254  __radix_tree_lookup_[k]
+   260916722    0.25%      251  avrora.sim.clock.RippleSynchronizer$NotifyEvent.access$100
+   260145819    0.25%      250  avrora.sim.FiniteStateMachine.transition
+   255509400    0.25%      248  xfs_file_buffered_write?[xfs]_[k]
+   250938010    0.24%      241  avrora.arch.legacy.LegacyInstr$JMP.accept
+   248645061    0.24%      241  inotify_handle_inode_event_[k]
+   248345069    0.24%      241  copy_page_from_iter_atomic_[k]
+   245981676    0.24%      239  iomap_write_end_[k]
+   245192166    0.24%      238  __filemap_get_folio_[k]
+   243492041    0.23%      234  Thread::SpinAcquire(int volatile*, char const*)
+   240980709    0.23%      230  avrora.sim.util.MulticastFSMProbe.fireBeforeTransition
+   240974499    0.23%      233  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+   239404103    0.23%      231  avrora.arch.legacy.LegacyInstr$NOP.accept
+   239118950    0.23%      232  jni_GetObjectField
+   236149996    0.23%      227  avrora.arch.legacy.LegacyInstr$BRNE.accept
+   234521779    0.23%      226  __audit_syscall_exit_[k]
+   233399834    0.22%      224  avrora.arch.legacy.LegacyInstr$CPI.accept
+   230862013    0.22%      224  __rcu_read_unlock_[k]
+   229293405    0.22%      221  __audit_syscall_entry_[k]
+   228592081    0.22%      219  __get_user_nocheck_4_[k]
+   227309312    0.22%      220  get_obj_cgroup_from_current_[k]
+   227118011    0.22%      218  java.util.LinkedList$ListItr.<init>
+   221570069    0.21%      215  xfs_file_write_checks?[xfs]_[k]
+   212933102    0.20%      205  JavaThread::threadObj() const
+   212613841    0.20%      204  avrora.sim.radio.Medium$Receiver.getIntersection
+   212109861    0.20%      203  avrora.sim.clock.RippleSynchronizer.notifyLink
+   212103462    0.20%      206  security_file_permission_[k]
+   212004057    0.20%      203  avrora.arch.legacy.LegacyInstr$CP.accept
+   210283108    0.20%      204  xfs_bmbt_to_iomap?[xfs]_[k]
+   209326680    0.20%      201  avrora.arch.legacy.LegacyInstr$RJMP.accept
+   207091321    0.20%      201  iomap_iter_[k]
+   206072026    0.20%      197  avrora.arch.legacy.LegacyInstr$CPC.accept
+   204079989    0.20%      196  avrora.sim.AtmelInterpreter.pushByte
+   203133092    0.20%      197  iomap_write_begin_[k]
+   200603828    0.19%      192  avrora.sim.state.RegisterUtil$BoolView.getValue
+   195268446    0.19%      188  avrora.arch.legacy.LegacyInstr$EOR.accept
+   193407194    0.19%      186  avrora.arch.legacy.LegacyInstr$LDI.accept
+   190556089    0.18%      185  mod_objcg_state_[k]
+   190119734    0.18%      184  memcg_slab_post_alloc_hook_[k]
+   189255830    0.18%      183  __get_obj_cgroup_from_memcg_[k]
+   188645444    0.18%      183  __rcu_read_lock_[k]
+   186897786    0.18%      181  inode_to_bdi_[k]
+   186752164    0.18%      181  obj_cgroup_charge_[k]
+   186393292    0.18%      181  down_write_[k]
+   185447166    0.18%      179  memcpy_[k]
+   184707891    0.18%      178  fsnotify_add_event_[k]
+   182428595    0.18%      177  new_sync_write_[k]
+   182055632    0.18%      175  avrora.sim.AtmelInterpreter.writeVolatile
+   178217921    0.17%      171  avrora.arch.legacy.LegacyInstr$CPSE.accept
+   176528277    0.17%      171  up_write_[k]
+   172962276    0.17%      166  try_to_wake_up_[k]
+   169929875    0.16%      165  xfs_iomap_valid?[xfs]_[k]
+   166270023    0.16%      160  avrora.sim.RWRegister.read
+   164678268    0.16%      158  futex_hash_[k]
+   162708230    0.16%      162  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+   161563313    0.16%      156  syscall_exit_work_[k]
+   160961221    0.15%      156  xfs_buffered_write_iomap_end?[xfs]_[k]
+   160864184    0.15%      156  xfs_iext_lookup_extent?[xfs]_[k]
+   157996001    0.15%      152  avrora.sim.mcu.SPI$SPDReg.read
+   156824859    0.15%      151  Handle::Handle(Thread*, oopDesc*)
+   152487820    0.15%      148  strcmp_[k]
+   150830352    0.15%      145  avrora.sim.AtmelInterpreter.setSP
+   150426453    0.14%      145  futex_wake_mark_[k]
+   149981233    0.14%      145  __GI___pthread_enable_asynccancel
+   149510561    0.14%      144  avrora.sim.util.MulticastFSMProbe.fireAfterTransition
+   147896765    0.14%      142  avrora.arch.legacy.LegacyInterpreter.runLoop
+   144535179    0.14%      138  avrora.sim.clock.DerivedClock.insertEvent
+   144025591    0.14%      140  inotify_merge_[k]
+   142201037    0.14%      138  strcpy_[k]
+   138832549    0.13%      135  __GI___pthread_disable_asynccancel
+   137230916    0.13%      132  avrora.arch.legacy.LegacyInstr$MOV.accept
+   135135744    0.13%      130  avrora.sim.AtmelInterpreter.writeRegisterByte
+   132941133    0.13%      128  avrora.arch.legacy.LegacyInstr$SLEEP.accept
+   130576237    0.13%      127  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+   128597234    0.12%      125  bpf_lsm_file_permission_[k]
+   127801560    0.12%      123  avrora.sim.clock.RippleSynchronizer$NotifyEvent.fire
+   127449353    0.12%      122  plist_add_[k]
+   125687831    0.12%      122  lockref_put_return_[k]
+   124972312    0.12%      121  __iomap_write_begin_[k]
+   123986155    0.12%      118  avrora.arch.legacy.LegacyInstr$BREQ.accept
+   120860154    0.12%      116  avrora.sim.radio.Medium$Receiver$Ticker.deliverByte
+   120661012    0.12%      116  avrora.arch.legacy.LegacyInstr$RETI.accept
+   119314363    0.11%      115  ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+   117426670    0.11%      113  java.lang.Object.wait
+   116920486    0.11%      112  avrora.arch.legacy.LegacyInstr$CALL.accept
+   115906505    0.11%      111  pthread_mutex_lock@@GLIBC_2.2.5
+   115451272    0.11%      111  get_futex_key_[k]
+   115149234    0.11%      111  avrora.arch.legacy.LegacyInstr$RET.accept
+   113649868    0.11%      109  avrora.sim.AtmelInterpreter.getSP
+   113154387    0.11%      110  current_time_[k]
+   112103570    0.11%      109  __cond_resched_[k]
+   111986924    0.11%      106  schedule_[k]
+   107230165    0.10%      103  avrora.sim.clock.MainClock.insertEvent
+   107209291    0.10%      104  __x64_sys_write_[k]
+   106139113    0.10%      102  avrora.arch.legacy.LegacyRegister.getNumber
+   104245568    0.10%       99  avrora.arch.legacy.LegacyInstr$AND.accept
+   103785290    0.10%      100  syscall_exit_to_user_mode_[k]
+   102895872    0.10%      100  dput_[k]
+   102816806    0.10%       99  JVM_MonitorNotifyAll
+   102198996    0.10%       99  lockref_get_not_zero_[k]
+   101991625    0.10%       98  avrora.sim.mcu.SPI.receive
+   101887209    0.10%       98  cck.util.Arithmetic.uword
+   100893596    0.10%       98  fault_in_iov_iter_readable_[k]
+    97843933    0.09%       95  ksys_write_[k]
+    97044280    0.09%       94  generic_write_checks_[k]
+    95159129    0.09%       92  __srcu_read_lock_[k]
+    93738439    0.09%       90  avrora.sim.clock.MainClock.advance
+    93499547    0.09%       90  java.lang.Object.notifyAll
+    92935314    0.09%       90  file_remove_privs_[k]
+    92928795    0.09%       90  xas_start_[k]
+    92904042    0.09%       90  xas_load_[k]
+    92609745    0.09%       90  mutex_unlock_[k]
+    91843224    0.09%       89  kmalloc_slab_[k]
+    90888782    0.09%       88  syscall_trace_enter.constprop.0_[k]
+    90710847    0.09%       88  xfs_ilock?[xfs]_[k]
+    90617018    0.09%       87  org.dacapo.harness.TeeOutputStream.write
+    88424825    0.09%       86  folio_unlock_[k]
+    87741956    0.08%       85  PageHeadHuge_[k]
+    86403513    0.08%       83  os::PlatformEvent::park()
+    85949321    0.08%       83  os::PlatformEvent::unpark()
+    84134941    0.08%       81  SpinPause
+    82491962    0.08%       80  mutex_lock_[k]
+    81469885    0.08%       79  file_update_time_[k]
+    81184187    0.08%       78  avrora.arch.legacy.LegacyInstr$STS.accept
+    78170211    0.08%       75  avrora.sim.AtmelInterpreter$SREGBehavior.read
+    78116042    0.08%       75  futex_wait_queue_[k]
+    77460345    0.07%       74  futex_wait_setup_[k]
+    77375817    0.07%       75  refill_obj_stock_[k]
+    77064222    0.07%       74  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<544868ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 544868ul>::oop_access_barrier(void*)
+    76883085    0.07%       74  __GI___pthread_mutex_unlock_usercnt
+    76120813    0.07%       74  java_lang_ref_Reference::is_referent_field(oopDesc*, long)
+    74788346    0.07%       71  avrora.sim.AtmelInterpreter$SREGBehavior.write
+    74677661    0.07%       72  folio_memcg_lock.part.0_[k]
+    73015900    0.07%       73  IndexSetIterator::advance_and_next()

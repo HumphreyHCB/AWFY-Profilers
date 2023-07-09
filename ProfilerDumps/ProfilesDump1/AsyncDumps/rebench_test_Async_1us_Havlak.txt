@@ -1,0 +1,1683 @@
+--- Execution profile ---
+Total samples       : 8501585
+GC_active           : 1 (0.00%)
+not_walkable_not_Java: 1 (0.00%)
+unknown_Java        : 6945 (0.08%)
+not_walkable_Java   : 2053 (0.02%)
+deoptimization      : 264 (0.00%)
+
+--- 26789647367 ns (30.05%), 2607722 samples
+  [ 0] som.IdentitySet.lambda$contains$0
+  [ 1] som.IdentitySet$$Lambda$10.0x0000000801009b40.test
+  [ 2] som.Vector.hasSome
+  [ 3] som.Set.hasSome
+  [ 4] som.IdentitySet.contains
+  [ 5] som.Set.add
+  [ 6] havlak.SimpleLoop.addChildLoop
+  [ 7] havlak.SimpleLoop.setParent
+  [ 8] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 9] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [10] som.Vector.forEach
+  [11] havlak.LoopStructureGraph.calculateNestingLevel
+  [12] havlak.LoopTesterApp.main
+  [13] Havlak.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 7837187764 ns (8.79%), 650954 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 5925086764 ns (6.65%), 577257 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 4192053309 ns (4.70%), 409680 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 3598939028 ns (4.04%), 351031 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.addDummyLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 2104633206 ns (2.36%), 205902 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 1642093900 ns (1.84%), 160044 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 1623011347 ns (1.82%), 159524 samples
+  [ 0] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.stepD
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 1308321472 ns (1.47%), 127126 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 1086279047 ns (1.22%), 87794 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 2] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 3] G1ParEvacuateFollowersClosure::do_void()
+  [ 4] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 5] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 6] GangWorker::loop()
+  [ 7] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 1003914483 ns (1.13%), 98193 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 867202555 ns (0.97%), 85273 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 775713519 ns (0.87%), 75655 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 722732227 ns (0.81%), 70819 samples
+  [ 0] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 660779284 ns (0.74%), 64147 samples
+  [ 0] havlak.HavlakLoopFinder.stepD
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 595200406 ns (0.67%), 58429 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 5] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.processEdges
+  [ 8] havlak.HavlakLoopFinder.identifyEdges
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 581859050 ns (0.65%), 57018 samples
+  [ 0] som.Dictionary.transferEntries
+  [ 1] som.Dictionary.resize
+  [ 2] som.Dictionary.atPut
+  [ 3] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 4] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.initAllNodes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 490631487 ns (0.55%), 47937 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 458064555 ns (0.51%), 44588 samples
+  [ 0] som.Vector.forEach
+  [ 1] som.Set.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 3] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 4] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 8] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 9] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [10] som.Vector.forEach
+  [11] som.Set.forEach
+  [12] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [13] havlak.LoopStructureGraph.calculateNestingLevel
+  [14] havlak.LoopTesterApp.main
+  [15] Havlak.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 427817492 ns (0.48%), 41603 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Set.<init>
+  [ 2] som.Set.<init>
+  [ 3] som.IdentitySet.<init>
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 419554727 ns (0.47%), 41280 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 5] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.processEdges
+  [ 8] havlak.HavlakLoopFinder.identifyEdges
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 338572806 ns (0.38%), 33267 samples
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.addDummyLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 324729682 ns (0.36%), 31877 samples
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.initAllNodes
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 311704027 ns (0.35%), 30609 samples
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.initAllNodes
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.addDummyLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 309036442 ns (0.35%), 30257 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 300542127 ns (0.34%), 29347 samples
+  [ 0] havlak.UnionFindNode.union
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 292256714 ns (0.33%), 25380 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 284444450 ns (0.32%), 27973 samples
+  [ 0] havlak.HavlakLoopFinder.doDFS
+  [ 1] havlak.HavlakLoopFinder.doDFS
+  [ 2] havlak.HavlakLoopFinder.doDFS
+  [ 3] havlak.HavlakLoopFinder.doDFS
+  [ 4] havlak.HavlakLoopFinder.doDFS
+  [ 5] havlak.HavlakLoopFinder.doDFS
+  [ 6] havlak.HavlakLoopFinder.doDFS
+  [ 7] havlak.HavlakLoopFinder.initAllNodes
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 278834866 ns (0.31%), 27078 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 275951373 ns (0.31%), 26864 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 260345028 ns (0.29%), 25283 samples
+  [ 0] havlak.UnionFindNode.findSet
+  [ 1] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 2] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 3] som.Vector.forEach
+  [ 4] som.Set.forEach
+  [ 5] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 253605586 ns (0.28%), 24813 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 249203912 ns (0.28%), 24283 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 248795885 ns (0.28%), 24126 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 248355986 ns (0.28%), 24031 samples
+  [ 0] som.Vector.forEach
+  [ 1] som.Set.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 3] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 4] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 8] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 9] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [10] som.Vector.forEach
+  [11] som.Set.forEach
+  [12] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [13] havlak.LoopStructureGraph.calculateNestingLevel
+  [14] havlak.LoopTesterApp.main
+  [15] Havlak.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 246639601 ns (0.28%), 23972 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Set.<init>
+  [ 2] som.Set.<init>
+  [ 3] som.IdentitySet.<init>
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.addDummyLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 236704983 ns (0.27%), 23053 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addChildLoop
+  [ 5] havlak.SimpleLoop.setParent
+  [ 6] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 7] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 8] som.Vector.forEach
+  [ 9] havlak.LoopStructureGraph.calculateNestingLevel
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 229862783 ns (0.26%), 18802 samples
+  [ 0] .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 187504378 ns (0.21%), 18245 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 182236794 ns (0.20%), 17626 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 176976451 ns (0.20%), 17193 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 1] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 2] som.Vector.forEach
+  [ 3] som.Set.forEach
+  [ 4] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 162613363 ns (0.18%), 15906 samples
+  [ 0] som.Vector.append
+  [ 1] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 2] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.processEdges
+  [ 5] havlak.HavlakLoopFinder.identifyEdges
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 157485512 ns (0.18%), 15365 samples
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 148058581 ns (0.17%), 14568 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 145812633 ns (0.16%), 14196 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 1] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.initAllNodes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.addDummyLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 139145654 ns (0.16%), 13532 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 132805765 ns (0.15%), 12818 samples
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 130981555 ns (0.15%), 12740 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addChildLoop
+  [ 5] havlak.SimpleLoop.setParent
+  [ 6] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 7] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 8] som.Vector.forEach
+  [ 9] havlak.LoopStructureGraph.calculateNestingLevel
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 128864548 ns (0.14%), 12297 samples
+  [ 0] Node::dominates(Node*, Node_List&)
+  [ 1] MemNode::all_controls_dominate(Node*, Node*) [clone .part.0]
+  [ 2] InitializeNode::detect_init_independence(Node*, PhaseGVN*)
+  [ 3] InitializeNode::can_capture_store(StoreNode*, PhaseGVN*, bool) [clone .part.0]
+  [ 4] StoreNode::Ideal(PhaseGVN*, bool)
+  [ 5] PhaseIterGVN::transform_old(Node*)
+  [ 6] PhaseIterGVN::optimize()
+  [ 7] Compile::Optimize()
+  [ 8] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 9] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [10] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [11] CompileBroker::compiler_thread_loop()
+  [12] JavaThread::thread_main_inner()
+  [13] .annobin__ZN6Thread8call_runEv.start
+  [14] thread_native_entry(Thread*)
+  [15] start_thread
+
+--- 123444292 ns (0.14%), 12078 samples
+  [ 0] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 119714931 ns (0.13%), 11591 samples
+  [ 0] havlak.HavlakLoopFinder.stepD
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 118203176 ns (0.13%), 11494 samples
+  [ 0] som.Vector.at
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 113629321 ns (0.13%), 11054 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepD$6
+  [ 4] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.stepD
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 113493549 ns (0.13%), 11041 samples
+  [ 0] havlak.UnionFindNode.findSet
+  [ 1] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 2] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 3] som.Vector.forEach
+  [ 4] som.Set.forEach
+  [ 5] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.addDummyLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 109310296 ns (0.12%), 10577 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.HavlakLoopFinder.<init>
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 109244863 ns (0.12%), 10670 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.addDummyLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 105375478 ns (0.12%), 10258 samples
+  [ 0] havlak.UnionFindNode.union
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 104073833 ns (0.12%), 10139 samples
+  [ 0] som.Dictionary.insertBucketEntry
+  [ 1] som.Dictionary.atPut
+  [ 2] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 3] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 4] som.Vector.forEach
+  [ 5] havlak.HavlakLoopFinder.initAllNodes
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 99151079 ns (0.11%), 9704 samples
+  [ 0] havlak.HavlakLoopFinder.initAllNodes
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 97918737 ns (0.11%), 9611 samples
+  [ 0] som.Dictionary.removeAll
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 97648331 ns (0.11%), 9525 samples
+  [ 0] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 1] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 5] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 6] som.Vector.forEach
+  [ 7] som.Set.forEach
+  [ 8] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 95461361 ns (0.11%), 9308 samples
+  [ 0] havlak.SimpleLoop.addNode
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 93663907 ns (0.11%), 9157 samples
+  [ 0] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 1] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 5] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 6] som.Vector.forEach
+  [ 7] havlak.HavlakLoopFinder.processEdges
+  [ 8] havlak.HavlakLoopFinder.identifyEdges
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.addDummyLoops
+  [12] havlak.LoopTesterApp.main
+  [13] Havlak.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 92896324 ns (0.10%), 9020 samples
+  [ 0] som.Vector.at
+  [ 1] havlak.HavlakLoopFinder.stepD
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.addDummyLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 90152217 ns (0.10%), 8762 samples
+  [ 0] som.Vector.append
+  [ 1] som.Set.add
+  [ 2] havlak.SimpleLoop.addNode
+  [ 3] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 4] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 83197210 ns (0.09%), 8177 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 1] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.processEdges
+  [ 4] havlak.HavlakLoopFinder.identifyEdges
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 79342469 ns (0.09%), 7712 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepD$6
+  [ 4] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.stepD
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 78249775 ns (0.09%), 7725 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Set.<init>
+  [ 2] som.Set.<init>
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 76423613 ns (0.09%), 7370 samples
+  [ 0] som.Dictionary.insertBucketEntry
+  [ 1] som.Dictionary.atPut
+  [ 2] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 3] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 4] som.Vector.forEach
+  [ 5] havlak.HavlakLoopFinder.initAllNodes
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.addDummyLoops
+  [ 9] havlak.LoopTesterApp.main
+  [10] Havlak.innerBenchmarkLoop
+  [11] Run.measure
+  [12] Run.doRuns
+  [13] Run.runBenchmark
+  [14] Harness.main
+
+--- 75505100 ns (0.08%), 7309 samples
+  [ 0] som.Vector.forEach
+  [ 1] som.Set.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 3] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 4] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 8] havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+  [ 9] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [10] som.Vector.forEach
+  [11] som.Set.forEach
+  [12] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [13] havlak.LoopStructureGraph.calculateNestingLevel
+  [14] havlak.LoopTesterApp.main
+  [15] Havlak.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 74900329 ns (0.08%), 7306 samples
+  [ 0] som.Vector.append
+  [ 1] som.Set.add
+  [ 2] havlak.SimpleLoop.addNode
+  [ 3] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 4] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.addDummyLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 73331004 ns (0.08%), 7130 samples
+  [ 0] havlak.SimpleLoop.setParent
+  [ 1] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 2] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 73158752 ns (0.08%), 7123 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Set.<init>
+  [ 2] som.Set.<init>
+  [ 3] som.IdentitySet.<init>
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 70972801 ns (0.08%), 6933 samples
+  [ 0] havlak.HavlakLoopFinder.initAllNodes
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 70432489 ns (0.08%), 6886 samples
+  [ 0] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 3] havlak.HavlakLoopFinder.findLoops
+  [ 4] havlak.LoopTesterApp.findLoops
+  [ 5] havlak.LoopTesterApp.addDummyLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 70242807 ns (0.08%), 6879 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 4] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 65698331 ns (0.07%), 6510 samples
+  [ 0] itable stub
+  [ 1] som.Vector.hasSome
+  [ 2] som.Set.hasSome
+  [ 3] som.IdentitySet.contains
+  [ 4] som.Set.add
+  [ 5] havlak.SimpleLoop.addChildLoop
+  [ 6] havlak.SimpleLoop.setParent
+  [ 7] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 8] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 9] som.Vector.forEach
+  [10] havlak.LoopStructureGraph.calculateNestingLevel
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 65679559 ns (0.07%), 6361 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 64889717 ns (0.07%), 6333 samples
+  [ 0] java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+  [ 1] java.lang.invoke.Invokers$Holder.linkToTargetMethod
+  [ 2] som.Set.contains
+  [ 3] som.Set.add
+  [ 4] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 5] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 6] som.Vector.forEach
+  [ 7] som.Set.forEach
+  [ 8] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 9] havlak.HavlakLoopFinder.findLoops
+  [10] havlak.LoopTesterApp.findLoops
+  [11] havlak.LoopTesterApp.addDummyLoops
+  [12] havlak.LoopTesterApp.main
+  [13] Havlak.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 64081692 ns (0.07%), 6232 samples
+  [ 0] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 1] som.Vector.forEach
+  [ 2] havlak.HavlakLoopFinder.processEdges
+  [ 3] havlak.HavlakLoopFinder.identifyEdges
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 62174185 ns (0.07%), 6064 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepD$6
+  [ 4] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.stepD
+  [ 7] havlak.HavlakLoopFinder.findLoops
+  [ 8] havlak.LoopTesterApp.findLoops
+  [ 9] havlak.LoopTesterApp.addDummyLoops
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 61518910 ns (0.07%), 6042 samples
+  [ 0] som.Vector.<init>
+  [ 1] som.Vector.<init>
+  [ 2] havlak.UnionFindNode.findSet
+  [ 3] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 4] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 5] som.Vector.forEach
+  [ 6] som.Set.forEach
+  [ 7] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 61252418 ns (0.07%), 5944 samples
+  [ 0] itable stub
+  [ 1] som.Vector.forEach
+  [ 2] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 3] havlak.LoopTesterApp.main
+  [ 4] Havlak.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] Run.doRuns
+  [ 7] Run.runBenchmark
+  [ 8] Harness.main
+
+--- 61036175 ns (0.07%), 5946 samples
+  [ 0] havlak.SimpleLoop.addNode
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.addDummyLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 60551277 ns (0.07%), 5869 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.addChildLoop
+  [ 5] havlak.SimpleLoop.setParent
+  [ 6] havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+  [ 7] havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+  [ 8] som.Vector.forEach
+  [ 9] havlak.LoopStructureGraph.calculateNestingLevel
+  [10] havlak.LoopTesterApp.main
+  [11] Havlak.innerBenchmarkLoop
+  [12] Run.measure
+  [13] Run.doRuns
+  [14] Run.runBenchmark
+  [15] Harness.main
+
+--- 60478594 ns (0.07%), 5888 samples
+  [ 0] som.Dictionary.removeAll
+  [ 1] havlak.HavlakLoopFinder.findLoops
+  [ 2] havlak.LoopTesterApp.findLoops
+  [ 3] havlak.LoopTesterApp.addDummyLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 60346432 ns (0.07%), 5858 samples
+  [ 0] havlak.UnionFindNode.findSet
+  [ 1] havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  [ 2] havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+  [ 3] som.Vector.forEach
+  [ 4] som.Set.forEach
+  [ 5] havlak.HavlakLoopFinder.stepEProcessNonBackPreds
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 59899587 ns (0.07%), 5915 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 59334032 ns (0.07%), 5742 samples
+  [ 0] havlak.UnionFindNode.getLoop
+  [ 1] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 2] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 3] som.Vector.forEach
+  [ 4] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 5] havlak.HavlakLoopFinder.findLoops
+  [ 6] havlak.LoopTesterApp.findLoops
+  [ 7] havlak.LoopTesterApp.main
+  [ 8] Havlak.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] Run.doRuns
+  [11] Run.runBenchmark
+  [12] Harness.main
+
+--- 57605663 ns (0.06%), 5615 samples
+  [ 0] som.Vector.forEach
+  [ 1] havlak.HavlakLoopFinder.initAllNodes
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 57456513 ns (0.06%), 5134 samples
+  [ 0] __memset_avx2_unaligned_erms
+  [ 1] .annobin__ZN17G1RemSetScanState20G1ClearCardTableTask7do_workEj.start
+  [ 2] G1BatchedGangTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 57050245 ns (0.06%), 5558 samples
+  [ 0] havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+  [ 1] som.Vector.forEach
+  [ 2] som.Set.forEach
+  [ 3] havlak.LoopStructureGraph.calculateNestingLevelRec
+  [ 4] havlak.LoopStructureGraph.calculateNestingLevel
+  [ 5] havlak.LoopTesterApp.main
+  [ 6] Havlak.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] Run.doRuns
+  [ 9] Run.runBenchmark
+  [10] Harness.main
+
+--- 57002801 ns (0.06%), 5541 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 56795733 ns (0.06%), 5530 samples
+  [ 0] havlak.SimpleLoop.<init>
+  [ 1] havlak.LoopStructureGraph.createNewLoop
+  [ 2] havlak.HavlakLoopFinder.findLoops
+  [ 3] havlak.LoopTesterApp.findLoops
+  [ 4] havlak.LoopTesterApp.main
+  [ 5] Havlak.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] Run.doRuns
+  [ 8] Run.runBenchmark
+  [ 9] Harness.main
+
+--- 56018105 ns (0.06%), 5467 samples
+  [ 0] havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+  [ 1] havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+  [ 2] som.Vector.forEach
+  [ 3] havlak.HavlakLoopFinder.setLoopAttributes
+  [ 4] havlak.HavlakLoopFinder.findLoops
+  [ 5] havlak.LoopTesterApp.findLoops
+  [ 6] havlak.LoopTesterApp.main
+  [ 7] Havlak.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] Run.doRuns
+  [10] Run.runBenchmark
+  [11] Harness.main
+
+--- 55027169 ns (0.06%), 5393 samples
+  [ 0] havlak.BasicBlock.customHash
+  [ 1] som.Dictionary.hash
+  [ 2] som.Dictionary.at
+  [ 3] havlak.HavlakLoopFinder.lambda$processEdges$1
+  [ 4] havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+  [ 5] som.Vector.forEach
+  [ 6] havlak.HavlakLoopFinder.processEdges
+  [ 7] havlak.HavlakLoopFinder.identifyEdges
+  [ 8] havlak.HavlakLoopFinder.findLoops
+  [ 9] havlak.LoopTesterApp.findLoops
+  [10] havlak.LoopTesterApp.addDummyLoops
+  [11] havlak.LoopTesterApp.main
+  [12] Havlak.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 55021740 ns (0.06%), 5345 samples
+  [ 0] som.Vector.hasSome
+  [ 1] som.Set.hasSome
+  [ 2] som.IdentitySet.contains
+  [ 3] som.Set.add
+  [ 4] havlak.SimpleLoop.<init>
+  [ 5] havlak.LoopStructureGraph.createNewLoop
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 54672649 ns (0.06%), 5311 samples
+  [ 0] havlak.HavlakLoopFinder.findLoops
+  [ 1] havlak.LoopTesterApp.findLoops
+  [ 2] havlak.LoopTesterApp.main
+  [ 3] Havlak.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] Run.doRuns
+  [ 6] Run.runBenchmark
+  [ 7] Harness.main
+
+--- 54139965 ns (0.06%), 5299 samples
+  [ 0] som.Vector.forEach
+  [ 1] havlak.UnionFindNode.findSet
+  [ 2] havlak.HavlakLoopFinder.lambda$stepD$6
+  [ 3] havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  [ 4] som.Vector.forEach
+  [ 5] havlak.HavlakLoopFinder.stepD
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+--- 53912404 ns (0.06%), 5230 samples
+  [ 0] som.Dictionary.insertBucketEntry
+  [ 1] som.Dictionary.atPut
+  [ 2] havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  [ 3] havlak.HavlakLoopFinder$$Lambda$2.0x0000000801008800.apply
+  [ 4] som.Vector.forEach
+  [ 5] havlak.HavlakLoopFinder.initAllNodes
+  [ 6] havlak.HavlakLoopFinder.findLoops
+  [ 7] havlak.LoopTesterApp.findLoops
+  [ 8] havlak.LoopTesterApp.main
+  [ 9] Havlak.innerBenchmarkLoop
+  [10] Run.measure
+  [11] Run.doRuns
+  [12] Run.runBenchmark
+  [13] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 26839163365   30.10%  2612559  som.IdentitySet.lambda$contains$0
+ 10086836126   11.31%   983366  havlak.HavlakLoopFinder.lambda$initAllNodes$0
+  8149312113    9.14%   677881  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  5328883329    5.98%   520888  havlak.HavlakLoopFinder.lambda$processEdges$1
+  4841267758    5.43%   472403  havlak.HavlakLoopFinder.doDFS
+  4387500332    4.92%   427177  havlak.HavlakLoopFinder.findLoops
+  3471440848    3.89%   339131  havlak.HavlakLoopFinder.lambda$stepEProcessNonBackPreds$4
+  3400786191    3.81%   332009  som.Vector.append
+  2032389161    2.28%   198853  som.Vector.hasSome
+  1893367138    2.12%   183960  som.Vector.forEach
+  1721393134    1.93%   169170  havlak.HavlakLoopFinder$$Lambda$5.0x0000000801009078.apply
+  1711241253    1.92%   166628  som.Vector.<init>
+  1356652212    1.52%   109956  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   929590922    1.04%    90192  havlak.HavlakLoopFinder.stepD
+   813460630    0.91%    79474  som.Dictionary.transferEntries
+   756729876    0.85%    74104  havlak.LoopStructureGraph$$Lambda$12.0x0000000801009f90.apply
+   731513800    0.82%    71582  som.Dictionary.atPut
+   583855117    0.65%    56734  havlak.UnionFindNode.findSet
+   412056297    0.46%    40209  havlak.UnionFindNode.union
+   348639112    0.39%    33896  som.Vector.at
+   305549767    0.34%    29811  java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial
+   301191381    0.34%    29257  som.Dictionary.insertBucketEntry
+   279249276    0.31%    27289  havlak.HavlakLoopFinder$$Lambda$11.0x0000000801009d68.apply
+   200983373    0.23%    19157  Node::dominates(Node*, Node_List&)
+   178753722    0.20%    17479  som.Dictionary.removeAll
+   172986321    0.19%    16914  havlak.HavlakLoopFinder.initAllNodes
+   168388943    0.19%    16415  havlak.HavlakLoopFinder$$Lambda$3.0x0000000801008a28.apply
+   162012090    0.18%    15621  java.util.Arrays.copyOf
+   158809507    0.18%    15478  havlak.SimpleLoop.addNode
+   154430977    0.17%    13776  __memset_avx2_unaligned_erms
+   149300286    0.17%    14635  itable stub
+   134965106    0.15%    13177  som.Vector.removeAll
+   133420125    0.15%    12874  jint_disjoint_arraycopy
+   122640717    0.14%    11891  havlak.SimpleLoop.<init>
+   122539793    0.14%    11942  havlak.HavlakLoopFinder.lambda$setLoopAttributes$5
+   104382987    0.12%     5894  _raw_spin_unlock_irqrestore_[k]
+   103141784    0.12%    10031  havlak.SimpleLoop.setParent
+   101379277    0.11%     9898  havlak.BasicBlock.customHash
+   100999803    0.11%     9864  havlak.HavlakLoopFinder$$Lambda$8.0x00000008010096f0.apply
+    98396550    0.11%     9551  havlak.LoopStructureGraph.createNewLoop
+    84647747    0.09%     8270  som.Set.hasSome
+    83090724    0.09%     8035  havlak.LoopStructureGraph$$Lambda$13.0x000000080100a1b8.apply
+    76581535    0.09%     7431  havlak.UnionFindNode.getLoop
+    72678305    0.08%     7071  havlak.HavlakLoopFinder.isAncestor
+    59969347    0.07%     5922  PhaseChaitin::Split(unsigned int, ResourceArea*)
+    52590899    0.06%     4154  __memmove_avx_unaligned_erms
+    51562601    0.06%     5059  havlak.LoopStructureGraph.lambda$calculateNestingLevel$0
+    51188967    0.06%     2956  HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+    51169325    0.06%     4968  IndexSetIterator::advance_and_next()
+    50404378    0.06%     4905  java.lang.invoke.DirectMethodHandle.allocateInstance
+    49198221    0.06%     3779  G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+    47748063    0.05%     4640  .annobin_Unsafe_AllocateInstance.start
+    47184789    0.05%     4537  havlak.LoopTesterApp.findLoops
+    46254687    0.05%     4507  havlak.HavlakLoopFinder.lambda$stepD$6
+    45851462    0.05%     4260  __memset_avx2_unaligned
+    43834620    0.05%     4285  java.lang.Object.<init>
+    43054615    0.05%     3630  __tls_get_addr
+    42969125    0.05%     4178  som.Set.<init>
+    42638634    0.05%     2832  [vdso]
+    42620850    0.05%     4081  MemAllocator::allocate() const
+    42226436    0.05%     4080  PhaseChaitin::gather_lrg_masks(bool)
+    42090064    0.05%     4109  havlak.UnionFindNode.getBb
+    40251792    0.05%     3927  havlak.UnionFindNode.initNode
+    38937990    0.04%     3783  havlak.SimpleLoop.addChildLoop
+    38443865    0.04%     3729  PhaseLive::compute(unsigned int)
+    38124289    0.04%     3701  som.IdentityDictionary$IdEntry.match
+    37993170    0.04%     2651  generic_exec_single_[k]
+    37275062    0.04%     3660  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+    36872680    0.04%     3586  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+    36180183    0.04%     3528  som.IdentityDictionary.newEntry
+    34587862    0.04%     3374  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+    33913637    0.04%     3299  jdk.internal.misc.Unsafe.allocateInstance
+    32201929    0.04%     3190  som.IdentitySet$$Lambda$10.0x0000000801009b40.test
+    31591840    0.04%     2678  G1FromCardCache::clear(unsigned int)
+    30910489    0.03%     3009  PhaseChaitin::post_allocate_copy_removal()
+    30806520    0.03%     3004  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+    29705389    0.03%     2830  havlak.LoopTesterApp.addDummyLoops
+    28917849    0.03%     2627  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+    27325416    0.03%     2668  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+    25177986    0.03%     1707  .annobin__ZN32G1ScanCollectionSetRegionClosure14do_heap_regionEP10HeapRegion.start
+    25169766    0.03%     2396  havlak.LoopStructureGraph.lambda$calculateNestingLevelRec$1
+    25074311    0.03%     1721  _raw_spin_unlock_irq_[k]
+    24748267    0.03%     2279  HeapRegionManager::allocate_free_region(HeapRegionType, unsigned int)
+    23868127    0.03%     2252  G1Allocator::unsafe_max_tlab_alloc()
+    22754126    0.03%     2101  Dict::Insert(void*, void*, bool)
+    22716148    0.03%     2238  PhaseIdealLoop::is_dominator(Node*, Node*)
+    22503215    0.03%     2149  InstanceKlass::allocate_objArray(int, int, JavaThread*)
+    22388857    0.03%     2079  ObjArrayAllocator::initialize(HeapWordImpl**) const
+    22111159    0.02%     2182  _dl_update_slotinfo
+    22036609    0.02%     2110  ObjAllocator::initialize(HeapWordImpl**) const
+    21889103    0.02%     2180  Arena::contains(void const*) const
+    21874544    0.02%     2045  Interpreter
+    21516676    0.02%     2093  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+    21045813    0.02%     2049  PhaseIdealLoop::Dominators()
+    20929405    0.02%     1430  exit_to_user_mode_loop_[k]
+    20918996    0.02%     1952  NodeHash::hash_find_insert(Node*)
+    20728915    0.02%     2022  som.Set.add
+    20263333    0.02%     1988  Matcher::xform(Node*, int)
+    19507322    0.02%     1874  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+    19466255    0.02%     1820  G1Policy::preventive_collection_required(unsigned int)
+    19223364    0.02%     1869  java.lang.Integer.valueOf
+    18870756    0.02%     1483  __memcpy_avx_unaligned
+    18810476    0.02%     1795  PhaseIterGVN::subsume_node(Node*, Node*)
+    18804936    0.02%     1842  PhaseCCP::analyze()
+    18291284    0.02%     1764  som.Dictionary.at
+    18289996    0.02%     1771  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+    18116293    0.02%     1755  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+    17371164    0.02%     1669  OptoRuntime::new_array_C(Klass*, int, JavaThread*)
+    17294315    0.02%      873  clock_gettime@GLIBC_2.2.5
+    17216929    0.02%     1648  ClassLoaderData::holder_phantom() const
+    17029445    0.02%     1637  SharedRuntime::on_slowpath_allocation_exit(JavaThread*)
+    16757107    0.02%     1606  MemAllocator::Allocation::notify_allocation_jvmti_sampler()
+    16416591    0.02%     1509  havlak.LoopTesterApp.main
+    16407314    0.02%     1573  PhaseIterGVN::add_users_to_worklist(Node*)
+    15930563    0.02%     1499  G1CollectedHeap::attempt_allocation_slow(unsigned long)
+    15622753    0.02%      973  G1PrepareEvacuationTask::G1PrepareRegionsClosure::do_heap_region(HeapRegion*)
+    15512593    0.02%     1498  PhaseIterGVN::transform_old(Node*)
+    15408204    0.02%     1435  Unique_Node_List::remove(Node*)
+    15206476    0.02%     1482  havlak.ControlFlowGraph.createNode
+    14997746    0.02%     1462  havlak.BasicBlockEdge.<init>
+    14768533    0.02%     1419  PhaseOutput::BuildOopMaps()
+    14670613    0.02%     1345  SpinPause
+    14305282    0.02%     1242  G1BlockOffsetTablePart::zero_bottom_entry_raw()
+    14288384    0.02%     1400  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+    14215802    0.02%      519  __futex_abstimed_wait_common
+    14123003    0.02%     1353  __GI___pthread_mutex_trylock
+    13902764    0.02%     1316  Compile::find_alias_type(TypePtr const*, bool, ciField*) [clone .part.0]
+    13897514    0.02%     1188  FreeCSetClosure::do_heap_region(HeapRegion*)
+    13763825    0.02%     1321  Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+    13601291    0.02%      972  restore_fpregs_from_user_[k]
+    13567176    0.02%      902  syscall_enter_from_user_mode_[k]
+    13497272    0.02%     1313  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+    13294283    0.01%     1298  Compile::identify_useful_nodes(Unique_Node_List&)
+    13270223    0.01%     1220  G1CardTable::g1_mark_as_young(MemRegion const&)
+    12984114    0.01%     1263  PhaseChaitin::merge_multidefs()
+    12957653    0.01%     1275  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+    12946533    0.01%     1276  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+    12837652    0.01%     1230  Matcher::find_shared(Node*)
+    12738444    0.01%     1258  IndexSet::initialize(unsigned int)
+    12658144    0.01%     1177  Node::clone() const
+    12549432    0.01%     1054  OtherRegionsTable::occupied() const
+    12453021    0.01%     1202  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+    12396573    0.01%     1185  DebugInformationRecorder::find_sharable_decode_offset(int)
+    12261894    0.01%     1178  InstanceKlass::check_valid_for_instantiation(bool, JavaThread*)
+    12227264    0.01%     1183  IndexSet::alloc_block_containing(unsigned int)
+    12159551    0.01%     1176  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+    11792701    0.01%     1086  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+    11603275    0.01%     1077  Type::cmp(Type const*, Type const*)
+    11366243    0.01%     1111  som.Vector.size
+    11269683    0.01%     1075  MemAllocator::Allocation::check_out_of_memory()
+    11215893    0.01%      776  HeapRegionClaimer::claim_region(unsigned int)
+    11165005    0.01%     1040  G1CollectionSet::add_eden_region(HeapRegion*)
+    10960603    0.01%      942  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+    10935812    0.01%     1063  som.Vector.atPut
+    10900094    0.01%      728  copy_user_generic_string_[k]
+    10842125    0.01%     1054  Node::is_CFG() const
+    10800912    0.01%     1041  InstanceKlass::allocate_instance(JavaThread*)
+    10798872    0.01%     1058  som.IdentitySet$$Lambda$10.0x0000000801009b40.<init>
+    10738865    0.01%      636  native_queued_spin_lock_slowpath_[k]
+    10688883    0.01%     1041  som.Vector.isEmpty
+    10575755    0.01%     1027  Node::remove_dead_region(PhaseGVN*, bool)
+    10551650    0.01%     1028  som.Dictionary.<init>
+    10522583    0.01%      905  pthread_mutex_lock@@GLIBC_2.2.5
+    10490293    0.01%      939  clear_page_rep_[k]
+    10408275    0.01%     1019  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+    10284281    0.01%      626  G1RemSet::prepare_region_for_scan(HeapRegion*)
+    10277751    0.01%      984  MemAllocator::allocate_inside_tlab_slow(MemAllocator::Allocation&) const
+    10248154    0.01%     1001  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
+    10236742    0.01%      995  havlak.UnionFindNode.getDfsNumber
+    10108902    0.01%      971  CardTableBarrierSet::on_slowpath_allocation_exit(JavaThread*, oopDesc*)
+     9801352    0.01%      957  PhaseChaitin::gather_lrg_masks(bool) [clone .constprop.0]
+     9746873    0.01%      943  som.Dictionary.getBucketIdx
+     9644941    0.01%      947  Matcher::match_tree(Node const*)
+     9614180    0.01%      649  _int_malloc
+     9403011    0.01%      644  rmqueue_[k]
+     9310211    0.01%      903  g1_post_barrier_slow
+     9260632    0.01%      548  malloc
+     9259035    0.01%      909  PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+     9125715    0.01%      860  G1CollectedHeap::allocate_new_tlab(unsigned long, unsigned long, unsigned long*)
+     8897986    0.01%      779  ciObjectFactory::get_metadata(Metadata*)
+     8862382    0.01%      830  HSpaceCounters::update_used(unsigned long)
+     8856941    0.01%      832  .annobin__ZN25JfrObjectAllocationSample10send_eventEPK5KlassmbP6Thread.start
+     8765715    0.01%      857  NTarjan::DFS(NTarjan*, VectorSet&, PhaseIdealLoop*, unsigned int*)
+     8654610    0.01%      552  futex_wake_[k]
+     8612062    0.01%      814  G1CollectedHeap::unsafe_max_tlab_alloc(Thread*) const
+     8506601    0.01%      785  Node::Node(unsigned int)
+     8494446    0.01%      817  havlak.HavlakLoopFinder.<init>
+     8464901    0.01%      814  PhiNode::Ideal(PhaseGVN*, bool)
+     8323354    0.01%      814  PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+     8290705    0.01%      620  os::free(void*)
+     8179723    0.01%      778  PhaseIFG::effective_degree(unsigned int) const
+     8113831    0.01%      792  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+     8073203    0.01%      756  ObjectSampler::is_created()
+     8057446    0.01%      755  havlak.LoopTesterApp.constructCFG
+     7966524    0.01%      755  G1NUMA::index_of_current_thread() const
+     7867346    0.01%      766  PhaseCCP::transform(Node*)
+     7861242    0.01%      374  G1MergeHeapRootsTask::G1MergeCardSetClosure::do_heap_region(HeapRegion*)
+     7858605    0.01%      758  havlak.UnionFindNode$$Lambda$7.0x00000008010094c8.<init>
+     7773912    0.01%      728  TypeOopPtr::TypeOopPtr(Type::TYPES, TypePtr::PTR, ciKlass*, bool, ciObject*, int, int, TypePtr const*, int)
+     7741831    0.01%      760  PhaseChaitin::Select()

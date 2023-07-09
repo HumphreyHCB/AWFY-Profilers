@@ -1,0 +1,3617 @@
+--- Execution profile ---
+Total samples       : 460502
+GC_active           : 4 (0.00%)
+unknown_Java        : 1819 (0.40%)
+not_walkable_Java   : 351 (0.08%)
+deoptimization      : 12 (0.00%)
+
+--- 1482156847 ns (0.32%), 1482 samples
+  [ 0] org.apache.xerces.impl.XMLEntityScanner.scanContent
+  [ 1] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 2] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 4] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 5] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 6] org.apache.xerces.parsers.XMLParser.parse
+  [ 7] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [ 8] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [ 9] org.apache.xalan.transformer.TransformerImpl.transform
+  [10] org.apache.xalan.transformer.TransformerImpl.transform
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1223390074 ns (0.27%), 1221 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1176287485 ns (0.26%), 1176 samples
+  [ 0] jshort_disjoint_arraycopy
+  [ 1] org.apache.xml.utils.FastStringBuffer.append
+  [ 2] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.characters
+  [ 3] org.apache.xerces.parsers.AbstractSAXParser.characters
+  [ 4] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 6] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 9] org.apache.xerces.parsers.XMLParser.parse
+  [10] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [11] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.apache.xalan.transformer.TransformerImpl.transform
+  [15] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1081239037 ns (0.23%), 1079 samples
+  [ 0] lockref_get_not_zero_[k]
+  [ 1] dget_parent_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1050658033 ns (0.23%), 1051 samples
+  [ 0] org.apache.xalan.templates.TemplateList.getTemplateFast
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 3] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 4] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 7] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 8] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [10] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemLiteralResult.execute
+  [13] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [14] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [15] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [16] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [17] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [18] org.apache.xalan.transformer.TransformerImpl.transform
+  [19] org.apache.xalan.transformer.TransformerImpl.transform
+  [20] org.apache.xalan.transformer.TransformerImpl.transform
+  [21] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1038977103 ns (0.23%), 1039 samples
+  [ 0] org.apache.xerces.impl.XMLEntityScanner.scanContent
+  [ 1] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 2] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 4] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 5] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 6] org.apache.xerces.parsers.XMLParser.parse
+  [ 7] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [ 8] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [ 9] org.apache.xalan.transformer.TransformerImpl.transform
+  [10] org.apache.xalan.transformer.TransformerImpl.transform
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 1020751396 ns (0.22%), 1019 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeBytes
+  [ 5] Java_java_io_FileOutputStream_writeBytes
+  [ 6] java.io.FileOutputStream.writeBytes
+  [ 7] java.io.FileOutputStream.write
+  [ 8] sun.nio.cs.StreamEncoder.writeBytes
+  [ 9] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [10] sun.nio.cs.StreamEncoder.implFlush
+  [11] sun.nio.cs.StreamEncoder.flush
+  [12] java.io.OutputStreamWriter.flush
+  [13] org.apache.xml.serializer.ToStream.flushPending
+  [14] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 964248954 ns (0.21%), 964 samples
+  [ 0] java.util.Hashtable.get
+  [ 1] org.apache.xalan.templates.TemplateList.getHead
+  [ 2] org.apache.xalan.templates.TemplateList.getTemplate
+  [ 3] org.apache.xalan.templates.StylesheetRoot.getWhiteSpaceInfo
+  [ 4] org.apache.xalan.transformer.TransformerImpl.getShouldStripSpace
+  [ 5] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+  [ 6] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 7] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 8] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 9] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [10] org.apache.xerces.parsers.XML11Configuration.parse
+  [11] org.apache.xerces.parsers.XML11Configuration.parse
+  [12] org.apache.xerces.parsers.XMLParser.parse
+  [13] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [14] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [15] org.apache.xalan.transformer.TransformerImpl.transform
+  [16] org.apache.xalan.transformer.TransformerImpl.transform
+  [17] org.apache.xalan.transformer.TransformerImpl.transform
+  [18] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 904796846 ns (0.20%), 903 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 826141034 ns (0.18%), 826 samples
+  [ 0] org.apache.xerces.impl.io.UTF8Reader.read
+  [ 1] org.apache.xerces.impl.XMLEntityScanner.load
+  [ 2] org.apache.xerces.impl.XMLEntityScanner.scanContent
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 4] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 6] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XMLParser.parse
+  [ 9] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [10] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 819340894 ns (0.18%), 818 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 786775021 ns (0.17%), 785 samples
+  [ 0] lockref_get_not_zero_[k]
+  [ 1] dget_parent_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 785037312 ns (0.17%), 785 samples
+  [ 0] __GI___libc_write
+  [ 1] writeBytes
+  [ 2] Java_java_io_FileOutputStream_writeBytes
+  [ 3] java.io.FileOutputStream.writeBytes
+  [ 4] java.io.FileOutputStream.write
+  [ 5] sun.nio.cs.StreamEncoder.writeBytes
+  [ 6] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 7] sun.nio.cs.StreamEncoder.implFlush
+  [ 8] sun.nio.cs.StreamEncoder.flush
+  [ 9] java.io.OutputStreamWriter.flush
+  [10] org.apache.xml.serializer.ToStream.flushPending
+  [11] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [12] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [30] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [31] org.apache.xalan.transformer.TransformerImpl.transform
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 768293769 ns (0.17%), 768 samples
+  [ 0] org.apache.xpath.VariableStack.reset
+  [ 1] org.apache.xpath.VariableStack.reset
+  [ 2] org.apache.xpath.VariableStack.<init>
+  [ 3] org.apache.xpath.XPathContext.<init>
+  [ 4] org.apache.xpath.XPathContext.<init>
+  [ 5] org.apache.xpath.XPathContext.<init>
+  [ 6] org.apache.xalan.transformer.TransformerImpl.<init>
+  [ 7] org.apache.xalan.templates.StylesheetRoot.newTransformer
+  [ 8] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 767261218 ns (0.17%), 767 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 763365393 ns (0.17%), 762 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeBytes
+  [ 5] Java_java_io_FileOutputStream_writeBytes
+  [ 6] java.io.FileOutputStream.writeBytes
+  [ 7] java.io.FileOutputStream.write
+  [ 8] sun.nio.cs.StreamEncoder.writeBytes
+  [ 9] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [10] sun.nio.cs.StreamEncoder.implFlush
+  [11] sun.nio.cs.StreamEncoder.flush
+  [12] java.io.OutputStreamWriter.flush
+  [13] org.apache.xml.serializer.ToStream.flushPending
+  [14] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [29] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [30] org.apache.xalan.transformer.TransformerImpl.transform
+  [31] org.apache.xalan.transformer.TransformerImpl.transform
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 750564633 ns (0.16%), 751 samples
+  [ 0] org.apache.xalan.templates.TemplateList.getTemplateFast
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 3] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 4] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 7] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 8] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [10] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemLiteralResult.execute
+  [13] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [14] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [15] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [21] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [22] org.apache.xalan.transformer.TransformerImpl.transform
+  [23] org.apache.xalan.transformer.TransformerImpl.transform
+  [24] org.apache.xalan.transformer.TransformerImpl.transform
+  [25] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 733887434 ns (0.16%), 734 samples
+  [ 0] org.apache.xalan.templates.TemplateList.getTemplateFast
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 3] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 4] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 7] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 8] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [10] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [13] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [14] org.apache.xalan.transformer.TransformerImpl.transform
+  [15] org.apache.xalan.transformer.TransformerImpl.transform
+  [16] org.apache.xalan.transformer.TransformerImpl.transform
+  [17] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 726444702 ns (0.16%), 726 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] java.io.IOException.<init>
+  [ 9] java.io.EOFException.<init>
+  [10] org.apache.xerces.impl.XMLEntityScanner.load
+  [11] org.apache.xerces.impl.XMLEntityScanner.skipSpaces
+  [12] org.apache.xerces.impl.XMLDocumentScannerImpl$TrailingMiscDispatcher.dispatch
+  [13] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [14] org.apache.xerces.parsers.XML11Configuration.parse
+  [15] org.apache.xerces.parsers.XML11Configuration.parse
+  [16] org.apache.xerces.parsers.XMLParser.parse
+  [17] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [18] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [19] org.apache.xalan.transformer.TransformerImpl.transform
+  [20] org.apache.xalan.transformer.TransformerImpl.transform
+  [21] org.apache.xalan.transformer.TransformerImpl.transform
+  [22] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 714344224 ns (0.15%), 712 samples
+  [ 0] xfs_buffered_write_iomap_begin?[xfs]_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 696501500 ns (0.15%), 695 samples
+  [ 0] lockref_get_not_zero_[k]
+  [ 1] dget_parent_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 683127149 ns (0.15%), 682 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeBytes
+  [ 5] Java_java_io_FileOutputStream_writeBytes
+  [ 6] java.io.FileOutputStream.writeBytes
+  [ 7] java.io.FileOutputStream.write
+  [ 8] sun.nio.cs.StreamEncoder.writeBytes
+  [ 9] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [10] sun.nio.cs.StreamEncoder.implFlush
+  [11] sun.nio.cs.StreamEncoder.flush
+  [12] java.io.OutputStreamWriter.flush
+  [13] org.apache.xml.serializer.ToStream.flushPending
+  [14] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 672776728 ns (0.15%), 671 samples
+  [ 0] balance_dirty_pages_ratelimited_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.templates.ElemLiteralResult.execute
+  [34] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [35] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [36] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [37] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 661146365 ns (0.14%), 660 samples
+  [ 0] fsnotify_[k]
+  [ 1] __fsnotify_parent_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 658463614 ns (0.14%), 657 samples
+  [ 0] iomap_file_buffered_write_[k]
+  [ 1] xfs_file_buffered_write?[xfs]_[k]
+  [ 2] new_sync_write_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 644102481 ns (0.14%), 643 samples
+  [ 0] vfs_write_[k]
+  [ 1] ksys_write_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __GI___libc_write
+  [ 5] writeBytes
+  [ 6] Java_java_io_FileOutputStream_writeBytes
+  [ 7] java.io.FileOutputStream.writeBytes
+  [ 8] java.io.FileOutputStream.write
+  [ 9] sun.nio.cs.StreamEncoder.writeBytes
+  [10] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [11] sun.nio.cs.StreamEncoder.implFlush
+  [12] sun.nio.cs.StreamEncoder.flush
+  [13] java.io.OutputStreamWriter.flush
+  [14] org.apache.xml.serializer.ToStream.flushPending
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 633797430 ns (0.14%), 634 samples
+  [ 0] org.apache.xpath.axes.NodeSequence.setRoot
+  [ 1] org.apache.xpath.axes.LocPathIterator.asIterator
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 3] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 4] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 5] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 7] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 8] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 9] org.apache.xalan.templates.ElemLiteralResult.execute
+  [10] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [11] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [12] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [22] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [23] org.apache.xalan.transformer.TransformerImpl.transform
+  [24] org.apache.xalan.transformer.TransformerImpl.transform
+  [25] org.apache.xalan.transformer.TransformerImpl.transform
+  [26] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 626061861 ns (0.14%), 624 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] copy_page_from_iter_atomic_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 610430809 ns (0.13%), 609 samples
+  [ 0] lockref_put_return_[k]
+  [ 1] dput_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 609748051 ns (0.13%), 610 samples
+  [ 0] java.nio.Buffer.<init>
+  [ 1] java.nio.CharBuffer.<init>
+  [ 2] java.nio.HeapCharBuffer.<init>
+  [ 3] java.nio.CharBuffer.wrap
+  [ 4] sun.nio.cs.StreamEncoder.implWrite
+  [ 5] sun.nio.cs.StreamEncoder.write
+  [ 6] java.io.OutputStreamWriter.write
+  [ 7] org.apache.xml.serializer.ToStream.writeOutCleanChars
+  [ 8] org.apache.xml.serializer.ToStream.characters
+  [ 9] org.apache.xml.serializer.ToHTMLStream.characters
+  [10] org.apache.xml.utils.FastStringBuffer.sendSAXcharacters
+  [11] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.dispatchCharactersEvents
+  [12] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [13] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [14] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [15] org.apache.xalan.templates.ElemLiteralResult.execute
+  [16] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [17] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [18] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [32] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 606756107 ns (0.13%), 607 samples
+  [ 0] java.nio.Buffer.<init>
+  [ 1] java.nio.CharBuffer.<init>
+  [ 2] java.nio.HeapCharBuffer.<init>
+  [ 3] java.nio.CharBuffer.wrap
+  [ 4] sun.nio.cs.StreamEncoder.implWrite
+  [ 5] sun.nio.cs.StreamEncoder.write
+  [ 6] java.io.OutputStreamWriter.write
+  [ 7] org.apache.xml.serializer.ToStream.writeOutCleanChars
+  [ 8] org.apache.xml.serializer.ToStream.characters
+  [ 9] org.apache.xml.serializer.ToHTMLStream.characters
+  [10] org.apache.xml.utils.FastStringBuffer.sendSAXcharacters
+  [11] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.dispatchCharactersEvents
+  [12] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [13] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [14] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [15] org.apache.xalan.templates.ElemLiteralResult.execute
+  [16] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [17] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [18] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [28] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [29] org.apache.xalan.transformer.TransformerImpl.transform
+  [30] org.apache.xalan.transformer.TransformerImpl.transform
+  [31] org.apache.xalan.transformer.TransformerImpl.transform
+  [32] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 587050268 ns (0.13%), 587 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] javax.xml.transform.TransformerException.<init>
+  [ 9] org.apache.xalan.transformer.MsgMgr.message
+  [10] org.apache.xalan.templates.ElemMessage.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemChoose.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [31] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 577094381 ns (0.13%), 576 samples
+  [ 0] inotify_handle_inode_event_[k]
+  [ 1] send_to_group_[k]
+  [ 2] fsnotify_[k]
+  [ 3] __fsnotify_parent_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.templates.ElemLiteralResult.execute
+  [34] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [35] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [36] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [37] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 573034855 ns (0.12%), 573 samples
+  [ 0] __GI___libc_write
+  [ 1] writeBytes
+  [ 2] Java_java_io_FileOutputStream_writeBytes
+  [ 3] java.io.FileOutputStream.writeBytes
+  [ 4] java.io.FileOutputStream.write
+  [ 5] sun.nio.cs.StreamEncoder.writeBytes
+  [ 6] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 7] sun.nio.cs.StreamEncoder.implFlush
+  [ 8] sun.nio.cs.StreamEncoder.flush
+  [ 9] java.io.OutputStreamWriter.flush
+  [10] org.apache.xml.serializer.ToStream.flushPending
+  [11] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [12] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [26] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [27] org.apache.xalan.transformer.TransformerImpl.transform
+  [28] org.apache.xalan.transformer.TransformerImpl.transform
+  [29] org.apache.xalan.transformer.TransformerImpl.transform
+  [30] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 570039449 ns (0.12%), 570 samples
+  [ 0] org.apache.xpath.VariableStack.reset
+  [ 1] org.apache.xpath.VariableStack.reset
+  [ 2] org.apache.xalan.transformer.TransformerImpl.reset
+  [ 3] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [ 4] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 5] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 6] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 7] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 569256299 ns (0.12%), 569 samples
+  [ 0] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [ 1] org.apache.xpath.XPathContext.getDTM
+  [ 2] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [ 3] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 4] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 5] org.apache.xalan.transformer.TransformerImpl.transform
+  [ 6] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 550983043 ns (0.12%), 551 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] javax.xml.transform.TransformerException.<init>
+  [ 9] org.apache.xalan.transformer.MsgMgr.message
+  [10] org.apache.xalan.templates.ElemMessage.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemChoose.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 549554038 ns (0.12%), 548 samples
+  [ 0] balance_dirty_pages_ratelimited_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 540947848 ns (0.12%), 541 samples
+  [ 0] __GI___libc_write
+  [ 1] writeBytes
+  [ 2] Java_java_io_FileOutputStream_writeBytes
+  [ 3] java.io.FileOutputStream.writeBytes
+  [ 4] java.io.FileOutputStream.write
+  [ 5] sun.nio.cs.StreamEncoder.writeBytes
+  [ 6] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 7] sun.nio.cs.StreamEncoder.implFlush
+  [ 8] sun.nio.cs.StreamEncoder.flush
+  [ 9] java.io.OutputStreamWriter.flush
+  [10] org.apache.xml.serializer.ToStream.flushPending
+  [11] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [12] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 540943575 ns (0.12%), 535 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParEvacuateFollowersClosure::do_void()
+  [ 2] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 3] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 536026520 ns (0.12%), 535 samples
+  [ 0] __fget_light_[k]
+  [ 1] __fdget_pos_[k]
+  [ 2] ksys_write_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __GI___libc_write
+  [ 6] writeBytes
+  [ 7] Java_java_io_FileOutputStream_writeBytes
+  [ 8] java.io.FileOutputStream.writeBytes
+  [ 9] java.io.FileOutputStream.write
+  [10] sun.nio.cs.StreamEncoder.writeBytes
+  [11] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [12] sun.nio.cs.StreamEncoder.implFlush
+  [13] sun.nio.cs.StreamEncoder.flush
+  [14] java.io.OutputStreamWriter.flush
+  [15] org.apache.xml.serializer.ToStream.flushPending
+  [16] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 528122613 ns (0.11%), 528 samples
+  [ 0] org.apache.xpath.XPathContext.<init>
+  [ 1] org.apache.xpath.XPathContext.<init>
+  [ 2] org.apache.xpath.XPathContext.<init>
+  [ 3] org.apache.xalan.transformer.TransformerImpl.<init>
+  [ 4] org.apache.xalan.templates.StylesheetRoot.newTransformer
+  [ 5] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 515861119 ns (0.11%), 516 samples
+  [ 0] org.apache.xpath.axes.IteratorPool.getInstance
+  [ 1] org.apache.xpath.axes.LocPathIterator.asNode
+  [ 2] org.apache.xpath.axes.LocPathIterator.bool
+  [ 3] org.apache.xpath.XPath.bool
+  [ 4] org.apache.xalan.templates.ElemIf.execute
+  [ 5] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 6] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 7] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 8] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 9] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [10] org.apache.xalan.templates.ElemLiteralResult.execute
+  [11] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [12] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [19] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [20] org.apache.xalan.transformer.TransformerImpl.transform
+  [21] org.apache.xalan.transformer.TransformerImpl.transform
+  [22] org.apache.xalan.transformer.TransformerImpl.transform
+  [23] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 514859661 ns (0.11%), 515 samples
+  [ 0] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 2] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 3] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 4] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 6] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 7] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 8] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [10] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [11] org.apache.xalan.templates.ElemLiteralResult.execute
+  [12] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [13] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [14] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [15] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [16] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [17] org.apache.xalan.transformer.TransformerImpl.transform
+  [18] org.apache.xalan.transformer.TransformerImpl.transform
+  [19] org.apache.xalan.transformer.TransformerImpl.transform
+  [20] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 514138885 ns (0.11%), 514 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 513965025 ns (0.11%), 514 samples
+  [ 0] org.apache.xpath.axes.NodeSequence.setRoot
+  [ 1] org.apache.xpath.axes.LocPathIterator.asIterator
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 3] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 4] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 5] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 7] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 8] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 9] org.apache.xalan.templates.ElemLiteralResult.execute
+  [10] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [11] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [12] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [18] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [19] org.apache.xalan.transformer.TransformerImpl.transform
+  [20] org.apache.xalan.transformer.TransformerImpl.transform
+  [21] org.apache.xalan.transformer.TransformerImpl.transform
+  [22] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 508137405 ns (0.11%), 507 samples
+  [ 0] xfs_file_write_iter?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 506621227 ns (0.11%), 505 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] copy_page_from_iter_atomic_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 506210860 ns (0.11%), 506 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 502858342 ns (0.11%), 502 samples
+  [ 0] fsnotify_[k]
+  [ 1] __fsnotify_parent_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [32] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 495970144 ns (0.11%), 496 samples
+  [ 0] org.apache.xerces.impl.XMLEntityScanner.scanContent
+  [ 1] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 2] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 4] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 5] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 6] org.apache.xerces.parsers.XMLParser.parse
+  [ 7] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [ 8] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [ 9] org.apache.xalan.transformer.TransformerImpl.transform
+  [10] org.apache.xalan.transformer.TransformerImpl.transform
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 493964093 ns (0.11%), 494 samples
+  [ 0] org.apache.xml.utils.SuballocatedIntVector.addElement
+  [ 1] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.charactersFlush
+  [ 2] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+  [ 3] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 4] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 6] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 9] org.apache.xerces.parsers.XMLParser.parse
+  [10] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [11] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.apache.xalan.transformer.TransformerImpl.transform
+  [15] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 486157153 ns (0.11%), 485 samples
+  [ 0] lockref_put_return_[k]
+  [ 1] dput_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 485990990 ns (0.11%), 485 samples
+  [ 0] selinux_file_permission_[k]
+  [ 1] security_file_permission_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 485848293 ns (0.11%), 485 samples
+  [ 0] vfs_write_[k]
+  [ 1] ksys_write_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __GI___libc_write
+  [ 5] writeBytes
+  [ 6] Java_java_io_FileOutputStream_writeBytes
+  [ 7] java.io.FileOutputStream.writeBytes
+  [ 8] java.io.FileOutputStream.write
+  [ 9] sun.nio.cs.StreamEncoder.writeBytes
+  [10] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [11] sun.nio.cs.StreamEncoder.implFlush
+  [12] sun.nio.cs.StreamEncoder.flush
+  [13] java.io.OutputStreamWriter.flush
+  [14] org.apache.xml.serializer.ToStream.flushPending
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [30] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [31] org.apache.xalan.transformer.TransformerImpl.transform
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 484671636 ns (0.11%), 483 samples
+  [ 0] xfs_buffered_write_iomap_begin?[xfs]_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 474042419 ns (0.10%), 473 samples
+  [ 0] lockref_put_return_[k]
+  [ 1] dput_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 465221026 ns (0.10%), 465 samples
+  [ 0] org.apache.xerces.impl.XMLEntityScanner.scanQName
+  [ 1] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 2] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 4] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 5] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 6] org.apache.xerces.parsers.XMLParser.parse
+  [ 7] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [ 8] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [ 9] org.apache.xalan.transformer.TransformerImpl.transform
+  [10] org.apache.xalan.transformer.TransformerImpl.transform
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 463097293 ns (0.10%), 462 samples
+  [ 0] iomap_file_buffered_write_[k]
+  [ 1] xfs_file_buffered_write?[xfs]_[k]
+  [ 2] new_sync_write_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 462469426 ns (0.10%), 461 samples
+  [ 0] xfs_buffered_write_iomap_begin?[xfs]_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.templates.ElemLiteralResult.execute
+  [39] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [40] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [41] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [42] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 460834068 ns (0.10%), 461 samples
+  [ 0] org.apache.xpath.axes.NodeSequence.setRoot
+  [ 1] org.apache.xpath.axes.LocPathIterator.asIterator
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 3] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 4] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 5] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 7] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 8] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 9] org.apache.xalan.templates.ElemLiteralResult.execute
+  [10] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [11] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [12] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [13] org.apache.xalan.templates.ElemLiteralResult.execute
+  [14] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [15] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [16] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [26] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [27] org.apache.xalan.transformer.TransformerImpl.transform
+  [28] org.apache.xalan.transformer.TransformerImpl.transform
+  [29] org.apache.xalan.transformer.TransformerImpl.transform
+  [30] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 459985382 ns (0.10%), 459 samples
+  [ 0] __kmalloc_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 459880135 ns (0.10%), 459 samples
+  [ 0] fsnotify_[k]
+  [ 1] __fsnotify_parent_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.templates.ElemLiteralResult.execute
+  [36] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [37] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [38] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [39] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 457182714 ns (0.10%), 456 samples
+  [ 0] balance_dirty_pages_ratelimited_[k]
+  [ 1] iomap_file_buffered_write_[k]
+  [ 2] xfs_file_buffered_write?[xfs]_[k]
+  [ 3] new_sync_write_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.templates.ElemLiteralResult.execute
+  [34] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [35] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [36] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [37] org.apache.xalan.templates.ElemLiteralResult.execute
+  [38] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [39] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [40] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [41] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 447678629 ns (0.10%), 447 samples
+  [ 0] vfs_write_[k]
+  [ 1] ksys_write_[k]
+  [ 2] do_syscall_64_[k]
+  [ 3] entry_SYSCALL_64_after_hwframe_[k]
+  [ 4] __GI___libc_write
+  [ 5] writeBytes
+  [ 6] Java_java_io_FileOutputStream_writeBytes
+  [ 7] java.io.FileOutputStream.writeBytes
+  [ 8] java.io.FileOutputStream.write
+  [ 9] sun.nio.cs.StreamEncoder.writeBytes
+  [10] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [11] sun.nio.cs.StreamEncoder.implFlush
+  [12] sun.nio.cs.StreamEncoder.flush
+  [13] java.io.OutputStreamWriter.flush
+  [14] org.apache.xml.serializer.ToStream.flushPending
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [17] org.apache.xalan.templates.ElemLiteralResult.execute
+  [18] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [19] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [20] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.templates.ElemLiteralResult.execute
+  [34] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [35] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [36] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [37] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [38] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 438115386 ns (0.10%), 437 samples
+  [ 0] kfree_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 432034419 ns (0.09%), 432 samples
+  [ 0] org.apache.xml.dtm.ref.ExtendedType.redefine
+  [ 1] org.apache.xml.dtm.ref.ExpandedNameTable.getExpandedTypeID
+  [ 2] org.apache.xml.dtm.ref.ExpandedNameTable.getExpandedTypeID
+  [ 3] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+  [ 4] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 5] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 6] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 7] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 8] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 9] org.apache.xerces.parsers.XML11Configuration.parse
+  [10] org.apache.xerces.parsers.XMLParser.parse
+  [11] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [12] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.apache.xalan.transformer.TransformerImpl.transform
+  [15] org.apache.xalan.transformer.TransformerImpl.transform
+  [16] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 428049575 ns (0.09%), 428 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] javax.xml.transform.TransformerException.<init>
+  [ 9] org.apache.xalan.transformer.MsgMgr.message
+  [10] org.apache.xalan.templates.ElemMessage.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemChoose.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 419015197 ns (0.09%), 418 samples
+  [ 0] iomap_file_buffered_write_[k]
+  [ 1] xfs_file_buffered_write?[xfs]_[k]
+  [ 2] new_sync_write_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 410964629 ns (0.09%), 411 samples
+  [ 0] java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  [ 1] .annobin__ZN19java_lang_Throwable19fill_in_stack_traceE6HandleRK12methodHandle.start
+  [ 2] JVM_FillInStackTrace
+  [ 3] .annobin_Java_java_lang_Throwable_fillInStackTrace.start
+  [ 4] java.lang.Throwable.fillInStackTrace
+  [ 5] java.lang.Throwable.fillInStackTrace
+  [ 6] java.lang.Throwable.<init>
+  [ 7] java.lang.Exception.<init>
+  [ 8] javax.xml.transform.TransformerException.<init>
+  [ 9] org.apache.xalan.transformer.MsgMgr.message
+  [10] org.apache.xalan.templates.ElemMessage.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemChoose.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.templates.ElemLiteralResult.execute
+  [39] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [40] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [41] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [42] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 406804681 ns (0.09%), 406 samples
+  [ 0] __fget_light_[k]
+  [ 1] __fdget_pos_[k]
+  [ 2] ksys_write_[k]
+  [ 3] do_syscall_64_[k]
+  [ 4] entry_SYSCALL_64_after_hwframe_[k]
+  [ 5] __GI___libc_write
+  [ 6] writeBytes
+  [ 7] Java_java_io_FileOutputStream_writeBytes
+  [ 8] java.io.FileOutputStream.writeBytes
+  [ 9] java.io.FileOutputStream.write
+  [10] sun.nio.cs.StreamEncoder.writeBytes
+  [11] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [12] sun.nio.cs.StreamEncoder.implFlush
+  [13] sun.nio.cs.StreamEncoder.flush
+  [14] java.io.OutputStreamWriter.flush
+  [15] org.apache.xml.serializer.ToStream.flushPending
+  [16] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [31] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 404241850 ns (0.09%), 403 samples
+  [ 0] fault_in_readable_[k]
+  [ 1] fault_in_iov_iter_readable_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 401843645 ns (0.09%), 402 samples
+  [ 0] org.apache.xpath.axes.IteratorPool.getInstance
+  [ 1] org.apache.xpath.axes.LocPathIterator.asNode
+  [ 2] org.apache.xpath.axes.LocPathIterator.bool
+  [ 3] org.apache.xpath.XPath.bool
+  [ 4] org.apache.xalan.templates.ElemIf.execute
+  [ 5] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 6] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 7] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 8] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 9] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [10] org.apache.xalan.templates.ElemLiteralResult.execute
+  [11] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [12] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [23] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [24] org.apache.xalan.transformer.TransformerImpl.transform
+  [25] org.apache.xalan.transformer.TransformerImpl.transform
+  [26] org.apache.xalan.transformer.TransformerImpl.transform
+  [27] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 395838757 ns (0.09%), 396 samples
+  [ 0] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 2] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 3] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 4] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 6] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 7] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 8] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [10] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [11] org.apache.xalan.templates.ElemLiteralResult.execute
+  [12] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [13] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [14] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [15] org.apache.xalan.templates.ElemLiteralResult.execute
+  [16] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [17] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [18] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [19] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [20] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [21] org.apache.xalan.transformer.TransformerImpl.transform
+  [22] org.apache.xalan.transformer.TransformerImpl.transform
+  [23] org.apache.xalan.transformer.TransformerImpl.transform
+  [24] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 394277428 ns (0.09%), 393 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] copy_page_from_iter_atomic_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.templates.ElemLiteralResult.execute
+  [39] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [40] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [41] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [42] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 393734313 ns (0.09%), 393 samples
+  [ 0] send_to_group_[k]
+  [ 1] fsnotify_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.templates.ElemLiteralResult.execute
+  [41] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [42] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [43] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [44] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [45] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.apache.xalan.transformer.TransformerImpl.transform
+  [48] org.apache.xalan.transformer.TransformerImpl.transform
+  [49] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 392115247 ns (0.09%), 392 samples
+  [ 0] org.apache.xml.dtm.ref.ExpandedNameTable.getExpandedTypeID
+  [ 1] org.apache.xml.dtm.ref.ExpandedNameTable.getExpandedTypeID
+  [ 2] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+  [ 3] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 4] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 6] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 9] org.apache.xerces.parsers.XMLParser.parse
+  [10] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [11] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.apache.xalan.transformer.TransformerImpl.transform
+  [15] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 387710356 ns (0.08%), 387 samples
+  [ 0] inotify_handle_inode_event_[k]
+  [ 1] send_to_group_[k]
+  [ 2] fsnotify_[k]
+  [ 3] __fsnotify_parent_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [34] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 363080554 ns (0.08%), 363 samples
+  [ 0] java.util.Vector.size
+  [ 1] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.endElement
+  [ 2] org.apache.xerces.parsers.AbstractSAXParser.endElement
+  [ 3] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement
+  [ 4] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 6] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XMLParser.parse
+  [ 9] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [10] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 362986133 ns (0.08%), 362 samples
+  [ 0] iomap_iter_advance_[k]
+  [ 1] iomap_iter_[k]
+  [ 2] iomap_file_buffered_write_[k]
+  [ 3] xfs_file_buffered_write?[xfs]_[k]
+  [ 4] new_sync_write_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [39] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transform
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 362913584 ns (0.08%), 363 samples
+  [ 0] writeBytes
+  [ 1] Java_java_io_FileOutputStream_writeBytes
+  [ 2] java.io.FileOutputStream.writeBytes
+  [ 3] java.io.FileOutputStream.write
+  [ 4] sun.nio.cs.StreamEncoder.writeBytes
+  [ 5] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 6] sun.nio.cs.StreamEncoder.implFlush
+  [ 7] sun.nio.cs.StreamEncoder.flush
+  [ 8] java.io.OutputStreamWriter.flush
+  [ 9] org.apache.xml.serializer.ToStream.flushPending
+  [10] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [11] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [12] org.apache.xalan.templates.ElemLiteralResult.execute
+  [13] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [14] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [15] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [29] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [30] org.apache.xalan.transformer.TransformerImpl.transform
+  [31] org.apache.xalan.transformer.TransformerImpl.transform
+  [32] org.apache.xalan.transformer.TransformerImpl.transform
+  [33] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 362818224 ns (0.08%), 363 samples
+  [ 0] org.apache.xpath.axes.NodeSequence.nextNode
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 3] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 4] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 7] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 8] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [10] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemLiteralResult.execute
+  [13] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [14] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [15] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [21] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [22] org.apache.xalan.transformer.TransformerImpl.transform
+  [23] org.apache.xalan.transformer.TransformerImpl.transform
+  [24] org.apache.xalan.transformer.TransformerImpl.transform
+  [25] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 362639177 ns (0.08%), 362 samples
+  [ 0] inotify_handle_inode_event_[k]
+  [ 1] send_to_group_[k]
+  [ 2] fsnotify_[k]
+  [ 3] __fsnotify_parent_[k]
+  [ 4] vfs_write_[k]
+  [ 5] ksys_write_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] __GI___libc_write
+  [ 9] writeBytes
+  [10] Java_java_io_FileOutputStream_writeBytes
+  [11] java.io.FileOutputStream.writeBytes
+  [12] java.io.FileOutputStream.write
+  [13] sun.nio.cs.StreamEncoder.writeBytes
+  [14] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [15] sun.nio.cs.StreamEncoder.implFlush
+  [16] sun.nio.cs.StreamEncoder.flush
+  [17] java.io.OutputStreamWriter.flush
+  [18] org.apache.xml.serializer.ToStream.flushPending
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xalan.templates.ElemLiteralResult.execute
+  [22] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [23] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [24] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [25] org.apache.xalan.templates.ElemLiteralResult.execute
+  [26] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [27] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [28] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [29] org.apache.xalan.templates.ElemLiteralResult.execute
+  [30] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [31] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [32] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [33] org.apache.xalan.templates.ElemLiteralResult.execute
+  [34] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [35] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [36] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [37] org.apache.xalan.templates.ElemLiteralResult.execute
+  [38] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [39] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [40] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [41] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 359045435 ns (0.08%), 359 samples
+  [ 0] org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+  [ 1] org.apache.xerces.parsers.AbstractSAXParser.startElement
+  [ 2] org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 4] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 5] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 6] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 7] org.apache.xerces.parsers.XMLParser.parse
+  [ 8] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [ 9] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [10] org.apache.xalan.transformer.TransformerImpl.transform
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 357784475 ns (0.08%), 357 samples
+  [ 0] xfs_file_write_iter?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.templates.ElemLiteralResult.execute
+  [36] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [37] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [38] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [39] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 357075860 ns (0.08%), 357 samples
+  [ 0] java.util.HashMap.entrySet
+  [ 1] java.util.HashMap.putMapEntries
+  [ 2] java.util.HashMap.clone
+  [ 3] org.apache.xml.serializer.CharInfo.mutableCopyOf
+  [ 4] org.apache.xml.serializer.CharInfo.getCharInfo
+  [ 5] org.apache.xml.serializer.ToHTMLStream.<init>
+  [ 6] jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance
+  [ 7] jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance
+  [ 8] java.lang.reflect.Constructor.newInstanceWithCaller
+  [ 9] java.lang.reflect.ReflectAccess.newInstance
+  [10] jdk.internal.reflect.ReflectionFactory.newInstance
+  [11] java.lang.Class.newInstance
+  [12] org.apache.xml.serializer.SerializerFactory.getSerializer
+  [13] org.apache.xalan.transformer.TransformerImpl.createSerializationHandler
+  [14] org.apache.xalan.transformer.TransformerImpl.createSerializationHandler
+  [15] org.apache.xalan.transformer.TransformerImpl.transform
+  [16] org.apache.xalan.transformer.TransformerImpl.transform
+  [17] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 351973386 ns (0.08%), 351 samples
+  [ 0] xfs_file_write_iter?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [32] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [33] org.apache.xalan.transformer.TransformerImpl.transform
+  [34] org.apache.xalan.transformer.TransformerImpl.transform
+  [35] org.apache.xalan.transformer.TransformerImpl.transform
+  [36] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 350862267 ns (0.08%), 351 samples
+  [ 0] org.apache.xpath.axes.NodeSequence.nextNode
+  [ 1] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 2] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 3] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 4] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 5] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [ 6] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [ 7] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [ 8] org.apache.xalan.templates.ElemLiteralResult.execute
+  [ 9] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [10] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [11] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [12] org.apache.xalan.templates.ElemLiteralResult.execute
+  [13] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [14] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [15] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [16] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [17] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [18] org.apache.xalan.transformer.TransformerImpl.transform
+  [19] org.apache.xalan.transformer.TransformerImpl.transform
+  [20] org.apache.xalan.transformer.TransformerImpl.transform
+  [21] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 350773472 ns (0.08%), 350 samples
+  [ 0] _raw_spin_lock_[k]
+  [ 1] fsnotify_add_event_[k]
+  [ 2] inotify_handle_inode_event_[k]
+  [ 3] send_to_group_[k]
+  [ 4] fsnotify_[k]
+  [ 5] __fsnotify_parent_[k]
+  [ 6] vfs_write_[k]
+  [ 7] ksys_write_[k]
+  [ 8] do_syscall_64_[k]
+  [ 9] entry_SYSCALL_64_after_hwframe_[k]
+  [10] __GI___libc_write
+  [11] writeBytes
+  [12] Java_java_io_FileOutputStream_writeBytes
+  [13] java.io.FileOutputStream.writeBytes
+  [14] java.io.FileOutputStream.write
+  [15] sun.nio.cs.StreamEncoder.writeBytes
+  [16] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [17] sun.nio.cs.StreamEncoder.implFlush
+  [18] sun.nio.cs.StreamEncoder.flush
+  [19] java.io.OutputStreamWriter.flush
+  [20] org.apache.xml.serializer.ToStream.flushPending
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.templates.ElemLiteralResult.execute
+  [36] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [37] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [38] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [39] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [40] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transform
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 347029673 ns (0.08%), 347 samples
+  [ 0] java.util.HashMap.entrySet
+  [ 1] java.util.HashMap.putMapEntries
+  [ 2] java.util.HashMap.clone
+  [ 3] org.apache.xml.serializer.CharInfo.mutableCopyOf
+  [ 4] org.apache.xml.serializer.CharInfo.getCharInfo
+  [ 5] org.apache.xml.serializer.ToHTMLStream.<init>
+  [ 6] jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance
+  [ 7] jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance
+  [ 8] java.lang.reflect.Constructor.newInstanceWithCaller
+  [ 9] java.lang.reflect.ReflectAccess.newInstance
+  [10] jdk.internal.reflect.ReflectionFactory.newInstance
+  [11] java.lang.Class.newInstance
+  [12] org.apache.xml.serializer.SerializerFactory.getSerializer
+  [13] org.apache.xalan.transformer.TransformerImpl.createSerializationHandler
+  [14] org.apache.xalan.transformer.TransformerImpl.createSerializationHandler
+  [15] org.apache.xalan.transformer.TransformerImpl.transform
+  [16] org.apache.xalan.transformer.TransformerImpl.transform
+  [17] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 344795740 ns (0.07%), 344 samples
+  [ 0] __kmalloc_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 342957567 ns (0.07%), 342 samples
+  [ 0] xfs_file_buffered_write?[xfs]_[k]
+  [ 1] new_sync_write_[k]
+  [ 2] vfs_write_[k]
+  [ 3] ksys_write_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] __GI___libc_write
+  [ 7] writeBytes
+  [ 8] Java_java_io_FileOutputStream_writeBytes
+  [ 9] java.io.FileOutputStream.writeBytes
+  [10] java.io.FileOutputStream.write
+  [11] sun.nio.cs.StreamEncoder.writeBytes
+  [12] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [13] sun.nio.cs.StreamEncoder.implFlush
+  [14] sun.nio.cs.StreamEncoder.flush
+  [15] java.io.OutputStreamWriter.flush
+  [16] org.apache.xml.serializer.ToStream.flushPending
+  [17] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xalan.templates.ElemLiteralResult.execute
+  [20] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [21] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [22] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [23] org.apache.xalan.templates.ElemLiteralResult.execute
+  [24] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [25] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [26] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [27] org.apache.xalan.templates.ElemLiteralResult.execute
+  [28] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [29] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [30] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [31] org.apache.xalan.templates.ElemLiteralResult.execute
+  [32] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [33] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [34] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [35] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.apache.xalan.transformer.TransformerImpl.transform
+  [40] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 340766204 ns (0.07%), 340 samples
+  [ 0] __kmalloc_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.templates.ElemLiteralResult.execute
+  [35] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [36] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [37] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [38] org.apache.xalan.templates.ElemLiteralResult.execute
+  [39] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [40] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [41] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [42] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [43] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.apache.xalan.transformer.TransformerImpl.transform
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 338852265 ns (0.07%), 339 samples
+  [ 0] java.io.FileOutputStream.writeBytes
+  [ 1] java.io.FileOutputStream.write
+  [ 2] sun.nio.cs.StreamEncoder.writeBytes
+  [ 3] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [ 4] sun.nio.cs.StreamEncoder.implFlush
+  [ 5] sun.nio.cs.StreamEncoder.flush
+  [ 6] java.io.OutputStreamWriter.flush
+  [ 7] org.apache.xml.serializer.ToStream.flushPending
+  [ 8] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [ 9] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [10] org.apache.xalan.templates.ElemLiteralResult.execute
+  [11] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [12] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [13] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [14] org.apache.xalan.templates.ElemLiteralResult.execute
+  [15] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [16] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [17] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [18] org.apache.xalan.templates.ElemLiteralResult.execute
+  [19] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [20] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [21] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [27] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [28] org.apache.xalan.transformer.TransformerImpl.transform
+  [29] org.apache.xalan.transformer.TransformerImpl.transform
+  [30] org.apache.xalan.transformer.TransformerImpl.transform
+  [31] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 332985328 ns (0.07%), 333 samples
+  [ 0] org.apache.xalan.processor.XSLTElementDef.getProcessorFor
+  [ 1] org.apache.xalan.processor.StylesheetHandler.characters
+  [ 2] org.apache.xerces.parsers.AbstractSAXParser.characters
+  [ 3] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+  [ 4] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch
+  [ 5] org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  [ 6] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 7] org.apache.xerces.parsers.XML11Configuration.parse
+  [ 8] org.apache.xerces.parsers.XMLParser.parse
+  [ 9] org.apache.xerces.parsers.AbstractSAXParser.parse
+  [10] org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  [11] org.apache.xalan.transformer.TransformerImpl.transform
+  [12] org.apache.xalan.transformer.TransformerImpl.transform
+  [13] org.apache.xalan.transformer.TransformerImpl.transform
+  [14] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 331718712 ns (0.07%), 331 samples
+  [ 0] lockref_get_not_zero_[k]
+  [ 1] dget_parent_[k]
+  [ 2] __fsnotify_parent_[k]
+  [ 3] vfs_write_[k]
+  [ 4] ksys_write_[k]
+  [ 5] do_syscall_64_[k]
+  [ 6] entry_SYSCALL_64_after_hwframe_[k]
+  [ 7] __GI___libc_write
+  [ 8] writeBytes
+  [ 9] Java_java_io_FileOutputStream_writeBytes
+  [10] java.io.FileOutputStream.writeBytes
+  [11] java.io.FileOutputStream.write
+  [12] sun.nio.cs.StreamEncoder.writeBytes
+  [13] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [14] sun.nio.cs.StreamEncoder.implFlush
+  [15] sun.nio.cs.StreamEncoder.flush
+  [16] java.io.OutputStreamWriter.flush
+  [17] org.apache.xml.serializer.ToStream.flushPending
+  [18] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [19] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.templates.ElemLiteralResult.execute
+  [41] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [42] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [43] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [44] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [45] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [46] org.apache.xalan.transformer.TransformerImpl.transform
+  [47] org.apache.xalan.transformer.TransformerImpl.transform
+  [48] org.apache.xalan.transformer.TransformerImpl.transform
+  [49] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 331085451 ns (0.07%), 331 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 331078937 ns (0.07%), 331 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 330747050 ns (0.07%), 330 samples
+  [ 0] kfree_[k]
+  [ 1] inotify_handle_inode_event_[k]
+  [ 2] send_to_group_[k]
+  [ 3] fsnotify_[k]
+  [ 4] __fsnotify_parent_[k]
+  [ 5] vfs_write_[k]
+  [ 6] ksys_write_[k]
+  [ 7] do_syscall_64_[k]
+  [ 8] entry_SYSCALL_64_after_hwframe_[k]
+  [ 9] __GI___libc_write
+  [10] writeBytes
+  [11] Java_java_io_FileOutputStream_writeBytes
+  [12] java.io.FileOutputStream.writeBytes
+  [13] java.io.FileOutputStream.write
+  [14] sun.nio.cs.StreamEncoder.writeBytes
+  [15] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [16] sun.nio.cs.StreamEncoder.implFlush
+  [17] sun.nio.cs.StreamEncoder.flush
+  [18] java.io.OutputStreamWriter.flush
+  [19] org.apache.xml.serializer.ToStream.flushPending
+  [20] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [21] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [22] org.apache.xalan.templates.ElemLiteralResult.execute
+  [23] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [24] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [25] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [26] org.apache.xalan.templates.ElemLiteralResult.execute
+  [27] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [28] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [29] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [30] org.apache.xalan.templates.ElemLiteralResult.execute
+  [31] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [32] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [33] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [34] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [35] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [36] org.apache.xalan.transformer.TransformerImpl.transform
+  [37] org.apache.xalan.transformer.TransformerImpl.transform
+  [38] org.apache.xalan.transformer.TransformerImpl.transform
+  [39] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+--- 330495396 ns (0.07%), 330 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] __GI___libc_write
+  [ 4] writeBytes
+  [ 5] Java_java_io_FileOutputStream_writeBytes
+  [ 6] java.io.FileOutputStream.writeBytes
+  [ 7] java.io.FileOutputStream.write
+  [ 8] sun.nio.cs.StreamEncoder.writeBytes
+  [ 9] sun.nio.cs.StreamEncoder.implFlushBuffer
+  [10] sun.nio.cs.StreamEncoder.implFlush
+  [11] sun.nio.cs.StreamEncoder.flush
+  [12] java.io.OutputStreamWriter.flush
+  [13] org.apache.xml.serializer.ToStream.flushPending
+  [14] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [15] org.apache.xml.serializer.ToStream.startPrefixMapping
+  [16] org.apache.xalan.templates.ElemLiteralResult.execute
+  [17] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [18] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [19] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [20] org.apache.xalan.templates.ElemLiteralResult.execute
+  [21] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [22] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [23] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [24] org.apache.xalan.templates.ElemLiteralResult.execute
+  [25] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [26] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [27] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [28] org.apache.xalan.templates.ElemLiteralResult.execute
+  [29] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [30] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [31] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [32] org.apache.xalan.templates.ElemLiteralResult.execute
+  [33] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [34] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [35] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [36] org.apache.xalan.templates.ElemLiteralResult.execute
+  [37] org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  [38] org.apache.xalan.templates.ElemApplyTemplates.execute
+  [39] org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+  [40] org.apache.xalan.transformer.TransformerImpl.applyTemplateToNode
+  [41] org.apache.xalan.transformer.TransformerImpl.transformNode
+  [42] org.apache.xalan.transformer.TransformerImpl.transform
+  [43] org.apache.xalan.transformer.TransformerImpl.transform
+  [44] org.apache.xalan.transformer.TransformerImpl.transform
+  [45] org.dacapo.xalan.XSLTBench$XalanWorker.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+  6166875601    1.34%     6169  org.apache.xalan.templates.ElemApplyTemplates.transformSelectedNodes
+  5795783450    1.26%     5785  send_to_group_[k]
+  5516232976    1.20%     5506  syscall_enter_from_user_mode_[k]
+  5250060159    1.14%     5250  org.apache.xerces.impl.XMLEntityScanner.scanContent
+  5123922960    1.11%     5112  lockref_get_not_zero_[k]
+  4834160516    1.05%     4835  org.apache.xml.dtm.ref.DTMManagerDefault.getDTM
+  4789538939    1.04%     4791  org.apache.xml.utils.SuballocatedIntVector.elementAt
+  4753200738    1.03%     4755  org.apache.xpath.axes.IteratorPool.getInstance
+  4337804224    0.94%     4338  java.lang.String.equals
+  4217593331    0.92%     4219  sun.nio.cs.ISO_8859_1$Encoder.encodeArrayLoop
+  3877531178    0.84%     3879  org.apache.xalan.templates.TemplateList.getTemplateFast
+  3875255072    0.84%     3875  org.apache.xml.utils.SuballocatedIntVector.addElement
+  3866843081    0.84%     3868  org.apache.xml.dtm.ref.DTMDefaultBase.makeNodeIdentity
+  3808753227    0.83%     3810  java.nio.Buffer.<init>
+  3655874673    0.79%     3655  __GI___libc_write
+  3627615883    0.79%     3629  sun.nio.cs.ISO_8859_1$Encoder.encodeISOArray
+  3606578878    0.78%     3594  copy_user_generic_string_[k]
+  3536261537    0.77%     3537  org.apache.xml.utils.IntStack.push
+  3475596997    0.75%     3476  java.util.Hashtable.get
+  3446144565    0.75%     3447  sun.nio.cs.StreamEncoder.implWrite
+  3436436005    0.75%     3436  java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+  3406784970    0.74%     3407  java.lang.String.length
+  3293908083    0.71%     3285  balance_dirty_pages_ratelimited_[k]
+  3282063792    0.71%     3276  fsnotify_[k]
+  3259722889    0.71%     3249  xfs_buffered_write_iomap_begin?[xfs]_[k]
+  3191275396    0.69%     3192  sun.nio.cs.StreamEncoder.write
+  3169019900    0.69%     3164  vfs_write_[k]
+  3150328509    0.68%     3151  org.apache.xpath.axes.NodeSequence.setRoot
+  3142228935    0.68%     3143  vtable stub
+  3103302173    0.67%     3096  lockref_put_return_[k]
+  3090340410    0.67%     3091  org.apache.xpath.axes.LocPathIterator.setRoot
+  3079665298    0.67%     3080  org.apache.xalan.templates.ElemLiteralResult.execute
+  2916222685    0.63%     2909  iomap_file_buffered_write_[k]
+  2780408040    0.60%     2775  __fget_light_[k]
+  2670260111    0.58%     2665  inotify_handle_inode_event_[k]
+  2607342812    0.57%     2608  org.apache.xml.utils.ObjectStack.push
+  2547788642    0.55%     2531  clear_page_rep_[k]
+  2462309222    0.53%     2462  org.apache.xerces.impl.io.UTF8Reader.read
+  2449412966    0.53%     2450  itable stub
+  2430166126    0.53%     2431  org.apache.xpath.axes.NodeSequence.nextNode
+  2411853013    0.52%     2406  xfs_file_write_iter?[xfs]_[k]
+  2366431144    0.51%     2367  sun.nio.cs.ISO_8859_1$Encoder.encodeLoop
+  2303180911    0.50%     2298  selinux_file_permission_[k]
+  2256214838    0.49%     2251  __kmalloc_[k]
+  2247370073    0.49%     2248  java.nio.CharBuffer.<init>
+  2192754799    0.48%     2188  _raw_spin_lock_[k]
+  2120634524    0.46%     2121  org.apache.xml.serializer.ToHTMLStream$Trie.get2
+  2095514417    0.45%     2096  java.io.FileOutputStream.writeBytes
+  2095452357    0.45%     2095  org.apache.xerces.impl.XMLEntityManager.endEntity
+  2080076227    0.45%     2075  kfree_[k]
+  2051334052    0.45%     2052  java.nio.charset.CharsetEncoder.encode
+  2035007322    0.44%     2035  jni_GetObjectField
+  1860716759    0.40%     1855  fault_in_readable_[k]
+  1851529181    0.40%     1852  java.util.Vector.add
+  1801838949    0.39%     1797  iomap_iter_advance_[k]
+  1753656132    0.38%     1754  writeBytes
+  1750518301    0.38%     1751  org.apache.xpath.patterns.NodeTest.execute
+  1746938477    0.38%     1749  org.apache.xpath.axes.IteratorPool.freeInstance
+  1658414241    0.36%     1659  org.apache.xml.serializer.ToStream.characters
+  1623471692    0.35%     1624  java.util.Vector.removeElementAt
+  1620265164    0.35%     1616  xfs_file_buffered_write?[xfs]_[k]
+  1607384581    0.35%     1607  jshort_disjoint_arraycopy
+  1567692099    0.34%     1563  __get_obj_cgroup_from_memcg_[k]
+  1536593152    0.33%     1537  org.apache.xml.utils.ObjectStack.setTop
+  1513988690    0.33%     1510  memcg_slab_post_alloc_hook_[k]
+  1478301372    0.32%     1478  org.apache.xpath.VariableStack.reset
+  1474512082    0.32%     1475  java.nio.Buffer.position
+  1452487845    0.32%     1452  org.apache.xerces.util.SymbolTable.addSymbol
+  1447822627    0.31%     1445  security_file_permission_[k]
+  1444985700    0.31%     1445  jni_GetArrayLength
+  1431558578    0.31%     1432  java.io.OutputStreamWriter.write
+  1422809226    0.31%     1423  java.lang.String.hashCode
+  1407416742    0.31%     1392  _raw_spin_unlock_irqrestore_[k]
+  1392486951    0.30%     1393  org.apache.xml.serializer.ToStream.writeOutCleanChars
+  1378503439    0.30%     1374  __filemap_get_folio_[k]
+  1369418727    0.30%     1366  __memset_avx2_unaligned_erms
+  1365740126    0.30%     1362  copy_page_from_iter_atomic_[k]
+  1341285956    0.29%     1342  java.lang.String.getChars
+  1326397607    0.29%     1322  __radix_tree_lookup_[k]
+  1301132531    0.28%     1301  org.apache.xerces.impl.XMLEntityScanner.scanQName
+  1298065297    0.28%     1298  java.lang.StringLatin1.hashCode
+  1288543490    0.28%     1284  xfs_bmbt_to_iomap?[xfs]_[k]
+  1269698617    0.28%     1268  __fsnotify_parent_[k]
+  1252207629    0.27%     1252  java.util.HashMap$HashIterator.nextNode
+  1241376290    0.27%     1241  org.apache.xml.dtm.ref.ExpandedNameTable.getExpandedTypeID
+  1238010456    0.27%     1237  CodeHeap::find_blob_unsafe(void*) const
+  1214376503    0.26%     1211  get_obj_cgroup_from_current_[k]
+  1213897492    0.26%     1210  __rcu_read_lock_[k]
+  1213893812    0.26%     1214  org.apache.xml.dtm.ref.DTMDefaultBase._exptype
+  1212926503    0.26%     1213  check_bounds(int, int, int, JavaThread*)
+  1201244342    0.26%     1198  obj_cgroup_charge_[k]
+  1188476758    0.26%     1185  inode_to_bdi_[k]
+  1167236575    0.25%     1165  org.apache.xml.dtm.ref.DTMDefaultBase.makeNodeHandle
+  1135151055    0.25%     1135  org.apache.xerces.impl.XMLEntityScanner.load
+  1120500368    0.24%     1116  xfs_iext_lookup_extent?[xfs]_[k]
+  1118465268    0.24%     1116  __srcu_read_lock_[k]
+  1110988023    0.24%     1111  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+  1086725975    0.24%     1084  iomap_write_end_[k]
+  1068717494    0.23%     1065  xas_load_[k]
+  1058940898    0.23%     1055  up_write_[k]
+  1052515557    0.23%     1041  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  1042773865    0.23%     1040  iomap_iter_[k]
+  1039932196    0.23%     1040  java.io.Writer.write
+  1032441481    0.22%     1033  sun.nio.cs.StreamEncoder.writeBytes
+  1011064574    0.22%     1008  xfs_iomap_valid?[xfs]_[k]
+  1004644199    0.22%     1002  iomap_write_begin_[k]
+   992710486    0.22%      990  xfs_file_write_checks?[xfs]_[k]
+   975438265    0.21%      975  IndexSetIterator::advance_and_next()
+   973248504    0.21%      970  down_write_[k]
+   967169678    0.21%      967  java.util.Vector.size
+   965793534    0.21%      966  org.apache.xalan.templates.ElemTemplateElement.executeNSDecls
+   960870580    0.21%      961  java.lang.String.isLatin1
+   949911108    0.21%      951  java.util.ArrayList.add
+   948973036    0.21%      949  org.apache.xml.utils.SuballocatedIntVector.setElementAt
+   947988565    0.21%      943  __memmove_avx_unaligned_erms
+   940952716    0.20%      938  xfs_buffered_write_iomap_end?[xfs]_[k]
+   940626318    0.20%      938  refill_obj_stock_[k]
+   930756511    0.20%      931  org.apache.xalan.templates.ElemApplyTemplates.execute
+   919665652    0.20%      917  mod_objcg_state_[k]
+   911635184    0.20%      912  org.apache.xpath.patterns.StepPattern.execute
+   908074734    0.20%      908  JNIHandleBlock::allocate_handle(oopDesc*, AllocFailStrategy::AllocFailEnum)
+   899735120    0.20%      900  java.util.ArrayList.fastRemove
+   894999666    0.19%      895  JavaThread::check_and_handle_async_exceptions()
+   891862636    0.19%      892  ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+   891156508    0.19%      889  __audit_syscall_entry_[k]
+   883846149    0.19%      884  java.lang.String.regionMatches
+   875986166    0.19%      876  org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.addNode
+   856918179    0.19%      857  jni_ExceptionOccurred
+   856753120    0.19%      857  org.apache.xalan.transformer.TransformerImpl.executeChildTemplates
+   855123791    0.19%      855  org.apache.xpath.XPathContext.<init>
+   849073949    0.18%      846  folio_memcg_lock.part.0_[k]
+   839763188    0.18%      840  org.apache.xml.dtm.ref.ExpandedNameTable.getType
+   837881972    0.18%      838  java.util.HashMap.getNode
+   823059036    0.18%      820  xas_start_[k]
+   820914970    0.18%      821  __GI___pthread_enable_asynccancel
+   812774486    0.18%      813  java.util.Vector.elementAt
+   811189157    0.18%      811  org.apache.xerces.impl.XMLEntityScanner.skipString
+   803906244    0.17%      802  bpf_lsm_file_permission_[k]
+   800171725    0.17%      798  kmalloc_slab_[k]
+   795847257    0.17%      796  java.lang.String.coder
+   795010245    0.17%      794  ksys_write_[k]
+   792800396    0.17%      793  org.apache.xpath.XPathContext.pushSAXLocatorNull
+   789179030    0.17%      789  org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanContent
+   784309344    0.17%      782  __rcu_read_unlock_[k]
+   780776154    0.17%      781  org.xml.sax.helpers.AttributesImpl.clear
+   775946384    0.17%      776  jni_GetByteArrayRegion
+   772888518    0.17%      773  Java_java_io_FileOutputStream_writeBytes
+   767261218    0.17%      767  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   763768947    0.17%      762  memcpy_[k]
+   759779682    0.16%      760  org.apache.xml.serializer.ElemContext.push
+   756063695    0.16%      756  org.apache.xerces.impl.XMLEntityScanner.skipSpaces
+   748107226    0.16%      748  org.apache.xml.dtm.ref.ExtendedType.redefine
+   728805416    0.16%      729  org.apache.xml.serializer.ToHTMLStream.getElemDesc2
+   727815277    0.16%      728  java.nio.Buffer.limit
+   720766382    0.16%      721  java.util.Vector.isEmpty
+   717196798    0.16%      717  org.apache.xml.utils.SuballocatedIntVector.<init>
+   715180728    0.16%      714  __x64_sys_write_[k]
+   714730738    0.16%      715  org.apache.xpath.axes.ChildIterator.nextNode
+   713756422    0.15%      714  java.nio.ByteBuffer.array
+   706104864    0.15%      706  java.util.HashMap.entrySet
+   698689893    0.15%      699  org.apache.xml.serializer.ToStream$BoolStack.peekOrFalse
+   697963988    0.15%      698  java.lang.StringLatin1.getChars
+   697070736    0.15%      697  __GI___pthread_disable_asynccancel
+   696018282    0.15%      696  java.util.Stack.peek
+   683132168    0.15%      683  java.security.AccessController.executePrivileged
+   682834004    0.15%      681  __iomap_write_begin_[k]
+   680875509    0.15%      679  generic_write_check_limits_[k]
+   668765345    0.15%      669  sun.nio.cs.ISO_8859_1$Encoder.encodeISOArrayCheck
+   661937429    0.14%      660  file_remove_privs_[k]
+   653825113    0.14%      654  org.apache.xalan.transformer.TransformerImpl.getResultTreeHandler
+   649698089    0.14%      650  org.apache.xpath.axes.LocPathIterator.detach
+   643894512    0.14%      644  org.apache.xerces.impl.XMLEntityScanner.scanData
+   642755559    0.14%      643  org.apache.xpath.patterns.StepPattern.executePredicates
+   639023267    0.14%      638  mutex_unlock_[k]
+   628075747    0.14%      626  folio_wait_stable_[k]
+   627285182    0.14%      626  dput_[k]
+   615087187    0.13%      615  java.util.HashMap.putVal
+   607820565    0.13%      607  do_syscall_64_[k]
+   606056998    0.13%      606  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<2646116ul, G1BarrierSet>, (AccessInternal::BarrierType)0, 2646116ul>::oop_access_barrier(void*, oopDesc*)
+   604110614    0.13%      604  org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+   602853529    0.13%      601  current_time_[k]
+   601825401    0.13%      602  org.apache.xml.serializer.NamespaceMappings.pushNamespace
+   601510341    0.13%      602  java.nio.CharBuffer.position
+   599920519    0.13%      600  org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.dispatchCharactersEvents
+   592118025    0.13%      592  org.apache.xml.dtm.ref.sax2dtm.SAX2DTM.startElement
+   591165804    0.13%      591  java_lang_ref_Reference::is_referent_field(oopDesc*, long)
+   587867247    0.13%      588  org.apache.xpath.XPathContext.getDTM
+   577946795    0.13%      578  java.lang.StringLatin1.charAt
+   576767109    0.13%      575  folio_unlock_[k]
+   576347463    0.13%      575  __audit_syscall_exit_[k]
+   575662131    0.12%      576  org.apache.xalan.templates.ElemIf.execute
+   569762450    0.12%      569  new_sync_write_[k]
+   567298033    0.12%      568  java.nio.CharBuffer.array
+   558840937    0.12%      559  org.apache.xpath.patterns.NodeTest.subPartMatch
+   557139189    0.12%      556  fsnotify_add_event_[k]
+   549036090    0.12%      549  org.apache.xalan.processor.XSLTElementDef.getProcessorFor
+   547351803    0.12%      546  strcpy_[k]
+   544881127    0.12%      545  org.apache.xml.serializer.ToHTMLStream.closeStartTag
+   538202789    0.12%      538  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   533124142    0.12%      533  org.apache.xml.utils.FastStringBuffer.append

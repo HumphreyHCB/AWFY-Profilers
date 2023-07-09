@@ -1,0 +1,1741 @@
+--- Execution profile ---
+Total samples       : 127230
+unknown_Java        : 1757 (1.38%)
+not_walkable_Java   : 126 (0.10%)
+deoptimization      : 7 (0.01%)
+
+--- 5575453397 ns (4.38%), 5569 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryFlat
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 4684479954 ns (3.68%), 4682 samples
+  [ 0] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 3150423830 ns (2.47%), 3148 samples
+  [ 0] void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 2493044038 ns (1.96%), 2493 samples
+  [ 0] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 1] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 1645064077 ns (1.29%), 1642 samples
+  [ 0] org.h2.index.MultiVersionCursor.next
+  [ 1] org.h2.index.IndexCursor.next
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 1329656226 ns (1.04%), 1330 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 1161112891 ns (0.91%), 1161 samples
+  [ 0] GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>::steal_best_of_2(unsigned int, ObjArrayTask&)
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 1155453747 ns (0.91%), 1154 samples
+  [ 0] vtable stub
+  [ 1] org.h2.expression.Comparison.getValue
+  [ 2] org.h2.expression.ConditionAndOr.getValue
+  [ 3] org.h2.expression.Expression.getBooleanValue
+  [ 4] org.h2.command.dml.Select.queryFlat
+  [ 5] org.h2.command.dml.Select.queryWithoutCache
+  [ 6] org.h2.command.dml.Query.query
+  [ 7] org.h2.command.CommandContainer.query
+  [ 8] org.h2.command.Command.executeQueryLocal
+  [ 9] org.h2.command.Command.executeQuery
+  [10] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [11] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [12] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [13] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [14] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [15] org.dacapo.h2.TPCC$3.run
+
+--- 1155034455 ns (0.91%), 1155 samples
+  [ 0] void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+  [ 1] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] G1FullGCAdjustTask::work(unsigned int)
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 985812857 ns (0.77%), 984 samples
+  [ 0] org.h2.index.MultiVersionCursor.getSearchRow
+  [ 1] org.h2.index.IndexCursor.getSearchRow
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 819200869 ns (0.64%), 819 samples
+  [ 0] G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 770580453 ns (0.60%), 770 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryFlat
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.orderStatus
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runOrderStatus
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 764053333 ns (0.60%), 763 samples
+  [ 0] org.h2.index.MultiVersionCursor.loadNext
+  [ 1] org.h2.index.MultiVersionCursor.next
+  [ 2] org.h2.index.IndexCursor.next
+  [ 3] org.h2.table.TableFilter.next
+  [ 4] org.h2.command.dml.Select.queryFlat
+  [ 5] org.h2.command.dml.Select.queryWithoutCache
+  [ 6] org.h2.command.dml.Query.query
+  [ 7] org.h2.command.CommandContainer.query
+  [ 8] org.h2.command.Command.executeQueryLocal
+  [ 9] org.h2.command.Command.executeQuery
+  [10] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [11] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [12] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [13] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [14] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [15] org.dacapo.h2.TPCC$3.run
+
+--- 680058645 ns (0.53%), 680 samples
+  [ 0] .annobin__ZN10G1CMBitMap10check_markEPP12HeapWordImpl.start
+  [ 1] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 2] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 674772346 ns (0.53%), 674 samples
+  [ 0] org.h2.result.Row.getValue
+  [ 1] org.h2.index.BaseIndex.compareRows
+  [ 2] org.h2.index.TreeCursor.next
+  [ 3] org.h2.index.MultiVersionCursor.step
+  [ 4] org.h2.index.MultiVersionCursor.loadNext
+  [ 5] org.h2.index.MultiVersionCursor.next
+  [ 6] org.h2.index.IndexCursor.next
+  [ 7] org.h2.table.TableFilter.next
+  [ 8] org.h2.command.dml.Select.queryFlat
+  [ 9] org.h2.command.dml.Select.queryWithoutCache
+  [10] org.h2.command.dml.Query.query
+  [11] org.h2.command.CommandContainer.query
+  [12] org.h2.command.Command.executeQueryLocal
+  [13] org.h2.command.Command.executeQuery
+  [14] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [15] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [16] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [17] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [18] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [19] org.dacapo.h2.TPCC$3.run
+
+--- 646799672 ns (0.51%), 646 samples
+  [ 0] org.h2.index.BaseIndex.compareValues
+  [ 1] org.h2.index.BaseIndex.compareRows
+  [ 2] org.h2.index.TreeCursor.next
+  [ 3] org.h2.index.MultiVersionCursor.step
+  [ 4] org.h2.index.MultiVersionCursor.loadNext
+  [ 5] org.h2.index.MultiVersionCursor.next
+  [ 6] org.h2.index.IndexCursor.next
+  [ 7] org.h2.table.TableFilter.next
+  [ 8] org.h2.command.dml.Select.queryFlat
+  [ 9] org.h2.command.dml.Select.queryWithoutCache
+  [10] org.h2.command.dml.Query.query
+  [11] org.h2.command.CommandContainer.query
+  [12] org.h2.command.Command.executeQueryLocal
+  [13] org.h2.command.Command.executeQuery
+  [14] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [15] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [16] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [17] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [18] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [19] org.dacapo.h2.TPCC$3.run
+
+--- 628639194 ns (0.49%), 628 samples
+  [ 0] org.h2.index.TreeIndex.next
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryFlat
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 612874713 ns (0.48%), 606 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] try_to_wake_up_[k]
+  [ 2] wake_up_q_[k]
+  [ 3] futex_wake_[k]
+  [ 4] do_futex_[k]
+  [ 5] __x64_sys_futex_[k]
+  [ 6] do_syscall_64_[k]
+  [ 7] entry_SYSCALL_64_after_hwframe_[k]
+  [ 8] ___pthread_cond_signal
+  [ 9] [unknown_Java]
+
+--- 595502729 ns (0.47%), 594 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 580124643 ns (0.46%), 579 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 7] org.h2.jdbc.JdbcConnection.rollback
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 567219776 ns (0.45%), 566 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeIndex.add
+  [ 2] org.h2.index.MultiVersionIndex.add
+  [ 3] org.h2.table.TableData.addRow
+  [ 4] org.h2.command.dml.Insert.insertRows
+  [ 5] org.h2.command.dml.Insert.update
+  [ 6] org.h2.command.CommandContainer.update
+  [ 7] org.h2.command.Command.executeUpdate
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 532320781 ns (0.42%), 531 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 523165246 ns (0.41%), 523 samples
+  [ 0] G1RegionMarkStatsCache::add_live_words(oopDesc*)
+  [ 1] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 2] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 3] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 513915167 ns (0.40%), 514 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 508383316 ns (0.40%), 507 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 504267951 ns (0.40%), 503 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 504164962 ns (0.40%), 504 samples
+  [ 0] PreservedMarks::adjust_during_full_gc()
+  [ 1] GangWorker::loop()
+  [ 2] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 3] .annobin__ZN6Thread8call_runEv.start
+  [ 4] thread_native_entry(Thread*)
+  [ 5] start_thread
+
+--- 491871612 ns (0.39%), 490 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 8] org.h2.jdbc.JdbcConnection.rollback
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 472695291 ns (0.37%), 472 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeIndex.findFirstNode
+  [ 2] org.h2.index.TreeIndex.find
+  [ 3] org.h2.index.MultiVersionIndex.find
+  [ 4] org.h2.index.IndexCursor.find
+  [ 5] org.h2.table.TableFilter.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryGroup
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.stockLevel
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runStockLevel
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 455080181 ns (0.36%), 454 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 452403184 ns (0.36%), 452 samples
+  [ 0] .annobin__ZN21OopOopIterateDispatchI28G1ConcurrentRefineOopClosureE5Table15oop_oop_iterateI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+  [ 1] G1RemSet::refine_card_concurrently(unsigned char*, unsigned int)
+  [ 2] G1DirtyCardQueueSet::refine_buffer(BufferNode*, unsigned int, G1ConcurrentRefineStats*)
+  [ 3] G1DirtyCardQueueSet::refine_completed_buffer_concurrently(unsigned int, unsigned long, G1ConcurrentRefineStats*)
+  [ 4] G1ConcurrentRefineThread::run_service()
+  [ 5] .annobin__ZN18ConcurrentGCThread3runEv.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 445555984 ns (0.35%), 445 samples
+  [ 0] itable stub
+  [ 1] org.h2.index.IndexCursor.getSearchRow
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 426514438 ns (0.33%), 425 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 7] org.h2.jdbc.JdbcConnection.rollback
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 9] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [10] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [11] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [12] org.dacapo.h2.TPCC$3.run
+
+--- 424373602 ns (0.33%), 424 samples
+  [ 0] PreservedMarks::restore_and_increment(unsigned long volatile*)
+  [ 1] RestorePreservedMarksTask::work(unsigned int)
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 410359070 ns (0.32%), 410 samples
+  [ 0] G1RemSet::refine_card_concurrently(unsigned char*, unsigned int)
+  [ 1] G1DirtyCardQueueSet::refine_buffer(BufferNode*, unsigned int, G1ConcurrentRefineStats*)
+  [ 2] G1DirtyCardQueueSet::refine_completed_buffer_concurrently(unsigned int, unsigned long, G1ConcurrentRefineStats*)
+  [ 3] G1ConcurrentRefineThread::run_service()
+  [ 4] .annobin__ZN18ConcurrentGCThread3runEv.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 409137184 ns (0.32%), 408 samples
+  [ 0] org.h2.engine.Session.setCurrentCommand
+  [ 1] org.h2.command.Command.executeQueryLocal
+  [ 2] org.h2.command.Command.executeQuery
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 408629286 ns (0.32%), 407 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.setCurrentCommand
+  [ 6] org.h2.command.Command.executeQueryLocal
+  [ 7] org.h2.command.Command.executeQuery
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 405004729 ns (0.32%), 403 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 8] org.h2.jdbc.JdbcConnection.rollback
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 400486532 ns (0.31%), 400 samples
+  [ 0] java.lang.Object.<init>
+  [ 1] java.lang.Number.<init>
+  [ 2] java.math.BigInteger.<init>
+  [ 3] java.math.BigInteger.valueOf
+  [ 4] java.math.BigDecimal.inflated
+  [ 5] java.math.BigDecimal.equals
+  [ 6] org.h2.value.ValueDecimal.get
+  [ 7] org.h2.value.Value.convertTo
+  [ 8] org.h2.expression.Comparison.getValue
+  [ 9] org.h2.expression.ConditionAndOr.getValue
+  [10] org.h2.expression.Expression.getBooleanValue
+  [11] org.h2.command.dml.Select.queryFlat
+  [12] org.h2.command.dml.Select.queryWithoutCache
+  [13] org.h2.command.dml.Query.query
+  [14] org.h2.command.CommandContainer.query
+  [15] org.h2.command.Command.executeQueryLocal
+  [16] org.h2.command.Command.executeQuery
+  [17] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [18] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [19] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [20] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [21] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [22] org.dacapo.h2.TPCC$3.run
+
+--- 389371316 ns (0.31%), 388 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 3] org.h2.jdbc.JdbcConnection.rollback
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 383058720 ns (0.30%), 383 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 383052265 ns (0.30%), 383 samples
+  [ 0] void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+  [ 1] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 2] G1FullGCAdjustTask::work(unsigned int)
+  [ 3] GangWorker::loop()
+  [ 4] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 5] .annobin__ZN6Thread8call_runEv.start
+  [ 6] thread_native_entry(Thread*)
+  [ 7] start_thread
+
+--- 371054321 ns (0.29%), 371 samples
+  [ 0] vtable stub
+  [ 1] org.h2.jdbc.JdbcResultSet.getString
+  [ 2] org.dacapo.h2.TPCC.calculateSumDB
+  [ 3] org.dacapo.h2.TPCC.calculateSumDB
+  [ 4] org.dacapo.h2.TPCC.iteration
+  [ 5] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [ 6] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [ 7] java.lang.reflect.Method.invoke
+  [ 8] org.dacapo.harness.H2.iterate
+  [ 9] org.dacapo.harness.Benchmark.run
+  [10] org.dacapo.harness.TestHarness.runBenchmark
+  [11] org.dacapo.harness.TestHarness.main
+  [12] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [13] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [14] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [15] java.lang.reflect.Method.invoke
+  [16] Harness.main
+
+--- 364041955 ns (0.29%), 364 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 362450204 ns (0.28%), 362 samples
+  [ 0] org.h2.index.TreeIndex.next
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryFlat
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 352456461 ns (0.28%), 352 samples
+  [ 0] java.lang.Object.<init>
+  [ 1] java.lang.Number.<init>
+  [ 2] java.math.BigInteger.<init>
+  [ 3] java.math.BigInteger.valueOf
+  [ 4] java.math.BigDecimal.inflated
+  [ 5] java.math.BigDecimal.equals
+  [ 6] org.h2.value.ValueDecimal.get
+  [ 7] org.h2.value.Value.convertTo
+  [ 8] org.h2.expression.Comparison.getValue
+  [ 9] org.h2.expression.ConditionAndOr.getValue
+  [10] org.h2.expression.Expression.getBooleanValue
+  [11] org.h2.command.dml.Select.queryFlat
+  [12] org.h2.command.dml.Select.queryWithoutCache
+  [13] org.h2.command.dml.Query.query
+  [14] org.h2.command.CommandContainer.query
+  [15] org.h2.command.Command.executeQueryLocal
+  [16] org.h2.command.Command.executeQuery
+  [17] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [18] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [19] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [20] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [21] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [22] org.dacapo.h2.TPCC$3.run
+
+--- 346072169 ns (0.27%), 345 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 345977654 ns (0.27%), 345 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 345463188 ns (0.27%), 345 samples
+  [ 0] org.h2.expression.Comparison.getValue
+  [ 1] org.h2.expression.ConditionAndOr.getValue
+  [ 2] org.h2.expression.Expression.getBooleanValue
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 343113873 ns (0.27%), 342 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 341394342 ns (0.27%), 341 samples
+  [ 0] org.h2.value.Value.compareTo
+  [ 1] org.h2.engine.Database.areEqual
+  [ 2] org.h2.expression.Comparison.compareNotNull
+  [ 3] org.h2.expression.Comparison.getValue
+  [ 4] org.h2.expression.ConditionAndOr.getValue
+  [ 5] org.h2.expression.Expression.getBooleanValue
+  [ 6] org.h2.command.dml.Select.queryFlat
+  [ 7] org.h2.command.dml.Select.queryWithoutCache
+  [ 8] org.h2.command.dml.Query.query
+  [ 9] org.h2.command.CommandContainer.query
+  [10] org.h2.command.Command.executeQueryLocal
+  [11] org.h2.command.Command.executeQuery
+  [12] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [13] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [14] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [15] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [16] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [17] org.dacapo.h2.TPCC$3.run
+
+--- 341057999 ns (0.27%), 340 samples
+  [ 0] org.h2.engine.Session.setCurrentCommand
+  [ 1] org.h2.command.Command.executeQueryLocal
+  [ 2] org.h2.command.Command.executeQuery
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 333371869 ns (0.26%), 333 samples
+  [ 0] org.h2.result.Row.getValue
+  [ 1] org.h2.index.BaseIndex.compareRows
+  [ 2] org.h2.index.TreeCursor.next
+  [ 3] org.h2.index.MultiVersionCursor.step
+  [ 4] org.h2.index.MultiVersionCursor.loadNext
+  [ 5] org.h2.index.MultiVersionCursor.next
+  [ 6] org.h2.index.IndexCursor.next
+  [ 7] org.h2.table.TableFilter.next
+  [ 8] org.h2.command.dml.Select.queryFlat
+  [ 9] org.h2.command.dml.Select.queryWithoutCache
+  [10] org.h2.command.dml.Query.query
+  [11] org.h2.command.CommandContainer.query
+  [12] org.h2.command.Command.executeQueryLocal
+  [13] org.h2.command.Command.executeQuery
+  [14] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [15] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [16] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [17] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [18] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [19] org.dacapo.h2.TPCC$3.run
+
+--- 329980486 ns (0.26%), 329 samples
+  [ 0] org.h2.engine.Session.setCurrentCommand
+  [ 1] org.h2.command.Command.executeQueryLocal
+  [ 2] org.h2.command.Command.executeQuery
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 323388536 ns (0.25%), 323 samples
+  [ 0] itable stub
+  [ 1] org.h2.index.IndexCursor.next
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 315057109 ns (0.25%), 314 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 313319528 ns (0.25%), 313 samples
+  [ 0] org.h2.value.Value.compareTo
+  [ 1] org.h2.engine.Database.areEqual
+  [ 2] org.h2.expression.Comparison.compareNotNull
+  [ 3] org.h2.expression.Comparison.getValue
+  [ 4] org.h2.expression.ConditionAndOr.getValue
+  [ 5] org.h2.expression.Expression.getBooleanValue
+  [ 6] org.h2.command.dml.Select.queryFlat
+  [ 7] org.h2.command.dml.Select.queryWithoutCache
+  [ 8] org.h2.command.dml.Query.query
+  [ 9] org.h2.command.CommandContainer.query
+  [10] org.h2.command.Command.executeQueryLocal
+  [11] org.h2.command.Command.executeQuery
+  [12] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [13] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [14] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [15] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [16] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [17] org.dacapo.h2.TPCC$3.run
+
+--- 311644495 ns (0.24%), 311 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeIndex.findFirstNode
+  [ 2] org.h2.index.TreeIndex.find
+  [ 3] org.h2.index.MultiVersionIndex.find
+  [ 4] org.h2.index.IndexCursor.find
+  [ 5] org.h2.table.TableFilter.next
+  [ 6] org.h2.command.dml.Select.queryFlat
+  [ 7] org.h2.command.dml.Select.queryWithoutCache
+  [ 8] org.h2.command.dml.Query.query
+  [ 9] org.h2.command.CommandContainer.query
+  [10] org.h2.command.Command.executeQueryLocal
+  [11] org.h2.command.Command.executeQuery
+  [12] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [13] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [14] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [15] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [16] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [17] org.dacapo.h2.TPCC$3.run
+
+--- 307444235 ns (0.24%), 306 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcConnection.rollbackInternal
+  [ 3] org.h2.jdbc.JdbcConnection.rollback
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 306128212 ns (0.24%), 306 samples
+  [ 0] G1RegionMarkStatsCache::add_live_words(oopDesc*)
+  [ 1] void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+  [ 2] G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  [ 3] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 301125647 ns (0.24%), 300 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.setCurrentCommand
+  [ 6] org.h2.command.Command.executeQueryLocal
+  [ 7] org.h2.command.Command.executeQuery
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 290169315 ns (0.23%), 289 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 278244743 ns (0.22%), 277 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 277992805 ns (0.22%), 278 samples
+  [ 0] vtable stub
+  [ 1] org.h2.jdbc.JdbcResultSet.getString
+  [ 2] org.dacapo.h2.TPCC.calculateSumDB
+  [ 3] org.dacapo.h2.TPCC.calculateSumDB
+  [ 4] org.dacapo.h2.TPCC.iteration
+  [ 5] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [ 6] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [ 7] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [ 8] java.lang.reflect.Method.invoke
+  [ 9] org.dacapo.harness.H2.iterate
+  [10] org.dacapo.harness.Benchmark.run
+  [11] org.dacapo.harness.TestHarness.runBenchmark
+  [12] org.dacapo.harness.TestHarness.main
+  [13] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [14] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [15] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [16] java.lang.reflect.Method.invoke
+  [17] Harness.main
+
+--- 261387488 ns (0.21%), 260 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 260044699 ns (0.20%), 260 samples
+  [ 0] void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  [ 1] .annobin__ZN16G1FullGCMarkTask4workEj.start
+  [ 2] GangWorker::loop()
+  [ 3] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 4] .annobin__ZN6Thread8call_runEv.start
+  [ 5] thread_native_entry(Thread*)
+  [ 6] start_thread
+
+--- 255929493 ns (0.20%), 255 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.setCurrentCommand
+  [ 6] org.h2.command.Command.executeQueryLocal
+  [ 7] org.h2.command.Command.executeQuery
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 254624436 ns (0.20%), 254 samples
+  [ 0] org.h2.jdbc.JdbcResultSet.getColumnIndex
+  [ 1] org.h2.jdbc.JdbcResultSet.get
+  [ 2] org.h2.jdbc.JdbcResultSet.getString
+  [ 3] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 251172803 ns (0.20%), 250 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 5] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 6] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 8] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 9] org.dacapo.h2.TPCC$3.run
+
+--- 243495701 ns (0.19%), 243 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeIndex.findFirstNode
+  [ 2] org.h2.index.TreeIndex.remove
+  [ 3] org.h2.index.MultiVersionIndex.remove
+  [ 4] org.h2.table.TableData.removeRow
+  [ 5] org.h2.table.Table.updateRows
+  [ 6] org.h2.command.dml.Update.update
+  [ 7] org.h2.command.CommandContainer.update
+  [ 8] org.h2.command.Command.executeUpdate
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [10] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [11] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [12] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [13] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [14] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [15] org.dacapo.h2.TPCC$3.run
+
+--- 240318916 ns (0.19%), 240 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 238981815 ns (0.19%), 238 samples
+  [ 0] org.h2.engine.Session.setCurrentCommand
+  [ 1] org.h2.command.Command.executeQueryLocal
+  [ 2] org.h2.command.Command.executeQuery
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 5] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 6] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 8] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 9] org.dacapo.h2.TPCC$3.run
+
+--- 227338620 ns (0.18%), 228 samples
+  [ 0] void OopOopIterateDispatch<G1ScanCardClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1ScanCardClosure*, oopDesc*, Klass*)
+  [ 1] G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+  [ 2] G1RemSet::scan_heap_roots(G1ParScanThreadState*, unsigned int, G1GCPhaseTimes::GCParPhases, G1GCPhaseTimes::GCParPhases, bool)
+  [ 3] G1EvacuateRegionsTask::scan_roots(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 217073844 ns (0.17%), 216 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.setCurrentCommand
+  [ 6] org.h2.command.Command.executeQueryLocal
+  [ 7] org.h2.command.Command.executeQuery
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 215314385 ns (0.17%), 215 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.getLogId
+  [ 5] org.h2.command.Command.executeUpdate
+  [ 6] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 212276066 ns (0.17%), 212 samples
+  [ 0] vtable stub
+  [ 1] org.h2.value.Value.compareTypeSave
+  [ 2] org.h2.table.Table.compareTypeSave
+  [ 3] org.h2.index.BaseIndex.compareValues
+  [ 4] org.h2.index.BaseIndex.compareRows
+  [ 5] org.h2.index.TreeCursor.next
+  [ 6] org.h2.index.MultiVersionCursor.step
+  [ 7] org.h2.index.MultiVersionCursor.loadNext
+  [ 8] org.h2.index.MultiVersionCursor.next
+  [ 9] org.h2.index.IndexCursor.next
+  [10] org.h2.table.TableFilter.next
+  [11] org.h2.command.dml.Select.queryFlat
+  [12] org.h2.command.dml.Select.queryWithoutCache
+  [13] org.h2.command.dml.Query.query
+  [14] org.h2.command.CommandContainer.query
+  [15] org.h2.command.Command.executeQueryLocal
+  [16] org.h2.command.Command.executeQuery
+  [17] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [18] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [19] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [20] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [21] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [22] org.dacapo.h2.TPCC$3.run
+
+--- 209933364 ns (0.16%), 210 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 201039547 ns (0.16%), 201 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 200031644 ns (0.16%), 200 samples
+  [ 0] org.h2.index.IndexCursor.find
+  [ 1] org.h2.table.TableFilter.next
+  [ 2] org.h2.command.dml.Select.queryFlat
+  [ 3] org.h2.command.dml.Select.queryWithoutCache
+  [ 4] org.h2.command.dml.Query.query
+  [ 5] org.h2.command.CommandContainer.query
+  [ 6] org.h2.command.Command.executeQueryLocal
+  [ 7] org.h2.command.Command.executeQuery
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.execute
+  [ 9] org.dacapo.h2.TPCC.calculateSumDB
+  [10] org.dacapo.h2.TPCC.calculateSumDB
+  [11] org.dacapo.h2.TPCC.iteration
+  [12] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [13] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [14] java.lang.reflect.Method.invoke
+  [15] org.dacapo.harness.H2.iterate
+  [16] org.dacapo.harness.Benchmark.run
+  [17] org.dacapo.harness.TestHarness.runBenchmark
+  [18] org.dacapo.harness.TestHarness.main
+  [19] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [20] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [21] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [22] java.lang.reflect.Method.invoke
+  [23] Harness.main
+
+--- 199480645 ns (0.16%), 199 samples
+  [ 0] org.h2.index.BaseIndex.compareKeys
+  [ 1] org.h2.index.TreeIndex.add
+  [ 2] org.h2.index.MultiVersionIndex.add
+  [ 3] org.h2.table.TableData.addRow
+  [ 4] org.h2.command.dml.Insert.insertRows
+  [ 5] org.h2.command.dml.Insert.update
+  [ 6] org.h2.command.CommandContainer.update
+  [ 7] org.h2.command.Command.executeUpdate
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 194302967 ns (0.15%), 194 samples
+  [ 0] org.h2.util.ObjectArray.iterator
+  [ 1] org.h2.index.IndexCursor.find
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.table.TableFilter.next
+  [ 4] org.h2.command.dml.Select.queryGroup
+  [ 5] org.h2.command.dml.Select.queryWithoutCache
+  [ 6] org.h2.command.dml.Query.query
+  [ 7] org.h2.command.CommandContainer.query
+  [ 8] org.h2.command.Command.executeQueryLocal
+  [ 9] org.h2.command.Command.executeQuery
+  [10] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [11] org.apache.derbyTesting.system.oe.direct.Standard.stockLevel
+  [12] org.apache.derbyTesting.system.oe.client.Submitter.runStockLevel
+  [13] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [14] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [15] org.dacapo.h2.TPCC$3.run
+
+--- 193276667 ns (0.15%), 193 samples
+  [ 0] org.h2.engine.Database.areEqual
+  [ 1] org.h2.expression.Comparison.compareNotNull
+  [ 2] org.h2.expression.Comparison.getValue
+  [ 3] org.h2.expression.ConditionAndOr.getValue
+  [ 4] org.h2.expression.Expression.getBooleanValue
+  [ 5] org.h2.command.dml.Select.queryFlat
+  [ 6] org.h2.command.dml.Select.queryWithoutCache
+  [ 7] org.h2.command.dml.Query.query
+  [ 8] org.h2.command.CommandContainer.query
+  [ 9] org.h2.command.Command.executeQueryLocal
+  [10] org.h2.command.Command.executeQuery
+  [11] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [12] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [13] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [14] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [15] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [16] org.dacapo.h2.TPCC$3.run
+
+--- 187330683 ns (0.15%), 187 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::enter(JavaThread*)
+  [ 2] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 3] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 4] org.h2.engine.Session.setCurrentCommand
+  [ 5] org.h2.command.Command.executeQueryLocal
+  [ 6] org.h2.command.Command.executeQuery
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [ 8] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [10] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [11] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [12] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [13] org.dacapo.h2.TPCC$3.run
+
+--- 186210569 ns (0.15%), 186 samples
+  [ 0] org.h2.value.ValueString.compareSecure
+  [ 1] [unknown_Java]
+
+--- 177209022 ns (0.14%), 177 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryFlat
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 173219287 ns (0.14%), 173 samples
+  [ 0] org.h2.index.MultiVersionCursor.next
+  [ 1] org.h2.index.IndexCursor.next
+  [ 2] org.h2.table.TableFilter.next
+  [ 3] org.h2.command.dml.Select.queryFlat
+  [ 4] org.h2.command.dml.Select.queryWithoutCache
+  [ 5] org.h2.command.dml.Query.query
+  [ 6] org.h2.command.CommandContainer.query
+  [ 7] org.h2.command.Command.executeQueryLocal
+  [ 8] org.h2.command.Command.executeQuery
+  [ 9] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.orderStatus
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runOrderStatus
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 172474644 ns (0.14%), 172 samples
+  [ 0] ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  [ 1] ObjectMonitor::EnterI(JavaThread*)
+  [ 2] ObjectMonitor::enter(JavaThread*)
+  [ 3] ObjectSynchronizer::enter(Handle, BasicLock*, JavaThread*)
+  [ 4] SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+  [ 5] org.h2.engine.Session.getLogId
+  [ 6] org.h2.command.Command.executeUpdate
+  [ 7] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 8] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 9] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [10] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [11] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [12] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [13] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [14] org.dacapo.h2.TPCC$3.run
+
+--- 171208572 ns (0.13%), 171 samples
+  [ 0] org.h2.index.TreeCursor.next
+  [ 1] org.h2.index.MultiVersionCursor.step
+  [ 2] org.h2.index.MultiVersionCursor.loadNext
+  [ 3] org.h2.index.MultiVersionCursor.next
+  [ 4] org.h2.index.IndexCursor.next
+  [ 5] org.h2.table.TableFilter.next
+  [ 6] org.h2.command.dml.Select.queryFlat
+  [ 7] org.h2.command.dml.Select.queryWithoutCache
+  [ 8] org.h2.command.dml.Query.query
+  [ 9] org.h2.command.CommandContainer.query
+  [10] org.h2.command.Command.executeQueryLocal
+  [11] org.h2.command.Command.executeQuery
+  [12] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [13] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [14] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [15] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [16] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [17] org.dacapo.h2.TPCC$3.run
+
+--- 171154223 ns (0.13%), 171 samples
+  [ 0] org.h2.jdbc.JdbcResultSet.getColumnIndex
+  [ 1] org.h2.jdbc.JdbcResultSet.get
+  [ 2] org.h2.jdbc.JdbcResultSet.getString
+  [ 3] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 5] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 6] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 8] org.dacapo.h2.TPCC$3.run
+
+--- 168058765 ns (0.13%), 168 samples
+  [ 0] org.h2.index.BaseIndex.compareRows
+  [ 1] org.h2.index.TreeCursor.next
+  [ 2] org.h2.index.MultiVersionCursor.step
+  [ 3] org.h2.index.MultiVersionCursor.loadNext
+  [ 4] org.h2.index.MultiVersionCursor.next
+  [ 5] org.h2.index.IndexCursor.next
+  [ 6] org.h2.table.TableFilter.next
+  [ 7] org.h2.command.dml.Select.queryGroup
+  [ 8] org.h2.command.dml.Select.queryWithoutCache
+  [ 9] org.h2.command.dml.Query.query
+  [10] org.h2.command.CommandContainer.query
+  [11] org.h2.command.Command.executeQueryLocal
+  [12] org.h2.command.Command.executeQuery
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeQuery
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.getOrderStatusForCustomer
+  [15] org.apache.derbyTesting.system.oe.direct.Standard.orderStatus
+  [16] org.apache.derbyTesting.system.oe.client.Submitter.runOrderStatus
+  [17] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [18] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [19] org.dacapo.h2.TPCC$3.run
+
+--- 166457832 ns (0.13%), 166 samples
+  [ 0] G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+  [ 1] .annobin__ZN19G1FullGCPrepareTask26G1CalculatePointersClosure14do_heap_regionEP10HeapRegion.start
+  [ 2] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 3] .annobin__ZN19G1FullGCPrepareTask4workEj.start
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 159011421 ns (0.12%), 159 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 157188617 ns (0.12%), 157 samples
+  [ 0] void OopOopIterateBoundedDispatch<G1ConcurrentRefineOopClosure>::Table::oop_oop_iterate_bounded<ObjArrayKlass, narrowOop>(G1ConcurrentRefineOopClosure*, oopDesc*, Klass*, MemRegion)
+  [ 1] G1RemSet::refine_card_concurrently(unsigned char*, unsigned int)
+  [ 2] G1DirtyCardQueueSet::refine_buffer(BufferNode*, unsigned int, G1ConcurrentRefineStats*)
+  [ 3] G1DirtyCardQueueSet::refine_completed_buffer_concurrently(unsigned int, unsigned long, G1ConcurrentRefineStats*)
+  [ 4] G1ConcurrentRefineThread::run_service()
+  [ 5] .annobin__ZN18ConcurrentGCThread3runEv.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 157167052 ns (0.12%), 154 samples
+  [ 0] __memset_avx2_unaligned_erms
+  [ 1] MarkBitMap::do_clear(MemRegion, bool)
+  [ 2] G1ClearBitMapTask::G1ClearBitmapHRClosure::do_heap_region(HeapRegion*)
+  [ 3] HeapRegionManager::par_iterate(HeapRegionClosure*, HeapRegionClaimer*, unsigned int) const
+  [ 4] GangWorker::loop()
+  [ 5] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 6] .annobin__ZN6Thread8call_runEv.start
+  [ 7] thread_native_entry(Thread*)
+  [ 8] start_thread
+
+--- 156372105 ns (0.12%), 156 samples
+  [ 0] org.h2.engine.Session.getLogId
+  [ 1] org.h2.command.Command.executeUpdate
+  [ 2] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [ 3] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [ 4] org.apache.derbyTesting.system.oe.direct.Standard.paymentById
+  [ 5] org.apache.derbyTesting.system.oe.direct.Standard.payment
+  [ 6] org.apache.derbyTesting.system.oe.client.Submitter.runPayment
+  [ 7] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [ 8] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [ 9] org.dacapo.h2.TPCC$3.run
+
+--- 155872629 ns (0.12%), 156 samples
+  [ 0] G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  [ 1] G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+  [ 2] G1ParEvacuateFollowersClosure::do_void()
+  [ 3] G1EvacuateRegionsTask::evacuate_live_objects(G1ParScanThreadState*, unsigned int)
+  [ 4] G1EvacuateRegionsBaseTask::work(unsigned int)
+  [ 5] GangWorker::loop()
+  [ 6] .annobin__ZN19WorkGangBarrierSyncC2Ev.start
+  [ 7] .annobin__ZN6Thread8call_runEv.start
+  [ 8] thread_native_entry(Thread*)
+  [ 9] start_thread
+
+--- 154985821 ns (0.12%), 155 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 154047793 ns (0.12%), 154 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 153303426 ns (0.12%), 153 samples
+  [ 0] org.h2.value.ValueInt.compareSecure
+  [ 1] org.h2.value.Value.compareTypeSave
+  [ 2] org.h2.table.Table.compareTypeSave
+  [ 3] org.h2.index.BaseIndex.compareValues
+  [ 4] org.h2.index.BaseIndex.compareRows
+  [ 5] org.h2.index.TreeIndex.add
+  [ 6] org.h2.index.MultiVersionIndex.add
+  [ 7] org.h2.table.TableData.addRow
+  [ 8] org.h2.command.dml.Insert.insertRows
+  [ 9] org.h2.command.dml.Insert.update
+  [10] org.h2.command.CommandContainer.update
+  [11] org.h2.command.Command.executeUpdate
+  [12] org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal
+  [13] org.h2.jdbc.JdbcPreparedStatement.executeUpdate
+  [14] org.apache.derbyTesting.system.oe.direct.Standard.newOrder
+  [15] org.apache.derbyTesting.system.oe.client.Submitter.runNewOrder
+  [16] org.dacapo.h2.TPCCSubmitter.runTransaction
+  [17] org.dacapo.h2.TPCCSubmitter.runTransactions
+  [18] org.dacapo.h2.TPCC$3.run
+
+--- 150008357 ns (0.12%), 150 samples
+  [ 0] org.h2.util.ObjectArray.get
+  [ 1] org.h2.index.ScanIndex.getNextRow
+  [ 2] org.h2.index.ScanCursor.next
+  [ 3] org.h2.index.IndexCursor.next
+  [ 4] org.h2.table.TableFilter.next
+  [ 5] org.h2.command.dml.Select.queryFlat
+  [ 6] org.h2.command.dml.Select.queryWithoutCache
+  [ 7] org.h2.command.dml.Query.query
+  [ 8] org.h2.command.CommandContainer.query
+  [ 9] org.h2.command.Command.executeQueryLocal
+  [10] org.h2.command.Command.executeQuery
+  [11] org.h2.jdbc.JdbcPreparedStatement.execute
+  [12] org.dacapo.h2.TPCC.calculateSumDB
+  [13] org.dacapo.h2.TPCC.calculateSumDB
+  [14] org.dacapo.h2.TPCC.iteration
+  [15] jdk.internal.reflect.GeneratedMethodAccessor2.invoke
+  [16] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [17] java.lang.reflect.Method.invoke
+  [18] org.dacapo.harness.H2.iterate
+  [19] org.dacapo.harness.Benchmark.run
+  [20] org.dacapo.harness.TestHarness.runBenchmark
+  [21] org.dacapo.harness.TestHarness.main
+  [22] jdk.internal.reflect.NativeMethodAccessorImpl.invoke0
+  [23] jdk.internal.reflect.NativeMethodAccessorImpl.invoke
+  [24] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+  [25] java.lang.reflect.Method.invoke
+  [26] Harness.main
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 12849307917   10.08%    12833  org.h2.index.BaseIndex.compareRows
+ 11643005874    9.14%    11606  ObjectMonitor::TrySpin(JavaThread*) [clone .part.0]
+  6408476206    5.03%     6402  vtable stub
+  4946540784    3.88%     4944  void OopOopIterateDispatch<G1MarkAndPushClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1MarkAndPushClosure*, oopDesc*, Klass*)
+  3154422821    2.48%     3152  void objArrayOopDesc::oop_iterate_range<G1MarkAndPushClosure>(G1MarkAndPushClosure*, int, int)
+  2959744046    2.32%     2957  org.h2.result.Row.getValue
+  2700222092    2.12%     2696  org.h2.index.MultiVersionCursor.next
+  2577931070    2.02%     2569  org.h2.engine.Session.getLogId
+  2494059978    1.96%     2494  G1FullGCMarker::complete_marking(GenericTaskQueueSet<OverflowTaskQueue<oopDesc*, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*, TaskTerminator*)
+  2233820783    1.75%     2227  org.h2.engine.Session.setCurrentCommand
+  2187962698    1.72%     2186  org.h2.index.BaseIndex.compareValues
+  1662164961    1.30%     1662  org.h2.jdbc.JdbcConnection.checkClosed
+  1652822888    1.30%     1650  org.h2.index.MultiVersionCursor.getSearchRow
+  1590541594    1.25%     1589  java.lang.Object.<init>
+  1539608711    1.21%     1538  org.h2.index.TreeIndex.next
+  1538086720    1.21%     1538  void OopOopIterateDispatch<G1AdjustClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1AdjustClosure*, oopDesc*, Klass*)
+  1524331931    1.20%     1524  org.h2.util.ObjectArray.get
+  1523507864    1.20%     1524  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+  1492382776    1.17%     1491  itable stub
+  1326879898    1.04%     1326  org.h2.index.IndexCursor.find
+  1295504948    1.02%     1294  org.h2.value.ValueShort.compareSecure
+  1259701952    0.99%     1259  org.h2.expression.ExpressionColumn.getValue
+  1257802764    0.99%     1256  org.h2.index.MultiVersionCursor.loadNext
+  1167117142    0.92%     1167  GenericTaskQueueSet<OverflowTaskQueue<ObjArrayTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>::steal_best_of_2(unsigned int, ObjArrayTask&)
+  1105973783    0.87%     1105  org.h2.value.Value.compareTo
+  1029054436    0.81%     1028  org.h2.value.ValueInt.compareSecure
+   909680811    0.71%      907  SpinPause
+   897318255    0.70%      897  G1RegionMarkStatsCache::add_live_words(oopDesc*)
+   894981822    0.70%      894  org.h2.expression.Comparison.getValue
+   882826377    0.69%      882  org.h2.index.TreeIndex.remove
+   855416851    0.67%      855  org.h2.jdbc.JdbcStatement.checkClosed
+   828210343    0.65%      827  java.util.HashMap.getNode
+   820944952    0.64%      820  org.h2.index.TreeCursor.next
+   819200869    0.64%      819  G1AdjustRegionClosure::do_heap_region(HeapRegion*)
+   802993810    0.63%      799  clear_page_rep_[k]
+   745436733    0.59%      744  org.h2.jdbc.JdbcResultSet.getColumnIndex
+   717600876    0.56%      709  _raw_spin_unlock_irqrestore_[k]
+   702080908    0.55%      702  .annobin__ZN10G1CMBitMap10check_markEPP12HeapWordImpl.start
+   671109210    0.53%      670  org.h2.index.ScanIndex.incrementRowCount
+   644068359    0.51%      644  java.util.Date.normalize
+   621065242    0.49%      621  org.h2.engine.Session.isReconnectNeeded
+   615256047    0.48%      615  org.h2.table.TableFilter.getValue
+   540642292    0.42%      540  org.h2.value.Value.convertTo
+   513915167    0.40%      514  .annobin__ZN21OopOopIterateDispatchI15G1AdjustClosureE5Table15oop_oop_iterateI13ObjArrayKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   504164962    0.40%      504  PreservedMarks::adjust_during_full_gc()
+   495439669    0.39%      495  .annobin__ZN21OopOopIterateDispatchI28G1ConcurrentRefineOopClosureE5Table15oop_oop_iterateI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+   490996275    0.39%      490  org.h2.index.BaseIndex.compareKeys
+   465045067    0.36%      465  IndexSetIterator::advance_and_next()
+   424373602    0.33%      424  PreservedMarks::restore_and_increment(unsigned long volatile*)
+   417412944    0.33%      417  org.h2.engine.Database.areEqual
+   410359070    0.32%      410  G1RemSet::refine_card_concurrently(unsigned char*, unsigned int)
+   396406771    0.31%      396  org.h2.index.TreeIndex.set
+   391383457    0.31%      391  org.h2.index.TreeIndex.findFirstNode
+   384053890    0.30%      384  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   364041955    0.29%      364  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   363532261    0.29%      363  org.h2.expression.ConditionAndOr.getValue
+   355609381    0.28%      355  org.h2.util.ObjectArray.iterator
+   342920485    0.27%      342  java_lang_Throwable::fill_in_stack_trace(Handle, methodHandle const&, JavaThread*)
+   336353988    0.26%      333  __memset_avx2_unaligned_erms
+   319052904    0.25%      319  java.lang.Integer.getChars
+   291322044    0.23%      291  org.h2.value.ValueString.compareSecure
+   283330875    0.22%      283  org.h2.util.MathUtils.compare
+   254306112    0.20%      254  org.h2.table.Table.compareTypeSave
+   253554043    0.20%      253  java.util.HashMap.putVal
+   253219157    0.20%      254  void OopOopIterateDispatch<G1ScanCardClosure>::Table::oop_oop_iterate<InstanceKlass, narrowOop>(G1ScanCardClosure*, oopDesc*, Klass*)
+   236020358    0.19%      236  PhaseChaitin::gather_lrg_masks(bool)
+   235541630    0.18%      235  [vdso]
+   226930589    0.18%      227  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   223017713    0.18%      223  org.h2.index.ScanIndex.getNextRow
+   222725513    0.17%      222  CodeHeap::find_blob_unsafe(void*) const
+   221268293    0.17%      221  org.h2.value.Value.compareTypeSave
+   213038072    0.17%      213  org.h2.result.LocalResult.next
+   208249657    0.16%      208  org.h2.value.ValueString.getType
+   201016377    0.16%      201  org.h2.jdbc.JdbcPreparedStatement.checkClosed
+   194164733    0.15%      194  org.h2.table.TableFilter.next
+   193996240    0.15%      194  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+   190027784    0.15%      190  PhaseLive::compute(unsigned int)
+   185989832    0.15%      186  java.lang.Integer.toString
+   184417095    0.14%      184  org.h2.message.TraceSystem.getTrace
+   180320324    0.14%      180  java.util.HashMap.hash
+   176002888    0.14%      176  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+   174886605    0.14%      175  void G1ScanCardClosure::do_oop_work<narrowOop>(narrowOop*)
+   170093685    0.13%      170  org.h2.command.dml.Select.queryFlat
+   168985822    0.13%      169  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+   168028153    0.13%      168  org.h2.table.Column.getColumnId
+   166457832    0.13%      166  G1FullGCPrepareTask::G1CalculatePointersClosure::prepare_for_compaction(HeapRegion*)
+   163149248    0.13%      163  OtherRegionsTable::add_reference(void*, unsigned int)
+   161196659    0.13%      161  void OopOopIterateBoundedDispatch<G1ConcurrentRefineOopClosure>::Table::oop_oop_iterate_bounded<ObjArrayKlass, narrowOop>(G1ConcurrentRefineOopClosure*, oopDesc*, Klass*, MemRegion)
+   161014884    0.13%      161  org.h2.value.ValueShort.getString
+   158126501    0.12%      158  org.h2.index.TreeIndex.add
+   155151874    0.12%      155  org.h2.table.Column.convert
+   150053125    0.12%      150  PhaseChaitin::post_allocate_copy_removal()
+   148221693    0.12%      148  org.h2.command.dml.Select.isEverything
+   146021815    0.11%      146  sun.util.calendar.CalendarDate.<init>
+   140002151    0.11%      140  Arena::contains(void const*) const
+   138995074    0.11%      139  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+   136049352    0.11%      136  org.h2.value.ValueStringBase.getString
+   135277940    0.11%      135  org.h2.jdbc.JdbcPreparedStatement.setParameter
+   134343984    0.11%      134  __tls_get_addr
+   131078702    0.10%      131  java.util.HashSet.<init>
+   128478952    0.10%      129  G1ScanHRForRegionClosure::scan_heap_roots(HeapRegion*)
+   128149010    0.10%      128  java.lang.String.coder
+   127230429    0.10%      127  java.util.HashMap.resize
+   125077736    0.10%      125  java.lang.String.compareTo
+   121366122    0.10%      121  G1FullGCCompactTask::compact_region(HeapRegion*)
+   121173934    0.10%      121  org.h2.index.MultiVersionIndex.removeIfExists
+   120305606    0.09%      120  java.lang.String.equals
+   119011668    0.09%      119  org.h2.value.ValueTimestamp.getString
+   119002032    0.09%      119  org.h2.index.ScanCursor.next
+   118981321    0.09%      119  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+   118021702    0.09%      118  PhaseIdealLoop::Dominators()
+   116833264    0.09%      117  G1ParScanThreadState::steal_and_trim_queue(GenericTaskQueueSet<OverflowTaskQueue<ScannerTask, (MEMFLAGS)5, 131072u>, (MEMFLAGS)5>*)
+   115019619    0.09%      115  java.lang.Integer.stringSize
+   114996930    0.09%      115  PhaseIdealLoop::is_dominator(Node*, Node*)
+   113165219    0.09%      113  java.math.BigInteger.<init>
+   111102767    0.09%      111  org.h2.table.Table.getTemplateRow
+   108382545    0.09%      108  .annobin__ZN19G1FullGCCompactTask22G1CompactRegionClosure5applyEP7oopDesc.start
+   107095810    0.08%      107  org.h2.value.ValueInt.getType
+   106006277    0.08%      106  sun.util.calendar.BaseCalendar$Date.<init>
+   104050312    0.08%      104  org.h2.expression.Comparison.compareNotNull
+   101091430    0.08%      101  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<594020ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 594020ul>::oop_access_barrier(void*)
+   100173197    0.08%      100  java.math.BigDecimal.<init>
+    99013291    0.08%       99  sun.util.calendar.Gregorian.getCalendarDate
+    98041465    0.08%       98  IndexSet::alloc_block_containing(unsigned int)
+    96958192    0.08%       97  .annobin__ZN30OopOopIterateBackwardsDispatchI25G1ScanEvacuatedObjClosureE5Table25oop_oop_iterate_backwardsI13InstanceKlass9narrowOopEEvPS0_P7oopDescP5Klass.start
+    96064108    0.08%       96  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+    96027199    0.08%       96  org.h2.value.ValueBoolean.getString
+    95139982    0.07%       95  org.h2.value.ValueInt.get
+    93051627    0.07%       93  IndexSet::initialize(unsigned int)
+    92163502    0.07%       92  jbyte_disjoint_arraycopy
+    92150072    0.07%       92  org.h2.expression.Parameter.getValue
+    91293029    0.07%       91  CodeCache::find_blob(void*)
+    89177030    0.07%       89  java.util.HashMap.removeNode
+    88313541    0.07%       88  SharedRuntime::complete_monitor_locking_C(oopDesc*, BasicLock*, JavaThread*)
+    87096558    0.07%       87  java.lang.Boolean.equals
+    87048289    0.07%       87  PhaseIFG::effective_degree(unsigned int) const
+    87004714    0.07%       87  __memmove_avx_unaligned_erms
+    86296448    0.07%       86  ExceptionCache::match(Handle, unsigned char*)
+    86050348    0.07%       86  PhaseChaitin::Select()
+    84997601    0.07%       85  PhaseIFG::remove_node(unsigned int)
+    84021674    0.07%       84  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+    83237557    0.07%       83  java.util.LinkedHashMap.afterNodeAccess
+    83211531    0.07%       83  org.h2.table.TableData.addRow
+    83053102    0.07%       83  Unique_Node_List::remove(Node*)
+    82121913    0.06%       82  org.h2.value.Value.cache
+    82096681    0.06%       82  org.h2.result.Row.<init>
+    82095655    0.06%       82  org.h2.index.MultiVersionIndex.commit
+    82005458    0.06%       82  PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+    81331315    0.06%       81  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+    81055962    0.06%       81  Dict::Insert(void*, void*, bool)
+    80081080    0.06%       80  org.h2.value.Value.checkPrecision
+    80054760    0.06%       80  org.h2.util.StringCache.get
+    80051241    0.06%       80  PhaseOutput::BuildOopMaps()
+    79986900    0.06%       80  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+    79082653    0.06%       79  org.h2.index.IndexCondition.getCurrentValue
+    79033927    0.06%       79  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+    78997917    0.06%       79  org.h2.index.ScanCursor.getSearchRow
+    78046086    0.06%       78  DebugInformationRecorder::find_sharable_decode_offset(int)
+    77003675    0.06%       77  ClassLoaderData::holder_no_keepalive() const
+    76991627    0.06%       77  Matcher::xform(Node*, int)
+    76149810    0.06%       76  org.h2.value.ValueStringBase.getPrecision
+    76066348    0.06%       76  org.h2.index.IndexCursor.getSearchRow
+    75316893    0.06%       75  ObjectMonitor::exit(JavaThread*, bool)
+    75218134    0.06%       75  G1FullGCCompactionPoint::forward(oopDesc*, unsigned long)
+    75162554    0.06%       75  org.h2.value.ValueShort.getType
+    75104981    0.06%       75  org.h2.table.Column.validateConvertUpdateSequence
+    74198815    0.06%       74  org.h2.expression.Operation.getValue
+    74024686    0.06%       74  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+    73126938    0.06%       73  org.h2.value.CompareMode.compareString
+    73092378    0.06%       73  org.h2.message.Trace.isEnabled
+    73006953    0.06%       73  PhaseChaitin::merge_multidefs()
+    72132531    0.06%       72  java.util.Random.next
+    72052714    0.06%       72  org.h2.index.MultiVersionIndex.remove
+    71248784    0.06%       71  org.h2.constraint.ConstraintReferential.checkRowOwnTable
+    70307029    0.06%       70  ObjectMonitor::enter(JavaThread*)
+    70158488    0.06%       70  org.h2.command.Prepared.needRecompile
+    70158311    0.06%       70  org.h2.result.RowList.<init>
+    70014301    0.05%       70  G1BlockOffsetTablePart::forward_to_block_containing_addr_slow(HeapWordImpl**, HeapWordImpl**, void const*)
+    70007065    0.05%       70  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+    69026060    0.05%       69  PhaseCCP::analyze()
+    68999563    0.05%       69  sun.util.calendar.Gregorian.newCalendarDate
+    67057894    0.05%       67  org.h2.expression.Parameter.getParamValue
+    66995154    0.05%       67  Compile::identify_useful_nodes(Unique_Node_List&)
+    66073999    0.05%       66  void QuickSort::inner_sort<false, unsigned char*, int (*)(unsigned char const*, unsigned char const*)>(unsigned char**, unsigned long, int (*)(unsigned char const*, unsigned char const*)) [clone .constprop.0]
+    65162293    0.05%       65  org.h2.log.UndoLog.size
+    65137916    0.05%       65  org.h2.table.TableData.removeRow
+    65101422    0.05%       65  nmethod::oops_do(OopClosure*, bool)
+    65079787    0.05%       65  java.util.concurrent.atomic.AtomicLong.compareAndSet
+    65004248    0.05%       65  PhaseIFG::SquareUp()
+    64132928    0.05%       64  org.h2.result.Row.setValue
+    62144308    0.05%       62  org.h2.command.dml.Update.update
+    62118331    0.05%       62  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+    62050795    0.05%       62  org.h2.util.ObjectArray.<init>
+    62011169    0.05%       62  org.h2.value.ValueDecimal.getString
+    61101177    0.05%       61  org.h2.index.MultiVersionCursor.<init>
+    61098292    0.05%       61  org.h2.util.ObjectArray$ObjectArrayIterator.next
+    60043277    0.05%       60  org.h2.expression.ExpressionColumn.isEverything
+    60025554    0.05%       60  Node::is_CFG() const
+    60021125    0.05%       60  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+    59033704    0.05%       59  NodeHash::hash_find_insert(Node*)
