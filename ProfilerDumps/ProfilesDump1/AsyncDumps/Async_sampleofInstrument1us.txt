@@ -1,0 +1,2555 @@
+--- Execution profile ---
+Total samples       : 10279459
+GC_active           : 10 (0.00%)
+unknown_Java        : 23854 (0.23%)
+not_walkable_Java   : 10043 (0.10%)
+deoptimization      : 1223 (0.01%)
+skipped             : 6 (0.00%)
+
+--- 915040227 ns (0.87%), 90304 samples
+  [ 0] cd.CollisionDetector.recurse
+  [ 1] cd.CollisionDetector.drawMotionOnVoxelMap
+  [ 2] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [ 3] cd.CollisionDetector$$Lambda$180.0x000000080114a678.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.reduceCollisionSet
+  [ 6] cd.CollisionDetector.handleNewFrame
+  [ 7] CD.benchmark
+  [ 8] CD.innerBenchmarkLoop
+  [ 9] Run.measure
+  [10] [unknown]
+  [11] [unknown]
+  [12] Harness.main
+
+--- 674256284 ns (0.64%), 66640 samples
+  [ 0] cd.RedBlackTree.findNode
+  [ 1] cd.RedBlackTree.get
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$1
+  [ 3] cd.CollisionDetector$$Lambda$178.0x0000000801147458.apply
+  [ 4] cd.RedBlackTree.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 653570988 ns (0.62%), 64869 samples
+  [ 0] cd.RedBlackTree.forEach
+  [ 1] cd.CollisionDetector.reduceCollisionSet
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] [unknown]
+  [ 7] [unknown]
+  [ 8] Harness.main
+
+--- 620308708 ns (0.59%), 61179 samples
+  [ 0] Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+  [ 1] Node::replace_edge(Node*, Node*, PhaseGVN*)
+  [ 2] PhaseIterGVN::remove_globally_dead_node(Node*)
+  [ 3] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 4] PhaseIterGVN::transform_old(Node*)
+  [ 5] PhaseIterGVN::optimize()
+  [ 6] Compile::Optimize()
+  [ 7] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 8] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 9] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [10] CompileBroker::compiler_thread_loop()
+  [11] JavaThread::thread_main_inner()
+  [12] .annobin__ZN6Thread8call_runEv.start
+  [13] thread_native_entry(Thread*)
+  [14] start_thread
+
+--- 568123203 ns (0.54%), 56185 samples
+  [ 0] cd.RedBlackTree.treeMinimum
+  [ 1] cd.RedBlackTree$Node.successor
+  [ 2] cd.RedBlackTree.forEach
+  [ 3] cd.CollisionDetector.reduceCollisionSet
+  [ 4] cd.CollisionDetector.handleNewFrame
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] [unknown]
+  [ 9] [unknown]
+  [10] Harness.main
+
+--- 508312011 ns (0.48%), 49182 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 505986366 ns (0.48%), 48969 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.lambda$handleNewFrame$0
+  [19] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [20] som.Vector.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 504402283 ns (0.48%), 48713 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 483014514 ns (0.46%), 46629 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.treeInsert
+  [15] cd.RedBlackTree.put
+  [16] cd.CollisionDetector.lambda$handleNewFrame$0
+  [17] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [18] som.Vector.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 468263843 ns (0.44%), 46233 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 3] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 444561230 ns (0.42%), 43926 samples
+  [ 0] longest_match
+  [ 1] deflate_slow
+  [ 2] deflate
+  [ 3] Java_java_util_zip_Deflater_deflateBytesBytes
+  [ 4] java.util.zip.Deflater.deflateBytesBytes
+  [ 5] java.util.zip.Deflater.deflate
+  [ 6] java.util.zip.Deflater.deflate
+  [ 7] java.util.zip.DeflaterOutputStream.deflate
+  [ 8] java.util.zip.DeflaterOutputStream.write
+  [ 9] java.util.zip.GZIPOutputStream.write
+  [10] java.io.ObjectOutputStream$BlockDataOutputStream.write
+  [11] java.io.ObjectOutputStream.write
+  [12] org.graalvm.visualvm.lib.jfluid.wireprotocol.RootClassLoadedCommand.writeObject
+  [13] org.graalvm.visualvm.lib.jfluid.wireprotocol.WireIO.sendComplexCommand
+  [14] org.graalvm.visualvm.lib.jfluid.server.ProfilerServer.sendComplexCmdToClient
+  [15] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.sendRootClassLoadedCommand
+  [16] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.classLoadHook
+  [17] Harness.processArguments
+  [18] Harness.main
+
+--- 397012508 ns (0.38%), 39354 samples
+  [ 0] PhaseChaitin::Split(unsigned int, ResourceArea*)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 369080475 ns (0.35%), 35686 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 363588891 ns (0.35%), 35172 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.lambda$handleNewFrame$1
+  [18] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [19] cd.RedBlackTree.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 362608715 ns (0.34%), 34993 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.lambda$handleNewFrame$0
+  [19] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [20] som.Vector.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 353029943 ns (0.34%), 34107 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 352710455 ns (0.33%), 34077 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.treeInsert
+  [15] cd.RedBlackTree.put
+  [16] cd.CollisionDetector.lambda$handleNewFrame$0
+  [17] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [18] som.Vector.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 351932163 ns (0.33%), 34052 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.findNode
+  [17] cd.RedBlackTree.get
+  [18] cd.CollisionDetector.lambda$handleNewFrame$1
+  [19] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [20] cd.RedBlackTree.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 347784627 ns (0.33%), 33580 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.findNode
+  [15] cd.RedBlackTree.get
+  [16] cd.CollisionDetector.lambda$handleNewFrame$1
+  [17] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [18] cd.RedBlackTree.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 347489658 ns (0.33%), 33554 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.lambda$handleNewFrame$1
+  [18] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [19] cd.RedBlackTree.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 308236135 ns (0.29%), 30333 samples
+  [ 0] PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+  [ 1] PhaseChaitin::post_allocate_copy_removal()
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 304875163 ns (0.29%), 30122 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 3] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 303885289 ns (0.29%), 30107 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.RedBlackTree.treeInsert
+  [ 9] cd.RedBlackTree.put
+  [10] cd.CollisionDetector.lambda$handleNewFrame$0
+  [11] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [12] som.Vector.forEach
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 295647437 ns (0.28%), 29143 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.treeInsert
+  [10] cd.RedBlackTree.put
+  [11] cd.CollisionDetector.lambda$handleNewFrame$0
+  [12] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [13] som.Vector.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 290422168 ns (0.28%), 28766 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.lambda$handleNewFrame$0
+  [19] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [20] som.Vector.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 288420517 ns (0.27%), 28448 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 3] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 277847930 ns (0.26%), 27477 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 275767777 ns (0.26%), 27337 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 275012541 ns (0.26%), 27237 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.treeInsert
+  [15] cd.RedBlackTree.put
+  [16] cd.CollisionDetector.lambda$handleNewFrame$0
+  [17] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [18] som.Vector.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 274334826 ns (0.26%), 27134 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.treeInsert
+  [10] cd.RedBlackTree.put
+  [11] cd.CollisionDetector.lambda$handleNewFrame$0
+  [12] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [13] som.Vector.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 274272521 ns (0.26%), 27079 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.CallSign.compareTo
+  [10] cd.RedBlackTree.treeInsert
+  [11] cd.RedBlackTree.put
+  [12] cd.CollisionDetector.lambda$handleNewFrame$0
+  [13] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [14] som.Vector.forEach
+  [15] cd.CollisionDetector.handleNewFrame
+  [16] CD.benchmark
+  [17] CD.innerBenchmarkLoop
+  [18] Run.measure
+  [19] Run.doRuns
+  [20] Run.runBenchmark
+  [21] Harness.main
+
+--- 232648561 ns (0.22%), 22585 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.treeInsert
+  [13] cd.RedBlackTree.put
+  [14] cd.CollisionDetector.lambda$handleNewFrame$0
+  [15] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [16] som.Vector.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 223007518 ns (0.21%), 21596 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.CallSign.compareTo
+  [13] cd.RedBlackTree.treeInsert
+  [14] cd.RedBlackTree.put
+  [15] cd.CollisionDetector.lambda$handleNewFrame$0
+  [16] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [17] som.Vector.forEach
+  [18] cd.CollisionDetector.handleNewFrame
+  [19] CD.benchmark
+  [20] CD.innerBenchmarkLoop
+  [21] Run.measure
+  [22] Run.doRuns
+  [23] Run.runBenchmark
+  [24] Harness.main
+
+--- 210800382 ns (0.20%), 20387 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.treeInsert
+  [13] cd.RedBlackTree.put
+  [14] cd.CollisionDetector.lambda$handleNewFrame$0
+  [15] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [16] som.Vector.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 200555848 ns (0.19%), 19823 samples
+  [ 0] PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+  [ 1] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 2] PhaseChaitin::Register_Allocate()
+  [ 3] Compile::Code_Gen()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 200477964 ns (0.19%), 19688 samples
+  [ 0] PhaseChaitin::gather_lrg_masks(bool)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 199599527 ns (0.19%), 19329 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.RedBlackTree.treeInsert
+  [12] cd.RedBlackTree.put
+  [13] cd.CollisionDetector.lambda$handleNewFrame$0
+  [14] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [15] som.Vector.forEach
+  [16] cd.CollisionDetector.handleNewFrame
+  [17] CD.benchmark
+  [18] CD.innerBenchmarkLoop
+  [19] Run.measure
+  [20] Run.doRuns
+  [21] Run.runBenchmark
+  [22] Harness.main
+
+--- 191664050 ns (0.18%), 18928 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 3] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 179091275 ns (0.17%), 17710 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.lambda$handleNewFrame$0
+  [19] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [20] som.Vector.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 175454595 ns (0.17%), 17071 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareTo
+  [14] cd.RedBlackTree.findNode
+  [15] cd.RedBlackTree.get
+  [16] cd.CollisionDetector.putIntoMap
+  [17] cd.CollisionDetector.recurse
+  [18] cd.CollisionDetector.drawMotionOnVoxelMap
+  [19] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [20] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [21] som.Vector.forEach
+  [22] cd.CollisionDetector.reduceCollisionSet
+  [23] cd.CollisionDetector.handleNewFrame
+  [24] CD.benchmark
+  [25] CD.innerBenchmarkLoop
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 172195855 ns (0.16%), 17053 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.treeInsert
+  [15] cd.RedBlackTree.put
+  [16] cd.CollisionDetector.lambda$handleNewFrame$0
+  [17] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [18] som.Vector.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 171489974 ns (0.16%), 16834 samples
+  [ 0] PhaseIterGVN::subsume_node(Node*, Node*)
+  [ 1] PhaseIterGVN::transform_old(Node*)
+  [ 2] PhaseIterGVN::optimize()
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 171173049 ns (0.16%), 16967 samples
+  [ 0] deflate_slow
+  [ 1] deflate
+  [ 2] Java_java_util_zip_Deflater_deflateBytesBytes
+  [ 3] java.util.zip.Deflater.deflateBytesBytes
+  [ 4] java.util.zip.Deflater.deflate
+  [ 5] java.util.zip.Deflater.deflate
+  [ 6] java.util.zip.DeflaterOutputStream.deflate
+  [ 7] java.util.zip.DeflaterOutputStream.write
+  [ 8] java.util.zip.GZIPOutputStream.write
+  [ 9] java.io.ObjectOutputStream$BlockDataOutputStream.write
+  [10] java.io.ObjectOutputStream.write
+  [11] org.graalvm.visualvm.lib.jfluid.wireprotocol.RootClassLoadedCommand.writeObject
+  [12] org.graalvm.visualvm.lib.jfluid.wireprotocol.WireIO.sendComplexCommand
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerServer.sendComplexCmdToClient
+  [14] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.sendRootClassLoadedCommand
+  [15] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.classLoadHook
+  [16] Harness.processArguments
+  [17] Harness.main
+
+--- 169507036 ns (0.16%), 16433 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.findNode
+  [13] cd.RedBlackTree.get
+  [14] cd.CollisionDetector.lambda$handleNewFrame$1
+  [15] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [16] cd.RedBlackTree.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 166886072 ns (0.16%), 16520 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.CallSign.compareTo
+  [16] cd.RedBlackTree.findNode
+  [17] cd.RedBlackTree.get
+  [18] cd.CollisionDetector.lambda$handleNewFrame$1
+  [19] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [20] cd.RedBlackTree.forEach
+  [21] cd.CollisionDetector.handleNewFrame
+  [22] CD.benchmark
+  [23] CD.innerBenchmarkLoop
+  [24] Run.measure
+  [25] Run.doRuns
+  [26] Run.runBenchmark
+  [27] Harness.main
+
+--- 166476544 ns (0.16%), 16470 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.RedBlackTree.treeInsert
+  [ 9] cd.RedBlackTree.put
+  [10] cd.CollisionDetector.lambda$handleNewFrame$0
+  [11] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [12] som.Vector.forEach
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 165732346 ns (0.16%), 16395 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 165706115 ns (0.16%), 16389 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.lambda$handleNewFrame$0
+  [18] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [19] som.Vector.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 164615129 ns (0.16%), 15918 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.CallSign.compareTo
+  [13] cd.RedBlackTree.findNode
+  [14] cd.RedBlackTree.get
+  [15] cd.CollisionDetector.lambda$handleNewFrame$1
+  [16] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [17] cd.RedBlackTree.forEach
+  [18] cd.CollisionDetector.handleNewFrame
+  [19] CD.benchmark
+  [20] CD.innerBenchmarkLoop
+  [21] Run.measure
+  [22] Run.doRuns
+  [23] Run.runBenchmark
+  [24] Harness.main
+
+--- 164558141 ns (0.16%), 16284 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.RedBlackTree.findNode
+  [ 9] cd.RedBlackTree.get
+  [10] cd.CollisionDetector.lambda$handleNewFrame$1
+  [11] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [12] cd.RedBlackTree.forEach
+  [13] cd.CollisionDetector.handleNewFrame
+  [14] CD.benchmark
+  [15] CD.innerBenchmarkLoop
+  [16] Run.measure
+  [17] Run.doRuns
+  [18] Run.runBenchmark
+  [19] Harness.main
+
+--- 164388880 ns (0.16%), 16290 samples
+  [ 0] PhaseLive::compute(unsigned int)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 163913159 ns (0.16%), 16208 samples
+  [ 0] cd.RedBlackTree.treeMinimum
+  [ 1] cd.RedBlackTree.forEach
+  [ 2] cd.CollisionDetector.handleNewFrame
+  [ 3] CD.benchmark
+  [ 4] CD.innerBenchmarkLoop
+  [ 5] Run.measure
+  [ 6] [unknown]
+  [ 7] [unknown]
+  [ 8] Harness.main
+
+--- 162840118 ns (0.15%), 16140 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.RedBlackTree.findNode
+  [15] cd.RedBlackTree.get
+  [16] cd.CollisionDetector.lambda$handleNewFrame$1
+  [17] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [18] cd.RedBlackTree.forEach
+  [19] cd.CollisionDetector.handleNewFrame
+  [20] CD.benchmark
+  [21] CD.innerBenchmarkLoop
+  [22] Run.measure
+  [23] Run.doRuns
+  [24] Run.runBenchmark
+  [25] Harness.main
+
+--- 162535131 ns (0.15%), 16031 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.CallSign.compareTo
+  [10] cd.RedBlackTree.treeInsert
+  [11] cd.RedBlackTree.put
+  [12] cd.CollisionDetector.lambda$handleNewFrame$0
+  [13] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [14] som.Vector.forEach
+  [15] cd.CollisionDetector.handleNewFrame
+  [16] CD.benchmark
+  [17] CD.innerBenchmarkLoop
+  [18] Run.measure
+  [19] Run.doRuns
+  [20] Run.runBenchmark
+  [21] Harness.main
+
+--- 160614962 ns (0.15%), 15552 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.putIntoMap
+  [18] cd.CollisionDetector.recurse
+  [19] cd.CollisionDetector.drawMotionOnVoxelMap
+  [20] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [21] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [22] som.Vector.forEach
+  [23] cd.CollisionDetector.reduceCollisionSet
+  [24] cd.CollisionDetector.handleNewFrame
+  [25] CD.benchmark
+  [26] CD.innerBenchmarkLoop
+  [27] Run.measure
+  [28] Run.doRuns
+  [29] Run.runBenchmark
+  [30] Harness.main
+
+--- 160309580 ns (0.15%), 15796 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.treeInsert
+  [10] cd.RedBlackTree.put
+  [11] cd.CollisionDetector.lambda$handleNewFrame$0
+  [12] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [13] som.Vector.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 159715695 ns (0.15%), 15470 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.findNode
+  [13] cd.RedBlackTree.get
+  [14] cd.CollisionDetector.lambda$handleNewFrame$1
+  [15] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [16] cd.RedBlackTree.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 158488855 ns (0.15%), 15667 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.treeInsert
+  [10] cd.RedBlackTree.put
+  [11] cd.CollisionDetector.lambda$handleNewFrame$0
+  [12] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [13] som.Vector.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 157056533 ns (0.15%), 15540 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.lambda$handleNewFrame$1
+  [18] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [19] cd.RedBlackTree.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 156863124 ns (0.15%), 15539 samples
+  [ 0] copy_user_generic_string_[k]
+  [ 1] _copy_to_user_[k]
+  [ 2] put_timespec64_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.CallSign.compareTo
+  [14] cd.CallSign.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.lambda$handleNewFrame$1
+  [18] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [19] cd.RedBlackTree.forEach
+  [20] cd.CollisionDetector.handleNewFrame
+  [21] CD.benchmark
+  [22] CD.innerBenchmarkLoop
+  [23] Run.measure
+  [24] Run.doRuns
+  [25] Run.runBenchmark
+  [26] Harness.main
+
+--- 156485795 ns (0.15%), 15440 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.findNode
+  [10] cd.RedBlackTree.get
+  [11] cd.CollisionDetector.lambda$handleNewFrame$1
+  [12] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [13] cd.RedBlackTree.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 156343834 ns (0.15%), 15181 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareTo
+  [14] cd.Vector2D.compareTo
+  [15] cd.RedBlackTree.findNode
+  [16] cd.RedBlackTree.get
+  [17] cd.CollisionDetector.putIntoMap
+  [18] cd.CollisionDetector.recurse
+  [19] cd.CollisionDetector.drawMotionOnVoxelMap
+  [20] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [21] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [22] som.Vector.forEach
+  [23] cd.CollisionDetector.reduceCollisionSet
+  [24] cd.CollisionDetector.handleNewFrame
+  [25] CD.benchmark
+  [26] CD.innerBenchmarkLoop
+  [27] Run.measure
+  [28] Run.doRuns
+  [29] Run.runBenchmark
+  [30] Harness.main
+
+--- 156161591 ns (0.15%), 15138 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.findNode
+  [17] cd.RedBlackTree.get
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 155189402 ns (0.15%), 15006 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.treeInsert
+  [13] cd.RedBlackTree.put
+  [14] cd.CollisionDetector.lambda$handleNewFrame$0
+  [15] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [16] som.Vector.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 155185590 ns (0.15%), 15014 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.CallSign.compareTo
+  [12] cd.RedBlackTree.treeInsert
+  [13] cd.RedBlackTree.put
+  [14] cd.CollisionDetector.lambda$handleNewFrame$0
+  [15] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [16] som.Vector.forEach
+  [17] cd.CollisionDetector.handleNewFrame
+  [18] CD.benchmark
+  [19] CD.innerBenchmarkLoop
+  [20] Run.measure
+  [21] Run.doRuns
+  [22] Run.runBenchmark
+  [23] Harness.main
+
+--- 154607202 ns (0.15%), 15278 samples
+  [ 0] cd.RedBlackTree.treeInsert
+  [ 1] cd.RedBlackTree.put
+  [ 2] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 3] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 4] som.Vector.forEach
+  [ 5] cd.CollisionDetector.handleNewFrame
+  [ 6] CD.benchmark
+  [ 7] CD.innerBenchmarkLoop
+  [ 8] Run.measure
+  [ 9] [unknown]
+  [10] [unknown]
+  [11] Harness.main
+
+--- 154343725 ns (0.15%), 15262 samples
+  [ 0] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 153473553 ns (0.15%), 14945 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareNumbers
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.findNode
+  [17] cd.RedBlackTree.get
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 153253983 ns (0.15%), 15158 samples
+  [ 0] PhaseChaitin::post_allocate_copy_removal()
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 152208606 ns (0.14%), 15052 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 7] cd.CallSign.compareTo
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.RedBlackTree.findNode
+  [10] cd.RedBlackTree.get
+  [11] cd.CollisionDetector.lambda$handleNewFrame$1
+  [12] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [13] cd.RedBlackTree.forEach
+  [14] cd.CollisionDetector.handleNewFrame
+  [15] CD.benchmark
+  [16] CD.innerBenchmarkLoop
+  [17] Run.measure
+  [18] Run.doRuns
+  [19] Run.runBenchmark
+  [20] Harness.main
+
+--- 151459333 ns (0.14%), 14640 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.CallSign.compareTo
+  [12] cd.CallSign.compareTo
+  [13] cd.RedBlackTree.treeInsert
+  [14] cd.RedBlackTree.put
+  [15] cd.CollisionDetector.lambda$handleNewFrame$0
+  [16] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [17] som.Vector.forEach
+  [18] cd.CollisionDetector.handleNewFrame
+  [19] CD.benchmark
+  [20] CD.innerBenchmarkLoop
+  [21] Run.measure
+  [22] Run.doRuns
+  [23] Run.runBenchmark
+  [24] Harness.main
+
+--- 151450257 ns (0.14%), 14673 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.RedBlackTree.findNode
+  [12] cd.RedBlackTree.get
+  [13] cd.CollisionDetector.lambda$handleNewFrame$1
+  [14] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [15] cd.RedBlackTree.forEach
+  [16] cd.CollisionDetector.handleNewFrame
+  [17] CD.benchmark
+  [18] CD.innerBenchmarkLoop
+  [19] Run.measure
+  [20] Run.doRuns
+  [21] Run.runBenchmark
+  [22] Harness.main
+
+--- 151160579 ns (0.14%), 14616 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [10] cd.CallSign.compareTo
+  [11] cd.RedBlackTree.treeInsert
+  [12] cd.RedBlackTree.put
+  [13] cd.CollisionDetector.lambda$handleNewFrame$0
+  [14] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [15] som.Vector.forEach
+  [16] cd.CollisionDetector.handleNewFrame
+  [17] CD.benchmark
+  [18] CD.innerBenchmarkLoop
+  [19] Run.measure
+  [20] Run.doRuns
+  [21] Run.runBenchmark
+  [22] Harness.main
+
+--- 150951648 ns (0.14%), 14912 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 3] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 5] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 6] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 8] cd.CallSign.compareTo
+  [ 9] cd.CallSign.compareTo
+  [10] cd.RedBlackTree.findNode
+  [11] cd.RedBlackTree.get
+  [12] cd.CollisionDetector.lambda$handleNewFrame$1
+  [13] cd.CollisionDetector$$Lambda$172.0x0000000801147ce0.apply
+  [14] cd.RedBlackTree.forEach
+  [15] cd.CollisionDetector.handleNewFrame
+  [16] CD.benchmark
+  [17] CD.innerBenchmarkLoop
+  [18] Run.measure
+  [19] Run.doRuns
+  [20] Run.runBenchmark
+  [21] Harness.main
+
+--- 150879036 ns (0.14%), 14868 samples
+  [ 0] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 1] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 2] som.Vector.forEach
+  [ 3] cd.CollisionDetector.handleNewFrame
+  [ 4] CD.benchmark
+  [ 5] CD.innerBenchmarkLoop
+  [ 6] Run.measure
+  [ 7] [unknown]
+  [ 8] [unknown]
+  [ 9] Harness.main
+
+--- 145813892 ns (0.14%), 14180 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareNumbers
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.findNode
+  [17] cd.RedBlackTree.get
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 144348305 ns (0.14%), 14000 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareNumbers
+  [15] cd.Vector2D.compareTo
+  [16] cd.Vector2D.compareTo
+  [17] cd.RedBlackTree.findNode
+  [18] cd.RedBlackTree.get
+  [19] cd.CollisionDetector.putIntoMap
+  [20] cd.CollisionDetector.recurse
+  [21] cd.CollisionDetector.drawMotionOnVoxelMap
+  [22] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [23] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [24] som.Vector.forEach
+  [25] cd.CollisionDetector.reduceCollisionSet
+  [26] cd.CollisionDetector.handleNewFrame
+  [27] CD.benchmark
+  [28] CD.innerBenchmarkLoop
+  [29] Run.measure
+  [30] Run.doRuns
+  [31] Run.runBenchmark
+  [32] Harness.main
+
+--- 141984634 ns (0.13%), 14031 samples
+  [ 0] PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+  [ 1] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 2] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 3] Compile::Optimize()
+  [ 4] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 5] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 6] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 7] CompileBroker::compiler_thread_loop()
+  [ 8] JavaThread::thread_main_inner()
+  [ 9] .annobin__ZN6Thread8call_runEv.start
+  [10] thread_native_entry(Thread*)
+  [11] start_thread
+
+--- 136748370 ns (0.13%), 13229 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareNumbers
+  [15] cd.Vector2D.compareTo
+  [16] cd.Vector2D.compareTo
+  [17] cd.RedBlackTree.findNode
+  [18] cd.RedBlackTree.get
+  [19] cd.CollisionDetector.putIntoMap
+  [20] cd.CollisionDetector.recurse
+  [21] cd.CollisionDetector.drawMotionOnVoxelMap
+  [22] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [23] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [24] som.Vector.forEach
+  [25] cd.CollisionDetector.reduceCollisionSet
+  [26] cd.CollisionDetector.handleNewFrame
+  [27] CD.benchmark
+  [28] CD.innerBenchmarkLoop
+  [29] Run.measure
+  [30] Run.doRuns
+  [31] Run.runBenchmark
+  [32] Harness.main
+
+--- 127691860 ns (0.12%), 12654 samples
+  [ 0] PhaseAggressiveCoalesce::insert_copies(Matcher&)
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 126421044 ns (0.12%), 12532 samples
+  [ 0] .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+  [ 1] PhaseChaitin::Register_Allocate()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 125187047 ns (0.12%), 12511 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 3] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 5] cd.CallSign.compareTo
+  [ 6] cd.CallSign.compareTo
+  [ 7] cd.RedBlackTree.treeInsert
+  [ 8] cd.RedBlackTree.put
+  [ 9] cd.CollisionDetector.lambda$handleNewFrame$0
+  [10] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [11] som.Vector.forEach
+  [12] cd.CollisionDetector.handleNewFrame
+  [13] CD.benchmark
+  [14] CD.innerBenchmarkLoop
+  [15] Run.measure
+  [16] Run.doRuns
+  [17] Run.runBenchmark
+  [18] Harness.main
+
+--- 122317453 ns (0.12%), 12140 samples
+  [ 0] Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+  [ 1] Node::replace_edge(Node*, Node*, PhaseGVN*)
+  [ 2] PhaseIterGVN::remove_globally_dead_node(Node*)
+  [ 3] PhaseIterGVN::optimize()
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 121428577 ns (0.12%), 11814 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareTo
+  [14] cd.RedBlackTree.treeInsert
+  [15] cd.RedBlackTree.put
+  [16] cd.CollisionDetector.putIntoMap
+  [17] cd.CollisionDetector.recurse
+  [18] cd.CollisionDetector.drawMotionOnVoxelMap
+  [19] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [20] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [21] som.Vector.forEach
+  [22] cd.CollisionDetector.reduceCollisionSet
+  [23] cd.CollisionDetector.handleNewFrame
+  [24] CD.benchmark
+  [25] CD.innerBenchmarkLoop
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 120644422 ns (0.11%), 11944 samples
+  [ 0] cd.RedBlackTree.put
+  [ 1] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 2] cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+  [ 3] som.Vector.forEach
+  [ 4] cd.CollisionDetector.handleNewFrame
+  [ 5] CD.benchmark
+  [ 6] CD.innerBenchmarkLoop
+  [ 7] Run.measure
+  [ 8] [unknown]
+  [ 9] [unknown]
+  [10] Harness.main
+
+--- 120464788 ns (0.11%), 12085 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 3] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 4] cd.CallSign.compareTo
+  [ 5] cd.CallSign.compareTo
+  [ 6] cd.RedBlackTree.treeInsert
+  [ 7] cd.RedBlackTree.put
+  [ 8] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 9] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [10] som.Vector.forEach
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 120046012 ns (0.11%), 11923 samples
+  [ 0] longest_match
+  [ 1] deflate_slow
+  [ 2] deflate
+  [ 3] Java_java_util_zip_Deflater_deflateBytesBytes
+  [ 4] java.util.zip.Deflater.deflateBytesBytes
+  [ 5] java.util.zip.Deflater.deflate
+  [ 6] java.util.zip.Deflater.deflate
+  [ 7] java.util.zip.DeflaterOutputStream.deflate
+  [ 8] java.util.zip.DeflaterOutputStream.write
+  [ 9] java.util.zip.GZIPOutputStream.write
+  [10] java.io.ObjectOutputStream$BlockDataOutputStream.drain
+  [11] java.io.ObjectOutputStream$BlockDataOutputStream.write
+  [12] java.io.ObjectOutputStream.write
+  [13] org.graalvm.visualvm.lib.jfluid.wireprotocol.RootClassLoadedCommand.writeObject
+  [14] org.graalvm.visualvm.lib.jfluid.wireprotocol.WireIO.sendComplexCommand
+  [15] org.graalvm.visualvm.lib.jfluid.server.ProfilerServer.sendComplexCmdToClient
+  [16] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.sendRootClassLoadedCommand
+  [17] org.graalvm.visualvm.lib.jfluid.server.ProfilerInterface.classLoadHook
+  [18] Harness.processArguments
+  [19] Harness.main
+
+--- 119701624 ns (0.11%), 11833 samples
+  [ 0] Arena::contains(void const*) const
+  [ 1] Matcher::match()
+  [ 2] Compile::Code_Gen()
+  [ 3] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 4] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 5] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 6] CompileBroker::compiler_thread_loop()
+  [ 7] JavaThread::thread_main_inner()
+  [ 8] .annobin__ZN6Thread8call_runEv.start
+  [ 9] thread_native_entry(Thread*)
+  [10] start_thread
+
+--- 119415307 ns (0.11%), 12021 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 3] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [ 4] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [ 5] cd.CallSign.compareTo
+  [ 6] cd.RedBlackTree.treeInsert
+  [ 7] cd.RedBlackTree.put
+  [ 8] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 9] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [10] som.Vector.forEach
+  [11] cd.CollisionDetector.handleNewFrame
+  [12] CD.benchmark
+  [13] CD.innerBenchmarkLoop
+  [14] Run.measure
+  [15] Run.doRuns
+  [16] Run.runBenchmark
+  [17] Harness.main
+
+--- 119383280 ns (0.11%), 12027 samples
+  [ 0] [vdso]
+  [ 1] clock_gettime@GLIBC_2.2.5
+  [ 2] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 3] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [ 4] cd.CallSign.compareTo
+  [ 5] cd.RedBlackTree.treeInsert
+  [ 6] cd.RedBlackTree.put
+  [ 7] cd.CollisionDetector.lambda$handleNewFrame$0
+  [ 8] cd.CollisionDetector$$Lambda$171.0x0000000801145b20.apply
+  [ 9] som.Vector.forEach
+  [10] cd.CollisionDetector.handleNewFrame
+  [11] CD.benchmark
+  [12] CD.innerBenchmarkLoop
+  [13] Run.measure
+  [14] Run.doRuns
+  [15] Run.runBenchmark
+  [16] Harness.main
+
+--- 115516766 ns (0.11%), 11246 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareNumbers
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 115216134 ns (0.11%), 11368 samples
+  [ 0] PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+  [ 1] PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+  [ 2] .annobin__ZN14PhaseIdealLoop18build_and_optimizeEv.start
+  [ 3] .annobin__ZN14PhaseIdealLoop8optimizeER12PhaseIterGVN12LoopOptsMode.start
+  [ 4] Compile::Optimize()
+  [ 5] Compile::Compile(ciEnv*, ciMethod*, int, bool, bool, bool, bool, bool, DirectiveSet*)
+  [ 6] C2Compiler::compile_method(ciEnv*, ciMethod*, int, bool, DirectiveSet*)
+  [ 7] CompileBroker::invoke_compiler_on_method(CompileTask*)
+  [ 8] CompileBroker::compiler_thread_loop()
+  [ 9] JavaThread::thread_main_inner()
+  [10] .annobin__ZN6Thread8call_runEv.start
+  [11] thread_native_entry(Thread*)
+  [12] start_thread
+
+--- 113340926 ns (0.11%), 11017 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareTo
+  [14] cd.Vector2D.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.putIntoMap
+  [18] cd.CollisionDetector.recurse
+  [19] cd.CollisionDetector.drawMotionOnVoxelMap
+  [20] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [21] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [22] som.Vector.forEach
+  [23] cd.CollisionDetector.reduceCollisionSet
+  [24] cd.CollisionDetector.handleNewFrame
+  [25] CD.benchmark
+  [26] CD.innerBenchmarkLoop
+  [27] Run.measure
+  [28] Run.doRuns
+  [29] Run.runBenchmark
+  [30] Harness.main
+
+--- 112279918 ns (0.11%), 10911 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 111805359 ns (0.11%), 10892 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+  [13] cd.Vector2D.compareNumbers
+  [14] cd.Vector2D.compareTo
+  [15] cd.Vector2D.compareTo
+  [16] cd.RedBlackTree.treeInsert
+  [17] cd.RedBlackTree.put
+  [18] cd.CollisionDetector.putIntoMap
+  [19] cd.CollisionDetector.recurse
+  [20] cd.CollisionDetector.drawMotionOnVoxelMap
+  [21] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [22] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [23] som.Vector.forEach
+  [24] cd.CollisionDetector.reduceCollisionSet
+  [25] cd.CollisionDetector.handleNewFrame
+  [26] CD.benchmark
+  [27] CD.innerBenchmarkLoop
+  [28] Run.measure
+  [29] Run.doRuns
+  [30] Run.runBenchmark
+  [31] Harness.main
+
+--- 110257490 ns (0.10%), 10664 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareTo
+  [15] cd.RedBlackTree.treeInsert
+  [16] cd.RedBlackTree.put
+  [17] cd.CollisionDetector.putIntoMap
+  [18] cd.CollisionDetector.recurse
+  [19] cd.CollisionDetector.drawMotionOnVoxelMap
+  [20] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [21] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [22] som.Vector.forEach
+  [23] cd.CollisionDetector.reduceCollisionSet
+  [24] cd.CollisionDetector.handleNewFrame
+  [25] CD.benchmark
+  [26] CD.innerBenchmarkLoop
+  [27] Run.measure
+  [28] Run.doRuns
+  [29] Run.runBenchmark
+  [30] Harness.main
+
+--- 109422984 ns (0.10%), 10612 samples
+  [ 0] _raw_spin_unlock_irqrestore_[k]
+  [ 1] task_sched_runtime_[k]
+  [ 2] posix_cpu_clock_get_[k]
+  [ 3] __x64_sys_clock_gettime_[k]
+  [ 4] do_syscall_64_[k]
+  [ 5] entry_SYSCALL_64_after_hwframe_[k]
+  [ 6] [vdso]
+  [ 7] clock_gettime@GLIBC_2.2.5
+  [ 8] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 9] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [10] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [11] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [12] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [13] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [14] cd.Vector2D.compareNumbers
+  [15] cd.Vector2D.compareTo
+  [16] cd.Vector2D.compareTo
+  [17] cd.RedBlackTree.treeInsert
+  [18] cd.RedBlackTree.put
+  [19] cd.CollisionDetector.putIntoMap
+  [20] cd.CollisionDetector.recurse
+  [21] cd.CollisionDetector.drawMotionOnVoxelMap
+  [22] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [23] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [24] som.Vector.forEach
+  [25] cd.CollisionDetector.reduceCollisionSet
+  [26] cd.CollisionDetector.handleNewFrame
+  [27] CD.benchmark
+  [28] CD.innerBenchmarkLoop
+  [29] Run.measure
+  [30] Run.doRuns
+  [31] Run.runBenchmark
+  [32] Harness.main
+
+--- 109180785 ns (0.10%), 10783 samples
+  [ 0] libmSin
+  [ 1] cd.Simulator.simulate
+  [ 2] CD.benchmark
+  [ 3] CD.innerBenchmarkLoop
+  [ 4] Run.measure
+  [ 5] [unknown]
+  [ 6] [unknown]
+  [ 7] Harness.main
+
+--- 108571736 ns (0.10%), 10578 samples
+  [ 0] syscall_enter_from_user_mode_[k]
+  [ 1] do_syscall_64_[k]
+  [ 2] entry_SYSCALL_64_after_hwframe_[k]
+  [ 3] [vdso]
+  [ 4] clock_gettime@GLIBC_2.2.5
+  [ 5] JvmtiEnv::GetCurrentThreadCpuTime(long*)
+  [ 6] Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+  [ 7] org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  [ 8] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  [ 9] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+  [10] org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+  [11] cd.Vector2D.compareNumbers
+  [12] cd.Vector2D.compareTo
+  [13] cd.Vector2D.compareTo
+  [14] cd.RedBlackTree.findNode
+  [15] cd.RedBlackTree.get
+  [16] cd.CollisionDetector.putIntoMap
+  [17] cd.CollisionDetector.recurse
+  [18] cd.CollisionDetector.drawMotionOnVoxelMap
+  [19] cd.CollisionDetector.lambda$reduceCollisionSet$4
+  [20] cd.CollisionDetector$$Lambda$174.0x0000000801148000.apply
+  [21] som.Vector.forEach
+  [22] cd.CollisionDetector.reduceCollisionSet
+  [23] cd.CollisionDetector.handleNewFrame
+  [24] CD.benchmark
+  [25] CD.innerBenchmarkLoop
+  [26] Run.measure
+  [27] Run.doRuns
+  [28] Run.runBenchmark
+  [29] Harness.main
+
+--- 104015534 ns (0.10%), 9227 samples
+  [ 0] Interpreter
+  [ 1] [not_walkable_Java]
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 15923486589   15.11%  1536351  _raw_spin_unlock_irqrestore_[k]
+ 10337629955    9.81%  1023310  [vdso]
+  9526007825    9.04%   924549  syscall_enter_from_user_mode_[k]
+  6014597666    5.71%   592845  copy_user_generic_string_[k]
+  3504120417    3.33%   348910  __x64_sys_clock_gettime_[k]
+  3050850628    2.90%   301738  cd.RedBlackTree.treeInsert
+  2065797460    1.96%   205209  cd.CollisionDetector.isInVoxel
+  1834829875    1.74%   182274  thread_cpu_clock_get_[k]
+  1685960308    1.60%   167494  posix_cpu_clock_get_[k]
+  1684357077    1.60%   166787  cd.CollisionDetector.recurse
+  1451506194    1.38%   142396  _raw_spin_lock_irqsave_[k]
+  1275778110    1.21%   126538  cd.RedBlackTree.findNode
+  1238775855    1.18%   125056  org.graalvm.visualvm.lib.jfluid.server.ThreadInfo.getThreadInfoOrNull
+  1138551012    1.08%   113158  put_timespec64_[k]
+  1133080129    1.08%   112230  cd.RedBlackTree.put
+  1108838033    1.05%   112409  org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPU.writeTimeStampedEvent
+  1018207850    0.97%   102903  org.graalvm.visualvm.lib.jfluid.server.system.Timers.getThreadCPUTimeInNanos
+  1011140654    0.96%    99735  __audit_syscall_entry_[k]
+   995343832    0.94%    98426  cpu_clock_sample_[k]
+   953255912    0.90%    94241  cd.RedBlackTree.treeMinimum
+   923634772    0.88%    91502  cd.RedBlackTree.forEach
+   899358953    0.85%    89089  __rcu_read_unlock_[k]
+   834752488    0.79%    82412  Node::set_req_X(unsigned int, Node*, PhaseIterGVN*)
+   833827263    0.79%    82425  __rcu_read_lock_[k]
+   828042130    0.79%    81843  pid_for_clock_[k]
+   716310952    0.68%    70802  ns_to_timespec64_[k]
+   644952471    0.61%    64046  clock_gettime@GLIBC_2.2.5
+   639456881    0.61%    64160  os::current_thread_cpu_time()
+   621036552    0.59%    61570  syscall_trace_enter.constprop.0_[k]
+   584469504    0.55%    57721  longest_match
+   572572365    0.54%    57879  org.graalvm.visualvm.lib.jfluid.server.ThreadInfo.getThreadInfo
+   520841093    0.49%    51425  cd.Vector2D.compareNumbers
+   478665126    0.45%    48084  os::javaTimeNanos()
+   472847319    0.45%    47770  Java_org_graalvm_visualvm_lib_jfluid_server_system_Timers_getThreadCPUTimeInNanos
+   470084866    0.45%    46129  __audit_syscall_exit_[k]
+   446580776    0.42%    44419  jbyte_disjoint_arraycopy
+   420534112    0.40%    42522  org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodEntry
+   411738220    0.39%    41630  org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.rootMethodEntry
+   402759308    0.38%    40034  do_syscall_64_[k]
+   399277319    0.38%    39316  IndexSetIterator::advance_and_next()
+   398826850    0.38%    40082  jvmti_GetCurrentThreadCpuTime
+   397214338    0.38%    39374  PhaseChaitin::Split(unsigned int, ResourceArea*)
+   372004261    0.35%    36851  cd.RedBlackTree.leftRotate
+   341687343    0.32%    31429  Compile::find_alias_type(TypePtr const*, bool, ciField*) [clone .part.0]
+   324191091    0.31%    31998  task_sched_runtime_[k]
+   323000926    0.31%    31945  pid_task_[k]
+   308499405    0.29%    30359  PhaseChaitin::elide_copy(Node*, int, Block*, Node_List*, Node_List*, bool)
+   286813326    0.27%    28326  syscall_exit_to_user_mode_prepare_[k]
+   286051071    0.27%    28942  org.graalvm.visualvm.lib.jfluid.server.ProfilerServer.notifyClientOnResultsAvailability
+   279447858    0.27%    28091  JavaThread::is_Java_thread() const
+   272551676    0.26%    26718  syscall_exit_work_[k]
+   271751887    0.26%    26903  cd.CollisionDetector.lambda$handleNewFrame$0
+   269248229    0.26%    26974  cd.CallSign.compareTo
+   259713122    0.25%    25499  task_rq_lock_[k]
+   253621348    0.24%    25559  _dl_update_slotinfo
+   237944016    0.23%    23518  cd.RedBlackTree.rightRotate
+   237275093    0.23%    23315  PhaseChaitin::gather_lrg_masks(bool)
+   226375015    0.21%    22490  syscall_exit_to_user_mode_[k]
+   222262049    0.21%    21034  __tls_get_addr
+   220360144    0.21%    21780  PhaseChaitin::interfere_with_live(unsigned int, IndexSet*) [clone .part.0]
+   217179224    0.21%    21880  JvmtiEnv::GetCurrentThreadCpuTime(long*)
+   216642039    0.21%    21455  deflate_slow
+   197556330    0.19%    19920  org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr.methodExit
+   196600599    0.19%    19479  PhaseLive::compute(unsigned int)
+   191365962    0.18%    18967  som.Vector.append
+   189510429    0.18%    18612  PhaseIterGVN::subsume_node(Node*, Node*)
+   185832981    0.18%    18324  _copy_to_user_[k]
+   183194453    0.17%    18117  PhaseIdealLoop::build_loop_late(VectorSet&, Node_List&, Node_Stack&)
+   168611592    0.16%    16659  PhaseIdealLoop::build_loop_early(VectorSet&, Node_List&, Node_Stack&)
+   159029970    0.15%    15638  cd.Simulator.simulate
+   153375353    0.15%    15167  PhaseChaitin::post_allocate_copy_removal()
+   142327540    0.14%    14002  ktime_get_coarse_real_ts64_[k]
+   141124271    0.13%    13927  PhaseIdealLoop::build_loop_late_post_work(Node*, bool)
+   137937480    0.13%    12592  ConnectionGraph::create_split_phi(PhiNode*, int, GrowableArray<PhiNode*>&, bool&)
+   130279266    0.12%    13124  __static_call_text_end_[k]
+   127958224    0.12%    12921  org.graalvm.visualvm.lib.jfluid.server.ThreadInfo.getThreadHashCode
+   127791130    0.12%    12663  PhaseAggressiveCoalesce::insert_copies(Matcher&)
+   126563874    0.12%    12546  .annobin__ZN12PhaseChaitin18build_ifg_physicalEP12ResourceArea.start
+   122813114    0.12%    12143  Arena::contains(void const*) const
+   119787999    0.11%    11825  libmSin
+   118998022    0.11%    11751  som.Vector.forEach
+   116189831    0.11%    11516  cd.Vector2D.compareTo
+   114979629    0.11%    11551  update_get_addr
+   113566215    0.11%    11212  libmCos
+   112856619    0.11%    11140  PhaseIdealLoop::Dominators()
+   112328989    0.11%     6496  jdk.jfr.internal.PlatformRecorder.periodicTask
+   109230123    0.10%    10490  __memset_avx2_unaligned_erms
+   106937605    0.10%     9505  Interpreter
+    90240255    0.09%     8700  NodeHash::hash_find_insert(Node*)
+    90094004    0.09%     8908  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)
+    89200443    0.08%     8765  Matcher::xform(Node*, int)
+    89073203    0.08%     8436  Dict::Insert(void*, void*, bool)
+    88881589    0.08%     7850  G1ParScanThreadState::trim_queue_to_threshold(unsigned int)
+    88647776    0.08%     8744  java.util.Arrays.copyOf
+    86642766    0.08%     8552  som.Vector.<init>
+    86321360    0.08%     8479  .annobin__ZN14PhaseIdealLoop15build_loop_treeEv.start
+    84999379    0.08%     8412  cd.Motion.findIntersection
+    84105358    0.08%     7998  Node::remove_dead_region(PhaseGVN*, bool)
+    83882522    0.08%     8426  __vdso_clock_gettime
+    81365735    0.08%     7968  Unique_Node_List::remove(Node*)
+    80609485    0.08%     7983  cd.Vector2D.plus
+    79748982    0.08%     7814  itable stub
+    77979949    0.07%     7563  DebugInformationRecorder::find_sharable_decode_offset(int)
+    77444898    0.07%     7626  PhaseIdealLoop::is_dominator(Node*, Node*)
+    75811986    0.07%     7531  PhaseIdealLoop::split_if_with_blocks(VectorSet&, Node_Stack&)
+    75022384    0.07%     7427  IndexSet::initialize(unsigned int)
+    74046821    0.07%     7303  cd.CollisionDetector.putIntoMap
+    73926886    0.07%     7287  PhaseChaitin::add_input_to_liveout(Block*, Node*, IndexSet*, double, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&)
+    73808578    0.07%     7258  IndexSet::alloc_block_containing(unsigned int)
+    72419932    0.07%     6422  InstanceKlass::find_method_index(Array<Method*> const*, Symbol const*, Symbol const*, Klass::OverpassLookupMode, Klass::StaticLookupMode, Klass::PrivateLookupMode) [clone .constprop.0]
+    71980207    0.07%     7131  cd.CollisionDetector.lambda$handleNewFrame$1
+    71978622    0.07%     7106  PhaseOutput::BuildOopMaps()
+    71508895    0.07%     7046  PhaseIdealLoop::dom_lca_for_get_late_ctrl_internal(Node*, Node*, Node*)
+    69663153    0.07%     6819  PhaseIterGVN::add_users_to_worklist(Node*)
+    67886509    0.06%     6679  PhaseCCP::analyze()
+    64152752    0.06%     6348  PhaseChaitin::Select()
+    63011709    0.06%     5874  resource_allocate_bytes(unsigned long, AllocFailStrategy::AllocFailEnum)
+    62611001    0.06%     6144  PhaseIterGVN::transform_old(Node*)
+    62439775    0.06%     6180  cd.Vector2D.minus
+    61357617    0.06%     6051  PhaseIFG::effective_degree(unsigned int) const
+    61329745    0.06%     6054  PhaseChaitin::merge_multidefs()
+    60449153    0.06%     5898  __tls_get_addr_slow
+    59568288    0.06%     5978  JvmtiEnvBase::is_valid()
+    58926668    0.06%     5800  compress_block
+    58727017    0.06%     5797  PhaseIFG::remove_node(unsigned int)
+    58231176    0.06%     5714  PhaseIdealLoop::get_late_ctrl_with_anti_dep(LoadNode*, Node*, Node*)
+    57088738    0.05%     5304  ConnectionGraph::find_inst_mem(Node*, int, GrowableArray<PhiNode*>&)
+    55044173    0.05%     5455  cd.CollisionDetector.lambda$reduceCollisionSet$5
+    54855345    0.05%     5394  PhaseIdealLoop::get_ctrl(Node*) [clone .isra.0]
+    54268496    0.05%     5338  Matcher::find_shared(Node*)
+    53766449    0.05%     5329  cd.CollisionDetector$$Lambda$177.0x0000000801148ed8.apply
+    53690109    0.05%     4787  SymbolTable::lookup_shared(char const*, int, unsigned int)
+    51475496    0.05%     5093  RegionNode::is_unreachable_from_root(PhaseGVN const*) const
+    51469922    0.05%     4999  Matcher::Label_Root(Node const*, State*, Node*, Node*&)
+    50247033    0.05%     4779  Type::cmp(Type const*, Type const*)
+    50087112    0.05%     4765  Node::clone() const
+    48355162    0.05%     4736  Compile::disconnect_useless_nodes(Unique_Node_List&, Unique_Node_List*)
+    48164371    0.05%     4745  Node::is_CFG() const
+    47252124    0.04%     4530  __memmove_avx_unaligned_erms
+    47171367    0.04%     4653  PhaseChaitin::remove_bound_register_from_interfering_live_ranges(LRG&, IndexSet*, unsigned int&) [clone .part.0]
+    46756264    0.04%     4285  Compile::flatten_alias_type(TypePtr const*) const
+    45937184    0.04%     4522  .annobin__ZN22Node_Backward_Iterator4nextEv.start
+    45804102    0.04%     4514  cd.RedBlackTree$Node.successor
+    45484952    0.04%     4440  nmethod::metadata_do(MetadataClosure*)
+    45389780    0.04%     4462  PhaseIFG::re_insert(unsigned int)
+    45339621    0.04%     4516  cd.Vector2D.<init>
+    45326655    0.04%     4450  Compile::identify_useful_nodes(Unique_Node_List&)
+    44344412    0.04%     4331  Matcher::match_tree(Node const*)
+    44105833    0.04%     4372  PhaseIFG::SquareUp()
+    43426488    0.04%     4296  NTarjan::DFS(NTarjan*, VectorSet&, PhaseIdealLoop*, unsigned int*)
+    42634467    0.04%     3904  ciObjectFactory::get_metadata(Metadata*)
+    42457497    0.04%     4199  .annobin__ZN18VM_RedefineClasses22AdjustAndCleanMetadata8do_klassEP5Klass.start
+    42057685    0.04%     4093  [no_Java_frame]
+    40880984    0.04%     3981  PhiNode::Ideal(PhaseGVN*, bool)
+    40187839    0.04%     3837  PhiNode::unique_input(PhaseTransform*, bool)
+    40151020    0.04%     3843  Node::dominates(Node*, Node_List&)
+    39966308    0.04%     3949  PhaseConservativeCoalesce::update_ifg(unsigned int, unsigned int, IndexSet*, IndexSet*)
+    39720428    0.04%     3865  Assembler::locate_operand(unsigned char*, Assembler::WhichOperand)
+    39393372    0.04%     3893  IndexSet::lrg_union(unsigned int, unsigned int, unsigned int, PhaseIFG const*, RegMask const&)
+    39175478    0.04%     3864  PhaseCFG::schedule_local(Block*, GrowableArray<int>&, VectorSet&, long*)
+    39068439    0.04%     3869  PhaseChaitin::Simplify()
+    38760419    0.04%     3445  SymbolTable::do_lookup(char const*, int, unsigned long)
+    36521879    0.03%     3614  CProjNode::is_block_proj() const
+    36270519    0.03%     3554  PhaseOutput::fill_buffer(CodeBuffer*, unsigned int*)
+    36174862    0.03%     3564  Compile::final_graph_reshaping_walk(Node_Stack&, Node*, Final_Reshape_Counts&)
+    36054296    0.03%     3563  PhaseChaitin::gather_lrg_masks(bool) [clone .constprop.0]
+    34675949    0.03%     3277  Node::Node(unsigned int)
+    34394287    0.03%     3281  Node::out_grow(unsigned int)
+    34177703    0.03%     3369  PhaseCFG::sched_call(Block*, unsigned int, Node_List&, GrowableArray<int>&, MachCallNode*, VectorSet&)
+    34012845    0.03%     3359  .annobin__ZNK4Node6pinnedEv.start
+    33802690    0.03%     3148  ciInstanceKlass::get_field_by_offset(int, bool)
+    33540757    0.03%     3336  Node::rematerialize() const
+    33488755    0.03%     3293  MultiNode::is_CFG() const
+    32987401    0.03%     2825  clear_page_rep_[k]
+    32912800    0.03%     2954  vmSymbols::find_sid(Symbol const*)
+    32809741    0.03%     3121  LinearScan::build_intervals()
+    32621378    0.03%     3119  Type::hashcons()
+    32581070    0.03%     3078  TypeOopPtr::TypeOopPtr(Type::TYPES, TypePtr::PTR, ciKlass*, bool, ciObject*, int, int, TypePtr const*, int)
+    32520509    0.03%     2873  Dictionary::find(unsigned int, Symbol*, Handle)
+    32466557    0.03%     3195  .annobin__ZNK8MachNode9ideal_regEv.start
+    32414748    0.03%     3206  MachNode::rematerialize() const
+    32037967    0.03%     2281  generic_exec_single_[k]
+    31942226    0.03%     3135  PhaseIdealLoop::build_loop_tree_impl(Node*, int)
+    31791088    0.03%     3150  PhaseCFG::hoist_to_cheaper_block(Block*, Block*, Node*)
+    31711077    0.03%     3128  PhaseIdealLoop::get_early_ctrl(Node*)
+    31457769    0.03%     2698  I2C/C2I adapters(0xb)
+    30964797    0.03%     2493  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548964ul, G1BarrierSet>, (AccessInternal::BarrierType)2, 548964ul>::oop_access_barrier(void*)
+    30482075    0.03%     2986  PhaseCCP::transform(Node*)
+    30215122    0.03%     2904  Node::add_req(Node*)
+    29986754    0.03%     2963  PhaseIterGVN::optimize()
+    29528588    0.03%     2904  .annobin_slide_hash.start
+    28911429    0.03%     2834  .annobin__ZNK7PhiNode5ValueEP8PhaseGVN.start
+    28847418    0.03%     2741  LinearScan::allocate_registers()
+    28326362    0.03%     2824  som.Vector.at
+    28289486    0.03%     2787  PhaseCFG::schedule_early(VectorSet&, Node_Stack&)
+    27997515    0.03%     2737  TypeNode::hash() const
+    27930532    0.03%     2751  PhaseChaitin::compute_initial_block_pressure(Block*, IndexSet*, PhaseChaitin::Pressure&, PhaseChaitin::Pressure&, double) [clone .part.0] [clone .isra.0]
+    27863567    0.03%     2759  Node::del_req(unsigned int)
+    27686402    0.03%     2743  ConstantPoolCache::adjust_method_entries(bool*)
+    27648233    0.03%     2686  PhaseIterGVN::remove_globally_dead_node(Node*)
